@@ -425,4 +425,18 @@
   <entityname.m57detonator>M57 Detonator(Double)</entityname.m57detonator>
   
   <lights>Light</lights>
+
+  <afflictionname.chemicalliner_main>Chemical Liner</afflictionname.chemicalliner_main>
+  <afflictiondescription.chemicalliner_main>-85% Gunshot \n-100% Bleeding \n-85% Laceration \n-85% Blunttrauma \n-85% Internaldamage \n-85% Deep Tissue Injury \n-80% Burn\n-60% Special \n-100% Armor Break</afflictiondescription.chemicalliner_main>
+
+  <entityname.fuelextractor>Nuclear Material Extractor</entityname.fuelextractor>
+  <entityname.nuclearwaste>Nuclear Waste</entityname.nuclearwaste>
+  <entityname.plutonium_core>Mixed Plutonium</entityname.plutonium_core>
+  <entityname.plutonium_weapon>Weapon Grade Plutonium</entityname.plutonium_weapon>
+  <entityname.plutoniumfuelrod>Plutonium Fuelrod</entityname.plutoniumfuelrod>
+  <entityname.watercanister>Sealed Container</entityname.watercanister>
+  <entityname.d2ocanister>Sealed Container</entityname.d2ocanister>
+  <entityname.col_filiter>Coalition Standard Filiter</entityname.col_filiter>
+  <entityname.sep_filiter>Separatists Homemade Filiter</entityname.sep_filiter>
+  <entityname.breachhammer>Sledge Hammer</entityname.breachhammer>
 </infotexts>
