@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="九州武库·CBRN拓展" modversion="4.0.5" corepackage="False" steamworkshopid="3278494407" gameversion="1.5.9.2">
+  <Item file="%ModDir%/gear.xml" />
+  <Item file="%ModDir%/material.xml" />
+  <Item file="%ModDir%/override.xml" />
+  <Item file="%ModDir%/Job/ItemCBRN.xml" />
+  <Item file="%ModDir%/AI/GearAI.xml" />
+  <Text file="%ModDir%/localization/English.xml" />
+  <Text file="%ModDir%/localization/SimplifiedChinese.xml" />
+  <Afflictions file="%ModDir%/Afflictions.xml" />
+  <Afflictions file="%ModDir%/AI/AfflictionsAI.xml" />
+  <Structure file="%ModDir%/Structure.xml" />
+  <Particles file="%ModDir%/Particles.xml" />
+  <RandomEvents file="%ModDir%/Events.xml" />
+  <Character file="%ModDir%/Characters/humaneyi_weaponized/humaneyi_weaponized.xml" />
+  <Missions file="%Moddir%/Missions.xml" />
+  <NPCSets file="%Moddir%/MissionNpcs.xml" />
+  <Jobs file="%ModDir%/Job/Jobs.xml" />
+  <Afflictions file="%ModDir%/Job/AfflictionsCBRN.xml" />
+  <Talents file="%ModDir%/Job/TalentsCBRN.xml" />
+  <TalentTrees file="%ModDir%/Job/TalentTrees.xml" />
+</contentpackage>

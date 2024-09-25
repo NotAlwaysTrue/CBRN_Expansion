@@ -1,0 +1,1004 @@
+Note 2024/9/25:Migraged to Github, This method will be abandoned.
+
+V4.0.6
++rz_p_mk1_cbrn(WIP content, unused)
++sledgehammer
++col_filiter
++sep_filiter
++GearAI.xml
++AfflictionAI.xml
++ItemCBRN.xml(A bunch of things, i wont list them here.)
+Whole project
+  Removed abandoned codes
+  The lines may vary in normal text editors due to migration.
+tsm_cbrnert
+  StatusHUD overlaycolor 20,0,255,255→0,0,0,0
+tsm_triton_bag
+  +isdangerous="true"
+berra_etps7b
+  damagemodifier afflictionidentifiers="bleeding"→afflictiontypes="bleeding"
+berra_bio2
+  damagemodifier afflictionidentifiers="bleeding"→afflictiontypes="bleeding"
+eyiinfection_weaponized
+  Migrated to use new spirite(in pervious unrecorded update)
+tsm_de_handgun_fa
+  Use new "None" crosshair texture
+tsm_de_handgun_fa
+  RangedWeapon combatPriority 80→60
+tsm_filiter
+  Adjusted price 600→400
+  Adjusted mindifficulity 65→40
+tsm_helmet_respirator
+  Adjusted contained item consume rate
+berra_cbrn3
+  Adjusted contained item consume rate
+u235core_low
+  Removed a line of code that damages the item while impact
+u235core_medium
+  Removed a line of code that damages the item while impact
+u235core_high
+  Removed a line of code that damages the item while impact
+fusioncore
+  Removed a line of code that damages the item while impact
+cbrn_guy
+  Modified Startitem to indicate exact useage of the mask
+tsm_cbrnert
+  Wearable StatusEffect PressureProtection 8000→12500
+  Localization has been updated
+  Converted from pure armor damagemodifier to armor damagemodifier+affliction resistance[note: this is an improvement not a nerf, expected it to be stronger]
+
+V4.0.5
+Updated localization
+nanomachinefixing
+  StatusEffect disabledeltatime false→true
+  Adjusted reduceaffliction amount
+nanomachine
+  Use new description
+biodev
+  Use new description and adjusted
+tsm_cbrnert
+  Use new light texture
+  +StatusHUD range 300 showtexts true overlaycolor 20,0,255,255 drawhudwhenequipped true
+  Added a function to allow light to turn on/off
+
+V4.0.4(Too tired to record everything, sorry)
+tsm_helmet_respirator
+  Fixed a issue filters may spawn during rounds
+tsm_cbrnert
+  Add missing bitewounds and internaldamage damagemodifier
+  Enhanced a little bit
+dutyofcbrn
+  Try to fix a issue seems to stay conscious forever
+the_medicine
+  Nerfed a little
+
+V4.0.3
+berra_drl3_heat
+  Fabricate requiresrecipe true→false
+standard_cbrnsuit_gray
+  Wearable +damagemodifier acidburn 0.0
+berra_mk153_illumination
+  RequiredItem magnesium 8→4
+All Missions
+  minleveldifficulty 20→40
+  adjusted total difficulty 
+Reduced commonness for Fire Eaters
+Adjusted talenttree
+
+V4.0.1
+Chemical grenades
+  Now you can cook them if necessary, fuse unchanged.
+
+
+V4.0.0 Bioweapon Rework & Improvements & Bug Fixs & Major Feature Update
++AfflictionsCBRN.xml
++TalentsCBRN.xml
++TalentTrees.xml
+Events.xml detonation→detonation_2
+Events.xml +detonation_1
+Events.xml +detonation_3
+gear.xml +berra_50bmg_m1022
+gear.xml +berra_50bmg_m903
+gear.xml +berra_50bmg_mk211mod0
+gear.xml +berra_M107Mag_m1022
+gear.xml +berra_M107Mag_m903
+gear.xml +berra_M107Mag_m33
+gear.xml +berra_M107Mag_mk211mod0
+gear.xml +berra_m82a1
+gear.xml +berra_m107a1_fa
+gear.xml +berra_m107a1
+gear.xml +berra_mk153_illumination
+gear.xml +berra_mk153_flechette
+gear.xml +mk153_illumination_warhead
+gear.xml +mk153_flechette_warhead
+gear.xml +tsm_cbrnert
+gear.xml +standard_cbrnsuit_gray
+gear.xml +m57detonator_single
+gear.xml +m57detonator_triple
+material.xml -zombieviruscanister
+Afflictions.xml -zombievirusinfection
+Afflictions.xml -zombievirus_air_agent
+Afflictions.xml +eyi_weaponized_air_agent
+Afflictions.xml +eyiinfection_weaponized
+Updated localization(Both)
+CBRN Squad(Enemy Mission)
+  Adjusted spawnrate config
+powdercapsule_anthrax
+  Use new StatusEffect code
+powdercapsule_vx
+  Use new StatusEffect code
+sacabambaspis_he
+  Phrase1 Explosion +lacerations 100
+  Phrase2 Explosion +lacerations 70
+berra_cbrn3
+  Fabricate -RequiredItem aluminium 2
+  Fabricate requiredtime 30→25
+  Fabricate  RequiredSkill medical 35→25
+  Fabricate  RequiredSkill mechanical 30→25
+  Fabricate RequiredItem rubber 3→2
+  Fabricate RequiredItem organicfiber 6→3
+  Wearable ItemContainer -SpawnWithId berra_filiter
+  Wearable +damagemodifier gunshotwound 0.8
+berra_cbrn3a
+  Wearable +damagemodifier gunshotwound 0.8
+berra_bio2
+  tag +cbrngear
+berra_etps7b
+  tag +cbrngear
+c4_stickcharge
+  Body width 150→100
+  RangedWeapon +barrelpos 50,0
+  Projectile LaunchImpulse 4→4.5
+  Phrase 3 Explosion penetration 1→0.8
+  Phrase 4 Explosion penetration 1→0.5
+  Phrase 1 Explosion range 100→300
+  Phrase 2 Explosion range 200→400
+  Phrase 3 Explosion range 450→650
+  Phrase 4 Explosion range 600→800
+  Phrase 3 Explosion Afflictions -dividebylimbcount false
+  Phrase 4 Explosion Afflictions -dividebylimbcount false
+the_medicine
+  Effect StatusEffect +ReduceAffliction bloodloss 1.5
+  Effect StatusEffect ReduceAffliction poison 2→4
+  Effect StatusEffect ReduceAffliction bioinfection 2→4
+  Effect StatusEffect ReduceAffliction damage 1→1.5
+  Effect StatusEffect ReduceAffliction burn 0.5→1.5
+  Effect StatusEffect ReduceAffliction bleeding 1→1.5
+  Effect StatusEffect SpeedMultiplier 1.1→1.2
+berra_m2hb
+  RangedWeapon weapondamagemodifier 1.8→1.0
+  RangedWeapon penetration 0.8→0.3
+berra_50bmg_m33
+  Projectile Attack penetration 0.8→0.5
+  Projectile Attack Affliction gunshotwound 20→30
+  Projectile Attack Affliction lacerations 18→30
+  Projectile Attack Affliction bleeding 16→20
+berra_mk153
+  RepairTool range 240→480
+berra_drl3_dumb
+  RepairTool range 180→360
+berra_drl3_heat
+  RepairTool range 180→360
+berra_drl3_fab
+  RepairTool range 180→360
+berra_drl3_inc
+  RepairTool range 180→360
+tes20mag_arr
+  Fabricate RequiredItem magnesium +amount 8
+  Fabricate RequiredItem recycleitem magnesium +amount 8
+  Fabricate RequiredItem recycleitem tes20mag +mincondition 0.0
+tes20mag_ll
+  Fabricate RequiredItem magnesium +amount 8
+  Fabricate RequiredItem recycleitem magnesium +amount 8
+  Fabricate RequiredItem recycleitem tes20mag +mincondition 0.0
+Most projectiles
+  -pickable
+Rocket projectiles (except dumbs)
+  Projectile -ParticleEmitter tracerfirearm
+mk153_bdm_warhead
+  Projectile launchimpulse 30→25
+  Projectile StatusEffect OnImpact delay 0.02 +OneShot true
+mk153_he_warhead
+  Projectile +hitscan true
+mk153_inc_warhead
+  Projectile +hitscan true
+drl3_dumb_warhead
+  Projectile +hitscan true
+drl3_inc_warhead
+  Projectile +hitscan true
+drl3_fab_warhead
+  Projectile +hitscan true
+All Actual Chemical&Bio weapon emitters
+  replace delay with interval
+Large caliber weapons
+  add muzzle smoke
+All Nukes
+  Added more damage phrase for 100k+ Nukes
+  Added range for all Nukes
+  Known Issue: nukes may not trigger correctly in some pf servers
+Almost everything
+  Fabricate +requiresrecipe true
+
+V3.1.6 Fix
+  Fixed issue related duplicated fireproof
+  Fixed typo in m57detonator
+
+V3.1.5 Patch
++Jobs.xml
+pe_cure
+   SkillRequirementHint 60→30
+col_cac2
+   SkillRequirementHint 60→30
+All Meds:
+  Corrected code Form
+  Removed Projectile property
+berra_cbrn3a
+  +waterproof true
+  Removed excludeditems mobilecontainer for 5th container slot
+berra_cbrn3
+  +fireproof true
+berra_etps7b
+  +fireproof true
+  +waterproof true
+berra_bio2
+  +fireproof true
+  +waterproof true
+omega_warhead
+  halved fabricate item requirements 
+All nukes
+  fixed incorrect severlimbsprobability config
+  Adjusted damage and effect
+
+V3.1.4 Patch
+c4_stickcharge
+  Holdable slots Any,RightHand,LeftHand→Any,RightHand+LeftHand
+
+V3.1.3 Patch
+berra_STANAG_50beowulf_ap
+  Now available in fabricator
+berra_50beowulf_fr
+  Projectile Attack penetration 0.2→0.25
+  Projectile itemdamage 15→40
+  Projectile severlimbsprobability 0.6→0.8
+berra_50beowulf_ap
+  Projectile severlimbsprobability 0.3→0.6
+  Projectile Attack Affliction lacerations 10 probability 0.8→0.9
+  Projectile Attack Affliction lacerations 5 probability 0.5→0.8
+  Projectile Attack Affliction lacerations 8→9
+All throwable chemical weapons
+  removed weapon tag
+c4_stickcharge
+  RequiredItem identifier wire→tag wire
+All Meds
+  Now can use 4 times
+
+V3.1.2 Patch
+c4_stickcharge
+  doubled Fabricate item requirements and final item amount
+
+V3.1.1 Patch
+c4_stickcharge
+  Projectile LaunchImpulse 8→4
+  Body width 80→180
+  Body height 80→90
+  Added missing explosion sound
+  Holdable -UseHandRotationForHoldAngle true
+  Holdable +holdangle 90
+  Holdable aimangle 0→70
+  Holdable holdpos 45,0→0,-45
+
+V3.1.0 Additional Content
+gear.xml +emp_warhead
+Updated Localization (Eng,SChinese)
+neutron_warhead
+  Corrected Phrase 1 explosion sound range (50000→600)
+fsm_throwable
+  Make everything ready to go
+m57detonator
+  Make everything ready to go
+c4_stickcharge
+  Make everything ready to go
+bzcanister
+  Fabricate RequiredItem oxygentank +minicondition 1.0
+  Fabricate RequiredItem oxygentank: Code is in 2 lines now but total amount is the same.
+berra_50beowulf_ap
+  Projectile Attack Affliction bleeding 5 probability 0.4→0.8
+  Projectile Attack Affliction lacerations 10 probability 0.5→0.8
+berra_50beowulf_fr
+  Projectile Attack penetration 0.3→0.2
+  Projectile Attack Affliction probability 0.5 lacerations 15→12
+  Projectile Attack Affliction lacerations 12 probability 0.5→0.4
+  Projectile Attack Affliction bleeding 7→8
+  Projectile StatusEffect OnImpact Explosion range 20→18
+berra_m4_beowulf
+  ItemContainer SubContainer Containable +excludeditems tsm_jgzsq
+  ItemContainer SubContainer Containable items -light
+  Added SlotIcon to indicate useage
+berra_m4_458socom
+  ItemContainer SubContainer Containable +excludeditems tsm_jgzsq
+  ItemContainer SubContainer Containable items -light
+  Added SlotIcon to indicate useage
+berra_bio2
+  Wearable ItemContainer +maxstacksize 2
+berra_cbrn3a
+  ItemContainer Containable StatusEffect OnWearing Contained Condition -0.3→-0.2
+
+V3.0.4 Patch
+berra_m4_beowulf
+  ItemContainer SubContainer Containable flashlight,light itempos 40,0→25,5
+berra_m4_beowulf
+  ItemContainer SubContainer Containable flashlight,light itempos 40,0→20,5
+
+V3.0.3 Patch
+gear.xml +m57detonator
+gear.xml +c4_stickcharge
+Events.xml +detonation
+berra_50beowulf_ap 
+  Attack Affliction bleeding 7→10
+berra_STANAG_50beowulf_fr_ext
+  Fabricate 50beowulf_fr_recycle RequiredItem berra_STANAG→berra_STANAG_ext
+  Fabricate 50beowulf_fr_recycle RequiredItem berra_STANAG_ext +mincondition 0.0
+berra_STANAG_50beowulf_fr
+  Fabricate 50beowulf_fr_recycle RequiredItem berra_STANAG +mincondition 0.0
+berra_STANAG_458socom
+  Fabricate 458socom_recycle RequiredItem berra_STANAG +mincondition 0.0
+berra_STANAG_458socom_ext
+  Fabricate 458socom_recycle RequiredItem berra_STANAG→berra_STANAG_ext
+  Fabricate 458socom_recycle RequiredItem berra_STANAG_ext  +mincondition 0.0
+berra_300FAL_M118LR
+  Fabricate m118lr_recycle RequiredItem berra_300FAL +mincondition 0.0
+omega_warhead
+  +StatusEffect OnBroken NearbyItems range 6000 condition 0 setvalue true
+berra_m4_beowulf
+  ItemContainer +SubContainer capacity 1 maxstacksize 1
+  ItemContainer SubContainer +Containable flashlight,light hide false itempos 40,0 setactive true
+berra_m4_458socom
+  ItemContainer +SubContainer capacity 1 maxstacksize 1
+  ItemContainer SubContainer +Containable flashlight,light hide false itempos 40,0 setactive true
+berra_50beowulf_fr
+  Projectile StatusEffect OnImpact Explosion range 12→20
+
+V3.0.2 Patch
+berra_458socom
+  Attack Affliction gunshotwound 16→17
+  Attack Affliction lacerations 5→8
+berra_50beowulf_ap 
+  Attack Affliction gunshotwound 15→20
+  Attack Affliction lacerations 10→15
+  Attack severlimbsprobability 0.6→0.3
+berra_50beowulf_fr
+  StatusEffect OnImpact Explosion blunttrauma 10→15
+sacabambaspis_he
+  ItemComponent Explosion range 200 Affliction explosiondamage 120→180
+  ItemComponent Explosion range 300 Affliction explosiondamage 80→100
+
+V3.0.1 Patch
+Afflictions.xml +exosuited(Missing logs in pervious versions)
+Afflictions.xml +CCR
+Updated Localization (SChinese,English)
+exosuited
+  AbilityFlags→AbilityFlag
+  Removed StatusEffect from codes as a correction of format(AbilityFlags was defined in StatusEffect before, which with typo together make the whole thing fail)
+bio-2
+  StatusEffect OnWearing +SpeedMultiplier 1.1 setvalue true (Missing logs in pervious versions)
+  StatusEffect OnWearing +Affliction exosuited 10 (Missing logs in pervious versions)
+  damagemodifier radiationsickness 0.35→0.3
+berra_etps7b
+  StatusEffect OnWearing SpeedMultiplier 0.7→0.8
+  StatusEffect OnWearing Affliction APR→CCR
+omega_warhead
+  Tags +mediumitem
+sacabambaspis_he
+  ItemComponent Explosion range 200 +penetration 1
+  ItemComponent Explosion range 200 +severlimbsprobability 0.8
+  ItemComponent Explosion range 300 +ballastfloradamage 80
+  ItemComponent Explosion range 300 +penetration 1
+  ItemComponent Explosion range 300 itemdamage 50→30
+  Removed false as default arguments(shockwave,debris,sparks,flames,smoke,underwaterbubble,playtinnitus,flash) in Explosions
+  Fabricate RequiredItem iron 2→organicfiber 4
+  Fabricate RequiredItem c4block 1→2
+  Deconstruct iron 1→organicfiber 2
+  Deconstruct sodium → c4block 2
+  Fabricate requiredtime 20→25
+omegathedeath
+  Effect +resistancefor miracleworker 1
+  Effect +minresistance 1
+  Effect +maxresistance 1
+  Effect +StatusEffect Character disabledeltatime true
+  Effect StatusEffect +ReduceAffliction miracleworker  99999
+berra_mk153_heat
+  Fabricate RequiredItem c4block 3→2
+berra_mk153_he
+  Fabricate RequiredItem c4block 2→3
+berra_mk153_bdm
+  Fabricate -requiresrecipe false
+  Fabricate -RequiredItem weldingfueltank 3
+  Fabricate +RequiredItem steel 2
+  Fabricate +RequiredItem flashpowder 1
+  Fabricate RequiredItem c4block 2→5
+  Deconstruct Item c4block 6→4
+nuke_1000k
+  Fabricate RequiredItem u235core_medium→u235core_high
+u235core_high
+  Fabricate RequiredItem fuelrod 16(total)→12(total)
+berra_50beowulf_fr
+  Projectile -penetration 0.3
+  Projectile Attack +penetration 0.3
+berra_50beowulf_ap
+  Projectile -penetration 0.6
+  Projectile Attack +penetration 0.6
+berra_458socom
+  Projectile -penetration 0.6
+  Projectile Attack +penetration 0.45
+berra_300nato_m118
+  Projectile -penetration 0.7
+  Projectile Attack +penetration 0.7
+berra_50bmg_m33
+  Projectile -penetration 0.8
+  Projectile Attack +penetration 0.8
+neutron_reflector
+  No Longer Fabricatable
+berra_cbrn3a
+  +fireproof true
+
+V3.0.0 "Nuclear"
+Updated Localization (Eng,SChinese)
+override.xml +tsm_triton_bag
+override.xml +dirtybomb
+override.xml +dirtybombafteremitter
+Afflictions.xml +omegathedeath(Added to log in V3.0.1)
+Afflictions.xml +hotfuel
+Afflictions.xml +radiological_contamination
+Afflictions.xml +the_medicine
+Particles.xml +flamethrowervar
+gear.xml +sacabambaspis_throw
+gear.xml +nuke_10k
+gear.xml +nuke_100k
+gear.xml +nuke_1000k
+gear.xml +nuke_5000k
+gear.xml +neutron_warhead
+gear.xml +omega_warhead
+gear.xml +fsm_throwable
+material.xml +u235core_low
+material.xml +u235core_medium
+material.xml +u235core_high
+material.xml +fusioncore
+powdercapsule_med
+  StatusEffect OnSecondaryUse Condition -80.0c-100.0
+  StatusEffect OnSecondaryUse target This,Character disabledeltatime false→true
+  Reworked on buffs provided
+unconscious_poisonsource
+  Effect maxstrength 150 Affliction stun 1.4→2
+  Effect maxstrength 200 Affliction stun 1.8→3
+mustard_chemdist_throwable
+  InventoryIcon sourcerect 788,0,160,356→788,0,155,356
+  Sprite sourcerect 788,0,160,356→788,0,155,356
+berra_bio2
+  Wearable sprite limb LeftLeg +depth 0.54
+  Wearable sprite limb RightLeg +depth 0.56
+mk153_bdm_warhead
+  Projectile StatusEffect OnImpact Explosion range 200 explosiondamage 50→60
+  Projectile StatusEffect OnImpact Explosion range 400 explosiondamage 30→40
+  Projectile maxtargetstohit 3→30
+berra_obj227flamethrower
+  StatusEffect OnSuccess UseTarget +Affliction hotfuel 10
+  StatusEffect OnSuccess UseTarget Affliction burn 3.5→1.5
+  RepairTool fireprobability 0.6→0.1
+  RepairTool range 750→1200
+  RepairTool spread 20→1
+  RepairTool unskilledspread 20→1
+  StatusEffect  OnUse Contained +TargetSlot 0
+  Use new ParticleEmitter
+obj227_fueltanks
+  Fabricate RequiredItem weldingfueltank→tsm_hydrocarbons
+  Fabricate recycleitem RequiredItem weldingfueltank→tsm_hydrocarbons
+berra_bio2
+  Wearable +damagemodifier triton_burn 0.2
+  Wearable damagemodifier radiationsickness 0.35→0.4
+berra_etps7b
+  Wearable damagemodifier radiationsickness 0.5→0.3
+vx_chemdist_throwable
+  maxstacksize 32→12
+  Body width 26→150
+  Body height 50→350
+mustard_chemdist_throwable
+  maxstacksize 32→12
+  Body width 26→150
+  Body height 50→350
+phosgene_chemdist_throwable
+  maxstacksize 32→12
+  Body width 26→150
+  Body height 50→350
+cs_chemdist_throwable
+  maxstacksize 32→12
+  Body width 26→150
+  Body height 50→350
+bz_chemdist_throwable
+  maxstacksize 32→12
+  Body width 26→150
+  Body height 50→350
+drl3_inc_warhead
+  StatusEffect OnImpact OnlyInside Explosion structuredamage 15→10
+  StatusEffect OnImpact OnlyOutside Explosion range 350→250
+  StatusEffect OnImpact OnlyOutside Explosion structuredamage 15→10
+All subcategory "CBRN Ammunition"→CBRN_Ammunition
+
+V2.0.3
+anthrax_biodist_40
+  Added a "StatusEffect Type=OnImpact" before <Explosion>
+mustard_biodist_40
+  Added a "StatusEffect Type=OnImpact" before <Explosion>
+vx_biodist_40
+  Added a "StatusEffect Type=OnImpact" before <Explosion>
+
+V2.0.2
+updated Localization(SC only)
+
+V2.0.1
+Missions.xml
+All missions:Now use proper icons
+
+V2.0.0
++override.xml 
++Events.xml(register)
++Missions.xml(from Mission Pack)
++MissionNpcs.xml(from Mission Pack)
+English.xml Updated
+gear.xml +tsm_filiter
+gear.xml +berra_filiter
+gear.xml +tubeitem_carrier
+gear.xml +berra_obj121
+gear.xml +pe_cure
+gear.xml -berra_gau19b (Abandoned)
+override.xml +tsm_helmet_respirator
+override.xml +sulphuricacid
+override.xml +tsm_medicalkits_s
+Afflictions.xml +anthrax_air_agent
+Afflictions.xml +skinburn_biosource
+Afflictions.xml +anthrax_takein_agent
+Afflictions.xml +anthrax_contact_agent
+Afflictions.xml +anthrax_contamination
+Afflictions.xml +brokenarrow_normal_agent
+material.xml +anthraxcanister
+material.xml +anthraxemitter_leak
+material.xml +anthraxemitter_weapon
+All weapons: add skill requirement hints
+All weapons: changed combatPriority
+Multiple warheads: Add interactthroughwalls="false" in secondary stage damage to avoid unexpected damage
+tes20rounds_he
+  StatusEffect OnImpact Explosion range 60→80
+canister
+  Item impacttolerance N/A→5
+vxcanister
+  Item impacttolerance N/A→5
+  fabricateitem rubber→sulphuricacid
+mustardcanister
+  Item impacttolerance N/A→5
+  fabricateitem rubber→sulphuricacid
+bzcanister
+  Item impacttolerance N/A→5
+cscanister
+  Item impacttolerance N/A→5
+phosgenecanister
+  Item impacttolerance N/A→5
+berra_bio2:
+  damagemodifier burn 0.35→0.25
+  damagemodifier bleeding 0.2→0.15
+  damagemodifier gunshotwound 0.35→0.25
+  damagemodifier triton_7L 0.6→0.8
+  damagemodifier radiationsickness 0.35→0.25
+  Fabricate item requirement steel N/A→4
+berra_cbrn3a
+  StatusEffect OnWearing Containable OxygenAvailable 1000→1500
+  StatusEffect OnWearing OxygenAvailable 1500 RequiredItems N/A→oxygensource
+  StatusEffect OnWearing OxygenAvailable 0 RequiredItems N/A→Empty
+berra_etps7b
+  damagemodifier gunshotwound 0.4→0.3
+  damagemodifier bleeding 0.25→0.2
+  damagemodifier stun N/A→0.95
+  damagemodifier triton_7L 0.5→0.7
+  StatusEffect OnWearing ObstructVisionAmount N/A→0.45
+  StatusEffect OnWearing OxygenAvailable 1000→1500
+  Fabricate item requirement steel 2→4
+vx_chemdist_40
+  Removed comment mark for fabricate and deconstruct
+mustard_chemdist_40
+  Removed comment mark for fabricate and deconstruct
+phosgene_chemdist_40
+  Removed comment mark for fabricate and deconstruct
+powdercapsule_med
+  ReduceAffliction bioinfection N/A→150
+tsm_d6
+  OnSuccess ReduceAffliction bioinfection N/A→22
+  OnFailure ReduceAffliction bioinfection N/A→10
+  edited description
+respiratoryarrest_poisonsource
+  StatusEffect Affliction oxygenlow 15→N/A
+  StatusEffect OxygenAvailable N/A→-1000
+berra_m4_beowulf
+  Sound volume 4.0→1.0
+  Sound range 3000→1500
+  Sound use new sound file
+vx_chemdist_40
+  hideinmenus true→N/A
+mustard_chemdist_40
+  hideinmenus true→N/A
+phosgene_chemdist_40
+  hideinmenus true→N/A
+berra_50beowulf_ap
+  Attack Affliction stun 1.0→0.5
+  Attack Affliction stun probability 0.7→0.3
+  Projectile MaxTargetsToHit 2→N/A
+  StatusEffect OnImpact Explosion range 15.0→N/A
+  StatusEffect OnImpact Explosion range 5.0→12
+  StatusEffect OnImpact Explosion Affliction blunttrauma 14→10
+berra_50beowulf_fr
+  Attack Affliction stun 1.5→1.0
+  Projectile penetration 0.4→0.3
+  Projectile MaxTargetsToHit 1→N/A
+  StatusEffect OnImpact Explosion range 15.0→N/A
+  StatusEffect OnImpact Explosion range 5.0→12
+  StatusEffect OnImpact Explosion Affliction blunttrauma 14→10
+berra_300FAL_M118LR
+  Fabricate item requirement titanium N/A→2
+  Fabricate item requirement steel 2→1
+  Fabricate item recycle requirement steel 1→N/A
+  Fabricate item recycle requirement titanium N/A→2
+berra_458socom
+  Projectile MaxTargetsToHit 2→N/A
+  penetration 0.4→0.6
+berra_m4_beowulf
+  RangedWeapon spread 12→6
+berra_m4_458socom
+  RangedWeapon spread 10→8
+berra_m110
+  RangedWeapon spread 1→0.3 
+berra_TES20
+  hideinmenus true→N/A
+  Now use official crosshair instead of the unique one(until we made a new one)
+berra_m2hb
+  RangedWeapon 0.14→0.13
+  Sound use new sound file
+berra_50bmg_belt_apit→berra_50bmg_belt_fmjt(Unused asset rename)
+  hideinmenus true→N/A
+  ItemContainer SpawnWithId berra_300nato_m118→berra_50bmg_m33
+  ItemContainer Containable berra_300nato_m118→berra_50bmg_m33
+  StatusEffect OnUse SpawnItem berra_300nato_m118→berra_50bmg_m33
+tes20mag_ap
+  hideinmenus true→N/A
+tes20mag_arr
+  hideinmenus true→N/A
+  Fabricate now craftable
+tes20mag_he
+  hideinmenus true→N/A
+tes20mag_ll
+  hideinmenus true→N/A
+  Fabricate now craftable
+brokenarrow_transmitter_normal
+  No longer commented
+powdercapsule_vx
+  Deconstruct time N/A→2
+  StatusEffect OnBroken delay N/A→1
+  StatusEffect OnBroken Remove→Dropitem
+powdercapsule_med
+  Deconstruct time N/A→2
+  StatusEffect OnBroken delay N/A→1
+  StatusEffect OnBroken Remove→Dropitem
+berra_mk153
+  Sound use new sound file
+  Sound volume N/A →2
+  RangedWeapon ParticleEmitter particleamount 1→2
+mk153_heat_warhead
+  Projectile launchimpulse 40→30
+mk153_theat_warhead
+  Projectile launchimpulse 30→25
+mk153_inc_warhead
+  Projectile launchimpulse 40→30
+mk153_he_warhead
+  Projectile launchimpulse 40→30
+mk153_bdm_warhead
+  Projectile launchimpulse 25→20
+  StatusEffect OnImpact Delay 0.03→0.04
+drl3_heat_warhead
+  Projectile launchimpulse 60→25
+
+V1.1.2
+gear.xml +berra_obj227aflamethrower
+
+V1.1.1
+mk153_bdm_warhead
+ Added a <Remove /> to fix a issue that it may lead to multiple hits and leads to unexpected performance
+
+V1.1.0(pre 2.0.0)
+gear.xml +berra_mk153
+gear.xml +berra_mk153_theat
+gear.xml +berra_mk153_inc
+gear.xml +berra_mk153_heat
+gear.xml +berra_mk153_dumb
+gear.xml +berra_mk153_bdm
+gear.xml +berra_mk153_he
+gear.xml +tend_heat_self
+drl3_dumb_warhead
+  Projectile spread 0.1→0.0
+  MaxTargetsToHit 1→N/A
+  Attack Affliction gunshotwound 8→24
+  Attack Affliction bleeding 2→12
+  Attack Affliction lacerations 6→18
+  Attack Affliction stun 3→2
+  impacttolerance N/A→0
+  Body height 14→30
+  Body density 30→0
+drl3_inc_warhead
+  Projectile spread 0.1→0.0
+  MaxTargetsToHit 1→N/A
+  Explosion range 300→350
+  Explosion Affliction explosiondamage 20→60
+  Explosion Affliction explosiondamage dividebylimbcount true→false
+  Explosion Affliction burn N/A→20
+  Fire 300→500
+  impacttolerance N/A→0
+  Body density 30→0
+  Body height 14→30
+drl3_fab_warhead
+  Projectile spread 0.1→0.0
+  MaxTargetsToHit 1→N/A
+  StatusEffect OnlyInside Explosion range 450→500
+  StatusEffect OnlyInside Explosion Affliction explosiondamage 30→15
+  Explosion Affliction explosiondamage dividebylimbcount true→false
+  StatusEffect OnlyInside Explosion Affliction burn 35→50
+  StatusEffect OnlyInside Explosion Affliction oxygenlow 15→60
+  impacttolerance N/A→0
+  Body density 30→0
+  Body height 14→30
+drl3_heat_warhead
+  Holdable→Pickable
+  launchimpulse 0→60
+  Explosion range 120→130
+  StatusEffect OnlyInside Explosion Affliction explosiondamage 50→15
+  Explosion Affliction explosiondamage dividebylimbcount true→false
+  StatusEffect OnlyInside Explosion Affliction explosiondamage 45→50
+  impacttolerance N/A→0
+  Body density 30→0
+  Body height 10→20
+  Body width 170→40
+berra_drl3_dumb
+  tag +tubeitem
+  spread 5→1
+  Added Dropitem to allow auto drop after launch
+  LaunchImpulse 60→5
+berra_drl3_inc
+  tag +tubeitem
+  spread 5→1
+  Added Dropitem to allow auto drop after launch
+  LaunchImpulse 60→5
+berra_drl3_fab
+  tag +tubeitem
+  spread 5→1
+  Added Dropitem to allow auto drop after launch
+  LaunchImpulse 60→5
+berra_drl3_heat
+  tag +tubeitem
+  spread 5→1
+  Added Dropitem to allow auto drop after launch
+  LaunchImpulse 50→5
+univ_heat_self
+  Attack Affliction lacerations 15→60
+respiratoryarrest_poisonsource
+  showinhealthscannerthreshold 999→0
+organdamage_poisonsource
+  showinhealthscannerthreshold 999→0
+neurologicaldisorder_poisonsource
+  showinhealthscannerthreshold 999→0
+skinburn_poisonsource
+  showinhealthscannerthreshold 999→0
+eyedamage_poisonsource
+  showinhealthscannerthreshold 999→0
+pulmonaryedema_poisonsource
+  showinhealthscannerthreshold 999→0
+unconscious_poisonsource
+  showinhealthscannerthreshold 999→0
+tear_poisonsource
+  showinhealthscannerthreshold 999→0
+col_cac2
+  StatusEffect medical OnSuccess duration 30→15
+  StatusEffect medical OnFailure delay 20 ReduceAffliction respiratoryarrest_poisonsource 3→N/A
+  StatusEffect medical OnFailure delay 20 ReduceAffliction organdamage_poisonsource 3→N/A
+  StatusEffect medical OnFailure delay 20 ReduceAffliction neurologicaldisorder_poisonsource 2.5→N/A
+  StatusEffect medical OnFailure delay 20 ReduceAffliction skinburn_poisonsource 3→N/A
+  StatusEffect medical OnFailure delay 20 radiationsickness N/A→1
+  StatusEffect medical OnFailure duration 20 ReduceAffliction vxpoisoning_displayer N/A→4
+  StatusEffect medical OnFailure duration 20 ReduceAffliction phosgenepoisoning_displayer N/A→4
+  StatusEffect medical OnFailure duration 20 ReduceAffliction mustardpoisoning_displayer N/A→4
+berra_mk153_dumb
+  smallitem→mediumitem
+berra_mk153_inc
+  smallitem→mediumitem
+berra_mk153_heat
+  smallitem→mediumitem
+berra_mk153_theat
+  smallitem→mediumitem
+berra_mk153_bdm
+  smallitem→mediumitem
+berra_mk153_he
+  smallitem→mediumitem
+
+
+V1.0.12
+Updated mission related texts(SC only)
+
+V1.0.11
+berra_obj227flamethrower
+  StatusEffect OnSuccess Affliction burn 7→3.5
+  StatusEffect OnFailure Affliction burn 0.8→2
+  StatusEffect OnFailure Affliction burn probability 0.4→0.8
+  StatusEffect OnUse Contained Condition -1.0→-1.5
+  combatPriority 80→100
+  fireprobability 0.7→0.6
+  firedamage 50→60
+  Fabricate item requirement physicorium N/A→3
+  RepairTool range 600→750
+  RequiredSkill 40→60
+  added skill hint
+
+V1.0.10
+  Fabricate recycleitem RequiredItem obj227_fueltanks maxcondition N/A→0.0
+
+V1.0.9
+powdercapsule_vx
+  PreferredContainer spawnprobability 0.02→0.01
+bz_chemdist_throwable
+  Fabricate item requirement phosgenecanister→bzcanister
+powdercapsule_med
+  ReduceAffliction burn N/A→150
+vxemitter_leak
+  StatusEffect NearbyCharacters range 500→450
+vxemitter_weapon
+  StatusEffect NearbyCharacters range 800→600
+  Sound range 600→700
+mustardemitter_leak
+  StatusEffect NearbyCharacters range 500→450
+mustardemitter_weapon
+  StatusEffect NearbyCharacters range 750→550
+bzemitter_leak
+  StatusEffect NearbyCharacters range 500→450
+  Sound range 500→550
+bzemitter_weapon
+  Sound range 600→650
+csemitter_leak
+  StatusEffect NearbyCharacters range 600→550
+  Sound range 500→600
+csemitter_weapon
+  StatusEffect NearbyCharacters range 800→600
+  Sound range 600→700
+phosgeneemitter_leak
+  StatusEffect NearbyCharacters range 500→400
+phosgeneemitter_weapon
+  StatusEffect NearbyCharacters range 800→600
+
+V1.0.8
+berra_cbrn3a
+  Sound range 20→N/A
+berra_etps7b
+  Sound range 20→N/A
+drl3_dumb_warhead
+  Projectile penetration 0.01→1
+
+V1.0.7
+berra_cbrn3a
+  Affliction APR Moved to a separated statuseffect
+berra_etps7b
+  Affliction APR Moved to a separated statuseffect
+  Affliction CBRNsuit Moved to a separated statuseffect
+
+V1.0.6
+tsm_d6
+  OnSuccess ReduceAffliction bioinfection 22→N/A
+  OnSuccess ReduceAffliction triton_9C N/A→20
+  OnSuccess ReduceAffliction triton_7L N/A→10
+  OnSuccess ReduceAffliction alieninfection N/A→15
+  OnSuccess Affliction burn 0.2→0.15
+  OnFailure ReduceAffliction bioinfection 10→N/A
+  OnFailure ReduceAffliction triton_9C N/A→10
+  OnFailure ReduceAffliction triton_7L N/A→5
+  OnFailure ReduceAffliction alieninfection N/A→5
+  OnFailure Affliction burn 0.5→0.6
+  OnFailure delay=0 Affliction radiationsickness 0.8→N/A
+  OnFailure delay=20 Affliction radiationsickness 0.8→0.5
+  MeleeWeapon holdangle 220→0
+berra_xtg12
+  OnSuccess ReduceAffliction triton_9C N/A→10
+  OnFailure ReduceAffliction triton_9C N/A→6
+  MeleeWeapon holdangle 220→0
+col_cac2
+  MeleeWeapon holdangle 220→0
+berra_etps7b
+  damagemodifier triton_7L N/A→0.5
+  damagemodifier radiationsickness N/A→0.5
+berra_bio2
+  damagemodifier triton_7L N/A→0.6
+
+V1.0.5
+fixed breathing sound bugs
+berra_etps7b
+  Sound volume 0.2→0.5
+  Sound lowpass N/A→0.2
+berra_cbrn3a
+  Sound volume 0.2→0.5
+berra_bio2
+  Sound lowpass N/A→0.05
+  damagemodifier acidburn probabilitymultiplier 0.2→0.0
+obj227_fueltanks
+  Fabricate item requirement weldingfueltank mincondition 0.9→N/A
+cs_chemdist_throwable
+  Fabricate item requirement phosgenecanister→cscanister
+tes20mag_arr
+  Fabricate NO LONGER CRAFTABLE(TEMP)
+tes20mag_ll
+    Fabricate NO LONGER CRAFTABLE(TEMP)
+A various of items(most mags)
+  various adjustments to fix fabricate related bug
+
+V1.0.4
+localization +Mission pack related description and name
+fixed v1.0.3 bugs
+berra_etps7b
+  Sound volume 0.4→0.2
+  Sound range 50→20
+berra_cbrn3a
+  Sound volume 0.4→0.2
+  Sound range 50→20
+berra_bio2
+  added MISSING English description
+  adjusted description
+
+V1.0.3
+berra_bio2
+  added description
+  use new item sprite
+  damagemodifier bleeding 0.35→0.2
+berra_etps7b
+  use new item sprite
+  damagemodifier bleeding 0.3→0.25
+  sprite Waist removed depthlimb="Jaw"
+unconscious_poisonsource
+  Affliction stun 1.4→1.8
+
+V1.0.2
+berra_drl3_heat:
+  skilled spread 10→5
+  unskilled spread 20→25
+berra_drl3_fab:
+  skilled spread 10→5
+  unskilled spread 20→25
+berra_drl3_dumb
+  skilled spread 10→5
+  unskilled spread 20→25
+berra_drl3_inc
+  skilled spread 10→5
+  unskilled spread 20→25
+
+V1.0.1
+berra_obj227flamethrower:
+  skill requirement: weapon 35→40(both)
+berra_drl3_inc:
+  skill requirement: weapon N/A→30(use)
+berra_drl3_fab:
+  skill requirement: weapon N/A→30(use)
+berra_drl3_heat:
+  skill requirement: weapon N/A→30(use)
+berra_drl3_dumb:
+  skill requirement: weapon N/A→30(use)
+berra_m4_beowulf:
+  skill requirement: weapon N/A→70(use)
+  reputation requirement: coalition 60→coalition 75
+ quality: N/A → Firepower 0.2
+berra_m4_458socom: 
+  skill requirement: weapon 70→55(both)
+  reputation requirement: coalition 60→coalition 70
+  quality: N/A → Firepower 0.2
+berra_m110:
+  skill requirement: weapon 70→65(both)
+  quality: N/A → Firepower 0.2
+berra_cbrn3a:[log was added in v1.0.2 changelog]
+  SubContainer N/A → 3 slots+2x stack smallitem/mediumitem(excluded:mobilecontainer,weapon)
+  SubContainer N/A → 1 slots+1x stack smallitem/mediumitem/weapon(excluded:mobilecontainer)

@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Override> 
+  <Items>
+    <Item name="奇迹之海重型防毒头盔" identifier="tsm_helmet_respirator" subcategory="TSM" aliases="ballistichelmet" category="Equipment" tags="smallitem,clothing,mobileradio" cargocontaineridentifier="tsm_metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.15">
+      <Deconstruct time="10">
+        <Item identifier="titaniumaluminiumalloy" amount="2"/>
+      </Deconstruct>
+      <Sprite name="respirator Helmet icon" texture="%ModDir:2953749635%/Jobgear/helmet.png" sourcerect="871,1138,235,246" depth="0.58" origin="0.5,0.5" />
+      <Body radius="30" density="50" />
+      <Wearable slots="Any,Head" armorvalue="40.0" msg="ItemMsgPickUpSelect">
+        <damagemodifier afflictionidentifiers="burn" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
+        <damagemodifier afflictionidentifiers="blunttrauma" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+        <damagemodifier afflictionidentifiers="lacerations" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+        <damagemodifier afflictionidentifiers="gunshotwound" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+        <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
+        <damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+        <damagemodifier afflictionidentifiers="triton_7L" armorsector="0.0,360.0" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
+        <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+        <damagemodifier afflictionidentifiers="radiationsickness" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+        <sprite name="respirator Helmet" texture="%ModDir:2953749635%/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.27" hidelimb="true" alphaclipotherwearables="false" hideotherwearables="true" hidewearablesoftype="Hair" sourcerect="871,1138,235,246" origin="0.5,0.53"/>
+        <StatusEffect type="OnWearing" targettype="Contained" targets="berra_filiter" Condition="-0.2" />
+        <StatusEffect type="OnWearing" targettype="Contained" targets="tsm_filiter" Condition="-0.5" />
+        <StatusEffect type="OnWearing" targettype="Contained" targets="col_filiter" Condition="-0.8" />
+        <StatusEffect type="OnWearing" targettype="Contained" targets="sep_filiter" Condition="-0.8" />
+        <StatusEffect type="OnWearing" targettype="Contained" targets="oxygensource" Condition="-1.0" />
+        <StatusEffect type="OnWearing" target="Character" disabledeltatime="true" ObstructVisionAmount="0.3" setvalue="true" comparison="And">
+          <Conditional IsLocalPlayer="True"/>
+          <RequiredItems items="maskfilter" type="Contained" />
+          <Sound file="%ModDir%/Jobgear/Under_Masks/maskedbreath.ogg" volume="0.3" loop="true" />
+        </StatusEffect>
+        <StatusEffect type="OnWearing" target="Character" disabledeltatime="true" setvalue="true">
+          <Affliction identifier="APR" amount="10" />
+          <RequiredItems items="maskfilter" type="Contained" />
+        </StatusEffect>
+        <StatusEffect type="OnWearing" target="Character" OxygenAvailable="1000" disabledeltatime="true" setvalue="true">
+          <Affliction identifier="APR" amount="10" />
+          <RequiredItems items="oxygensource" type="Contained" />
+        </StatusEffect>
+        <ItemContainer capacity="1" maxstacksize="1" containedstateindicatorslot="0" containedstateindicatorstyle="tank" >
+          <Containable items="maskfilter,oxygensource" />
+        </ItemContainer>
+      </Wearable>
+    </Item>
+    <SulphuricAcid identifier="sulphuricacid" category="Medical" maxstacksize="32" maxstacksizecharacterinventory="8" cargocontaineridentifier="mediccrate" description="" Tags="smallitem,chem,poison" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
+      <PreferredContainer secondary="wrecktoxcab,abandonedtoxcab,piratetoxcab" spawnprobability="0.5" />
+      <PreferredContainer primary="toxcab" secondary="toxcontainer"/>
+      <Price baseprice="80">
+        <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.25" />
+        <Price storeidentifier="merchantcity" sold="false" multiplier="1.25" />
+        <Price storeidentifier="merchantresearch" multiplier="0.9" minavailable="4" />
+        <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="2" />
+        <Price storeidentifier="merchantmine" multiplier="1.1" sold="false"/>
+        <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="2" />
+      </Price>
+      <Fabricate suitablefabricators="medicalfabricator" requiredtime="120">
+        <RequiredSkill identifier="medical" level="85" />
+        <RequiredItem identifier="tsm_sulphur" amount="4"/>
+      <RequiredItem identifier="oxygentank" amount="2" usecondition="true" />
+      </Fabricate>
+      <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="320,768,64,64" origin="0.5,0.5" />
+      <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="346,452,33,60" depth="0.6" origin="0.5,0.5" />
+      <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
+      <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" holdangle="30" aimable="false" msg="ItemMsgPickUpSelect">
+        <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true">
+          <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="UseTarget" duration="5.0">
+          <Affliction identifier="acidburn" amount="3" />
+        </StatusEffect>
+        <StatusEffect type="OnBroken" target="This">
+          <Remove />
+        </StatusEffect>
+      </Holdable>
+    </SulphuricAcid>
+    <MedicalKits name="增强型医疗包" identifier="tsm_medicalkits_s" subcategory="TSM" category="Medical" Tags="smallitem,medical" maxstacksize="6" maxstacksizecharacterinventory="2" useinhealthinterface="true" cargocontaineridentifier="mediccrate" description="" scale="0.25" impactsoundtag="impact_soft" RequireAimToUse="True">
+      <Upgrade gameversion="0.10.0.0" scale="0.25" />
+      <PreferredContainer secondary="supplycab" minamount="1" maxamount="1" spawnprobability="0.05" notcampaign="true" />
+      <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.05" />
+      <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="1" spawnprobability="0.05" />
+      <PreferredContainer secondary="outpostmedcab" minamount="1" maxamount="1" spawnprobability="0.05" />
+      <PreferredContainer secondary="outpostmedcompartment" amount="1" spawnprobability="0.1" />
+      <PreferredContainer primary="medcab" secondary="medcontainer" />
+      <Price baseprice="605" maxavailable="3">
+        <Price storeidentifier="merchantoutpost" />
+        <Price storeidentifier="merchantcity" />
+        <Price storeidentifier="merchantresearch" />
+        <Price storeidentifier="merchantmilitary" />
+        <Price storeidentifier="merchantmine" />
+        <Price storeidentifier="merchantmedical" multiplier="0.9" />
+      </Price>
+      <Fabricate suitablefabricators="medicalfabricator" requiredtime="10" amount="1">
+        <RequiredSkill identifier="medical" level="50" />
+        <RequiredItem identifier="organicfiber" amount="3" />
+        <RequiredItem identifier="opium" amount="3" />
+        <RequiredItem identifier="sodium" amount="3" />
+        <RequiredItem identifier="chlorine" amount="3" />
+        <RequiredItem identifier="stabilozine" amount="3" />
+      </Fabricate>
+      <Deconstruct time="2" />
+      <SuitableTreatment type="bleeding" suitability="35" />
+      <SuitableTreatment type="burn" suitability="35" />
+      <SuitableTreatment type="bloodloss" suitability="50" />
+      <SuitableTreatment type="damage" suitability="60" />
+      <InventoryIcon texture="%ModDir:2953749635%/medical/medical.png" sourcerect="222,112,196,128" origin="0.5,0.5" />
+      <Sprite texture="%ModDir:2953749635%/medical/medical.png" sourcerect="222,112,196,128" depth="0.6" origin="0.5,0.5" />
+      <Body width="25" height="40" density="10.05" />
+      <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="10" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
+        <RequiredSkill identifier="medical" level="70" />
+        <StatusEffect type="OnUse" tags="medical" Condition="-40.0" target="This" disabledeltatime="true">
+          <Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
+          <Sound file="Content/Items/Medical/Bandage2.ogg" range="500" />
+        </StatusEffect>
+        <StatusEffect tags="medical" type="OnSuccess" target="UseTarget,This">
+          <Affliction identifier="tsm_aftermath_success" strength="30" />
+        </StatusEffect>
+        <StatusEffect tags="medical" type="OnFailure" target="UseTarget,This">
+          <Affliction identifier="tsm_aftermath_failure" strength="40" />
+        </StatusEffect>
+        <StatusEffect tags="medical" type="OnSuccess" target="UseTarget,This" duration="10" delay="1">
+          <ReduceAffliction type="damage" amount="4" />
+          <ReduceAffliction type="burn" amount="4" />
+          <ReduceAffliction type="bleeding" amount="4" />
+          <SuitableTreatment type="bloodloss" amount="4" />
+      <ReduceAffliction identifier="skinburn_biosource" amount="4" />
+          <ReduceAffliction identifier="organdamage_poisonsource" amount="3" />
+      <ReduceAffliction identifier="organdamage_biosource" amount="3" />
+          <ReduceAffliction identifier="neurologicaldisorder_poisonsource" amount="2" />
+          <ReduceAffliction identifier="skinburn_poisonsource" amount="3" />
+        </StatusEffect>
+        <StatusEffect tags="medical" type="OnFailure" target="UseTarget,This" duration="10" delay="1">
+          <ReduceAffliction type="damage" amount="3" />
+          <ReduceAffliction type="burn" amount="3" />
+          <ReduceAffliction type="bleeding" amount="3" />
+      <ReduceAffliction identifier="skinburn_biosource" amount="3" />
+          <ReduceAffliction identifier="organdamage_poisonsource" amount="2" />
+      <ReduceAffliction identifier="organdamage_biosource" amount="2" />
+          <ReduceAffliction identifier="neurologicaldisorder_poisonsource" amount="1" />
+          <ReduceAffliction identifier="skinburn_poisonsource" amount="2" />
+          <SuitableTreatment type="bloodloss" amount="3" />
+        </StatusEffect>
+        <StatusEffect type="OnBroken" target="This">
+          <Remove />
+        </StatusEffect>
+      </Holdable>
+      <SkillRequirementHint identifier="medical" level="70" />
+    </MedicalKits>
+    <Item name="奇迹之海氚核心包" identifier="tsm_triton_bag" category="Material" subcategory="TSM" Tags="smallitem,tsm_danger_item" maxstacksize="3" canbepicked="true" cargocontaineridentifier="metalcrate" isdangerous="true" scale="0.5" impactsoundtag="impact_metal_light">
+      <PreferredContainer secondary="wreckmedcab,wrecksecarmcab" minamount="1" maxamount="1" spawnprobability="0.01" />
+      <InventoryIcon texture="%ModDir:2953749635%/minerals+items+tools/items.png" sourcerect="52,1257,42,40" />
+      <Sprite texture="%ModDir:2953749635%/minerals+items+tools/items.png" sourcerect="52,1257,42,40" depth="0.55" origin="0.5,0.5" />
+      <Body width="50" height="15" density="10" />
+      <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" holdangle="10" msg="ItemMsgPickUpSelect">
+        <StatusEffect type="Always" target="NearbyCharacters,This" range="200" interval="3.5">
+          <Conditional hastag="neq tsm_danger_box" targetcontainer="true" />
+          <Affliction identifier="triton_burn" amount="25" probability="0.8" />
+        </StatusEffect>
+        <StatusEffect type="OnBroken" target="This">
+          <Remove />
+        </StatusEffect>
+      </Holdable>
+    </Item>
+    <Item identifier="dirtybomb" category="Weapon" Tags="smallitem,explosive,separatists" allowasextracargo="true" maxstacksize="8" Scale="0.5" impactsoundtag="impact_soft">
+      <PreferredContainer primary="secarmcab" secondary="armcab"/>
+      <Price baseprice="240" sold="false">
+        <Price storeidentifier="merchantoutpost" multiplier="1.25" minavailable="0" maxavailable="2" sold="true">
+          <Reputation faction="separatists" min="50"/>
+        </Price>
+        <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="1" maxavailable="4" sold="true">
+          <Reputation faction="separatists" min="50"/>
+        </Price>
+        <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="4" maxavailable="8" sold="true">
+          <Reputation faction="separatists" min="50"/>
+        </Price>
+        <Price storeidentifier="merchantresearch" multiplier="1.25" />
+        <Price storeidentifier="merchantmine" />
+      </Price>
+      <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true">
+        <RequiredSkill identifier="weapons" level="30" />
+        <RequiredItem identifier="uex" />
+        <RequiredItem identifier="uranium" />
+        <RequiredItem identifier="depletedfuel" />
+      </Fabricate>
+      <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="448,640,64,64" origin="0.5,0.5" />
+      <Sprite texture="Content/Items/JobGear/TalentGear.png" depth="0.8" sourcerect="202,1,47,32" origin="0.5,0.5" />
+      <Body width="45" height="30" density="20" />
+      <Throwable characterusable="false" slots="Any,RightHand,LeftHand" canbecombined="true" removeoncombined="true" throwforce="3.5" aimpos="35,-10" msg="ItemMsgPickUpSelect">
+        <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
+        <StatusEffect type="OnBroken" target="This">
+          <sound file="Content/Items/Weapons/ExplosionMedium1.ogg" range="5000" />
+          <sound file="Content/Items/Weapons/ExplosionMedium2.ogg" range="5000" />
+          <sound file="Content/Items/Weapons/ExplosionMedium3.ogg" range="5000" />
+          <ParticleEmitter particle="fixfoam" anglemax="360" velocitymin="4000" velocitymax="4000" particlespersecond="64" colormultiplier="50,150,50" />
+          <Explosion range="150.0" ballastfloradamage="50" structuredamage="90" itemdamage="250" force="5" severlimbsprobability="0.25" debris="true" decal="explosion" decalsize="0.25">
+            <Affliction identifier="explosiondamage" strength="50" />
+            <Affliction identifier="burn" strength="5" probability="0.2" dividebylimbcount="false"/>
+            <Affliction identifier="bleeding" strength="30" probability="0.05" dividebylimbcount="false"/>
+            <Affliction identifier="stun" strength="3" />
+          </Explosion>
+          <SpawnItem identifier="dirtybombafteremitter" spawnposition="This" />
+            <Remove />
+        </StatusEffect>
+        <StatusEffect type="OnBroken" target="This">
+          <sound file="Content/Items/Weapons/ExplosionDebris5.ogg" range="3500" />
+        </StatusEffect>
+      </Throwable>
+    </Item>
+    <Item identifier="dirtybombafteremitter" Scale="0.5" tags="" sonarsize="20" hideinmenus="true">
+      <AiTarget sightrange="1000.0" soundrange="1000" sonardisruption="10" static="True" />
+      <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+      <ItemComponent>
+        <StatusEffect type="Always" target="This" condition="-25" />
+        <StatusEffect type="Always" target="NearbyCharacters" range="1600" interval="2" disabledeltatime="true">
+          <Affliction identifier="radiationsickness" strength="20" />
+      <!--<Affliction identifier="radiological_contamination" strength="20" />-->
+        </StatusEffect>
+        <StatusEffect type="Always" target="NearbyCharacters" range="1200" interval="2" disabledeltatime="true">
+          <Affliction identifier="radiationsickness" strength="40" />
+      <!--<Affliction identifier="radiological_contamination" strength="40" />-->
+        </StatusEffect>
+        <StatusEffect type="Always" target="NearbyCharacters" range="800" interval="2" disabledeltatime="true">
+          <Affliction identifier="radiationsickness" strength="100" />
+      <!--<Affliction identifier="radiological_contamination" strength="100" />-->
+        </StatusEffect>
+        <StatusEffect type="OnBroken" target="This">
+          <Remove />
+        </StatusEffect>
+      </ItemComponent>
+    </Item>
+  </Items>
+</Override>

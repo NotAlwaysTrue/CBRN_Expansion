@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Missions>
+  <AbandonedOutpostMission identifier="berra_fireeaters_outpostdestory" tags="abandonedoutpost" achievementidentifier="abandonedoutpostdestroyhumans" type="OutpostDestroy" reward="18000" difficulty="5" commonness="60" allowretry="true" targetitem="reactor" unhideentitysubcategories="abandonedhuman" minleveldifficulty="40">
+    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,0,256,256" color="214,50,48" />
+    <LocationType identifier="Abandoned" />
+    <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
+    <Characters>
+      <Character identifier="fireeater_rifleman" from="HAZMAT_Unit_Fiereaters" />
+      <Character identifier="fireeater_rifleman_e" from="HAZMAT_Unit_Fiereaters" />
+      <Character identifier="fireeater_rifleman_e" from="HAZMAT_Unit_Fiereaters" />
+      <Character identifier="fireeater_ce" from="HAZMAT_Unit_Fiereaters" multiplayeronly="true" />
+      <Character identifier="fireeater_ce" from="HAZMAT_Unit_Fiereaters" />
+      <Character identifier="fireeater_ce_e" from="HAZMAT_Unit_Fiereaters" />
+      <Character identifier="fireeater_ce_e" from="HAZMAT_Unit_Fiereaters" />
+      <Character identifier="fireeater_sl_heavy" from="HAZMAT_Unit_Fiereaters" spawnpointtags="nest" />
+      <Character identifier="fireeater_rifleman" from="HAZMAT_Unit_Fiereaters" spawnpointtags="nest" />
+      <Character identifier="fireeater_rifleman_e" from="HAZMAT_Unit_Fiereaters" spawnpointtags="nest" multiplayeronly="true" />
+      <Character identifier="fireeater_ce_e" from="HAZMAT_Unit_Fiereaters" moduleflags="crewmodule" />
+      <Character identifier="fireeater_ce" from="HAZMAT_Unit_Fiereaters" moduleflags="crewmodule" />
+      <Character identifier="fireeater_ft_e" from="HAZMAT_Unit_Fiereaters" moduleflags="researchmodule" multiplayeronly="true" />
+      <Character identifier="fireeater_rifleman" from="HAZMAT_Unit_Fiereaters" moduleflags="engineeringmodule" />
+      <Character identifier="fireeater_rifleman_e" from="HAZMAT_Unit_Fiereaters" moduleflags="securitymodule" />
+      <Character identifier="fireeater_rifleman" from="HAZMAT_Unit_Fiereaters" moduleflags="adminmodule" multiplayeronly="true" />
+      <Character identifier="fireeater_rifleman_e" from="HAZMAT_Unit_Fiereaters" moduleflags="adminmodule" />
+      <Character identifier="fireeater_sl_heavy_e" from="HAZMAT_Unit_Fiereaters" moduleflags="adminmodule" multiplayeronly="true" />
+      <Character identifier="fireeater_sl" from="HAZMAT_Unit_Fiereaters" moduleflags="adminmodule" />
+      <Character identifier="fireeater_rifleman" from="HAZMAT_Unit_Fiereaters" moduleflags="AirLock" multiplayeronly="true" />
+      <Character identifier="fireeater_rifleman_e" from="HAZMAT_Unit_Fiereaters" moduleflags="AirLock" multiplayeronly="true" />
+      <Character identifier="fireeater_rifleman" from="HAZMAT_Unit_Fiereaters" moduleflags="AirLock" />
+      <Character identifier="fireeater_ft" from="HAZMAT_Unit_Fiereaters" moduleflags="AirLock" />
+    </Characters>
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_indestructible_wall" campaignonly="true" />
+    <message header="" text="" />
+  </AbandonedOutpostMission>
+  <AbandonedOutpostMission identifier="berra_fireeaters_assination" tags="abandonedoutpost" achievementidentifier="abandonedoutpostassassinate" type="OutpostDestroy" reward="18000" difficulty="5" commonness="60" allowretry="true" sonarlabel="" unhideentitysubcategories="abandonedhuman" minleveldifficulty="40">
+    <Icon texture="Content/UI/MissionIcons.png" sourcerect="0,0,256,256" color="214,50,48" />
+    <LocationType identifier="Abandoned" />
+    <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
+    <Characters>
+      <Character identifier="fireeater_rifleman" from="HAZMAT_Unit_Fiereaters" requirekill="true" />
+      <Character identifier="fireeater_rifleman" from="HAZMAT_Unit_Fiereaters" requirekill="true" />
+      <Character identifier="fireeater_rifleman_e" from="HAZMAT_Unit_Fiereaters" requirekill="true" />
+      <Character identifier="fireeater_ce" from="HAZMAT_Unit_Fiereaters" requirekill="true" />
+      <Character identifier="fireeater_ce_e" from="HAZMAT_Unit_Fiereaters" requirekill="true" />
+      <Character identifier="fireeater_ce_e" from="HAZMAT_Unit_Fiereaters" requirekill="true" />
+      <Character identifier="fireeater_sl" from="HAZMAT_Unit_Fiereaters" requirekill="true" multiplayeronly="true" />
+      <Character identifier="fireeater_rifleman" from="HAZMAT_Unit_Fiereaters" requirekill="true" />
+      <Character identifier="fireeater_rifleman" from="HAZMAT_Unit_Fiereaters" requirekill="true" />
+      <Character identifier="fireeater_ce" from="HAZMAT_Unit_Fiereaters" moduleflags="crewmodule" requirekill="true" />
+      <Character identifier="fireeater_ce_e" from="HAZMAT_Unit_Fiereaters" moduleflags="researchmodule" multiplayeronly="true" requirekill="true" />
+      <Character identifier="fireeater_sl_heavy_e" from="HAZMAT_Unit_Fiereaters" moduleflags="engineeringmodule" asfaraspossible="true" requirekill="true" multiplayeronly="true" />
+      <Character identifier="fireeater_rifleman" from="HAZMAT_Unit_Fiereaters" moduleflags="engineeringmodule" requirekill="true" />
+      <Character identifier="fireeater_rifleman" from="HAZMAT_Unit_Fiereaters" moduleflags="securitymodule" requirekill="true" />
+      <Character identifier="fireeater_rifleman_e" from="HAZMAT_Unit_Fiereaters" moduleflags="adminmodule" asfaraspossible="true" requirekill="true" multiplayeronly="true" />
+      <Character identifier="fireeater_rifleman_e" from="HAZMAT_Unit_Fiereaters" moduleflags="adminmodule" asfaraspossible="true" requirekill="true" />
+      <Character identifier="fireeater_sl_heavy" from="HAZMAT_Unit_Fiereaters" moduleflags="adminmodule" asfaraspossible="true" requirekill="true" multiplayeronly="true" />
+      <Character identifier="fireeater_sl_e" from="HAZMAT_Unit_Fiereaters" moduleflags="adminmodule" asfaraspossible="true" requirekill="true" />
+      <Character identifier="fireeater_rifleman" from="HAZMAT_Unit_Fiereaters" moduleflags="AirLock" multiplayeronly="true" requirekill="true" />
+      <Character identifier="fireeater_rifleman_e" from="HAZMAT_Unit_Fiereaters" moduleflags="AirLock" multiplayeronly="true" requirekill="true" />
+      <Character identifier="fireeater_rifleman_e" from="HAZMAT_Unit_Fiereaters" moduleflags="AirLock" requirekill="true" />
+      <Character identifier="fireeater_ft" from="HAZMAT_Unit_Fiereaters" moduleflags="AirLock" requirekill="true" />
+      <Character identifier="fireeater_ft_e" from="HAZMAT_Unit_Fiereaters" moduleflags="AirLock" requirekill="true" />
+    </Characters>
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_indestructible_wall" campaignonly="true" />
+    <message header="" text="" />
+  </AbandonedOutpostMission>
+  <AbandonedOutpostMission identifier="berra_undermasks_outpostdestory" tags="abandonedoutpost" achievementidentifier="abandonedoutpostdestroyhumans" type="OutpostDestroy" reward="18000" difficulty="5" commonness="20" allowretry="true" targetitem="reactor" unhideentitysubcategories="abandonedhuman" minleveldifficulty="40">
+    <Icon texture="Content/UI/MissionIcons.png" sourcerect="512,256,256,256" color="214,50,48" />
+    <LocationType identifier="Abandoned" />
+    <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
+    <Characters>
+      <Character identifier="undermask_rifleman" from="HAZMAT_Unit_Undermasks" />
+      <Character identifier="undermask_rifleman_e" from="HAZMAT_Unit_Undermasks" />
+      <Character identifier="undermask_marksman" from="HAZMAT_Unit_Undermasks" />
+      <Character identifier="undermask_ce" from="HAZMAT_Unit_Undermasks" />
+      <Character identifier="undermask_ce_e" from="HAZMAT_Unit_Undermasks" />
+      <Character identifier="undermask_ce_e" from="HAZMAT_Unit_Undermasks" spawnpointtags="nest" />
+      <Character identifier="undermask_rifleman" from="HAZMAT_Unit_Undermasks" spawnpointtags="nest" />
+      <Character identifier="undermask_marksman" from="HAZMAT_Unit_Undermasks" spawnpointtags="nest" />
+      <Character identifier="undermask_ce" from="HAZMAT_Unit_Undermasks" moduleflags="crewmodule" />
+      <Character identifier="undermask_ce" from="HAZMAT_Unit_Undermasks" moduleflags="researchmodule" multiplayeronly="true" />
+      <Character identifier="undermask_ce_e" from="HAZMAT_Unit_Undermasks" moduleflags="crewmodule" />
+      <Character identifier="undermask_ce_e" from="HAZMAT_Unit_Undermasks" moduleflags="researchmodule" multiplayeronly="true" />
+      <Character identifier="undermask_rifleman" from="HAZMAT_Unit_Undermasks" moduleflags="engineeringmodule" />
+      <Character identifier="undermask_marksman_e" from="HAZMAT_Unit_Undermasks" moduleflags="securitymodule" />
+      <Character identifier="undermask_rifleman" from="HAZMAT_Unit_Undermasks" moduleflags="adminmodule" multiplayeronly="true" />
+      <Character identifier="undermask_rifleman_e" from="HAZMAT_Unit_Undermasks" moduleflags="adminmodule" />
+      <Character identifier="undermask_sl_heavy" from="HAZMAT_Unit_Undermasks" moduleflags="adminmodule" multiplayeronly="true" />
+      <Character identifier="undermask_sl" from="HAZMAT_Unit_Undermasks" moduleflags="adminmodule" />
+      <Character identifier="undermask_sl_heavy_e" from="HAZMAT_Unit_Undermasks" moduleflags="adminmodule" multiplayeronly="true" />
+      <Character identifier="undermask_sl_e" from="HAZMAT_Unit_Undermasks" moduleflags="adminmodule" />
+      <Character identifier="undermask_rifleman" from="HAZMAT_Unit_Undermasks" moduleflags="AirLock" multiplayeronly="true" />
+      <Character identifier="undermask_rifleman_e" from="HAZMAT_Unit_Undermasks" moduleflags="AirLock" multiplayeronly="true" />
+      <Character identifier="undermask_marksman_e" from="HAZMAT_Unit_Undermasks" moduleflags="AirLock" />
+    </Characters>
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_indestructible_wall" campaignonly="true" />
+    <message header="" text="" />
+  </AbandonedOutpostMission>
+  <AbandonedOutpostMission identifier="berra_undermasks_assination" tags="abandonedoutpost" achievementidentifier="abandonedoutpostassassinate" type="OutpostDestroy" reward="18000" difficulty="5" commonness="20" allowretry="true" sonarlabel="" unhideentitysubcategories="abandonedhuman" minleveldifficulty="40">
+    <Icon texture="Content/UI/MissionIcons.png" sourcerect="512,256,256,256" color="214,50,48" />
+    <LocationType identifier="Abandoned" />
+    <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
+    <Characters>
+      <Character identifier="undermask_rifleman" from="HAZMAT_Unit_Undermasks" requirekill="true" />
+      <Character identifier="undermask_rifleman_e" from="HAZMAT_Unit_Undermasks" requirekill="true" />
+      <Character identifier="undermask_marksman_e" from="HAZMAT_Unit_Undermasks" requirekill="true" />
+      <Character identifier="undermask_ce" from="HAZMAT_Unit_Undermasks" requirekill="true" />
+      <Character identifier="undermask_ce_e" from="HAZMAT_Unit_Undermasks" requirekill="true" />
+      <Character identifier="undermask_ce" from="HAZMAT_Unit_Undermasks" spawnpointtags="nest" requirekill="true" />
+      <Character identifier="undermask_rifleman" from="HAZMAT_Unit_Undermasks" spawnpointtags="nest" multiplayeronly="true" requirekill="true" />
+      <Character identifier="undermask_rifleman_e" from="HAZMAT_Unit_Undermasks" spawnpointtags="nest" multiplayeronly="true" requirekill="true" />
+      <Character identifier="undermask_rifleman_e" from="HAZMAT_Unit_Undermasks" spawnpointtags="nest" requirekill="true" />
+      <Character identifier="undermask_marksman" from="HAZMAT_Unit_Undermasks" spawnpointtags="nest" requirekill="true" />
+      <Character identifier="undermask_ce" from="HAZMAT_Unit_Undermasks" moduleflags="crewmodule" requirekill="true" />
+      <Character identifier="undermask_ce_e" from="HAZMAT_Unit_Undermasks" moduleflags="researchmodule" multiplayeronly="true" requirekill="true" />
+      <Character identifier="undermask_rifleman" from="HAZMAT_Unit_Undermasks" moduleflags="engineeringmodule" requirekill="true" />
+      <Character identifier="undermask_marksman" from="HAZMAT_Unit_Undermasks" moduleflags="securitymodule" requirekill="true" />
+      <Character identifier="undermask_rifleman" from="HAZMAT_Unit_Undermasks" moduleflags="adminmodule" multiplayeronly="true" requirekill="true" />
+      <Character identifier="undermask_rifleman" from="HAZMAT_Unit_Undermasks" moduleflags="adminmodule" requirekill="true" />
+      <Character identifier="undermask_sl_heavy_e" from="HAZMAT_Unit_Undermasks" moduleflags="adminmodule" multiplayeronly="true" asfaraspossible="true" requirekill="true" />
+      <Character identifier="undermask_sl_e" from="HAZMAT_Unit_Undermasks" moduleflags="adminmodule" asfaraspossible="true" requirekill="true" />
+      <Character identifier="undermask_sl" from="HAZMAT_Unit_Undermasks" requirekill="true" />
+      <Character identifier="undermask_sl_heavy" from="HAZMAT_Unit_Undermasks" requirekill="true" />
+      <Character identifier="undermask_rifleman" from="HAZMAT_Unit_Undermasks" moduleflags="AirLock" multiplayeronly="true" requirekill="true" />
+      <Character identifier="undermask_rifleman_e" from="HAZMAT_Unit_Undermasks" moduleflags="AirLock" multiplayeronly="true" requirekill="true" />
+      <Character identifier="undermask_rifleman_e" from="HAZMAT_Unit_Undermasks" moduleflags="AirLock" requirekill="true" />
+      <Character identifier="undermask_rifleman" from="HAZMAT_Unit_Undermasks" moduleflags="AirLock" requirekill="true" />
+      <Character identifier="undermask_marksman_e" from="HAZMAT_Unit_Undermasks" moduleflags="AirLock" requirekill="true" />
+    </Characters>
+    <TriggerEvent state="0" delay="5" eventidentifier="tsm_indestructible_wall" campaignonly="true" />
+    <message header="" text="" />
+  </AbandonedOutpostMission>
+</Missions>
