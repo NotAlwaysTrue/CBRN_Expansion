@@ -327,8 +327,6 @@
   <entitydescription.berra_M107Mag_m903>M107 Standard 10 round magazine, can adapt to M82A1 AMR \nM903 SLAP \nRare experimental ammunition</entitydescription.berra_M107Mag_m903>
   <entityname.berra_M107Mag_m1022>M82/M107 Magazine</entityname.berra_M107Mag_m1022>
   <entitydescription.berra_M107Mag_m1022>M107 Standard 10 round magazine, can adapt to M82A1 AMR \nM1022 \nHigh precision ammunition</entitydescription.berra_M107Mag_m1022>
-  <entityname.tsm_cbrnert>T.S.M Combat CBRN Suit</entityname.tsm_cbrnert>
-  <entitydescription.tsm_cbrnert>Heavy combat CBRN suti designed and produced by T.S.M. Everyting is perfect but weight and mobility. \nUsing hard materials and high toughness self sealing chemical fillers, it can effectively resist projectiles and protect users in chemical environments. Crush depth: 12500m \nMain equipment of T.S.M CBRN Emergcy Response Team \nYou are the last line against threats.</entitydescription.tsm_cbrnert>
   <entityname.standard_cbrnsuit_gray>Standard CBRN Suit(Gray)</entityname.standard_cbrnsuit_gray>
   <entitydescription.standard_cbrnsuit_gray>A CBRN Suit that meets the standards of the Coalition. May not provide good protection, but it is better than nothing</entitydescription.standard_cbrnsuit_gray>
   <entityname.berra_mk153_illumination>Mk153 SMAW Illumination</entityname.berra_mk153_illumination>
@@ -439,4 +437,10 @@
   <entityname.col_filiter>Coalition Standard Filiter</entityname.col_filiter>
   <entityname.sep_filiter>Separatists Homemade Filiter</entityname.sep_filiter>
   <entityname.breachhammer>Sledge Hammer</entityname.breachhammer>
+
+  <entityname.tsm_cbrnert_ai>T.S.M Combat CBRN Suit Mk.0 Mass Production</entityname.tsm_cbrnert_ai>
+  <entityname.tsm_cbrnert>T.S.M Combat CBRN Suit Mod.I Block 0</entityname.tsm_cbrnert>
+  <entitydescription.tsm_cbrnert>Heavy combat CBRN suit designed and produced by T.S.M. Everyting is perfect but weight and mobility. \nUsing hard materials and high toughness self sealing chemical liner, it can effectively resist projectiles and protect users in chemical environments. Crush depth: 12500m \nMain equipment of T.S.M CBRN Emergcy Response Team \nYou are the last line against threats.</entitydescription.tsm_cbrnert>
+  <entitydescription.tsm_cbrnert>The most advanced and expensive Heavy combat CBRN suit of T.S.M. Everything is perfect but weight, mobility and costs. \nUsing hard materials and high toughness self sealing chemical liner, it can effectively resist projectiles and protect users in chemical environments. Crush depth: 12500m \nExtremely rare, only equipped by very small amount of combat personal \nYou are the last line against threats.</entitydescription.tsm_cbrnert>
+
 </infotexts>

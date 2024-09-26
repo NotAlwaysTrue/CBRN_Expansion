@@ -352,8 +352,6 @@
   <entitydescription.berra_M107Mag_m903>携带10枚.50BMG的M107标准弹匣,也可用于M82A1反器材步枪 \nM903 脱壳穿甲弹 \n极其稀有的试验性脱壳穿甲弹</entitydescription.berra_M107Mag_m903>
   <entityname.berra_M107Mag_m1022>M82/M107通用弹匣</entityname.berra_M107Mag_m1022>
   <entitydescription.berra_M107Mag_m1022>携带10枚.50BMG的M107标准弹匣,也可用于M82A1反器材步枪 \nM1022 远程狙击弹 \n高精度弹药,能精确地干掉远距离的敌人</entitydescription.berra_M107Mag_m1022>
-  <entityname.tsm_cbrnert>奇迹之海重型核生化防护服</entityname.tsm_cbrnert>
-  <entitydescription.tsm_cbrnert>奇迹之海设计并制造的硬式重型核生化防护服,除了重量和机动性以外在任何方面都是一流 \n使用硬质材料和高韧性自封化学填料,能极好的抵挡射弹并在化学环境保护使用者,抗压12500m \n九州本部核生化应急响应小队的主要装备 \n你是对抗威胁最后的防线,而你的背后就是人类的未来</entitydescription.tsm_cbrnert>
   <entityname.standard_cbrnsuit_orange>标准CBRN防护服(橙色)</entityname.standard_cbrnsuit_orange>
   <entityname.standard_cbrnsuit_gray>标准CBRN防护服(灰色)</entityname.standard_cbrnsuit_gray>
   <entitydescription.standard_cbrnsuit_orange>一套符合联盟标准的核生化防护服,不能提供什么良好的防护,但是总比什么防护都没有强 \n能提供足够的接触保护</entitydescription.standard_cbrnsuit_orange>
@@ -469,4 +467,9 @@
   <entityname.col_filiter>联盟 标准过滤盒</entityname.col_filiter>
   <entityname.sep_filiter>分离主义 土质过滤盒</entityname.sep_filiter>
   <entityname.breachhammer>多用途破拆工具</entityname.breachhammer>
+  <entityname.tsm_cbrnert_ai>奇迹之海重型核生化防护服 Mk.0 大规模生产型</entityname.tsm_cbrnert_ai>
+  <entityname.tsm_cbrnert>奇迹之海重型核生化防护服 Mod.I 第0批次</entityname.tsm_cbrnert>
+  <entitydescription.tsm_cbrnert_ai>奇迹之海设计并制造的硬式重型核生化防护服,除了重量和机动性以外在任何方面都是一流 \n使用硬质材料和高韧性自封化学填料,能极好的抵挡射弹并在化学环境保护使用者,抗压12500m \n九州本部核生化应急响应小队的主要装备 \n你是对抗威胁最后的防线,而你的背后就是人类的未来</entitydescription.tsm_cbrnert_ai>
+  <entitydescription.tsm_cbrnert>奇迹之海最先进、最昂贵的硬式重型核生化防护服,除了重量、机动性和造价以外在任何方面都是一流 \n使用硬质材料和高韧性自封化学填料,能为使用者提供极其可靠的防护,抗压12500m \n产量极少,仅向少部分一线作战人员配发 \n你是对抗威胁最后的防线,而你的背后就是人类的未来</entitydescription.tsm_cbrnert>
+
 </infotexts>

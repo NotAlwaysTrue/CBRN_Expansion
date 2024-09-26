@@ -109,7 +109,7 @@
       </ItemContainer>
     </Wearable>
   </Item>
-  <Item identifier="tsm_cbrnert" subcategory="TSM" category="Equipment" tags="smallitem,deepdiving,cbrngear,heavycbrn" cargocontaineridentifier="metalcrate" scale="0.5" fireproof="true" waterproof="true" impactsoundtag="impact_soft">
+  <Item identifier="tsm_cbrnert" subcategory="TSM" category="Equipment" tags="smallitem,deepdiving,cbrngear,heavycbrn,divinggear_wearableindoors" cargocontaineridentifier="metalcrate" scale="0.5" fireproof="true" waterproof="true" impactsoundtag="impact_soft">
     <InventoryIcon texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suitcontained.png" sourcerect="0,255,128,173" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suititem.png" sourcerect="0,15,168,125" depth="0.6" origin="0.5,0.5" />
     <ContainedSprite name="ERT Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suitcontained.png" sourcerect="24,0,79,211" depth="0.55" origin="0.5,0.5" />

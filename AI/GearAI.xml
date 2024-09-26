@@ -3,17 +3,24 @@
   <Item identifier="tsm_cbrnert_ai" subcategory="TSM" category="Equipment" tags="smallitem,deepdiving,cbrngear,heavycbrn" cargocontaineridentifier="metalcrate" scale="0.5" fireproof="true" waterproof="true" impactsoundtag="impact_soft">
     <InventoryIcon texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suitcontained.png" sourcerect="0,255,128,173" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suititem.png" sourcerect="0,15,168,125" depth="0.6" origin="0.5,0.5" />
-	  <ContainedSprite name="ERT Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suitcontained.png" sourcerect="24,0,79,211" depth="0.55" origin="0.5,0.5" />
+    <ContainedSprite name="ERT Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suitcontained.png" sourcerect="24,0,79,211" depth="0.55" origin="0.5,0.5" />
     <ContainedSprite name="ERT Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suitcontained.png" sourcerect="24,0,79,211" depth="0.55" origin="-0.12,-0.14" />
     <ContainedSprite name="ERT Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suititem.png" sourcerect="0,191,225,66" depth="0.55" origin="0.6,0.5" />
     <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
     <Deconstruct time="30">
-      <Item identifier="titaniumaluminiumalloy" amount="2"/>
-      <Item identifier="fpgacircuit" amount="2"/>
-	  <Item identifier="ballisticfiber" amount="1"/>
-	  <Item identifier="rubber" amount="1"/>
+      <Item identifier="titaniumaluminiumalloy" amount="2" />
+      <Item identifier="fpgacircuit" amount="2" />
+      <Item identifier="ballisticfiber" amount="1" />
+      <Item identifier="rubber" amount="1" />
     </Deconstruct>
-    <Wearable slots="Head+OuterClothes+InnerClothes" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+    <Fabricate suitablefabricators="fabricator" requiredtime="45" requiresrecipe="true">
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="4" />
+      <RequiredItem identifier="ballisticfiber" amount="5" />
+      <RequiredItem identifier="fpgacircuit" amount="4" />
+      <RequiredItem identifier="steel" amount="2" />
+      <RequiredItem identifier="rubber" amount="2" />
+    </Fabricate>
+    <Wearable slots="Head+OuterClothes+InnerClothes" msg="ItemMsgPickUpSelect">
       <sprite name="ERT Torso" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="Torso" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="138,0,126,191" origin="0.61,0.51" />
       <sprite name="ERT Right Hand" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="true" origin="0.08,0.05" />
       <sprite name="ERT Left Hand" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="true" origin="0.08,0.05" />
@@ -29,45 +36,43 @@
       <sprite name="ERT Left Shoe" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="80,225,77,31" origin="0.54,0.33" />
       <sprite name="ERT Right Shoe" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="337,224,75,32" origin="0.55,0.32" />
       <sprite name="ERT Helmet Wearable" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suititem.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" depthlimb="LeftArm" scale="0.8" hideotherwearables="true" hidelimb="true" sourcerect="0,170,80,90" origin="0.35,0.6">
-	      <LightComponent range="1500.0" lightcolor="250,224,165,255" powerconsumption="0" IsOn="true">
+        <LightComponent range="800.0" lightcolor="250,224,165,255" powerconsumption="0" IsOn="true">
           <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" Interval="1" setvalue="true">
             <Conditional IsDead="false" />
           </StatusEffect>
           <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,2.0" />
         </LightComponent>
-	    </sprite>
-      <sprite name="Hide Boobs" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="Tail" hidelimb="true" hideotherwearables="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" />      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.9" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.6" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,bitewounds,internaldamage" damagemultiplier="0.7" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.8" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.8" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="triton_7L" damagemultiplier="0.5" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.6" />
-      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.0" probabilitymultiplier="0.0" deflectprojectiles="true" />
-      <StatusEffect type="OnWearing" target="Character" tag="cbrnsuit" SpeedMultiplier="0.7" PressureProtection="125000.0" OxygenAvailable="2000" disabledeltatime="true" LowPassMultiplier="0.3" setvalue="true">
+      </sprite>
+      <sprite name="Hide Boobs" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="Tail" hidelimb="true" hideotherwearables="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.15" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,bitewounds,internaldamage" damagemultiplier="0.15" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.1" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bleeding" damagemultiplier="0.0" probabilitymultiplier="0.0" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.2" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="triton_7L" damagemultiplier="0.4" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.1" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.0" probabilitymultiplier="0.0" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.1" probabilitymultiplier="0.0" deflectprojectiles="true" />
+      <StatusEffect type="OnWearing" target="Character" tag="cbrnsuit" SpeedMultiplier="0.7" PressureProtection="8000.0" OxygenAvailable="2000" disabledeltatime="true" LowPassMultiplier="0.3" setvalue="true">
         <Affliction identifier="CBRNsuit" amount="10" />
         <Affliction identifier="CCR" amount="10" />
-		    <Affliction identifier="chemicalliner_main" amount="10" />
-		    <Affliction identifier="chemicalliner_wounds" amount="10" />
-		    <Affliction identifier="chemicalliner_biochem" amount="10" />
-        <Affliction identifier="chemicalliner_burn" amount="10" />
-        <Affliction identifier="chemicalliner_spec" amount="10" />
       </StatusEffect>
       <ItemContainer capacity="3" maxstacksize="3">
         <Containable items="smallitem" excludeditems="mobilecontainer" />
-		    <SubContainer capacity="1" maxstacksize="1">
+        <SubContainer capacity="1" maxstacksize="1">
           <Containable items="smallitem,mediumitem,weapon" />
         </SubContainer>
       </ItemContainer>
-	    <StatusHUD range="300" ShowTexts="true" OverlayColor="0,0,0,0" drawhudwhenequipped="true" />
+      <StatusHUD range="300" ShowTexts="true" OverlayColor="20,0,255,255" drawhudwhenequipped="true" />
     </Wearable>
-	  <CustomInterface canbeselected="true" drawhudwhenequipped="true">
+    <CustomInterface canbeselected="true" drawhudwhenequipped="true">
       <GuiFrame relativesize="0.1,0.1" anchor="BottomLeft" absoluteoffset="20,20" style="ItemUI" />
-	    <TickBox text="lights">
+      <TickBox text="lights">
         <StatusEffect type="OnUse" targettype="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="true" />
         <StatusEffect type="OnSecondaryUse" targettype="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="false" />
       </TickBox>
     </CustomInterface>
-	  <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="70,-10" aimpos="70,-10" handle1="0,0" handle2="0,0" holdangle="0" msg="ItemMsgPickUp"/>
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="70,-10" aimpos="70,-10" handle1="0,0" handle2="0,0" holdangle="0" msg="ItemMsgPickUpSelect" />
   </Item>
+
 </Items>
