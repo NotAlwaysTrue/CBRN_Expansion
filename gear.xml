@@ -4708,7 +4708,7 @@
       </Button>
     </CustomInterface>
   </Item>
-  <Item identifier="devilscore" subcategory="Nuclear" category="Weapon" Tags="smallitem,explosive,nuke,WMD,devilscore" health="50" maxstacksize="1" Scale="0.2" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_heavy">
+  <Item identifier="devilscore" subcategory="Nuclear" category="Weapon" Tags="smallitem,explosive,nuke,WMD,devilscore" health="50" maxstacksize="1" Scale="0.2" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_heavy" hideinmenus="true">
     <InventoryIcon texture="%ModDir%/Weapons/Nuclear/devilscore.png" sourcerect="0,0,183,183" />
     <Sprite texture="%ModDir%/Weapons/Nuclear/devilscore.png" depth="0.55" sourcerect="0,0,183,183" origin="0.5,0.5" />
     <Body width="30" height="70" density="20" />
@@ -4773,12 +4773,11 @@
     <SuitableTreatment type="poison" suitability="100" />
     <Fabricate suitablefabricators="medicalfabricator" requiredtime="60">
       <RequiredSkill identifier="medical" level="70" />
-      <RequiredItem identifier="stabilozine" amount="6" />
-      <RequiredItem identifier="paralyxis" amount="1" />
-      <RequiredItem identifier="fulgurium" amount="2" />
+      <RequiredItem identifier="stabilozine" amount="4" />
+      <RequiredItem identifier="fulgurium" amount="1" />
     </Fabricate>
     <Deconstruct time="20">
-      <Item identifier="stabilozine" amount="2" />
+      <Item identifier="stabilozine" amount="3" />
     </Deconstruct>
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="0" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
       <RequiredSkill identifier="medical" level="45" />
@@ -4824,11 +4823,11 @@
     <SuitableTreatment type="poison" suitability="100" />
     <Fabricate suitablefabricators="medicalfabricator" requiredtime="60">
       <RequiredSkill identifier="medical" level="70" />
-      <RequiredItem identifier="stabilozine" amount="3" />
-      <RequiredItem identifier="paralyxis" amount="2" />
+      <RequiredItem identifier="stabilozine" amount="2" />
+      <RequiredItem identifier="paralyxis" amount="1" />
     </Fabricate>
     <Deconstruct time="20">
-      <Item identifier="stabilozine" amount="2" />
+      <Item identifier="stabilozine" amount="1" />
     </Deconstruct>
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="0" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
       <RequiredSkill identifier="medical" level="45" />
@@ -4870,14 +4869,11 @@
     <SuitableTreatment type="bioinfection" suitability="100" />
     <Fabricate suitablefabricators="medicalfabricator" requiredtime="60">
       <RequiredSkill identifier="medical" level="70" />
-      <RequiredItem identifier="paralyxis" amount="1" />
-      <RequiredItem identifier="fulgurium" amount="2" />
+      <RequiredItem identifier="fulgurium" amount="1" />
       <RequiredItem identifier="uranium" amount="4" />
-      <RequiredItem identifier="incendium" amount="4" />
     </Fabricate>
     <Deconstruct time="20">
       <Item identifier="fulgurium" amount="1" />
-      <Item identifier="incendium" amount="1" />
     </Deconstruct>
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="-0" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
       <RequiredSkill identifier="medical" level="60" />
@@ -4934,11 +4930,11 @@
     <SuitableTreatment identifier="skinburn_poisonsource" suitability="100" />
     <Fabricate suitablefabricators="medicalfabricator" requiredtime="60">
       <RequiredSkill identifier="medical" level="70" />
-      <RequiredItem identifier="stabilozine" amount="8" />
+      <RequiredItem identifier="stabilozine" amount="4" />
       <RequiredItem identifier="uranium" amount="2" />
     </Fabricate>
     <Deconstruct time="20">
-      <Item identifier="stabilozine" amount="6" />
+      <Item identifier="stabilozine" amount="3" />
       <Item identifier="uranium" amount="1" />
     </Deconstruct>
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="0" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
@@ -4993,11 +4989,11 @@
     <SuitableTreatment identifier="skinburn_poisonsource" suitability="100" />
     <Fabricate suitablefabricators="medicalfabricator" requiredtime="60">
       <RequiredSkill identifier="medical" level="50" />
-      <RequiredItem identifier="stabilozine" amount="5" />
+      <RequiredItem identifier="stabilozine" amount="3" />
       <RequiredItem identifier="uranium" amount="1" />
     </Fabricate>
     <Deconstruct time="20">
-      <Item identifier="stabilozine" amount="3" />
+      <Item identifier="stabilozine" amount="1" />
     </Deconstruct>
     <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="0" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
       <RequiredSkill identifier="medical" level="30" />
