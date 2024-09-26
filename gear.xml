@@ -50,6 +50,7 @@
       <StatusEffect type="OnWearing" target="Character" disabledeltatime="true" setvalue="true">
         <Affliction identifier="CCR" amount="10" />
         <Affliction identifier="CBRNsuit" amount="10" />
+        <Affliction identifier="eyidefense" amount="10" />
       </StatusEffect>
       <ItemContainer capacity="2">
         <Containable items="smallitem" excludeditems="mobilecontainer" />
@@ -103,6 +104,7 @@
       <StatusEffect type="OnWearing" target="Character" tag="cbrnsuit" disabledeltatime="true" LowPassMultiplier="0.05" SpeedMultiplier="1.1" setvalue="true">
         <Affliction identifier="CBRNsuit" amount="10" />
         <Affliction identifier="exosuited" amount="10" />
+        <Affliction identifier="eyidefense" amount="10" />
       </StatusEffect>
       <ItemContainer capacity="2" maxstacksize="2">
         <Containable items="smallitem" excludeditems="mobilecontainer" />
@@ -163,6 +165,7 @@
       <StatusEffect type="OnWearing" target="Character" tag="cbrnsuit" SpeedMultiplier="0.7" PressureProtection="125000.0" OxygenAvailable="2000" disabledeltatime="true" LowPassMultiplier="0.3" setvalue="true">
         <Affliction identifier="CBRNsuit" amount="10" />
         <Affliction identifier="CCR" amount="10" />
+        <Affliction identifier="eyidefense" amount="10" />
         <Affliction identifier="chemicalliner_main" amount="10" />
         <Affliction identifier="chemicalliner_wounds" amount="10" />
         <Affliction identifier="chemicalliner_biochem" amount="10" />
@@ -330,6 +333,7 @@
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="acidburn" damagemultiplier="0.7" />
       <StatusEffect type="OnWearing" target="Character" tag="cbrnsuit" disabledeltatime="true">
         <Affliction identifier="CBRNsuit" amount="10" />
+        <Affliction identifier="eyidefense" amount="10" />
       </StatusEffect>
     </Wearable>
   </Item>
@@ -5018,4 +5022,5 @@
     </MeleeWeapon>
     <SkillRequirementHint identifier="medical" level="30" />
   </Item>
+
 </Items>

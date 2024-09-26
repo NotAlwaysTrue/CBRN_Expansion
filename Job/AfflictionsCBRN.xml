@@ -158,8 +158,9 @@
     treatmentthreshold="1000"
     iconcolors="33,75,78;126,211,224;126,211,224;227,247,249"
     Duration="0.1">
-    <Effect minstrength="0" maxstrength="10" resistancefor="tsm_armorbreak_jz,tsm_armorbreak_30,tsm_armorbreak_50" minresistance="1" maxresistance="1">
+    <Effect minstrength="0" maxstrength="10" resistancefor="tsm_armorbreak_jz,tsm_armorbreak_30,tsm_armorbreak_50,tsmmission_armorbreak_50,tsmmission_monster_35," minresistance="1" maxresistance="1">
     </Effect>
     <icon texture="%ModDir%/Weapons/Chemical/blackbase.png" sourcerect="0,0,1,1" color="255,255,255,255" origin="0.5,0.5" />
   </Affliction>
+
 </Afflictions>

@@ -1,3 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Afflictions>
+  <Affliction identifier="eyidefense" type="Buff" IsBuff="true" targets="human" showiconthreshold="999" showinhealthscannerthreshold="999" maxstrength="10" limbspecific="false" indicatorlimb="Head" Duration="0.1">
+    <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="0" resistancefor="tsm_virusstage,eyiinfection" minresistance="100.0" maxresistance="100.0">
+	</Effect>
+  </Affliction>
+
+
+  <Affliction identifier="stressprotection_ai" type="Buff" IsBuff="true" targets="human" showiconthreshold="999" showinhealthscannerthreshold="999" maxstrength="10" limbspecific="false" indicatorlimb="Head">
+    <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="0" resistancefor="tsm_stress" minresistance="100.0" maxresistance="100.0">
+	</Effect>
+  </Affliction>
+  <Affliction identifier="eyidefense_ai" type="Buff" IsBuff="true" targets="human" showiconthreshold="999" showinhealthscannerthreshold="999" maxstrength="10" limbspecific="false" indicatorlimb="Head">
+    <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="0" resistancefor="tsm_virusstage,eyiinfection" minresistance="100.0" maxresistance="100.0">
+	</Effect>
+  </Affliction>
 </Afflictions>
