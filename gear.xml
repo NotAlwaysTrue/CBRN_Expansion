@@ -277,6 +277,8 @@
     </ItemContainer>
     <aitarget maxsightrange="1500" />
   </Item>
+
+
   <!--Standard Suits-->
   <Item identifier="standard_cbrnsuit_gray" aliases="securityuniform" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft" >
     <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="448,132,64,64" origin="0.5,0.5" />
@@ -331,6 +333,7 @@
       </StatusEffect>
     </Wearable>
   </Item>
+
 
   <!--APRs-->
   <Item identifier="berra_cbrn3a" subcategory="Berra Group" category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem" scale="0.5" fireproof="true" waterproof="true" impactsoundtag="impact_metal_light" hideinmenus="false">
@@ -436,6 +439,8 @@
     </Wearable>
     <aitarget sightrange="2500" soundrange="3000" fadeouttime="6" />
   </Item>
+
+
   <!--Weapons-->
   <Item identifier="berra_TES20" subcategory="Berra Group" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" scale="0.23" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir%/weapons/BerraArm/TES20/TES20.png" sourcerect="0,0,400,185" origin="0.5,0.5" />
@@ -1580,23 +1585,6 @@
       <Item identifier="flashpowder" mincondition="0.8" outcondition="0.6" />
       <Item identifier="titanium" mincondition="0.8" amount="1" />
     </Deconstruct>
-    <!--<Fabricate suitablefabricators="fabricator" requiredtime="35" displayname="50beowulf_ap" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="magnesium" amount="4" />
-      <RequiredItem identifier="flashpowder" amount="2" />
-      <RequiredItem identifier="plastic" />
-      <RequiredItem identifier="titanium" amount="4" />
-      <RequiredItem identifier="steel" amount="4" />
-    </Fabricate>
-    <Fabricate suitablefabricators="fabricator" requiredtime="35" displayname="50beowulf_ap_recycle" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="magnesium" amount="4" />
-      <RequiredItem identifier="flashpowder" amount="2" />
-      <RequiredItem identifier="titanium" amount="4" />
-      <RequiredItem identifier="steel" amount="4" />
-    <RequiredItem tag="berra_STANAG_ext" maxcondition="0.0" usecondition="false"/>
-    </Fabricate>-->
-    <!--No-->
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="berra_50beowulf_ap" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="berra_50beowulf_ap" />
       <StatusEffect type="OnUse" target="This" condition="-6.67" disabledeltatime="true">
@@ -2080,6 +2068,7 @@
     <Holdable canBeCombined="true" slots="RightHand+LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+
 
   <!--Rounds-->
   <Item identifier="tes20rounds_ap" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="None" hideinmenus="true" scale="0.5">
@@ -2627,17 +2616,6 @@
       </StatusEffect>
     </Projectile>
   </Item>
-  <Item identifier="univ_backblast_exc" category="Weapon" interactthroughwalls="false" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="None" hideinmenus="true" scale="0.5">
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="832,960,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="189,299,23,11" depth="0.55" origin="0.5,0.5" />
-    <Body width="60" height="60" density="15" />
-    <ItemComponent characterusable="false">
-      <StatusEffect type="OnBroken" target="This" stackable="false">
-        <Remove />
-      </StatusEffect>
-    </ItemComponent>
-    <Upgrade gameversion="0.10.0.0" scale="0.5" />
-  </Item>
   <Item identifier="berra_50bmg_mk211mod0" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="None" hideinmenus="true" scale="0.5">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
@@ -2719,7 +2697,22 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
 
-  <!--This is not a thing actually, but a placeholder until we find better ways-->
+
+  <!--Place Holder-->
+  <Item identifier="univ_backblast_exc" category="Weapon" interactthroughwalls="false" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="None" hideinmenus="true" scale="0.5">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="832,960,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="189,299,23,11" depth="0.55" origin="0.5,0.5" />
+    <Body width="60" height="60" density="15" />
+    <ItemComponent characterusable="false">
+      <StatusEffect type="OnBroken" target="This" stackable="false">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+
+
+  <!--HEAT Stuff-->
   <Item identifier="univ_heat_self" category="Weapon" scale="0.3" sonarsize="0" hideinmenus="true">
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="143,414,113,9" depth="0.55" origin="0.5,0.5" />
     <Body width="200" height="2" BodyType="Kinematic" />
@@ -2756,6 +2749,7 @@
       </StatusEffect>
     </Projectile>
   </Item>
+
 
   <!--Misc-->
   <Item identifier="brokenarrow_transmitter_normal" subcategory="" category="Misc" Itemcargocontaineridentifier="metalcrate" tags="smallitem,borkenarrowitem" scale="0.5" impactsoundtag="impact_metal_light" hideinmenus="true">
@@ -3296,8 +3290,9 @@
       </TickBox>
     </CustomInterface>
     <SkillRequirementHint identifier="weapons" level="60" />
-    </Item>
-  
+  </Item>
+
+
   <!--SURPRISE-->
   <Item identifier="powdercapsule_anthrax" category="Misc" cargocontaineridentifier="metalcrate" allowasextracargo="true" Tags="smallitem,chem,chemweapon" maxstacksize="8" maxstacksizecharacterinventory="1" scale="0.08" hideinmenus="true" impactsoundtag="impact_soft">
     <PreferredContainer secondary="outposttrashcan" amount="1" spawnprobability="0.01" />
@@ -3350,6 +3345,8 @@
       </StatusEffect>
     </Holdable>
   </Item>
+
+
   <!--Chemical Weapons-->
   <Item identifier="vx_chemdist_40" subcategory="CBRN_Ammunition" category="Weapon" maxstacksize="8" interactthroughwalls="false" cargocontaineridentifier="metalcrate" tags="explosive,smallitem,grenade,chemweapon" Scale="0.5" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir%/Weapons/Chemical/chem40.png" sourcerect="52,1,52,20" origin="0.5,0.5" />
@@ -3587,7 +3584,7 @@
     <ItemComponent characterusable="false">
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
     </ItemComponent>
-  <ItemComponent IsActive="false" CharacterUsable="true">
+    <ItemComponent IsActive="false" CharacterUsable="true">
       <!--reduce condition by 1 to mark the user as the one responsible for the item breaking and exploding -->
       <StatusEffect type="OnUse" targettype="This" IsActive="true" comparison="AND" condition="-1" Delay="0.5">
         <Conditional HasTag="neq detonator" targetcontainer="true" />
@@ -3649,7 +3646,7 @@
     <ItemComponent characterusable="false">
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
     </ItemComponent>
-  <ItemComponent IsActive="false" CharacterUsable="true">
+    <ItemComponent IsActive="false" CharacterUsable="true">
       <!--reduce condition by 1 to mark the user as the one responsible for the item breaking and exploding -->
       <StatusEffect type="OnUse" targettype="This" IsActive="true" comparison="AND" condition="-1" Delay="0.5">
         <Conditional HasTag="neq detonator" targetcontainer="true" />
@@ -3711,7 +3708,7 @@
     <ItemComponent characterusable="false">
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
     </ItemComponent>
-  <ItemComponent IsActive="false" CharacterUsable="true">
+    <ItemComponent IsActive="false" CharacterUsable="true">
       <!--reduce condition by 1 to mark the user as the one responsible for the item breaking and exploding -->
       <StatusEffect type="OnUse" targettype="This" IsActive="true" comparison="AND" condition="-1" Delay="0.5">
         <Conditional HasTag="neq detonator" targetcontainer="true" />
@@ -3772,7 +3769,7 @@
     <ItemComponent characterusable="false">
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
     </ItemComponent>
-  <ItemComponent IsActive="false" CharacterUsable="true">
+    <ItemComponent IsActive="false" CharacterUsable="true">
       <!--reduce condition by 1 to mark the user as the one responsible for the item breaking and exploding -->
       <StatusEffect type="OnUse" targettype="This" IsActive="true" comparison="AND" condition="-1" Delay="0.3">
         <Conditional HasTag="neq detonator" targetcontainer="true" />
@@ -3833,7 +3830,7 @@
     <ItemComponent characterusable="false">
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
     </ItemComponent>
-  <ItemComponent IsActive="false" CharacterUsable="true">
+    <ItemComponent IsActive="false" CharacterUsable="true">
       <!--reduce condition by 1 to mark the user as the one responsible for the item breaking and exploding -->
       <StatusEffect type="OnUse" targettype="This" IsActive="true" comparison="AND" condition="-100" Delay="0.3">
         <Conditional HasTag="neq detonator" targetcontainer="true" />
@@ -4050,7 +4047,7 @@
     <ItemComponent characterusable="false">
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
     </ItemComponent>
-  <ItemComponent IsActive="false" CharacterUsable="true">
+    <ItemComponent IsActive="false" CharacterUsable="true">
       <!--reduce condition by 1 to mark the user as the one responsible for the item breaking and exploding -->
       <StatusEffect type="OnUse" targettype="This" IsActive="true" comparison="AND" condition="-100" Delay="1.5">
         <Conditional HasTag="neq detonator" targetcontainer="true" />
@@ -4092,6 +4089,7 @@
       </StatusEffect>
     </Throwable>
   </Item>
+
 
   <!--Now we're talkin-->
   <Item identifier="nuke_10k" subcategory="Nuclear" category="Weapon" Tags="smallitem,explosive,nuke,WMD" maxstacksize="1" Scale="0.5" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_heavy">
@@ -4759,6 +4757,7 @@
       <Containable items="neutron_reflector" />
     </ItemContainer>
   </Item>
+
 
   <!--Meds-->
   <Item identifier="berra_xtg12" subcategory="CBRN Countermeasure" category="Medical" maxstacksize="32" maxstacksizecharacterinventory="8" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,chemweaponcount" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
