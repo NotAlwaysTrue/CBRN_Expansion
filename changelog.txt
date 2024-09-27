@@ -1,4 +1,4 @@
-Note 2024/9/25:Migraged to Github, This method will be abandoned.
+Note 2024/9/25:Migraged to Github, This will be abandoned.
 
 V4.0.6
 +rz_p_mk1_cbrn(WIP content, unused)
