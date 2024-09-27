@@ -2,9 +2,8 @@
 <TalentTrees>
   <TalentTree jobidentifier="cbrn_guy">
     <SubTree identifier="cbrn_primary" nameidentifier="cbrntalenttree.primary" type="primary">
-      <TalentOptions requiredtalents="2" maxchosentalents="5">
+      <TalentOptions requiredtalents="1" maxchosentalents="4">
         <TalentOption identifier="medicaltraining"/>
-        <TalentOption identifier="protectivegeartierone"/>
         <TalentOption identifier="prodigy"/>
         <TalentOption identifier="buff"/>
         <TalentOption identifier="physicalconditioning"/>

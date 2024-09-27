@@ -298,7 +298,7 @@
     <Deconstruct time="10">
       <Item identifier="organicfiber" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="35" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="35" requiresrecipe="false">
       <RequiredItem identifier="rubber" amount="1" />
       <RequiredItem identifier="ballisticfiber" amount="2" />
       <RequiredItem identifier="plastic" amount="1" />
@@ -408,7 +408,7 @@
       <Item identifier="rubber" amount="2" />
       <Item identifier="plastic" amount="1" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="false">
       <RequiredSkill identifier="medical" level="35" />
       <RequiredSkill identifier="mechanical" level="25" />
       <RequiredItem identifier="rubber" amount="2" />

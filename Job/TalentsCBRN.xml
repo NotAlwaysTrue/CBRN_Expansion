@@ -34,14 +34,7 @@
       </Abilities>
     </AbilityGroupEffect>
   </Talent>
-  <Talent identifier="protectivegeartierone">
-    <Description tag="talentdescription.unlockrecipe">
-      <Replace tag="[itemname]" value="entityname.standard_cbrnsuit_gray,entityname.berra_cbrn3" color="gui.orange"/>
-    </Description>
-    <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,6" sheetelementsize="128,128"/>
-    <AddedRecipe itemidentifier="berra_cbrn3"/>
-    <AddedRecipe itemidentifier="standard_cbrnsuit_gray"/>
-  </Talent>
+
   <Talent identifier="combatengineer">
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.sacabambaspis_he,entityname.sacabambaspis_he_impact" color="gui.orange"/>
