@@ -1278,7 +1278,7 @@
     <aitarget sightrange="2500" soundrange="4500" fadeouttime="6" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item identifier="tsm_m61_vulcan" subcategory="Berra Group" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" scale="0.18" impactsoundtag="impact_metal_light" hideinmenus="true">
+  <Item identifier="tsm_m61_vulcan" subcategory="Berra Group" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" scale="0.18" impactsoundtag="impact_metal_light" hideinmenus="false">
     <InventoryIcon texture="%ModDir%/Weapons/BerraArm/M2HB/M2HB.png" sourcerect="26,560,982,325" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/BerraArm/M2HB/M2HB.png" sourcerect="26,560,982,325" depth="0.55" origin="0.5,0.5" />
     <Body width="1000" height="280" density="52" />
@@ -1296,7 +1296,7 @@
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>
-      <Propulsion force="-10" usablein="both" ApplyToHands="true" type="OnUse">
+      <Propulsion force="-30" usablein="both" ApplyToHands="true" type="OnUse">
         <RequiredItems items="50bmg_belt" type="Contained" target="This" msg="ItemMsgAmmoRequired" />
       </Propulsion>
       <RequiredItems items="50bmg_belt" type="Contained" target="This" msg="ItemMsgAmmoRequired" />
@@ -1305,7 +1305,7 @@
       <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
       <Containable items="50bmg_belt" hide="false" itempos="-15,10" depth="0.55" />
     </ItemContainer>
-    <aitarget sightrange="2500" soundrange="4500" fadeouttime="6" />
+    <aitarget sightrange="5000" soundrange="4500" fadeouttime="6" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
 
