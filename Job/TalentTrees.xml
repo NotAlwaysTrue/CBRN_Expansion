@@ -45,11 +45,11 @@
         <TalentOption identifier="biodev"/>
         <TalentOption identifier="bioresearch"/>
       </TalentOptions>
-      <TalentOptions requiredtalents="0" maxchosentalents="0">
-        <!--<TalentOption identifier=""/>-->
+      <TalentOptions >
+        <TalentOption identifier="ert"/>
       </TalentOptions>
       <TalentOptions>
-        <TalentOption identifier="ert"/>
+        <TalentOption identifier="hert"/>
       </TalentOptions>
     </SubTree>
     <SubTree identifier="cbrn_final" type="specialization" requires="cbrn_primary,cbrn_secondary">

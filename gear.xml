@@ -204,7 +204,7 @@
       <Item identifier="titaniumaluminiumalloy" />
       <Item identifier="exosuit" />
     </Deconstruct>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="60" >
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="mechanical" level="70" />
       <RequiredSkill identifier="medical" level="70" />
       <RequiredSkill identifier="weapons" level="70" />
