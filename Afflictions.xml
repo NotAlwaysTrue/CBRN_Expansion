@@ -434,7 +434,7 @@
 	  <StatusEffect target="Character" disabledeltatime="true">
         <ReduceAffliction type="airagent" amount="99999" />
       </StatusEffect>
-	</Effect>
+	  </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,0,1,1" color="0,0,0,255" origin="0,0" />
     <!--Status Affliction-->
   </Affliction>
@@ -443,7 +443,7 @@
 	  <StatusEffect target="Character" disabledeltatime="true">
         <ReduceAffliction type="airagent" amount="99999" />
       </StatusEffect>
-	</Effect>
+	  </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,0,1,1" color="0,0,0,255" origin="0,0" />
     <!--Status Affliction-->
   </Affliction>
@@ -452,14 +452,14 @@
 	  <StatusEffect target="Character" disabledeltatime="true">
         <ReduceAffliction type="contactagent" amount="99999" />
       </StatusEffect>
-	</Effect>
+	  </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,0,1,1" color="0,0,0,255" origin="0,0" />
     <!--Status Affliction-->
   </Affliction>
   <Affliction identifier="exosuited" type="CBRNGEAR" IsBuff="true" targets="human" showiconthreshold="999" showinhealthscannerthreshold="999" maxstrength="10" limbspecific="false" indicatorlimb="Torso" Duration="0.1">
     <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="0" resistancefor="stun" minresistance="0.5" maxresistance="0.5">
       <AbilityFlag flagtype="MoveNormallyWhileDragging" />
-	</Effect>
+	  </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,0,1,1" color="0,0,0,255" origin="0,0" />
     <!--Status Affliction-->
   </Affliction>

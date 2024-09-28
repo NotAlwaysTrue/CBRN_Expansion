@@ -116,7 +116,7 @@
         </CharacterAbilityApplyStatusEffects>
       </Abilities>
     </AbilityGroupInterval>
-  <AbilityGroupEffect abilityeffecttype="OnAttackedResult">
+    <AbilityGroupEffect abilityeffecttype="OnAttackedResult">
       <Abilities>
         <CharacterAbilityApplyStatusEffects>
           <StatusEffects>
@@ -290,7 +290,7 @@
   <Talent identifier="biodev">
     <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="7,4" sheetelementsize="128,128"/>
     <Description tag="talentdescription.skillbonus">
-      <Replace tag="[amount]" value="10" color="gui.green"/>
+      <Replace tag="[amount]" value="20" color="gui.green"/>
       <Replace tag="[skillname]" value="skillname.medical" color="gui.orange"/>
     </Description>
     <Description tag="talentdescription.massproduction">
@@ -308,7 +308,7 @@
     </AbilityGroupEffect>
     <AbilityGroupEffect abilityeffecttype="None">
       <Abilities>
-        <CharacterAbilityGiveStat stattype="MedicalSkillBonus" value="10"/>
+        <CharacterAbilityGiveStat stattype="MedicalSkillBonus" value="20"/>
       </Abilities>
     </AbilityGroupEffect>
   </Talent>
@@ -380,6 +380,36 @@
     <AddedRecipe itemidentifier="tsm_cbrnert"/>
   </Talent>
 
+  <Talent identifier="fuelextract">
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="2,7" sheetelementsize="128,128"/>
+    <Description tag="talentdescription.skillbonus">
+      <Replace tag="[amount]" value="15" color="gui.green"/>
+      <Replace tag="[skillname]" value="skillname.mechanical" color="gui.orange"/>
+    </Description>
+    <Description tag="talentdescription.skillbonus">
+      <Replace tag="[amount]" value="15" color="gui.green"/>
+      <Replace tag="[skillname]" value="skillname.electrical" color="gui.orange"/>
+    </Description>
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.fuelextractor" color="gui.orange"/>
+    </Description>
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.nuclearwaste,entityname.plutoniumfuelrod" color="gui.orange"/>
+    </Description>
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="talentvalue.watercanister" color="gui.orange"/>
+    </Description>
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityGiveStat stattype="ElectricalSkillBonus" value="15"/>
+        <CharacterAbilityGiveStat stattype="MechanicalSkillBonus" value="15"/>
+      </Abilities>
+    </AbilityGroupEffect>
+    <AddedRecipe itemidentifier="fuelextractor"/>
+    <AddedRecipe itemidentifier="plutoniumfuelrod"/>
+    <AddedRecipe itemidentifier="nuclearwaste"/>
+    <AddedRecipe itemidentifier="watercanister"/>
+  </Talent>
   <Talent identifier="tacticalnuke">
     <Description tag="talentdescription.skillbonus">
       <Replace tag="[amount]" value="20" color="gui.green"/>
@@ -393,9 +423,6 @@
     </Description>
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.u235core_low,entityname.u235core_medium" color="gui.orange"/>
-    </Description>
-    <Description tag="talentdescription.unlockrecipe">
-      <Replace tag="[itemname]" value="entityname.depletedfuel" color="gui.orange"/>
     </Description>
     <AbilityGroupEffect abilityeffecttype="None">
       <Abilities>

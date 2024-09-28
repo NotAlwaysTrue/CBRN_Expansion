@@ -9,7 +9,7 @@
         <TalentOption identifier="physicalconditioning"/>
       </TalentOptions>
     </SubTree>
-  <SubTree identifier="cbrn_secondary" nameidentifier="cbrntalenttree.primary" type="primary" requires="cbrn_primary">
+    <SubTree identifier="cbrn_secondary" nameidentifier="cbrntalenttree.primary" type="primary" requires="cbrn_primary">
       <TalentOptions requiredtalents="2" maxchosentalents="6">
         <TalentOption identifier="combatengineer"/>
         <TalentOption identifier="firemanscarry"/>
@@ -22,7 +22,7 @@
     <SubTree identifier="cbrn_berragroup" type="specialization" requires="cbrn_primary,cbrn_secondary" >
       <TalentOptions requiredtalents="1" maxchosentalents="2">
         <TalentOption identifier="chemicalriotgear"/>
-    <TalentOption identifier="notenoughfirepower"/>
+        <TalentOption identifier="notenoughfirepower"/>
       </TalentOptions>
       <TalentOptions requiredtalents="1" maxchosentalents="2">
         <TalentOption identifier="tacticalgears"/>
@@ -34,31 +34,35 @@
       </TalentOptions>
       <TalentOptions requiredtalents="1" maxchosentalents="2">
         <TalentOption identifier="toptier"/>
-    <TalentOption identifier="dutyofcbrn"/>
+        <TalentOption identifier="dutyofcbrn"/>
       </TalentOptions>
     </SubTree>
     <SubTree identifier="cbrn_tsm" type="specialization" requires="cbrn_primary,cbrn_secondary,cbrn_berragroup" >
       <TalentOptions>
         <TalentOption identifier="nanomachine"/>
       </TalentOptions>
-    <TalentOptions>
+      <TalentOptions requiredtalents="2" maxchosentalents="2">
         <TalentOption identifier="biodev"/>
-      </TalentOptions>
-    <TalentOptions>
         <TalentOption identifier="bioresearch"/>
+      </TalentOptions>
+      <TalentOptions requiredtalents="0" maxchosentalents="0">
+        <!--<TalentOption identifier=""/>-->
       </TalentOptions>
       <TalentOptions>
         <TalentOption identifier="ert"/>
       </TalentOptions>
     </SubTree>
-  <SubTree identifier="cbrn_final" type="specialization" requires="cbrn_primary,cbrn_secondary">
-    <TalentOptions requiredtalents="1" maxchosentalents="1">
+    <SubTree identifier="cbrn_final" type="specialization" requires="cbrn_primary,cbrn_secondary">
+      <TalentOptions requiredtalents="1" maxchosentalents="1">
+        <TalentOption identifier="fuelextract"/>
+      </TalentOptions>
+      <TalentOptions requiredtalents="1" maxchosentalents="1">
         <TalentOption identifier="tacticalnuke"/>
       </TalentOptions>
-    <TalentOptions requiredtalents="1" maxchosentalents="1">
+      <TalentOptions requiredtalents="1" maxchosentalents="1">
         <TalentOption identifier="nuke"/>
       </TalentOptions>
-    <TalentOptions requiredtalents="1" maxchosentalents="1">
+      <TalentOptions requiredtalents="1" maxchosentalents="1">
         <TalentOption identifier="finalresort"/>
       </TalentOptions>
     </SubTree>
