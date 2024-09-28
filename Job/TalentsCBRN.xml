@@ -45,6 +45,9 @@
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.berra_obj227flamethrower,entityname.obj227_fueltanks" color="gui.orange"/>
     </Description>
+    <Description tag="talentdescription.unlockrecipe">
+      <Replace tag="[itemname]" value="entityname.breachhammer" color="gui.orange"/>
+    </Description>
     <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,2" sheetelementsize="128,128"/>
     <AddedRecipe itemidentifier="sacabambaspis_he"/>
     <AddedRecipe itemidentifier="sacabambaspis_he_impact"/>
@@ -52,6 +55,7 @@
     <AddedRecipe itemidentifier="berra_drl3_fab"/>
     <AddedRecipe itemidentifier="berra_obj227flamethrower"/>
     <AddedRecipe itemidentifier="obj227_fueltanks"/>
+    <AddedRecipe itemidentifier="breachhammer"/>
   </Talent>
   <Talent identifier="demoexpert">
     <Description tag="talentdescription.crafthighqualityexplosives">
