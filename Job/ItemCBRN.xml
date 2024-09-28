@@ -59,8 +59,8 @@
     <Deconstruct time="1" requireddeconstructor="deconstructor">
       <Item identifier="dirtybombafteremitter" amount="1" outcondition="0.01"/>
     </Deconstruct>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="448,640,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/JobGear/TalentGear.png" depth="0.8" sourcerect="202,1,47,32" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Misc/Material/nuclearmaterials.png" sourcerect="69,34,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Misc/Material/nuclearmaterials.png" depth="0.8" sourcerect="79,50,47,32" origin="0.5,0.5" />
     <Body width="45" height="30" density="20" />
     <Throwable characterusable="false" slots="Any,RightHand,LeftHand" canbecombined="true" removeoncombined="true" throwforce="3.5" aimpos="35,-10" msg="ItemMsgPickUpSelect">
     </Throwable>
@@ -78,8 +78,8 @@
     <Deconstruct time="1" requireddeconstructor="deconstructor">
       <Item identifier="dirtybombafteremitter" amount="1" outcondition="0.01"/>
     </Deconstruct>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="448,640,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/JobGear/TalentGear.png" depth="0.8" sourcerect="202,1,47,32" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/Misc/Material/nuclearmaterials.png" sourcerect="68,97,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Misc/Material/nuclearmaterials.png" depth="0.8" sourcerect="78,112,47,32" origin="0.5,0.5" />
     <Body width="45" height="30" density="20" />
     <Throwable characterusable="false" slots="Any,RightHand,LeftHand" canbecombined="true" removeoncombined="true" throwforce="3.5" aimpos="35,-10" msg="ItemMsgPickUpSelect">
     </Throwable>
@@ -89,8 +89,10 @@
     <Deconstruct time="1" requireddeconstructor="deconstructor">
       <Item identifier="dirtybombafteremitter" amount="1" outcondition="0.01"/>
     </Deconstruct>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="448,640,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/JobGear/TalentGear.png" depth="0.8" sourcerect="202,1,47,32" origin="0.5,0.5" />
+    <Deconstruct time="1" requireddeconstructor="fuelextractor">
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/Misc/Material/nuclearmaterials.png" sourcerect="68,97,64,64" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Misc/Material/nuclearmaterials.png" depth="0.8" sourcerect="78,112,47,32" origin="0.5,0.5" />
     <Body width="45" height="30" density="20" />
     <Throwable characterusable="false" slots="Any,RightHand,LeftHand" canbecombined="true" removeoncombined="true" throwforce="3.5" aimpos="35,-10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
