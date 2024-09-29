@@ -4,7 +4,7 @@
     <npc identifier="undermask_rifleman" job="cbrn_guy_ai" behavior="Patrol" healthmultiplier="1.1" aimspeed="12" aimaccuracy="10" reportrange="3000" skillmultiplier="5">
       <ItemSet commonness="1">
         <Item identifier="idcard" equip="true" showpreview="false" />
-        <Item identifier="berra_cbrn3a" equip="true" />
+        <Item identifier="berra_cbrn3a_ai" equip="true" />
         <Item identifier="berra_bio2" equip="true" />
         <Item identifier="aibuff_1_autorun" />
         <Item identifier="berra_m4_458socom">

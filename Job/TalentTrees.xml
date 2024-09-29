@@ -37,7 +37,7 @@
         <TalentOption identifier="dutyofcbrn"/>
       </TalentOptions>
     </SubTree>
-    <SubTree identifier="cbrn_tsm" type="specialization" requires="cbrn_primary,cbrn_secondary,cbrn_berragroup" >
+    <SubTree identifier="cbrn_tsm" type="specialization" requires="cbrn_berragroup,cbrn_final" >
       <TalentOptions>
         <TalentOption identifier="nanomachine"/>
       </TalentOptions>

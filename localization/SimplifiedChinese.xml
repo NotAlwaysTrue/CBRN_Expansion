@@ -463,7 +463,7 @@
   <entityname.nuclearwaste>核废料</entityname.nuclearwaste>
   <entityname.plutonium_core>混合钚</entityname.plutonium_core>
   <entityname.plutonium_weapon>武器级钚</entityname.plutonium_weapon>
-  <entityname.plutoniumfuelrod>钚燃料棒</entityname.plutoniumfuelrod>
+  <entityname.plutoniumfuelrod>MOX燃料棒</entityname.plutoniumfuelrod>
   <entityname.watercanister>密封容器</entityname.watercanister>
   <entityname.d2ocanister>密封容器</entityname.d2ocanister>
   <entityname.col_filiter>联盟 标准过滤盒</entityname.col_filiter>
@@ -477,9 +477,11 @@
   <entityname.rz_p_mk1_cbrn_plus>戎装 Mk.1 NBCPv3</entityname.rz_p_mk1_cbrn_plus>
   <entityname.berra_bio2_ai>BerraARM Bio-2L核生化战斗防护服</entityname.berra_bio2_ai>
 
-  <entityname.deconstructnuclearspread>放射性物质暴露</entityname.deconstructnuclearspread>
-  <entitydescription.deconstructnuclearspread>一大堆放射性物质从装载它们的容器中跑出来了,这显然是灾难性的 \n请认真检查你的操作,你一定做错了什么</entitydescription.deconstructnuclearspread>
-
+  <entitydescription.fuelextractor>一个集成式核材料提取装置,可用于提取多种核材料 \n按E放置</entitydescription.fuelextractor>
+  <entitydescription.nuclearwaste>耗尽的反应堆燃料,可通过核材料提取装置提取剩余材料</entitydescription.nuclearwaste>
+  <entitydescription.plutonium_core>主要成分为钚的放射性粉末,可用于提取或制造</entitydescription.plutonium_core>
+  <entitydescription.plutonium_weapon>一块武器级浓度的钚,为了安全起见以特殊方式储存 \n可用于生产核武器</entitydescription.plutonium_weapon>
+  <entitydescription.plutoniumfuelrod>一根由二氧化钚和二氧化铀制成的反应堆燃料棒,寿命较长,反应结束后可提取剩余材料</entitydescription.plutoniumfuelrod>
   <entitydescription.watercanister>装有水的密封容器,可以加工为重水</entitydescription.watercanister>
   <entitydescription.d2ocanister>装有重水的密封容器,可以在反应堆中放射照射后离心提取获得氚</entitydescription.d2ocanister>
   <entitydescription.tsm_m61_vulcan>"南无加特林菩萨,六根清净贫铀弹,一息三千六百转,大慈大悲渡世人" \n是的,M61A1 "火神"将以每分钟6000发的射速撕碎你的敌人 \n巨大的体积和重量使得它‖color:255,0,0,255‖只能用特定装备举起和发射‖color:end‖,尽管如此,恐怖的后坐力还是会推走使用者</entitydescription.tsm_m61_vulcan>
@@ -497,5 +499,7 @@
 
   
   <sledgemodon>破拆模式</sledgemodon>
-
+  <entityname.deconstructnuclearspread>放射性物质暴露</entityname.deconstructnuclearspread>
+  <entitydescription.deconstructnuclearspread>一大堆放射性物质从装载它们的容器中跑出来了,这显然是灾难性的 \n请认真检查你的操作,你一定做错了什么</entitydescription.deconstructnuclearspread>
+  
 </infotexts>

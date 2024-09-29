@@ -113,17 +113,19 @@
     </Deconstruct>
     <Deconstruct time="30" requireddeconstructor="fuelextractor">
       <Item identifier="plutonium_weapon" mincondition="0.0" maxcondition="0.01" amount="1"/>
+      <RequiredItem identifier="depletedfuel" mincondition="0.0" maxcondition="0.01" outcondition="0.2"/>
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="15">
       <RequiredSkill identifier="electrical" level="50" />
       <RequiredItem identifier="plutonium_core" />
+      <RequiredItem identifier="depletedfuel"/>
       <RequiredItem identifier="steel" />
       <RequiredItem identifier="lead" amount="2" />
     </Fabricate>
     <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="10">
       <RequiredSkill identifier="electrical" level="30" />
-      <RequiredItem identifier="plutonium_core" />
-      <RequiredItem identifier="plutoniumfuelrod" mincondition="0.0" maxcondition="0.1" usecondition="false"/>
+      <RequiredItem identifier="depletedfuel" />
+      <RequiredItem identifier="plutoniumfuelrod" mincondition="0.0" maxcondition="0.05" usecondition="false"/>
     </Fabricate>
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="384,64,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Tools/tools.png" depth="0.55" sourcerect="452,1,19,68" />
