@@ -1,29 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <RandomEvents>
   <EventPrefabs>
-  <ScriptedEvent identifier="cbrnmission_vx">
+    <ScriptedEvent identifier="cbrnmission_vx">
       <Label name="start" />
       <TagAction criteria="players" tag="enteredplayer" submarinetype="Outpost" continueifnotargetsfound="true" />
       <AfflictionAction affliction="vx_air_agent" strength="20" targettag="enteredplayer" />
-    <AfflictionAction affliction="vx_contact_agent" strength="20" targettag="enteredplayer" />
+      <AfflictionAction affliction="vx_contact_agent" strength="20" targettag="enteredplayer" />
       <ClearTagAction tag="enteredplayer" />
       <WaitAction time="3" />
       <GoTo name="start" />
     </ScriptedEvent><!--vx staions-->
-  <ScriptedEvent identifier="cbrnmission_mustard">
+    <ScriptedEvent identifier="cbrnmission_mustard">
       <Label name="start" />
       <TagAction criteria="players" tag="enteredplayer" submarinetype="Outpost" continueifnotargetsfound="false" />
       <AfflictionAction affliction="mustard_air_agent" strength="20" targettag="enteredplayer" />
-    <AfflictionAction affliction="mustard_contact_agent" strength="20" targettag="enteredplayer" />
+      <AfflictionAction affliction="mustard_contact_agent" strength="20" targettag="enteredplayer" />
       <ClearTagAction tag="enteredplayer" />
       <WaitAction time="3" />
       <GoTo name="start" />
     </ScriptedEvent><!--Mustard staions-->
-  <ScriptedEvent identifier="cbrnmission_anthrax">
+    <ScriptedEvent identifier="cbrnmission_anthrax">
       <Label name="start" />
       <TagAction criteria="players" tag="enteredplayer" submarinetype="Outpost" continueifnotargetsfound="false" />
       <AfflictionAction affliction="anthrax_air_agent" strength="20" targettag="enteredplayer" />
-    <AfflictionAction affliction="anthrax_contact_agent" strength="20" targettag="enteredplayer" />
+      <AfflictionAction affliction="anthrax_contact_agent" strength="20" targettag="enteredplayer" />
       <ClearTagAction tag="enteredplayer" />
       <WaitAction time="5" />
       <GoTo name="start" />
@@ -33,7 +33,7 @@
       <!--mainly affects multiplayer, kills everybody in singleplayer is...uh,frustrating-->
       <AfflictionAction affliction="brokenarrow_alert_agent" strength="60" volume="0.2" targettag="targets" />
       <WaitAction time="60" />
-      <AfflictionAction affliction="explosiondamage" strength="500" targettag="targets" />
+      <AfflictionAction affliction="omegathedeath" strength="500" targettag="targets" />
     </ScriptedEvent>
   <ScriptedEvent identifier="detonation_2">
     <Label name="Start" />

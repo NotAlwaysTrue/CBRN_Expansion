@@ -34,7 +34,7 @@
   </Affliction>
   <Affliction identifier="omegathedeath" type="None" IsBuff="true" damageoverlayalpha="0.0" showiconthreshold="0" showinhealthscannerthreshold="0" maxstrength="1" limbspecific="false" indicatorlimb="Torso" iconcolors="255,162,0,255">
     <Effect minstrength="0" maxstrength="1" MultiplyByMaxVitality="true" strengthchange="0" minvitalitydecrease="100" maxvitalitydecrease="100" resistancefor="miracleworker" minresistance="1" maxresistance="1" >
-	    <StatusEffect target="Character" disabledeltatime="true">
+	    <StatusEffect target="Character" disabledeltatime="true" Vitality="-100" setvalue="true">
         <ReduceAffliction type="miracleworker" amount="99999" />
       </StatusEffect>
 	  </Effect>
@@ -467,7 +467,6 @@
     <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="0" resistancefor="tsm_virusstage,eyiinfection" minresistance="100.0" maxresistance="100.0">
 	  </Effect>
   </Affliction>
-
   <!--Mounted Weapons-->
   <Affliction identifier="mountedguns" type="None" IsBuff="true" targets="human" showiconthreshold="999" showinhealthscannerthreshold="999" maxstrength="10" limbspecific="false" indicatorlimb="Torso" Duration="0.1">
     <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="0" resistancefor="stun" minresistance="5.0" maxresistance="5.0"></Effect>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Items>
   <!--AI suits-->
-  <Item identifier="tsm_cbrnert_ai" subcategory="TSM" category="Equipment" tags="smallitem,deepdiving,divinggear_wearableindoors,cbrngear,heavycbrn" cargocontaineridentifier="metalcrate" scale="0.5" fireproof="true" waterproof="true" impactsoundtag="impact_soft">
+  <Item identifier="tsm_cbrnert_ai" subcategory="TSM" category="Equipment" tags="smallitem,deepdiving,divinggear_wearableindoors,cbrngear,heavycbrn" cargocontaineridentifier="metalcrate" scale="0.5" fireproof="true" waterproof="true" impactsoundtag="impact_soft" hideinmenus="false">
     <InventoryIcon texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suitcontained.png" sourcerect="0,255,128,173" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suititem.png" sourcerect="0,15,168,125" depth="0.6" origin="0.5,0.5" />
     <ContainedSprite name="ERT Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suitcontained.png" sourcerect="24,0,79,211" depth="0.55" origin="0.5,0.5" />
@@ -38,16 +38,16 @@
         </LightComponent>
       </sprite>
       <sprite name="Hide Boobs" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="Tail" hidelimb="true" hideotherwearables="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.15" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,bitewounds,internaldamage" damagemultiplier="0.15" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.1" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.2" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,bitewounds,internaldamage" damagemultiplier="0.2" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.15" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bleeding" damagemultiplier="0.0" probabilitymultiplier="0.0" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.2" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.25" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="triton_7L" damagemultiplier="0.4" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.1" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.0" probabilitymultiplier="0.0" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.1" probabilitymultiplier="0.0" deflectprojectiles="true" />
-      <StatusEffect type="OnWearing" target="Character" tag="cbrnsuit" SpeedMultiplier="0.7" PressureProtection="8000.0" OxygenAvailable="2000" disabledeltatime="true" LowPassMultiplier="0.3" setvalue="true">
+      <StatusEffect type="OnWearing" target="Character" tag="cbrnsuit" SpeedMultiplier="0.7" PressureProtection="125000.0" OxygenAvailable="2000" disabledeltatime="true" LowPassMultiplier="0.3" setvalue="true">
         <Affliction identifier="CBRNsuit" amount="10" />
         <Affliction identifier="CCR" amount="10" />
         <Affliction identifier="eyidefense" amount="10" />
