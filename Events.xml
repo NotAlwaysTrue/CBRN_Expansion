@@ -35,39 +35,38 @@
       <WaitAction time="60" />
       <AfflictionAction affliction="omegathedeath" strength="500" targettag="targets" />
     </ScriptedEvent>
-  <ScriptedEvent identifier="detonation_2">
-    <Label name="Start" />
+    <ScriptedEvent identifier="detonation_2">
+      <Label name="Start" />
       <TagAction criteria="itemtag:remotedetonatable" tag="availableexplosives" />
-    <WaitForItemUsedAction itemtag="availableexplosives" usertag="demoexpert" applytagtoitem="setexplosives"/>
-    <WaitForItemUsedAction itemtag="availableexplosives" usertag="demoexpert" applytagtoitem="setexplosives"/>
+      <WaitForItemUsedAction itemtag="availableexplosives" usertag="demoexpert" applytagtoitem="setexplosives"/>
+      <WaitForItemUsedAction itemtag="availableexplosives" usertag="demoexpert" applytagtoitem="setexplosives"/>
       <WaitForItemUsedAction itemtag="detonator" />
       <StatusEffectAction targettag="setexplosives">
       <StatusEffect target="This" condition="0" setvalue="true"/>
-    </StatusEffectAction>
+      </StatusEffectAction>
       <GoTo name="Start" />
     </ScriptedEvent>
-  <ScriptedEvent identifier="detonation_1">
-    <Label name="Start" />
+    <ScriptedEvent identifier="detonation_1">
+      <Label name="Start" />
       <TagAction criteria="itemtag:remotedetonatable" tag="availableexplosives" />
-    <WaitForItemUsedAction itemtag="availableexplosives" usertag="demoexpert" applytagtoitem="setexplosives"/>
+      <WaitForItemUsedAction itemtag="availableexplosives" usertag="demoexpert" applytagtoitem="setexplosives"/>
       <WaitForItemUsedAction itemtag="detonator" />
       <StatusEffectAction targettag="setexplosives">
-      <StatusEffect target="This" condition="0" setvalue="true"/>
-    </StatusEffectAction>
+        <StatusEffect target="This" condition="0" setvalue="true"/>
+      </StatusEffectAction>
       <GoTo name="Start" />
     </ScriptedEvent>
-  <ScriptedEvent identifier="detonation_3">
-    <Label name="Start" />
+    <ScriptedEvent identifier="detonation_3">
+      <Label name="Start" />
       <TagAction criteria="itemtag:remotedetonatable" tag="availableexplosives" />
-    <WaitForItemUsedAction itemtag="availableexplosives" usertag="demoexpert" applytagtoitem="setexplosives"/>
-    <WaitForItemUsedAction itemtag="availableexplosives" usertag="demoexpert" applytagtoitem="setexplosives"/>
-    <WaitForItemUsedAction itemtag="availableexplosives" usertag="demoexpert" applytagtoitem="setexplosives"/>
+      <WaitForItemUsedAction itemtag="availableexplosives" usertag="demoexpert" applytagtoitem="setexplosives"/>
+      <WaitForItemUsedAction itemtag="availableexplosives" usertag="demoexpert" applytagtoitem="setexplosives"/>
+      <WaitForItemUsedAction itemtag="availableexplosives" usertag="demoexpert" applytagtoitem="setexplosives"/>
       <WaitForItemUsedAction itemtag="detonator" />
       <StatusEffectAction targettag="setexplosives">
-      <StatusEffect target="This" condition="0" setvalue="true"/>
-    </StatusEffectAction>
+        <StatusEffect target="This" condition="0" setvalue="true"/>
+      </StatusEffectAction>
       <GoTo name="Start" />
     </ScriptedEvent>
-
   </EventPrefabs>
 </RandomEvents>

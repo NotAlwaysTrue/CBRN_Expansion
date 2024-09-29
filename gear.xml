@@ -2322,8 +2322,8 @@
         <Affliction identifier="gunshotwound" strength="18" />
         <Affliction identifier="lacerations" strength="15" />
         <Affliction identifier="lacerations" strength="12" probability="0.4" />
-        <Affliction identifier="bleeding" strength="8" />
-        <Affliction identifier="bleeding" strength="5" probability="0.4" />
+        <Affliction identifier="bleedingnonstop" strength="8" />
+        <Affliction identifier="bleedingnonstop" strength="5" probability="0.4" />
         <Affliction identifier="stun" strength="1.0" probability="0.7" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
@@ -2331,7 +2331,8 @@
       </StatusEffect>
       <StatusEffect type="OnImpact" target="This">
         <Explosion range="18.0" ballastfloradamage="0" structuredamage="0" itemdamage="0" force="0" severlimbsprobability="1" showEffects="false" decalsize="0.5" penetration="1">
-          <Affliction identifier="blunttrauma" strength="15" dividebylimbcount="true" />
+          <Affliction identifier="blunttrauma" strength="8" dividebylimbcount="false" />
+          <Affliction identifier="burn" strength="2" dividebylimbcount="true"/>
         </Explosion>
       </StatusEffect>
       <StatusEffect type="OnImpact" target="UseTarget">
@@ -2349,15 +2350,15 @@
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" density="30" />
-    <Projectile characterusable="false" Hitscan="true" spread="0.2" DamageDoors="true">
+    <Projectile characterusable="false" Hitscan="true" MaxTargetsToHit="2" spread="0.2" DamageDoors="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="80" velocitymax="100" colormultiplier="255,0,0,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="10" targetforce="8" itemdamage="15" penetration="0.6" severlimbsprobability="0.6">
         <Affliction identifier="gunshotwound" strength="20" />
         <Affliction identifier="lacerations" strength="15" />
         <Affliction identifier="lacerations" strength="10" probability="0.9" />
         <Affliction identifier="lacerations" strength="5" probability="0.8" />
-        <Affliction identifier="bleeding" strength="10" />
-        <Affliction identifier="bleeding" strength="5" probability="0.8" />
+        <Affliction identifier="bleedingnonstop" strength="10" />
+        <Affliction identifier="bleedingnonstop" strength="5" probability="0.8" />
         <Affliction identifier="stun" strength="0.5" probability="0.3" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
@@ -2385,12 +2386,12 @@
     <Body width="40" height="14" density="30" />
     <Projectile characterusable="false" Hitscan="true" spread="0.1" DamageDoors="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="80" velocitymax="100" colormultiplier="255,0,0,175" scalemultiplier="1,0.6" />
-      <Attack structuredamage="10" targetforce="8" itemdamage="12" penetration="0.45" severlimbsprobability="0.4">
-        <Affliction identifier="gunshotwound" strength="17" />
-        <Affliction identifier="lacerations" strength="8" />
+      <Attack structuredamage="10" targetforce="8" itemdamage="12" penetration="0.6" severlimbsprobability="0.4">
+        <Affliction identifier="gunshotwound" strength="18" />
+        <Affliction identifier="lacerations" strength="7" />
         <Affliction identifier="lacerations" strength="5" probability="0.65" />
         <Affliction identifier="lacerations" strength="5" probability="0.5" />
-        <Affliction identifier="bleeding" strength="8" />
+        <Affliction identifier="bleedingnonstop" strength="8" />
         <Affliction identifier="stun" strength="0.2" probability="0.5" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
@@ -2605,11 +2606,11 @@
         <ParticleEmitter particle="flare" emitinterval="2.1" particleamount="10" particlespersecond="60" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" colormultiplier="75,255,210,255"/>
         <ParticleEmitter particle="FlareBubbles" particlespersecond="40" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" scalemin="0.8" scalemax="1.2" />
       </StatusEffect>
-    <StatusEffect type="OnBroken" target="This">
+      <StatusEffect type="OnBroken" target="This">
         <Remove />
       </StatusEffect>
     </LightComponent>
-    <Projectile characterusable="false" launchimpulse="20.0" damagedoors="false"/>
+    <Projectile characterusable="false" launchimpulse="20.0" DoesStick="true" damagedoors="false"/>
   </Item>
   <Item identifier="mk153_flechette_warhead" category="Weapon" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="None" hideinmenus="true" scale="0.5" impacttolerance="0">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
@@ -2618,7 +2619,7 @@
     <Projectile characterusable="false" Hitscan="true" hitscancount="10" maxtargetstohit="2" spread="5" damagedoors="true">
     <Attack structuredamage="2" targetforce="2" itemdamage="5" severlimbsprobability="0.5" penetration="0.8">
         <Affliction identifier="gunshotwound" amount="12" />
-        <Affliction identifier="bleeding" amount="12" />
+        <Affliction identifier="bleedingnonstop" amount="12" />
         <Affliction identifier="lacerations" amount="8" />
         <Affliction identifier="stun" amount="0.5" />
       </Attack>
@@ -2712,7 +2713,7 @@
 
 
   <!--Place Holder-->
-  <Item identifier="univ_backblast_exc" category="Weapon" interactthroughwalls="false" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="None" hideinmenus="true" scale="0.5">
+  <Item identifier="univ_backblast_exc" category="Misc" interactthroughwalls="false" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="None" hideinmenus="true" scale="0.5">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="832,960,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="189,299,23,11" depth="0.55" origin="0.5,0.5" />
     <Body width="60" height="60" density="15" />
@@ -3286,7 +3287,7 @@
       </Attack>
       <StatusEffect type="OnUse" target="This">
         <Conditional holdangle="eq 50" />
-        <Explosion range="120.0" structuredamage="800" penetration="1" showEffects="false"/>
+        <Explosion range="180.0" structuredamage="1000" penetration="1" showEffects="false"/>
       </StatusEffect>
       <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
         <Conditional skillrequirement="true" weapons="lt 60" />
@@ -4128,22 +4129,19 @@
       <StatusEffect type="OnBroken" target="This">
         <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" range="50000" />
         <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" range="50000" />
-        <Explosion range="600.0" ballastfloradamage="1200" structuredamage="1500" itemdamage="1500" ignoreCover="true" force="30" severlimbsprobability="2" debris="false" decal="explosion" decalsize="0.75" penetration="1" flashrange="2000" flashduration="3" screencolor="255,255,255,255" screencolorrange="5000" screencolorduration="3.0">
-          <Affliction identifier="explosiondamage" strength="600" />
-          <Affliction identifier="burn" strength="600" />
-          <Affliction identifier="stun" strength="15" />
-          <Affliction identifier="radiationsickness" strength="30" />
-        </Explosion>
-        <Explosion range="1000.0" ballastfloradamage="600" structuredamage="600" itemdamage="600" force="10" severlimbsprobability="1" debris="false" decal="explosion" decalsize="0.75" penetration="1" >
-          <Affliction identifier="explosiondamage" strength="200" />
-          <Affliction identifier="burn" strength="200" />
-          <Affliction identifier="stun" strength="10" />
-        </Explosion>
-        <Explosion range="1400.0" ballastfloradamage="200" structuredamage="200" itemdamage="200" force="2" severlimbsprobability="0.75" debris="false" decal="explosion" decalsize="0.75" penetration="1" camerashake="200" camerashakerange="10000">
-          <Affliction identifier="bleeding" strength="60" />
-          <Affliction identifier="blunttrauma" strength="80" />
-          <Affliction identifier="stun" strength="5" />
+        <Explosion range="200.0" ballastfloradamage="15000" structuredamage="15000" itemdamage="15000" force="80" severlimbsprobability="5" penetration="1" showEffects="false" ignoreCover="true">
           <Affliction identifier="radiationsickness" strength="60" />
+          <Affliction identifier="explosiondamage" strength="1000" />
+          <Affliction identifier="burn" strength="1000" />
+        </Explosion>
+        <Explosion range="1500.0" ballastfloradamage="15000" structuredamage="15000" itemdamage="15000" force="80" severlimbsprobability="0.75" debris="false" decal="explosion" decalsize="0.75" penetration="1" camerashake="200" camerashakerange="10000" flashrange="2000" flashduration="3" screencolor="255,255,255,255" screencolorrange="5000" screencolorduration="6.0" >
+          <Affliction identifier="bleedingnonstop" strength="80" />
+          <Affliction identifier="blunttrauma" strength="120" />
+          <Affliction identifier="radiationsickness" strength="60" />
+          <Affliction identifier="explosiondamage" strength="800" />
+          <Affliction identifier="burn" strength="800" />
+          <Affliction identifier="stun" strength="35" />
+          <Affliction identifier="radiationsickness" strength="120" />
         </Explosion>
         <Remove />
       </StatusEffect>
@@ -4216,33 +4214,18 @@
       <StatusEffect type="OnBroken" target="This">
         <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" range="50000" />
         <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" range="50000" />
-        <Explosion range="1200.0" ballastfloradamage="1200" structuredamage="1500" itemdamage="1500" force="30" ignoreCover="true" severlimbsprobability="5" debris="false" decal="explosion" decalsize="0.75" penetration="1" flashrange="2000" flashduration="3" screencolor="255,255,255,255" screencolorrange="5000" screencolorduration="3.0">
-          <Affliction identifier="explosiondamage" strength="600" />
-          <Affliction identifier="burn" strength="600" />
-          <Affliction identifier="stun" strength="15" />
-          <Affliction identifier="radiationsickness" strength="30" />
+        <Explosion range="1200.0" ballastfloradamage="1200" structuredamage="1500" itemdamage="1500" force="30" ignoreCover="true" severlimbsprobability="5" showEffects="false" penetration="1">
+          <Affliction identifier="explosiondamage" strength="1200" />
+          <Affliction identifier="burn" strength="1200" />
         </Explosion>
-        <Explosion range="1800.0" ballastfloradamage="600" structuredamage="600" itemdamage="600" force="10" severlimbsprobability="2" debris="false" decal="explosion" decalsize="0.75" penetration="1" >
-          <Affliction identifier="explosiondamage" strength="200" />
-          <Affliction identifier="burn" strength="200" />
-          <Affliction identifier="stun" strength="10" />
-        </Explosion>
-        <Explosion range="2800.0" ballastfloradamage="200" structuredamage="200" itemdamage="200" force="2" severlimbsprobability="1" debris="false" decal="explosion" decalsize="0.75" penetration="1" camerashake="200" camerashakerange="10000">
-          <Affliction identifier="bleeding" strength="40" />
-          <Affliction identifier="blunttrauma" strength="100" />
-          <Affliction identifier="stun" strength="8" />
-          <Affliction identifier="radiationsickness" strength="80" />
-        </Explosion>
-        <Explosion range="3200.0" ballastfloradamage="200" structuredamage="200" itemdamage="200" force="2" severlimbsprobability="1" debris="false" decal="explosion" decalsize="0.75" penetration="1" camerashake="200" camerashakerange="10000">
-          <Affliction identifier="bleeding" strength="40" />
-          <Affliction identifier="lacerations" strength="80" />
-          <Affliction identifier="stun" strength="5" />
-          <Affliction identifier="radiationsickness" strength="30" />
-        </Explosion>
-        <Explosion range="4000.0" ballastfloradamage="200" structuredamage="200" itemdamage="200" EmpStrength="200" force="2" severlimbsprobability="0.75" debris="false" decal="explosion" decalsize="0.75" penetration="1" camerashake="200" camerashakerange="10000">
+        <Explosion range="4000.0" ballastfloradamage="200" structuredamage="200" itemdamage="200" EmpStrength="200" force="2" severlimbsprobability="0.75" debris="false" decal="explosion" decalsize="0.75" penetration="1" camerashake="200" camerashakerange="10000" flashrange="2000" flashduration="3" screencolor="255,255,255,255" screencolorrange="5000" screencolorduration="10.0" >
           <Affliction identifier="blunttrauma" strength="50" />
           <Affliction identifier="stun" strength="2" />
-          <Affliction identifier="emp" strength="200" />
+          <Affliction identifier="emp" strength="800" />
+          <Affliction identifier="explosiondamage" strength="800" />
+          <Affliction identifier="burn" strength="800" />
+          <Affliction identifier="stun" strength="35" />
+          <Affliction identifier="radiationsickness" strength="800" />
         </Explosion>
         <Remove />
       </StatusEffect>
@@ -4315,34 +4298,18 @@
       <StatusEffect type="OnBroken" target="This">
         <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" range="50000" />
         <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" range="50000" />
-        <Explosion range="2000.0" ballastfloradamage="1200" structuredamage="1500" itemdamage="1500" force="30" ignoreCover="true" severlimbsprobability="5" debris="false" decal="explosion" decalsize="0.75" penetration="1" flashrange="2000" flashduration="3" screencolor="255,255,255,255" screencolorrange="5000" screencolorduration="3.0">
-          <Affliction identifier="explosiondamage" strength="600" />
-          <Affliction identifier="burn" strength="600" />
-          <Affliction identifier="stun" strength="15" />
-          <Affliction identifier="radiationsickness" strength="10" />
+        <Explosion range="2000.0" ballastfloradamage="15000" structuredamage="15000" itemdamage="15000" severlimbsprobability="5" showEffects="false" decalsize="0.75" penetration="1" screencolorduration="3.0">
+          <Affliction identifier="explosiondamage" strength="1500" />
+          <Affliction identifier="burn" strength="1500" />
         </Explosion>
-        <Explosion range="2800.0" ballastfloradamage="600" structuredamage="600" itemdamage="600" force="10" severlimbsprobability="2" debris="false" decal="explosion" decalsize="0.75" penetration="1" >
-          <Affliction identifier="explosiondamage" strength="300" />
-          <Affliction identifier="burn" strength="200" />
-          <Affliction identifier="stun" strength="10" />
-        </Explosion>
-        <Explosion range="3800.0" ballastfloradamage="200" structuredamage="200" itemdamage="200" force="2" severlimbsprobability="1" debris="false" decal="explosion" decalsize="0.75" penetration="1" camerashake="200" camerashakerange="10000">
-          <Affliction identifier="bleeding" strength="100" />
-          <Affliction identifier="lacerations" strength="100" />
-          <Affliction identifier="blunttrauma" strength="80" />
-          <Affliction identifier="stun" strength="8" />
-          <Affliction identifier="radiationsickness" strength="100" />
-        </Explosion>
-        <Explosion range="4600.0" ballastfloradamage="200" structuredamage="200" itemdamage="200" force="2" severlimbsprobability="1" debris="false" decal="explosion" decalsize="0.75" penetration="1" camerashake="200" camerashakerange="10000">
-          <Affliction identifier="bleeding" strength="80" />
-          <Affliction identifier="blunttrauma" strength="50" />
-          <Affliction identifier="stun" strength="5" />
-          <Affliction identifier="radiationsickness" strength="100" />
-        </Explosion>
-        <Explosion range="5200.0" ballastfloradamage="200" structuredamage="200" itemdamage="200" EmpStrength="400"  force="2" severlimbsprobability="0.75" debris="false" decal="explosion" decalsize="0.75" penetration="1" camerashake="200" camerashakerange="10000">
-          <Affliction identifier="blunttrauma" strength="50" />
-          <Affliction identifier="stun" strength="2" />
+        <Explosion range="5200.0" ballastfloradamage="15000" structuredamage="15000" itemdamage="15000" EmpStrength="800"  force="30" severlimbsprobability="0.75" debris="false" decal="explosion" decalsize="0.75" penetration="1" flashrange="2000" flashduration="3" screencolor="255,255,255,255" screencolorrange="5000" screencolorduration="12.0" camerashake="200" camerashakerange="10000">
+          <Affliction identifier="blunttrauma" strength="1500" />
+          <Affliction identifier="stun" strength="60" />
           <Affliction identifier="emp" strength="400" />
+          <Affliction identifier="bleeding" strength="1500" />
+          <Affliction identifier="blunttrauma" strength="1500" />
+          <Affliction identifier="radiationsickness" strength="1500" />
+          <Affliction identifier="lacerations" strength="1500" />
         </Explosion>
         <Remove />
       </StatusEffect>
@@ -4415,39 +4382,17 @@
       <StatusEffect type="OnBroken" target="This">
         <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" range="50000" />
         <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" range="50000" />
-        <Explosion range="2000.0" ballastfloradamage="1200" structuredamage="1500" itemdamage="1500" force="30" ignoreCover="true" severlimbsprobability="8" debris="false" decal="explosion" decalsize="0.75" penetration="1" flashrange="2000" flashduration="3" screencolor="255,255,255,255" screencolorrange="5000" screencolorduration="3.0">
-          <Affliction identifier="explosiondamage" strength="600" />
-          <Affliction identifier="burn" strength="600" />
-          <Affliction identifier="stun" strength="20" />
+        <Explosion range="2000.0" ballastfloradamage="1200" structuredamage="1500" itemdamage="1500" force="30" ignoreCover="true" severlimbsprobability="8" debris="false" decal="explosion" decalsize="0.75" penetration="1">
+          <Affliction identifier="explosiondamage" strength="1800" />
+          <Affliction identifier="burn" strength="1800" />
         </Explosion>
-        <Explosion range="3200.0" ballastfloradamage="600" structuredamage="600" itemdamage="600" force="10" severlimbsprobability="2" debris="false" decal="explosion" decalsize="0.75" penetration="1" >
-          <Affliction identifier="explosiondamage" strength="400" />
-          <Affliction identifier="burn" strength="200" />
-          <Affliction identifier="stun" strength="15" />
-        </Explosion>
-        <Explosion range="4500.0" ballastfloradamage="200" structuredamage="200" itemdamage="200" force="2" severlimbsprobability="1" debris="false" decal="explosion" decalsize="0.75" penetration="1" camerashake="200" camerashakerange="10000">
-          <Affliction identifier="bleeding" strength="100" />
-          <Affliction identifier="blunttrauma" strength="90" />
-          <Affliction identifier="burn" strength="90" />
-          <Affliction identifier="stun" strength="10" />
-        </Explosion>
-        <Explosion range="5200.0" ballastfloradamage="200" structuredamage="200" itemdamage="200" force="2" severlimbsprobability="1" debris="false" decal="explosion" decalsize="0.75" penetration="1" camerashake="200" camerashakerange="10000">
-          <Affliction identifier="lacerations" strength="100" />
-          <Affliction identifier="burn" strength="40" />
-          <Affliction identifier="blunttrauma" strength="90" />
-          <Affliction identifier="stun" strength="8" />
-          <Affliction identifier="radiationsickness" strength="5" />
-        </Explosion>
-        <Explosion range="5800.0" ballastfloradamage="200" structuredamage="200" itemdamage="200" force="2" severlimbsprobability="1" debris="false" decal="explosion" decalsize="0.75" penetration="1" camerashake="200" camerashakerange="10000">
-          <Affliction identifier="lacerations" strength="60" />
-          <Affliction identifier="blunttrauma" strength="90" />
-          <Affliction identifier="stun" strength="5" />
-        </Explosion>
-        <Explosion range="6500.0" ballastfloradamage="200" structuredamage="200" itemdamage="200" EmpStrength="400"  force="2" severlimbsprobability="0.75" debris="false" decal="explosion" decalsize="0.75" penetration="1" camerashake="200" camerashakerange="10000">
-          <Affliction identifier="lacerations" strength="20" />
-          <Affliction identifier="blunttrauma" strength="50" />
-          <Affliction identifier="stun" strength="2" />
+        <Explosion range="6500.0" ballastfloradamage="200" structuredamage="200" itemdamage="200" EmpStrength="400"  force="2" severlimbsprobability="0.75" debris="false" decal="explosion" decalsize="0.75" penetration="1" camerashake="200" camerashakerange="10000"  flashrange="2000" flashduration="3" screencolor="255,255,255,255" screencolorrange="5000" screencolorduration="18.0">
+          <Affliction identifier="lacerations" strength="1800" />
+          <Affliction identifier="blunttrauma" strength="1800" />
+          <Affliction identifier="stun" strength="40" />
           <Affliction identifier="emp" strength="400" />
+          <Affliction identifier="explosiondamage" strength="1800" />
+          <Affliction identifier="burn" strength="1800" />
         </Explosion>
         <Remove />
       </StatusEffect>
@@ -4593,7 +4538,7 @@
           <Affliction identifier="stun" strength="15" />
         </Explosion>
         <Explosion range="3200.0" ballastfloradamage="10000" ignoreCover="true" severlimbsprobability="0.75" showEffects="false" penetration="1">
-          <Affliction identifier="radiationsickness" strength="800" />
+          <Affliction identifier="radiationsickness" strength="10000" />
         </Explosion>
         <Remove />
       </StatusEffect>
@@ -4672,7 +4617,7 @@
           <Affliction identifier="stun" strength="15" />
         </Explosion>
         <Explosion range="3200.0" EmpStrength="10000" ignoreCover="true" severlimbsprobability="0.75" showEffects="false" penetration="1">
-          <Affliction identifier="emp" strength="800" />
+          <Affliction identifier="emp" strength="1500" />
         </Explosion>
         <Remove />
       </StatusEffect>
@@ -4770,7 +4715,7 @@
     <ItemContainer hideitems="false" capacity="1" maxstacksize="1" ContainedSpriteDepth="0.54">
       <Containable items="neutron_reflector" />
     </ItemContainer>
-  </Item>
+  </Item><!--Considering to remove it-->
 
 
   <!--Meds-->
