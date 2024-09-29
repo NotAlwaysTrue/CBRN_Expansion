@@ -131,8 +131,8 @@
     <Body width="210" height="70" density="52" />
     <Holdable slots="Any,RightHand,LeftHand" handle1="0,-0" handle2="0,0" msg="ItemMsgPickUpSelect">
       <StatusEffect type="Always" target="Character,This" disabledeltatime="true" condition="0" OneShot="true" setvalue="true">
-        <Affliction identifier="stressprotection_ai" amount="100" />
         <Affliction identifier="eyiprotection_ai" amount="100" />
+        <Affliction identifier="immutopressureoxygenlow_ai" amount="100" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This">
         <Remove />
