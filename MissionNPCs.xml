@@ -44,36 +44,36 @@
   <npcset identifier="Craftable_CBRN">
     <npc identifier="cbrnguy_col" job="cbrn_guy" behavior="Patrol" >
       <ItemSet commonness="1">
-        <Item identifier="idcard" equip="true" showpreview="false"/>
-        <Item identifier="headset" equip="true" showpreview="false"/>
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="headset" equip="true" />
         <Item identifier="standard_cbrnsuit_gray" equip="true" outfit="true"/>
         <Item identifier="berra_cbrn3" equip="true" outfit="true">
-          <Item identifier="col_filiter" showpreview="false"/>
+          <Item identifier="col_filiter" />
         </Item>
         <Item identifier="tsm_lm_m16">
-          <Item identifier="lm_556_mag" showpreview="false"/>
+          <Item identifier="lm_556_mag" />
         </Item>
-        <Item identifier="lm_556_mag" showpreview="false"/>
-        <Item identifier="lm_556_mag" showpreview="false"/>
-        <Item identifier="lm_556_mag" showpreview="false"/>
-        <Item identifier="lm_556_mag" showpreview="false"/>
+        <Item identifier="lm_556_mag" />
+        <Item identifier="lm_556_mag" />
+        <Item identifier="lm_556_mag" />
+        <Item identifier="lm_556_mag" />
       </ItemSet>
     </npc>
     <npc identifier="cbrnguy_sep" job="cbrn_guy" behavior="Patrol" >
       <ItemSet commonness="1">
-        <Item identifier="idcard" equip="true" showpreview="false"/>
-        <Item identifier="headset" equip="true" showpreview="false"/>
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="headset" equip="true" />
         <Item identifier="standard_cbrnsuit_gray" equip="true" outfit="true"/>
         <Item identifier="berra_cbrn3" equip="true" outfit="true">
-          <Item identifier="sep_filiter" showpreview="false"/>
+          <Item identifier="sep_filiter" />
         </Item>
         <Item identifier="tsm_fkj_ak74">
-          <Item identifier="fkj_545_mag" showpreview="false"/>
+          <Item identifier="fkj_545_mag" />
         </Item>
-        <Item identifier="fkj_545_mag" showpreview="false"/>
-        <Item identifier="fkj_545_mag" showpreview="false"/>
-        <Item identifier="fkj_545_mag" showpreview="false"/>
-        <Item identifier="fkj_545_mag" showpreview="false"/>
+        <Item identifier="fkj_545_mag" />
+        <Item identifier="fkj_545_mag" />
+        <Item identifier="fkj_545_mag" />
+        <Item identifier="fkj_545_mag" />
       </ItemSet>
     </npc>
   </npcset>
