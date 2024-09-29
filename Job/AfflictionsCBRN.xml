@@ -74,7 +74,8 @@
     Duration="0.1">
     <Effect minstrength="0" maxstrength="10" resistancefor="bleeding" minresistance="1.0" maxresistance="1.0">
       <StatusEffect target="Character" disabledeltatime="True" Interval="2.0">
-        <ReduceAffliction type="bleeding" amount="10" />
+        <ReduceAffliction type="bleeding" amount="20" />
+        <ReduceAffliction type="damage" amount="10" />
       </StatusEffect>
     </Effect>
     <icon texture="%ModDir%/Weapons/Chemical/blackbase.png" sourcerect="0,0,1,1" color="255,255,255,255" origin="0.5,0.5" />
@@ -163,4 +164,23 @@
     <icon texture="%ModDir%/Weapons/Chemical/blackbase.png" sourcerect="0,0,1,1" color="255,255,255,255" origin="0.5,0.5" />
   </Affliction>
 
+  <Affliction
+    identifier="chemicalliner_secondary"
+    type="buff"
+    isbuff="true"
+    hideiconafterdelay="true"
+    limbspecific="false"
+    maxstrength="10"
+    showiconthreshold="0"
+    showinhealthscannerthreshold="0"
+    treatmentthreshold="1000"
+    iconcolors="227,247,249"
+    Duration="0.1">
+    <Effect minstrength="0" maxstrength="10" resistancefor="bleeding" minresistance="1.0" maxresistance="1.0">
+      <StatusEffect target="Character" disabledeltatime="True" Interval="2.0">
+        <ReduceAffliction type="bleeding" amount="20" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/Weapons/Chemical/blackbase.png" sourcerect="0,0,1,1" color="255,255,255,255" origin="0.5,0.5" />
+  </Affliction>
 </Afflictions>

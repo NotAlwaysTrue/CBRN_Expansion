@@ -889,7 +889,7 @@
   </Item>
   <Item identifier="deconstructnuclearspread" Scale="0.5" tags="" sonarsize="20" hideinmenus="true">
     <AiTarget sightrange="1000.0" soundrange="1000" sonardisruption="10" static="True" />
-    <sprite texture="%ModDir%/Weapons/Chemical/normal.png" sourcerect="367,7,147,150" depth="0.98" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/Weapons/Chemical/normal.png" sourcerect="367,7,147,150" depth="0.98" origin="0.5,0.5" colormultiplier="255,0,0,255"/>
     <ItemComponent>
       <StatusEffect type="Always" target="This" condition="-100" />
       <StatusEffect type="Always" target="This" disabledeltatime="true" OneShot="true">

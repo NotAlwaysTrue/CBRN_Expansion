@@ -105,6 +105,8 @@
         <Affliction identifier="CBRNsuit" amount="10" />
         <Affliction identifier="exosuited" amount="10" />
         <Affliction identifier="eyidefense" amount="10" />
+        <Affliction identifier="chemicalliner_armorbreak" amount="10" />
+        <Affliction identifier="chemicalliner_secondary" amount="10" />
       </StatusEffect>
       <ItemContainer capacity="2" maxstacksize="2">
         <Containable items="smallitem" excludeditems="mobilecontainer" />
@@ -121,15 +123,15 @@
     <Deconstruct time="30">
       <Item identifier="titaniumaluminiumalloy" amount="2"/>
       <Item identifier="fpgacircuit" amount="2"/>
-    <Item identifier="ballisticfiber" amount="1"/>
-    <Item identifier="rubber" amount="1"/>
+      <Item identifier="ballisticfiber" amount="1"/>
+      <Item identifier="rubber" amount="1"/>
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="45" requiresrecipe="true">
       <RequiredItem identifier="titaniumaluminiumalloy" amount="4"/>
       <RequiredItem identifier="ballisticfiber" amount="5"/>
       <RequiredItem identifier="fpgacircuit" amount="4"/>
-    <RequiredItem identifier="steel" amount="2" />
-    <RequiredItem identifier="rubber" amount="2" />
+      <RequiredItem identifier="steel" amount="2" />
+      <RequiredItem identifier="rubber" amount="2" />
     </Fabricate>
     <Wearable slots="Head+OuterClothes+InnerClothes" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
       <sprite name="ERT Torso" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="Torso" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="138,0,126,191" origin="0.61,0.51" />
@@ -147,7 +149,7 @@
       <sprite name="ERT Left Shoe" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="80,225,77,31" origin="0.54,0.33" />
       <sprite name="ERT Right Shoe" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="337,224,75,32" origin="0.55,0.32" />
       <sprite name="ERT Helmet Wearable" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suititem.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" depthlimb="LeftArm" scale="0.8" hideotherwearables="true" hidelimb="true" sourcerect="0,170,80,90" origin="0.35,0.6">
-        <LightComponent range="1500.0" lightcolor="250,224,165,255" powerconsumption="0" IsOn="true">
+        <LightComponent range="1500.0" lightcolor="250,224,165,255" powerconsumption="0" IsOn="true" characterusable="false">
           <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" Interval="1" setvalue="true">
             <Conditional IsDead="false" />
           </StatusEffect>
@@ -196,7 +198,7 @@
         <StatusEffect type="OnSecondaryUse" targettype="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="false" />
       </TickBox>
     </CustomInterface>
-    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="70,-10" aimpos="70,-10" handle1="0,0" handle2="0,0" holdangle="0" msg="ItemMsgPickUp"/>
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="70,-10" aimpos="70,-10" handle1="0,0" handle2="0,0" holdangle="0" pickkey="Use" msg="ItemMsgPickUpUse"/>
   </Item>
   <Item identifier="rz_p_mk1_cbrn" subcategory="TSM" category="Equipment" tags="diving,deepdiving,deepdivinglarge,divinggear_wearableindoors,provocative,heavycbrn" scale="0.605" fireproof="true" description="" isshootable="true" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="0.01">
     <Deconstruct time="30">
@@ -404,7 +406,7 @@
         </SubContainer>
       </ItemContainer>
     </Wearable>
-    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="55,-50" aimpos="55,-50" handle1="0,0" handle2="15,0" holdangle="0" aimangle="0" msg="ItemMsgPickUpSelect" />
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="55,-50" aimpos="55,-50" handle1="0,0" handle2="15,0" holdangle="0" aimangle="0" pickkey="Use" msg="ItemMsgPickUpUse" />
     <aitarget sightrange="2500" soundrange="3000" fadeouttime="6" />
   </Item>
   <Item identifier="berra_cbrn3" subcategory="Berra Group" category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem" scale="0.15" fireproof="true" impactsoundtag="impact_metal_light" hideinmenus="false">

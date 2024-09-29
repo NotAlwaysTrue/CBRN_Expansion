@@ -53,12 +53,12 @@
     </ItemSet>
     <AutonomousObjectives>
       <Order identifier="fightintruders" prioritymodifier="1" />
-      <Order identifier="rescue" prioritymodifier="0.8" />
-      <Order identifier="extinguishfires" prioritymodifier="0.75" />
-      <Order identifier="fixleaks" prioritymodifier="0.3" />
-      <Order identifier="operateweapons" prioritymodifier="0.3" />
-      <Order identifier="repairsystems" prioritymodifier="0.3" />
+      <Order identifier="extinguishfires" prioritymodifier="0.6" />
+      <Order identifier="repairsystems" prioritymodifier="0.2" />
+      <Order identifier="fixleaks" prioritymodifier="0.2" />
       <Order identifier="cleanupitems" prioritymodifier="0.1" />
+      <Order identifier="rescue" prioritymodifier="0.1" />
+      <Order identifier="operateweapons" prioritymodifier="0.0" />
     </AutonomousObjectives>
     <AppropriateOrders>
       <Order identifier="fightintruders"/>
