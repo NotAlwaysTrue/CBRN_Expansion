@@ -476,6 +476,9 @@
   <entityname.rz_p_mk1_cbrn_ai>戎装 Mk.1 NBCP</entityname.rz_p_mk1_cbrn_ai>
   <entityname.rz_p_mk1_cbrn_plus>戎装 Mk.1 NBCPv3</entityname.rz_p_mk1_cbrn_plus>
   <entityname.berra_bio2_ai>BerraARM Bio-2L核生化战斗防护服</entityname.berra_bio2_ai>
+  <entityname.craftable_cbrn_col>CBRN职业船员生成器(联盟装备)</entityname.craftable_cbrn_col>
+  <entityname.craftable_cbrn_sep>CBRN职业船员生成器(分离主义装备)</entityname.craftable_cbrn_sep>
+  
 
   <entitydescription.fuelextractor>一个集成式核材料提取装置,可用于提取多种核材料 \n按E放置</entitydescription.fuelextractor>
   <entitydescription.nuclearwaste>耗尽的反应堆燃料,可通过核材料提取装置提取剩余材料</entitydescription.nuclearwaste>
@@ -492,6 +495,9 @@
   <entitydescription.rz_p_mk1_cbrn_ai>奇迹之海为核生化应急响应部队研制配发的戎装 Mk.1 \nNBCPv1(核生化防护组件v1)为使用者提供了对核生化威胁的保护 \n‖color:255,0,0,255‖未经训练的使用者无法操作这一设备‖color:end‖</entitydescription.rz_p_mk1_cbrn_ai>
   <entitydescription.rz_p_mk1_cbrn_plus>奇迹之海为核生化应急响应部队研制配发的戎装 Mk.1 \nNBCPv3(核生化防护组件v3)是试验型号的升级组件,能够为使用者提供最全面的保护 \n‖color:255,0,0,255‖未经训练的使用者无法操作这一设备‖color:end‖</entitydescription.rz_p_mk1_cbrn_plus>
   <entitydescription.breachhammer>锤子和撬棍的结合体 \n你知道它能干什么,对吧....对....对吧? \n是的贴图有点偷懒请不要在意quq</entitydescription.breachhammer>
+  <entitydescription.craftable_cbrn_col>一个船员生成工具,允许你生成一只携带联盟装备的CBRN职业AI船员</entitydescription.craftable_cbrn_col>
+  <entitydescription.craftable_cbrn_sep>一个船员生成工具,允许你生成一只携带分离主义装备的CBRN职业AI船员</entitydescription.craftable_cbrn_sep>
+
 
   <talentname.fuelextract>核材料提取</talentname.fuelextract>
   <talentname.hert>重·装·部·队</talentname.hert>

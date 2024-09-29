@@ -68,5 +68,13 @@
       </StatusEffectAction>
       <GoTo name="Start" />
     </ScriptedEvent>
+    <ScriptedEvent identifier="craftablecbrn_col">
+      <SpawnAction speciesname="human" npcsetidentifier="Craftable_CBRN" npcidentifier="cbrnguy_col" spawnlocation="MainSub" targettag="spawn_cbrn" teamid="FriendlyNPC" amount="1" allowinplayerview="true" />
+      <NPCChangeTeamAction npctag="spawn_cbrn" teamid="Team1"  addtocrew="true" />
+    </ScriptedEvent>
+    <ScriptedEvent identifier="craftablecbrn_sep">
+      <SpawnAction speciesname="human" npcsetidentifier="Craftable_CBRN" npcidentifier="cbrnguy_sep" spawnlocation="MainSub" targettag="spawn_cbrn" teamid="FriendlyNPC" amount="1" allowinplayerview="true" />
+      <NPCChangeTeamAction npctag="spawn_cbrn" teamid="Team1"  addtocrew="true" />
+    </ScriptedEvent>
   </EventPrefabs>
 </RandomEvents>
