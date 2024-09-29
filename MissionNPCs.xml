@@ -1,33 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <npcsets>
   <npcset identifier="HAZMAT_Unit_Undermasks">
-    <npc identifier="undermask_rifleman" job="cbrn_guy_ai" behavior="Patrol" healthmultiplier="1.2" aimspeed="10" aimaccuracy="12" reportrange="8000" skillmultiplier="5">
+    <npc identifier="undermask_rifleman" job="cbrn_guy_ai" behavior="Patrol" healthmultiplier="1.1" aimspeed="12" aimaccuracy="10" reportrange="3000" skillmultiplier="5">
       <ItemSet commonness="1">
         <Item identifier="idcard" equip="true" showpreview="false" />
         <Item identifier="berra_cbrn3a" equip="true" />
         <Item identifier="berra_bio2" equip="true" />
-        <Item identifier="headset" equip="true" showpreview="false" />
         <Item identifier="aibuff_1_autorun" />
         <Item identifier="berra_m4_458socom">
           <Item identifier="berra_STANAG_458socom" />
         </Item>
         <Item identifier="berra_STANAG_458socom" amount="8" />
-        <Item identifier="divingknife" />
+        <Item identifier="breachhammer" />
       </ItemSet>
     </npc>
   </npcset>
   <npcset identifier="HAZMAT_Unit_Fiereaters">
-    <npc identifier="fireeater_rifleman" job="cbrn_guy_ai_fireproof" behavior="Patrol" healthmultiplier="1.2" aimspeed="10" aimaccuracy="12" reportrange="8000" skillmultiplier="5">
+    <npc identifier="fireeater_rifleman" job="cbrn_guy_ai_fireproof" behavior="Patrol" healthmultiplier="1.1" aimspeed="8" aimaccuracy="5" reportrange="6000" skillmultiplier="5">
       <ItemSet commonness="1">
         <Item identifier="berra_etps7b" equip="true" />
         <Item identifier="idcard" equip="true" />
-        <Item identifier="headset" equip="true" showpreview="false" />
         <Item identifier="aibuff_1_autorun" />
         <Item identifier="berra_m4_458socom">
           <Item identifier="berra_STANAG_458socom" />
         </Item>
         <Item identifier="berra_STANAG_458socom" amount="8" />
-        <Item identifier="divingknife" />
+        <Item identifier="breachhammer" />
+      </ItemSet>
+    </npc>
+  </npcset>
+  <npcset identifier="HAZMAT_Unit_tsmnbcert">
+    <npc identifier="nbcert_rifleman" job="cbrn_guy_ai_fireproof" behavior="Patrol" healthmultiplier="1.1" aimspeed="15" aimaccuracy="13" reportrange="2000" skillmultiplier="5">
+      <ItemSet commonness="1">
+        <Item identifier="tsm_cbrnert_ai" equip="true" />
+        <Item identifier="idcard" equip="true" />
+        <Item identifier="aibuff_1_autorun" />
+        <Item identifier="breachhammer" />
       </ItemSet>
     </npc>
   </npcset>
