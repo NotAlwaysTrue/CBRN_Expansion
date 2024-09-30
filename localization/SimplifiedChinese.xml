@@ -508,4 +508,5 @@
   <entityname.deconstructnuclearspread>放射性物质暴露</entityname.deconstructnuclearspread>
   <entitydescription.deconstructnuclearspread>一大堆放射性物质从装载它们的容器中跑出来了,这会是是灾难性的 \n请认真检查你的操作,你一定做错了什么</entitydescription.deconstructnuclearspread>
   
+  <jobname.cbrn_guy_test>测试用品</jobname.cbrn_guy_test>
 </infotexts>

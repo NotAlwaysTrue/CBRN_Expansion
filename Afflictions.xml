@@ -467,6 +467,14 @@
     <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="0" resistancefor="tsm_virusstage,eyiinfection" minresistance="100.0" maxresistance="100.0">
 	  </Effect>
   </Affliction>
+  <Affliction identifier="mechready" type="CBRNGEAR" IsBuff="true" targets="human" showiconthreshold="999" showinhealthscannerthreshold="999" maxstrength="10" limbspecific="false" indicatorlimb="Head" Duration="0.1">
+    <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="0" resistancefor="stun" minresistance="100.0" maxresistance="100.0">
+	  <StatusEffect Target="Character">
+      <TriggerAnimation Type="Walk" file="%ModDir%/Characters/humanmech_anim/MechWalk.xml" priority="6" ExpectedSpecies="Human" />
+      <TriggerAnimation Type="Run" file="%ModDir%/Characters/humanmech_anim/MechRun.xml" priority="100" ExpectedSpecies="Human" />
+    </StatusEffect>
+    </Effect>
+  </Affliction>
   <!--Mounted Weapons-->
   <Affliction identifier="mountedguns" type="None" IsBuff="true" targets="human" showiconthreshold="999" showinhealthscannerthreshold="999" maxstrength="10" limbspecific="false" indicatorlimb="Torso" Duration="0.1">
     <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="0" resistancefor="stun" minresistance="5.0" maxresistance="5.0"></Effect>

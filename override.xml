@@ -122,9 +122,15 @@
           <ReduceAffliction type="burn" amount="4" />
           <ReduceAffliction type="bleeding" amount="4" />
           <SuitableTreatment type="bloodloss" amount="4" />
-      <ReduceAffliction identifier="skinburn_biosource" amount="4" />
+          <ReduceAffliction identifier="triton_9C" amount="8" />
+          <ReduceAffliction identifier="triton_burn" amount="8" />
+          <ReduceAffliction identifier="tsm_bl" amount="8" />
+          <ReduceAffliction identifier="triton_7L" amount="8" />
+          <ReduceAffliction identifier="zlqy" amount="8" />
+          <ReduceAffliction identifier="zlyz" amount="8" />
+          <ReduceAffliction identifier="skinburn_biosource" amount="4" />
           <ReduceAffliction identifier="organdamage_poisonsource" amount="3" />
-      <ReduceAffliction identifier="organdamage_biosource" amount="3" />
+          <ReduceAffliction identifier="organdamage_biosource" amount="3" />
           <ReduceAffliction identifier="neurologicaldisorder_poisonsource" amount="2" />
           <ReduceAffliction identifier="skinburn_poisonsource" amount="3" />
         </StatusEffect>
@@ -132,9 +138,15 @@
           <ReduceAffliction type="damage" amount="3" />
           <ReduceAffliction type="burn" amount="3" />
           <ReduceAffliction type="bleeding" amount="3" />
-      <ReduceAffliction identifier="skinburn_biosource" amount="3" />
+          <ReduceAffliction identifier="skinburn_biosource" amount="3" />
           <ReduceAffliction identifier="organdamage_poisonsource" amount="2" />
-      <ReduceAffliction identifier="organdamage_biosource" amount="2" />
+          <ReduceAffliction identifier="organdamage_biosource" amount="2" />
+          <ReduceAffliction identifier="triton_9C" amount="4" />
+          <ReduceAffliction identifier="triton_burn" amount="4" />
+          <ReduceAffliction identifier="tsm_bl" amount="4" />
+          <ReduceAffliction identifier="triton_7L" amount="4" />
+          <ReduceAffliction identifier="zlqy" amount="4" />
+          <ReduceAffliction identifier="zlyz" amount="4" />
           <ReduceAffliction identifier="neurologicaldisorder_poisonsource" amount="1" />
           <ReduceAffliction identifier="skinburn_poisonsource" amount="2" />
           <SuitableTreatment type="bloodloss" amount="3" />

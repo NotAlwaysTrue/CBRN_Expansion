@@ -219,29 +219,30 @@
     <Sprite name="rz_prototypesuit Item" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/mk1.png" sourcerect="108,65,194,369" depth="0.55" origin="0.5,0.72" />
     <Body width="150" height="230" density="15" />
     <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select" allowusewhenworn="true">
-      <sprite name="rz_prototypesuit Helmet Wearable" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="Head" hidelimb="true" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" depthlimb="LeftArm" scale="0.43" hideotherwearables="true" hidewearablesoftype="" sourcerect="269,7,96,90" origin="0.35,1.57" />
-      <sprite name="rz_prototypesuit Torso" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="Torso" scale="0.95" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.65,0.82" inheritlimbdepth="true" inheritsourcerect="false" sourcerect="1,7,213,214">
+      <sprite name="rz_prototypesuit Helmet Wearable" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="Head" hidelimb="true" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" depthlimb="LeftArm" scale="0.43" hideotherwearables="true" hidewearablesoftype="" sourcerect="269,7,96,90" origin="0.0,0.7" />
+      <sprite name="rz_prototypesuit Torso" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="Torso" scale="0.95" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.41,0.5" inheritlimbdepth="true" inheritsourcerect="false" sourcerect="1,7,213,214">
         <LightComponent LightColor="150,150,150,255" range="1200" powerconsumption="10" IsOn="true" pulsefrequency="0.1" pulseamount="0.5">
           <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.495" size="2.5,4.0" />
         </LightComponent>
       </sprite>
-      <sprite name="rz_prototypesuit Right Hand" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="RightHand" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.45" scale="0.4" inheritsourcerect="false" SourceRect="449,125,55,69" />
-      <sprite name="rz_prototypesuit Left Hand" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="LeftHand" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.45" scale="0.4" inheritsourcerect="false" SourceRect="449,125,55,69" />
-      <sprite name="rz_prototypesuit Right Upper Arm" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="RightArm" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.9" scale="0.5" inheritsourcerect="false" SourceRect="300,117,106,138" />
-      <sprite name="rz_prototypesuit Left Upper Arm" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="LeftArm" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.9" scale="0.5" inheritsourcerect="false" SourceRect="300,117,106,138" />
-      <sprite name="rz_prototypesuit Right Forearm" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="RightForearm" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.75" scale="0.4" inheritsourcerect="false" SourceRect="441,13,71,91" />
-      <sprite name="rz_prototypesuit Left Forearm" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="LeftForearm" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.75" scale="0.4" inheritsourcerect="false" SourceRect="441,13,71,91"  />
+      <sprite name="rz_prototypesuit Right Hand" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="RightHand" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.0" scale="0.4" inheritsourcerect="false" SourceRect="449,125,55,69" />
+      <sprite name="rz_prototypesuit Left Hand" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="LeftHand" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.0" scale="0.4" inheritsourcerect="false" SourceRect="449,125,55,69" />
+      <sprite name="rz_prototypesuit Right Upper Arm" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="RightArm" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.5" scale="0.5" inheritsourcerect="false" SourceRect="300,117,106,138" />
+      <sprite name="rz_prototypesuit Left Upper Arm" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="LeftArm" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.5" scale="0.5" inheritsourcerect="false" SourceRect="300,117,106,138" />
+      <sprite name="rz_prototypesuit Right Forearm" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="RightForearm" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.0" scale="0.4" inheritsourcerect="false" SourceRect="441,13,71,91" />
+      <sprite name="rz_prototypesuit Left Forearm" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="LeftForearm" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.0" scale="0.4" inheritsourcerect="false" SourceRect="441,13,71,91"  />
       <sprite name="rz_prototypesuit Waist" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="Waist" hidelimb="true" scale="0.6" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.9" inheritsourcerect="false" sourcerect="182,264,109,91" />
-      <sprite name="rz_prototypesuit Right Thigh" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.75" inheritsourcerect="false"  sourcerect="0,288,111,153" />
-      <sprite name="rz_prototypesuit Left Thigh" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.75" inheritsourcerect="false" sourcerect="0,288,111,153" />
-      <sprite name="rz_prototypesuit Right Leg" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="RightLeg" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.45,0.7" scale="0.55" inheritsourcerect="false" sourcerect="134,372,85,139" />
-      <sprite name="rz_prototypesuit Left Leg" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="LeftLeg" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.45,0.7" inheritsourcerect="false" scale="0.55" sourcerect="134,372,85,139" />
-      <sprite name="rz_prototypesuit Left Shoe" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.6" inheritsourcerect="false" scale="0.6" sourcerect="381,315,121,49" />
-      <sprite name="rz_prototypesuit Right Shoe" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.6" inheritsourcerect="false" scale="0.6" sourcerect="381,315,121,49" />
+      <sprite name="rz_prototypesuit Right Thigh" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.08,0.3" inheritsourcerect="false"  sourcerect="0,288,111,153" />
+      <sprite name="rz_prototypesuit Left Thigh" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.08,0.3" inheritsourcerect="false" sourcerect="0,288,111,153" />
+      <sprite name="rz_prototypesuit Right Leg" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="RightLeg" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.03,0.1" scale="0.55" inheritsourcerect="false" sourcerect="134,372,85,139" />
+      <sprite name="rz_prototypesuit Left Leg" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="LeftLeg" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.03,0.1" inheritsourcerect="false" scale="0.55" sourcerect="134,372,85,139" />
+      <sprite name="rz_prototypesuit Left Shoe" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.18,-1" inheritsourcerect="false" scale="0.6" sourcerect="381,315,121,49" />
+      <sprite name="rz_prototypesuit Right Shoe" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.18,-1" inheritsourcerect="false" scale="0.6" sourcerect="381,315,121,49" />
       <StatusEffect type="OnWearing" target="Character" OxygenAvailable="-100.0" UseHullOxygen="false" />
       <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="true" PressureProtection="10000.0" SpeedMultiplier="0.5" PropulsionSpeedMultiplier="0.25" setvalue="true" disabledeltatime="true">
         <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="250" loop="true"/>
         <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="250" loop="true"/>
+        <Affliction identifier="mechready" amount="10" />
       </StatusEffect>
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,bitewounds,lacerations" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn,bleeding" damagemultiplier="0.3" damagesound="" deflectprojectiles="true" />
@@ -251,42 +252,8 @@
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="acidburn" damagemultiplier="0.15" damagesound=""/>
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" probabilitymultiplier="0.0" damagesound="LimbArmor"/>
       <sound file="Content/Items/Weapons/WEAPONS_chargeUp.ogg" type="OnWearing" range="500.0" volumeproperty="Speed" volume="0.2" loop="true" frequencymultiplier="0.5" />
-      <StatValue stattype="FlowResistance" value="0.0" />
+      <StatValue stattype="FlowResistance" value="1.0" />
     </Wearable>
-    <ItemContainer capacity="0" hideitems="true" containedstateindicatorstyle="tank" containedstateindicatorslot="0">
-      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="64,448,64,64" origin="0.5,0.5" />
-      <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="192,448,64,64" origin="0.5,0.5" />
-      <StatusEffect type="OnWearing" target="Contained" targetslot="0">
-        <RequiredItem items="oxygensource" type="Contained" targetslot="0" />
-        <Conditional condition="lt 5.0" />
-        <Sound file="Content/Items/WarningBeepSlow.ogg" range="500" loop="true"/>
-      </StatusEffect>
-      <StatusEffect type="OnWearing" target="Contained" targetslot="0" playsoundonrequireditemfailure="true">
-        <RequiredItem items="oxygensource" type="Contained" targetslot="0" matchonempty="true" />
-        <Conditional condition="lte 0.0" />
-        <Sound file="Content/Items/WarningBeep.ogg" range="500" loop="true"/>
-      </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.1" PressureProtection="0.0" OxygenAvailable="-4000" disabledeltatime="true" LowPassMultiplier="1" ObstructVisionAmount="0.99" setvalue="true">
-        <Conditional jobidentifier="neq cbrn_guy"/>
-      </StatusEffect>
-      <StatusEffect type="OnWearing" target="Character" disabledeltatime="true" Interval="2.0">
-        <Conditional jobidentifier="neq cbrn_guy"/>
-        <Affliction identifier="oxygenlow" amount="10"/>
-      </StatusEffect>
-      <SubContainer capacity="1" maxstacksize="1">
-        <Containable items="oxygensource,weldingtoolfuel" />
-      </SubContainer>
-      <SubContainer capacity="1" maxstacksize="1">
-        <Containable items="reactorfuel">
-          <StatusEffect type="OnContaining" target="This,Character" Voltage="1.0" setvalue="true">
-            <Conditional IsDead="false" />
-          </StatusEffect>
-        </Containable>
-      </SubContainer>
-      <SubContainer capacity="10" maxstacksize="32">
-        <Containable items="smallitem" />
-      </SubContainer>
-    </ItemContainer>
     <aitarget maxsightrange="1500" />
   </Item>
 
