@@ -106,20 +106,4 @@
       <Order identifier="fightintruders"/>
     </AppropriateOrders>
   </Job>
-
-  <Job identifier="cbrn_guy_test" onlyjobspecificdialog="false" idlebehavior="Active" initialcount="1" uicolor="255,178,0">
-    <Jobicon>
-      <sprite texture="%ModDir%/Job/cbrnguy.png" sourcerect="0,0,122,128" origin="0.5,0.5" />
-    </Jobicon>
-    <Skills>
-      <Skill identifier="mechanical" level="15,25"/>
-      <Skill identifier="electrical" level="15,25"/>
-      <Skill identifier="weapons" level="35,55" primary="true"/>
-      <Skill identifier="medical" level="35,55" primary="true"/>
-      <Skill identifier="helm" level="5,10"/>
-    </Skills>
-    <ItemSet>
-      <Item identifier="rz_p_mk1_cbrn" equip="true" showpreview="false"/>
-    </ItemSet>
-  </Job>
 </Jobs>
