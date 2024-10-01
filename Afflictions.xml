@@ -442,6 +442,7 @@
     <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="0" resistancefor="airagent,oxygenlow" minresistance="100.0" maxresistance="100.0">
 	  <StatusEffect target="Character" disabledeltatime="true">
         <ReduceAffliction type="airagent" amount="99999" />
+        <ReduceAffliction type="oxygenlow" amount="99999" />
       </StatusEffect>
 	  </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,0,1,1" color="0,0,0,255" origin="0,0" />

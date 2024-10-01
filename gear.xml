@@ -248,7 +248,7 @@
       <sprite name="rz_prototypesuit Left Leg" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="LeftLeg" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.03,0.1" inheritsourcerect="false" scale="0.55" sourcerect="134,372,85,139" />
       <sprite name="rz_prototypesuit Left Shoe" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.18,-1" inheritsourcerect="false" scale="0.6" sourcerect="381,315,121,49" />
       <sprite name="rz_prototypesuit Right Shoe" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.18,-1" inheritsourcerect="false" scale="0.6" sourcerect="381,315,121,49" />
-      <StatusEffect type="OnWearing" target="Character" HideFace="true" PressureProtection="10000.0" PropulsionSpeedMultiplier="0.25" setvalue="true" disabledeltatime="true">
+      <StatusEffect type="OnWearing" target="Character" HideFace="true" OxygenAvailable="2000" PressureProtection="12500.0" PropulsionSpeedMultiplier="0.25" setvalue="true" disabledeltatime="true">
         <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="250" loop="true"/>
         <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="250" loop="true"/>
         <Affliction identifier="mechready" amount="10" />
