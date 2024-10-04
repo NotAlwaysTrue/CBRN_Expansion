@@ -3143,7 +3143,7 @@
     </Fabricate>
     <RangedWeapon />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="false" holdpos="40,0" handle1="-13,0" handle2="-13,0" msg="ItemMsgPickUpSelect" >
-      <StatusEffect type="OnUse" targettype="This" condition="-100" disabledeltatime="true">
+      <StatusEffect type="OnUse" targettype="This" condition="-100" delay="0.01" disabledeltatime="true">
           <sound file="%ModDir%/Misc/Oggs/minus.ogg" type="OnUse" range="250.0" />
         </StatusEffect>
       <StatusEffect type="OnUse" target="This,Character" disabledeltatime="true" OneShot="true" EventTargetTag="detonator" EventUserTag="demoexpert">
@@ -3167,7 +3167,7 @@
     </Fabricate>
     <RangedWeapon />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="false" holdpos="40,0" handle1="-13,0" handle2="-13,0" msg="ItemMsgPickUpSelect" >
-      <StatusEffect type="OnUse" targettype="This" condition="-100" disabledeltatime="true">
+      <StatusEffect type="OnUse" targettype="This" condition="-100" delay="0.01" disabledeltatime="true">
         <sound file="%ModDir%/Misc/Oggs/minus.ogg" type="OnUse" range="250.0" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="This,Character" disabledeltatime="true" OneShot="true" EventTargetTag="detonator" EventUserTag="demoexpert">
@@ -3191,7 +3191,7 @@
     </Fabricate>
     <RangedWeapon />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="false" holdpos="40,0" handle1="-13,0" handle2="-13,0" msg="ItemMsgPickUpSelect" >
-      <StatusEffect type="OnUse" targettype="This" condition="-100" disabledeltatime="true">
+      <StatusEffect type="OnUse" targettype="This" condition="-100" delay="0.01" disabledeltatime="true">
         <sound file="%ModDir%/Misc/Oggs/minus.ogg" type="OnUse" range="250.0" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="This,Character" disabledeltatime="true" OneShot="true" EventTargetTag="detonator" EventUserTag="demoexpert">
