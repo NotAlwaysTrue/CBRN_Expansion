@@ -3126,6 +3126,10 @@
         <sound file="Content/Items/Weapons/ExplosionDebris5.ogg" range="1000" />
       </StatusEffect>
     </Projectile>
+    <LightComponent range="50.0" lightcolor="255,0,0,255" powerconsumption="0" IsOn="false" characterusable="false">
+      <sprite texture="Content/Items/Electricity/lightsprite.png" origin="0.5,0.5" />
+      <StatusEffect type="Always" target="This" Voltage="1.0" Interval="1" setvalue="true"/>
+    </LightComponent>
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="0,-45" aimpos="45,0" handle1="0,0" handle2="0,0" holdangle="90" aimangle="70" msg="ItemMsgPickUpSelect" />
   </Item>
   <Item identifier="m57detonator" category="Weapon" maxstacksize="4" maxstacksizecharacterinventory="1" cargocontaineridentifier="explosivecrate" tags="smallitem,remotedetonator" Scale="0.25" impactsoundtag="impact_metal_light">
@@ -3151,6 +3155,10 @@
       </StatusEffect>
       <StatusEffect type="OnBroken" targettype="This" condition="100" delay="1" setvalue="true"/>
     </Holdable>
+    <LightComponent range="20.0" lightcolor="255,0,0,255" powerconsumption="0" IsOn="false" characterusable="false">
+      <sprite texture="Content/Items/Electricity/lightsprite.png" origin="0.5,0.5" />
+      <StatusEffect type="Always" target="This" Voltage="1.0" Interval="1" setvalue="true"/>
+    </LightComponent>
   </Item>
   <Item identifier="m57detonator_single" category="Weapon" maxstacksize="4" maxstacksizecharacterinventory="1" cargocontaineridentifier="explosivecrate" tags="smallitem,remotedetonator" Scale="0.25" impactsoundtag="impact_metal_light">
     <Upgrade gameversion="0.9.2.0" scale="0.5" />
@@ -3175,6 +3183,10 @@
       </StatusEffect>
       <StatusEffect type="OnBroken" targettype="This" condition="100" delay="1" setvalue="true"/>
     </Holdable>
+    <LightComponent range="20.0" lightcolor="255,0,0,255" powerconsumption="0" IsOn="false" characterusable="false">
+      <sprite texture="Content/Items/Electricity/lightsprite.png" origin="0.5,0.5" />
+      <StatusEffect type="Always" target="This" Voltage="1.0" Interval="1" setvalue="true"/>
+    </LightComponent>
   </Item>
   <Item identifier="m57detonator_triple" category="Weapon" maxstacksize="4" maxstacksizecharacterinventory="1" cargocontaineridentifier="explosivecrate" tags="smallitem,remotedetonator" Scale="0.25" impactsoundtag="impact_metal_light">
     <Upgrade gameversion="0.9.2.0" scale="0.5" />
@@ -3199,6 +3211,10 @@
       </StatusEffect>
       <StatusEffect type="OnBroken" targettype="This" condition="100" delay="1" setvalue="true"/>
     </Holdable>
+    <LightComponent range="20.0" lightcolor="255,0,0,255" powerconsumption="0" IsOn="false" characterusable="false">
+      <sprite texture="Content/Items/Electricity/lightsprite.png" origin="0.5,0.5" />
+      <StatusEffect type="Always" target="This" Voltage="1.0" Interval="1" setvalue="true"/>
+    </LightComponent>
   </Item>
   <Item identifier="sacabambaspis_he_impact" category="Weapon" tags="smallitem,weapon,throwknife,explosive" maxstacksize="6" maxstacksizecharacterinventory="2" scale="0.04" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_heavy" impacttolerance="7">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />

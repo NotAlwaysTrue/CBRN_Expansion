@@ -37,19 +37,36 @@
     </ScriptedEvent>
     <ScriptedEvent identifier="detonation_2">
       <Label name="Start" />
+      <StatusEffectAction targettag="detonator">
+        <StatusEffect target="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="true"/>
+      </StatusEffectAction>
       <TagAction criteria="itemtag:remotedetonatable" tag="availableexplosives" />
       <WaitForItemUsedAction itemtag="availableexplosives" usertag="demoexpert" applytagtoitem="setexplosives"/>
       <WaitForItemUsedAction itemtag="availableexplosives" usertag="demoexpert" applytagtoitem="setexplosives"/>
+      <StatusEffectAction targettag="setexplosives">
+        <StatusEffect target="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="true"/>
+      </StatusEffectAction>
+      <StatusEffectAction targettag="detonator">
+        <StatusEffect target="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="true"/>
+      </StatusEffectAction>
       <WaitForItemUsedAction itemtag="detonator" />
       <StatusEffectAction targettag="setexplosives">
-      <StatusEffect target="This" condition="0" setvalue="true"/>
+        <StatusEffect target="This" condition="0" setvalue="true"/>
       </StatusEffectAction>
       <GoTo name="Start" />
-    </ScriptedEvent>
     <ScriptedEvent identifier="detonation_1">
       <Label name="Start" />
+      <StatusEffectAction targettag="detonator">
+        <StatusEffect target="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="true"/>
+      </StatusEffectAction>
       <TagAction criteria="itemtag:remotedetonatable" tag="availableexplosives" />
       <WaitForItemUsedAction itemtag="availableexplosives" usertag="demoexpert" applytagtoitem="setexplosives"/>
+      <StatusEffectAction targettag="setexplosives">
+        <StatusEffect target="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="true"/>
+      </StatusEffectAction>
+      <StatusEffectAction targettag="detonator">
+        <StatusEffect target="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="true"/>
+      </StatusEffectAction>
       <WaitForItemUsedAction itemtag="detonator" />
       <StatusEffectAction targettag="setexplosives">
         <StatusEffect target="This" condition="0" setvalue="true"/>
@@ -58,10 +75,19 @@
     </ScriptedEvent>
     <ScriptedEvent identifier="detonation_3">
       <Label name="Start" />
+      <StatusEffectAction targettag="detonator">
+        <StatusEffect target="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="true"/>
+      </StatusEffectAction>
       <TagAction criteria="itemtag:remotedetonatable" tag="availableexplosives" />
       <WaitForItemUsedAction itemtag="availableexplosives" usertag="demoexpert" applytagtoitem="setexplosives"/>
       <WaitForItemUsedAction itemtag="availableexplosives" usertag="demoexpert" applytagtoitem="setexplosives"/>
       <WaitForItemUsedAction itemtag="availableexplosives" usertag="demoexpert" applytagtoitem="setexplosives"/>
+      <StatusEffectAction targettag="setexplosives">
+        <StatusEffect target="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="true"/>
+      </StatusEffectAction>
+      <StatusEffectAction targettag="detonator">
+        <StatusEffect target="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="true"/>
+      </StatusEffectAction>
       <WaitForItemUsedAction itemtag="detonator" />
       <StatusEffectAction targettag="setexplosives">
         <StatusEffect target="This" condition="0" setvalue="true"/>
@@ -74,7 +100,7 @@
     </ScriptedEvent>
     <ScriptedEvent identifier="craftablecbrn_sep">
       <SpawnAction speciesname="human" npcsetidentifier="Craftable_CBRN" npcidentifier="cbrnguy_sep" spawnlocation="MainSub" targettag="spawn_cbrn" teamid="FriendlyNPC" amount="1" allowinplayerview="true" />
-      <NPCChangeTeamAction npctag="spawn_cbrn" teamid="Team1"  addtocrew="true" />
+      <NPCChangeTeamAction npctag="spawn_cbrn" teamid="Team1" addtocrew="true" />
     </ScriptedEvent>
   </EventPrefabs>
 </RandomEvents>
