@@ -54,6 +54,7 @@
         <StatusEffect target="This" condition="0" setvalue="true"/>
       </StatusEffectAction>
       <GoTo name="Start" />
+    </ScriptedEvent>
     <ScriptedEvent identifier="detonation_1">
       <Label name="Start" />
       <StatusEffectAction targettag="detonator">
