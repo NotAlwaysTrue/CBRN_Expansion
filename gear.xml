@@ -3076,7 +3076,7 @@
       </StatusEffect>
     </Throwable>
   </Item>
-  <Item identifier="c4_stickcharge" category="Weapon" tags="smallitem,weapon,remotedetonatable,explosive" maxstacksize="8" maxstacksizecharacterinventory="4" scale="0.1" cargocontaineridentifier="explosivecrate">
+  <Item identifier="c4_stickcharge" category="Weapon" tags="smallitem,weapon,remotedetonatable,explosive" isdangerous="true" maxstacksize="8" maxstacksizecharacterinventory="4" scale="0.1" cargocontaineridentifier="explosivecrate">
     <InventoryIcon texture="%ModDir%/Weapons/Explosives/C4.png" sourcerect="0,0,539,118" />
     <Sprite texture="%ModDir%/Weapons/Explosives/C4.png" depth="0.55" sourcerect="0,0,539,118" origin="0.5,0.5" />
     <Body width="100" height="90" density="30" />
