@@ -1316,7 +1316,37 @@
     <aitarget sightrange="5000" soundrange="4500" fadeouttime="6" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-
+  <Item identifier="chemicalcanister_container" category="Equipment" tags="crate,allowcleanup,securecrate" scale="0.5" linkable="true" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy" fireproof="true" waterproof="true">
+    <Price baseprice="400">
+      <Price storeidentifier="merchantoutpost" multiplier="1" minavailable="2" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="3" />
+      <Price storeidentifier="merchantresearch" multiplier="0.9" minavailable="2" />
+      <Price storeidentifier="merchantmilitary" multiplier="1.25" minavailable="2" />
+      <Price storeidentifier="merchantmine" multiplier="0.9" minavailable="3" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Sprite texture="%ModDir%/bags/bags.png" depth="0.54" sourcerect="1324,1486,276,105" origin="0.5,0.5" />
+    <Body width="250" height="100" density="50" />
+    <Holdable slots="LeftHand" controlpose="true" holdpos="2,25" handle1="48,28" handle2="48,28" aimable="false" holdangle="-15" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.7" setvalue="true"></StatusEffect>
+    </Holdable>
+    <ItemContainer capacity="8" slotsperrow="4" canbeselected="false" hideitems="true" keepopenwhenequipped="true" movableframe="true" showcontainedstateindicator="true">
+      <GuiFrame relativesize="0.4,0.2" anchor="Center" minsize="160,80" maxsize="280,280" style="ItemUI" />
+      <Containable items="smallitem,mediumitem,diving" />
+    </ItemContainer>
+    <ItemComponent>
+      <StatusEffect type="OnContained" target="This" tags="locker" setvalue="true">
+        <Conditional targetcontainer="true" HasTag="eq deconstructor" />
+        <Conditional targetcontainer="true" HasTag="eq fabricator" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" tags="" setvalue="true">
+        <Conditional targetcontainer="true" HasTag="neq deconstructor,fabricator" />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
 
   <!--Mags-->
   <Item identifier="tes20mag_ap" subcategory="Berra Group" category="Weapon" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.23" cargocontaineridentifier="metalcrate" tags="smallitem,tes20mag" impactsoundtag="impact_metal_light">

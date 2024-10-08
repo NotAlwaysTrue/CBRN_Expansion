@@ -2,6 +2,7 @@
 <contentpackage name="九州武库·CBRN拓展" modversion="4.0.5" corepackage="False" steamworkshopid="3278494407" gameversion="1.5.9.2">
   <Item file="%ModDir%/gear.xml" />
   <Item file="%ModDir%/material.xml" />
+  <Item file="%ModDir%/shell.xml" />
   <Item file="%ModDir%/override.xml" />
   <Item file="%ModDir%/Job/ItemCBRN.xml" />
   <Item file="%ModDir%/AI/GearAI.xml" />
