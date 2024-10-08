@@ -110,7 +110,42 @@
       </StatusEffect>
     </Wearable>
   </Item>
-
+  <!--Jump Pod-->
+  <Item identifier="tsm_cbrnert_jumppod_1" translationidentifier="tsmrushshell" isdangerous="true" subcategory="tsmmissions" category="Misc" scale="0.28" sonarsize="6" hideinmenus="true">
+    <Sprite texture="%ModDir:2852411866%/Character/war/跳帮舱收缩.png" sourcerect="115,193,1330,1297" depth="0.55" />
+    <Body width="1300" height="1100" density="20" BodyType="Kinematic"/>
+    <Projectile characterusable="false" launchimpulse="120" DoesStick="True" friendlyfire="false" damagedoors="true">
+      <Attack structuredamage="100" itemdamage="10" severlimbsprobability="2.0" penetration="0.3">
+        <Affliction identifier="lacerations" strength="1" />
+        <Affliction identifier="bleeding" strength="1" />
+        <Affliction identifier="stun" strength="1" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This" lifetime="0.5">
+        <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="0" anglemax="0" particleamount="10" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="3">
+        <Sound file="%ModDir:2852411866%/Character/war/ogg/登陆舱/登陆舱打开.ogg" type="OnUse" range="1500" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" BodyType="Dynamic"/>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="5" velocitymin="100" velocitymax="2000" scalemin="0.1" scalemax="0.2" />
+        <Explosion ignorecover="true" onlyinside="true" range="600" force="10" playtinnitus="false" showeffects="false" applyfireeffects="false">
+          <Affliction identifier="stun" strength="1" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" condition="-20" />
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="corrode" count="1" spread="10" />
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+  </Item>
   <!--AI buff-->
   <Item identifier="aibuff_1_autorun" subcategory="" category="Misc" Itemcargocontaineridentifier="metalcrate" tags="smallitem,borkenarrowitem" scale="0.5" impactsoundtag="impact_metal_light" hideinmenus="true">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="128,960,64,64" origin="0.5,0.5" />
@@ -128,4 +163,192 @@
     <aitarget sightrange="2500" soundrange="3000" fadeouttime="6" />
   </Item>
   
+  <!--Sapphire Shells-->
+  <Item identifier="railgunshell_nuclearmirv_sacabambaspis" category="Weapon" tags="railgunequipment,railgunammo" maxstacksize="1" maxstacksizecharacterinventory="1" scale="0.5" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_heavy" >
+    <Deconstruct time="15">
+    </Deconstruct>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="0,128,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/TurretsAndDepthCharges.png" sourcerect="1,131,217,33" depth="0.55" origin="0.5,0.5" />
+    <Body width="215" height="30" density="35" />
+    <Holdable canbecombined="false" slots="LeftHand,RightHand" holdpos="0,-15" handle1="-30,-5" holdangle="170" aimable="false" msg="ItemMsgPickUpSelect">
+      <!-- slow down the character when holding the item -->
+      <StatValue stattype="MovementSpeed" value="-0.2" />
+      <!-- adjust hold position when swimming -->
+      <StatusEffect type="OnActive" target="This" holdpos="-10,-15" handle1="0,-5" holdangle="70" setvalue="true" interval="1.1">
+        <Conditional InWater="true" />
+      </StatusEffect>
+      <!-- revert hold position adjustment when walking -->
+      <StatusEffect type="OnActive" target="This" holdpos="0,-15" handle1="-30,-5" holdangle="170" setvalue="true" interval="1.1">
+        <Conditional InWater="false" />
+      </StatusEffect>
+    </Holdable>
+    <Projectile characterusable="false" launchimpulse="100" launchrotation="90" damagedoors="true">
+      <Attack penetration="0.6" targetforce="1000">
+        <Affliction identifier="explosiondamage" strength="250" />
+        <Affliction identifier="bleeding" strength="50" />
+        <Affliction identifier="stun" strength="15" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="This" Condition="-100.0" setvalue="true" allowwhenbroken="true">
+        <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" range="50000" />
+        <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" range="50000" />
+        <ParticleEmitter particle="underwaterexplosion" anglemin="0" anglemax="360" particleamount="3" velocitymin="0" velocitymax="0" scalemin="15" scalemax="15" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnItem identifier="nukemirv_s" spawnposition="This" count="8" aimspread="135" rotationtype="Collider" rotation="0" />
+        <Explosion range="1500.0" ballastfloradamage="2000" structuredamage="2000" itemdamage="2000" force="80" severlimbsprobability="0.75" debris="false" decal="explosion" decalsize="0.75" penetration="1" camerashake="200" camerashakerange="10000" flashrange="2000" flashduration="3" screencolor="255,255,255,255" screencolorrange="5000" screencolorduration="6.0" >
+          <Affliction identifier="bleedingnonstop" strength="80" />
+          <Affliction identifier="blunttrauma" strength="120" />
+          <Affliction identifier="radiationsickness" strength="60" />
+          <Affliction identifier="explosiondamage" strength="800" />
+          <Affliction identifier="burn" strength="800" />
+          <Affliction identifier="stun" strength="35" />
+          <Affliction identifier="radiationsickness" strength="120" />
+        </Explosion>
+        <sound file="Content/Items/Weapons/ExplosionDebris4.ogg" range="5000" />
+        <sound file="Content/Items/Weapons/ExplosionDebris5.ogg" range="5000" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This">
+        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="Contained" delay="0.01" allowwhenbroken="true">
+        <Use />
+      </StatusEffect>
+      <!-- Remove the item after exploding -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+  <Item identifier="railgunshell_nuclearmirv_prox_sacabambaspis" category="Weapon" tags="railgunequipment,railgunammo" maxstacksize="1" maxstacksizecharacterinventory="1" scale="0.5" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_heavy" >
+    <Deconstruct time="15">
+    </Deconstruct>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="0,128,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/TurretsAndDepthCharges.png" sourcerect="1,131,217,33" depth="0.55" origin="0.5,0.5" />
+    <Body width="215" height="30" density="35" />
+    <Holdable canbecombined="false" slots="LeftHand,RightHand" holdpos="0,-15" handle1="-30,-5" holdangle="170" aimable="false" msg="ItemMsgPickUpSelect">
+      <!-- slow down the character when holding the item -->
+      <StatValue stattype="MovementSpeed" value="-0.2" />
+      <!-- adjust hold position when swimming -->
+      <StatusEffect type="OnActive" target="This" holdpos="-10,-15" handle1="0,-5" holdangle="70" setvalue="true" interval="1.1">
+        <Conditional InWater="true" />
+      </StatusEffect>
+      <!-- revert hold position adjustment when walking -->
+      <StatusEffect type="OnActive" target="This" holdpos="0,-15" handle1="-30,-5" holdangle="170" setvalue="true" interval="1.1">
+        <Conditional InWater="false" />
+      </StatusEffect>
+    </Holdable>
+    <Projectile characterusable="false" launchimpulse="100" launchrotation="90" damagedoors="true">
+      <Attack penetration="0.6" targetforce="1000">
+        <Affliction identifier="explosiondamage" strength="250" />
+        <Affliction identifier="bleeding" strength="50" />
+        <Affliction identifier="stun" strength="15" />
+      </Attack>
+      <MotionSensor range="800" canbeselected="false" IgnoreDead="True" minimumvelocity="0" updateinterval="0.025" target="Monster,Wall" DetectOwnMotion="false">
+        <StatusEffect type="OnNotContained" target="This" condition="-100" disabledeltatime="true" stackable="false" checkconditionalalways="true">
+          <Conditional targetitemcomponent="MotionSensor" MotionDetected="eq true" />
+        </StatusEffect>
+      </MotionSensor>
+      <StatusEffect type="OnImpact" target="This" Condition="-100.0" setvalue="true" allowwhenbroken="true">
+        <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" range="50000" />
+        <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" range="50000" />
+        <ParticleEmitter particle="underwaterexplosion" anglemin="0" anglemax="360" particleamount="3" velocitymin="0" velocitymax="0" scalemin="15" scalemax="15" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnItem identifier="nukemirv_s_prox" spawnposition="This" count="8" aimspread="135" rotationtype="Collider" rotation="0" />
+        <Explosion range="1500.0" ballastfloradamage="2000" structuredamage="2000" itemdamage="2000" force="80" severlimbsprobability="0.75" debris="false" decal="explosion" decalsize="0.75" penetration="1" camerashake="200" camerashakerange="10000" flashrange="2000" flashduration="3" screencolor="255,255,255,255" screencolorrange="5000" screencolorduration="6.0" >
+          <Affliction identifier="bleedingnonstop" strength="80" />
+          <Affliction identifier="blunttrauma" strength="120" />
+          <Affliction identifier="radiationsickness" strength="60" />
+          <Affliction identifier="explosiondamage" strength="800" />
+          <Affliction identifier="burn" strength="800" />
+          <Affliction identifier="stun" strength="35" />
+          <Affliction identifier="radiationsickness" strength="120" />
+        </Explosion>
+        <sound file="Content/Items/Weapons/ExplosionDebris4.ogg" range="5000" />
+        <sound file="Content/Items/Weapons/ExplosionDebris5.ogg" range="5000" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This">
+        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="Contained" delay="0.01" allowwhenbroken="true">
+        <Use />
+      </StatusEffect>
+      <!-- Remove the item after exploding -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+  <!--Submunition-->
+  <Item identifier="nukemirv_s" category="Weapon" scale="0.3" sonarsize="1" hideinmenus="true">
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="143,414,113,9" depth="0.55" />
+    <Body width="170" height="10" density="20" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+    <Projectile characterusable="false" launchimpulse="80.0" impulsespread="15" damagedoors="true" DamageUser="true">
+      <Attack structuredamage="20" itemdamage="10" severlimbsprobability="1" penetration="0.1">
+        <Affliction identifier="explosiondamage" strength="3" />
+        <Affliction identifier="bleeding" strength="2" />
+        <Affliction identifier="stun" strength="0.75" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This" lifetime="1">
+        <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="1" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <!-- a 1.8 second lifetime after being fired -->
+      <StatusEffect type="OnImpact" target="This" condition="-100" stackable="false"/>
+      <StatusEffect type="OnNotContained" target="This" condition="-100" stackable="false" delay="1.8"/>
+      <StatusEffect type="OnBroken" target="This">
+        <Explosion range="1500.0" ballastfloradamage="2000" structuredamage="2000" itemdamage="2000" force="80" severlimbsprobability="0.75" debris="false" decal="explosion" decalsize="0.75" penetration="1" camerashake="200" camerashakerange="10000" flashrange="2000" flashduration="3" screencolor="255,255,255,255" screencolorrange="5000" screencolorduration="6.0" >
+          <Affliction identifier="bleedingnonstop" strength="80" />
+          <Affliction identifier="blunttrauma" strength="120" />
+          <Affliction identifier="radiationsickness" strength="60" />
+          <Affliction identifier="explosiondamage" strength="800" />
+          <Affliction identifier="burn" strength="800" />
+          <Affliction identifier="stun" strength="35" />
+          <Affliction identifier="radiationsickness" strength="120" />
+        </Explosion>
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" delay="0.01" target="This">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+  <Item identifier="nukemirv_s_prox" category="Weapon" scale="0.3" sonarsize="1" hideinmenus="true">
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="143,414,113,9" depth="0.55" />
+    <Body width="170" height="10" density="20" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+    <Projectile characterusable="false" launchimpulse="80.0" impulsespread="15" damagedoors="true" DamageUser="true">
+      <Attack structuredamage="20" itemdamage="10" severlimbsprobability="1" penetration="0.1">
+        <Affliction identifier="explosiondamage" strength="3" />
+        <Affliction identifier="bleeding" strength="2" />
+        <Affliction identifier="stun" strength="0.75" />
+      </Attack>
+      <MotionSensor range="400" canbeselected="false" IgnoreDead="True" minimumvelocity="0" updateinterval="0.025" target="Monster" DetectOwnMotion="false">
+        <StatusEffect type="OnNotContained" target="This" condition="-100" disabledeltatime="true" stackable="false" checkconditionalalways="true">
+          <Conditional targetitemcomponent="MotionSensor" MotionDetected="eq true" />
+        </StatusEffect>
+      </MotionSensor>
+      <StatusEffect type="OnActive" target="This" lifetime="1">
+        <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="1" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <!-- a 1.8 second lifetime after being fired -->
+      <StatusEffect type="OnImpact" target="This" condition="-100" stackable="false"/>
+      <StatusEffect type="OnNotContained" target="This" condition="-100" stackable="false" delay="1.8"/>
+      <StatusEffect type="OnBroken" target="This">
+        <Explosion range="1500.0" ballastfloradamage="2000" structuredamage="2000" itemdamage="2000" force="80" severlimbsprobability="0.75" debris="false" decal="explosion" decalsize="0.75" penetration="1" camerashake="200" camerashakerange="10000" flashrange="2000" flashduration="3" screencolor="255,255,255,255" screencolorrange="5000" screencolorduration="6.0" >
+          <Affliction identifier="bleedingnonstop" strength="80" />
+          <Affliction identifier="blunttrauma" strength="120" />
+          <Affliction identifier="radiationsickness" strength="60" />
+          <Affliction identifier="explosiondamage" strength="800" />
+          <Affliction identifier="burn" strength="800" />
+          <Affliction identifier="stun" strength="35" />
+          <Affliction identifier="radiationsickness" strength="120" />
+        </Explosion>
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" delay="0.01" target="This">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+  </Item>
 </Items>
