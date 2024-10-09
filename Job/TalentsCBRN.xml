@@ -316,6 +316,38 @@
       </Abilities>
     </AbilityGroupEffect>
   </Talent>
+  <Talent identifier="reviscomming">
+    <Description tag="talentdescription.skillbonus">
+      <Replace tag="[amount]" value="30" color="gui.green"/>
+      <Replace tag="[skillname]" value="skillname.weapons" color="gui.orange"/>
+    </Description>
+    <Description tag="talentdescription.reviscomming_main">
+      <Replace tag="[revammo]" value="talentvalue.reviscomming_item" color="255,0,0,255"/>
+    </Description>
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityGiveStat stattype="WeaponsSkillBonus" value="30"/>
+      </Abilities>
+    </AbilityGroupEffect>
+    <AddedRecipe itemidentifier="fkj_545_mag_rev"/>
+    <AddedRecipe itemidentifier="fkj_762_mag_rev"/>
+    <AddedRecipe itemidentifier="fkj_762_51_mag_rev"/>
+    <AddedRecipe itemidentifier="fkj_jts_mag_rev"/>
+    <AddedRecipe itemidentifier="fkj_pkp_mag_rev"/>
+    <AddedRecipe itemidentifier="fkj_rpk_mag_rev"/>
+    <AddedRecipe itemidentifier="fkj_m2_mag_rev"/>
+    <AddedRecipe itemidentifier="fkj_svd_mag_rev"/>
+    <AddedRecipe itemidentifier="tsm_556_45_mgmag_rev"/>
+    <AddedRecipe itemidentifier="lm_762_51_mgmag_rev"/>
+    <AddedRecipe itemidentifier="lm_556_mag_rev"/>
+    <AddedRecipe itemidentifier="lm_65_mag_rev"/>
+    <AddedRecipe itemidentifier="lm_68_51_mag_rev"/>
+    <AddedRecipe itemidentifier="lm_762_51_mag_rev"/>
+    <AddedRecipe itemidentifier="lm_m700_mag_rev"/>
+    <AddedRecipe itemidentifier="tsm_miniammo_rev"/>
+    <AddedRecipe itemidentifier="tsm_58_201mag_rev"/>
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="6,3" sheetelementsize="128,128"/>
+  </Talent>
   <Talent identifier="nanomachine">
     <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="2,4" sheetelementsize="128,128"/>
     <Description tag="talentdescription.nanomachine">

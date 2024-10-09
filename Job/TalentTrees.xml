@@ -37,16 +37,17 @@
         <TalentOption identifier="dutyofcbrn"/>
       </TalentOptions>
     </SubTree>
-    <SubTree identifier="cbrn_tsm" type="specialization" requires="cbrn_berragroup,cbrn_final" >
+    <SubTree identifier="cbrn_tsm" type="specialization" requires="cbrn_primary,cbrn_secondary" >
       <TalentOptions>
         <TalentOption identifier="nanomachine"/>
       </TalentOptions>
-      <TalentOptions requiredtalents="2" maxchosentalents="2">
+      <TalentOptions requiredtalents="1" maxchosentalents="2">
         <TalentOption identifier="biodev"/>
         <TalentOption identifier="bioresearch"/>
       </TalentOptions>
-      <TalentOptions >
+      <TalentOptions requiredtalents="1" maxchosentalents="2">
         <TalentOption identifier="ert"/>
+        <TalentOption identifier="reviscomming"/>
       </TalentOptions>
       <TalentOptions>
         <TalentOption identifier="hert"/>

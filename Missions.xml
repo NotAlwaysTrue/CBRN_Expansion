@@ -130,7 +130,7 @@
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_indestructible_wall" campaignonly="true" />
     <message header="" text="" />
   </AbandonedOutpostMission>
-  <!--Sapphire-->
+  <!--Sapphire Mission-->
   <CargoMission
     identifier="cargoSapphire_1"
     tags="cargodifficult"
@@ -142,7 +142,15 @@
     minleveldifficulty="60"
     achievementidentifier="cargomission">
     <Items>
-      <Item identifier="explosivecrate" reward="1500" maxcount="8">
+      <Item identifier="hazardousitemcontainer" reward="1500" maxcount="8">
+        <Item identifier="vxcanister"/>
+        <Item identifier="vxcanister"/>
+        <Item identifier="vxcanister"/>
+        <Item identifier="vxcanister"/>
+        <Item identifier="vxcanister"/>
+        <Item identifier="vxcanister"/>
+        <Item identifier="vxcanister"/>
+        <Item identifier="vxcanister"/>
       </Item>
     </Items>
     <Reputation identifier="location" amount="20" amountforopposingfaction="-20" />

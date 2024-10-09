@@ -5,6 +5,7 @@
   <Item file="%ModDir%/shell.xml" />
   <Item file="%ModDir%/override.xml" />
   <Item file="%ModDir%/Job/ItemCBRN.xml" />
+  <Item file="%ModDir%/Weapons/Magazine/Magazines.xml" />
   <Item file="%ModDir%/AI/GearAI.xml" />
   <Text file="%ModDir%/localization/English.xml" />
   <Text file="%ModDir%/localization/SimplifiedChinese.xml" />

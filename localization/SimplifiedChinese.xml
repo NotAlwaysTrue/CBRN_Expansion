@@ -508,5 +508,10 @@
   <entityname.deconstructnuclearspread>放射性物质暴露</entityname.deconstructnuclearspread>
   <entitydescription.deconstructnuclearspread>一大堆放射性物质从装载它们的容器中跑出来了,这会是是灾难性的 \n请认真检查你的操作,你一定做错了什么</entitydescription.deconstructnuclearspread>
   
-  <jobname.cbrn_guy_test>测试用品</jobname.cbrn_guy_test>
+  <cbrn_test>测试用品</cbrn_test>
+  <talentname.reviscomming>变革</talentname.reviscomming>
+  <talentdescription.reviscomming_main>你已被授权大规模普及[revammo]并全面开设生产线</talentdescription.reviscomming_main>
+  <talentvalue.reviscomming_item>变革弹</talentvalue.reviscomming_item>
+
+  <subcategory.tsm_modifiedmagazines>第三方弹匣</subcategory.tsm_modifiedmagazines>
 </infotexts>

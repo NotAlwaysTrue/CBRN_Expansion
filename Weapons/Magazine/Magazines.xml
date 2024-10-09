@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <!--Resistance Force-->
+  <Item identifier="fkj_545_mag_rev" subcategory="tsm_modifiedmagazines" scale="0.29" category="weapon" maxstacksize="6" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="smallitem,fkj_cjzd,545mag,12mag,fkj_545cj_mag,fkj_mag,magazine,rpkmag,ak74ammo,rev_mag" impactsoundtag="impact_metal_light" health="33" description="">
+    <InventoryIcon texture="%ModDir%/Weapons/Magazine/separatists.png" sourcerect="2416,560,80,107" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons/Magazine/separatists.png" depth="0.56" sourcerect="2416,560,80,107" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="80" height="107" density="50" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="cj545" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="cj545" />
+      <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+        <SpawnItem identifiers="cj545" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <!--Price baseprice="287" buyingpricemultiplier="1" minleveldifficulty="0">
+      <Price locationtype="outpost" multiplier="1.5" minavailable="0" maxavailable="4" />
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="5" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="1.10" minavailable="2" maxavailable="6" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price-->
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="3">
+      <RequiredItem identifier="plastic" amount="3" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="3" />
+      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="4" />
+      <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="3" />
+      <RequiredItem identifier="carbon" amount="6" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="3">
+      <RequiredItem identifier="plastic" amount="3" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="3" />
+      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="4" />
+      <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="3" />
+      <RequiredItem identifier="tsm_tungsten" amount="6" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="5">
+      <RequiredItem tag="fkj_545cj_mag" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="1" />
+      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="1" />
+      <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="1" />
+      <RequiredItem identifier="tsm_tungsten" amount="2" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="5">
+      <RequiredItem tag="fkj_545cj_mag" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="1" />
+      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="1" />
+      <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="1" />
+      <RequiredItem identifier="carbon" amount="2" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="plastic" outcondition="1" />
+      <Item identifier="carbon" mincondition="0.9" />
+      <Item identifier="copper" mincondition="0.9" />
+    </Deconstruct>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item identifier="fkj_762_mag_rev" subcategory="tsm_modifiedmagazines" scale="0.26" category="weapon" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="smallitem,fkj_hzzd,762mag,12mag,fkj_762cj_mag,fkj_mag,magazine,akammo,rev_mag" impactsoundtag="impact_metal_light" health="30" description="">
+    <InventoryIcon texture="%ModDir%/Weapons/Magazine/separatists.png" sourcerect="2089,27,79,120" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons/Magazine/separatists.png" depth="0.56" sourcerect="2089,27,79,120" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="79" height="120" density="50" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="cj762*39" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="cj762*39" />
+      <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+        <SpawnItem identifiers="cj762*39" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <!--Price baseprice="346" buyingpricemultiplier="1" minleveldifficulty="0">
+      <Price locationtype="outpost" multiplier="1.5" minavailable="0" maxavailable="4" />
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="5" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="1.10" minavailable="2" maxavailable="6" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price-->
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="2">
+      <RequiredItem identifier="plastic" amount="2" />
+      <RequiredItem identifier="tsm_oilshale" amount="3" />
+      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="3" />
+      <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="4" />
+      <RequiredItem identifier="carbon" amount="5" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="2">
+      <RequiredItem identifier="plastic" amount="2" />
+      <RequiredItem identifier="tsm_oilshale" amount="3" />
+      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="3" />
+      <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="4" />
+      <RequiredItem identifier="tsm_tungsten" amount="5" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="5">
+      <RequiredItem tag="fkj_762cj_mag" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="1" />
+      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="2" />
+      <RequiredItem identifier="tsm_tungsten" amount="2" />
+      <RequiredItem identifier="tsm_oilshale" amount="1" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="5">
+      <RequiredItem tag="fkj_762cj_mag" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="1" />
+      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="2" />
+      <RequiredItem identifier="carbon" amount="2" />
+      <RequiredItem identifier="tsm_oilshale" amount="1" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="plastic" outcondition="1" />
+      <Item identifier="copper" mincondition="0.9" />
+      <Item identifier="carbon" mincondition="0.9" />
+    </Deconstruct>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item identifier="fkj_762_51_mag_rev" subcategory="tsm_modifiedmagazines" scale="0.23" category="weapon" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="smallitem,762_51mag,fkj_hzzd,lm_magazine,magazine,762ammo,rev_mag" impactsoundtag="impact_metal_light" health="20">
+    <InventoryIcon texture="%ModDir%/Weapons/Magazine/separatists.png" sourcerect="2054,620,53,81" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons/Magazine/separatists.png" depth="0.56" sourcerect="2054,620,53,81" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="52" height="92" density="50" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="pt762_51_ap" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="pt762_51_ap" />
+      <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+        <SpawnItem identifiers="pt762_51_ap" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="false" amount="1">
+      <RequiredItem identifier="plastic" amount="1" />
+      <RequiredItem identifier="tsm_oilshale" amount="2" />
+      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="2" />
+      <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="3" />
+      <RequiredItem identifier="tsm_tungsten" amount="3" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
+      <RequiredItem tag="762_51mag" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem identifier="tsm_oilshale" mincondition="1" />
+      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="1" />
+      <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="2" />
+      <RequiredItem identifier="tsm_tungsten" amount="3" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="plastic" outcondition="1" />
+      <Item identifier="tsm_oilshale" mincondition="0.9" />
+    </Deconstruct>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item identifier="fkj_jts_mag_rev" subcategory="tsm_modifiedmagazines" scale="0.29" category="weapon" maxstacksize="3" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="smallitem,fkj_jts_mag,fkj_mag,magazine,rev_mag" impactsoundtag="impact_metal_light" health="200" description="">
+    <InventoryIcon texture="%ModDir%/Weapons/Magazine/separatists.png" sourcerect="2111,221,57,118" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons/Magazine/separatists.png" depth="0.56" sourcerect="2111,221,57,118" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="57" height="118" density="50" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="cj545" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="cj545" />
+      <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+        <SpawnItem identifiers="cj545" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="false">
+      <RequiredItem identifier="fkj_jts_mag" amount="1" />
+      <RequiredItem identifier="tsm_tungsten" amount="4" />
+      <RequiredItem identifier="tsm_oilshale" amount="3" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="false">
+      <RequiredItem identifier="fkj_jts_mag" amount="1" />
+      <RequiredItem identifier="carbon" amount="4" />
+      <RequiredItem identifier="tsm_oilshale" amount="3" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
+      <RequiredItem identifier="fkj_jts_cjmag" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem identifier="tsm_oilshale" amount="2" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
+      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="3" />
+      <RequiredItem identifier="carbon" amount="3" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
+      <RequiredItem identifier="fkj_jts_cjmag" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem identifier="tsm_oilshale" amount="2" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
+      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="3" />
+      <RequiredItem identifier="tsm_tungsten" amount="3" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="plastic" outcondition="1" />
+      <Item identifier="tsm_tungsten" mincondition="0.95" />
+      <Item identifier="tsm_oilshale" mincondition="0.95" />
+    </Deconstruct>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item identifier="fkj_pkp_mag_rev" subcategory="tsm_modifiedmagazines" scale="0.36" category="weapon" maxstacksize="3" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="fkj_mag,smallitem,fkj_pkp_mag,magazine,gpmgammo,rev_mag" impactsoundtag="impact_metal_light" health="100" description="">
+    <InventoryIcon texture="%ModDir%/Weapons/Magazine/separatists.png" sourcerect="2003,69,51,109" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons/Magazine/separatists.png" depth="0.54" sourcerect="2003,69,51,109" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="51" height="109" density="50" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="pt762_51_ap" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="pt762_51_ap" />
+      <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+        <SpawnItem identifiers="pt762_51_ap" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="false">
+      <RequiredItem identifier="fkj_pkp_mag" amount="1" />
+      <RequiredItem identifier="tsm_tungsten" amount="3" />
+      <RequiredItem identifier="tsm_sulphur" amount="3" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="false">
+      <RequiredItem identifier="fkj_pkp_mag" amount="1" />
+      <RequiredItem identifier="carbon" amount="3" />
+      <RequiredItem identifier="tsm_sulphur" amount="3" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
+      <RequiredItem identifier="fkj_pkp_mag_cj" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem identifier="tsm_sulphur" amount="3" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
+      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="3" />
+      <RequiredItem identifier="carbon" mincondition="2" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
+      <RequiredItem identifier="fkj_pkp_mag_cj" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem identifier="tsm_sulphur" amount="3" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
+      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="3" />
+      <RequiredItem identifier="tsm_tungsten" mincondition="2" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="plastic" outcondition="1" />
+      <Item identifier="tsm_tungsten" mincondition="0.95" />
+      <Item identifier="tsm_oilshale" mincondition="0.95" />
+    </Deconstruct>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item identifier="fkj_rpk_mag_rev" subcategory="tsm_modifiedmagazines" scale="0.29" category="weapon" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="smallitem,fkj_zd,rpkmag,magazine,rev_mag" impactsoundtag="impact_metal_light" health="95" description="">
+    <InventoryIcon texture="%ModDir%/Weapons/Magazine/separatists.png" sourcerect="2427,751,62,85" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons/Magazine/separatists.png" depth="0.56" sourcerect="2427,751,62,85" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="62" height="85" density="50" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="pt545" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="pt545" />
+      <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+        <SpawnItem identifiers="pt545" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <Price baseprice="277" buyingpricemultiplier="1" minleveldifficulty="0">
+      <Price locationtype="outpost" multiplier="1.5" minavailable="0" maxavailable="1" />
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="2" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="1.10" minavailable="2" maxavailable="6" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="6" requiresrecipe="false">
+      <RequiredItem identifier="plastic" amount="2" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
+      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="2" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" displayname="recycleitem" requiredtime="6">
+      <RequiredItem identifier="fkj_rpk_mag" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
+      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="2" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="plastic" outcondition="1" />
+      <Item identifier="copper" mincondition="0.95" />
+      <Item identifier="zinc" mincondition="0.95" />
+    </Deconstruct>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item identifier="fkj_m2_mag_rev" subcategory="tsm_modifiedmagazines" scale="0.29" category="weapon" maxstacksize="1" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="smallitem,fkj_cjzd,fkj_m2_mag,fkj_mag,magazine,rev_mag" impactsoundtag="impact_metal_light" health="150" description="">
+    <InventoryIcon texture="%ModDir%/Weapons/Magazine/separatists.png" sourcerect="2102,413,76,176" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons/Magazine/separatists.png" depth="0.56" sourcerect="2102,413,76,176" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="76" height="176" density="50" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="pt762_51_ap" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="pt762_51_ap" />
+      <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+        <SpawnItem identifiers="pt762_51_ap" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <!--Price baseprice="543" buyingpricemultiplier="1" minleveldifficulty="0">
+      <Price locationtype="outpost" multiplier="1.5" minavailable="0" maxavailable="4" />
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="5" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="1.10" minavailable="2" maxavailable="6" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price-->
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="1">
+      <RequiredItem identifier="plastic" amount="5" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="6" />
+      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="6" />
+      <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="6" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
+      <RequiredItem tag="fkj_m2_mag" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="5" />
+      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="5" />
+      <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="5" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="plastic" outcondition="2" />
+      <Item identifier="lead" mincondition="0.95" />
+      <Item identifier="phosphorus" mincondition="0.95" />
+    </Deconstruct>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item identifier="fkj_svd_mag_rev" subcategory="tsm_modifiedmagazines" scale="0.29" category="weapon" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="fkj_svd_mag,smallitem,fkj_mag,magazine,rev_mag" impactsoundtag="impact_metal_light" health="20" description="">
+    <InventoryIcon texture="%ModDir%/Weapons/Magazine/separatists.png" sourcerect="2365,459,51,62" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons/Magazine/separatists.png" depth="0.56" sourcerect="2365,459,51,62" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="51" height="62" density="50" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="pt762*54" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="pt762*54" />
+      <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+        <SpawnItem identifiers="pt762*54" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <!--Price baseprice="255" buyingpricemultiplier="1" minleveldifficulty="0">
+      <Price locationtype="outpost" multiplier="1.5" minavailable="0" maxavailable="5" />
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="5" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="1.10" minavailable="2" maxavailable="6" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price-->
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="false" amount="1">
+      <RequiredItem identifier="plastic" amount="2" />
+      <RequiredItem identifier="tsm_tungsten" amount="3" />
+      <RequiredItem tag="advmunition_core" description="fabricationdescription.advmunition_core" amount="2" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
+      <RequiredItem tag="fkj_svd_mag" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem identifier="tsm_tungsten" amount="2" />
+      <RequiredItem tag="advmunition_core" description="fabricationdescription.advmunition_core" amount="2" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="1" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="plastic" outcondition="1" />
+      <Item identifier="lead" mincondition="0.95" />
+      <Item identifier="phosphorus" mincondition="0.95" />
+    </Deconstruct>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <!--Coalition-->
+  <Item identifier="tsm_556_45_mgmag_rev" subcategory="tsm_modifiedmagazines" scale="0.23" category="weapon" maxstacksize="3" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="smallitem,lm_zd,tsm_556_45_mgmag,lm_magazine,magazine,m249ammo,rev_mag" impactsoundtag="impact_metal_light" health="200">
+    <InventoryIcon texture="%ModDir%/Weapons/Magazine/coalition.png" sourcerect="2158,175,54,135" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons/Magazine/coalition.png" depth="0.54" sourcerect="2158,175,54,135" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="54" height="135" density="50" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="cj556*45" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="cj556*45" />
+      <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+        <SpawnItem identifiers="cj556*45" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="false">
+      <RequiredItem identifier="tsm_556_45_mgmag" amount="1" />
+      <RequiredItem identifier="tsm_tungsten" amount="4" />
+      <RequiredItem identifier="tsm_oilshale" amount="3" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="false">
+      <RequiredItem identifier="tsm_556_45_mgmag" amount="1" />
+      <RequiredItem identifier="carbon" amount="4" />
+      <RequiredItem identifier="tsm_oilshale" amount="3" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
+      <RequiredItem identifier="tsm_556_45_mgmag_cj" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem identifier="tsm_oilshale" amount="2" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
+      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="3" />
+      <RequiredItem identifier="carbon" amount="3" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
+      <RequiredItem identifier="tsm_556_45_mgmag_cj" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem identifier="tsm_oilshale" amount="2" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
+      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="3" />
+      <RequiredItem identifier="tsm_tungsten" amount="3" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="plastic" outcondition="1" />
+      <Item identifier="copper" mincondition="0.95" />
+      <Item identifier="tsm_tungsten" mincondition="0.95" />
+    </Deconstruct>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item identifier="lm_762_51_mgmag_rev" subcategory="tsm_modifiedmagazines" scale="0.26" category="weapon" maxstacksize="3" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="lm_magazine,smallitem,lm_762_51_mgmag,lm_cjzd,lm_mag,magazine,gpmgammo,rev_mag" impactsoundtag="impact_metal_light" health="200">
+    <InventoryIcon texture="%ModDir%/Weapons/Magazine/coalition.png" sourcerect="1998,13,53,134" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons/Magazine/coalition.png" depth="0.56" sourcerect="1998,13,53,134" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="53" height="134" density="50" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="pt762_51_ap" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="pt762_51_ap" />
+      <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+        <SpawnItem identifiers="pt762_51_ap" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="false">
+      <RequiredItem identifier="lm_762_51_mgmag" amount="1" />
+      <RequiredItem identifier="tsm_tungsten" amount="4" />
+      <RequiredItem identifier="tsm_sulphur" amount="4" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="false">
+      <RequiredItem identifier="lm_762_51_mgmag" amount="1" />
+      <RequiredItem identifier="carbon" amount="3" />
+      <RequiredItem identifier="tsm_sulphur" amount="3" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
+      <RequiredItem identifier="lm_762_51_mgmag_cj" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem identifier="tsm_sulphur" amount="2" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
+      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="2" />
+      <RequiredItem identifier="carbon" mincondition="2" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
+      <RequiredItem identifier="lm_762_51_mgmag_cj" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem identifier="tsm_sulphur" amount="2" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
+      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="2" />
+      <RequiredItem identifier="tsm_tungsten" mincondition="2" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="plastic" outcondition="1" />
+      <Item identifier="tsm_tungsten" mincondition="0.95" />
+      <Item identifier="lead" mincondition="0.95" />
+    </Deconstruct>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item identifier="lm_556_mag_rev" subcategory="tsm_modifiedmagazines" scale="0.23" category="weapon" maxstacksize="6" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="lm_magazine,smallitem,lm_cjzd,556mag,lm_556cj_mag,lm_mag,magazine,556ammo,rev_mag" impactsoundtag="impact_metal_light" health="31">
+    <InventoryIcon texture="%ModDir%/Weapons/Magazine/coalition.png" sourcerect="2446,0,49,93" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons/Magazine/coalition.png" depth="0.56" sourcerect="2446,0,49,93" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="49" height="93" density="50" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="cj556*45" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="cj556*45" />
+      <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+        <SpawnItem identifiers="cj556*45" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <Price baseprice="318" buyingpricemultiplier="1" minleveldifficulty="0">
+      <Price locationtype="outpost" multiplier="1.5" minavailable="0" maxavailable="4" />
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="5" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="1.10" minavailable="2" maxavailable="6" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="2">
+      <RequiredItem identifier="plastic" amount="2" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
+      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="3" />
+      <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="3" />
+      <RequiredItem identifier="carbon" amount="5" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="2">
+      <RequiredItem identifier="plastic" amount="2" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
+      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="3" />
+      <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="3" />
+      <RequiredItem identifier="tsm_tungsten" amount="5" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
+      <RequiredItem tag="lm_556cj_mag" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="1" />
+      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="1" />
+      <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="1" />
+      <RequiredItem identifier="carbon" amount="2" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
+      <RequiredItem tag="lm_556cj_mag" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="1" />
+      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="1" />
+      <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="1" />
+      <RequiredItem identifier="tsm_tungsten" amount="2" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="plastic" outcondition="0.5" />
+      <Item identifier="copper" mincondition="0.9" />
+      <Item identifier="carbon" mincondition="0.9" />
+    </Deconstruct>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item identifier="lm_65_mag_rev" subcategory="tsm_modifiedmagazines" scale="0.23" category="weapon" maxstacksize="6" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="lm_magazine,smallitem,65mag,lm_gjzd,magazine,65ammo,rev_mag" impactsoundtag="impact_metal_light" health="30">
+    <InventoryIcon texture="%ModDir%/Weapons/Magazine/coalition.png" sourcerect="2444,228,49,72" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons/Magazine/coalition.png" depth="0.56" sourcerect="2444,228,49,72" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="49" height="72" density="50" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="kj65" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="kj65" />
+      <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+        <SpawnItem identifiers="kj65" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="5" requiresrecipe="false" amount="2">
+      <RequiredItem identifier="plastic" amount="2" />
+      <RequiredItem identifier="flashpowder" amount="4" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
+      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="3" />
+      <RequiredItem identifier="tsm_tungsten" amount="5" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
+      <RequiredItem tag="65mag" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem identifier="flashpowder" amount="2" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="1" />
+      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="1" />
+      <RequiredItem identifier="tsm_tungsten" amount="2" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="plastic" outcondition="1" />
+      <Item identifier="zinc" mincondition="0.9" />
+      <Item identifier="flashpowder" mincondition="0.9" />
+    </Deconstruct>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item identifier="lm_68_51_mag_rev" subcategory="tsm_modifiedmagazines" scale="0.23" category="weapon" maxstacksize="6" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="lm_magazine,smallitem,lm_gjzd,68_51mag,magazine,rev_mag" impactsoundtag="impact_metal_light" health="30">
+    <InventoryIcon texture="%ModDir%/Weapons/Magazine/coalition.png" sourcerect="1944,229,46,78" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons/Magazine/coalition.png" depth="0.56" sourcerect="1944,229,46,78" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="46" height="72" density="50" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="68_51_ap" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="68_51_ap" />
+      <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+        <SpawnItem identifiers="68_51_ap" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <Price baseprice="303" buyingpricemultiplier="1" minleveldifficulty="0">
+      <Price locationtype="outpost" multiplier="1.5" minavailable="0" maxavailable="5" />
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="5" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="1.10" minavailable="2" maxavailable="6" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false" amount="2">
+      <RequiredItem identifier="plastic" amount="2" />
+      <RequiredItem identifier="flashpowder" amount="3" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
+      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="4" />
+      <RequiredItem identifier="tsm_tungsten" amount="5" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" displayname="recycleitem" requiredtime="6">
+      <RequiredItem tag="68_51mag" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem identifier="flashpowder" amount="1" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="1" />
+      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="2" />
+      <RequiredItem identifier="tsm_tungsten" amount="2" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="plastic" outcondition="1" />
+      <Item identifier="zinc" mincondition="0.9" />
+      <Item identifier="flashpowder" mincondition="0.9" />
+    </Deconstruct>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item identifier="lm_762_51_mag_rev" subcategory="tsm_modifiedmagazines" scale="0.25" category="weapon" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="smallitem,762_51mag,lm_gjzd,lm_magazine,magazine,762ammo,rev_mag" impactsoundtag="impact_metal_light" health="20">
+    <InventoryIcon texture="%ModDir%/Weapons/Magazine/coalition.png" sourcerect="2226,323,52,92" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons/Magazine/coalition.png" depth="0.56" sourcerect="2226,323,52,92" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="52" height="92" density="50" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="pt762_51_ap" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="pt762_51_ap" />
+      <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+        <SpawnItem identifiers="pt762_51_ap" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="false" amount="1">
+      <RequiredItem identifier="plastic" amount="1" />
+      <RequiredItem identifier="tsm_oilshale" amount="2" />
+      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="2" />
+      <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="3" />
+      <RequiredItem identifier="tsm_tungsten" amount="3" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
+      <RequiredItem tag="762_51mag" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem identifier="tsm_oilshale" mincondition="1" />
+      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="1" />
+      <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="2" />
+      <RequiredItem identifier="tsm_tungsten" amount="3" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="plastic" outcondition="1" />
+      <Item identifier="tsm_oilshale" mincondition="0.9" />
+    </Deconstruct>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item identifier="lm_m700_mag_rev" subcategory="tsm_modifiedmagazines" scale="0.23" category="weapon" maxstacksize="3" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="lm_magazine,lm_m700_mag,smallitem,magazine,rev_mag" impactsoundtag="impact_metal_light" health="5">
+    <InventoryIcon texture="%ModDir%/Weapons/Magazine/coalition.png" sourcerect="2441,340,54,42" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons/Magazine/coalition.png" depth="0.56" sourcerect="2441,340,54,42" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="54" height="42" density="50" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="338magnum" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="338magnum" />
+      <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+        <SpawnItem identifiers="338magnum" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <Price baseprice="384" buyingpricemultiplier="1" minleveldifficulty="0">
+      <Price locationtype="outpost" multiplier="1.5" minavailable="0" maxavailable="5" />
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="5" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="1.10" minavailable="2" maxavailable="6" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="false" amount="1">
+      <RequiredItem identifier="plastic" amount="2" />
+      <RequiredItem identifier="tsm_tungsten" amount="2" />
+      <RequiredItem identifier="titanium" amount="2" />
+      <RequiredItem identifier="tsm_pyrotechnic" amount="1" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
+      <RequiredItem tag="lm_m700_mag" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem identifier="tsm_tungsten" amount="2" />
+      <RequiredItem identifier="titanium" amount="1" />
+      <RequiredItem identifier="tsm_pyrotechnic" amount="1" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="plastic" outcondition="1" />
+      <Item identifier="tsm_tungsten" mincondition="0.9" />
+    </Deconstruct>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item identifier="tsm_miniammo_rev" subcategory="tsm_modifiedmagazines" scale="0.23" category="weapon" maxstacksize="1" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="lm_magazine,smallitem,lm_cjzd,tsm_miniammo,magazine,rev_mag" impactsoundtag="impact_metal_light" health="200">
+    <InventoryIcon texture="%ModDir%/Weapons/Magazine/coalition.png" sourcerect="2365,431,125,193" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons/Magazine/coalition.png" depth="0.545" sourcerect="2365,431,125,193" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="125" height="193" density="50" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="pt65" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="pt65" />
+      <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+        <SpawnItem identifiers="pt65" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <Price baseprice="652" buyingpricemultiplier="1.2" minleveldifficulty="0">
+      <Price locationtype="outpost" multiplier="1.5" minavailable="0" maxavailable="1" />
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="2" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="1.10" minavailable="2" maxavailable="6" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="false" amount="1">
+      <RequiredItem identifier="plastic" amount="5" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="5" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="6" />
+      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="6" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
+      <RequiredItem tag="tsm_miniammo" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="4" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="4" />
+      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="4" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="plastic" mincondition="3" />
+      <Item identifier="tsm_tungsten" mincondition="0.95" />
+      <Item identifier="steel" mincondition="0.95" />
+    </Deconstruct>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <!--T.S.M-->
+  <Item identifier="tsm_58_201mag_rev" subcategory="tsm_modifiedmagazines" scale="0.23" category="weapon" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" linkable="true" tags="tsm_magazine,smallitem,tsm_cjzd,tsm_58_mgmag,magazine,rev_mag" impactsoundtag="impact_metal_light" health="100" description="">
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <InventoryIcon texture="%ModDir%/Weapons/Magazine/tsm.png" sourcerect="2148,239,96,92" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons/Magazine/tsm.png" depth="0.56" sourcerect="2148,239,96,92" origin="0.5,0.5" />
+    <Body width="96" height="92" density="50" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_cj58" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="tsm_cj58" />
+      <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+        <SpawnItem identifiers="tsm_cj58" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="8" requiresrecipe="false">
+      <RequiredItem identifier="tsm_58_201mag" amount="1" />
+      <RequiredItem identifier="tsm_tungsten" amount="4" />
+      <RequiredItem identifier="tsm_oilshale" amount="2" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="8" requiresrecipe="false">
+      <RequiredItem identifier="tsm_58_201mag" amount="1" />
+      <RequiredItem identifier="carbon" amount="4" />
+      <RequiredItem identifier="tsm_oilshale" amount="2" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
+      <RequiredItem identifier="tsm_58_201cjmag" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem identifier="tsm_oilshale" amount="2" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="2" />
+      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" mincondition="2" />
+      <RequiredItem identifier="carbon" mincondition="3" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
+      <RequiredItem identifier="tsm_58_201cjmag" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem identifier="tsm_oilshale" amount="2" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="2" />
+      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" mincondition="2" />
+      <RequiredItem identifier="tsm_tungsten" mincondition="3" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="plastic" outcondition="1" />
+      <Item identifier="copper" mincondition="0.9" />
+      <Item identifier="tsm_tungsten" mincondition="0.9" />
+    </Deconstruct>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item identifier="tsm_58_mag_rev" subcategory="tsm_modifiedmagazines" description="" scale="0.26" category="weapon" health="30" maxstacksize="4" cargocontaineridentifier="tsm_metalcrate" tags="tsm_magazine,smallitem,tsm_cjzd,tsm_mag,tsm_58_mag,tsm_58_mgmag,magazine,rev_mag" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <InventoryIcon texture="%ModDir%/Weapons/Magazine/tsm.png" sourcerect="2062,243,66,95" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons/Magazine/tsm.png" depth="0.56" sourcerect="2062,243,66,95" origin="0.5,0.5" />
+    <Body width="66" height="95" density="50" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_cj58" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="tsm_cj58" />
+      <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+        <SpawnItem identifiers="tsm_cj58" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="2">
+      <RequiredItem identifier="plastic" amount="2" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
+      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="3" />
+      <RequiredItem identifier="carbon" amount="5" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="2">
+      <RequiredItem identifier="plastic" amount="2" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
+      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="3" />
+      <RequiredItem identifier="tsm_tungsten" amount="5" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
+      <RequiredItem tag="tsm_58_mag" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="1" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="1" />
+      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" mincondition="1" />
+      <RequiredItem identifier="tsm_tungsten" amount="2" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
+      <RequiredItem tag="tsm_58_mag" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="1" />
+      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="1" />
+      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" mincondition="1" />
+      <RequiredItem identifier="carbon" amount="2" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="plastic" outcondition="1" />
+      <Item identifier="copper" mincondition="0.9" />
+      <Item identifier="carbon" mincondition="0.9" />
+    </Deconstruct>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+
+  <!--Loader-->
+  <Item identifier="tsm_ammobox_rev" subcategory="tsm_modifiedmagazines" health="600" category="weapon" tags="mediumitem,ammobox,tsm_ammobox,tsm_magbox" scale="0.5" pickdistance="150" impactsoundtag="impact_metal_heavy" maxstacksize="1">
+    <Sprite texture="%ModDir%/Weapons/Magazine/tsm.png" depth="0.54" sourcerect="2260,2371,219,105" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <PreferredContainer primary="wreckarmcab" minamount="0" maxamount="1" spawnprobability="0.01" />
+    <PreferredContainer primary="wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.01" />
+    <PreferredContainer primary="weaponholder" spawnprobability="0.01" />
+    <PreferredContainer primary="secarmcab" minamount="0" maxamount="1" spawnprobability="0.01" />
+    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" />
+    <PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" />
+    <Body width="219" height="105" density="50" />
+    <RangedWeapon reload="1" MaxChargeTime="20" />
+    <Holdable slots="RightHand+LeftHand" aimable="false" holdpos="50,-50" aimpos="50,-40" handle1="-0,16" handle2="0,0" swingamount="20,100" swingspeed="1" swingwhenusing="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.7" setvalue="true" />
+      <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.1" setvalue="true" />
+      <StatusEffect type="OnUse" target="Contained" Condition="10">
+        <Conditional IsFullCondition="false" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" Condition="-5" comparison="and">
+        <RequiredItems items="rev_mag" type="Contained" />
+        <Conditional IsFullCondition="false" targetcontaineditem="true" />
+        <sound file="%ModDir%/Weapons/Magazine/reload4.ogg" type="OnUse" range="300" loop="true" />
+      </StatusEffect>
+    </Holdable>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" showcontainedstateindicator="false">
+      <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="128,13,111,111" origin="0.5,0.5" />
+      <Containable items="tsm_zd,tsm_cjzd" />
+    </ItemContainer>
+    <Price baseprice="2400" buyingpricemultiplier="1" minleveldifficulty="30">
+      <Price locationtype="outpost" multiplier="1.5" minavailable="0" maxavailable="3" />
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="4" />
+      <Price locationtype="research" multiplier="1.25" minavailable="0" maxavailable="4" />
+      <Price locationtype="military" multiplier="1.10" minavailable="2" maxavailable="5" />
+      <Price locationtype="mine" multiplier="1.25" minavailable="0" maxavailable="3" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="magnesium" mincondition="0.3" />
+      <Item identifier="flashpowder" mincondition="0.3" />
+      <Item identifier="sodium" mincondition="0.3" />
+      <Item identifier="tsm_triton_bag" mincondition="0.7"/>
+      <Item identifier="tsm_oilshale" mincondition="0.7" />
+      <Item identifier="tsm_sulphur" mincondition="0.7" />
+    </Deconstruct>
+  </Item>
+</Items>
