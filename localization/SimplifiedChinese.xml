@@ -514,4 +514,52 @@
   <talentvalue.reviscomming_item>变革弹</talentvalue.reviscomming_item>
 
   <subcategory.tsm_modifiedmagazines>第三方弹匣</subcategory.tsm_modifiedmagazines>
+
+  <entityname.fkj_545_mag_rev>反抗军变革穿甲弹匣（5.45*39）</entityname.fkj_545_mag_rev>
+  <entityname.fkj_762_mag_rev>反抗军变革穿甲弹匣（7.62*39）</entityname.fkj_762_mag_rev>
+  <entityname.fkj_762_51_mag_rev>反抗军变革穿甲弹匣（7.62*51）</entityname.fkj_762_51_mag_rev>
+  <entityname.fkj_jts_mag_rev>反抗军通用机枪变革穿甲弹匣（5.45*39）</entityname.fkj_jts_mag_rev>
+  <entityname.fkj_pkp_mag_rev>反抗军通用机枪变革穿甲弹匣（7.62*51）</entityname.fkj_pkp_mag_rev>
+  <entityname.fkj_rpk_mag_rev>RPK变革弹鼓</entityname.fkj_rpk_mag_rev>
+  <entityname.fkj_m2_mag_rev>反抗军重型机枪变革弹匣</entityname.fkj_m2_mag_rev>
+  <entityname.fkj_svd_mag_rev>SVD变革弹匣</entityname.fkj_svd_mag_rev>
+
+  <entityname.tsm_556_45_mgmag_rev>联盟轻机枪变革穿甲弹匣（5.56*45）</entityname.tsm_556_45_mgmag_rev>
+  <entityname.lm_762_51_mgmag_rev>联盟班用机枪变革弹匣（7.62*51）</entityname.lm_762_51_mgmag_rev>
+  <entityname.lm_556_mag_rev>联盟变革穿甲弹匣（5.56*45）</entityname.lm_556_mag_rev>
+  <entityname.lm_65_mag_rev>联盟特种变革弹匣（6.5mm）</entityname.lm_65_mag_rev>
+  <entityname.lm_68_51_mag_rev>联盟变革穿甲弹匣（6.8*51mm）</entityname.lm_68_51_mag_rev>
+  <entityname.lm_762_51_mag_rev>联盟变革穿甲弹匣（7.62*51）</entityname.lm_762_51_mag_rev>
+  <entityname.lm_m700_mag_rev>狙击步枪变革弹匣（.338）</entityname.lm_m700_mag_rev>
+  <entityname.tsm_miniammo_rev>Minigun变革弹匣</entityname.tsm_miniammo_rev>
+
+  <entityname.tsm_58_201mag_rev>201帆布弹袋（变革弹）</entityname.tsm_58_201mag_rev>
+  <entityname.tsm_58_mag_rev>突击步枪变革穿甲弹匣（5.8mm）</entityname.tsm_58_mag_rev>
+
+  <entityname.tsm_ammobox_rev>奇迹之海变革弹药箱</entityname.tsm_ammobox_rev>
+  <entityname.tsm_hazardous_container>危险品运输集装箱</entityname.tsm_hazardous_container>
+
+  <entitydescription.fkj_545_mag_rev>装有33发5.45变革穿甲弹</entitydescription.fkj_545_mag_rev>
+  <entitydescription.fkj_762_mag_rev>装载30发7.62*39口径变革穿甲弹</entitydescription.fkj_762_mag_rev>
+  <entitydescription.fkj_762_51_mag_rev>装载20发7.62*51口径变革穿甲弹</entitydescription.fkj_762_51_mag_rev>
+  <entitydescription.fkj_jts_mag_rev>储存了一条200发5.45*39mm变革穿甲弹链的弹盒，可供射手肆意挥霍 \n过多弹药导致弹匣有放射性 \n弹匣上的标记像是被后勤人员匆匆涂掉又改成现在的模样</entitydescription.fkj_jts_mag_rev>
+  <entitydescription.fkj_pkp_mag_rev>储存了一条100发弹链的变革穿甲弹弹盒 \n过多弹药导致弹匣有放射性</entitydescription.fkj_pkp_mag_rev>
+  <entitydescription.fkj_rpk_mag_rev>装有95发5.45*39口径变革穿甲弹的弹鼓，给RPK提供更为长久的续航 \n过多弹药导致弹匣有放射性 \n弹匣上的标记像是被后勤人员匆匆涂掉又改成现在的模样</entitydescription.fkj_rpk_mag_rev>
+  <entitydescription.fkj_m2_mag_rev>安装于重机枪上的弹盒，内有一条150发的变革穿甲弹链，可提供重机枪长时间射击。体积过大不便携带，建议由副射手专门携带 \n过多弹药导致弹匣有放射性</entitydescription.fkj_m2_mag_rev>
+  <entitydescription.fkj_svd_mag_rev>填了20发变革步枪弹的弹匣</entitydescription.fkj_svd_mag_rev>
+
+  <entitydescription.tsm_556_45_mgmag_rev>装有200发5.56*45mm变革穿甲弹 \n内装过多弹药导致弹匣有放射性 \n弹匣上的标记像是被后勤人员匆匆涂掉又改成现在的模样</entitydescription.tsm_556_45_mgmag_rev>
+  <entitydescription.lm_762_51_mgmag_rev>装有200发7.62*51mm变革穿甲弹 \n内装过多弹药导致弹匣有放射性 \n弹匣上的标记像是被后勤人员匆匆涂掉又改成现在的模样</entitydescription.lm_762_51_mgmag_rev>
+  <entitydescription.lm_556_mag_rev>内部填装了31发5.56*45mm变革穿甲弹，可以有效应对有甲生物与防弹衣 \n弹匣上的标记像是被后勤人员匆匆涂掉又改成现在的模样</entitydescription.lm_556_mag_rev>
+  <entitydescription.lm_65_mag_rev>装填了30发特种变革弹，可以有力对抗各种目标 \n弹匣上的标记像是被后勤人员匆匆涂掉又改成现在的模样</entitydescription.lm_65_mag_rev>
+  <entitydescription.lm_68_51_mag_rev>装填了30发标准6.8*51口径变革穿甲弹 \n弹匣上的标记像是被后勤人员匆匆涂掉又改成现在的模样</entitydescription.lm_68_51_mag_rev>
+  <entitydescription.lm_762_51_mag_rev>装填了20发7.62*51口径变革穿甲弹 \n弹匣上的标记像是被后勤人员匆匆涂掉又改成现在的模样</entitydescription.lm_762_51_mag_rev>
+  <entitydescription.lm_m700_mag_rev>内有5发大威力变革弹</entitydescription.lm_m700_mag_rev>
+  <entitydescription.tsm_miniammo_rev>200发556口径变革穿甲弹，尽情挥霍 \n过多弹药导致弹匣有放射性</entitydescription.tsm_miniammo_rev>
+
+  <entitydescription.tsm_58_201mag_rev>装填100发5.8mm口径变革穿甲弹 \n内装过多弹药导致弹匣有放射性 \n弹匣上的标记像是被后勤人员匆匆涂掉又改成现在的模样</entitydescription.tsm_58_201mag_rev>
+  <entitydescription.tsm_58_mag_rev>装填30发5.8mm变革穿甲弹 \n弹匣上的标记像是被后勤人员匆匆涂掉又改成现在的模样</entitydescription.tsm_58_mag_rev>
+
+  <entitydescription.tsm_ammobox_rev>装满了各类变革弹药的弹药箱,可以为绝大多数变革弹匣装弹</entitydescription.tsm_ammobox_rev>
+  <entitydescription.tsm_hazardous_container>可用于安全运输各种危险品的重型集装箱...只要没有人试图破坏它</entitydescription.tsm_hazardous_container>
 </infotexts>
