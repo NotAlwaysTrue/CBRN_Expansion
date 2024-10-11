@@ -777,10 +777,10 @@
     <InventoryIcon texture="%ModDir%/Weapons/Magazine/tsm.png" sourcerect="2062,243,66,95" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/Magazine/tsm.png" depth="0.56" sourcerect="2062,243,66,95" origin="0.5,0.5" />
     <Body width="66" height="95" density="50" />
-    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_cj58" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-      <Containable items="tsm_cj58" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_58_rev" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="tsm_58_rev" />
       <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-        <SpawnItem identifiers="tsm_cj58" spawnposition="ThisInventory" />
+        <SpawnItem identifiers="tsm_58_rev" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="2">
@@ -1637,20 +1637,20 @@
 
   <!--bullets-->
   <Item identifier="545_39_rev" category="Misc" interactthroughwalls="true" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
-    <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:2953749635%/weapons/bullet.png" sourcerect="33,100,57,15" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:2953749635%/weapons/bullet.png" sourcerect="33,100,57,15" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" density="40" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" maxtargetstohit="2">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="140,85,200,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="1" targetforce="1" itemdamage="9" penetration="0.25" severlimbsprobability="0.3">
-        <Affliction identifier="gunshotwound" strength="13" />
-        <Affliction identifier="gunshotwound" strength="7" probability="0.25" />
+        <Affliction identifier="gunshotwound" strength="8" />
+        <Affliction identifier="gunshotwound" strength="4" probability="0.25" />
         <Affliction identifier="triton_7L" strength="2" />
-        <Affliction identifier="bleeding" strength="12" />
-        <Affliction identifier="bleedingnonstop" strength="5" probability="0.1" />
-        <Affliction identifier="bleedingnonstop" strength="2" probability="0.3" />
-        <Affliction identifier="bleedingnonstop" strength="2" probability="0.3" />
+        <Affliction identifier="bleeding" strength="6" />
+        <Affliction identifier="bleedingnonstop" strength="2" probability="0.1" />
+        <Affliction identifier="bleedingnonstop" strength="1" probability="0.3" />
+        <Affliction identifier="bleedingnonstop" strength="1" probability="0.3" />
         <Affliction identifier="stun" strength="0.25" probability="0.1" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
@@ -1662,24 +1662,24 @@
         <Conditional hastag="eq door" />
         <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
       </StatusEffect>
-      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+      <StatusEffect type="OnNotContained" target="This" stackable="false">
         <Remove />
       </StatusEffect>
     </Projectile>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="762_39_rev" category="Misc" interactthroughwalls="true" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
-    <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:2953749635%/weapons/bullet.png" sourcerect="33,100,57,15" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:2953749635%/weapons/bullet.png" sourcerect="33,100,57,15" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" density="40" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" maxtargetstohit="2">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="140,85,200,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="2" targetforce="2" itemdamage="10" penetration="0.3" severlimbsprobability="0.8">
-        <Affliction identifier="gunshotwound" strength="17" />
-        <Affliction identifier="gunshotwound" strength="7" probability="0.1" />
-        <Affliction identifier="bleeding" strength="10" />
-        <Affliction identifier="bleedingnonstop" strength="10" probability="0.1" />
+        <Affliction identifier="gunshotwound" strength="8" />
+        <Affliction identifier="gunshotwound" strength="4" probability="0.1" />
+        <Affliction identifier="bleeding" strength="5" />
+        <Affliction identifier="bleedingnonstop" strength="5" probability="0.1" />
         <Affliction identifier="triton_7L" strength="5" />
         <Affliction identifier="stun" strength="0.25" probability="0.25" />
       </Attack>
@@ -1692,26 +1692,26 @@
         <Conditional hastag="eq door" />
         <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
       </StatusEffect>
-      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+      <StatusEffect type="OnNotContained" target="This" stackable="false" >
         <Remove />
       </StatusEffect>
     </Projectile>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="762_54r_rev" category="Misc" interactthroughwalls="true" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
-    <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:2953749635%/weapons/bullet.png" sourcerect="33,100,57,15" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:2953749635%/weapons/bullet.png" sourcerect="33,100,57,15" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" density="40" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" maxtargetstohit="3">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="140,85,200,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="2.5" targetforce="8" itemdamage="15" penetration="0.3" severlimbsprobability="0.8">
-        <Affliction identifier="gunshotwound" strength="40" />
-        <Affliction identifier="gunshotwound" strength="20" probability="0.4" />
+        <Affliction identifier="gunshotwound" strength="20" />
+        <Affliction identifier="gunshotwound" strength="10" probability="0.4" />
         <Affliction identifier="triton_7L" strength="10" />
-        <Affliction identifier="bleeding" strength="30" />
-        <Affliction identifier="bleedingnonstop" strength="15" probability="0.15" />
-        <Affliction identifier="stun" strength="0.2" />
+        <Affliction identifier="bleeding" strength="15" />
+        <Affliction identifier="bleedingnonstop" strength="7" probability="0.15" />
+        <Affliction identifier="stun" strength="0.1" />
         <Affliction identifier="stun" strength="0.25" probability="0.15" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
@@ -1723,28 +1723,27 @@
         <Conditional hastag="eq door" />
         <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
       </StatusEffect>
-      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+      <StatusEffect type="OnNotContained" target="This" stackable="false">
         <Remove />
       </StatusEffect>
     </Projectile>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="556_45NATO_rev" category="Misc" interactthroughwalls="true" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
-    <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,51,58,11" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,51,58,11" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:2953749635%/weapons/bullet.png" sourcerect="33,51,58,11" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:2953749635%/weapons/bullet.png" sourcerect="33,51,58,11" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" density="40" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" maxtargetstohit="2">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="140,85,200,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="1" targetforce="1" itemdamage="10" penetration="0.28" severlimbsprobability="0.3">
-        <Affliction identifier="gunshotwound" strength="13.5" />
-        <Affliction identifier="gunshotwound" strength="2" probability="0.2" />
-        <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
-        <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
-        <Affliction identifier="tsm_armorbreak_jz" strength="3" />
+        <Affliction identifier="gunshotwound" strength="6" />
+        <Affliction identifier="gunshotwound" strength="1" probability="0.2" />
+        <Affliction identifier="gunshotwound" strength="1" probability="0.1" />
+        <Affliction identifier="gunshotwound" strength="1" probability="0.1" />
         <Affliction identifier="triton_7L" strength="2.5" />
-        <Affliction identifier="bleeding" strength="5" probability="0.2" />
-        <Affliction identifier="bleedingnonstop" strength="2" probability="0.3" />
+        <Affliction identifier="bleeding" strength="2" probability="0.2" />
+        <Affliction identifier="bleedingnonstop" strength="1" probability="0.3" />
         <Affliction identifier="stun" strength="0.25" probability="0.15" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
@@ -1756,26 +1755,26 @@
         <Conditional hastag="eq door" />
         <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
       </StatusEffect>
-      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+      <StatusEffect type="OnNotContained" target="This" stackable="false">
         <Remove />
       </StatusEffect>
     </Projectile>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="65_spec_rev" category="Misc" interactthroughwalls="true" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
-    <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,127,54,10" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,127,54,10" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:2953749635%/weapons/bullet.png" sourcerect="33,127,54,10" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:2953749635%/weapons/bullet.png" sourcerect="33,127,54,10" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" density="40" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" maxtargetstohit="2">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="140,85,200,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="0" targetforce="2" itemdamage="12" penetration="0.35" severlimbsprobability="1">
-        <Affliction identifier="gunshotwound" strength="16" />
-        <Affliction identifier="gunshotwound" strength="2" probability="0.15" />
-        <Affliction identifier="gunshotwound" strength="2" probability="0.15" />
-        <Affliction identifier="bleedingnonstop" strength="5" />
-        <Affliction identifier="bleedingnonstop" strength="2" probability="0.3" />
-        <Affliction identifier="bleedingnonstop" strength="2" probability="0.25" />
+        <Affliction identifier="gunshotwound" strength="8" />
+        <Affliction identifier="gunshotwound" strength="1" probability="0.15" />
+        <Affliction identifier="gunshotwound" strength="1" probability="0.15" />
+        <Affliction identifier="bleedingnonstop" strength="2" />
+        <Affliction identifier="bleedingnonstop" strength="1" probability="0.3" />
+        <Affliction identifier="bleedingnonstop" strength="1" probability="0.25" />
         <Affliction identifier="triton_7L" strength="3" />
         <Affliction identifier="stun" strength="0.25" probability="0.2" />
       </Attack>
@@ -1788,27 +1787,27 @@
         <Conditional hastag="eq door" />
         <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
       </StatusEffect>
-      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+      <StatusEffect type="OnNotContained" target="This" stackable="false">
         <Remove />
       </StatusEffect>
     </Projectile>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="68_51_rev" category="Misc" interactthroughwalls="true" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
-    <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,127,54,10" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,127,54,10" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:2953749635%/weapons/bullet.png" sourcerect="33,127,54,10" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:2953749635%/weapons/bullet.png" sourcerect="33,127,54,10" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" density="40" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" maxtargetstohit="2">
     <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="140,85,200,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="1" targetforce="2" itemdamage="9" penetration="0.4" severlimbsprobability="0.5">
-        <Affliction identifier="gunshotwound" strength="17" />
-        <Affliction identifier="explosiondamage" strength="3" probability="0.15" />
-        <Affliction identifier="gunshotwound" strength="3" probability="0.1" />
-        <Affliction identifier="gunshotwound" strength="4" probability="0.1" />
+        <Affliction identifier="gunshotwound" strength="8" />
+        <Affliction identifier="explosiondamage" strength="2" probability="0.15" />
+        <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
+        <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
         <Affliction identifier="triton_7L" strength="5" />
-        <Affliction identifier="bleeding" strength="20" />
-        <Affliction identifier="bleedingnonstop" strength="10" probability="0.15" />
+        <Affliction identifier="bleeding" strength="8" />
+        <Affliction identifier="bleedingnonstop" strength="5" probability="0.15" />
         <Affliction identifier="stun" strength="0.1" probability="0.25" />
         <Affliction identifier="stun" strength="0.25" probability="0.25" />
       </Attack>
@@ -1821,25 +1820,25 @@
         <Conditional hastag="eq door" />
         <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
       </StatusEffect>
-      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+      <StatusEffect type="OnNotContained" target="This" stackable="false">
         <Remove />
       </StatusEffect>
     </Projectile>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="762_51NATO_rev" category="Misc" interactthroughwalls="true" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
-    <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,100,57,15" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:2953749635%/weapons/bullet.png" sourcerect="33,100,57,15" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:2953749635%/weapons/bullet.png" sourcerect="33,100,57,15" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" density="40" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" maxtargetstohit="2">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="140,85,200,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="2" targetforce="5" itemdamage="16" penetration="0.33" severlimbsprobability="0.3">
-        <Affliction identifier="gunshotwound" strength="19" />
-        <Affliction identifier="gunshotwound" strength="11" probability="0.32" />
+        <Affliction identifier="gunshotwound" strength="9" />
+        <Affliction identifier="gunshotwound" strength="5" probability="0.32" />
         <Affliction identifier="triton_7L" strength="7" />
-        <Affliction identifier="bleeding" strength="25" />
-        <Affliction identifier="bleedingnonstop" strength="15" probability="0.15" />
+        <Affliction identifier="bleeding" strength="12" />
+        <Affliction identifier="bleedingnonstop" strength="7" probability="0.15" />
         <Affliction identifier="stun" strength="0.2" probability="0.15" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
@@ -1851,25 +1850,25 @@
         <Conditional hastag="eq door" />
         <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
       </StatusEffect>
-      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+      <StatusEffect type="OnNotContained" target="This" stackable="false">
         <Remove />
       </StatusEffect>
     </Projectile>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="338magnum_rev" category="Misc" interactthroughwalls="true" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
-    <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="31,201,59,14" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="31,201,59,14" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:2953749635%/weapons/bullet.png" sourcerect="31,201,59,14" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:2953749635%/weapons/bullet.png" sourcerect="31,201,59,14" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" density="40" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" maxtargetstohit="2">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="140,85,200,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="10" targetforce="23" itemdamage="50" penetration="0.3" severlimbsprobability="1">
-        <Affliction identifier="gunshotwound" strength="85" />
-        <Affliction identifier="gunshotwound" strength="25" probability="0.4" />
+        <Affliction identifier="gunshotwound" strength="40" />
+        <Affliction identifier="gunshotwound" strength="12" probability="0.4" />
         <Affliction identifier="triton_7L" strength="20" />
-        <Affliction identifier="bleeding" strength="30" />
-        <Affliction identifier="bleedingnonstop" strength="15" probability="0.3" />
+        <Affliction identifier="bleeding" strength="15" />
+        <Affliction identifier="bleedingnonstop" strength="8" probability="0.3" />
         <Affliction identifier="stun" strength="1" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
@@ -1881,26 +1880,26 @@
         <Conditional hastag="eq door" />
         <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
       </StatusEffect>
-      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+      <StatusEffect type="OnNotContained" target="This" stackable="false">
         <Remove />
       </StatusEffect>
     </Projectile>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="tsm_58_rev" category="Misc" interactthroughwalls="true" impactsoundtag="impact_metal_light" hideinmenus="true" scale="1">
-    <InventoryIcon texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/weapons/bullet.png" sourcerect="33,153,54,10" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:2953749635%/weapons/bullet.png" sourcerect="33,153,54,10" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:2953749635%/weapons/bullet.png" sourcerect="33,153,54,10" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" density="40" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" maxtargetstohit="2">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="140,85,200,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="1" targetforce="2" itemdamage="9" penetration="0.31" severlimbsprobability="0.265">
-        <Affliction identifier="gunshotwound" strength="15" />
-        <Affliction identifier="gunshotwound" strength="3" probability="0.15" />
+        <Affliction identifier="gunshotwound" strength="7" />
         <Affliction identifier="gunshotwound" strength="2" probability="0.15" />
-        <Affliction identifier="bleeding" strength="10" />
-        <Affliction identifier="bleeding" strength="5" probability="0.1" />
-        <Affliction identifier="bleeding" strength="5" probability="0.1" />
+        <Affliction identifier="gunshotwound" strength="1" probability="0.15" />
+        <Affliction identifier="bleeding" strength="5" />
+        <Affliction identifier="bleeding" strength="2" probability="0.1" />
+        <Affliction identifier="bleeding" strength="2" probability="0.1" />
         <Affliction identifier="triton_7L" strength="2" />
         <Affliction identifier="stun" strength="0.25" probability="0.25" />
       </Attack>
@@ -1913,7 +1912,7 @@
         <Conditional hastag="eq door" />
         <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
       </StatusEffect>
-      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1">
+      <StatusEffect type="OnNotContained" target="This" stackable="false">
         <Remove />
       </StatusEffect>
     </Projectile>

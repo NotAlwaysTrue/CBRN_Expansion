@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Character speciesname="tsm_cbrnert_sapphire" group="tsmmtf" humanoid="True" caninteract="True" needsair="False" blooddecal="blackblood" visibility="300" noise="False" UseHumanAI="False" speciestranslationoverride="" displayname="" hasCharacterinfo="False" husk="False" usehuskappendage="False" needswater="False" canspeak="False" bleedparticleair="blackblooddrop" bleedparticlewater="blackwaterblood" bleedparticlemultiplier="1" eatingspeed="10" pathfinderpriority="1" hideinsonar="False" hideinthermalgoggles="False" sonardisruption="0" disabledistance="25000" usebosshealthbar="False" caneat="False" usepathfinding="True" distantsonarrange="0" soundinterval="10">
+  <ragdolls folder="default" />
+  <animations folder="default" />
+  <damageemitter particle="blackgib" drawontop="True" particleamount="5" velocitymin="50" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.1" scalemax="0.3" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <bloodemitter particle="blackblood" particleamount="5" anglemin="0" anglemax="0" scalemin="1" scalemax="1" velocitymin="0" velocitymax="0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <bloodemitter particle="blackwaterblood" particleamount="1" anglemin="0" anglemax="0" scalemin="1" scalemax="1" velocitymin="0" velocitymax="0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <gibemitter particle="blackgib" particleamount="10" velocitymin="200" velocitymax="500" anglemin="0" anglemax="360" scalemin="0.3" scalemax="0.6" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+  <health vitality="130" doesbleed="True" bleedingreduction="0.8" crushdepth="Infinity" usehealthwindow="False" burnreduction="0" constanthealthregeneration="0.5" healthregenerationwheneating="0" stunimmunity="False" applyafflictioncolors="False">
+    <Limb name="Head">
+      <VitalityMultiplier type="damage" multiplier="1.5" />
+    </Limb>
+    <Limb name="Torso" />
+    <Limb name="LeftArm">
+      <VitalityMultiplier type="damage" multiplier="0.6" />
+      <VitalityMultiplier type="burn" multiplier="0.6" />
+    </Limb>
+    <Limb name="RightArm">
+      <VitalityMultiplier type="damage" multiplier="0.6" />
+      <VitalityMultiplier type="burn" multiplier="0.6" />
+    </Limb>
+    <Limb name="LeftLeg">
+      <VitalityMultiplier type="damage" multiplier="0.6" />
+      <VitalityMultiplier type="burn" multiplier="0.6" />
+    </Limb>
+    <Limb name="RightLeg">
+      <VitalityMultiplier type="damage" multiplier="0.6" />
+      <VitalityMultiplier type="burn" multiplier="0.6" />
+    </Limb>
+  </health>
+  <sound file="%ModDir:2852411866%/Character/war/ogg/大重甲/徘徊2.ogg" state="Idle" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir:2852411866%/Character/war/ogg/大重甲/受伤1.ogg" state="Damage" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir:2852411866%/Character/war/ogg/大重甲/受伤2.ogg" state="Damage" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir:2852411866%/Character/war/ogg/大重甲/受伤3.ogg" state="Damage" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir:2852411866%/Character/war/ogg/大重甲/死亡1.ogg" state="Die" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir:2852411866%/Character/war/ogg/大重甲/死亡3.ogg" state="Die" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir:2852411866%/Character/war/ogg/大重甲/攻击1.ogg" state="Attack" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir:2852411866%/Character/war/ogg/大重甲/攻击2.ogg" state="Attack" range="1000" volume="4" gender="None" />
+  <sound file="%ModDir:2852411866%/Character/war/ogg/大重甲/攻击3.ogg" state="Attack" range="1000" volume="4" gender="None" />
+  <ai combatstrength="600" sight="6" hearing="6" aggressiveboarding="True" attackwhenprovoked="True" UsePathFindingToGetInside="True" aggressiongreed="5" aggressionhurt="150" canopendoors="True" targetouterwalls="False" fleehealththreshold="0" avoidgunfire="True" avoidtime="3" minfleetime="20" enforceaggressivebehaviorformissions="True" randomattack="True" avoidabyss="True" stayinabyss="True" startaggression="0" maxaggression="100" aggressioncumulation="0" walltargetingmethod="Target" keepdoorsclosed="False" patrolflooded="False" patroldry="False">
+    <target tag="weapon" state="Attack" priority="130" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" ignoreinside="False" ignoreoutside="False" ignoreifnotinsamesub="False" ignoreincapacitated="False" damagethreshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" />
+    <target tag="weaker" state="Attack" priority="150" reactdistance="0" ignoreincapacitated="True" attackdistance="0" timer="0" ignorecontained="False" ignoreinside="False" ignoreoutside="False" ignoreifnotinsamesub="False" damagethreshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" />
+    <target tag="stronger" state="Attack" priority="150" reactdistance="0" ignoreincapacitated="True" attackdistance="0" timer="0" ignorecontained="False" ignoreinside="False" ignoreoutside="False" ignoreifnotinsamesub="False" damagethreshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" />
+    <target tag="human" state="Attack" priority="200" reactdistance="0" ignoreinside="False" attackdistance="0" timer="0" ignorecontained="False" ignoreoutside="False" ignoreifnotinsamesub="False" ignoreincapacitated="False" damagethreshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" />
+    <target tag="room" state="Attack" priority="10" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" ignoreinside="False" ignoreoutside="False" ignoreifnotinsamesub="False" ignoreincapacitated="False" damagethreshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" />
+    <target tag="turret" state="Attack" priority="1" ignoreinside="False" reactdistance="0" attackdistance="0" timer="0" ignorecontained="False" ignoreoutside="False" ignoreifnotinsamesub="False" ignoreincapacitated="False" damagethreshold="0" attackpattern="Straight" sweepdistance="0" sweepstrength="10" sweepspeed="1" circlestartdistance="5000" circlerotationspeed="1" circlestrikedistancemultiplier="5" circlemaxrandomoffset="0" threshold="0" thresholdmin="-1" thresholdmax="-1" offset="0,0" />
+  </ai>
+  <inventory arrowslot="9" slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" commonness="30" accessiblewhenalive="true">
+    <Item identifier="tsm_triton_bag" slot="Any"/>
+    <Item identifier="tsm_201_cbrnertai" slot="RightHand+LeftHand" />
+    <Item identifier="tsm_58_201mag_rev" slot="Any" amount="1"/>
+    <Item identifier="aibuff_1_autorun" slot="Any" />
+    <Item identifier="idcard" slot="Card" />
+    <Item identifier="tsm_cbrnert_ai" slot="InnerClothes,OuterClothes,Head" />
+  </inventory><!--Machinegunner-->
+  <inventory arrowslot="9" slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" commonness="50" accessiblewhenalive="true">
+    <Item identifier="tsm_qbz_191" slot="RightHand+LeftHand" />
+    <Item identifier="tsm_58_mag_rev" slot="Any" amount="9"/>
+    <Item identifier="aibuff_1_autorun" slot="Any" />
+    <Item identifier="idcard" slot="Card" />
+    <Item identifier="tsm_cbrnert_ai" slot="InnerClothes,OuterClothes,Head" />
+  </inventory><!--Assault Team-->
+  <inventory arrowslot="9" slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" commonness="20" accessiblewhenalive="true">
+    <Item identifier="tsm_triton_bag" slot="Any" amount="2"/>
+    <Item identifier="tsm_xylz" slot="RightHand+LeftHand" />
+    <Item identifier="tsm_xymagazine_bg" slot="Any" amount="7"/>
+    <Item identifier="aibuff_1_autorun" slot="Any" />
+    <Item identifier="idcard" slot="Card" />
+    <Item identifier="tsm_cbrnert_ai" slot="InnerClothes,OuterClothes,Head" />
+  </inventory><!--Officer-->
+  <inventory arrowslot="9" slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" commonness="3" accessiblewhenalive="true">
+    <Item identifier="tsm_triton_bag" slot="Any" amount="4"/>
+    <Item identifier="aibuff_1_autorun" slot="Any" />
+    <Item identifier="idcard" slot="Card" />
+    <Item identifier="tsm_cbrnert_ai" slot="InnerClothes,OuterClothes,Head" />
+  </inventory><!--Heavy Officer-->
+</Character>

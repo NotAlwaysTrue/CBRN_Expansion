@@ -17,6 +17,7 @@
   <Character file="%ModDir%/Characters/humaneyi_weaponized/humaneyi_weaponized.xml" />
   <Character file="%ModDir%/Characters/sapphire/sapphire.xml" />
   <Character file="%ModDir%/Characters/sapphirepod/sapphirepod.xml" />
+  <Character file="%ModDir%/Characters/tsm_cbrnert_sapphire/tsm_cbrnert_sapphire.xml" />
   <Missions file="%Moddir%/Missions.xml" />
   <NPCSets file="%Moddir%/MissionNpcs.xml" />
   <Jobs file="%ModDir%/Job/Jobs.xml" />
