@@ -1015,22 +1015,16 @@
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.4" setvalue="true" />
     </Holdable>
-    <RangedWeapon reload="0.5" weapondamagemodifier="1.5" penetration="0.5" holdtrigger="false" barrelpos="680,30" spread="0.3" unskilledspread="13" combatPriority="120" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.2" weapondamagemodifier="1.5" penetration="0.5" holdtrigger="true" barrelpos="680,30" spread="0.3" unskilledspread="13" combatPriority="120" drawhudwhenequipped="true" crosshairscale="0.2">
       <RequiredSkill identifier="weapons" level="65" />
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
-      <Sound file="%ModDir%/Weapons/BerraArm/M110SASS/M110SASS.ogg" type="OnUse" range="800" />
-      <StatusEffect type="OnUse" target="Contained">
-        <Use />
-      </StatusEffect>
+      <Sound file="%ModDir%/Weapons/BerraArm/M110SASS/M110SASS.ogg" type="OnUse" range="800" forceplaysounds="True"/>
       <!--后坐力,屏幕抖动-->
       <StatusEffect type="OnUse" target="This">
-        <Explosion range="100.0" force="1.0" camerashake="50" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" />
+        <Explosion range="200.0" force="3.0" camerashake="50" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" />
       </StatusEffect>
-      <Propulsion force="-20" usablein="both" ApplyToHands="true" type="OnUse">
-        <RequiredItems items="berra_300FAL_M118LR" type="Contained" target="This" msg="ItemMsgAmmoRequired" />
-      </Propulsion>
       <RequiredItems items="berra_300FAL_M118LR" type="Contained" target="This" msg="ItemMsgAmmoRequired" />
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
@@ -1286,17 +1280,17 @@
     <aitarget sightrange="2500" soundrange="4500" fadeouttime="6" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item identifier="tsm_m61_vulcan" subcategory="Berra Group" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" scale="0.18" impactsoundtag="impact_metal_light" hideinmenus="false">
-    <InventoryIcon texture="%ModDir%/Weapons/BerraArm/M2HB/M2HB.png" sourcerect="26,560,982,325" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/BerraArm/M2HB/M2HB.png" sourcerect="26,560,982,325" depth="0.55" origin="0.5,0.5" />
-    <Body width="1000" height="280" density="52" />
-    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="400,100" aimpos="400,100" handle1="-380,80" handle2="-380,80" holdangle="-67" msg="ItemMsgPickUpSelect">
+  <Item identifier="tsm_m61_vulcan" subcategory="TSM" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" scale="0.35" impactsoundtag="impact_metal_light" hideinmenus="false">
+    <InventoryIcon texture="%ModDir%/Weapons/Other/M61A1.png" sourcerect="0,0,580,136" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons/Other/M61A1.png" sourcerect="0,0,580,136" depth="0.55" origin="0.5,0.5" />
+    <Body width="580" height="136" density="52" />
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="50,-60" aimpos="50,-60" handle1="-120,45" handle2="0,0" holdangle="0" msg="ItemMsgPickUpSelect">
     </Holdable>
-    <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite texture="%ModDir%/Weapons/BerraArm/M2HB/M2HB.png" canbehiddenbyotherwearables="false" sourcerect="26,560,982,325" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.18" origin="0.5,0.7"/>
+    <Wearable slots="Bag" canbeselected="false" canbepicked="false">
+      <sprite texture="%ModDir%/Weapons/Other/M61A1.png" canbehiddenbyotherwearables="false" sourcerect="0,0,580,300" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.35" origin="0.5,0.7"/>
       <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.7" setvalue="true" />
     </Wearable>
-    <RangedWeapon reload="0.01" weapondamagemodifier="1.0" penetration="0.3" holdtrigger="true" barrelpos="450,100" spread="1" unskilledspread="13" combatPriority="200" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.01" weapondamagemodifier="1.0" penetration="0.3" holdtrigger="true" barrelpos="290,8" spread="1" unskilledspread="13" combatPriority="200" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,1,1" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,1,1" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -1304,14 +1298,17 @@
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>
-      <Propulsion force="-30" usablein="both" ApplyToHands="true" type="OnUse">
-        <RequiredItems items="50bmg_belt" type="Contained" target="This" msg="ItemMsgAmmoRequired" />
+      <StatusEffect type="OnUse" target="This" offset="80,0">
+        <ParticleEmitter particle="tsm_bulletfalldown" emitinterval="0.01" particleamount="1" particlespersecond="20" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" copyentityangle="true" scalemultiplier="7,4" />
+      </StatusEffect>
+      <Propulsion force="-80" usablein="both" ApplyToHands="true" type="OnUse">
+        <RequiredItems items="tsm_m61ammobox_rev" type="Contained" target="This" msg="ItemMsgAmmoRequired" />
       </Propulsion>
-      <RequiredItems items="50bmg_belt" type="Contained" target="This" msg="ItemMsgAmmoRequired" />
+      <RequiredItems items="tsm_m61ammobox_rev" type="Contained" target="This" msg="ItemMsgAmmoRequired" />
     </RangedWeapon>
-    <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
       <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
-      <Containable items="50bmg_belt" hide="false" itempos="-15,10" depth="0.55" />
+      <Containable items="tsm_m61ammobox_rev" hide="false" itempos="-15,10" depth="0.55" />
     </ItemContainer>
     <aitarget sightrange="5000" soundrange="4500" fadeouttime="6" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />

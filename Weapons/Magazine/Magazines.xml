@@ -819,6 +819,35 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+  <Item identifier="tsm_m61ammobox_rev" subcategory="tsm_modifiedmagazines" health="1200" category="weapon" tags="mediumitem,ammobox,tsm_ammobox,tsm_magbox,tsm_danger_item" isdangerous="true" scale="0.5" pickdistance="150" impactsoundtag="impact_metal_heavy" maxstacksize="1">
+    <Sprite texture="%ModDir%/Weapons/Magazine/tsm.png" depth="0.54" sourcerect="2260,2371,219,105" origin="0.5,0.5" />
+    <Body width="219" height="105" density="50" />
+    <Holdable slots="RightHand+LeftHand" aimable="false" holdpos="50,-50" aimpos="50,-40" handle1="-0,16" handle2="0,0" swingamount="20,100" swingspeed="1" swingwhenusing="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="Always" target="This" interval="3">
+        <Conditional hastag="neq tsm_danger_box" targetcontainer="true" />
+        <Explosion range="300.0" showEffects="false" penetration="0">
+          <Affliction identifier="triton_burn" amount="50" />
+        </Explosion>
+      </StatusEffect>
+    </Holdable>
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="m61_20_rev" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="m61_20_rev" />
+      <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+        <SpawnItem identifiers="m61_20_rev" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <Price baseprice="4000" buyingpricemultiplier="1" minleveldifficulty="30">
+      <Price locationtype="outpost" multiplier="1.5" minavailable="0" maxavailable="3" />
+      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="4" />
+      <Price locationtype="research" multiplier="1.25" minavailable="0" maxavailable="4" />
+      <Price locationtype="military" multiplier="1.10" minavailable="2" maxavailable="5" />
+      <Price locationtype="mine" multiplier="1.25" minavailable="0" maxavailable="3" />
+    </Price>
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="20" requiresrecipe="true" amount="1">
+      <RequiredItem tag="tsm_ammobox_rev" amount="2" />
+    </Fabricate>
+    <aitarget sightrange="1000" fadeouttime="6" />
+  </Item>
 
   <!--Loader-->
   <Item identifier="tsm_ammobox_rev" subcategory="tsm_modifiedmagazines" health="600" category="weapon" tags="mediumitem,ammobox,tsm_ammobox,tsm_magbox,tsm_danger_item" isdangerous="true" scale="0.5" pickdistance="150" impactsoundtag="impact_metal_heavy" maxstacksize="1">
@@ -853,6 +882,13 @@
     <ItemContainer capacity="1" maxstacksize="1" hideitems="true" showcontainedstateindicator="false">
       <SlotIcon slotindex="0" texture="%ModDir:2953749635%/png/ui.png" sourcerect="128,13,111,111" origin="0.5,0.5" />
       <Containable items="rev_mag" />
+    </ItemContainer>
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="m61_20_rev" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="m61_20_rev" />
+      <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+        <Condition targetcontainer="true" identifier="eq tsm_m61_vulcan" />
+        <SpawnItem identifiers="m61_20_rev" spawnposition="ThisInventory" />
+      </StatusEffect>
     </ItemContainer>
     <Price baseprice="2000" buyingpricemultiplier="1" minleveldifficulty="30">
       <Price locationtype="outpost" multiplier="1.5" minavailable="0" maxavailable="3" />
@@ -1913,6 +1949,35 @@
         <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
       </StatusEffect>
       <StatusEffect type="OnNotContained" target="This" stackable="false">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item identifier="m61_20_rev" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="None" hideinmenus="true" scale="0.5">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+    <Body width="40" height="14" density="30" />
+    <Projectile characterusable="false" Hitscan="true" MaxTargetsToHit="3" spread="0.1" DamageDoors="true">
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="140,85,200,175" scalemultiplier="1,0.6" />
+      <Attack structuredamage="15" targetforce="10" itemdamage="40" penetration="1" severlimbsprobability="0.4">
+        <Affliction identifier="gunshotwound" strength="20" />
+        <Affliction identifier="lacerations" strength="20" />
+        <Affliction identifier="burn" strength="20" />
+        <Affliction identifier="triton_7L" strength="12" />
+        <Affliction identifier="bleedingnonstop" strength="25" />
+        <Affliction identifier="stun" strength="3" probability="0.5" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+        <ParticleEmitter particle="tsm_bg_explosion" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="5" velocitymin="-10" velocitymax="-100" scalemin="0.1" scalemax="0.2" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false" >
         <Remove />
       </StatusEffect>
     </Projectile>

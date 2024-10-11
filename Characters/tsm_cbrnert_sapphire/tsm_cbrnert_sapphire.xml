@@ -48,30 +48,22 @@
   <inventory arrowslot="9" slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" commonness="30" accessiblewhenalive="true">
     <Item identifier="tsm_triton_bag" slot="Any"/>
     <Item identifier="tsm_201_cbrnertai" slot="RightHand+LeftHand" />
-    <Item identifier="tsm_58_201mag_rev" slot="Any" amount="1"/>
+    <Item identifier="tsm_58_201mag_rev" slot="Any" amount="2"/>
     <Item identifier="aibuff_1_autorun" slot="Any" />
     <Item identifier="idcard" slot="Card" />
     <Item identifier="tsm_cbrnert_ai" slot="InnerClothes,OuterClothes,Head" />
-  </inventory><!--Machinegunner-->
+  </inventory><!--Assault Team Machinegunner-->
   <inventory arrowslot="9" slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" commonness="50" accessiblewhenalive="true">
-    <Item identifier="tsm_qbz_191" slot="RightHand+LeftHand" />
-    <Item identifier="tsm_58_mag_rev" slot="Any" amount="9"/>
+    <Item identifier="tsm_qbz_191_cbrnertai" slot="RightHand+LeftHand" />
+    <Item identifier="tsm_58_mag_rev" slot="Any" amount="3"/>
     <Item identifier="aibuff_1_autorun" slot="Any" />
     <Item identifier="idcard" slot="Card" />
     <Item identifier="tsm_cbrnert_ai" slot="InnerClothes,OuterClothes,Head" />
-  </inventory><!--Assault Team-->
-  <inventory arrowslot="9" slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" commonness="20" accessiblewhenalive="true">
-    <Item identifier="tsm_triton_bag" slot="Any" amount="2"/>
-    <Item identifier="tsm_xylz" slot="RightHand+LeftHand" />
-    <Item identifier="tsm_xymagazine_bg" slot="Any" amount="7"/>
-    <Item identifier="aibuff_1_autorun" slot="Any" />
-    <Item identifier="idcard" slot="Card" />
-    <Item identifier="tsm_cbrnert_ai" slot="InnerClothes,OuterClothes,Head" />
-  </inventory><!--Officer-->
+  </inventory><!--Assault Team Rifleman-->
   <inventory arrowslot="9" slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" commonness="3" accessiblewhenalive="true">
-    <Item identifier="tsm_triton_bag" slot="Any" amount="4"/>
+    <Item identifier="tsm_triton_bag" slot="Any" amount="2"/>
     <Item identifier="aibuff_1_autorun" slot="Any" />
     <Item identifier="idcard" slot="Card" />
     <Item identifier="tsm_cbrnert_ai" slot="InnerClothes,OuterClothes,Head" />
-  </inventory><!--Heavy Officer-->
+  </inventory><!--Assault Team Heavy Officer-->
 </Character>

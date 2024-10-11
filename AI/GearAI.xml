@@ -131,7 +131,7 @@
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.7" setvalue="true" />
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.45" setvalue="true" />
     </Holdable>
-    <RangedWeapon reload="0.11" weapondamagemodifier="1.3" holdtrigger="true" barrelpos="245,12" spread="10" combatPriority="100" drawhudwhenequipped="true" >
+    <RangedWeapon reload="0.11" weapondamagemodifier="1.3" holdtrigger="true" barrelpos="245,12" spread="12" combatPriority="100" drawhudwhenequipped="true" >
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="4.0,4.0" colormultiplier="255,200,200,200" />
       <StatusEffect type="OnUse" target="This" forceplaysounds="true">
         <Sound file="%ModDir:2953749635%/weapons/奇迹之海/2011.ogg" type="OnUse" range="3000" selectionmode="Random" />
@@ -153,21 +153,61 @@
         <SpawnItem identifier="tsm_58_201mag_rev" amount="1" SpawnPosition="ThisInventory"/>
       </StatusEffect>
       <StatusEffect type="Always" target="Contained" condition="50" Interval="1" targetcontaineditem="true"/>
-      <StatusEffect type="OnUse" target="This">
-        <ParticleEmitter particle="tsm_bulletfalldown" emitinterval="2.1" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="2" scalemax="2" />
-      </StatusEffect>
       <StatusEffect type="OnNotContained" target="This">
         <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This">
+        <ParticleEmitter particle="tsm_bulletfalldown" emitinterval="2.1" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="2" scalemax="2" />
       </StatusEffect>
       <RequiredItem identifier="tsm_58_mgmag" type="contained" excludebroken="true" />
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
-      <SlotIcon slotindex="0" texture="%ModDir%/png/ui.png" sourcerect="418,202,71,50" origin="0.45,0.5" />
       <Containable items="tsm_58_mgmag" hide="false" itempos="-10,-10" depth="0.56" />
     </ItemContainer>
     <aitarget sightrange="2300" soundrange="4000" fadeouttime="5" />
-    </Item>
-
+  </Item>
+  <Item identifier="tsm_qbz_191_cbrnertai" subcategory="TSM" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai" scale="0.25" impactsoundtag="impact_metal_light" hideinmenus="true">
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <InventoryIcon texture="%ModDir:2953749635%/weapons/奇迹之海/tsm.png" sourcerect="2371,1638,126,134" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:2953749635%/weapons/奇迹之海/tsm.png" sourcerect="592,1661,432,111" depth="0.55" origin="0.5,0.5" />
+    <Body width="475" height="121" density="52" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="55,-8" aimpos="60,2" handle1="-80,-15" handle2="30,5" holdangle="-35" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.85" setvalue="true" />
+      <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
+      <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.4" setvalue="true" />
+    </Holdable>
+    <RangedWeapon reload="0.11" weapondamagemodifier="1.2" penetration="0.1" holdtrigger="true" barrelpos="200,30" spread="8" combatPriority="88" drawhudwhenequipped="true">
+      <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
+      <StatusEffect type="OnUse" target="This" forceplaysounds="true">
+        <Sound file="%ModDir:2953749635%/weapons/奇迹之海/QBZ191.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" delay="0.5" target="This" forceplaysounds="true">
+        <Conditional InWater="false" />
+        <Sound file="%ModDir:2953749635%/weapons/奇迹之海/bullet_metal1.ogg" type="OnUse" range="1000" selectionmode="Random" />
+        <Sound file="%ModDir:2953749635%/weapons/奇迹之海/bullet_metal2.ogg" type="OnUse" range="1000" />
+        <Sound file="%ModDir:2953749635%/weapons/奇迹之海/bullet_metal3.ogg" type="OnUse" range="1000" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Contained">
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This">
+        <ParticleEmitter particle="tsm_bulletfalldown" emitinterval="2.1" offset="0,0" particleamount="1" particlespersecond="50" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="2" scalemax="2" />
+      </StatusEffect>
+      <StatusEffect type="OnSpawn" OneShot="true" target="This">
+        <SpawnItem identifier="tsm_58_mag_rev" amount="1" SpawnPosition="ThisInventory"/>
+      </StatusEffect>
+      <StatusEffect type="Always" target="Contained" condition="10" Interval="1" targetcontaineditem="true"/>
+      <StatusEffect type="OnNotContained" target="This">
+        <Remove />
+      </StatusEffect>
+      <RequiredItems items="tsm_58_mag" type="Contained" msg="ItemMsgAmmoRequired" />
+    </RangedWeapon>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
+      <Containable items="tsm_58_mag" hide="false" itempos="-2,-9" depth="0.56" />
+    </ItemContainer>
+    <aitarget sightrange="2500" soundrange="4500" fadeouttime="6" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
   <!--Jump Pod-->
   <Item identifier="tsm_cbrnert_jumppod_1" translationidentifier="tsmrushshell" isdangerous="true" subcategory="tsmmissions" category="Misc" scale="0.28" sonarsize="6" hideinmenus="true" impacttolerance="5">
     <Sprite texture="%ModDir%/AI/jumppod.png" sourcerect="115,193,1330,1297" depth="0.55" />
