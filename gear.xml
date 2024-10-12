@@ -1948,7 +1948,7 @@
       <Price storeidentifier="merchantmine" multiplier="0.9" minavailable="3" />
     </Price>
     <Deconstruct time="10">
-      <Item identifier="steel" />
+      <Item identifier="steel" amount="2"/>
       <Item identifier="plastic" />
       <Item identifier="lead" />
     </Deconstruct>
