@@ -249,7 +249,7 @@
       <sprite name="rz_prototypesuit Left Leg" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="LeftLeg" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.03,0.1" inheritsourcerect="false" scale="0.55" sourcerect="134,372,85,139" />
       <sprite name="rz_prototypesuit Left Shoe" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.18,-1" inheritsourcerect="false" scale="0.6" sourcerect="381,315,121,49" />
       <sprite name="rz_prototypesuit Right Shoe" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.18,-1" inheritsourcerect="false" scale="0.6" sourcerect="381,315,121,49" />
-      <StatusEffect type="OnWearing" target="Character" HideFace="true" OxygenAvailable="2000" PressureProtection="12500.0" PropulsionSpeedMultiplier="0.25" setvalue="true" disabledeltatime="true">
+      <StatusEffect type="OnWearing" target="Character" HideFace="true" OxygenAvailable="2000" PressureProtection="15000.0" PropulsionSpeedMultiplier="0.25" setvalue="true" disabledeltatime="true">
         <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="250" loop="true"/>
         <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="250" loop="true"/>
         <Affliction identifier="mechready" amount="10" />
@@ -1288,19 +1288,30 @@
     <InventoryIcon texture="%ModDir%/Weapons/Other/M61A1.png" sourcerect="0,0,580,136" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/Other/M61A1.png" sourcerect="0,0,580,136" depth="0.55" origin="0.5,0.5" />
     <Body width="580" height="136" density="52" />
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="43" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="100" />
+      <RequiredItem identifier="tsm_lm_weaponbox" amount="8" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="4" />
+      <RequiredItem identifier="tsm_plastic" amount="2" />
+      <RequiredItem identifier="tsm_advanced_grip" amount="1" />
+    </Fabricate>
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="50,-60" aimpos="50,-60" handle1="-120,45" handle2="0,0" holdangle="0" msg="ItemMsgPickUpSelect">
     </Holdable>
     <Wearable slots="Bag" canbeselected="false" canbepicked="false">
       <sprite texture="%ModDir%/Weapons/Other/M61A1.png" canbehiddenbyotherwearables="false" sourcerect="0,0,580,300" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.35" origin="0.5,0.7"/>
       <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.7" setvalue="true" />
     </Wearable>
-    <RangedWeapon reload="0.01" weapondamagemodifier="1.0" penetration="0.3" holdtrigger="true" barrelpos="290,8" spread="1" unskilledspread="13" combatPriority="200" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.01" weapondamagemodifier="1.0" penetration="0.3" holdtrigger="true" barrelpos="290,8" spread="1" combatPriority="200" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,1,1" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,1,1" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <Sound file="%ModDir%/Weapons/Other/m61.ogg" type="OnUse" range="2500" loop="true" />
       <StatusEffect type="OnUse" target="Contained">
         <Use />
+      </StatusEffect>
+      <StatusEffect target="This">
+        <Conditional targetcontainer="true" mechready="lt 1" />
+        <Dropitem />
       </StatusEffect>
       <StatusEffect type="OnUse" target="This" offset="80,0">
         <ParticleEmitter particle="tsm_bulletfalldown" emitinterval="0.01" particleamount="1" particlespersecond="20" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" copyentityangle="true" scalemultiplier="7,4" />
@@ -1692,7 +1703,7 @@
       <Item identifier="c4block" amount="1"/>
     <Item identifier="wificomponent" amount="1"/>
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" amount="2" requiredtime="20" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" amount="2" requiredtime="20" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="50" />
       <RequiredItem identifier="wificomponent" amount="2"/>
       <RequiredItem tag="wire" amount="2"/>
@@ -1747,7 +1758,7 @@
     <Deconstruct time="15">
       <Item identifier="wificomponent"/>
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="50" />
       <RequiredItem identifier="wificomponent" amount="1"/>
     <RequiredItem tag="wire" amount="1"/>
@@ -1775,10 +1786,10 @@
     <Deconstruct time="15">
       <Item identifier="wificomponent"/>
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="50" />
       <RequiredItem identifier="wificomponent" amount="1"/>
-    <RequiredItem tag="wire" amount="1"/>
+      <RequiredItem tag="wire" amount="1"/>
     </Fabricate>
     <RangedWeapon />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="false" holdpos="40,0" handle1="-13,0" handle2="-13,0" msg="ItemMsgPickUpSelect" >
@@ -1803,10 +1814,10 @@
     <Deconstruct time="15">
       <Item identifier="wificomponent"/>
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="50" />
       <RequiredItem identifier="wificomponent" amount="1"/>
-    <RequiredItem tag="wire" amount="1"/>
+      <RequiredItem tag="wire" amount="1"/>
     </Fabricate>
     <RangedWeapon />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="false" holdpos="40,0" handle1="-13,0" handle2="-13,0" msg="ItemMsgPickUpSelect" >

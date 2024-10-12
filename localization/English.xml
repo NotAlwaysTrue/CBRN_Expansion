@@ -289,7 +289,7 @@
   <!--loadingscreen-->
   <loadingscreentip>Five years ago, I lost 30,000 men in a blink of an eye. And the Europa just F***IN Watched.\n——Lerentine</loadingscreentip>
   <loadingscreentip>BURN, EUROPA! \n——Lerentine</loadingscreentip>
-  <loadingscreentip>Normally you cant just put carbon,sulfur and phosphorus into a tiny machine and cook these chemical agents. \n——NotAlwaysTrue，Berra Group CEO</loadingscreentip>
+  <loadingscreentip>Normally you cant just put carbon,sulfur and phosphorus into a tiny machine and cook these chemical agents. \n——NotAlwaysTrue,Berra Group CEO</loadingscreentip>
   <!--<loadingscreentip></loadingscreentip>-->
   <arm>ARM</arm>
   <activate>ACTIVATE</activate>
@@ -424,23 +424,130 @@
   
   <lights>Light</lights>
 
-  <afflictionname.chemicalliner_main>Chemical Liner</afflictionname.chemicalliner_main>
-  <afflictiondescription.chemicalliner_main>-85% Gunshot \n-100% Bleeding \n-85% Laceration \n-85% Blunttrauma \n-85% Internaldamage \n-85% Deep Tissue Injury \n-80% Burn\n-60% Special \n-100% Armor Break</afflictiondescription.chemicalliner_main>
+  <afflictionname.chemicalliner_main>Self-sealing Chemical Liner</afflictionname.chemicalliner_main>
+  <afflictiondescription.chemicalliner_main>-85% Gunshotwound \n-99% Bleeding \n-85% Laceration \n-85% Blunttrauma \n-85% Internaldamage \n-85% Deep Tissue Injury \n-80% Burn\n-60% Special Damage \n-100% Armor Break \n5u/s Wounds Sealing \n10u/s Stop Bleeding</afflictiondescription.chemicalliner_main>
+  <afflictionname.chemicalliner_secondary>Self-sealing Chemical Liner</afflictionname.chemicalliner_secondary>
+  <afflictiondescription.chemicalliner_main>\n-99% Bleeding \n-100% Armor Break \n10u/s Stop Bleeding</afflictiondescription.chemicalliner_main>
 
   <entityname.fuelextractor>Nuclear Material Extractor</entityname.fuelextractor>
   <entityname.nuclearwaste>Nuclear Waste</entityname.nuclearwaste>
   <entityname.plutonium_core>Mixed Plutonium</entityname.plutonium_core>
   <entityname.plutonium_weapon>Weapon Grade Plutonium</entityname.plutonium_weapon>
-  <entityname.plutoniumfuelrod>Plutonium Fuelrod</entityname.plutoniumfuelrod>
+  <entityname.plutoniumfuelrod>MOX Fuelrod</entityname.plutoniumfuelrod>
   <entityname.watercanister>Sealed Container</entityname.watercanister>
   <entityname.d2ocanister>Sealed Container</entityname.d2ocanister>
   <entityname.col_filiter>Coalition Standard Filiter</entityname.col_filiter>
   <entityname.sep_filiter>Separatists Homemade Filiter</entityname.sep_filiter>
-  <entityname.breachhammer>Sledge Hammer</entityname.breachhammer>
+  <entityname.breachhammer>Breach Hammer</entityname.breachhammer>
+  <entityname.tsm_m61_vulcan>M61A1 "Vulcan" 20mm Cannon</entityname.tsm_m61_vulcan>
+  <entityname.tsm_cbrnert_ai>T.S.M Heavy NBC Suit Mod.0 Mass Production</entityname.tsm_cbrnert_ai>
+  <entityname.tsm_cbrnert>T.S.M Heavy NBC Suit Mod.I Block 0</entityname.tsm_cbrnert>
+  <entityname.rz_p_mk1_cbrn>Mech Mk.1 NBCPv2</entityname.rz_p_mk1_cbrn>
+  <entityname.rz_p_mk1_cbrn_ai>Mech Mk.1 NBCP</entityname.rz_p_mk1_cbrn_ai>
+  <entityname.rz_p_mk1_cbrn_plus>Mech Mk.1 NBCPv3</entityname.rz_p_mk1_cbrn_plus>
+  <entityname.berra_bio2_ai>BerraARM Bio-2L NBC Suit</entityname.berra_bio2_ai>
+  <entityname.craftable_cbrn_col>CBRN Crew Spawnner(Coalition)</entityname.craftable_cbrn_col>
+  <entityname.craftable_cbrn_sep>CBRN Crew Spawnner(Separatists)</entityname.craftable_cbrn_sep>
+  
 
-  <entityname.tsm_cbrnert_ai>T.S.M Combat CBRN Suit Mk.0 Mass Production</entityname.tsm_cbrnert_ai>
-  <entityname.tsm_cbrnert>T.S.M Combat CBRN Suit Mod.I Block 0</entityname.tsm_cbrnert>
-  <entitydescription.tsm_cbrnert>Heavy combat CBRN suit designed and produced by T.S.M. Everyting is perfect but weight and mobility. \nUsing hard materials and high toughness self sealing chemical liner, it can effectively resist projectiles and protect users in chemical environments. Crush depth: 12500m \nMain equipment of T.S.M CBRN Emergcy Response Team \nYou are the last line against threats.</entitydescription.tsm_cbrnert>
-  <entitydescription.tsm_cbrnert>The most advanced and expensive Heavy combat CBRN suit of T.S.M. Everything is perfect but weight, mobility and costs. \nUsing hard materials and high toughness self sealing chemical liner, it can effectively resist projectiles and protect users in chemical environments. Crush depth: 12500m \nExtremely rare, only equipped by very small amount of combat personal \nYou are the last line against threats.</entitydescription.tsm_cbrnert>
+  <entitydescription.fuelextractor>A integrated nuclear material extraction device, can be used to extract many nuclear materials \nAim and press E to place</entitydescription.fuelextractor>
+  <entitydescription.nuclearwaste>Depleted reactor fuel, process in Nuclear Material Extractor for nuclear materials</entitydescription.nuclearwaste>
+  <entitydescription.plutonium_core>Radioactive powder mainly consist of plutonium, can be processed for further product</entitydescription.plutonium_core>
+  <entitydescription.plutonium_weapon>A weapon grade concentration of plutonium, preserved in a special amount for safety considerations \nA component of nuclear weapons</entitydescription.plutonium_weapon>
+  <entitydescription.plutoniumfuelrod>A reactor fuelrod mainly consist of plutonium dioxide and uranium dioxide, has a long lifetime. Process in Nuclear Material Extractor for nuclear materials after depleted</entitydescription.plutoniumfuelrod>
+  <entitydescription.watercanister>Seal container filled with water, can be processed for deuteroxide.</entitydescription.watercanister>
+  <entitydescription.d2ocanister>Seal container filled with deuteroxide. Process in Nuclear Material Extractor for triton bag after depleted</entitydescription.d2ocanister>
+  <entitydescription.tsm_m61_vulcan>M61A1 "Vulcan" cannon will tear your enemy with 6000rpm fire rate \nLarge scale and weight make it‖color:255,0,0,255‖IMPOSSIBLE to use without proper gear‖color:end‖</entitydescription.tsm_m61_vulcan>
+  <entitydescription.tsm_cbrnert_ai>A heavy NBC suit produced by The Sea of Miracle, everything is fine but weightness and mobility.\nUsing hard material and B-22 recipe chemical liner, can easily stop projectiles and protect user in a hazardous environment. Pressure Protection 12500m \nMain gear of T.S.M CBRN ERT \nYou are the last line against the threats \n‖color:255,0,0,255‖Untrained user may damage this gear‖color:end‖</entitydescription.tsm_cbrnert_ai>
+  <entitydescription.tsm_cbrnert>The most advanced NBC suit in The Sea of Miracle, everything is fine but weightness and mobility. \nUsing hard material and D-03 recipe chemical liner to provide relible protection. Oressure Protection 12500m \nVery rare, only equipped a small amount of combat units \nYou are the last line against the threats \n‖color:255,0,0,255‖Untrained user cannot use this gear‖color:end‖</entitydescription.tsm_cbrnert>
+  <entitydescription.berra_bio2_ai>CBRN Protection ExoSuit from Berra Armory, using hard liner for protection enhancement \n‖color:255,0,0,255‖Untrained user may damage this gear‖color:end‖</entitydescription.berra_bio2_ai>
+  <entitydescription.rz_p_mk1_cbrn>Mech Mk1 specially for TSM CBRN ERT \nNBCPv2 provide enhanced protection using self-sealing chemical liner \n‖color:255,0,0,255‖Untrained user cannot use this gear‖color:end‖</entitydescription.rz_p_mk1_cbrn>
+  <entitydescription.rz_p_mk1_cbrn_ai>Mech Mk1 specially for TSM CBRN ERT \nNBCPv1 provided protection against NBC threats \n‖color:255,0,0,255‖Untrained user cannot use this gear‖color:end‖</entitydescription.rz_p_mk1_cbrn_ai>
+  <entitydescription.rz_p_mk1_cbrn_plus>Mech Mk1 specially for TSM CBRN ERT \nNBCPv3 is the most advanced upgrade kit, top secret prototype \n‖color:255,0,0,255‖Untrained user cannot use this gear‖color:end‖</entitydescription.rz_p_mk1_cbrn_plus>
+  <entitydescription.breachhammer>A combination of crowbar and hammer \nYou know how to use it...Right?</entitydescription.breachhammer>
+  <entitydescription.craftable_cbrn_col>A crew spawnner, allow spawning a CBRN Job AI crew with Coalition gear</entitydescription.craftable_cbrn_col>
+  <entitydescription.craftable_cbrn_sep>A crew spawnner, allow spawning a CBRN Job AI crew with Separatists gear</entitydescription.craftable_cbrn_sep>
 
+
+  <talentname.fuelextract>Nuclear Material Extraction</talentname.fuelextract>
+  <talentname.hert>HEAVILY ARMED</talentname.hert>
+  <talentvalue.watercanister>Sealed canister Water</talentvalue.watercanister>
+
+  
+  <sledgemodon>Sledge Mode</sledgemodon>
+  <entityname.deconstructnuclearspread>Nuclear Material Exposure</entityname.deconstructnuclearspread>
+  <entitydescription.deconstructnuclearspread>A bunch of nuclear material is leaking from their container. This is destructive. \nPlease check what are doing, something must be wrong</entitydescription.deconstructnuclearspread>
+  
+  <cbrn_test>TEST ITEM</cbrn_test>
+  <talentname.reviscomming>Revolution</talentname.reviscomming>
+  <talentdescription.reviscomming_main>You are authorized to use and craft [revammo]</talentdescription.reviscomming_main>
+  <talentvalue.reviscomming_item>Revolution Magazines</talentvalue.reviscomming_item>
+
+  <subcategory.tsm_modifiedmagazines>Aftermarket Magazines</subcategory.tsm_modifiedmagazines>
+
+  <entityname.fkj_545_mag_rev>Resistance Revolution-AP Mag(5.45*39)</entityname.fkj_545_mag_rev>
+  <entityname.fkj_762_mag_rev>Resistance Revolution-AP Mag(7.62*39)</entityname.fkj_762_mag_rev>
+  <entityname.fkj_762_51_mag_rev>Resistance Revolution-AP Mag(7.62*51)</entityname.fkj_762_51_mag_rev>
+  <entityname.fkj_jts_mag_rev>Resistance MG Revolution-AP Mag(5.45*39)</entityname.fkj_jts_mag_rev>
+  <entityname.fkj_pkp_mag_rev>Resistance GPMG Revolution-AP Mag(7.62*51)</entityname.fkj_pkp_mag_rev>
+  <entityname.fkj_rpk_mag_rev>RPK Revolution-AP Drum</entityname.fkj_rpk_mag_rev>
+  <entityname.fkj_m2_mag_rev>Resistance HMG Revolution Mag</entityname.fkj_m2_mag_rev>
+  <entityname.fkj_svd_mag_rev>SVD Revolution Mag</entityname.fkj_svd_mag_rev>
+
+  <entityname.tsm_556_45_mgmag_rev>Coalition LMG Revolution-AP Belt(5.56*45)</entityname.tsm_556_45_mgmag_rev>
+  <entityname.lm_762_51_mgmag_rev>Coalition GPMG Revolution-AP Mag(7.62*51)</entityname.lm_762_51_mgmag_rev>
+  <entityname.lm_556_mag_rev>Coalition Revolution-AP Mag(5.56*45)</entityname.lm_556_mag_rev>
+  <entityname.lm_65_mag_rev>Coalition Special Purpose Revolution-AP Mag(6.5mm)</entityname.lm_65_mag_rev>
+  <entityname.lm_68_51_mag_rev>Coalition Revolution-AP Mag(6.8*51mm)</entityname.lm_68_51_mag_rev>
+  <entityname.lm_762_51_mag_rev>Coalition Revolution-AP Mag(7.62*51)</entityname.lm_762_51_mag_rev>
+  <entityname.lm_m700_mag_rev>Coalition Sniper Rifle Revolution-AP Mag(.338)</entityname.lm_m700_mag_rev>
+  <entityname.tsm_miniammo_rev>Minigun Revolution-AP Belt</entityname.tsm_miniammo_rev>
+
+  <entityname.tsm_58_201mag_rev>201 Belt(Revolution-AP)</entityname.tsm_58_201mag_rev>
+  <entityname.tsm_58_mag_rev>Assault Rifle Revolution-AP Mag(5.8mm)</entityname.tsm_58_mag_rev>
+
+  <entityname.tsm_ammobox_rev>T.S.M Revolution Ammunition Container</entityname.tsm_ammobox_rev>
+  <entityname.tsm_m61ammobox_rev>20mm Revolution-HVAP Belt Container</entityname.tsm_m61ammobox_rev>
+  <entityname.tsm_hazardous_container>HAZMAT Container</entityname.tsm_hazardous_container>
+
+  <entitydescription.fkj_545_mag_rev>Loaded with 33 5.45 Revolution-AP rounds</entitydescription.fkj_545_mag_rev>
+  <entitydescription.fkj_762_mag_rev>Loaded with 30 7.62x39 Revolution-AP rounds</entitydescription.fkj_762_mag_rev>
+  <entitydescription.fkj_762_51_mag_rev>Loaded with 20 7.62x51 Revolution-AP rounds</entitydescription.fkj_762_51_mag_rev>
+  <entitydescription.fkj_jts_mag_rev>Containing a 200 round 5.45x39mm Revolution-AP Belt for ammo-wasting job \nRadioactive \nMarkers were simply wiped and repainted</entitydescription.fkj_jts_mag_rev>
+  <entitydescription.fkj_pkp_mag_rev>Containing a 100 round Revolution-AP Belt \nRadioactive</entitydescription.fkj_pkp_mag_rev>
+  <entitydescription.fkj_rpk_mag_rev>A 95 round 5.45x39 drum for ammo-wasting job \nRadioactive \nMarkers were simply wiped and repainted</entitydescription.fkj_rpk_mag_rev>
+  <entitydescription.fkj_m2_mag_rev>A container for HMGs, containing a 150 round Revolution-AP Belt \nRadioactive</entitydescription.fkj_m2_mag_rev>
+  <entitydescription.fkj_svd_mag_rev>Loaded with 20 Revolution-AP round</entitydescription.fkj_svd_mag_rev>
+
+  <entitydescription.tsm_556_45_mgmag_rev>Loaded with 200 5.56x45mm Revolution-AP rounds \nRadioactive \nMarkers were simply wiped and repainted</entitydescription.tsm_556_45_mgmag_rev>
+  <entitydescription.lm_762_51_mgmag_rev>Loaded with 200 7.62x51mm Revolution-AP rounds \nRadioactive \nMarkers were simply wiped and repainted</entitydescription.lm_762_51_mgmag_rev>
+  <entitydescription.lm_556_mag_rev>Loaded with 31 5.56x45mm Revolution-AP rounds, very effective against everything \nMarkers were simply wiped and repainted</entitydescription.lm_556_mag_rev>
+  <entitydescription.lm_65_mag_rev>Loaded with 30 Special Purpose Revolution rounds \nMarkers were simply wiped and repainted</entitydescription.lm_65_mag_rev>
+  <entitydescription.lm_68_51_mag_rev>Loaded with 30 6.8x51 Revolution-AP rounds \nMarkers were simply wiped and repainted</entitydescription.lm_68_51_mag_rev>
+  <entitydescription.lm_762_51_mag_rev>Loaded with 20 7.62x51 Revolution-AP rounds \nMarkers were simply wiped and repainted</entitydescription.lm_762_51_mag_rev>
+  <entitydescription.lm_m700_mag_rev>Containing 5 rounds high power Revolution-AP rounds</entitydescription.lm_m700_mag_rev>
+  <entitydescription.tsm_miniammo_rev>Containing 200 5.56x45 Revolution-AP rounds \nRadioactive</entitydescription.tsm_miniammo_rev>
+
+  <entitydescription.tsm_58_201mag_rev>Containing 100 5.8mm Revolution-AP rounds \nRadioactive \nMarkers were simply wiped and repainted</entitydescription.tsm_58_201mag_rev>
+  <entitydescription.tsm_58_mag_rev>Containing 30 5.8mm Revolution-AP rounds \nMarkers were simply wiped and repainted</entitydescription.tsm_58_mag_rev>
+
+  <entitydescription.tsm_ammobox_rev>Containing all kinds of Revolution ammunition, aim to refill magazines \nRadioactive</entitydescription.tsm_ammobox_rev>
+  <entitydescription.tsm_m61ammobox_rev>A heavy container containing 1200 20mm Revolution-AP-I rounds \nYou know the rules, don't you? \nRadioactive</entitydescription.tsm_m61ammobox_rev>
+  <entitydescription.tsm_hazardous_container>A container for HAZMAT</entitydescription.tsm_hazardous_container>
+
+  <afflictiondescription.chemicalliner_mech>-95% Gunshotwound \n-100% Bleeding \n-95% Laceration \n-95% Blunttrauma \n-95% Internaldamage \n-95% Deep Tissue Injury \n-80% Burn\n-60% Special \n-100% Armor Break \n10u/s Wounds Sealing \n10u/s Stop Bleeding</afflictiondescription.chemicalliner_mech>
+
+  <missionname.tsm_cbrnert_assination>Eliminate T.S.M CBRN ERT</missionname.tsm_cbrnert_assination>
+  <missiondescription.tsm_cbrnert_assination>Some of the T.S.M CBRN ERT were here, eliminate them for tactical advantages</missiondescription.tsm_cbrnert_assination>
+  <missionsuccess.tsm_cbrnert_assination>Job's Done</missionsuccess.tsm_cbrnert_assination>
+  <missionfailure.tsm_cbrnert_assination>We failed to acquire tactical advantage</missionfailure.tsm_cbrnert_assination>
+  <missionheader0.tsm_cbrnert_assination>Nobody was left</missionheader0.tsm_cbrnert_assination>
+  <missionmessage0.tsm_cbrnert_assination>People escape in cry, breathing gases supposed to survive them, without knowing the gases is killing</missionmessage0.tsm_cbrnert_assination>
+
+  <missionname.cargoSapphire_1>Chemical Transport</missionname.cargoSapphire_1>
+  <missiondescription.cargoSapphire_1>Researchers from [location1] hope you can transport some chemicals to [location2]\n \n \nWhen did acetone get banned?</missiondescription.cargoSapphire_1>
+  <missionname.cargoSapphire_2>Explosive Material Transport</missionname.cargoSapphire_2>
+  <missiondescription.cargoSapphire_2>A officer from [location1], hope you can transport some mining explosives to[location2]\n \n \nWhen did mining explosives get banned?</missiondescription.cargoSapphire_2>
+  <missionname.cargoSapphire_3>Weapon Material Transport</missionname.cargoSapphire_3>
+  <missiondescription.cargoSapphire_3>Someone in [location2] hope you can smuggle some material from [location1] to [location2]</missiondescription.cargoSapphire_3>
 </infotexts>

@@ -65,14 +65,6 @@
       <Replace tag="[rangeamount]" value="10" color="gui.green"/>
       <Replace tag="[damageamount]" value="10" color="gui.green"/>
     </Description>
-    <Description tag="talentdescription.unlockrecipe">
-      <Replace tag="[itemname]" value="entityname.c4_stickcharge,entityname.m57detonator_single,entityname.m57detonator,entityname.m57detonator_triple" color="gui.orange"/>
-    </Description>
-    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="3,3" sheetelementsize="128,128"/>
-    <AddedRecipe itemidentifier="c4_stickcharge"/>
-    <AddedRecipe itemidentifier="m57detonator"/>
-    <AddedRecipe itemidentifier="m57detonator_single"/>
-    <AddedRecipe itemidentifier="m57detonator_triple"/>
     <AbilityGroupEffect abilityeffecttype="None">
       <Abilities>
         <CharacterAbilityGiveStat stattype="ExplosionRadiusMultiplier" value="0.1"/>
