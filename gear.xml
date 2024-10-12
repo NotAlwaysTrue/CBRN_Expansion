@@ -1422,8 +1422,8 @@
     <Fabricate suitablefabricators="fabricator" requiredtime="20" displayname="recycleitem" requiresrecipe="false">
       <RequiredSkill identifier="mechanical" level="35" />
       <RequiredSkill identifier="medical" level="20" />
-      <RequiredItem tag="maskfilter" maxcondition="0.0"/>
-      <RequiredItem identifier="ethanol" amount="2"/>
+      <RequiredItem identifier="tsm_filiter" maxcondition="0.1"/>
+      <RequiredItem identifier="ethanol" amount="1"/>
     </Fabricate>
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
   </Item>
@@ -1452,8 +1452,8 @@
     <Fabricate suitablefabricators="fabricator" requiredtime="20" displayname="recycleitem" requiresrecipe="false">
       <RequiredSkill identifier="mechanical" level="35" />
       <RequiredSkill identifier="medical" level="40" />
-      <RequiredItem tag="maskfilter" maxcondition="0.0"/>
-      <RequiredItem identifier="ethanol" amount="4"/>
+      <RequiredItem identifier="berra_filiter" maxcondition="0.1"/>
+      <RequiredItem identifier="ethanol" amount="1"/>
     </Fabricate>
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
   </Item>
@@ -1482,8 +1482,8 @@
     <Fabricate suitablefabricators="fabricator" requiredtime="20" displayname="recycleitem" requiresrecipe="false">
       <RequiredSkill identifier="mechanical" level="35" />
       <RequiredSkill identifier="medical" level="40" />
-      <RequiredItem tag="maskfilter" maxcondition="0.0"/>
-      <RequiredItem identifier="ethanol" amount="4"/>
+      <RequiredItem identifier="col_filiter" maxcondition="0.3"/>
+      <RequiredItem identifier="ethanol" amount="1"/>
     </Fabricate>
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
   </Item>
@@ -1512,8 +1512,8 @@
     <Fabricate suitablefabricators="fabricator" requiredtime="20" displayname="recycleitem" requiresrecipe="false">
       <RequiredSkill identifier="mechanical" level="35" />
       <RequiredSkill identifier="medical" level="40" />
-      <RequiredItem tag="maskfilter" maxcondition="0.0"/>
-      <RequiredItem identifier="ethanol" amount="4"/>
+      <RequiredItem identifier="sep_filiter" maxcondition="0.3"/>
+      <RequiredItem identifier="ethanol" amount="1"/>
     </Fabricate>
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
   </Item>
@@ -1952,6 +1952,16 @@
       <Item identifier="plastic" />
       <Item identifier="lead" />
     </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10" requiresrecipe="false">
+      <RequiredItem identifier="tsm_metalcrate" />
+      <Item identifier="lead" amount="2"/>
+      <Item identifier="rubber" amount="2"/>
+    </Fabricate>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10" requiresrecipe="false">
+      <Item identifier="steel" amount="4"/>
+      <Item identifier="lead" amount="4"/>
+      <Item identifier="plastic" amount="2"/>
+    </Fabricate>
     <Sprite texture="%ModDir%/Jobgear/T.S.M/bags.png" depth="0.54" sourcerect="1324,1486,276,105" origin="0.5,0.5" />
     <Body width="250" height="100" density="50" />
     <Holdable slots="LeftHand" controlpose="true" holdpos="2,25" handle1="48,28" handle2="48,28" aimable="true" holdangle="-15" msg="ItemMsgPickUpSelect">
