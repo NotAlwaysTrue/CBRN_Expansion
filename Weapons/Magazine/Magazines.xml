@@ -12,44 +12,23 @@
         <SpawnItem identifiers="545_39_rev" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
-    <!--Price baseprice="287" buyingpricemultiplier="1" minleveldifficulty="0">
-      <Price locationtype="outpost" multiplier="1.5" minavailable="0" maxavailable="4" />
-      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="5" />
-      <Price locationtype="research" multiplier="1.25" sold="false" />
-      <Price locationtype="military" multiplier="1.10" minavailable="2" maxavailable="6" />
-      <Price locationtype="mine" multiplier="1.25" sold="false" />
-    </Price-->
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="3">
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="true" amount="3">
       <RequiredItem identifier="plastic" amount="3" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="3" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="4" />
       <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="3" />
-      <RequiredItem identifier="carbon" amount="6" />
-    </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="3">
-      <RequiredItem identifier="plastic" amount="3" />
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="3" />
-      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="4" />
-      <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="3" />
-      <RequiredItem identifier="tsm_tungsten" amount="6" />
+      <RequiredItem identifier="tsm_triton_bag" amount="2" />
     </Fabricate>
     <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="5">
-      <RequiredItem tag="fkj_545cj_mag" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem tag="fkj_545_mag_rev" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="1" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="1" />
       <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="1" />
-      <RequiredItem identifier="tsm_tungsten" amount="2" />
-    </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="5">
-      <RequiredItem tag="fkj_545cj_mag" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="1" />
-      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="1" />
-      <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="1" />
-      <RequiredItem identifier="carbon" amount="2" />
+      <RequiredItem identifier="tsm_triton_bag" amount="2" />
     </Fabricate>
     <Deconstruct time="5">
       <Item identifier="plastic" outcondition="1" />
-      <Item identifier="carbon" mincondition="0.9" />
+      <Item identifier="tsm_triton_bag" amount="1" mincondition="0.9" />
       <Item identifier="copper" mincondition="0.9" />
     </Deconstruct>
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
@@ -66,45 +45,24 @@
         <SpawnItem identifiers="762_39_rev" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
-    <!--Price baseprice="346" buyingpricemultiplier="1" minleveldifficulty="0">
-      <Price locationtype="outpost" multiplier="1.5" minavailable="0" maxavailable="4" />
-      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="5" />
-      <Price locationtype="research" multiplier="1.25" sold="false" />
-      <Price locationtype="military" multiplier="1.10" minavailable="2" maxavailable="6" />
-      <Price locationtype="mine" multiplier="1.25" sold="false" />
-    </Price-->
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="2">
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="true" amount="2">
       <RequiredItem identifier="plastic" amount="2" />
       <RequiredItem identifier="tsm_oilshale" amount="3" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="3" />
       <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="4" />
-      <RequiredItem identifier="carbon" amount="5" />
-    </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="2">
-      <RequiredItem identifier="plastic" amount="2" />
-      <RequiredItem identifier="tsm_oilshale" amount="3" />
-      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="3" />
-      <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="4" />
-      <RequiredItem identifier="tsm_tungsten" amount="5" />
+      <RequiredItem identifier="tsm_triton_bag" amount="1" />
     </Fabricate>
     <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="5">
-      <RequiredItem tag="fkj_762cj_mag" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem tag="fkj_762_mag_rev" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="1" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="2" />
-      <RequiredItem identifier="tsm_tungsten" amount="2" />
-      <RequiredItem identifier="tsm_oilshale" amount="1" />
-    </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="5">
-      <RequiredItem tag="fkj_762cj_mag" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="1" />
-      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="2" />
-      <RequiredItem identifier="carbon" amount="2" />
+      <RequiredItem identifier="tsm_triton_bag" amount="1" />
       <RequiredItem identifier="tsm_oilshale" amount="1" />
     </Fabricate>
     <Deconstruct time="5">
       <Item identifier="plastic" outcondition="1" />
       <Item identifier="copper" mincondition="0.9" />
-      <Item identifier="carbon" mincondition="0.9" />
+      <Item identifier="tsm_triton_bag" amount="2" mincondition="0.9" />
     </Deconstruct>
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -120,19 +78,19 @@
         <SpawnItem identifiers="762_51NATO_rev" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="false" amount="1">
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="true" amount="1">
       <RequiredItem identifier="plastic" amount="1" />
       <RequiredItem identifier="tsm_oilshale" amount="2" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="2" />
       <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="3" />
-      <RequiredItem identifier="tsm_tungsten" amount="3" />
+      <RequiredItem identifier="tsm_triton_bag" amount="1" />
     </Fabricate>
     <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
-      <RequiredItem tag="762_51mag" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem tag="fkj_762_51_mag_rev" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem identifier="tsm_oilshale" mincondition="1" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="1" />
       <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="2" />
-      <RequiredItem identifier="tsm_tungsten" amount="3" />
+      <RequiredItem identifier="tsm_triton_bag" amount="1" />
     </Fabricate>
     <Deconstruct time="5">
       <Item identifier="plastic" outcondition="1" />
@@ -152,33 +110,21 @@
         <SpawnItem identifiers="545_39_rev" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="false">
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="true">
       <RequiredItem identifier="fkj_jts_mag" amount="1" />
-      <RequiredItem identifier="tsm_tungsten" amount="4" />
-      <RequiredItem identifier="tsm_oilshale" amount="3" />
-    </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="false">
-      <RequiredItem identifier="fkj_jts_mag" amount="1" />
-      <RequiredItem identifier="carbon" amount="4" />
+      <RequiredItem identifier="tsm_triton_bag" amount="4" />
       <RequiredItem identifier="tsm_oilshale" amount="3" />
     </Fabricate>
     <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
-      <RequiredItem identifier="fkj_jts_cjmag" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem identifier="fkj_jts_mag_rev" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem identifier="tsm_oilshale" amount="2" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
       <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="3" />
-      <RequiredItem identifier="carbon" amount="3" />
-    </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
-      <RequiredItem identifier="fkj_jts_cjmag" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem identifier="tsm_oilshale" amount="2" />
-      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
-      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="3" />
-      <RequiredItem identifier="tsm_tungsten" amount="3" />
+      <RequiredItem identifier="tsm_triton_bag" amount="4" />
     </Fabricate>
     <Deconstruct time="5">
       <Item identifier="plastic" outcondition="1" />
-      <Item identifier="tsm_tungsten" mincondition="0.95" />
+      <Item identifier="tsm_triton_bag" mincondition="0.95" amount="2"/>
       <Item identifier="tsm_oilshale" mincondition="0.95" />
     </Deconstruct>
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
@@ -203,33 +149,21 @@
         <SpawnItem identifiers="762_51NATO_rev" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="false">
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="true">
       <RequiredItem identifier="fkj_pkp_mag" amount="1" />
-      <RequiredItem identifier="tsm_tungsten" amount="3" />
-      <RequiredItem identifier="tsm_sulphur" amount="3" />
-    </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="false">
-      <RequiredItem identifier="fkj_pkp_mag" amount="1" />
-      <RequiredItem identifier="carbon" amount="3" />
-      <RequiredItem identifier="tsm_sulphur" amount="3" />
+      <RequiredItem identifier="tsm_triton_bag" amount="2" />
+      <RequiredItem identifier="tsm_sulphur" amount="4" />
     </Fabricate>
     <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
-      <RequiredItem identifier="fkj_pkp_mag_cj" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem identifier="fkj_pkp_mag_rev" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem identifier="tsm_sulphur" amount="3" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
       <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="3" />
-      <RequiredItem identifier="carbon" mincondition="2" />
-    </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
-      <RequiredItem identifier="fkj_pkp_mag_cj" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem identifier="tsm_sulphur" amount="3" />
-      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
-      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="3" />
-      <RequiredItem identifier="tsm_tungsten" mincondition="2" />
+      <RequiredItem identifier="tsm_triton_bag" amount="2" />
     </Fabricate>
     <Deconstruct time="5">
       <Item identifier="plastic" outcondition="1" />
-      <Item identifier="tsm_tungsten" mincondition="0.95" />
+      <Item identifier="tsm_triton_bag" mincondition="0.95" />
       <Item identifier="tsm_oilshale" mincondition="0.95" />
     </Deconstruct>
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
@@ -254,23 +188,16 @@
         <SpawnItem identifiers="545_39_rev" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
-    <Price baseprice="277" buyingpricemultiplier="1" minleveldifficulty="0">
-      <Price locationtype="outpost" multiplier="1.5" minavailable="0" maxavailable="1" />
-      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="2" />
-      <Price locationtype="research" multiplier="1.25" sold="false" />
-      <Price locationtype="military" multiplier="1.10" minavailable="2" maxavailable="6" />
-      <Price locationtype="mine" multiplier="1.25" sold="false" />
-    </Price>
-    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="6" requiresrecipe="false">
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="6" requiresrecipe="true">
       <RequiredItem identifier="plastic" amount="2" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
-      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
+      <RequiredItem identifier="tsm_triton_bag" amount="2" />
       <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="2" />
     </Fabricate>
     <Fabricate suitablefabricators="tsm_fabricator,fabricator" displayname="recycleitem" requiredtime="6">
-      <RequiredItem identifier="fkj_rpk_mag" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem identifier="fkj_rpk_mag_rev" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
-      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
+      <RequiredItem identifier="tsm_triton_bag" amount="2" />
       <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="2" />
     </Fabricate>
     <Deconstruct time="5">
@@ -295,29 +222,22 @@
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Body width="76" height="176" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="762_51NATO_rev" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-      <Containable items="pt762_51_ap" />
+      <Containable items="762_51NATO_rev" />
       <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
         <SpawnItem identifiers="762_51NATO_rev" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
-    <!--Price baseprice="543" buyingpricemultiplier="1" minleveldifficulty="0">
-      <Price locationtype="outpost" multiplier="1.5" minavailable="0" maxavailable="4" />
-      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="5" />
-      <Price locationtype="research" multiplier="1.25" sold="false" />
-      <Price locationtype="military" multiplier="1.10" minavailable="2" maxavailable="6" />
-      <Price locationtype="mine" multiplier="1.25" sold="false" />
-    </Price-->
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="1">
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="true" amount="1">
       <RequiredItem identifier="plastic" amount="5" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="6" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="6" />
-      <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="6" />
+      <RequiredItem identifier="tsm_triton_bag" amount="3" />
     </Fabricate>
     <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
-      <RequiredItem tag="fkj_m2_mag" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem tag="fkj_m2_mag_rev" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="5" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="5" />
-      <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="5" />
+      <RequiredItem identifier="tsm_triton_bag" amount="3" />
     </Fabricate>
     <Deconstruct time="5">
       <Item identifier="plastic" outcondition="2" />
@@ -346,22 +266,15 @@
         <SpawnItem identifiers="762_54r_rev" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
-    <!--Price baseprice="255" buyingpricemultiplier="1" minleveldifficulty="0">
-      <Price locationtype="outpost" multiplier="1.5" minavailable="0" maxavailable="5" />
-      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="5" />
-      <Price locationtype="research" multiplier="1.25" sold="false" />
-      <Price locationtype="military" multiplier="1.10" minavailable="2" maxavailable="6" />
-      <Price locationtype="mine" multiplier="1.25" sold="false" />
-    </Price-->
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="false" amount="1">
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="true" amount="1">
       <RequiredItem identifier="plastic" amount="2" />
-      <RequiredItem identifier="tsm_tungsten" amount="3" />
+      <RequiredItem identifier="tsm_triton_bag" amount="1" />
       <RequiredItem tag="advmunition_core" description="fabricationdescription.advmunition_core" amount="2" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
     </Fabricate>
     <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
-      <RequiredItem tag="fkj_svd_mag" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem identifier="tsm_tungsten" amount="2" />
+      <RequiredItem tag="fkj_svd_mag_rev" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem identifier="tsm_triton_bag" amount="1" />
       <RequiredItem tag="advmunition_core" description="fabricationdescription.advmunition_core" amount="2" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="1" />
     </Fabricate>
@@ -386,14 +299,9 @@
         <SpawnItem identifiers="556_45NATO_rev" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="false">
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="true">
       <RequiredItem identifier="tsm_556_45_mgmag" amount="1" />
-      <RequiredItem identifier="tsm_tungsten" amount="4" />
-      <RequiredItem identifier="tsm_oilshale" amount="3" />
-    </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="false">
-      <RequiredItem identifier="tsm_556_45_mgmag" amount="1" />
-      <RequiredItem identifier="carbon" amount="4" />
+      <RequiredItem identifier="tsm_triton_bag" amount="4" />
       <RequiredItem identifier="tsm_oilshale" amount="3" />
     </Fabricate>
     <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
@@ -401,19 +309,12 @@
       <RequiredItem identifier="tsm_oilshale" amount="2" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
       <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="3" />
-      <RequiredItem identifier="carbon" amount="3" />
-    </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
-      <RequiredItem identifier="tsm_556_45_mgmag_cj" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem identifier="tsm_oilshale" amount="2" />
-      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
-      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="3" />
-      <RequiredItem identifier="tsm_tungsten" amount="3" />
+      <RequiredItem identifier="tsm_triton_bag" amount="4" />
     </Fabricate>
     <Deconstruct time="5">
       <Item identifier="plastic" outcondition="1" />
       <Item identifier="copper" mincondition="0.95" />
-      <Item identifier="tsm_tungsten" mincondition="0.95" />
+      <Item identifier="tsm_tungsten" amount="3" mincondition="0.95" />
     </Deconstruct>
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
       <StatusEffect type="Always" target="This" interval="3" comparison="and" checkconditionalalways="true">
@@ -437,33 +338,21 @@
         <SpawnItem identifiers="762_51NATO_rev" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="false">
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="true">
       <RequiredItem identifier="lm_762_51_mgmag" amount="1" />
-      <RequiredItem identifier="tsm_tungsten" amount="4" />
+      <RequiredItem identifier="tsm_triton_bag" amount="4" />
       <RequiredItem identifier="tsm_sulphur" amount="4" />
     </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="false">
-      <RequiredItem identifier="lm_762_51_mgmag" amount="1" />
-      <RequiredItem identifier="carbon" amount="3" />
-      <RequiredItem identifier="tsm_sulphur" amount="3" />
-    </Fabricate>
     <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
       <RequiredItem identifier="lm_762_51_mgmag_cj" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem identifier="tsm_sulphur" amount="2" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
       <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="2" />
-      <RequiredItem identifier="carbon" mincondition="2" />
-    </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
-      <RequiredItem identifier="lm_762_51_mgmag_cj" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem identifier="tsm_sulphur" amount="2" />
-      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="2" />
-      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="2" />
-      <RequiredItem identifier="tsm_tungsten" mincondition="2" />
+      <RequiredItem identifier="tsm_triton_bag" amount="4" />
     </Fabricate>
     <Deconstruct time="5">
       <Item identifier="plastic" outcondition="1" />
-      <Item identifier="tsm_tungsten" mincondition="0.95" />
+      <Item identifier="tsm_triton_bag" amount="3" mincondition="0.95" />
       <Item identifier="lead" mincondition="0.95" />
     </Deconstruct>
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
@@ -488,45 +377,24 @@
         <SpawnItem identifiers="556_45NATO_rev" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
-    <Price baseprice="318" buyingpricemultiplier="1" minleveldifficulty="0">
-      <Price locationtype="outpost" multiplier="1.5" minavailable="0" maxavailable="4" />
-      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="5" />
-      <Price locationtype="research" multiplier="1.25" sold="false" />
-      <Price locationtype="military" multiplier="1.10" minavailable="2" maxavailable="6" />
-      <Price locationtype="mine" multiplier="1.25" sold="false" />
-    </Price>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="2">
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="true" amount="2">
       <RequiredItem identifier="plastic" amount="2" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="3" />
       <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="3" />
-      <RequiredItem identifier="carbon" amount="5" />
-    </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="2">
-      <RequiredItem identifier="plastic" amount="2" />
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
-      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="3" />
-      <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="3" />
-      <RequiredItem identifier="tsm_tungsten" amount="5" />
+      <RequiredItem identifier="tsm_triton_bag" amount="1" />
     </Fabricate>
     <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
-      <RequiredItem tag="lm_556cj_mag" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem tag="lm_556_mag_rev" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="1" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="1" />
       <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="1" />
-      <RequiredItem identifier="carbon" amount="2" />
-    </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
-      <RequiredItem tag="lm_556cj_mag" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="1" />
-      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="1" />
-      <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="1" />
-      <RequiredItem identifier="tsm_tungsten" amount="2" />
+      <RequiredItem identifier="tsm_triton_bag" amount="1" />
     </Fabricate>
     <Deconstruct time="5">
       <Item identifier="plastic" outcondition="0.5" />
       <Item identifier="copper" mincondition="0.9" />
-      <Item identifier="carbon" mincondition="0.9" />
+      <Item identifier="tsm_triton_bag" mincondition="0.9" />
     </Deconstruct>
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -542,23 +410,23 @@
         <SpawnItem identifiers="65_spec_rev" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="5" requiresrecipe="false" amount="2">
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="5" requiresrecipe="true" amount="2">
       <RequiredItem identifier="plastic" amount="2" />
       <RequiredItem identifier="flashpowder" amount="4" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
       <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="3" />
-      <RequiredItem identifier="tsm_tungsten" amount="5" />
+      <RequiredItem identifier="tsm_triton_bag" amount="1" />
     </Fabricate>
     <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
       <RequiredItem tag="65mag" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem identifier="flashpowder" amount="2" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="1" />
       <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="1" />
-      <RequiredItem identifier="tsm_tungsten" amount="2" />
+      <RequiredItem identifier="tsm_triton_bag" amount="1" />
     </Fabricate>
     <Deconstruct time="5">
       <Item identifier="plastic" outcondition="1" />
-      <Item identifier="zinc" mincondition="0.9" />
+      <Item identifier="tsm_triton_bag" mincondition="0.9" />
       <Item identifier="flashpowder" mincondition="0.9" />
     </Deconstruct>
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
@@ -575,30 +443,23 @@
         <SpawnItem identifiers="68_51_rev" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
-    <Price baseprice="303" buyingpricemultiplier="1" minleveldifficulty="0">
-      <Price locationtype="outpost" multiplier="1.5" minavailable="0" maxavailable="5" />
-      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="5" />
-      <Price locationtype="research" multiplier="1.25" sold="false" />
-      <Price locationtype="military" multiplier="1.10" minavailable="2" maxavailable="6" />
-      <Price locationtype="mine" multiplier="1.25" sold="false" />
-    </Price>
-    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="false" amount="2">
+    <Fabricate suitablefabricators="tsm_fabricator,fabricator" requiredtime="5" requiresrecipe="true" amount="2">
       <RequiredItem identifier="plastic" amount="2" />
       <RequiredItem identifier="flashpowder" amount="3" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
       <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="4" />
-      <RequiredItem identifier="tsm_tungsten" amount="5" />
+      <RequiredItem identifier="tsm_triton_bag" amount="1" />
     </Fabricate>
     <Fabricate suitablefabricators="tsm_fabricator,fabricator" displayname="recycleitem" requiredtime="6">
       <RequiredItem tag="68_51mag" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem identifier="flashpowder" amount="1" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="1" />
       <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="2" />
-      <RequiredItem identifier="tsm_tungsten" amount="2" />
+      <RequiredItem identifier="tsm_triton_bag" amount="1" />
     </Fabricate>
     <Deconstruct time="5">
       <Item identifier="plastic" outcondition="1" />
-      <Item identifier="zinc" mincondition="0.9" />
+      <Item identifier="tsm_triton_bag" mincondition="0.9" />
       <Item identifier="flashpowder" mincondition="0.9" />
     </Deconstruct>
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
@@ -615,23 +476,24 @@
         <SpawnItem identifiers="762_51NATO_rev" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="false" amount="1">
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="true" amount="1">
       <RequiredItem identifier="plastic" amount="1" />
       <RequiredItem identifier="tsm_oilshale" amount="2" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="2" />
       <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="3" />
-      <RequiredItem identifier="tsm_tungsten" amount="3" />
+      <RequiredItem identifier="tsm_triton_bag" amount="1" />
     </Fabricate>
     <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
       <RequiredItem tag="762_51mag" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem identifier="tsm_oilshale" mincondition="1" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="1" />
       <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="2" />
-      <RequiredItem identifier="tsm_tungsten" amount="3" />
+      <RequiredItem identifier="tsm_triton_bag" amount="1" />
     </Fabricate>
     <Deconstruct time="5">
       <Item identifier="plastic" outcondition="1" />
       <Item identifier="tsm_oilshale" mincondition="0.9" />
+      <Item identifier="tsm_triton_bag" mincondition="0.9" />
     </Deconstruct>
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -647,28 +509,21 @@
         <SpawnItem identifiers="338magnum_rev" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
-    <Price baseprice="384" buyingpricemultiplier="1" minleveldifficulty="0">
-      <Price locationtype="outpost" multiplier="1.5" minavailable="0" maxavailable="5" />
-      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="5" />
-      <Price locationtype="research" multiplier="1.25" sold="false" />
-      <Price locationtype="military" multiplier="1.10" minavailable="2" maxavailable="6" />
-      <Price locationtype="mine" multiplier="1.25" sold="false" />
-    </Price>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="false" amount="1">
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="true" amount="1">
       <RequiredItem identifier="plastic" amount="2" />
-      <RequiredItem identifier="tsm_tungsten" amount="2" />
+      <RequiredItem identifier="tsm_triton_bag" amount="1" />
       <RequiredItem identifier="titanium" amount="2" />
       <RequiredItem identifier="tsm_pyrotechnic" amount="1" />
     </Fabricate>
     <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
       <RequiredItem tag="lm_m700_mag" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem identifier="tsm_tungsten" amount="2" />
+      <RequiredItem identifier="tsm_triton_bag" amount="1" />
       <RequiredItem identifier="titanium" amount="1" />
       <RequiredItem identifier="tsm_pyrotechnic" amount="1" />
     </Fabricate>
     <Deconstruct time="5">
       <Item identifier="plastic" outcondition="1" />
-      <Item identifier="tsm_tungsten" mincondition="0.9" />
+      <Item identifier="tsm_triton_bag" mincondition="0.9" />
     </Deconstruct>
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -684,28 +539,23 @@
         <SpawnItem identifiers="65_rev" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
-    <Price baseprice="652" buyingpricemultiplier="1.2" minleveldifficulty="0">
-      <Price locationtype="outpost" multiplier="1.5" minavailable="0" maxavailable="1" />
-      <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="2" />
-      <Price locationtype="research" multiplier="1.25" sold="false" />
-      <Price locationtype="military" multiplier="1.10" minavailable="2" maxavailable="6" />
-      <Price locationtype="mine" multiplier="1.25" sold="false" />
-    </Price>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="false" amount="1">
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="true" amount="1">
       <RequiredItem identifier="plastic" amount="5" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="5" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="6" />
       <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="6" />
+      <RequiredItem tag="tsm_triton_bag" amount="4" />
     </Fabricate>
     <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
       <RequiredItem tag="tsm_miniammo" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="4" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="4" />
       <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="4" />
+      <RequiredItem tag="tsm_triton_bag" amount="4" />
     </Fabricate>
     <Deconstruct time="5">
       <Item identifier="plastic" mincondition="3" />
-      <Item identifier="tsm_tungsten" mincondition="0.95" />
+      <Item identifier="tsm_triton_bag" amount="3" mincondition="0.95" />
       <Item identifier="steel" mincondition="0.95" />
     </Deconstruct>
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
@@ -732,34 +582,22 @@
         <SpawnItem identifiers="tsm_58_rev" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="8" requiresrecipe="false">
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="8" requiresrecipe="true">
       <RequiredItem identifier="tsm_58_201mag" amount="1" />
-      <RequiredItem identifier="tsm_tungsten" amount="4" />
-      <RequiredItem identifier="tsm_oilshale" amount="2" />
-    </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="8" requiresrecipe="false">
-      <RequiredItem identifier="tsm_58_201mag" amount="1" />
-      <RequiredItem identifier="carbon" amount="4" />
+      <RequiredItem identifier="tsm_triton_bag" amount="4" />
       <RequiredItem identifier="tsm_oilshale" amount="2" />
     </Fabricate>
     <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
-      <RequiredItem identifier="tsm_58_201cjmag" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem identifier="tsm_58_201mag_rev" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem identifier="tsm_oilshale" amount="2" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="2" />
       <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" mincondition="2" />
-      <RequiredItem identifier="carbon" mincondition="3" />
-    </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
-      <RequiredItem identifier="tsm_58_201cjmag" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem identifier="tsm_oilshale" amount="2" />
-      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="2" />
-      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" mincondition="2" />
-      <RequiredItem identifier="tsm_tungsten" mincondition="3" />
+      <RequiredItem identifier="tsm_triton_bag" mincondition="4" />
     </Fabricate>
     <Deconstruct time="5">
       <Item identifier="plastic" outcondition="1" />
       <Item identifier="copper" mincondition="0.9" />
-      <Item identifier="tsm_tungsten" mincondition="0.9" />
+      <Item identifier="tsm_triton_bag" amount="3" mincondition="0.9" />
     </Deconstruct>
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" >
       <StatusEffect type="Always" target="This" interval="3" comparison="and" checkconditionalalways="true">
@@ -783,38 +621,24 @@
         <SpawnItem identifiers="tsm_58_rev" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="2">
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="true" amount="2">
       <RequiredItem identifier="plastic" amount="2" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
       <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="3" />
-      <RequiredItem identifier="carbon" amount="5" />
-    </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="10" requiresrecipe="false" amount="2">
-      <RequiredItem identifier="plastic" amount="2" />
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
-      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
-      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="3" />
-      <RequiredItem identifier="tsm_tungsten" amount="5" />
+      <RequiredItem identifier="tsm_triton_bag" amount="1" />
     </Fabricate>
     <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
-      <RequiredItem tag="tsm_58_mag" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem tag="tsm_58_mag_rev" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="1" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="1" />
       <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" mincondition="1" />
-      <RequiredItem identifier="tsm_tungsten" amount="2" />
-    </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
-      <RequiredItem tag="tsm_58_mag" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="1" />
-      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="1" />
-      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" mincondition="1" />
-      <RequiredItem identifier="carbon" amount="2" />
+      <RequiredItem identifier="tsm_triton_bag" amount="1" />
     </Fabricate>
     <Deconstruct time="5">
       <Item identifier="plastic" outcondition="1" />
       <Item identifier="copper" mincondition="0.9" />
-      <Item identifier="carbon" mincondition="0.9" />
+      <Item identifier="tsm_triton_bag" mincondition="0.9" />
     </Deconstruct>
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -830,6 +654,9 @@
         </Explosion>
       </StatusEffect>
     </Holdable>
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="true" amount="1">
+      <RequiredItem identifier="tsm_ammobox_rev" amount="2" />
+    </Fabricate>
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="m61_20_rev" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="m61_20_rev" />
       <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
@@ -843,9 +670,14 @@
       <Price locationtype="military" multiplier="1.10" minavailable="2" maxavailable="5" />
       <Price locationtype="mine" multiplier="1.25" minavailable="0" maxavailable="3" />
     </Price>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="20" requiresrecipe="true" amount="1">
-      <RequiredItem tag="tsm_ammobox_rev" amount="2" />
-    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="magnesium" mincondition="0.3" />
+      <Item identifier="flashpowder" mincondition="0.3" />
+      <Item identifier="sodium" mincondition="0.3" />
+      <Item identifier="tsm_triton_bag" mincondition="0.7" amount="8"/>
+      <Item identifier="tsm_oilshale" mincondition="0.7" />
+      <Item identifier="tsm_sulphur" mincondition="0.7" />
+    </Deconstruct>
     <aitarget sightrange="1000" fadeouttime="6" />
   </Item>
 
@@ -890,7 +722,7 @@
         <SpawnItem identifiers="m61_20_rev" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
-    <Price baseprice="2000" buyingpricemultiplier="1" minleveldifficulty="30">
+    <Price baseprice="2000" buyingpricemultiplier="1" minleveldifficulty="60">
       <Price locationtype="outpost" multiplier="1.5" minavailable="0" maxavailable="3" />
       <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="4" />
       <Price locationtype="research" multiplier="1.25" minavailable="0" maxavailable="4" />
@@ -901,7 +733,7 @@
       <Item identifier="magnesium" mincondition="0.3" />
       <Item identifier="flashpowder" mincondition="0.3" />
       <Item identifier="sodium" mincondition="0.3" />
-      <Item identifier="tsm_triton_bag" mincondition="0.7"/>
+      <Item identifier="tsm_triton_bag" mincondition="0.7" amount="4"/>
       <Item identifier="tsm_oilshale" mincondition="0.7" />
       <Item identifier="tsm_sulphur" mincondition="0.7" />
     </Deconstruct>
