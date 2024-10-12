@@ -2,11 +2,12 @@
 <TalentTrees>
   <TalentTree jobidentifier="cbrn_guy">
     <SubTree identifier="cbrn_primary" nameidentifier="cbrntalenttree.primary" type="primary">
-      <TalentOptions requiredtalents="1" maxchosentalents="4">
+      <TalentOptions requiredtalents="2" maxchosentalents="4">
         <TalentOption identifier="medicaltraining"/>
         <TalentOption identifier="prodigy"/>
         <TalentOption identifier="buff"/>
         <TalentOption identifier="physicalconditioning"/>
+        <TalentOption identifier="specops"/>
       </TalentOptions>
     </SubTree>
     <SubTree identifier="cbrn_secondary" nameidentifier="cbrntalenttree.primary" type="primary" requires="cbrn_primary">
@@ -41,11 +42,11 @@
       <TalentOptions>
         <TalentOption identifier="nanomachine"/>
       </TalentOptions>
-      <TalentOptions requiredtalents="1" maxchosentalents="2">
+      <TalentOptions requiredtalents="2" maxchosentalents="2">
         <TalentOption identifier="biodev"/>
         <TalentOption identifier="bioresearch"/>
       </TalentOptions>
-      <TalentOptions requiredtalents="1" maxchosentalents="2">
+      <TalentOptions requiredtalents="2" maxchosentalents="2">
         <TalentOption identifier="ert"/>
         <TalentOption identifier="reviscomming"/>
       </TalentOptions>

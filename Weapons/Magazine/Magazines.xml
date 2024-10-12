@@ -1960,7 +1960,7 @@
     <Body width="40" height="14" density="30" />
     <Projectile characterusable="false" Hitscan="true" MaxTargetsToHit="3" spread="0.1" DamageDoors="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="140,85,200,175" scalemultiplier="1,0.6" />
-      <Attack structuredamage="15" targetforce="10" itemdamage="40" penetration="1" severlimbsprobability="0.4">
+      <Attack structuredamage="15" targetforce="10" itemdamage="40" penetration="0.5" severlimbsprobability="0.4">
         <Affliction identifier="gunshotwound" strength="20" />
         <Affliction identifier="lacerations" strength="20" />
         <Affliction identifier="burn" strength="20" />

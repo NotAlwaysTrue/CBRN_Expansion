@@ -173,6 +173,7 @@
         <Affliction identifier="chemicalliner_biochem" amount="10" />
         <Affliction identifier="chemicalliner_burn" amount="10" />
         <Affliction identifier="chemicalliner_spec" amount="10" />
+        <Affliction identifier="chemicalliner_majordamage" amount="10" />
         <Affliction identifier="chemicalliner_armorbreak" amount="10" />
         <Conditional jobidentifier="eq cbrn_guy"/>
       </StatusEffect>
@@ -254,6 +255,13 @@
         <Affliction identifier="mechready" amount="10" />
         <Affliction identifier="CCR" amount="10" />
         <Affliction identifier="CBRNsuit" amount="10" />
+        <Affliction identifier="chemicalliner_mech" amount="10" />chemicalliner_mech
+        <Affliction identifier="chemicalliner_mechbleeding" amount="10" />
+        <Affliction identifier="chemicalliner_biochem" amount="10" />
+        <Affliction identifier="chemicalliner_burn" amount="10" />
+        <Affliction identifier="chemicalliner_spec" amount="10" />
+        <Affliction identifier="chemicalliner_majordamage" amount="10" />
+        <Affliction identifier="chemicalliner_armorbreak" amount="10" />
         <Conditional jobidentifier="eq cbrn_guy"/>
       </StatusEffect>
       <StatusEffect Type="OnWearing" Target="This,Character">
@@ -268,12 +276,8 @@
         <Affliction identifier="oxygenlow" amount="10"/>
       </StatusEffect>
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,bitewounds,lacerations" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn,bleeding" damagemultiplier="0.3" damagesound="" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.15" damagesound="" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.1" damagesound="LimbArmor"/>
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="stun" damagemultiplier="0.3" damagesound="LimbArmor"/>
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="acidburn" damagemultiplier="0.15" damagesound=""/>
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" probabilitymultiplier="0.0" damagesound="LimbArmor"/>
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.3" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="burn" damagemultiplier="0"/>
       <sound file="Content/Items/Weapons/WEAPONS_chargeUp.ogg" type="OnWearing" range="500.0" volumeproperty="Speed" volume="0.2" loop="true" frequencymultiplier="0.5" />
       <StatValue stattype="FlowResistance" value="1.0" />
       <StatusHUD range="3000" ThermalGoggles="true" ShowTexts="false" OverlayColor="0,0,0,0" drawhudwhenequipped="true" />
@@ -837,9 +841,9 @@
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
       <StatusEffect type="OnUse" target="Contained" checkconditionalalways="true" Delay="1.2" >
-      <Condition Condition="lte 10"/>
+        <Condition Condition="lte 10"/>
         <Sound file="%ModDir%/Weapons/BerraArm/Mk153SMAW/mk153unload.ogg" range="300" />
-      <Dropitem />
+        <Dropitem />
       </StatusEffect>
     </Holdable>
     <RangedWeapon reload="0.2" weapondamagemodifier="1.0" holdtrigger="false" barrelpos="300,75" LaunchImpulse="0" spread="1" unskilledspread="25" combatPriority="150" drawhudwhenequipped="true" crosshairscale="0.2">
@@ -3096,12 +3100,10 @@
     <Holdable characterusable="false" slots="Any,RightHand+LeftHand" canbecombined="true" removeoncombined="true" throwforce="3.5" holdpos="35,-10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnBroken" target="This">
         <Explosion range="6000.0" ballastfloradamage="50000" structuredamage="50000" itemdamage="50000" force="30" severlimbsprobability="0.0" penetration="1" screencolor="0,0,0,255" screencolorrange="8000" screencolorduration="8.0" ignoreCover="true">
-          <Affliction identifier="omegathedeath" strength="10" />
-          <Affliction identifier="stun" strength="15" />
+          <Affliction identifier="omegathedeath" strength="1000" />
         </Explosion>
         <Remove />
       </StatusEffect>
-      <StatusEffect type="OnBroken" target="NearbyItems" range="6000" condition="0" setvalue="true" />
       <StatusEffect type="OnBroken" target="This">
         <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" range="50000" />
         <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" range="50000" />

@@ -294,7 +294,7 @@
   <missionname.berra_undermasks_assination>歼灭CBRN小队</missionname.berra_undermasks_assination>
   <missiondescription.berra_undermasks_assination>CBRN小队在此处理了一处化武泄露事件，歼灭整支小队，不能让他们带着样本离开！ \n警告:清剿小队可能会导致Berra Group实施"断箭"毁灭协议</missiondescription.berra_undermasks_assination>
   <missionsuccess.berra_undermasks_assination>任务完成</missionsuccess.berra_undermasks_assination>
-  <missionfailure.berra_undermasks_assination>从真正的人变为冰冷的阵亡数字</missionfailure.berra_undermasks_assination>
+  <missionfailure.berra_undermasks_assination>从真正的人变为冰冷的数字</missionfailure.berra_undermasks_assination>
   <missionheader0.berra_undermasks_assination>已歼灭所有小队成员</missionheader0.berra_undermasks_assination>
   <missionmessage0.berra_undermasks_assination>踏入站点是战争的开始，也是逝去的倒计时，人们如同蝼蚁般逝去，这是那么的合理，却又那么徒然。</missionmessage0.berra_undermasks_assination>
   
@@ -564,4 +564,20 @@
   <entitydescription.tsm_ammobox_rev>装满了各类变革弹药的弹药箱,可以为绝大多数变革弹匣装弹 \n内装过多弹药导致弹匣有放射性</entitydescription.tsm_ammobox_rev>
   <entitydescription.tsm_m61ammobox_rev>装有1200发20mm变革穿甲燃烧弹的重型弹药箱 \n你知道我要说什么的,对吧? \n内装过多弹药导致弹匣有放射性</entitydescription.tsm_m61ammobox_rev>
   <entitydescription.tsm_hazardous_container>可用于安全运输各种危险品的重型集装箱...只要没有人试图破坏它</entitydescription.tsm_hazardous_container>
+
+  <afflictiondescription.chemicalliner_mech>-95% 枪伤 \n-100% 出血 \n-95% 撕裂伤 \n-95% 钝器伤 \n-95% 内脏损伤 \n-95% 深层组织损伤 \n-80% 烧伤\n-60% 特殊伤害 \n-100% 碎甲 \n10u/s 伤口密封 \n10u/s 止血</afflictiondescription.chemicalliner_mech>
+
+  <missionname.tsm_cbrnert_assination>歼灭奇迹之海核生化应急响应部队</missionname.tsm_cbrnert_assination>
+  <missiondescription.tsm_cbrnert_assination>奇迹之海核生化应急响应部队驻扎于此,歼灭他们以使得我们得到战术优势</missiondescription.tsm_cbrnert_assination>
+  <missionsuccess.tsm_cbrnert_assination>任务完成</missionsuccess.tsm_cbrnert_assination>
+  <missionfailure.tsm_cbrnert_assination>我们没能在此区域获得任何优势</missionfailure.tsm_cbrnert_assination>
+  <missionheader0.tsm_cbrnert_assination>已歼灭所有小队成员</missionheader0.tsm_cbrnert_assination>
+  <missionmessage0.tsm_cbrnert_assination>人们哭泣着逃离，呼吸着本应维持着他们生命的气体，浑然不知这些气体正在夺走他们的生命。</missionmessage0.tsm_cbrnert_assination>
+
+  <missionname.cargoSapphire_1>化学品运输</missionname.cargoSapphire_1>
+  <missiondescription.cargoSapphire_1>[location1]的研究人员希望你能运输一些化学品到[location2]。\n \n \n什么时候丙酮也成违禁品了？</missiondescription.cargoSapphire_1>
+  <missionname.cargoSapphire_2>爆炸物运输</missionname.cargoSapphire_2>
+  <missiondescription.cargoSapphire_2>[location1]的官员找到你，希望你偷偷运送一批矿用危险品到[location2]。\n \n \n什么时候采矿炸药也成违禁品了？</missiondescription.cargoSapphire_2>
+  <missionname.cargoSapphire_3>武器原料运输</missionname.cargoSapphire_3>
+  <missiondescription.cargoSapphire_3>[location2]的工作人员找到你，希望你能将一些危险武器原料从[location1]偷偷运送到[location2]。\n \n \n什么时候钛也成违禁品了？</missiondescription.cargoSapphire_3>
 </infotexts>

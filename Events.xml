@@ -103,5 +103,8 @@
       <SpawnAction speciesname="human" npcsetidentifier="Craftable_CBRN" npcidentifier="cbrnguy_sep" spawnlocation="MainSub" targettag="spawn_cbrn" teamid="FriendlyNPC" amount="1" allowinplayerview="true" />
       <NPCChangeTeamAction npctag="spawn_cbrn" teamid="Team1" addtocrew="true" />
     </ScriptedEvent>
+    <ScriptedEvent identifier="Sapphiremissionspawn">
+      <SpawnAction speciesname="Sapphire" spawnlocation="MainPath" teamid="None" allowinplayerview="false" />
+    </ScriptedEvent>
   </EventPrefabs>
 </RandomEvents>

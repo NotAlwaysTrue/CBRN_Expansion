@@ -45,9 +45,9 @@
   <!--bio-chemical agent-->
   <Affliction identifier="anthrax_takein_agent" type="takeinagent" IsBuff="true" damageoverlayalpha="0.1" showiconthreshold="999" showinhealthscannerthreshold="999" maxstrength="10" limbspecific="false" indicatorlimb="Head" Duration="0.1">
     <Effect minstrength="0" maxstrength="10" strengthchange="-10" maxvitalitydecrease="0">
-      <StatusEffect target="Character" disabledeltatime="true">
-		<Affliction identifier="organdamage_biosource" amount="100" />
-		<Affliction identifier="pulmonaryedema_poisonsource" amount="100" />
+      <StatusEffect target="Character" disabledeltatime="true" multiplyAfflictionsByMaxVitality="true">
+		    <Affliction identifier="organdamage_biosource" amount="100" />
+		    <Affliction identifier="pulmonaryedema_poisonsource" amount="100" />
         <Affliction identifier="anthrax_displayer" amount="100" />
       </StatusEffect>
     </Effect>
@@ -56,7 +56,7 @@
   </Affliction>
   <Affliction identifier="vx_takein_agent" type="takeinagent" IsBuff="true" damageoverlayalpha="0.1" showiconthreshold="999" showinhealthscannerthreshold="999" maxstrength="10" limbspecific="false" indicatorlimb="Head" Duration="0.1">
     <Effect minstrength="0" maxstrength="10" strengthchange="-10" maxvitalitydecrease="0">
-      <StatusEffect target="Character" disabledeltatime="true">
+      <StatusEffect target="Character" disabledeltatime="true" multiplyAfflictionsByMaxVitality="true">
         <Affliction identifier="organdamage_poisonsource" amount="5" />
         <Affliction identifier="respiratoryarrest_poisonsource" amount="5" />
         <Affliction identifier="psychosis" amount="100" />
@@ -71,7 +71,7 @@
   <Affliction identifier="vx_air_agent" type="airagent" IsBuff="true" showiconthreshold="999" showinhealthscannerthreshold="999" maxstrength="35" limbspecific="false" indicatorlimb="Head" Duration="1">
     <Effect minstrength="0" maxstrength="5" maxvitalitydecrease="0" strengthchange="0" />
     <Effect minstrength="5" maxstrength="10" maxvitalitydecrease="0" strengthchange="0">
-      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3">
+      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3" multiplyAfflictionsByMaxVitality="true">
         <Conditional IsDead="false" />
         <Conditional DecreasedOxygenConsumption="lt 99" />
         <Conditional NeedsAir="true" />
@@ -85,7 +85,7 @@
       <!--Light-->
     </Effect>
     <Effect minstrength="10" maxstrength="20" maxvitalitydecrease="0" strengthchange="0">
-      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3">
+      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3" multiplyAfflictionsByMaxVitality="true">
         <Conditional IsDead="false" />
         <Conditional DecreasedOxygenConsumption="lt 99" />
         <Conditional NeedsAir="true" />
@@ -99,7 +99,7 @@
       <!--Moderate-->
     </Effect>
     <Effect minstrength="20" maxstrength="35" maxvitalitydecrease="0" strengthchange="0">
-      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3">
+      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3" multiplyAfflictionsByMaxVitality="true">
         <Conditional IsDead="false" />
         <Conditional DecreasedOxygenConsumption="lt 99" />
         <Conditional NeedsAir="true" />
@@ -119,7 +119,7 @@
   <Affliction identifier="vx_contact_agent" type="contactagent" IsBuff="true" showiconthreshold="999" showinhealthscannerthreshold="999" maxstrength="35" limbspecific="false" indicatorlimb="Head" Duration="1">
     <Effect minstrength="0" maxstrength="5" maxvitalitydecrease="0" strengthchange="0" />
     <Effect minstrength="5" maxstrength="10" maxvitalitydecrease="0" strengthchange="0">
-      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3">
+      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3" multiplyAfflictionsByMaxVitality="true">
         <Affliction identifier="organdamage_poisonsource" amount="7" />
         <Affliction identifier="respiratoryarrest_poisonsource" amount="5" />
         <Affliction identifier="psychosis" amount="60" />
@@ -130,7 +130,7 @@
       <!--Light-->
     </Effect>
     <Effect minstrength="10" maxstrength="20" maxvitalitydecrease="0" strengthchange="0">
-      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3">
+      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3" multiplyAfflictionsByMaxVitality="true">
         <Affliction identifier="organdamage_poisonsource" amount="10" />
         <Affliction identifier="respiratoryarrest_poisonsource" amount="8" />
         <Affliction identifier="psychosis" amount="100" />
@@ -141,7 +141,7 @@
       <!--Moderate-->
     </Effect>
     <Effect minstrength="20" maxstrength="35" maxvitalitydecrease="0" strengthchange="0">
-      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3">
+      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3" multiplyAfflictionsByMaxVitality="true">
         <Affliction identifier="organdamage_poisonsource" amount="14" />
         <Affliction identifier="respiratoryarrest_poisonsource" amount="10" />
         <Affliction identifier="psychosis" amount="100" />
@@ -158,8 +158,8 @@
   <Affliction identifier="mustard_air_agent" type="airagent" IsBuff="true" showiconthreshold="999" showinhealthscannerthreshold="999" maxstrength="35" limbspecific="false" indicatorlimb="Head" Duration="1">
     <Effect minstrength="0" maxstrength="5" maxvitalitydecrease="0" strengthchange="0" />
     <Effect minstrength="5" maxstrength="10" maxvitalitydecrease="0" strengthchange="0">
-      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3">
-		<Conditional IsDead="false" />
+      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3" multiplyAfflictionsByMaxVitality="true">
+		    <Conditional IsDead="false" />
         <Conditional DecreasedOxygenConsumption="lt 99" />
         <Conditional NeedsAir="true" />
         <Affliction identifier="skinburn_poisonsource" amount="18" />
@@ -170,13 +170,13 @@
         <Affliction identifier="pulmonaryedema_poisonsource" amount="0.3" />
         <Affliction identifier="mustardpoisoning_displayer" amount="20" />
       </StatusEffect>
-      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3">
+      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3" multiplyAfflictionsByMaxVitality="true">
         <Affliction identifier="eyedamage_poisonsource" amount="20" />
       </StatusEffect>
       <!--Light-->
     </Effect>
     <Effect minstrength="10" maxstrength="20" maxvitalitydecrease="0" strengthchange="0">
-      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3">
+      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3" multiplyAfflictionsByMaxVitality="true">
         <Conditional IsDead="false" />
         <Conditional DecreasedOxygenConsumption="lt 99" />
         <Conditional NeedsAir="true" />
@@ -188,13 +188,13 @@
         <Affliction identifier="pulmonaryedema_poisonsource" amount="0.3" />
         <Affliction identifier="mustardpoisoning_displayer" amount="25" />
       </StatusEffect>
-      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3">
+      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3" multiplyAfflictionsByMaxVitality="true">
         <Affliction identifier="eyedamage_poisonsource" amount="25" />
       </StatusEffect>
       <!--Moderate-->
     </Effect>
     <Effect minstrength="20" maxstrength="35" maxvitalitydecrease="0" strengthchange="0">
-      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3">
+      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3" multiplyAfflictionsByMaxVitality="true">
         <Conditional IsDead="false" />
         <Conditional DecreasedOxygenConsumption="lt 99" />
         <Conditional NeedsAir="true" />
@@ -206,7 +206,7 @@
         <Affliction identifier="pulmonaryedema_poisonsource" amount="0.3" />
         <Affliction identifier="mustardpoisoning_displayer" amount="40" />
       </StatusEffect>
-      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3">
+      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3" multiplyAfflictionsByMaxVitality="true">
         <Affliction identifier="eyedamage_poisonsource" amount="40" />
       </StatusEffect>
       <!--Severe-->
@@ -217,7 +217,7 @@
   </Affliction>
   <Affliction identifier="mustard_contact_agent" type="contactagent" IsBuff="true" showiconthreshold="999" showinhealthscannerthreshold="999" maxstrength="35" limbspecific="false" indicatorlimb="Head" Duration="1">
     <Effect minstrength="0" maxstrength="5" maxvitalitydecrease="0" strengthchange="0" />
-    <Effect minstrength="5" maxstrength="10" maxvitalitydecrease="0" strengthchange="0">
+    <Effect minstrength="5" maxstrength="10" maxvitalitydecrease="0" strengthchange="0" multiplyAfflictionsByMaxVitality="true">
       <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3">
         <Affliction identifier="skinburn_poisonsource" amount="14" />
         <Affliction identifier="neurologicaldisorder_poisonsource" amount="8" />
@@ -225,7 +225,7 @@
       </StatusEffect>
       <!--Light-->
     </Effect>
-    <Effect minstrength="10" maxstrength="20" maxvitalitydecrease="0" strengthchange="0">
+    <Effect minstrength="10" maxstrength="20" maxvitalitydecrease="0" strengthchange="0" multiplyAfflictionsByMaxVitality="true">
       <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3">
         <Affliction identifier="skinburn_poisonsource" amount="20" />
         <Affliction identifier="neurologicaldisorder_poisonsource" amount="25" />
@@ -233,7 +233,7 @@
       </StatusEffect>
       <!--Moderate-->
     </Effect>
-    <Effect minstrength="20" maxstrength="35" maxvitalitydecrease="0" strengthchange="0">
+    <Effect minstrength="20" maxstrength="35" maxvitalitydecrease="0" strengthchange="0" multiplyAfflictionsByMaxVitality="true">
       <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3">
         <Affliction identifier="skinburn_poisonsource" amount="35" />
         <Affliction identifier="neurologicaldisorder_poisonsource" amount="30" />
@@ -248,7 +248,7 @@
   <Affliction identifier="phosgene_air_agent" type="airagent" IsBuff="true" showiconthreshold="999" showinhealthscannerthreshold="999" maxstrength="35" limbspecific="false" indicatorlimb="Head" Duration="1">
     <Effect minstrength="0" maxstrength="5" maxvitalitydecrease="0" strengthchange="0" />
     <Effect minstrength="5" maxstrength="10" maxvitalitydecrease="0" strengthchange="0">
-      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.05">
+      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.05" multiplyAfflictionsByMaxVitality="true">
         <Conditional IsDead="false" />
         <Conditional DecreasedOxygenConsumption="lt 99" />
         <Conditional NeedsAir="true" />
@@ -259,7 +259,7 @@
       <!--Light-->
     </Effect>
     <Effect minstrength="10" maxstrength="20" maxvitalitydecrease="0" strengthchange="0">
-      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.05">
+      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.05" multiplyAfflictionsByMaxVitality="true">
         <Conditional IsDead="false" />
         <Conditional DecreasedOxygenConsumption="lt 99" />
         <Conditional NeedsAir="true" />
@@ -270,7 +270,7 @@
       <!--Moderate-->
     </Effect>
     <Effect minstrength="20" maxstrength="35" maxvitalitydecrease="0" strengthchange="0">
-      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.05">
+      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.05" multiplyAfflictionsByMaxVitality="true">
         <Conditional IsDead="false" />
         <Conditional DecreasedOxygenConsumption="lt 99" />
         <Conditional NeedsAir="true" />
@@ -287,7 +287,7 @@
   <Affliction identifier="bz_air_agent" type="airagent" IsBuff="true" showiconthreshold="999" showinhealthscannerthreshold="999" maxstrength="35" limbspecific="false" indicatorlimb="Head" Duration="1">
     <Effect minstrength="0" maxstrength="5" maxvitalitydecrease="0" strengthchange="0" />
     <Effect minstrength="5" maxstrength="10" maxvitalitydecrease="0" strengthchange="0">
-      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3">
+      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3" multiplyAfflictionsByMaxVitality="true">
         <Conditional IsDead="false" />
         <Conditional DecreasedOxygenConsumption="lt 99" />
         <Conditional NeedsAir="true" />
@@ -297,7 +297,7 @@
       <!--Light-->
     </Effect>
     <Effect minstrength="10" maxstrength="20" maxvitalitydecrease="0" strengthchange="0">
-      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3">
+      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3" multiplyAfflictionsByMaxVitality="true">
         <Conditional IsDead="false" />
         <Conditional DecreasedOxygenConsumption="lt 99" />
         <Conditional NeedsAir="true" />
@@ -307,7 +307,7 @@
       <!--Moderate-->
     </Effect>
     <Effect minstrength="20" maxstrength="35" maxvitalitydecrease="0" strengthchange="0">
-      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3">
+      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3" multiplyAfflictionsByMaxVitality="true">
         <Conditional IsDead="false" />
         <Conditional DecreasedOxygenConsumption="lt 99" />
         <Conditional NeedsAir="true" />
@@ -323,21 +323,21 @@
   <Affliction identifier="cs_air_agent" type="airagent" IsBuff="true" showiconthreshold="999" showinhealthscannerthreshold="999" maxstrength="35" limbspecific="false" indicatorlimb="Head" Duration="1">
     <Effect minstrength="0" maxstrength="5" maxvitalitydecrease="0" strengthchange="0" />
     <Effect minstrength="5" maxstrength="10" maxvitalitydecrease="0" strengthchange="0">
-      <StatusEffect target="Character" disabledeltatime="false" Interval="0.3">
+      <StatusEffect target="Character" disabledeltatime="false" Interval="0.3" multiplyAfflictionsByMaxVitality="true">
         <Affliction identifier="tear_poisonsource" amount="22" />
         <Affliction identifier="cspoisoning_displayer" amount="22" />
       </StatusEffect>
       <!--Light-->
     </Effect>
     <Effect minstrength="10" maxstrength="20" maxvitalitydecrease="0" strengthchange="0">
-      <StatusEffect target="Character" disabledeltatime="false" Interval="0.3">
+      <StatusEffect target="Character" disabledeltatime="false" Interval="0.3" multiplyAfflictionsByMaxVitality="true">
         <Affliction identifier="tear_poisonsource" amount="34" />
         <Affliction identifier="cspoisoning_displayer" amount="34" />
       </StatusEffect>
       <!--Moderate-->
     </Effect>
     <Effect minstrength="20" maxstrength="35" maxvitalitydecrease="0" strengthchange="0">
-      <StatusEffect target="Character" disabledeltatime="false" Interval="0.3">
+      <StatusEffect target="Character" disabledeltatime="false" Interval="0.3" multiplyAfflictionsByMaxVitality="true">
         <Affliction identifier="tear_poisonsource" amount="50" />
         <Affliction identifier="cspoisoning_displayer" amount="50" />
       </StatusEffect>
@@ -350,17 +350,17 @@
   <Affliction identifier="anthrax_air_agent" type="airagent" IsBuff="true" showiconthreshold="999" showinhealthscannerthreshold="999" maxstrength="35" limbspecific="false" indicatorlimb="Head" Duration="1">
     <Effect minstrength="0" maxstrength="5" maxvitalitydecrease="0" strengthchange="0" />
     <Effect minstrength="5" maxstrength="10" maxvitalitydecrease="0" strengthchange="0">
-      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3">
+      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3" multiplyAfflictionsByMaxVitality="true">
         <Conditional IsDead="false" />
         <Conditional DecreasedOxygenConsumption="lt 99" />
         <Conditional NeedsAir="true" />
         <Affliction identifier="pulmonaryedema_poisonsource" amount="2" />
-		<Affliction identifier="anthrax_displayer" amount="2" />
+		    <Affliction identifier="anthrax_displayer" amount="2" />
       </StatusEffect>
       <!--Light-->
     </Effect>
     <Effect minstrength="10" maxstrength="20" maxvitalitydecrease="0" strengthchange="0">
-      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3">
+      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3" multiplyAfflictionsByMaxVitality="true">
         <Conditional IsDead="false" />
         <Conditional DecreasedOxygenConsumption="lt 99" />
         <Conditional NeedsAir="true" />
@@ -370,7 +370,7 @@
       <!--Moderate-->
     </Effect>
     <Effect minstrength="20" maxstrength="35" maxvitalitydecrease="0" strengthchange="0">
-      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3">
+      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3" multiplyAfflictionsByMaxVitality="true">
         <Conditional IsDead="false" />
         <Conditional DecreasedOxygenConsumption="lt 99" />
         <Conditional NeedsAir="true" />
@@ -386,14 +386,14 @@
   <Affliction identifier="anthrax_contact_agent" type="contactagent" IsBuff="true" showiconthreshold="999" showinhealthscannerthreshold="999" maxstrength="35" limbspecific="false" indicatorlimb="Head" Duration="1">
     <Effect minstrength="0" maxstrength="5" maxvitalitydecrease="0" strengthchange="0" />
     <Effect minstrength="5" maxstrength="10" maxvitalitydecrease="0" strengthchange="0">
-      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3">
+      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3" multiplyAfflictionsByMaxVitality="true">
         <Affliction identifier="skinburn_biosource" amount="2" />
-		<Affliction identifier="anthrax_displayer" amount="2" />
+		    <Affliction identifier="anthrax_displayer" amount="2" />
       </StatusEffect>
       <!--Light-->
     </Effect>
     <Effect minstrength="10" maxstrength="20" maxvitalitydecrease="0" strengthchange="0">
-      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3">
+      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3" multiplyAfflictionsByMaxVitality="true">
         <Affliction identifier="skinburn_biosource" amount="4" />
 		<Affliction identifier="infection" amount="3" />
 		<Affliction identifier="anthrax_displayer" amount="4" />
@@ -401,7 +401,7 @@
       <!--Moderate-->
     </Effect>
     <Effect minstrength="20" maxstrength="35" maxvitalitydecrease="0" strengthchange="0">
-      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3">
+      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.3" multiplyAfflictionsByMaxVitality="true">
         <Affliction identifier="skinburn_biosource" amount="8" />
 		<Affliction identifier="infection" amount="6" />
 		<Affliction identifier="anthrax_displayer" amount="8" />
@@ -415,11 +415,11 @@
   <Affliction identifier="eyi_weaponized_air_agent" type="airagent" IsBuff="true" showiconthreshold="999" showinhealthscannerthreshold="999" maxstrength="10" limbspecific="false" indicatorlimb="Head" Duration="1">
     <Effect minstrength="0" maxstrength="5" maxvitalitydecrease="0" strengthchange="0" />
     <Effect minstrength="5" maxstrength="10" maxvitalitydecrease="0" strengthchange="0">
-      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.8">
+      <StatusEffect target="Character" disabledeltatime="false" comparison="And" Interval="0.8" multiplyAfflictionsByMaxVitality="true">
         <Conditional IsDead="false" />
         <Conditional DecreasedOxygenConsumption="lt 99" />
         <Conditional NeedsAir="true" />
-		<Affliction identifier="eyiinfection_weaponized" amount="2" probability="0.7"/>
+		    <Affliction identifier="eyiinfection_weaponized" amount="2" probability="0.7"/>
       </StatusEffect>
     </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,0,1,1" color="0,0,0,255" origin="0,0" />
@@ -468,10 +468,7 @@
     <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="0" resistancefor="tsm_virusstage,eyiinfection" minresistance="100.0" maxresistance="100.0">
 	  </Effect>
   </Affliction>
-  <Affliction identifier="mechready" type="CBRNGEAR" IsBuff="true" targets="human" showiconthreshold="999" showinhealthscannerthreshold="999" maxstrength="10" limbspecific="false" indicatorlimb="Head" Duration="0.1">
-    <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="0" resistancefor="stun" minresistance="100.0" maxresistance="100.0">
-    </Effect>
-  </Affliction>
+
   <!--Mounted Weapons-->
   <Affliction identifier="mountedguns" type="None" IsBuff="true" targets="human" showiconthreshold="999" showinhealthscannerthreshold="999" maxstrength="10" limbspecific="false" indicatorlimb="Torso" Duration="0.1">
     <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="0" resistancefor="stun" minresistance="5.0" maxresistance="5.0"></Effect>
@@ -481,7 +478,7 @@
   <!--Contamination-->
   <Affliction identifier="hotfuel" type="contamination" IsBuff="false" showiconthreshold="0" showinhealthscannerthreshold="999" maxstrength="60" limbspecific="true">
     <Effect minstrength="0" maxstrength="60" maxvitalitydecrease="0" strengthchange="-1">
-      <StatusEffect target="limb">
+      <StatusEffect target="limb" multiplyAfflictionsByMaxVitality="true">
         <Affliction identifier="burn" amount="0.8" />
       </StatusEffect>
     </Effect>
@@ -501,7 +498,7 @@
   </Affliction>
   <Affliction identifier="vx_contamination" type="contamination" IsBuff="true" showiconthreshold="999" showinhealthscannerthreshold="0" maxstrength="10" limbspecific="false" indicatorlimb="Head">
     <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="0">
-      <StatusEffect target="NearbyCharacters,Character" range="80" disabledeltatime="false" Interval="1.5">
+      <StatusEffect target="NearbyCharacters,Character" range="80" disabledeltatime="false" Interval="1.5" multiplyAfflictionsByMaxVitality="true">
         <Affliction identifier="vx_contact_agent" amount="2" />
       </StatusEffect>
     </Effect>
@@ -510,7 +507,7 @@
   </Affliction>
   <Affliction identifier="mustard_contamination" type="contamination" IsBuff="true" showiconthreshold="999" showinhealthscannerthreshold="0" maxstrength="10" limbspecific="false" indicatorlimb="Head">
     <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="0">
-      <StatusEffect target="NearbyCharacters,Character" range="80" disabledeltatime="false" Interval="1.5">
+      <StatusEffect target="NearbyCharacters,Character" range="80" disabledeltatime="false" Interval="1.5" multiplyAfflictionsByMaxVitality="true">
         <Affliction identifier="mustard_contact_agent" amount="2" />
       </StatusEffect>
     </Effect>
@@ -519,9 +516,9 @@
   </Affliction>
   <Affliction identifier="anthrax_contamination" type="contamination" IsBuff="true" showiconthreshold="999" showinhealthscannerthreshold="0" maxstrength="10" limbspecific="false" indicatorlimb="Head">
     <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="0">
-      <StatusEffect target="NearbyCharacters,Character" range="80" disabledeltatime="false" Interval="1.5">
+      <StatusEffect target="NearbyCharacters,Character" range="80" disabledeltatime="false" Interval="1.5" multiplyAfflictionsByMaxVitality="true">
         <Affliction identifier="anthrax_contact_agent" amount="0.5" />
-		<Affliction identifier="anthrax_air_agent" amount="0.5" />
+		    <Affliction identifier="anthrax_air_agent" amount="0.5" />
       </StatusEffect>
     </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,0,1,1" color="0,0,0,255" origin="0,0" />
@@ -529,7 +526,7 @@
   </Affliction>
   <Affliction identifier="radiological_contamination" type="contamination" IsBuff="true" showiconthreshold="999" showinhealthscannerthreshold="0" maxstrength="10" limbspecific="false" indicatorlimb="Head">
     <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="0">
-      <StatusEffect target="NearbyCharacters,Character" range="80" disabledeltatime="false" Interval="5">
+      <StatusEffect target="NearbyCharacters,Character" range="80" disabledeltatime="false" Interval="5" multiplyAfflictionsByMaxVitality="true">
         <!--<Affliction identifier="radiation_contact_agent" amount="30" />-->
       </StatusEffect>
     </Effect>
@@ -541,16 +538,16 @@
   <Affliction identifier="respiratoryarrest_poisonsource" type="poison" IsBuff="false" showiconthreshold="999" showinhealthscannerthreshold="0" maxstrength="50" limbspecific="false" indicatorlimb="Torso">
     <Effect minstrength="0" maxstrength="50" maxvitalitydecrease="0" strengthchange="1">
       <AbilityFlag flagtype="MustWalk" />
-      <StatusEffect target="Character" >
-	    <Affliction identifier="oxygenlow" amount="12"/>
-	  </StatusEffect>
+      <StatusEffect target="Character" multiplyAfflictionsByMaxVitality="true">
+	      <Affliction identifier="oxygenlow" amount="12"/>
+	    </StatusEffect>
     </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,0,1,1" color="0,0,0,255" origin="0,0" />
   </Affliction>
   <Affliction identifier="organdamage_poisonsource" type="poison" IsBuff="false" showiconthreshold="999" showinhealthscannerthreshold="0" maxstrength="50" limbspecific="false" indicatorlimb="Torso">
     <Effect minstrength="0" maxstrength="50" maxvitalitydecrease="0" strengthchange="1">
       <statvalue stattype="MovementSpeed" value="-0.08" />
-      <StatusEffect target="Character">
+      <StatusEffect target="Character" multiplyAfflictionsByMaxVitality="true">
         <Affliction identifier="organdamage" amount="10" />
         <Affliction identifier="bloodloss" amount="1" />
         <Affliction identifier="nausea" amount="8" />
@@ -562,7 +559,7 @@
     <Effect minstrength="0" maxstrength="60" maxvitalitydecrease="0" strengthchange="1"/>
 	  <Effect minstrength="60" maxstrength="100" maxvitalitydecrease="0" strengthchange="1">
       <statvalue stattype="MovementSpeed" value="-0.8" />
-      <StatusEffect target="Character" Interval="0.1" >
+      <StatusEffect target="Character" Interval="0.1" multiplyAfflictionsByMaxVitality="true">
         <Affliction identifier="organdamage" amount="28" />
         <Affliction identifier="bloodloss" amount="18" />
         <Affliction identifier="nausea" amount="60" />
@@ -574,7 +571,7 @@
     <Effect minstrength="0" maxstrength="50" minscreendistort="0.5" maxscreendistort="2" maxradialdistort="5" minradialdistort="2" minscreenblur="1.0" maxscreenblur="1.0" minspeedmultiplier="1" maxspeedmultiplier="0.5" strengthchange="1" minchromaticaberration="15" maxchromaticaberration="15">
       <statvalue stattype="MovementSpeed" value="-0.1" />
       <AbilityFlag flagtype="MustWalk" />
-      <StatusEffect target="Character">
+      <StatusEffect target="Character" multiplyAfflictionsByMaxVitality="true">
         <Affliction identifier="paralysis" amount="2" />
       </StatusEffect>
     </Effect>
@@ -582,7 +579,7 @@
   </Affliction>
   <Affliction identifier="skinburn_poisonsource" type="poison" IsBuff="false" showiconthreshold="999" showinhealthscannerthreshold="0" maxstrength="50" limbspecific="false" indicatorlimb="Torso">
     <Effect minstrength="0" maxstrength="50" maxvitalitydecrease="0" strengthchange="1">
-      <StatusEffect target="Character">
+      <StatusEffect target="Character" multiplyAfflictionsByMaxVitality="true">
         <Affliction identifier="burn" amount="0.40" />
       </StatusEffect>
     </Effect>
@@ -591,7 +588,7 @@
   <Affliction identifier="skinburn_biosource" type="bioinfection" IsBuff="false" showiconthreshold="0" showinhealthscannerthreshold="60" maxstrength="100" limbspecific="false" indicatorlimb="Torso">
     <Effect minstrength="0" maxstrength="60" maxvitalitydecrease="0" strengthchange="1.5"/>
 	  <Effect minstrength="60" maxstrength="100" maxvitalitydecrease="0" strengthchange="1">
-	    <StatusEffect target="Character">
+	    <StatusEffect target="Character" multiplyAfflictionsByMaxVitality="true">
         <Affliction identifier="burn" amount="0.40" />
       </StatusEffect>
 	  </Effect>
@@ -605,17 +602,17 @@
     <Effect minstrength="0" maxstrength="80" maxvitalitydecrease="0" strengthchange="1.0" />
     <Effect minstrength="80" maxstrength="120" maxvitalitydecrease="0" strengthchange="1.4">
       <AbilityFlag flagtype="MustWalk" />
-      <StatusEffect target="Character">
+      <StatusEffect target="Character" multiplyAfflictionsByMaxVitality="true">
         <Affliction identifier="oxygenlow" amount="10" />
       </StatusEffect>
     </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,0,1,1" color="0,0,0,255" origin="0,0" />
   </Affliction>
   <Affliction identifier="unconscious_poisonsource" type="poison" IsBuff="false" showiconthreshold="999" showinhealthscannerthreshold="0" maxstrength="200" limbspecific="false" indicatorlimb="Head">
-    <Effect minstrength="0" maxstrength="20" minscreenblur="0" maxscreenblur="10" strengthchange="-0.2" />
-    <Effect minstrength="20" maxstrength="150" minscreenblur="10" maxscreenblur="15" strengthchange="-0.2">
-      <StatusEffect target="Character">
-        <Affliction identifier="stun" amount="2" />
+    <Effect minstrength="0" maxstrength="10" minscreenblur="0" maxscreenblur="10" strengthchange="-0.2" />
+    <Effect minstrength="10" maxstrength="150" minscreenblur="10" maxscreenblur="15" strengthchange="-0.2">
+      <StatusEffect target="Character" multiplyAfflictionsByMaxVitality="true">
+        <Affliction identifier="stun" amount="2.5" />
       </StatusEffect>
     </Effect>
     <Effect minstrength="150" maxstrength="200" minscreenblur="10" maxscreenblur="15" strengthchange="0.4" minvitalitydecrease="0.0" maxvitalitydecrease="2.0" MultiplyByMaxVitality="true">
@@ -629,12 +626,9 @@
   <AfflictionHusk identifier="eyiinfection_weaponized" description="" type="bioinfection" causeofdeathdescription="" selfcauseofdeathdescription="" activationthreshold="0" huskedspeciesname="eyi_weaponized" targets="human" AttachLimbName="None" SendMessages="false" dormantthreshold="50" activethreshold="100" transferbuffs="true" transformthresholdondeath="80" transitionthreshold="100" limbspecific="false" indicatorlimb="Torso" showiconthreshold="80" showinhealthscannerthreshold="60" maxstrength="100" healableinmedicalclinic="false" iconcolors="186,153,242,255;140,77,245,255;105,20,245,255">
     <Effect minstrength="0" maxstrength="80" maxvitalitydecrease="0" strengthchange="1" minbodytint="195,195,195,0" maxbodytint="195,195,195,150" />
     <Effect minstrength="80" maxstrength="90" maxvitalitydecrease="0" strengthchange="2" minbodytint="195,195,195,0" maxbodytint="195,195,195,150" minspeedmultiplier="0.15" maxspeedmultiplier="0.15">
-      <StatusEffect target="Character" setvalue="true">
-        <ReduceAffliction identifier="stun" strength="100" />
-      </StatusEffect>
     </Effect>
     <Effect minstrength="90" maxstrength="100" maxvitalitydecrease="0" strengthchange="2" minbodytint="195,195,195,150" maxbodytint="195,195,195,255">
-      <StatusEffect target="Character">
+      <StatusEffect target="Character" multiplyAfflictionsByMaxVitality="true">
         <Affliction identifier="stun" amount="1" />
         <Affliction identifier="nausea" amount="3" />
       </StatusEffect>
@@ -654,7 +648,7 @@
         <ParticleEmitter particle="waterblood" particlespersecond="100" scalemin="1" scalemax="2" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
         <ParticleEmitter particle="tsm_redwaterblood" particlespersecond="100" scalemin="1" scalemax="2" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
       </StatusEffect>
-      <StatusEffect target="Character" comparison="and">
+      <StatusEffect target="Character" comparison="and" multiplyAfflictionsByMaxVitality="true">
         <Conditional isdead="false" />
         <Conditional eyiinfection="eq 98.0" />
         <ReduceAffliction identifier="tsm_stress" strength="100" />
@@ -664,7 +658,7 @@
         <ParticleEmitter particle="waterblood" particlespersecond="100" scalemin="1" scalemax="2" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
         <ParticleEmitter particle="tsm_redwaterblood" particlespersecond="100" scalemin="1" scalemax="2" velocitymin="0" velocitymax="40" anglemin="0" anglemax="360" />
       </StatusEffect>
-      <StatusEffect target="Character" comparison="and">
+      <StatusEffect target="Character" comparison="and" multiplyAfflictionsByMaxVitality="true">
         <Conditional isdead="false" />
         <Conditional eyiinfection="eq 100.0" />
         <Affliction identifier="internaldamage" amount="17" />
@@ -676,39 +670,39 @@
       </StatusEffect>
     </Effect>
 	  <PeriodicEffect mininterval="3.0" maxinterval="15.0">
-      <StatusEffect target="NearbyCharacters" range="600" Interval="2">
+      <StatusEffect target="NearbyCharacters" range="600" Interval="2" multiplyAfflictionsByMaxVitality="true">
         <Affliction identifier="eyi_weaponized_air_agent" amount="10" probability="0.5"/>
       </StatusEffect>
-	  <StatusEffect target="Character" comparison="and">
-          <Conditional ishuman="true" />
-          <Conditional ismale="true" />
-          <Conditional sym_cough="gte 1" />
-          <Sound file="%ModDir%/Misc/Oggs/male_cough1.ogg" selectionmode="Random" />
-          <Sound file="%ModDir%/Misc/Oggs/male_cough2.ogg" />
-          <Sound file="%ModDir%/Misc/Oggs/male_cough3.ogg" />
-        </StatusEffect>
-        <StatusEffect target="Character" comparison="and">
-          <Conditional ishuman="true" />
-          <Conditional isfemale="true" />
-          <Conditional sym_cough="gte 1" />
-          <Sound file="%ModDir%/Misc/Oggs/female_cough1.ogg" selectionmode="Random" />
-          <Sound file="%ModDir%/Misc/Oggs/female_cough2.ogg" />
-          <Sound file="%ModDir%/Misc/Oggs/female_cough3.ogg" />
-        </StatusEffect>
+	    <StatusEffect target="Character" comparison="and">
+        <Conditional ishuman="true" />
+        <Conditional ismale="true" />
+        <Conditional sym_cough="gte 1" />
+        <Sound file="%ModDir%/Misc/Oggs/male_cough1.ogg" selectionmode="Random" />
+        <Sound file="%ModDir%/Misc/Oggs/male_cough2.ogg" />
+        <Sound file="%ModDir%/Misc/Oggs/male_cough3.ogg" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="and">
+        <Conditional ishuman="true" />
+        <Conditional isfemale="true" />
+        <Conditional sym_cough="gte 1" />
+        <Sound file="%ModDir%/Misc/Oggs/female_cough1.ogg" selectionmode="Random" />
+        <Sound file="%ModDir%/Misc/Oggs/female_cough2.ogg" />
+        <Sound file="%ModDir%/Misc/Oggs/female_cough3.ogg" />
+      </StatusEffect>
     </PeriodicEffect>
     <icon texture="%ModDir:2852411866%/Afflictions/Afflictionicons.png" sourcerect="0,137,122,119" color="255,0,0,255" origin="0,0" />
   </AfflictionHusk>
   <Affliction identifier="respiratoryburn_poisonsource" type="poison" IsBuff="false" showiconthreshold="999" showinhealthscannerthreshold="0" maxstrength="50" limbspecific="false" indicatorlimb="Torso">
     <Effect minstrength="0" maxstrength="50" maxvitalitydecrease="0" strengthchange="-1">
-      <StatusEffect target="Character" targetlimb="Head">
-	    <Affliction identifier="burn" amount="2"/>
-	  </StatusEffect>
+      <StatusEffect target="Character" targetlimb="Head" multiplyAfflictionsByMaxVitality="true">
+	      <Affliction identifier="burn" amount="2"/>
+	    </StatusEffect>
     </Effect>
 	  <Effect minstrength="50" maxstrength="100" maxvitalitydecrease="0" strengthchange="-1">
       <AbilityFlag flagtype="MustWalk" />
-      <StatusEffect target="Character" targetlimb="Head">
-	    <Affliction identifier="burn" amount="5"/>
-	  </StatusEffect>
+        <StatusEffect target="Character" targetlimb="Head" multiplyAfflictionsByMaxVitality="true">
+	        <Affliction identifier="burn" amount="5"/>
+	      </StatusEffect>
     </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,0,1,1" color="0,0,0,255" origin="0,0" />
   </Affliction>

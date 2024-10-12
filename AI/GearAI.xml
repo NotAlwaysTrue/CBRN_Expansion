@@ -110,6 +110,131 @@
       </StatusEffect>
     </Wearable>
   </Item>
+  <Item identifier="berra_bio2_ai_brokenarrow" subcategory="Berra Group" category="Equipment" tags="smallitem,clothing,cbrngear" cargocontaineridentifier="metalcrate" scale="0.5" fireproof="true" waterproof="true" impactsoundtag="impact_soft" hideinmenus="true">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="448,132,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="6,363,124,67" depth="0.6" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Deconstruct time="16">
+      <Item identifier="rubber" amount="1" />
+      <Item identifier="ballisticfiber" amount="2" />
+      <Item identifier="plastic" amount="2" />
+    </Deconstruct>
+    <Wearable slots="Any,OuterClothes+InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="bio2 HEAD" texture="%ModDir%/Jobgear/Under_Masks/APR-2.png" limb="Head" depthlimb="RightArm" inheritlimbdepth="true" inheritscale="false" hidelimb="false" alphaclipotherwearables="false" sourcerect="6,5,214,220" scale="0.13" origin="0.55,0.6" >
+        <LightComponent range="100.0" lightcolor="0,0,255,120" powerconsumption="0" IsOn="false" characterusable="false">
+          <sprite texture="Content/Items/Electricity/lightsprite.png" origin="0.5,0.5" />
+          <StatusEffect type="OnWearing" target="This" Voltage="1.0" Interval="1" setvalue="true">
+            <Conditional IsDead="false" targetcontainer="true"/>
+          </StatusEffect>
+        </LightComponent>
+      </sprite>
+      <sprite name="bio2 Torso" texture="%ModDir%/Jobgear/Under_Masks/Bio-2.png" limb="Torso" depthlimb="Jaw" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="162,8,118,164" scale="0.45" origin="0.6,0.45" />
+      <sprite name="bio2 Waist" texture="%ModDir%/Jobgear/Under_Masks/Bio-2.png" limb="Waist" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="189,195,56,52" scale="0.5" origin="0.45,0.5" />
+      <sprite name="bio2 Left Upper Arm" texture="%ModDir%/Jobgear/Under_Masks/Bio-2.png" limb="LeftArm" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="353,2,44,84" origin="0.45,0.6" scale="0.5" />
+      <sprite name="bio2 Right Upper Arm" texture="%ModDir%/Jobgear/Under_Masks/Bio-2.png" limb="RightArm" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="286,1,46,84" origin="0.45,0.6" scale="0.5" />
+      <sprite name="bio2 Left Lower Arm" texture="%ModDir%/Jobgear/Under_Masks/Bio-2.png" limb="LeftForearm" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="350,87,38,76" origin="0.4,0.55" scale="0.5" />
+      <sprite name="bio2 Right Lower Arm" texture="%ModDir%/Jobgear/Under_Masks/Bio-2.png" limb="RightForearm" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="286,86,38,76" origin="0.4,0.55" scale="0.5" />
+      <sprite name="bio2 Right Thigh" texture="%ModDir%/Jobgear/Under_Masks/Bio-2.png" limb="RightThigh" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="3,9,72,114" origin="0.5,0.45" scale="0.5" />
+      <sprite name="bio2 Left Thigh" texture="%ModDir%/Jobgear/Under_Masks/Bio-2.png" limb="LeftThigh" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="76,9,72,114" origin="0.5,0.45" scale="0.5" />
+      <sprite name="bio2 Right Leg" texture="%ModDir%/Jobgear/Under_Masks/Bio-2.png" limb="RightLeg" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="8,129,60,125" origin="0.5,0.45" scale="0.5" />
+      <sprite name="bio2 Left Leg" texture="%ModDir%/Jobgear/Under_Masks/Bio-2.png" limb="LeftLeg" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="81,129,60,125" origin="0.5,0.45" scale="0.5" />
+      <sprite name="bio2 Left Hand" texture="%ModDir%/Jobgear/Under_Masks/Bio-2.png" limb="LeftHand" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="357,190,28,38" origin="0.3,0.45" scale="0.5" />
+      <sprite name="bio2 Right Hand" texture="%ModDir%/Jobgear/Under_Masks/Bio-2.png" limb="RightHand" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="293,189,28,39" origin="0.3,0.45" scale="0.5" />
+      <sprite name="bio2 Right Shoe" texture="%ModDir%/Jobgear/Under_Masks/Bio-2.png" limb="RightFoot" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="431,140,69,51" origin="0.5,0.45" scale="0.5" />
+      <sprite name="bio2 Left Shoe" texture="%ModDir%/Jobgear/Under_Masks/Bio-2.png" limb="LeftFoot" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="436,203,69,51" origin="0.5,0.5" scale="0.5" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.45" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.55" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.3" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.2" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="triton_7L" damagemultiplier="0.8" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="triton_burn" damagemultiplier="0.3" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.4" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.3" probabilitymultiplier="0.2" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="acidburn" damagemultiplier="0.0" probabilitymultiplier="0.0" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.3" probabilitymultiplier="0.3" deflectprojectiles="true" />
+      <StatusEffect type="OnWearing" target="Character" tag="cbrnsuit" disabledeltatime="true" LowPassMultiplier="0.05" SpeedMultiplier="1.1" setvalue="true">
+        <Affliction identifier="CBRNsuit" amount="10" />
+        <Affliction identifier="exosuited" amount="10" />
+        <Affliction identifier="eyidefense" amount="10" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="This,Character" Condition="-0.5" comparison="And">
+        <Conditional IsDead="false" />
+        <Conditional IsPlayer="true" />
+        <Conditional jobidentifier="neq cbrn_guy" />
+        <Conditional condition="gt 0.0" />
+      </StatusEffect>
+    </Wearable>
+  </Item>
+  <Item identifier="rz_p_mk1_cbrn_ai" subcategory="TSM" category="Equipment" tags="diving,deepdiving,deepdivinglarge,divinggear_wearableindoors,provocative,heavycbrn" scale="0.605" fireproof="true" description="" impactsoundtag="impact_metal_heavy" botpriority="0.01" characterusable="false">
+    <InventoryIcon texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" sourcerect="357,384,147,128" origin="0.5,0.5" />
+    <Sprite name="rz_prototypesuit Item" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/mk1.png" sourcerect="108,65,194,369" depth="0.55" origin="0.5,0.72" />
+    <Body width="150" height="230" density="15" />
+    <Wearable slots="OuterClothes+Head" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select" allowusewhenworn="true">
+      <sprite name="rz_prototypesuit Helmet Wearable" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="Head" hidelimb="true" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" depthlimb="LeftArm" scale="0.43" hideotherwearables="true" hidewearablesoftype="" sourcerect="269,7,96,90" origin="0.0,0.7" >
+        <LightComponent range="1500.0" lightcolor="250,224,165,255" powerconsumption="0" IsOn="true" characterusable="false">
+          <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" Interval="1" setvalue="true">
+            <Conditional IsDead="false" />
+          </StatusEffect>
+          <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,2.0" />
+        </LightComponent>
+      </sprite>
+      <sprite name="rz_prototypesuit Torso" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="Torso" scale="0.95" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.41,0.5" inheritlimbdepth="true" inheritsourcerect="false" sourcerect="1,7,213,214">
+        <LightComponent range="1500.0" lightcolor="250,224,165,255" powerconsumption="0" IsOn="true" characterusable="false">
+          <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" Interval="1" setvalue="true">
+            <Conditional IsDead="false" />
+          </StatusEffect>
+          <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,2.0" />
+        </LightComponent>
+      </sprite>
+      <sprite name="rz_prototypesuit Right Hand" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="RightHand" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.0" scale="0.4" inheritsourcerect="false" SourceRect="449,125,55,69" />
+      <sprite name="rz_prototypesuit Left Hand" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="LeftHand" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.0" scale="0.4" inheritsourcerect="false" SourceRect="449,125,55,69" />
+      <sprite name="rz_prototypesuit Right Upper Arm" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="RightArm" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.5" scale="0.5" inheritsourcerect="false" SourceRect="300,117,106,138" />
+      <sprite name="rz_prototypesuit Left Upper Arm" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="LeftArm" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.5" scale="0.5" inheritsourcerect="false" SourceRect="300,117,106,138" />
+      <sprite name="rz_prototypesuit Right Forearm" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="RightForearm" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.0" scale="0.4" inheritsourcerect="false" SourceRect="441,13,71,91" />
+      <sprite name="rz_prototypesuit Left Forearm" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="LeftForearm" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.0" scale="0.4" inheritsourcerect="false" SourceRect="441,13,71,91"  />
+      <sprite name="rz_prototypesuit Waist" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="Waist" hidelimb="true" scale="0.6" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.9" inheritsourcerect="false" sourcerect="182,264,109,91" />
+      <sprite name="rz_prototypesuit Right Thigh" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.08,0.3" inheritsourcerect="false"  sourcerect="0,288,111,153" />
+      <sprite name="rz_prototypesuit Left Thigh" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.08,0.3" inheritsourcerect="false" sourcerect="0,288,111,153" />
+      <sprite name="rz_prototypesuit Right Leg" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="RightLeg" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.03,0.1" scale="0.55" inheritsourcerect="false" sourcerect="134,372,85,139" />
+      <sprite name="rz_prototypesuit Left Leg" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="LeftLeg" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.03,0.1" inheritsourcerect="false" scale="0.55" sourcerect="134,372,85,139" />
+      <sprite name="rz_prototypesuit Left Shoe" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.18,-1" inheritsourcerect="false" scale="0.6" sourcerect="381,315,121,49" />
+      <sprite name="rz_prototypesuit Right Shoe" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.18,-1" inheritsourcerect="false" scale="0.6" sourcerect="381,315,121,49" />
+      <StatusEffect type="OnWearing" target="Character" HideFace="true" OxygenAvailable="2000" PressureProtection="12500.0" PropulsionSpeedMultiplier="0.25" setvalue="true" disabledeltatime="true">
+        <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="250" loop="true"/>
+        <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="250" loop="true"/>
+        <Affliction identifier="mechready" amount="10" />
+        <Affliction identifier="CCR" amount="10" />
+        <Affliction identifier="CBRNsuit" amount="10" />
+      </StatusEffect>
+      <StatusEffect Type="OnWearing" Target="This,Character">
+        <TriggerAnimation Type="Walk" path="%ModDir%/Characters/humanmech_anim/MechWalk.xml" priority="100" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Run" path="%ModDir%/Characters/humanmech_anim/MechRun.xml" priority="100" ExpectedSpecies="Human" />
+      </StatusEffect>
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.1" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,bitewounds,internaldamage" damagemultiplier="0.1" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.1" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bleeding" damagemultiplier="0.0" probabilitymultiplier="0.0" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.1" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="triton_7L" damagemultiplier="0.3" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.1" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.0" probabilitymultiplier="0.0" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.1" probabilitymultiplier="0.0" deflectprojectiles="true" />
+      <sound file="Content/Items/Weapons/WEAPONS_chargeUp.ogg" type="OnWearing" range="500.0" volumeproperty="Speed" volume="0.2" loop="true" frequencymultiplier="0.5" />
+      <StatValue stattype="FlowResistance" value="1.0" />
+      <StatusHUD range="3000" ThermalGoggles="true" ShowTexts="false" OverlayColor="0,0,0,0" drawhudwhenequipped="true" />
+      <StatusHUD range="200" ThermalGoggles="false" ShowTexts="true" OverlayColor="0,0,0,0" drawhudwhenequipped="true" />
+    </Wearable>
+    <CustomInterface canbeselected="true" drawhudwhenequipped="true">
+      <GuiFrame relativesize="0.1,0.1" anchor="BottomLeft" absoluteoffset="20,20" style="ItemUI" />
+      <TickBox text="lights">
+        <StatusEffect type="OnUse" targettype="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="true" />
+        <StatusEffect type="OnSecondaryUse" targettype="This" targetitemcomponent="LightComponent" setvalue="true" IsOn="false" />
+      </TickBox>
+    </CustomInterface>
+    <aitarget maxsightrange="1500" />
+  </Item>
+
+
   <!--AI Weapons-->
   <Item identifier="tsm_201_cbrnertai" subcategory="AI_weapons" category="Misc" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai" Scale="0.23" impactsoundtag="impact_metal_light" hideinmenus="true">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -171,12 +296,12 @@
     <InventoryIcon texture="%ModDir:2953749635%/weapons/奇迹之海/tsm.png" sourcerect="2371,1638,126,134" origin="0.5,0.5" />
     <Sprite texture="%ModDir:2953749635%/weapons/奇迹之海/tsm.png" sourcerect="592,1661,432,111" depth="0.55" origin="0.5,0.5" />
     <Body width="475" height="121" density="52" />
-    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="55,-8" aimpos="60,2" handle1="-80,-15" handle2="30,5" holdangle="-35" msg="ItemMsgPickUpSelect">
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="55,-8" aimpos="60,2" handle1="-80,-15" handle2="30,5" holdangle="-35" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.85" setvalue="true" />
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.4" setvalue="true" />
     </Holdable>
-    <RangedWeapon reload="0.11" weapondamagemodifier="1.2" penetration="0.1" holdtrigger="true" barrelpos="200,30" spread="8" combatPriority="88" drawhudwhenequipped="true">
+    <RangedWeapon reload="0.11" weapondamagemodifier="1.2" penetration="0.1" holdtrigger="true" barrelpos="200,30" spread="8" combatPriority="100" drawhudwhenequipped="true">
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <StatusEffect type="OnUse" target="This" forceplaysounds="true">
         <Sound file="%ModDir:2953749635%/weapons/奇迹之海/QBZ191.ogg" type="OnUse" range="3000" selectionmode="Random" />
@@ -206,6 +331,43 @@
       <Containable items="tsm_58_mag" hide="false" itempos="-2,-9" depth="0.56" />
     </ItemContainer>
     <aitarget sightrange="2500" soundrange="4500" fadeouttime="6" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item identifier="tsm_m61_vulcan_cbrnertai" subcategory="TSM" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" scale="0.35" impactsoundtag="impact_metal_light" hideinmenus="true">
+    <InventoryIcon texture="%ModDir%/Weapons/Other/M61A1.png" sourcerect="0,0,580,136" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons/Other/M61A1.png" sourcerect="0,0,580,136" depth="0.55" origin="0.5,0.5" />
+    <Body width="580" height="136" density="52" />
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="50,-60" aimpos="50,-60" handle1="-120,45" handle2="0,0" holdangle="0" msg="ItemMsgPickUpSelect">
+    </Holdable>
+    <Wearable slots="Bag" canbeselected="false" canbepicked="false">
+      <sprite texture="%ModDir%/Weapons/Other/M61A1.png" canbehiddenbyotherwearables="false" sourcerect="0,0,580,300" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.35" origin="0.5,0.7"/>
+      <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.7" setvalue="true" />
+    </Wearable>
+    <RangedWeapon reload="0.15" weapondamagemodifier="1.0" penetration="0" holdtrigger="true" barrelpos="290,8" spread="1" unskilledspread="13" combatPriority="200" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,1,1" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,1,1" />
+      <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
+      <Sound file="%ModDir%/Weapons/Other/m61.ogg" type="OnUse" range="2500" loop="false" forceplaysounds="true" />
+      <StatusEffect type="OnSpawn" OneShot="true" target="This">
+        <SpawnItem identifier="tsm_m61ammobox_rev" amount="1" SpawnPosition="ThisInventory"/>
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Contained">
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This">
+        <Remove />
+        <DropContainedItems />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" offset="80,0">
+        <ParticleEmitter particle="tsm_bulletfalldown" emitinterval="0.18" particleamount="1" particlespersecond="20" anglemin="70" anglemax="100" velocitymin="100" velocitymax="200" copyentityangle="true" scalemultiplier="7,4" />
+      </StatusEffect>
+      <RequiredItems items="tsm_m61ammobox_rev" type="Contained" target="This" msg="ItemMsgAmmoRequired" />
+    </RangedWeapon>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
+      <Containable items="tsm_m61ammobox_rev" hide="false" itempos="-15,10" depth="0.55" />
+    </ItemContainer>
+    <aitarget sightrange="5000" soundrange="4500" fadeouttime="6" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!--Jump Pod-->
@@ -239,8 +401,53 @@
         <SpawnCharacter speciesname="tsm_cbrnert_sapphire" count="1" spread="10" />
         <Remove />
       </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.3">
+        <SpawnItem identifiers="acidmistemitter" spawnposition="This" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.35">
+        <SpawnItem identifiers="acidmistemitter" spawnposition="This" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.4">
+        <SpawnItem identifiers="acidmistemitter" spawnposition="This" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.45">
+        <SpawnItem identifiers="acidmistemitter" spawnposition="This" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.5">
+        <SpawnItem identifiers="acidmistemitter" spawnposition="This" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.55">
+        <SpawnItem identifiers="acidmistemitter" spawnposition="This" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.6">
+        <SpawnItem identifiers="acidmistemitter" spawnposition="This" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.65">
+        <SpawnItem identifiers="acidmistemitter" spawnposition="This" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.7">
+        <SpawnItem identifiers="acidmistemitter" spawnposition="This" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.75">
+        <SpawnItem identifiers="acidmistemitter" spawnposition="This" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.8">
+        <SpawnItem identifiers="acidmistemitter" spawnposition="This" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.85">
+        <SpawnItem identifiers="acidmistemitter" spawnposition="This" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="1">
+        <SpawnItem identifiers="acidmistemitter" spawnposition="This" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="1.15">
+        <SpawnItem identifiers="acidmistemitter" spawnposition="This" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="1.3">
+        <SpawnItem identifiers="acidmistemitter" spawnposition="This" />
+      </StatusEffect>
       <StatusEffect type="OnBroken" target="This" OnlyInside="true" >
-        <Sound file="%ModDir:2852411866%/Character/war/ogg/登陆舱/登陆舱打开.ogg" type="OnUse" range="1500" />
+        <Sound file="%ModDir:2852411866%/Character/war/ogg/登陆舱/登陆舱打开.ogg" range="1500" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This" OnlyOutside="true">
         <Remove />
