@@ -113,24 +113,24 @@
     <LocationType identifier="Abandoned" />
     <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
     <Characters>
-      <Character identifier="nbcert_rifleman" from="HAZMAT_Unit_Undermasks" />
-      <Character identifier="nbcert_mg" from="HAZMAT_Unit_Undermasks" requirekill="true"/>
-      <Character identifier="nbcert_rifleman" from="HAZMAT_Unit_Undermasks" />
-      <Character identifier="nbcert_mg" from="HAZMAT_Unit_Undermasks" spawnpointtags="nest" />
-      <Character identifier="nbcert_rifleman" from="HAZMAT_Unit_Undermasks" spawnpointtags="nest" />
-      <Character identifier="nbcert_mg" from="HAZMAT_Unit_Undermasks" spawnpointtags="nest" requirekill="true"/>
-      <Character identifier="undermask_ce" from="HAZMAT_Unit_Undermasks" moduleflags="researchmodule" />
-      <Character identifier="nbcert_rifleman" from="HAZMAT_Unit_Undermasks" moduleflags="crewmodule" />
-      <Character identifier="nbcert_mg" from="HAZMAT_Unit_Undermasks" moduleflags="engineeringmodule" />
-      <Character identifier="nbcert_mg" from="HAZMAT_Unit_Undermasks" moduleflags="securitymodule" />
-      <Character identifier="nbcert_rifleman" from="HAZMAT_Unit_Undermasks" moduleflags="adminmodule" multiplayeronly="true" />
-      <Character identifier="nbcert_mg" from="HAZMAT_Unit_Undermasks" moduleflags="adminmodule" requirekill="true"/>
-      <Character identifier="nbcert_heavy" from="HAZMAT_Unit_Undermasks" moduleflags="adminmodule" multiplayeronly="true" requirekill="true"/>
-      <Character identifier="nbcert_rifleman" from="HAZMAT_Unit_Undermasks" moduleflags="adminmodule"/>
-      <Character identifier="nbcert_rifleman" from="HAZMAT_Unit_Undermasks" moduleflags="adminmodule" requirekill="true"/>
-      <Character identifier="nbcert_rifleman" from="HAZMAT_Unit_Undermasks" moduleflags="AirLock" multiplayeronly="true" />
-      <Character identifier="nbcert_rifleman" from="HAZMAT_Unit_Undermasks" moduleflags="AirLock" multiplayeronly="true" />
-      <Character identifier="nbcert_rifleman" from="HAZMAT_Unit_Undermasks" moduleflags="AirLock" />
+      <Character identifier="nbcert_rifleman" from="HAZMAT_Unit_tsmnbcert" />
+      <Character identifier="nbcert_mg" from="HAZMAT_Unit_tsmnbcert" requirekill="true"/>
+      <Character identifier="nbcert_rifleman" from="HAZMAT_Unit_tsmnbcert" />
+      <Character identifier="nbcert_mg" from="HAZMAT_Unit_tsmnbcert" spawnpointtags="nest" />
+      <Character identifier="nbcert_rifleman" from="HAZMAT_Unit_tsmnbcert" spawnpointtags="nest" />
+      <Character identifier="nbcert_mg" from="HAZMAT_Unit_tsmnbcert" spawnpointtags="nest" requirekill="true"/>
+      <Character identifier="undermask_ce" from="HAZMAT_Unit_tsmnbcert" moduleflags="researchmodule" />
+      <Character identifier="nbcert_rifleman" from="HAZMAT_Unit_tsmnbcert" moduleflags="crewmodule" />
+      <Character identifier="nbcert_mg" from="HAZMAT_Unit_tsmnbcert" moduleflags="engineeringmodule" />
+      <Character identifier="nbcert_mg" from="HAZMAT_Unit_tsmnbcert" moduleflags="securitymodule" />
+      <Character identifier="nbcert_rifleman" from="HAZMAT_Unit_tsmnbcert" moduleflags="adminmodule" multiplayeronly="true" />
+      <Character identifier="nbcert_mg" from="HAZMAT_Unit_tsmnbcert" moduleflags="adminmodule" requirekill="true"/>
+      <Character identifier="nbcert_heavy" from="HAZMAT_Unit_tsmnbcert" moduleflags="adminmodule" multiplayeronly="true" requirekill="true"/>
+      <Character identifier="nbcert_rifleman" from="HAZMAT_Unit_tsmnbcert" moduleflags="adminmodule"/>
+      <Character identifier="nbcert_rifleman" from="HAZMAT_Unit_tsmnbcert" moduleflags="adminmodule" requirekill="true"/>
+      <Character identifier="nbcert_rifleman" from="HAZMAT_Unit_tsmnbcert" moduleflags="AirLock" multiplayeronly="true" />
+      <Character identifier="nbcert_rifleman" from="HAZMAT_Unit_tsmnbcert" moduleflags="AirLock" multiplayeronly="true" />
+      <Character identifier="nbcert_rifleman" from="HAZMAT_Unit_tsmnbcert" moduleflags="AirLock" />
     </Characters>
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_indestructible_wall" campaignonly="true" />
     <message header="" text="" />
