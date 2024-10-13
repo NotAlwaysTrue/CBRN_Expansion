@@ -6,7 +6,7 @@
   </Affliction>
   <Affliction identifier="immutopressureoxygenlow_ai" type="Buff" IsBuff="true" targets="human" showiconthreshold="999" showinhealthscannerthreshold="999" maxstrength="10" limbspecific="false" indicatorlimb="Head">
     <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="0" resistancefor="pressure,oxygenlow" minresistance="100.0" maxresistance="100.0">
-	    <StatusEffect target="Character" usehulloxygen="false" NeedsOxygen="false" setvalue="true"/>
+	    <StatusEffect target="Character" usehulloxygen="false" setvalue="true"/>
     </Effect>
   </Affliction>
   <Affliction identifier="ntpatch_ai" type="Buff" IsBuff="true" targets="human" showiconthreshold="999" showinhealthscannerthreshold="999" maxstrength="10" limbspecific="false" indicatorlimb="Head">
