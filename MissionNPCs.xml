@@ -8,9 +8,9 @@
         <Item identifier="berra_bio2_ai" equip="true" />
         <Item identifier="aibuff_1_autorun" />
         <Item identifier="tsm_lm_mcx">
-          <Item identifier="68_51_full" />
+          <Item identifier="lm_68_51cj_magazine" />
         </Item>
-        <Item identifier="68_51_full" amount="4" />
+        <Item identifier="lm_68_51cj_magazine" amount="4" />
         <Item identifier="breachhammer" />
       </ItemSet>
     </npc>
@@ -95,9 +95,9 @@
         <Item identifier="berra_bio2" equip="true" />
         <Item identifier="aibuff_1_autorun" />
         <Item identifier="tsm_lm_mcx">
-          <Item identifier="68_51_full" />
+          <Item identifier="lm_68_51cj_magazine" />
         </Item>
-        <Item identifier="68_51_full" amount="4" />
+        <Item identifier="lm_68_51cj_magazine" amount="4" />
         <Item identifier="breachhammer" />
         <Item identifier="berra_drl3_fab" equip="true"/>
       </ItemSet>
@@ -107,9 +107,9 @@
         <Item identifier="berra_bio2" equip="true" />
         <Item identifier="aibuff_1_autorun" />
         <Item identifier="tsm_lm_mcx">
-          <Item identifier="68_51_full" />
+          <Item identifier="lm_68_51cj_magazine" />
         </Item>
-        <Item identifier="68_51_full" amount="4" />
+        <Item identifier="lm_68_51cj_magazine" amount="4" />
         <Item identifier="breachhammer" />
         <Item identifier="berra_drl3_heat" equip="true"/>
       </ItemSet>
@@ -119,9 +119,9 @@
         <Item identifier="berra_bio2" equip="true" />
         <Item identifier="aibuff_1_autorun" />
         <Item identifier="tsm_lm_mcx">
-          <Item identifier="68_51_full" />
+          <Item identifier="lm_68_51cj_magazine" />
         </Item>
-        <Item identifier="68_51_full" amount="4" />
+        <Item identifier="lm_68_51cj_magazine" amount="4" />
         <Item identifier="breachhammer" />
         <Item identifier="vx_chemdist_40" amount="3" />
         <Item identifier="mustard_chemdist_40" amount="3" />
@@ -140,9 +140,9 @@
         <Item identifier="idcard" equip="true" />
         <Item identifier="aibuff_1_autorun" />
         <Item identifier="tsm_lm_mcx">
-          <Item identifier="68_51_full" />
+          <Item identifier="lm_68_51cj_magazine" />
         </Item>
-        <Item identifier="68_51_full" amount="4" />
+        <Item identifier="lm_68_51cj_magazine" amount="4" />
         <Item identifier="breachhammer" />
       </ItemSet>
     </npc>
@@ -164,10 +164,10 @@
         <Item identifier="idcard" equip="true" />
         <Item identifier="aibuff_1_autorun" />
         <Item identifier="tsm_lm_mcx">
-          <Item identifier="68_51_full" />
+          <Item identifier="lm_68_51cj_magazine" />
         </Item>
         <Item identifier="berra_mk153_inc" equip="true"/>
-        <Item identifier="68_51_full" amount="4" />
+        <Item identifier="lm_68_51cj_magazine" amount="4" />
         <Item identifier="breachhammer" />
       </ItemSet>
       <ItemSet commonness="1">
@@ -191,7 +191,7 @@
         </Item>
         <Item identifier="berra_STANAG_50beowulf_ap_ext" amount="3" />
         <Item identifier="berra_STANAG_50beowulf_fr_ext" amount="3" />
-        <Item identifier="68_51_full" amount="4" />
+        <Item identifier="lm_68_51cj_magazine" amount="4" />
         <Item identifier="breachhammer" />
       </ItemSet>
     </npc>
