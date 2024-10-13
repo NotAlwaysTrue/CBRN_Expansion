@@ -20,7 +20,7 @@
       <RequiredItem identifier="tsm_triton_bag" amount="2" />
     </Fabricate>
     <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="5">
-      <RequiredItem tag="fkj_545_mag_rev" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem identifier="fkj_545_mag_rev" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="1" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="1" />
       <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="1" />
@@ -53,7 +53,7 @@
       <RequiredItem identifier="tsm_triton_bag" amount="1" />
     </Fabricate>
     <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="5">
-      <RequiredItem tag="fkj_762_mag_rev" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem identifier="fkj_762_mag_rev" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="1" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="2" />
       <RequiredItem identifier="tsm_triton_bag" amount="1" />
@@ -86,7 +86,7 @@
       <RequiredItem identifier="tsm_triton_bag" amount="1" />
     </Fabricate>
     <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
-      <RequiredItem tag="fkj_762_51_mag_rev" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem identifier="fkj_762_51_mag_rev" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem identifier="tsm_oilshale" mincondition="1" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="1" />
       <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="2" />
@@ -234,7 +234,7 @@
       <RequiredItem identifier="tsm_triton_bag" amount="3" />
     </Fabricate>
     <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
-      <RequiredItem tag="fkj_m2_mag_rev" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem identifier="fkj_m2_mag_rev" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="5" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="5" />
       <RequiredItem identifier="tsm_triton_bag" amount="3" />
@@ -273,7 +273,7 @@
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
     </Fabricate>
     <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
-      <RequiredItem tag="fkj_svd_mag_rev" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem identifier="fkj_svd_mag_rev" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem identifier="tsm_triton_bag" amount="1" />
       <RequiredItem tag="advmunition_core" description="fabricationdescription.advmunition_core" amount="2" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="1" />
@@ -305,7 +305,7 @@
       <RequiredItem identifier="tsm_oilshale" amount="3" />
     </Fabricate>
     <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
-      <RequiredItem identifier="tsm_556_45_mgmag_cj" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem identifier="tsm_556_45_mgmag_rev" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem identifier="tsm_oilshale" amount="2" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
       <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="3" />
@@ -544,14 +544,14 @@
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="5" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="6" />
       <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="6" />
-      <RequiredItem tag="tsm_triton_bag" amount="4" />
+      <RequiredItem identifier="tsm_triton_bag" amount="4" />
     </Fabricate>
     <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
       <RequiredItem tag="tsm_miniammo" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="4" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="4" />
       <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="4" />
-      <RequiredItem tag="tsm_triton_bag" amount="4" />
+      <RequiredItem identifier="tsm_triton_bag" amount="4" />
     </Fabricate>
     <Deconstruct time="5">
       <Item identifier="plastic" mincondition="3" />
@@ -629,7 +629,7 @@
       <RequiredItem identifier="tsm_triton_bag" amount="1" />
     </Fabricate>
     <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
-      <RequiredItem tag="tsm_58_mag_rev" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem identifier="tsm_58_mag_rev" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" mincondition="1" />
       <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" mincondition="1" />
       <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" mincondition="1" />
