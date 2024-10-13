@@ -385,7 +385,7 @@
       <RequiredItem identifier="tsm_triton_bag" amount="1" />
     </Fabricate>
     <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
-      <RequiredItem tag="lm_556_mag_rev" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem identifier="lm_556_mag_rev" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="1" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="1" />
       <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="1" />
