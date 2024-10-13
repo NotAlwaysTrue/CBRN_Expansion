@@ -75,7 +75,7 @@
     <Effect minstrength="0" maxstrength="10" resistancefor="bleeding" minresistance="1.0" maxresistance="1.0">
       <StatusEffect target="Character" disabledeltatime="True" Interval="2.0">
         <ReduceAffliction type="bleeding" amount="20" />
-        <ReduceAffliction type="damage" amount="10" />
+        <ReduceAffliction type="damage" amount="2" />
       </StatusEffect>
     </Effect>
     <icon texture="%ModDir%/Weapons/Chemical/blackbase.png" sourcerect="0,0,1,1" color="255,255,255,255" origin="0.5,0.5" />
@@ -212,7 +212,7 @@
     Duration="0.1">
     <Effect minstrength="0" maxstrength="10" resistancefor="lacerations,explosiondamage,internaldamage,gunshotwound" minresistance="0.45" maxresistance="0.45">
       <StatusEffect target="Character" disabledeltatime="True" Interval="2.0">
-        <ReduceAffliction type="damage" amount="20" />
+        <ReduceAffliction type="damage" amount="4" />
       </StatusEffect>
     </Effect>
     <icon texture="%ModDir%/Weapons/Chemical/blackbase.png" sourcerect="0,0,1,1" color="255,255,255,255" origin="0.5,0.5" />
