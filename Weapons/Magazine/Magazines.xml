@@ -1511,17 +1511,19 @@
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" maxtargetstohit="2">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="140,85,200,175" scalemultiplier="1,0.6" />
-      <Attack structuredamage="1" targetforce="1" itemdamage="9" penetration="0.25" severlimbsprobability="0.3">
-        <Affliction identifier="gunshotwound" strength="8" />
-        <Affliction identifier="gunshotwound" strength="4" probability="0.25" />
-        <Affliction identifier="triton_7L" strength="2" />
-        <Affliction identifier="bleeding" strength="6" />
-        <Affliction identifier="bleedingnonstop" strength="2" probability="0.1" />
-        <Affliction identifier="bleedingnonstop" strength="1" probability="0.3" />
+      <Attack structuredamage="1" targetforce="1" itemdamage="9" penetration="0.27" severlimbsprobability="0.3">
+        <Affliction identifier="gunshotwound" strength="9" />
+        <Affliction identifier="gunshotwound" strength="5" probability="0.25" />
+        <Affliction identifier="triton_7L" strength="6" />
+        <Affliction identifier="bleeding" strength="8" />
+        <Affliction identifier="bleedingnonstop" strength="3" probability="0.5" />
         <Affliction identifier="bleedingnonstop" strength="1" probability="0.3" />
         <Affliction identifier="stun" strength="0.25" probability="0.1" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
+        <Explosion range="30.0" showEffects="false" penetration="1">
+          <Affliction identifier="triton_7L" strength="6" dividebylimbcount="true"/>
+        </Explosion>
         <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
         <ParticleEmitter particle="tsm_bg_explosion" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="5" velocitymin="-10" velocitymax="-100" scalemin="0.1" scalemax="0.2" />
       </StatusEffect>
@@ -1543,15 +1545,18 @@
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" maxtargetstohit="2">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="140,85,200,175" scalemultiplier="1,0.6" />
-      <Attack structuredamage="2" targetforce="2" itemdamage="10" penetration="0.3" severlimbsprobability="0.8">
-        <Affliction identifier="gunshotwound" strength="8" />
-        <Affliction identifier="gunshotwound" strength="4" probability="0.1" />
-        <Affliction identifier="bleeding" strength="5" />
-        <Affliction identifier="bleedingnonstop" strength="5" probability="0.1" />
-        <Affliction identifier="triton_7L" strength="5" />
+      <Attack structuredamage="2" targetforce="2" itemdamage="10" penetration="0.32" severlimbsprobability="0.8">
+        <Affliction identifier="gunshotwound" strength="10" />
+        <Affliction identifier="gunshotwound" strength="5" probability="0.1" />
+        <Affliction identifier="bleeding" strength="7" />
+        <Affliction identifier="bleedingnonstop" strength="5" probability="0.5" />
+        <Affliction identifier="triton_7L" strength="8" />
         <Affliction identifier="stun" strength="0.25" probability="0.25" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
+        <Explosion range="30.0" showEffects="false" penetration="1">
+          <Affliction identifier="triton_7L" strength="8" dividebylimbcount="true"/>
+        </Explosion>
         <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
         <ParticleEmitter particle="tsm_bg_explosion" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="5" velocitymin="-10" velocitymax="-100" scalemin="0.1" scalemax="0.2" />
       </StatusEffect>
@@ -1573,16 +1578,19 @@
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" maxtargetstohit="3">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="140,85,200,175" scalemultiplier="1,0.6" />
-      <Attack structuredamage="2.5" targetforce="8" itemdamage="15" penetration="0.3" severlimbsprobability="0.8">
-        <Affliction identifier="gunshotwound" strength="20" />
-        <Affliction identifier="gunshotwound" strength="10" probability="0.4" />
-        <Affliction identifier="triton_7L" strength="10" />
-        <Affliction identifier="bleeding" strength="15" />
-        <Affliction identifier="bleedingnonstop" strength="7" probability="0.15" />
+      <Attack structuredamage="2.5" targetforce="8" itemdamage="15" penetration="0.32" severlimbsprobability="0.8">
+        <Affliction identifier="gunshotwound" strength="25" />
+        <Affliction identifier="gunshotwound" strength="12" probability="0.4" />
+        <Affliction identifier="triton_7L" strength="15" />
+        <Affliction identifier="bleeding" strength="13" />
+        <Affliction identifier="bleedingnonstop" strength="8" probability="0.15" />
         <Affliction identifier="stun" strength="0.1" />
         <Affliction identifier="stun" strength="0.25" probability="0.15" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
+        <Explosion range="30.0" showEffects="false" penetration="1">
+          <Affliction identifier="triton_7L" strength="8" dividebylimbcount="true"/>
+        </Explosion>
         <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
         <ParticleEmitter particle="tsm_bg_explosion" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="5" velocitymin="-10" velocitymax="-100" scalemin="0.1" scalemax="0.2" />
       </StatusEffect>
@@ -1604,17 +1612,18 @@
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" maxtargetstohit="2">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="140,85,200,175" scalemultiplier="1,0.6" />
-      <Attack structuredamage="1" targetforce="1" itemdamage="10" penetration="0.28" severlimbsprobability="0.3">
-        <Affliction identifier="gunshotwound" strength="6" />
-        <Affliction identifier="gunshotwound" strength="1" probability="0.2" />
-        <Affliction identifier="gunshotwound" strength="1" probability="0.1" />
-        <Affliction identifier="gunshotwound" strength="1" probability="0.1" />
-        <Affliction identifier="triton_7L" strength="2.5" />
-        <Affliction identifier="bleeding" strength="2" probability="0.2" />
-        <Affliction identifier="bleedingnonstop" strength="1" probability="0.3" />
-        <Affliction identifier="stun" strength="0.25" probability="0.15" />
+      <Attack structuredamage="1" targetforce="1" itemdamage="10" penetration="0.3" severlimbsprobability="0.3">
+        <Affliction identifier="gunshotwound" strength="9" />
+        <Affliction identifier="gunshotwound" strength="3" probability="0.5" />
+        <Affliction identifier="triton_7L" strength="6" />
+        <Affliction identifier="bleeding" strength="3" probability="0.5" />
+        <Affliction identifier="bleedingnonstop" strength="3" probability="0.3" />
+        <Affliction identifier="stun" strength="0.1" probability="0.1" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
+        <Explosion range="30.0" showEffects="false" penetration="1">
+          <Affliction identifier="triton_7L" strength="6" dividebylimbcount="true"/>
+        </Explosion>
         <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
         <ParticleEmitter particle="tsm_bg_explosion" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="5" velocitymin="-10" velocitymax="-100" scalemin="0.1" scalemax="0.2" />
       </StatusEffect>
@@ -1636,17 +1645,18 @@
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" maxtargetstohit="2">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="140,85,200,175" scalemultiplier="1,0.6" />
-      <Attack structuredamage="0" targetforce="2" itemdamage="12" penetration="0.35" severlimbsprobability="1">
-        <Affliction identifier="gunshotwound" strength="8" />
-        <Affliction identifier="gunshotwound" strength="1" probability="0.15" />
-        <Affliction identifier="gunshotwound" strength="1" probability="0.15" />
-        <Affliction identifier="bleedingnonstop" strength="2" />
-        <Affliction identifier="bleedingnonstop" strength="1" probability="0.3" />
-        <Affliction identifier="bleedingnonstop" strength="1" probability="0.25" />
-        <Affliction identifier="triton_7L" strength="3" />
-        <Affliction identifier="stun" strength="0.25" probability="0.2" />
+      <Attack structuredamage="0" targetforce="2" itemdamage="12" penetration="0.37" severlimbsprobability="1">
+        <Affliction identifier="gunshotwound" strength="10" />
+        <Affliction identifier="gunshotwound" strength="3" probability="0.3" />
+        <Affliction identifier="bleedingnonstop" strength="4" />
+        <Affliction identifier="bleedingnonstop" strength="2" probability="0.3" />
+        <Affliction identifier="triton_7L" strength="6" />
+        <Affliction identifier="stun" strength="0.1" probability="0.1" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
+        <Explosion range="30.0" showEffects="false" penetration="1">
+          <Affliction identifier="triton_7L" strength="6" dividebylimbcount="true"/>
+        </Explosion>
         <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
         <ParticleEmitter particle="tsm_bg_explosion" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="5" velocitymin="-10" velocitymax="-100" scalemin="0.1" scalemax="0.2" />
       </StatusEffect>
@@ -1668,18 +1678,18 @@
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" maxtargetstohit="2">
     <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="140,85,200,175" scalemultiplier="1,0.6" />
-      <Attack structuredamage="1" targetforce="2" itemdamage="9" penetration="0.4" severlimbsprobability="0.5">
-        <Affliction identifier="gunshotwound" strength="8" />
-        <Affliction identifier="explosiondamage" strength="2" probability="0.15" />
-        <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
-        <Affliction identifier="gunshotwound" strength="2" probability="0.1" />
-        <Affliction identifier="triton_7L" strength="5" />
-        <Affliction identifier="bleeding" strength="8" />
-        <Affliction identifier="bleedingnonstop" strength="5" probability="0.15" />
-        <Affliction identifier="stun" strength="0.1" probability="0.25" />
-        <Affliction identifier="stun" strength="0.25" probability="0.25" />
+      <Attack structuredamage="1" targetforce="2" itemdamage="9" penetration="0.42" severlimbsprobability="0.5">
+        <Affliction identifier="gunshotwound" strength="10" />
+        <Affliction identifier="gunshotwound" strength="5" probability="0.3" />
+        <Affliction identifier="triton_7L" strength="8" />
+        <Affliction identifier="bleeding" strength="9" />
+        <Affliction identifier="bleedingnonstop" strength="7" probability="0.3" />
+        <Affliction identifier="stun" strength="0.1" probability="0.1" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
+        <Explosion range="30.0" showEffects="false" penetration="1">
+          <Affliction identifier="triton_7L" strength="6" dividebylimbcount="true"/>
+        </Explosion>
         <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
         <ParticleEmitter particle="tsm_bg_explosion" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="5" velocitymin="-10" velocitymax="-100" scalemin="0.1" scalemax="0.2" />
       </StatusEffect>
@@ -1701,15 +1711,18 @@
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" maxtargetstohit="2">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="140,85,200,175" scalemultiplier="1,0.6" />
-      <Attack structuredamage="2" targetforce="5" itemdamage="16" penetration="0.33" severlimbsprobability="0.3">
-        <Affliction identifier="gunshotwound" strength="9" />
-        <Affliction identifier="gunshotwound" strength="5" probability="0.32" />
-        <Affliction identifier="triton_7L" strength="7" />
-        <Affliction identifier="bleeding" strength="12" />
+      <Attack structuredamage="2" targetforce="5" itemdamage="16" penetration="0.35" severlimbsprobability="0.3">
+        <Affliction identifier="gunshotwound" strength="11" />
+        <Affliction identifier="gunshotwound" strength="7" probability="0.32" />
+        <Affliction identifier="triton_7L" strength="12" />
+        <Affliction identifier="bleeding" strength="13" />
         <Affliction identifier="bleedingnonstop" strength="7" probability="0.15" />
         <Affliction identifier="stun" strength="0.2" probability="0.15" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
+        <Explosion range="35.0" showEffects="false" penetration="1">
+          <Affliction identifier="triton_7L" strength="6" dividebylimbcount="true"/>
+        </Explosion>
         <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
         <ParticleEmitter particle="tsm_bg_explosion" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="5" velocitymin="-10" velocitymax="-100" scalemin="0.1" scalemax="0.2" />
       </StatusEffect>
@@ -1731,15 +1744,18 @@
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" maxtargetstohit="2">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="140,85,200,175" scalemultiplier="1,0.6" />
-      <Attack structuredamage="10" targetforce="23" itemdamage="50" penetration="0.3" severlimbsprobability="1">
-        <Affliction identifier="gunshotwound" strength="40" />
-        <Affliction identifier="gunshotwound" strength="12" probability="0.4" />
+      <Attack structuredamage="10" targetforce="23" itemdamage="50" penetration="0.32" severlimbsprobability="1">
+        <Affliction identifier="gunshotwound" strength="50" />
+        <Affliction identifier="gunshotwound" strength="15" probability="0.3" />
         <Affliction identifier="triton_7L" strength="20" />
         <Affliction identifier="bleeding" strength="15" />
-        <Affliction identifier="bleedingnonstop" strength="8" probability="0.3" />
+        <Affliction identifier="bleedingnonstop" strength="10" probability="0.5" />
         <Affliction identifier="stun" strength="1" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
+        <Explosion range="40.0" showEffects="false" penetration="1">
+          <Affliction identifier="triton_7L" strength="10" dividebylimbcount="true"/>
+        </Explosion>
         <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
         <ParticleEmitter particle="tsm_bg_explosion" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="5" velocitymin="-10" velocitymax="-100" scalemin="0.1" scalemax="0.2" />
       </StatusEffect>
@@ -1761,17 +1777,18 @@
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" hitscan="true" maxtargetstohit="2">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="140,85,200,175" scalemultiplier="1,0.6" />
-      <Attack structuredamage="1" targetforce="2" itemdamage="9" penetration="0.31" severlimbsprobability="0.265">
-        <Affliction identifier="gunshotwound" strength="7" />
-        <Affliction identifier="gunshotwound" strength="2" probability="0.15" />
-        <Affliction identifier="gunshotwound" strength="1" probability="0.15" />
-        <Affliction identifier="bleeding" strength="5" />
-        <Affliction identifier="bleeding" strength="2" probability="0.1" />
-        <Affliction identifier="bleeding" strength="2" probability="0.1" />
-        <Affliction identifier="triton_7L" strength="2" />
-        <Affliction identifier="stun" strength="0.25" probability="0.25" />
+      <Attack structuredamage="1" targetforce="2" itemdamage="9" penetration="0.33" severlimbsprobability="0.265">
+        <Affliction identifier="gunshotwound" strength="10" />
+        <Affliction identifier="gunshotwound" strength="5" probability="0.5" />
+        <Affliction identifier="bleeding" strength="8" />
+        <Affliction identifier="bleeding" strength="4" probability="0.5" />
+        <Affliction identifier="triton_7L" strength="5" />
+        <Affliction identifier="stun" strength="0.1" probability="0.1" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
+        <Explosion range="30.0" showEffects="false" penetration="1">
+          <Affliction identifier="triton_7L" strength="6" dividebylimbcount="true"/>
+        </Explosion>
         <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
         <ParticleEmitter particle="tsm_bg_explosion" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="5" velocitymin="-10" velocitymax="-100" scalemin="0.1" scalemax="0.2" />
       </StatusEffect>
@@ -1796,11 +1813,14 @@
         <Affliction identifier="gunshotwound" strength="20" />
         <Affliction identifier="lacerations" strength="20" />
         <Affliction identifier="burn" strength="20" />
-        <Affliction identifier="triton_7L" strength="12" />
+        <Affliction identifier="triton_7L" strength="20" />
         <Affliction identifier="bleedingnonstop" strength="25" />
         <Affliction identifier="stun" strength="3" probability="0.5" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
+        <Explosion range="50.0" showEffects="false" penetration="1">
+          <Affliction identifier="triton_7L" strength="20" dividebylimbcount="true"/>
+        </Explosion>
         <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
         <ParticleEmitter particle="tsm_bg_explosion" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="5" velocitymin="-10" velocitymax="-100" scalemin="0.1" scalemax="0.2" />
       </StatusEffect>
