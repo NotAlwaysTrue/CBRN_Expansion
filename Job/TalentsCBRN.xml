@@ -65,6 +65,7 @@
       <Replace tag="[rangeamount]" value="10" color="gui.green"/>
       <Replace tag="[damageamount]" value="10" color="gui.green"/>
     </Description>
+    <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="4,4" sheetelementsize="128,128"/>
     <AbilityGroupEffect abilityeffecttype="None">
       <Abilities>
         <CharacterAbilityGiveStat stattype="ExplosionRadiusMultiplier" value="0.1"/>
