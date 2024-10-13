@@ -2,34 +2,34 @@
 <Afflictions>
   <Affliction identifier="vxpoisoning_displayer" type="poison" IsBuff="true" damageoverlayalpha="0.1" showiconthreshold="30" showinhealthscannerthreshold="0" maxstrength="50" limbspecific="false" indicatorlimb="Torso" iconcolors="255,162,0,255">
     <Effect minstrength="0" maxstrength="50" strengthchange="1" maxvitalitydecrease="0" />
-    <icon texture="%ModDir%/Weapons/Chemical/blackbase.png" sourcerect="18,10,145,145" color="255,255,255,255" origin="0.5,0.5" />
+    <icon texture="%ModDir:3278494407%/Weapons/Chemical/blackbase.png" sourcerect="18,10,145,145" color="255,255,255,255" origin="0.5,0.5" />
     <!--status displayer, dont do anything-->
   </Affliction>
   <Affliction identifier="bzpoisoning_displayer" type="poison" IsBuff="true" damageoverlayalpha="0.1" showiconthreshold="20" showinhealthscannerthreshold="0" maxstrength="200" limbspecific="false" indicatorlimb="Torso" iconcolors="255,162,0,255">
     <Effect minstrength="0" maxstrength="20" strengthchange="-0.2" maxvitalitydecrease="0" />
     <Effect minstrength="20" maxstrength="200" strengthchange="-0.2" maxvitalitydecrease="0" />
-    <icon texture="%ModDir%/Weapons/Chemical/blackbase.png" sourcerect="18,10,145,145" color="255,255,255,255" origin="0.5,0.5" />
+    <icon texture="%ModDir:3278494407%/Weapons/Chemical/blackbase.png" sourcerect="18,10,145,145" color="255,255,255,255" origin="0.5,0.5" />
     <!--status displayer, dont do anything-->
   </Affliction>
   <Affliction identifier="phosgenepoisoning_displayer" type="poison" IsBuff="true" damageoverlayalpha="0.1" showiconthreshold="30" showinhealthscannerthreshold="0" maxstrength="200" limbspecific="false" indicatorlimb="Torso" iconcolors="255,162,0,255">
     <Effect minstrength="0" maxstrength="3" strengthchange="-0.2" maxvitalitydecrease="0" />
     <Effect minstrength="3" maxstrength="200" strengthchange="-0.2" maxvitalitydecrease="0" />
-    <icon texture="%ModDir%/Weapons/Chemical/blackbase.png" sourcerect="18,10,145,145" color="255,255,255,255" origin="0.5,0.5" />
+    <icon texture="%ModDir:3278494407%/Weapons/Chemical/blackbase.png" sourcerect="18,10,145,145" color="255,255,255,255" origin="0.5,0.5" />
     <!--status displayer, dont do anything-->
   </Affliction>
   <Affliction identifier="mustardpoisoning_displayer" type="poison" IsBuff="true" damageoverlayalpha="0.1" showiconthreshold="0" showinhealthscannerthreshold="0" maxstrength="200" limbspecific="false" indicatorlimb="Torso" iconcolors="255,162,0,255">
     <Effect minstrength="0" maxstrength="200" strengthchange="-0.5" maxvitalitydecrease="0" />
-    <icon texture="%ModDir%/Weapons/Chemical/blackbase.png" sourcerect="18,10,145,145" color="255,255,255,255" origin="0.5,0.5" />
+    <icon texture="%ModDir:3278494407%/Weapons/Chemical/blackbase.png" sourcerect="18,10,145,145" color="255,255,255,255" origin="0.5,0.5" />
     <!--status displayer, dont do anything-->
   </Affliction>
   <Affliction identifier="cspoisoning_displayer" type="poison" IsBuff="true" damageoverlayalpha="0.1" showiconthreshold="0" showinhealthscannerthreshold="0" maxstrength="200" limbspecific="false" indicatorlimb="Torso" iconcolors="255,162,0,255">
     <Effect minstrength="0" maxstrength="200" strengthchange="-0.5" maxvitalitydecrease="0" />
-    <icon texture="%ModDir%/Weapons/Chemical/blackbase.png" sourcerect="18,10,145,145" color="255,255,255,255" origin="0.5,0.5" />
+    <icon texture="%ModDir:3278494407%/Weapons/Chemical/blackbase.png" sourcerect="18,10,145,145" color="255,255,255,255" origin="0.5,0.5" />
     <!--status displayer, dont do anything-->
   </Affliction>
   <Affliction identifier="anthrax_displayer" type="bioinfection" IsBuff="true" damageoverlayalpha="0.1" showiconthreshold="80" showinhealthscannerthreshold="60" maxstrength="200" limbspecific="false" indicatorlimb="Torso" iconcolors="255,162,0,255">
     <Effect minstrength="0" maxstrength="200" strengthchange="1.0" maxvitalitydecrease="0" />
-    <icon texture="%ModDir%/Weapons/Chemical/blackbase.png" sourcerect="192,10,145,145" color="255,255,255,255" origin="0.5,0.5" />
+    <icon texture="%ModDir:3278494407%/Weapons/Chemical/blackbase.png" sourcerect="192,10,145,145" color="255,255,255,255" origin="0.5,0.5" />
     <!--status displayer, dont do anything-->
   </Affliction>
   <Affliction identifier="omegathedeath" type="None" IsBuff="true" damageoverlayalpha="0.0" showiconthreshold="0" showinhealthscannerthreshold="0" maxstrength="1" limbspecific="false" indicatorlimb="Torso" iconcolors="255,162,0,255">
@@ -38,7 +38,7 @@
         <ReduceAffliction type="miracleworker" amount="99999" />
       </StatusEffect>
 	  </Effect>
-    <icon texture="%ModDir%/Weapons/Chemical/blackbase.png" sourcerect="0,0,1,1" color="255,255,255,255" origin="0.5,0.5" />
+    <icon texture="%ModDir:3278494407%/Weapons/Chemical/blackbase.png" sourcerect="0,0,1,1" color="255,255,255,255" origin="0.5,0.5" />
     <!--The end, 22:13-->
   </Affliction>
 
@@ -677,17 +677,17 @@
         <Conditional ishuman="true" />
         <Conditional ismale="true" />
         <Conditional sym_cough="gte 1" />
-        <Sound file="%ModDir%/Misc/Oggs/male_cough1.ogg" selectionmode="Random" />
-        <Sound file="%ModDir%/Misc/Oggs/male_cough2.ogg" />
-        <Sound file="%ModDir%/Misc/Oggs/male_cough3.ogg" />
+        <Sound file="%ModDir:3278494407%/Misc/Oggs/male_cough1.ogg" selectionmode="Random" />
+        <Sound file="%ModDir:3278494407%/Misc/Oggs/male_cough2.ogg" />
+        <Sound file="%ModDir:3278494407%/Misc/Oggs/male_cough3.ogg" />
       </StatusEffect>
       <StatusEffect target="Character" comparison="and">
         <Conditional ishuman="true" />
         <Conditional isfemale="true" />
         <Conditional sym_cough="gte 1" />
-        <Sound file="%ModDir%/Misc/Oggs/female_cough1.ogg" selectionmode="Random" />
-        <Sound file="%ModDir%/Misc/Oggs/female_cough2.ogg" />
-        <Sound file="%ModDir%/Misc/Oggs/female_cough3.ogg" />
+        <Sound file="%ModDir:3278494407%/Misc/Oggs/female_cough1.ogg" selectionmode="Random" />
+        <Sound file="%ModDir:3278494407%/Misc/Oggs/female_cough2.ogg" />
+        <Sound file="%ModDir:3278494407%/Misc/Oggs/female_cough3.ogg" />
       </StatusEffect>
     </PeriodicEffect>
     <icon texture="%ModDir:2852411866%/Afflictions/Afflictionicons.png" sourcerect="0,137,122,119" color="255,0,0,255" origin="0,0" />
@@ -729,15 +729,15 @@
         <TriggerEvent identifier="brokenarrow_normal_event" />
       </StatusEffect>
 	  </Effect>
-    <icon texture="%ModDir%/Weapons/Chemical/blackbase.png" sourcerect="0,0,1,1" color="255,255,255,255" origin="0.5,0.5" />
+    <icon texture="%ModDir:3278494407%/Weapons/Chemical/blackbase.png" sourcerect="0,0,1,1" color="255,255,255,255" origin="0.5,0.5" />
   </Affliction>
   <Affliction identifier="brokenarrow_alert_agent" type="poison" IsBuff="true" damageoverlayalpha="0.1" showiconthreshold="0" showinhealthscannerthreshold="999" maxstrength="999" limbspecific="false" indicatorlimb="Torso" iconcolors="255,162,0,255">
     <Effect minstrength="0" maxstrength="999" strengthchange="-1" maxvitalitydecrease="0" >
 	  <StatusEffect target="Character" >
-        <Sound file="%ModDir%/Misc/brokenarrow/alert.ogg" loop="true"/>
+        <Sound file="%ModDir:3278494407%/Misc/brokenarrow/alert.ogg" loop="true"/>
       </StatusEffect>
 	  </Effect>
-    <icon texture="%ModDir%/Weapons/Chemical/blackbase.png" sourcerect="0,0,1,1" color="255,255,255,255" origin="0.5,0.5" />
+    <icon texture="%ModDir:3278494407%/Weapons/Chemical/blackbase.png" sourcerect="0,0,1,1" color="255,255,255,255" origin="0.5,0.5" />
     <!--status displayer, dont do anything-->
   </Affliction>
   <!--Buff-->
@@ -759,7 +759,7 @@
   <!--ZombieVirus:Removed, using a new type of similar thing instead-->
   <Affliction identifier="zombievirusinfection" type="None" maxstrength="1" limbspecific="false" indicatorlimb="Torso" Duration="0.1">
     <Effect minstrength="0" maxstrength="1" maxvitalitydecrease="0" strengthchange="-100"/>
-    <icon texture="%ModDir%/Weapons/Chemical/blackbase.png" sourcerect="0,0,1,1" color="255,255,255,255" origin="0.5,0.5" />
+    <icon texture="%ModDir:3278494407%/Weapons/Chemical/blackbase.png" sourcerect="0,0,1,1" color="255,255,255,255" origin="0.5,0.5" />
   </Affliction>
   <Affliction identifier="zombievirus_air_agent" type="None" maxstrength="1" limbspecific="false" indicatorlimb="Head" Duration="0.1">
     <Effect minstrength="0" maxstrength="1" maxvitalitydecrease="0" strengthchange="-100" />

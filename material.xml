@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
   <Item identifier="canister" subcategory="CBRN" category="Material" maxstacksize="2" damagedbyprojectiles="true" maxstacksizecharacterinventory="1" health="30" scale="0.25" cargocontaineridentifier="metalcrate" tags="mediumitem,hazardouscanister" impactsoundtag="impact_metal_light" impacttolerance="5">
-    <InventoryIcon texture="%ModDir%/Misc/Material/containerplain.png" sourcerect="0,0,316,73" />
-    <Sprite texture="%ModDir%/Misc/Material/containerplain.png" depth="0.56" sourcerect="0,0,316,73" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Misc/Material/containerplain.png" sourcerect="0,0,316,73" />
+    <Sprite texture="%ModDir:3278494407%/Misc/Material/containerplain.png" depth="0.56" sourcerect="0,0,316,73" origin="0.5,0.5" />
     <Body width="320" height="78" density="20" />
     <Deconstruct time="10">
       <Item identifier="steel" amount="1" />
@@ -19,7 +19,7 @@
       <RequiredItem identifier="steel" amount="2" />
     </Fabricate>
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite texture="%ModDir%/Misc/Material/containerplain.png" canbehiddenbyotherwearables="false" sourcerect="0,0,316,100" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.0" />
+      <sprite texture="%ModDir:3278494407%/Misc/Material/containerplain.png" canbehiddenbyotherwearables="false" sourcerect="0,0,316,100" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.0" />
     </Wearable>
     <Throwable characterusable="false" canBeCombined="true" slots="RightHand+LeftHand" aimable="false" throwforce="2.0" aimpos="-10,-40" holdpos="-10,-40" holdangle="90" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnImpact" target="This" condition="-10" disabledeltatime="true" />
@@ -34,8 +34,8 @@
     </Throwable>
   </Item>
   <Item identifier="vxcanister" subcategory="CBRN" category="Material" maxstacksize="2" damagedbyprojectiles="true" maxstacksizecharacterinventory="1" health="30" scale="0.25" cargocontaineridentifier="metalcrate" tags="mediumitem,hazardouscanister" impactsoundtag="impact_metal_light" impacttolerance="5">
-    <InventoryIcon texture="%ModDir%/Misc/Material/chemcontainer.png" sourcerect="5,146,316,73" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Misc/Material/chemcontainer.png" depth="0.56" sourcerect="5,146,316,73" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Misc/Material/chemcontainer.png" sourcerect="5,146,316,73" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Misc/Material/chemcontainer.png" depth="0.56" sourcerect="5,146,316,73" origin="0.5,0.5" />
     <Body width="320" height="78" density="20" />
     <Deconstruct time="10">
       <Item identifier="steel" amount="1" />
@@ -54,7 +54,7 @@
       <RequiredItem identifier="oxygentank" amount="1" usecondition="true" />
     </Fabricate>
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite texture="%ModDir%/Misc/Material/containerplain.png" canbehiddenbyotherwearables="false" sourcerect="0,0,316,100" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.0" />
+      <sprite texture="%ModDir:3278494407%/Misc/Material/containerplain.png" canbehiddenbyotherwearables="false" sourcerect="0,0,316,100" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.0" />
     </Wearable>
     <Throwable characterusable="false" canBeCombined="true" slots="RightHand+LeftHand" aimable="false" throwforce="2.0" aimpos="-10,-40" holdpos="-10,-40" holdangle="90" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnImpact" target="This" condition="-10" disabledeltatime="true" />
@@ -104,8 +104,8 @@
     </Throwable>
   </Item>
   <Item identifier="mustardcanister" subcategory="CBRN" category="Material" maxstacksize="2" damagedbyprojectiles="true" maxstacksizecharacterinventory="1" health="30" scale="0.25" cargocontaineridentifier="metalcrate" tags="mediumitem,hazardouscanister" impactsoundtag="impact_metal_light" impacttolerance="5">
-    <InventoryIcon texture="%ModDir%/Misc/Material/chemcontainer.png" sourcerect="323,73,316,73" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Misc/Material/chemcontainer.png" depth="0.56" sourcerect="323,73,316,73" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Misc/Material/chemcontainer.png" sourcerect="323,73,316,73" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Misc/Material/chemcontainer.png" depth="0.56" sourcerect="323,73,316,73" origin="0.5,0.5" />
     <Body width="320" height="78" density="20" />
     <Deconstruct time="10">
       <Item identifier="steel" amount="1" />
@@ -124,7 +124,7 @@
       <RequiredItem identifier="oxygentank" amount="1" usecondition="true" />
     </Fabricate>
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite texture="%ModDir%/Misc/Material/containerplain.png" canbehiddenbyotherwearables="false" sourcerect="0,0,316,100" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.0" />
+      <sprite texture="%ModDir:3278494407%/Misc/Material/containerplain.png" canbehiddenbyotherwearables="false" sourcerect="0,0,316,100" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.0" />
     </Wearable>
     <Throwable characterusable="false" canBeCombined="true" slots="RightHand+LeftHand" aimable="false" throwforce="2.0" aimpos="-10,-40" holdpos="-10,-40" holdangle="90" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnImpact" target="This" condition="-10" disabledeltatime="true" />
@@ -177,8 +177,8 @@
     </Throwable>
   </Item>
   <Item identifier="bzcanister" subcategory="CBRN" category="Material" maxstacksize="2" damagedbyprojectiles="true" maxstacksizecharacterinventory="1" health="30" scale="0.25" cargocontaineridentifier="metalcrate" tags="mediumitem,hazardouscanister" impactsoundtag="impact_metal_light" impacttolerance="5">
-    <InventoryIcon texture="%ModDir%/Misc/Material/chemcontainer.png" sourcerect="323,0,316,73" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Misc/Material/chemcontainer.png" depth="0.56" sourcerect="323,0,316,73" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Misc/Material/chemcontainer.png" sourcerect="323,0,316,73" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Misc/Material/chemcontainer.png" depth="0.56" sourcerect="323,0,316,73" origin="0.5,0.5" />
     <Body width="320" height="78" density="20" />
     <Deconstruct time="10">
       <Item identifier="steel" amount="1" />
@@ -195,7 +195,7 @@
     <RequiredItem identifier="oxygentank" mincondition="1.0" usecondition="true" />
     </Fabricate>
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite texture="%ModDir%/Misc/Material/containerplain.png" canbehiddenbyotherwearables="false" sourcerect="0,0,316,100" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.0" />
+      <sprite texture="%ModDir:3278494407%/Misc/Material/containerplain.png" canbehiddenbyotherwearables="false" sourcerect="0,0,316,100" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.0" />
     </Wearable>
     <Throwable characterusable="false" canBeCombined="true" slots="RightHand+LeftHand" aimable="false" throwforce="2.0" aimpos="-10,-40" holdpos="-10,-40" holdangle="90" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnImpact" target="This" condition="-10" disabledeltatime="true" />
@@ -248,8 +248,8 @@
     </Throwable>
   </Item>
   <Item identifier="cscanister" subcategory="CBRN" category="Material" maxstacksize="2" damagedbyprojectiles="true" maxstacksizecharacterinventory="1" health="30" scale="0.25" cargocontaineridentifier="metalcrate" tags="mediumitem,hazardouscanister" impactsoundtag="impact_metal_light" impacttolerance="5">
-    <InventoryIcon texture="%ModDir%/Misc/Material/chemcontainer.png" sourcerect="323,0,316,73" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Misc/Material/chemcontainer.png" depth="0.56" sourcerect="323,0,316,73" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Misc/Material/chemcontainer.png" sourcerect="323,0,316,73" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Misc/Material/chemcontainer.png" depth="0.56" sourcerect="323,0,316,73" origin="0.5,0.5" />
     <Body width="320" height="78" density="20" />
     <Deconstruct time="10">
       <Item identifier="steel" amount="1" />
@@ -265,7 +265,7 @@
       <RequiredItem identifier="chlorine" mincondition="0.5" usecondition="true" />
     </Fabricate>
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite texture="%ModDir%/Misc/Material/containerplain.png" canbehiddenbyotherwearables="false" sourcerect="0,0,316,100" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.0" />
+      <sprite texture="%ModDir:3278494407%/Misc/Material/containerplain.png" canbehiddenbyotherwearables="false" sourcerect="0,0,316,100" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.0" />
     </Wearable>
     <Throwable characterusable="false" canBeCombined="true" slots="RightHand+LeftHand" aimable="false" throwforce="2.0" aimpos="-10,-40" holdpos="-10,-40" holdangle="90" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnImpact" target="This" condition="-10" disabledeltatime="true" />
@@ -317,8 +317,8 @@
     </Throwable>
   </Item>
   <Item identifier="phosgenecanister" subcategory="CBRN" category="Material" maxstacksize="2" damagedbyprojectiles="true" maxstacksizecharacterinventory="1" health="30" scale="0.25" cargocontaineridentifier="metalcrate" tags="mediumitem,hazardouscanister" impactsoundtag="impact_metal_light" impacttolerance="5">
-    <InventoryIcon texture="%ModDir%/Misc/Material/chemcontainer.png" sourcerect="323,145,316,73" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Misc/Material/chemcontainer.png" depth="0.56" sourcerect="323,145,316,73" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Misc/Material/chemcontainer.png" sourcerect="323,145,316,73" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Misc/Material/chemcontainer.png" depth="0.56" sourcerect="323,145,316,73" origin="0.5,0.5" />
     <Body width="320" height="78" density="20" />
     <Deconstruct time="10">
       <Item identifier="steel" amount="1" />
@@ -335,7 +335,7 @@
       <RequiredItem identifier="oxygentank" mincondition="0.5" usecondition="true" />
     </Fabricate>
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite texture="%ModDir%/Misc/Material/containerplain.png" canbehiddenbyotherwearables="false" sourcerect="0,0,316,100" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.0" />
+      <sprite texture="%ModDir:3278494407%/Misc/Material/containerplain.png" canbehiddenbyotherwearables="false" sourcerect="0,0,316,100" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.0" />
     </Wearable>
     <Throwable characterusable="false" canBeCombined="true" slots="RightHand+LeftHand" aimable="false" throwforce="2.0" aimpos="-10,-40" holdpos="-10,-40" holdangle="90" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnImpact" target="This" condition="-10" disabledeltatime="true" />
@@ -353,8 +353,8 @@
 
 
   <Item identifier="u235core_low" subcategory="nuclearmaterial" category="Material" maxstacksize="2" damagedbyprojectiles="true" maxstacksizecharacterinventory="1" health="30" scale="0.1" cargocontaineridentifier="metalcrate" tags="mediumitem,hazardouscanister" impactsoundtag="impact_metal_light" impacttolerance="5">
-    <InventoryIcon texture="%ModDir%/Misc/Material/ball.png" sourcerect="0,0,186,186" />
-    <Sprite texture="%ModDir%/Misc/Material/ball.png" depth="0.56" sourcerect="0,0,186,186" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Misc/Material/ball.png" sourcerect="0,0,186,186" />
+    <Sprite texture="%ModDir:3278494407%/Misc/Material/ball.png" depth="0.56" sourcerect="0,0,186,186" origin="0.5,0.5" />
     <Body radius="6" density="20" />
     <Deconstruct time="10">
       <Item identifier="uranium" amount="4" />
@@ -366,7 +366,7 @@
       <RequiredItem identifier="fuelrod" amount="2" />
     </Fabricate>
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite texture="%ModDir%/Misc/Material/ball.png" canbehiddenbyotherwearables="false" sourcerect="0,0,0,0" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.0" />
+      <sprite texture="%ModDir:3278494407%/Misc/Material/ball.png" canbehiddenbyotherwearables="false" sourcerect="0,0,0,0" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.0" />
     </Wearable>
     <Throwable characterusable="false" canBeCombined="true" slots="RightHand+LeftHand" aimable="false" throwforce="2.0" aimpos="-10,-40" holdpos="-10,-40" holdangle="90" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnBroken" target="This">
@@ -375,8 +375,8 @@
     </Throwable>
   </Item>
   <Item identifier="u235core_medium" subcategory="nuclearmaterial" category="Material" maxstacksize="2" damagedbyprojectiles="true" maxstacksizecharacterinventory="1" health="30" scale="0.15" cargocontaineridentifier="metalcrate" tags="mediumitem,hazardouscanister" impactsoundtag="impact_metal_light" impacttolerance="5">
-    <InventoryIcon texture="%ModDir%/Misc/Material/ball.png" sourcerect="0,0,186,186" />
-    <Sprite texture="%ModDir%/Misc/Material/ball.png" depth="0.56" sourcerect="0,0,186,186" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Misc/Material/ball.png" sourcerect="0,0,186,186" />
+    <Sprite texture="%ModDir:3278494407%/Misc/Material/ball.png" depth="0.56" sourcerect="0,0,186,186" origin="0.5,0.5" />
     <Body radius="6" density="20" />
     <Deconstruct time="10">
       <Item identifier="uranium" amount="8" />
@@ -388,7 +388,7 @@
       <RequiredItem identifier="plutonium_weapon" amount="3" />
     </Fabricate>
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite texture="%ModDir%/Misc/Material/ball.png" canbehiddenbyotherwearables="false" sourcerect="0,0,0,0" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.0" />
+      <sprite texture="%ModDir:3278494407%/Misc/Material/ball.png" canbehiddenbyotherwearables="false" sourcerect="0,0,0,0" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.0" />
     </Wearable>
     <Throwable characterusable="false" canBeCombined="true" slots="RightHand+LeftHand" aimable="false" throwforce="2.0" aimpos="-10,-40" holdpos="-10,-40" holdangle="90" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnBroken" target="This">
@@ -397,8 +397,8 @@
     </Throwable>
   </Item>
   <Item identifier="u235core_high" subcategory="nuclearmaterial" category="Material" maxstacksize="2" damagedbyprojectiles="true" maxstacksizecharacterinventory="1" health="30" scale="0.2" cargocontaineridentifier="metalcrate" tags="mediumitem,hazardouscanister" impactsoundtag="impact_metal_light" impacttolerance="5">
-    <InventoryIcon texture="%ModDir%/Misc/Material/ball.png" sourcerect="0,0,186,186" />
-    <Sprite texture="%ModDir%/Misc/Material/ball.png" depth="0.56" sourcerect="0,0,186,186" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Misc/Material/ball.png" sourcerect="0,0,186,186" />
+    <Sprite texture="%ModDir:3278494407%/Misc/Material/ball.png" depth="0.56" sourcerect="0,0,186,186" origin="0.5,0.5" />
     <Body radius="6" density="20" />
     <Deconstruct time="10">
       <Item identifier="uranium" amount="12" />
@@ -410,7 +410,7 @@
       <RequiredItem identifier="fuelrod" amount="4" />
     </Fabricate>
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite texture="%ModDir%/Misc/Material/ball.png" canbehiddenbyotherwearables="false" sourcerect="0,0,0,0" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.0" />
+      <sprite texture="%ModDir:3278494407%/Misc/Material/ball.png" canbehiddenbyotherwearables="false" sourcerect="0,0,0,0" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.0" />
     </Wearable>
     <Throwable characterusable="false" canBeCombined="true" slots="RightHand+LeftHand" aimable="false" throwforce="2.0" aimpos="-10,-40" holdpos="-10,-40" holdangle="90" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnBroken" target="This">
@@ -419,8 +419,8 @@
     </Throwable>
   </Item>
   <Item identifier="fusioncore" subcategory="nuclearmaterial" category="Material" maxstacksize="2" damagedbyprojectiles="true" maxstacksizecharacterinventory="1" health="30" scale="0.15" cargocontaineridentifier="metalcrate" tags="mediumitem,hazardouscanister" impactsoundtag="impact_metal_light" impacttolerance="5">
-    <InventoryIcon texture="%ModDir%/Misc/Material/ball.png" sourcerect="0,0,186,186" />
-    <Sprite texture="%ModDir%/Misc/Material/ball.png" depth="0.56" sourcerect="0,0,186,186" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Misc/Material/ball.png" sourcerect="0,0,186,186" />
+    <Sprite texture="%ModDir:3278494407%/Misc/Material/ball.png" depth="0.56" sourcerect="0,0,186,186" origin="0.5,0.5" />
     <Body radius="6" density="20" />
     <Deconstruct time="10">
     </Deconstruct>
@@ -431,7 +431,7 @@
       <RequiredItem identifier="tsm_triton_bag" amount="3" />
     </Fabricate>
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite texture="%ModDir%/Misc/Material/ball.png" canbehiddenbyotherwearables="false" sourcerect="0,0,0,0" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.0" />
+      <sprite texture="%ModDir:3278494407%/Misc/Material/ball.png" canbehiddenbyotherwearables="false" sourcerect="0,0,0,0" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.0" />
     </Wearable>
     <Throwable characterusable="false" canBeCombined="true" slots="RightHand+LeftHand" aimable="false" throwforce="2.0" aimpos="-10,-40" holdpos="-10,-40" holdangle="90" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnBroken" target="This">
@@ -440,8 +440,8 @@
     </Throwable>
   </Item>
   <Item identifier="neutron_reflector" subcategory="nuclearmaterial" category="Material" maxstacksize="2" damagedbyprojectiles="true" maxstacksizecharacterinventory="1" health="30" scale="0.15" cargocontaineridentifier="metalcrate" tags="mediumitem,hazardouscanister" impactsoundtag="impact_metal_light" impacttolerance="5">
-    <InventoryIcon texture="%ModDir%/Weapons/Nuclear/devilscoreupper.png" sourcerect="0,0,183,183" />
-    <Sprite texture="%ModDir%/Weapons/Nuclear/devilscoreupper.png" depth="0.56" sourcerect="0,0,183,183" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Nuclear/devilscoreupper.png" sourcerect="0,0,183,183" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Nuclear/devilscoreupper.png" depth="0.56" sourcerect="0,0,183,183" origin="0.5,0.5" />
     <Body radius="6" density="20" />
     <Deconstruct time="10">
     </Deconstruct>
@@ -449,8 +449,8 @@
   </Item>
 
   <Item identifier="anthraxcanister" subcategory="CBRN" category="Material" maxstacksize="2" damagedbyprojectiles="true" maxstacksizecharacterinventory="1" health="30" scale="0.25" cargocontaineridentifier="metalcrate" tags="mediumitem,hazardouscanister" impactsoundtag="impact_metal_light" impacttolerance="5">
-    <InventoryIcon texture="%ModDir%/Misc/Material/biocontainer.png" sourcerect="0,0,316,73" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Misc/Material/biocontainer.png" depth="0.56" sourcerect="0,0,316,73" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Misc/Material/biocontainer.png" sourcerect="0,0,316,73" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Misc/Material/biocontainer.png" depth="0.56" sourcerect="0,0,316,73" origin="0.5,0.5" />
     <Body width="320" height="78" density="20" />
     <Deconstruct time="10">
       <Item identifier="steel" amount="1" />
@@ -466,7 +466,7 @@
       <RequiredItem identifier="paralyxis" amount="1" />
     </Fabricate>
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite texture="%ModDir%/Misc/Material/biocontainer.png" canbehiddenbyotherwearables="false" sourcerect="0,0,316,100" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.0" />
+      <sprite texture="%ModDir:3278494407%/Misc/Material/biocontainer.png" canbehiddenbyotherwearables="false" sourcerect="0,0,316,100" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.0" />
     </Wearable>
     <Throwable characterusable="false" canBeCombined="true" slots="RightHand+LeftHand" aimable="false" throwforce="2.0" aimpos="-10,-40" holdpos="-10,-40" holdangle="90" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnImpact" target="This" condition="-10" disabledeltatime="true" />
@@ -477,8 +477,8 @@
     </Throwable>
   </Item>
   <Item identifier="weyicanister" subcategory="CBRN" category="Material" maxstacksize="2" damagedbyprojectiles="true" maxstacksizecharacterinventory="1" health="30" scale="0.25" cargocontaineridentifier="metalcrate" tags="mediumitem,hazardouscanister" impactsoundtag="impact_metal_light" impacttolerance="5">
-    <InventoryIcon texture="%ModDir%/Misc/Material/biocontainer.png" sourcerect="0,73,316,73" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Misc/Material/biocontainer.png" depth="0.56" sourcerect="0,73,316,73" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Misc/Material/biocontainer.png" sourcerect="0,73,316,73" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Misc/Material/biocontainer.png" depth="0.56" sourcerect="0,73,316,73" origin="0.5,0.5" />
     <Body width="320" height="78" density="20" />
     <Deconstruct time="10">
       <Item identifier="steel" amount="1" />
@@ -495,7 +495,7 @@
       <RequiredItem identifier="tsm_eyi_relics" mincondition="0.5" usecondition="true" />
     </Fabricate>
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite texture="%ModDir%/Misc/Material/biocontainer.png" canbehiddenbyotherwearables="false" sourcerect="0,73,316,100" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.0" />
+      <sprite texture="%ModDir:3278494407%/Misc/Material/biocontainer.png" canbehiddenbyotherwearables="false" sourcerect="0,73,316,100" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.0" />
     </Wearable>
     <Throwable characterusable="false" canBeCombined="true" slots="RightHand+LeftHand" aimable="false" throwforce="2.0" aimpos="-10,-40" holdpos="-10,-40" holdangle="90" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnImpact" target="This" condition="-10" disabledeltatime="true" />
@@ -521,8 +521,8 @@
       <RequiredItem identifier="iron" />
       <RequiredItem identifier="phosphorus" />
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/Weapons/Chemical/chemdistthrowable.png" sourcerect="0,0,160,356" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Chemical/chemdistthrowable.png" sourcerect="0,0,160,356" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Chemical/chemdistthrowable.png" sourcerect="0,0,160,356" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Chemical/chemdistthrowable.png" sourcerect="0,0,160,356" depth="0.55" origin="0.5,0.5" />
     <Body width="26" height="50" density="30" />
     <ItemComponent characterusable="false">
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
@@ -535,8 +535,8 @@
     </Throwable>
   </Item>
   <Item identifier="chemdist_40" subcategory="CBRN" category="Material" maxstacksize="8" interactthroughwalls="false" cargocontaineridentifier="metalcrate" tags="explosive,smallitem,grenade,chemweapon" Scale="0.5" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/Weapons/Chemical/chem40.png" sourcerect="0,1,52,20" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Chemical/chem40.png" sourcerect="0,1,52,20" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Chemical/chem40.png" sourcerect="0,1,52,20" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Chemical/chem40.png" sourcerect="0,1,52,20" depth="0.55" origin="0.5,0.5" />
     <Body width="38" height="15" density="30" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Deconstruct time="18">
@@ -562,8 +562,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="biodist_40" subcategory="CBRN" category="Material" maxstacksize="8" interactthroughwalls="false" cargocontaineridentifier="metalcrate" tags="explosive,smallitem,grenade,chemweapon" Scale="0.5" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/Weapons/Chemical/bio40.png" sourcerect="0,1,52,20" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Chemical/bio40.png" sourcerect="0,1,52,20" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Chemical/bio40.png" sourcerect="0,1,52,20" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Chemical/bio40.png" sourcerect="0,1,52,20" depth="0.55" origin="0.5,0.5" />
     <Body width="38" height="15" density="30" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Deconstruct time="18">
@@ -889,7 +889,7 @@
   </Item>
   <Item identifier="deconstructnuclearspread" Scale="0.5" tags="" sonarsize="20" hideinmenus="true">
     <AiTarget sightrange="1000.0" soundrange="1000" sonardisruption="10" static="True" />
-    <sprite texture="%ModDir%/Weapons/Chemical/normal.png" sourcerect="367,7,147,150" depth="0.98" origin="0.5,0.5" colormultiplier="255,0,0,255"/>
+    <sprite texture="%ModDir:3278494407%/Weapons/Chemical/normal.png" sourcerect="367,7,147,150" depth="0.98" origin="0.5,0.5" colormultiplier="255,0,0,255"/>
     <ItemComponent>
       <StatusEffect type="Always" target="This" disabledeltatime="true" OneShot="true">
         <Explosion range="800.0" ballastfloradamage="60" interactthroughwalls="false" showEffects="false" penetration="0.0">
@@ -901,11 +901,11 @@
   </Item>
   <!--Removed-->
   <Item identifier="zombieviruscanister" subcategory="CBRN" category="Material" maxstacksize="2" damagedbyprojectiles="true" maxstacksizecharacterinventory="1" health="30" scale="0.25" cargocontaineridentifier="metalcrate" tags="mediumitem,hazardouscanister" impactsoundtag="impact_metal_light" impacttolerance="5" hideinmenus="true">
-    <InventoryIcon texture="%ModDir%/Misc/Material/biocontainer.png" sourcerect="0,0,316,73" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Misc/Material/biocontainer.png" depth="0.56" sourcerect="0,0,316,73" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Misc/Material/biocontainer.png" sourcerect="0,0,316,73" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Misc/Material/biocontainer.png" depth="0.56" sourcerect="0,0,316,73" origin="0.5,0.5" />
     <Body width="1" height="1" density="20" />
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite texture="%ModDir%/Misc/Material/biocontainer.png" canbehiddenbyotherwearables="false" sourcerect="0,0,316,100" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.0" />
+      <sprite texture="%ModDir:3278494407%/Misc/Material/biocontainer.png" canbehiddenbyotherwearables="false" sourcerect="0,0,316,100" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.0" />
     </Wearable>
   </Item>
 </Items>

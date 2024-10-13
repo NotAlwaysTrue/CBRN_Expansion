@@ -26,7 +26,7 @@
         <StatusEffect type="OnWearing" target="Character" disabledeltatime="true" ObstructVisionAmount="0.3" setvalue="true" comparison="And">
           <Conditional IsLocalPlayer="True"/>
           <RequiredItems items="maskfilter" type="Contained" />
-          <Sound file="%ModDir%/Jobgear/Under_Masks/maskedbreath.ogg" volume="0.3" loop="true" />
+          <Sound file="%ModDir:3278494407%/Jobgear/Under_Masks/maskedbreath.ogg" volume="0.3" loop="true" />
         </StatusEffect>
         <StatusEffect type="OnWearing" target="Character" disabledeltatime="true" setvalue="true">
           <Affliction identifier="APR" amount="10" />

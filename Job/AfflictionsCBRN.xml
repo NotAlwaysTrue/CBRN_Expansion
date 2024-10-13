@@ -78,7 +78,7 @@
         <ReduceAffliction type="damage" amount="2" />
       </StatusEffect>
     </Effect>
-    <icon texture="%ModDir%/Weapons/Chemical/blackbase.png" sourcerect="0,0,1,1" color="255,255,255,255" origin="0.5,0.5" />
+    <icon texture="%ModDir:3278494407%/Weapons/Chemical/blackbase.png" sourcerect="0,0,1,1" color="255,255,255,255" origin="0.5,0.5" />
   </Affliction>
   <Affliction
     identifier="chemicalliner_wounds"
@@ -94,7 +94,7 @@
     Duration="0.1">
     <Effect minstrength="0" maxstrength="10" resistancefor="lacerations,explosiondamage,internaldamage,gunshotwound" minresistance="0.35" maxresistance="0.35">
     </Effect>
-    <icon texture="%ModDir%/Weapons/Chemical/blackbase.png" sourcerect="0,0,1,1" color="255,255,255,255" origin="0.5,0.5" />
+    <icon texture="%ModDir:3278494407%/Weapons/Chemical/blackbase.png" sourcerect="0,0,1,1" color="255,255,255,255" origin="0.5,0.5" />
   </Affliction>
   <Affliction
     identifier="chemicalliner_biochem"
@@ -110,7 +110,7 @@
     Duration="0.1">
     <Effect minstrength="0" maxstrength="10" resistancefor="alieninfection,poison" minresistance="1.0" maxresistance="1.0">
     </Effect>
-    <icon texture="%ModDir%/Weapons/Chemical/blackbase.png" sourcerect="0,0,1,1" color="255,255,255,255" origin="0.5,0.5" />
+    <icon texture="%ModDir:3278494407%/Weapons/Chemical/blackbase.png" sourcerect="0,0,1,1" color="255,255,255,255" origin="0.5,0.5" />
   </Affliction>
   <Affliction
     identifier="chemicalliner_burn"
@@ -129,7 +129,7 @@
         <ReduceAffliction type="burn" amount="8" />
       </StatusEffect>
     </Effect>
-    <icon texture="%ModDir%/Weapons/Chemical/blackbase.png" sourcerect="0,0,1,1" color="255,255,255,255" origin="0.5,0.5" />
+    <icon texture="%ModDir:3278494407%/Weapons/Chemical/blackbase.png" sourcerect="0,0,1,1" color="255,255,255,255" origin="0.5,0.5" />
   </Affliction>
   <Affliction
     identifier="chemicalliner_spec"
@@ -145,7 +145,7 @@
     Duration="0.1">
     <Effect minstrength="0" maxstrength="10" resistancefor="triton_9C,triton_burn,triton_7L,tsm_bl,zlqy,zlyz" minresistance="0.6" maxresistance="0.6">
     </Effect>
-    <icon texture="%ModDir%/Weapons/Chemical/blackbase.png" sourcerect="0,0,1,1" color="255,255,255,255" origin="0.5,0.5" />
+    <icon texture="%ModDir:3278494407%/Weapons/Chemical/blackbase.png" sourcerect="0,0,1,1" color="255,255,255,255" origin="0.5,0.5" />
   </Affliction>
   <Affliction
     identifier="chemicalliner_armorbreak"
@@ -161,7 +161,7 @@
     Duration="0.1">
     <Effect minstrength="0" maxstrength="10" resistancefor="tsm_armorbreak_jz,tsm_armorbreak_30,tsm_armorbreak_50,tsmmission_armorbreak_50,tsmmission_monster_35," minresistance="1" maxresistance="1">
     </Effect>
-    <icon texture="%ModDir%/Weapons/Chemical/blackbase.png" sourcerect="0,0,1,1" color="255,255,255,255" origin="0.5,0.5" />
+    <icon texture="%ModDir:3278494407%/Weapons/Chemical/blackbase.png" sourcerect="0,0,1,1" color="255,255,255,255" origin="0.5,0.5" />
   </Affliction>
   <Affliction
     identifier="chemicalliner_majordamage"
@@ -177,7 +177,7 @@
     Duration="0.1">
     <Effect minstrength="0" maxstrength="10" resistancefor="damage" minresistance="0.5" maxresistance="0.5">
     </Effect>
-    <icon texture="%ModDir%/Weapons/Chemical/blackbase.png" sourcerect="0,0,1,1" color="255,255,255,255" origin="0.5,0.5" />
+    <icon texture="%ModDir:3278494407%/Weapons/Chemical/blackbase.png" sourcerect="0,0,1,1" color="255,255,255,255" origin="0.5,0.5" />
   </Affliction>
   <Affliction
     identifier="chemicalliner_secondary"
@@ -196,7 +196,7 @@
         <ReduceAffliction type="bleeding" amount="20" />
       </StatusEffect>
     </Effect>
-    <icon texture="%ModDir%/Weapons/Chemical/blackbase.png" sourcerect="0,0,1,1" color="255,255,255,255" origin="0.5,0.5" />
+    <icon texture="%ModDir:3278494407%/Weapons/Chemical/blackbase.png" sourcerect="0,0,1,1" color="255,255,255,255" origin="0.5,0.5" />
   </Affliction>
   <Affliction
     identifier="chemicalliner_mech"
@@ -215,7 +215,7 @@
         <ReduceAffliction type="damage" amount="4" />
       </StatusEffect>
     </Effect>
-    <icon texture="%ModDir%/Weapons/Chemical/blackbase.png" sourcerect="0,0,1,1" color="255,255,255,255" origin="0.5,0.5" />
+    <icon texture="%ModDir:3278494407%/Weapons/Chemical/blackbase.png" sourcerect="0,0,1,1" color="255,255,255,255" origin="0.5,0.5" />
   </Affliction>
   <Affliction
     identifier="chemicalliner_mechbleeding"
@@ -234,7 +234,7 @@
         <ReduceAffliction type="bleeding" amount="20" />
       </StatusEffect>
     </Effect>
-    <icon texture="%ModDir%/Weapons/Chemical/blackbase.png" sourcerect="0,0,1,1" color="255,255,255,255" origin="0.5,0.5" />
+    <icon texture="%ModDir:3278494407%/Weapons/Chemical/blackbase.png" sourcerect="0,0,1,1" color="255,255,255,255" origin="0.5,0.5" />
   </Affliction>
   <Affliction
     identifier="chemicalliner_mechspec"
@@ -250,7 +250,7 @@
     Duration="0.1">
     <Effect minstrength="0" maxstrength="10" resistancefor="triton_9C,triton_burn,triton_7L,tsm_bl,zlqy,zlyz" minresistance="0.9" maxresistance="0.9">
     </Effect>
-    <icon texture="%ModDir%/Weapons/Chemical/blackbase.png" sourcerect="0,0,1,1" color="255,255,255,255" origin="0.5,0.5" />
+    <icon texture="%ModDir:3278494407%/Weapons/Chemical/blackbase.png" sourcerect="0,0,1,1" color="255,255,255,255" origin="0.5,0.5" />
   </Affliction>
   <Affliction identifier="mechready" type="CBRNGEAR" IsBuff="true" targets="human" showiconthreshold="999" showinhealthscannerthreshold="999" maxstrength="10" limbspecific="false" indicatorlimb="Head" Duration="0.1">
     <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="0" resistancefor="stun" minresistance="100.0" maxresistance="100.0">
