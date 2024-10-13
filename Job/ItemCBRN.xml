@@ -3,7 +3,7 @@
   <Item identifier="fuelextractor" tags="CBRNItem,FuelrodExtractor,donttakeitems,dontsellitems" category="Machine" linkable="true" allowedlinks="fabricator,medicalfabricator,locker,tsm_danger_box" scale="0.5" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
     <Sprite texture="%ModDir%/Job/extractor.png" depth="0.8" sourcerect="0,0,247,272"/>
     <Body height="247" width="272" density="30"/>
-    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true">
       <RequiredSkill identifier="electrical" level="20" />
       <RequiredSkill identifier="mechanical" level="30" />
       <RequiredItem identifier="steel" amount="2" />
