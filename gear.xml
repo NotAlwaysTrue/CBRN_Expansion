@@ -1019,12 +1019,15 @@
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.4" setvalue="true" />
     </Holdable>
-    <RangedWeapon reload="0.2" weapondamagemodifier="1.5" penetration="0.5" holdtrigger="true" barrelpos="680,30" spread="0.3" unskilledspread="13" combatPriority="120" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.4" weapondamagemodifier="1.5" penetration="0.5" holdtrigger="true" barrelpos="680,30" spread="0.3" unskilledspread="13" combatPriority="120" drawhudwhenequipped="true" crosshairscale="0.2">
       <RequiredSkill identifier="weapons" level="65" />
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <Sound file="%ModDir%/Weapons/BerraArm/M110SASS/M110SASS.ogg" type="OnUse" range="800" forceplaysounds="True"/>
+      <StatusEffect type="OnUse" target="Contained">
+        <Use />
+      </StatusEffect>
       <!--后坐力,屏幕抖动-->
       <StatusEffect type="OnUse" target="This">
         <Explosion range="200.0" force="3.0" camerashake="50" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" />
