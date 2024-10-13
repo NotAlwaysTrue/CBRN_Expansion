@@ -891,13 +891,10 @@
     <AiTarget sightrange="1000.0" soundrange="1000" sonardisruption="10" static="True" />
     <sprite texture="%ModDir%/Weapons/Chemical/normal.png" sourcerect="367,7,147,150" depth="0.98" origin="0.5,0.5" colormultiplier="255,0,0,255"/>
     <ItemComponent>
-      <StatusEffect type="Always" target="This" condition="-100" />
       <StatusEffect type="Always" target="This" disabledeltatime="true" OneShot="true">
         <Explosion range="800.0" ballastfloradamage="60" interactthroughwalls="false" showEffects="false" penetration="0.0">
           <Affliction identifier="radiationsickness" strength="200" />
         </Explosion>
-      </StatusEffect>
-      <StatusEffect type="OnBroken" target="This">
         <Remove />
       </StatusEffect>
     </ItemComponent>
