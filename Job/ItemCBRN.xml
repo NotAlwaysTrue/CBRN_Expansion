@@ -61,7 +61,7 @@
   <Item identifier="nuclearwaste" category="Material" Tags="smallitem,nuclearwaste" maxstacksize="16" Scale="0.5" impactsoundtag="impact_soft">
     <PreferredContainer primary="reactorcab" />
     <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="false">
-      <RequiredSkill identifier="mechnical" level="60" />
+      <RequiredSkill identifier="mechanical" level="60" />
       <RequiredItem tag="reactorfuel" mincondition="0.0" maxcondition="0.05" usecondition="false"/>
       <RequiredItem tag="crowbaritem" mincondition="0.0" maxcondition="1.0" usecondition="true"/>
     </Fabricate>

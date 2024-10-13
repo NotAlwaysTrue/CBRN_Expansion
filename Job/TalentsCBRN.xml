@@ -434,9 +434,6 @@
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.plutoniumfuelrod" color="gui.orange"/>
     </Description>
-    <Description tag="talentdescription.unlockrecipe">
-      <Replace tag="[itemname]" value="talentvalue.watercanister" color="gui.orange"/>
-    </Description>
     <AbilityGroupEffect abilityeffecttype="None">
       <Abilities>
         <CharacterAbilityGiveStat stattype="ElectricalSkillBonus" value="15"/>
@@ -445,7 +442,6 @@
     </AbilityGroupEffect>
     <AddedRecipe itemidentifier="fuelextractor"/>
     <AddedRecipe itemidentifier="plutoniumfuelrod"/>
-    <AddedRecipe itemidentifier="watercanister"/>
   </Talent>
   <Talent identifier="tacticalnuke">
     <Description tag="talentdescription.skillbonus">
