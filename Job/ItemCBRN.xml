@@ -3,7 +3,7 @@
   <Item identifier="fuelextractor" tags="CBRNItem,FuelrodExtractor,donttakeitems,dontsellitems" category="Machine" linkable="true" allowedlinks="fabricator,medicalfabricator,locker,tsm_danger_box" scale="0.5" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
     <Sprite texture="%ModDir%/Job/extractor.png" depth="0.8" sourcerect="0,0,247,272"/>
     <Body height="247" width="272" density="30"/>
-    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true">
       <RequiredSkill identifier="electrical" level="20" />
       <RequiredSkill identifier="mechanical" level="30" />
       <RequiredItem identifier="steel" amount="2" />
@@ -198,10 +198,6 @@
       <Item identifier="silicon" amount="2" />
       <Item identifier="rubber" outcondition="0.5" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="16">
-      <RequiredSkill identifier="mechanical" level="35" />
-      <RequiredItem identifier="canister" amount="1" />
-    </Fabricate>
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
       <sprite texture="%ModDir%/Misc/Material/containerplain.png" canbehiddenbyotherwearables="false" sourcerect="0,0,316,100" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.0" />
     </Wearable>
