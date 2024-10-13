@@ -1291,7 +1291,7 @@
     <InventoryIcon texture="%ModDir%/Weapons/Other/M61A1.png" sourcerect="0,0,580,136" origin="0.5,0.5" />
     <Sprite texture="%ModDir%/Weapons/Other/M61A1.png" sourcerect="0,0,580,136" depth="0.55" origin="0.5,0.5" />
     <Body width="580" height="136" density="52" />
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="43" requiresrecipe="false">
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="43" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="100" />
       <RequiredItem identifier="tsm_lm_weaponbox" amount="8" />
       <RequiredItem identifier="titaniumaluminiumalloy" amount="4" />

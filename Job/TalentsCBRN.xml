@@ -412,9 +412,10 @@
   <Talent identifier="hert">
     <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="6,0" sheetelementsize="128,128"/>
     <Description tag="talentdescription.unlockrecipe">
-      <Replace tag="[itemname]" value="entityname.rz_p_mk1_cbrn" color="gui.orange"/>
+      <Replace tag="[itemname]" value="entityname.rz_p_mk1_cbrn,entityname.tsm_m61_vulcan" color="gui.orange"/>
     </Description>
     <AddedRecipe itemidentifier="rz_p_mk1_cbrn"/>
+    <AddedRecipe itemidentifier="tsm_m61_vulcan"/>
   </Talent>
 
   <Talent identifier="fuelextract">
