@@ -255,11 +255,11 @@
         <Affliction identifier="mechready" amount="10" />
         <Affliction identifier="CCR" amount="10" />
         <Affliction identifier="CBRNsuit" amount="10" />
-        <Affliction identifier="chemicalliner_mech" amount="10" />chemicalliner_mech
+        <Affliction identifier="chemicalliner_mech" amount="10" />
         <Affliction identifier="chemicalliner_mechbleeding" amount="10" />
         <Affliction identifier="chemicalliner_biochem" amount="10" />
         <Affliction identifier="chemicalliner_burn" amount="10" />
-        <Affliction identifier="chemicalliner_spec" amount="10" />
+        <Affliction identifier="chemicalliner_mechspec" amount="10" />
         <Affliction identifier="chemicalliner_majordamage" amount="10" />
         <Affliction identifier="chemicalliner_armorbreak" amount="10" />
         <Conditional jobidentifier="eq cbrn_guy"/>

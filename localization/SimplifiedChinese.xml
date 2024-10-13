@@ -565,7 +565,8 @@
   <entitydescription.tsm_m61ammobox_rev>装有1200发20mm变革穿甲燃烧弹的重型弹药箱 \n你知道我要说什么的,对吧? \n内装过多弹药导致弹匣有放射性</entitydescription.tsm_m61ammobox_rev>
   <entitydescription.tsm_hazardous_container>可用于安全运输各种危险品的重型集装箱...只要没有人试图破坏它</entitydescription.tsm_hazardous_container>
 
-  <afflictiondescription.chemicalliner_mech>-95% 枪伤 \n-100% 出血 \n-95% 撕裂伤 \n-95% 钝器伤 \n-95% 内脏损伤 \n-95% 深层组织损伤 \n-80% 烧伤\n-60% 特殊伤害 \n-100% 碎甲 \n2u/s 伤口密封 \n10u/s 止血</afflictiondescription.chemicalliner_mech>
+  <afflictionname.chemicalliner_mech>NBCPv2系统升级组件</afflictionname.chemicalliner_mech>
+  <afflictiondescription.chemicalliner_mech>-95% 枪伤 \n-100% 出血 \n-95% 撕裂伤 \n-95% 钝器伤 \n-95% 内脏损伤 \n-95% 深层组织损伤 \n-80% 烧伤\n-90% 特殊伤害 \n-100% 碎甲 \n2u/s 伤口密封 \n10u/s 止血</afflictiondescription.chemicalliner_mech>
 
   <missionname.tsm_cbrnert_assination>歼灭奇迹之海核生化应急响应部队</missionname.tsm_cbrnert_assination>
   <missiondescription.tsm_cbrnert_assination>奇迹之海核生化应急响应部队驻扎于此,歼灭他们以使得我们得到战术优势</missiondescription.tsm_cbrnert_assination>
@@ -580,4 +581,5 @@
   <missiondescription.cargoSapphire_2>[location1]的官员找到你，希望你偷偷运送一批矿用危险品到[location2]。\n \n \n什么时候采矿炸药也成违禁品了？</missiondescription.cargoSapphire_2>
   <missionname.cargoSapphire_3>武器原料运输</missionname.cargoSapphire_3>
   <missiondescription.cargoSapphire_3>[location2]的工作人员找到你，希望你能将一些危险武器原料从[location1]偷偷运送到[location2]。\n \n \n什么时候钛也成违禁品了？</missiondescription.cargoSapphire_3>
+
 </infotexts>
