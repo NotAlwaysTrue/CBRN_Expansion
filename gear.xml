@@ -1902,7 +1902,7 @@
     <InventoryIcon texture="%ModDir:2953749635%/weapons/其他/近战.png" sourcerect="779,896,93,93" origin="0.5,0.5" /><!--TODO: New Spirites-->
     <Sprite texture="%ModDir:2953749635%/weapons/其他/近战.png" sourcerect="0,262,722,178" depth="0.55" origin="0.5,0.5" />
     <Body width="700" height="150" density="45" />
-    <MeleeWeapon slots="RightHand+LeftHand,Any" controlpose="true" holdpos="16,-50" aimpos="50,0" handle1="-20,-3" handle2="15,3" holdangle="35" reload="1.5" range="100" combatPriority="50" msg="ItemMsgPickUpSelect">
+    <MeleeWeapon slots="RightHand+LeftHand,Any" controlpose="true" holdpos="16,-50" aimpos="50,0" handle1="-20,-3" handle2="15,3" holdangle="35" reload="0.8" range="100" combatPriority="50" msg="ItemMsgPickUpSelect">
       <Attack targetimpulse="4" severlimbsprobability="0.3" ballastfloradamage="80" structuredamage="0" itemdamage="80" penetration="0.1">
         <Affliction identifier="blunttrauma" strength="60" />
         <Affliction identifier="internaldamage" strength="40" />

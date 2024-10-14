@@ -455,9 +455,9 @@
   <lights>照明</lights>
   
   <afflictionname.chemicalliner_main>高韧性自封化学填料</afflictionname.chemicalliner_main>
-  <afflictiondescription.chemicalliner_main>-85% 枪伤 \n-99% 出血 \n-85% 撕裂伤 \n-85% 钝器伤 \n-85% 内脏损伤 \n-85% 深层组织损伤 \n-80% 烧伤\n-60% 特殊伤害 \n-100% 碎甲 \n1u/s 伤口密封 \n10u/s 止血</afflictiondescription.chemicalliner_main>
+  <afflictiondescription.chemicalliner_main>-85% 枪伤 \n-99% 出血 \n-85% 撕裂伤 \n-85% 钝器伤 \n-85% 内脏损伤 \n-85% 咬伤 \n-85% 深层组织损伤 \n-80% 烧伤\n-60% 特殊伤害 \n-100% 碎甲 \n1u/s 伤口密封 \n10u/s 止血</afflictiondescription.chemicalliner_main>
   <afflictionname.chemicalliner_secondary>自封化学填料</afflictionname.chemicalliner_secondary>
-  <afflictiondescription.chemicalliner_main>\n-99% 出血 \n-100% 碎甲 \n10u/s 止血</afflictiondescription.chemicalliner_main>
+  <afflictiondescription.chemicalliner_secondary>\n-99% 出血 \n-100% 碎甲 \n10u/s 止血</afflictiondescription.chemicalliner_secondary>
 
   <entityname.fuelextractor>核材料提取装置</entityname.fuelextractor>
   <entityname.nuclearwaste>核废料</entityname.nuclearwaste>
@@ -566,7 +566,7 @@
   <entitydescription.tsm_hazardous_container>可用于安全运输各种危险品的重型集装箱...只要没有人试图破坏它</entitydescription.tsm_hazardous_container>
 
   <afflictionname.chemicalliner_mech>NBCPv2系统升级组件</afflictionname.chemicalliner_mech>
-  <afflictiondescription.chemicalliner_mech>-95% 枪伤 \n-100% 出血 \n-95% 撕裂伤 \n-95% 钝器伤 \n-95% 内脏损伤 \n-95% 深层组织损伤 \n-80% 烧伤\n-90% 特殊伤害 \n-100% 碎甲 \n2u/s 伤口密封 \n10u/s 止血</afflictiondescription.chemicalliner_mech>
+  <afflictiondescription.chemicalliner_mech>-95% 枪伤 \n-100% 出血 \n-95% 撕裂伤 \n-95% 钝器伤 \n-95% 咬伤 \n-95% 内脏损伤 \n-95% 深层组织损伤 \n-80% 烧伤\n-90% 特殊伤害 \n-100% 碎甲 \n2u/s 伤口密封 \n10u/s 止血</afflictiondescription.chemicalliner_mech>
 
   <missionname.tsm_cbrnert_assination>歼灭奇迹之海核生化应急响应部队</missionname.tsm_cbrnert_assination>
   <missiondescription.tsm_cbrnert_assination>奇迹之海核生化应急响应部队驻扎于此,歼灭他们以使得我们得到战术优势</missiondescription.tsm_cbrnert_assination>
