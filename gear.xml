@@ -2,7 +2,7 @@
 <Items>
   <!--Special Suits-->
   <Item identifier="berra_etps7b" subcategory="Berra Group" category="Equipment" tags="smallitem,clothing,cbrngear" cargocontaineridentifier="metalcrate" scale="0.5" fireproof="true" waterproof="true" impactsoundtag="impact_soft">
-    <InventoryIcon texture="%ModDir%/Jobgear/Fire_Eaters/ETPS-7B.png" sourcerect="431,124,80,132" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Jobgear/Fire_Eaters/ETPS-7B.png" sourcerect="431,124,80,132" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="6,363,124,67" depth="0.6" origin="0.5,0.5" />
     <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
     <Deconstruct time="16">
@@ -20,21 +20,21 @@
       <RequiredItem identifier="organicfiber" amount="2" />
     </Fabricate>
     <Wearable slots="Any,OuterClothes+InnerClothes+Head" msg="ItemMsgPickUpSelect">
-      <sprite name="ETPS HEAD" texture="%ModDir%/Jobgear/Fire_Eaters/ETPS-7B.png" limb="Head" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" hidelimb="true" alphaclipotherwearables="true" sourcerect="410,8,101,107" scale="0.28" origin="0.5,0.6" />
-      <sprite name="ETPS Torso" texture="%ModDir%/Jobgear/Fire_Eaters/ETPS-7B.png" limb="Torso" depthlimb="Jaw" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="183,13,90,137" scale="0.5" origin="0.4,0.6" />
-      <sprite name="ETPS Waist" texture="%ModDir%/Jobgear/Fire_Eaters/ETPS-7B.png" limb="Waist" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="189,195,56,52" scale="0.55" origin="0.5,0.5" />
-      <sprite name="ETPS Left Upper Arm" texture="%ModDir%/Jobgear/Fire_Eaters/ETPS-7B.png" limb="LeftArm" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="344,1,46,87" scale="0.5" origin="0.5,0.5" />
-      <sprite name="ETPS Right Upper Arm" texture="%ModDir%/Jobgear/Fire_Eaters/ETPS-7B.png" limb="RightArm" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="284,1,46,87" scale="0.5" origin="0.5,0.45" />
-      <sprite name="ETPS Left Lower Arm" texture="%ModDir%/Jobgear/Fire_Eaters/ETPS-7B.png" limb="LeftForearm" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="348,92,36,69" scale="0.5" origin="0.5,0.5" />
-      <sprite name="ETPS Right Lower Arm" texture="%ModDir%/Jobgear/Fire_Eaters/ETPS-7B.png" limb="RightForearm" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="288,92,36,69" scale="0.5" origin="0.5,0.5" />
-      <sprite name="ETPS Right Thigh" texture="%ModDir%/Jobgear/Fire_Eaters/ETPS-7B.png" limb="RightThigh" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="12,9,61,114" scale="0.5" origin="0.5,0.5" />
-      <sprite name="ETPS Left Thigh" texture="%ModDir%/Jobgear/Fire_Eaters/ETPS-7B.png" limb="LeftThigh" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="91,9,61,114" scale="0.5" origin="0.5,0.5" />
-      <sprite name="ETPS Right Leg" texture="%ModDir%/Jobgear/Fire_Eaters/ETPS-7B.png" limb="RightLeg" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="16,131,50,118" scale="0.5" origin="0.5,0.5" />
-      <sprite name="ETPS Left Leg" texture="%ModDir%/Jobgear/Fire_Eaters/ETPS-7B.png" limb="LeftLeg" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="95,131,50,118" scale="0.5" origin="0.5,0.5" />
-      <sprite name="ETPS Left Hand" texture="%ModDir%/Jobgear/Fire_Eaters/ETPS-7B.png" limb="LeftHand" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="356,165,29,34" scale="0.5" origin="0.5,0.4" />
-      <sprite name="ETPS Right Hand" texture="%ModDir%/Jobgear/Fire_Eaters/ETPS-7B.png" limb="RightHand" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="291,164,30,36" scale="0.5" origin="0.5,0.4" />
-      <sprite name="ETPS Right Shoe" texture="%ModDir%/Jobgear/Fire_Eaters/ETPS-7B.png" limb="RightFoot" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="277,205,60,50" scale="0.6" origin="0.4,0.6" />
-      <sprite name="ETPS Left Shoe" texture="%ModDir%/Jobgear/Fire_Eaters/ETPS-7B.png" limb="LeftFoot" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="344,205,60,50" scale="0.6" origin="0.4,0.6" />
+      <sprite name="ETPS HEAD" texture="%ModDir:3278494407%/Jobgear/Fire_Eaters/ETPS-7B.png" limb="Head" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" hidelimb="true" alphaclipotherwearables="true" sourcerect="410,8,101,107" scale="0.28" origin="0.5,0.6" />
+      <sprite name="ETPS Torso" texture="%ModDir:3278494407%/Jobgear/Fire_Eaters/ETPS-7B.png" limb="Torso" depthlimb="Jaw" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="183,13,90,137" scale="0.5" origin="0.4,0.6" />
+      <sprite name="ETPS Waist" texture="%ModDir:3278494407%/Jobgear/Fire_Eaters/ETPS-7B.png" limb="Waist" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="189,195,56,52" scale="0.55" origin="0.5,0.5" />
+      <sprite name="ETPS Left Upper Arm" texture="%ModDir:3278494407%/Jobgear/Fire_Eaters/ETPS-7B.png" limb="LeftArm" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="344,1,46,87" scale="0.5" origin="0.5,0.5" />
+      <sprite name="ETPS Right Upper Arm" texture="%ModDir:3278494407%/Jobgear/Fire_Eaters/ETPS-7B.png" limb="RightArm" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="284,1,46,87" scale="0.5" origin="0.5,0.45" />
+      <sprite name="ETPS Left Lower Arm" texture="%ModDir:3278494407%/Jobgear/Fire_Eaters/ETPS-7B.png" limb="LeftForearm" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="348,92,36,69" scale="0.5" origin="0.5,0.5" />
+      <sprite name="ETPS Right Lower Arm" texture="%ModDir:3278494407%/Jobgear/Fire_Eaters/ETPS-7B.png" limb="RightForearm" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="288,92,36,69" scale="0.5" origin="0.5,0.5" />
+      <sprite name="ETPS Right Thigh" texture="%ModDir:3278494407%/Jobgear/Fire_Eaters/ETPS-7B.png" limb="RightThigh" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="12,9,61,114" scale="0.5" origin="0.5,0.5" />
+      <sprite name="ETPS Left Thigh" texture="%ModDir:3278494407%/Jobgear/Fire_Eaters/ETPS-7B.png" limb="LeftThigh" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="91,9,61,114" scale="0.5" origin="0.5,0.5" />
+      <sprite name="ETPS Right Leg" texture="%ModDir:3278494407%/Jobgear/Fire_Eaters/ETPS-7B.png" limb="RightLeg" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="16,131,50,118" scale="0.5" origin="0.5,0.5" />
+      <sprite name="ETPS Left Leg" texture="%ModDir:3278494407%/Jobgear/Fire_Eaters/ETPS-7B.png" limb="LeftLeg" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="95,131,50,118" scale="0.5" origin="0.5,0.5" />
+      <sprite name="ETPS Left Hand" texture="%ModDir:3278494407%/Jobgear/Fire_Eaters/ETPS-7B.png" limb="LeftHand" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="356,165,29,34" scale="0.5" origin="0.5,0.4" />
+      <sprite name="ETPS Right Hand" texture="%ModDir:3278494407%/Jobgear/Fire_Eaters/ETPS-7B.png" limb="RightHand" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="291,164,30,36" scale="0.5" origin="0.5,0.4" />
+      <sprite name="ETPS Right Shoe" texture="%ModDir:3278494407%/Jobgear/Fire_Eaters/ETPS-7B.png" limb="RightFoot" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="277,205,60,50" scale="0.6" origin="0.4,0.6" />
+      <sprite name="ETPS Left Shoe" texture="%ModDir:3278494407%/Jobgear/Fire_Eaters/ETPS-7B.png" limb="LeftFoot" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="344,205,60,50" scale="0.6" origin="0.4,0.6" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.6" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.6" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.3" />
@@ -45,7 +45,7 @@
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.0" probabilitymultiplier="0.0" damagesound="" deflectprojectiles="true" />
       <StatusEffect type="OnWearing" target="Character" tag="cbrnsuit" SpeedMultiplier="0.8" LowPassMultiplier="0.2" OxygenAvailable="1500.0" ObstructVisionAmount="0.45" setvalue="true">
         <Conditional IsLocalPlayer="True"/>
-        <Sound file="%ModDir%/Jobgear/Under_Masks/maskedbreath.ogg" volume="0.5" loop="true" />
+        <Sound file="%ModDir:3278494407%/Jobgear/Under_Masks/maskedbreath.ogg" volume="0.5" loop="true" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="Character" disabledeltatime="true" setvalue="true">
         <Affliction identifier="CCR" amount="10" />
@@ -76,21 +76,21 @@
     <RequiredItem identifier="steel" amount="4" />
     </Fabricate>
     <Wearable slots="Any,OuterClothes+InnerClothes" msg="ItemMsgPickUpSelect">
-      <sprite name="bio2 HEAD" texture="%ModDir%/Jobgear/Under_Masks/APR-2.png" limb="Head" depthlimb="RightArm" inheritlimbdepth="true" inheritscale="false" hidelimb="false" alphaclipotherwearables="false" sourcerect="6,5,214,220" scale="0.13" origin="0.55,0.6" />
-      <sprite name="bio2 Torso" texture="%ModDir%/Jobgear/Under_Masks/Bio-2.png" limb="Torso" depthlimb="Jaw" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="162,8,118,164" scale="0.45" origin="0.6,0.45" />
-      <sprite name="bio2 Waist" texture="%ModDir%/Jobgear/Under_Masks/Bio-2.png" limb="Waist" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="189,195,56,52" scale="0.5" origin="0.45,0.5" />
-      <sprite name="bio2 Left Upper Arm" texture="%ModDir%/Jobgear/Under_Masks/Bio-2.png" limb="LeftArm" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="353,2,44,84" origin="0.45,0.6" scale="0.5" />
-      <sprite name="bio2 Right Upper Arm" texture="%ModDir%/Jobgear/Under_Masks/Bio-2.png" limb="RightArm" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="286,1,46,84" origin="0.45,0.6" scale="0.5" />
-      <sprite name="bio2 Left Lower Arm" texture="%ModDir%/Jobgear/Under_Masks/Bio-2.png" limb="LeftForearm" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="350,87,38,76" origin="0.4,0.55" scale="0.5" />
-      <sprite name="bio2 Right Lower Arm" texture="%ModDir%/Jobgear/Under_Masks/Bio-2.png" limb="RightForearm" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="286,86,38,76" origin="0.4,0.55" scale="0.5" />
-      <sprite name="bio2 Right Thigh" texture="%ModDir%/Jobgear/Under_Masks/Bio-2.png" limb="RightThigh" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="3,9,72,114" origin="0.5,0.45" scale="0.5" />
-      <sprite name="bio2 Left Thigh" texture="%ModDir%/Jobgear/Under_Masks/Bio-2.png" limb="LeftThigh" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="76,9,72,114" origin="0.5,0.45" scale="0.5" />
-      <sprite name="bio2 Right Leg" texture="%ModDir%/Jobgear/Under_Masks/Bio-2.png" limb="RightLeg" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="8,129,60,125" origin="0.5,0.45" scale="0.5" />
-      <sprite name="bio2 Left Leg" texture="%ModDir%/Jobgear/Under_Masks/Bio-2.png" limb="LeftLeg" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="81,129,60,125" origin="0.5,0.45" scale="0.5" />
-      <sprite name="bio2 Left Hand" texture="%ModDir%/Jobgear/Under_Masks/Bio-2.png" limb="LeftHand" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="357,190,28,38" origin="0.3,0.45" scale="0.5" />
-      <sprite name="bio2 Right Hand" texture="%ModDir%/Jobgear/Under_Masks/Bio-2.png" limb="RightHand" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="293,189,28,39" origin="0.3,0.45" scale="0.5" />
-      <sprite name="bio2 Right Shoe" texture="%ModDir%/Jobgear/Under_Masks/Bio-2.png" limb="RightFoot" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="431,140,69,51" origin="0.5,0.45" scale="0.5" />
-      <sprite name="bio2 Left Shoe" texture="%ModDir%/Jobgear/Under_Masks/Bio-2.png" limb="LeftFoot" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="436,203,69,51" origin="0.5,0.5" scale="0.5" />
+      <sprite name="bio2 HEAD" texture="%ModDir:3278494407%/Jobgear/Under_Masks/APR-2.png" limb="Head" depthlimb="RightArm" inheritlimbdepth="true" inheritscale="false" hidelimb="false" alphaclipotherwearables="false" sourcerect="6,5,214,220" scale="0.13" origin="0.55,0.6" />
+      <sprite name="bio2 Torso" texture="%ModDir:3278494407%/Jobgear/Under_Masks/Bio-2.png" limb="Torso" depthlimb="Jaw" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="162,8,118,164" scale="0.45" origin="0.6,0.45" />
+      <sprite name="bio2 Waist" texture="%ModDir:3278494407%/Jobgear/Under_Masks/Bio-2.png" limb="Waist" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="189,195,56,52" scale="0.5" origin="0.45,0.5" />
+      <sprite name="bio2 Left Upper Arm" texture="%ModDir:3278494407%/Jobgear/Under_Masks/Bio-2.png" limb="LeftArm" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="353,2,44,84" origin="0.45,0.6" scale="0.5" />
+      <sprite name="bio2 Right Upper Arm" texture="%ModDir:3278494407%/Jobgear/Under_Masks/Bio-2.png" limb="RightArm" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="286,1,46,84" origin="0.45,0.6" scale="0.5" />
+      <sprite name="bio2 Left Lower Arm" texture="%ModDir:3278494407%/Jobgear/Under_Masks/Bio-2.png" limb="LeftForearm" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="350,87,38,76" origin="0.4,0.55" scale="0.5" />
+      <sprite name="bio2 Right Lower Arm" texture="%ModDir:3278494407%/Jobgear/Under_Masks/Bio-2.png" limb="RightForearm" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="286,86,38,76" origin="0.4,0.55" scale="0.5" />
+      <sprite name="bio2 Right Thigh" texture="%ModDir:3278494407%/Jobgear/Under_Masks/Bio-2.png" limb="RightThigh" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="3,9,72,114" origin="0.5,0.45" scale="0.5" />
+      <sprite name="bio2 Left Thigh" texture="%ModDir:3278494407%/Jobgear/Under_Masks/Bio-2.png" limb="LeftThigh" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="76,9,72,114" origin="0.5,0.45" scale="0.5" />
+      <sprite name="bio2 Right Leg" texture="%ModDir:3278494407%/Jobgear/Under_Masks/Bio-2.png" limb="RightLeg" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="8,129,60,125" origin="0.5,0.45" scale="0.5" />
+      <sprite name="bio2 Left Leg" texture="%ModDir:3278494407%/Jobgear/Under_Masks/Bio-2.png" limb="LeftLeg" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="81,129,60,125" origin="0.5,0.45" scale="0.5" />
+      <sprite name="bio2 Left Hand" texture="%ModDir:3278494407%/Jobgear/Under_Masks/Bio-2.png" limb="LeftHand" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="357,190,28,38" origin="0.3,0.45" scale="0.5" />
+      <sprite name="bio2 Right Hand" texture="%ModDir:3278494407%/Jobgear/Under_Masks/Bio-2.png" limb="RightHand" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="293,189,28,39" origin="0.3,0.45" scale="0.5" />
+      <sprite name="bio2 Right Shoe" texture="%ModDir:3278494407%/Jobgear/Under_Masks/Bio-2.png" limb="RightFoot" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="431,140,69,51" origin="0.5,0.45" scale="0.5" />
+      <sprite name="bio2 Left Shoe" texture="%ModDir:3278494407%/Jobgear/Under_Masks/Bio-2.png" limb="LeftFoot" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="436,203,69,51" origin="0.5,0.5" scale="0.5" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.4" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.5" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.25" />
@@ -114,11 +114,11 @@
     </Wearable>
   </Item>
   <Item identifier="tsm_cbrnert" subcategory="TSM" category="Equipment" tags="smallitem,deepdiving,cbrngear,heavycbrn,divinggear_wearableindoors" cargocontaineridentifier="metalcrate" scale="0.5" fireproof="true" waterproof="true" impactsoundtag="impact_soft">
-    <InventoryIcon texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suitcontained.png" sourcerect="0,255,128,173" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suititem.png" sourcerect="0,15,168,125" depth="0.6" origin="0.5,0.5" />
-    <ContainedSprite name="ERT Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suitcontained.png" sourcerect="24,0,79,211" depth="0.55" origin="0.5,0.5" />
-    <ContainedSprite name="ERT Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suitcontained.png" sourcerect="24,0,79,211" depth="0.55" origin="-0.12,-0.14" />
-    <ContainedSprite name="ERT Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suititem.png" sourcerect="0,191,225,66" depth="0.55" origin="0.6,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suitcontained.png" sourcerect="0,255,128,173" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suititem.png" sourcerect="0,15,168,125" depth="0.6" origin="0.5,0.5" />
+    <ContainedSprite name="ERT Vertical Locker" allowedcontainertags="divingsuitcontainervertical" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suitcontained.png" sourcerect="24,0,79,211" depth="0.55" origin="0.5,0.5" />
+    <ContainedSprite name="ERT Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suitcontained.png" sourcerect="24,0,79,211" depth="0.55" origin="-0.12,-0.14" />
+    <ContainedSprite name="ERT Horizontal Locker" allowedcontainertags="divingsuitcontainerhorizontal" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suititem.png" sourcerect="0,191,225,66" depth="0.55" origin="0.6,0.5" />
     <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
     <Deconstruct time="30">
       <Item identifier="titaniumaluminiumalloy" amount="2"/>
@@ -134,21 +134,21 @@
       <RequiredItem identifier="rubber" amount="2" />
     </Fabricate>
     <Wearable slots="Head+OuterClothes+InnerClothes" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="ERT Torso" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="Torso" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="138,0,126,191" origin="0.61,0.51" />
-      <sprite name="ERT Right Hand" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="true" origin="0.08,0.05" />
-      <sprite name="ERT Left Hand" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="true" origin="0.08,0.05" />
-      <sprite name="ERT Right Lower Arm" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="295,0,39,82" origin="0.48,0.46" />
-      <sprite name="ERT Left Lower Arm" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="352,0,49,85" origin="0.48,0.46" />
-      <sprite name="ERT Right Upper Forearm" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="287,87,46,71" origin="0.58,0.52" />
-      <sprite name="ERT Left Upper Forearm" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="349,87,47,69" origin="0.58,0.52" />
-      <sprite name="ERT Waist" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="Waist" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="true" origin="0.14,0.15" />
-      <sprite name="ERT Right Thigh" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="11,11,64,104" origin="0.5,0.48" />
-      <sprite name="ERT Left Thigh" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="429,0,63,114" origin="0.5,0.48" />
-      <sprite name="ERT Right Leg" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="11,132,78,101" origin="0.5,0.47" />
-      <sprite name="ERT Left Leg" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="434,125,78,101" origin="0.5,0.47" />
-      <sprite name="ERT Left Shoe" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="80,225,77,31" origin="0.54,0.33" />
-      <sprite name="ERT Right Shoe" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="337,224,75,32" origin="0.55,0.32" />
-      <sprite name="ERT Helmet Wearable" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suititem.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" depthlimb="LeftArm" scale="0.8" hideotherwearables="true" hidelimb="true" sourcerect="0,170,80,90" origin="0.35,0.6">
+      <sprite name="ERT Torso" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="Torso" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="138,0,126,191" origin="0.61,0.51" />
+      <sprite name="ERT Right Hand" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="true" origin="0.08,0.05" />
+      <sprite name="ERT Left Hand" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="true" origin="0.08,0.05" />
+      <sprite name="ERT Right Lower Arm" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="295,0,39,82" origin="0.48,0.46" />
+      <sprite name="ERT Left Lower Arm" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="352,0,49,85" origin="0.48,0.46" />
+      <sprite name="ERT Right Upper Forearm" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="287,87,46,71" origin="0.58,0.52" />
+      <sprite name="ERT Left Upper Forearm" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="349,87,47,69" origin="0.58,0.52" />
+      <sprite name="ERT Waist" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="Waist" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="true" origin="0.14,0.15" />
+      <sprite name="ERT Right Thigh" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="11,11,64,104" origin="0.5,0.48" />
+      <sprite name="ERT Left Thigh" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="429,0,63,114" origin="0.5,0.48" />
+      <sprite name="ERT Right Leg" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="11,132,78,101" origin="0.5,0.47" />
+      <sprite name="ERT Left Leg" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="434,125,78,101" origin="0.5,0.47" />
+      <sprite name="ERT Left Shoe" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="80,225,77,31" origin="0.54,0.33" />
+      <sprite name="ERT Right Shoe" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="337,224,75,32" origin="0.55,0.32" />
+      <sprite name="ERT Helmet Wearable" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suititem.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" depthlimb="LeftArm" scale="0.8" hideotherwearables="true" hidelimb="true" sourcerect="0,170,80,90" origin="0.35,0.6">
         <LightComponent range="1500.0" lightcolor="250,224,165,255" powerconsumption="0" IsOn="true" characterusable="false">
           <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" Interval="1" setvalue="true">
             <Conditional IsDead="false" />
@@ -156,7 +156,7 @@
           <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,2.0" />
         </LightComponent>
       </sprite>
-      <sprite name="Hide Boobs" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="Tail" hidelimb="true" hideotherwearables="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" />      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.9" deflectprojectiles="true" />
+      <sprite name="Hide Boobs" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="Tail" hidelimb="true" hideotherwearables="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" />      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.9" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.6" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,bitewounds,internaldamage" damagemultiplier="0.7" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.8" deflectprojectiles="true" />
@@ -216,11 +216,11 @@
       <RequiredItem identifier="tsm_yx_crystallography" amount="1" />
       <RequiredItem identifier="tsm_ic" amount="2" />
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" sourcerect="357,384,147,128" origin="0.5,0.5" />
-    <Sprite name="rz_prototypesuit Item" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/mk1.png" sourcerect="108,65,194,369" depth="0.55" origin="0.5,0.72" />
+    <InventoryIcon texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" sourcerect="357,384,147,128" origin="0.5,0.5" />
+    <Sprite name="rz_prototypesuit Item" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/mk1.png" sourcerect="108,65,194,369" depth="0.55" origin="0.5,0.72" />
     <Body width="150" height="230" density="15" />
     <Wearable slots="OuterClothes+Head" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select" allowusewhenworn="true">
-      <sprite name="rz_prototypesuit Helmet Wearable" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="Head" hidelimb="true" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" depthlimb="LeftArm" scale="0.43" hideotherwearables="true" hidewearablesoftype="" sourcerect="269,7,96,90" origin="0.0,0.7" >
+      <sprite name="rz_prototypesuit Helmet Wearable" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="Head" hidelimb="true" inheritlimbdepth="true" inheritscale="false" ignorelimbscale="true" depthlimb="LeftArm" scale="0.43" hideotherwearables="true" hidewearablesoftype="" sourcerect="269,7,96,90" origin="0.0,0.7" >
         <LightComponent range="1500.0" lightcolor="250,224,165,255" powerconsumption="0" IsOn="true" characterusable="false">
           <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" Interval="1" setvalue="true">
             <Conditional IsDead="false" />
@@ -228,7 +228,7 @@
           <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,2.0" />
         </LightComponent>
       </sprite>
-      <sprite name="rz_prototypesuit Torso" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="Torso" scale="0.95" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.41,0.5" inheritlimbdepth="true" inheritsourcerect="false" sourcerect="1,7,213,214">
+      <sprite name="rz_prototypesuit Torso" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="Torso" scale="0.95" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.41,0.5" inheritlimbdepth="true" inheritsourcerect="false" sourcerect="1,7,213,214">
         <LightComponent range="1500.0" lightcolor="250,224,165,255" powerconsumption="0" IsOn="true" characterusable="false">
           <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" Interval="1" setvalue="true">
             <Conditional IsDead="false" />
@@ -236,19 +236,19 @@
           <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,2.0" />
         </LightComponent>
       </sprite>
-      <sprite name="rz_prototypesuit Right Hand" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="RightHand" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.0" scale="0.4" inheritsourcerect="false" SourceRect="449,125,55,69" />
-      <sprite name="rz_prototypesuit Left Hand" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="LeftHand" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.0" scale="0.4" inheritsourcerect="false" SourceRect="449,125,55,69" />
-      <sprite name="rz_prototypesuit Right Upper Arm" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="RightArm" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.5" scale="0.5" inheritsourcerect="false" SourceRect="300,117,106,138" />
-      <sprite name="rz_prototypesuit Left Upper Arm" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="LeftArm" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.5" scale="0.5" inheritsourcerect="false" SourceRect="300,117,106,138" />
-      <sprite name="rz_prototypesuit Right Forearm" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="RightForearm" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.0" scale="0.4" inheritsourcerect="false" SourceRect="441,13,71,91" />
-      <sprite name="rz_prototypesuit Left Forearm" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="LeftForearm" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.0" scale="0.4" inheritsourcerect="false" SourceRect="441,13,71,91"  />
-      <sprite name="rz_prototypesuit Waist" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="Waist" hidelimb="true" scale="0.6" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.9" inheritsourcerect="false" sourcerect="182,264,109,91" />
-      <sprite name="rz_prototypesuit Right Thigh" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.08,0.3" inheritsourcerect="false"  sourcerect="0,288,111,153" />
-      <sprite name="rz_prototypesuit Left Thigh" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.08,0.3" inheritsourcerect="false" sourcerect="0,288,111,153" />
-      <sprite name="rz_prototypesuit Right Leg" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="RightLeg" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.03,0.1" scale="0.55" inheritsourcerect="false" sourcerect="134,372,85,139" />
-      <sprite name="rz_prototypesuit Left Leg" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="LeftLeg" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.03,0.1" inheritsourcerect="false" scale="0.55" sourcerect="134,372,85,139" />
-      <sprite name="rz_prototypesuit Left Shoe" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.18,-1" inheritsourcerect="false" scale="0.6" sourcerect="381,315,121,49" />
-      <sprite name="rz_prototypesuit Right Shoe" texture="%ModDir%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.18,-1" inheritsourcerect="false" scale="0.6" sourcerect="381,315,121,49" />
+      <sprite name="rz_prototypesuit Right Hand" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="RightHand" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.0" scale="0.4" inheritsourcerect="false" SourceRect="449,125,55,69" />
+      <sprite name="rz_prototypesuit Left Hand" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="LeftHand" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.0" scale="0.4" inheritsourcerect="false" SourceRect="449,125,55,69" />
+      <sprite name="rz_prototypesuit Right Upper Arm" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="RightArm" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.5" scale="0.5" inheritsourcerect="false" SourceRect="300,117,106,138" />
+      <sprite name="rz_prototypesuit Left Upper Arm" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="LeftArm" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.5" scale="0.5" inheritsourcerect="false" SourceRect="300,117,106,138" />
+      <sprite name="rz_prototypesuit Right Forearm" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="RightForearm" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.0" scale="0.4" inheritsourcerect="false" SourceRect="441,13,71,91" />
+      <sprite name="rz_prototypesuit Left Forearm" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="LeftForearm" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.0" scale="0.4" inheritsourcerect="false" SourceRect="441,13,71,91"  />
+      <sprite name="rz_prototypesuit Waist" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="Waist" hidelimb="true" scale="0.6" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.5,0.9" inheritsourcerect="false" sourcerect="182,264,109,91" />
+      <sprite name="rz_prototypesuit Right Thigh" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.08,0.3" inheritsourcerect="false"  sourcerect="0,288,111,153" />
+      <sprite name="rz_prototypesuit Left Thigh" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.08,0.3" inheritsourcerect="false" sourcerect="0,288,111,153" />
+      <sprite name="rz_prototypesuit Right Leg" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="RightLeg" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.03,0.1" scale="0.55" inheritsourcerect="false" sourcerect="134,372,85,139" />
+      <sprite name="rz_prototypesuit Left Leg" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="LeftLeg" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.03,0.1" inheritsourcerect="false" scale="0.55" sourcerect="134,372,85,139" />
+      <sprite name="rz_prototypesuit Left Shoe" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.18,-1" inheritsourcerect="false" scale="0.6" sourcerect="381,315,121,49" />
+      <sprite name="rz_prototypesuit Right Shoe" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="false" hideotherwearables="true" inheritorigin="false" origin="0.18,-1" inheritsourcerect="false" scale="0.6" sourcerect="381,315,121,49" />
       <StatusEffect type="OnWearing" target="Character" HideFace="true" OxygenAvailable="2000" PressureProtection="15000.0" PropulsionSpeedMultiplier="0.25" setvalue="true" disabledeltatime="true">
         <Sound file="Content/Items/Diving/DivingSuitLoop1.ogg" range="250" loop="true"/>
         <Sound file="Content/Items/Diving/DivingSuitLoop2.ogg" range="250" loop="true"/>
@@ -265,8 +265,8 @@
         <Conditional jobidentifier="eq cbrn_guy"/>
       </StatusEffect>
       <StatusEffect Type="OnWearing" Target="This,Character">
-        <TriggerAnimation Type="Walk" path="%ModDir%/Characters/humanmech_anim/MechWalk.xml" priority="100" ExpectedSpecies="Human" />
-        <TriggerAnimation Type="Run" path="%ModDir%/Characters/humanmech_anim/MechRun.xml" priority="100" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Walk" path="%ModDir:3278494407%/Characters/humanmech_anim/MechWalk.xml" priority="100" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Run" path="%ModDir:3278494407%/Characters/humanmech_anim/MechRun.xml" priority="100" ExpectedSpecies="Human" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.1" PressureProtection="0.0" OxygenAvailable="-8000" disabledeltatime="true" LowPassMultiplier="1" ObstructVisionAmount="1" setvalue="true">
         <Conditional jobidentifier="neq cbrn_guy"/>
@@ -318,21 +318,21 @@
       <RequiredItem identifier="organicfiber" amount="2" />
     </Fabricate>
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
-    <sprite name="CBRNsuit orange Head" texture="%ModDir%/Jobgear/CBRN_Suits/headgears.png" limb="Head" depthlimb="RightArm" inheritlimbdepth="true" inheritscale="false" hidelimb="false" hideotherwearables="true" sourcerect="915,229,105,110" scale="0.3" origin="0.55,0.55" />
-      <sprite name="CBRNsuit gray Torso" texture="%ModDir%/Jobgear/CBRN_Suits/cbrn_gray.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="CBRNsuit gray Right Hand" texture="%ModDir%/Jobgear/CBRN_Suits/cbrn_gray.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="CBRNsuit gray Left Hand" texture="%ModDir%/Jobgear/CBRN_Suits/cbrn_gray.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="CBRNsuit gray Left Lower Arm" texture="%ModDir%/Jobgear/CBRN_Suits/cbrn_gray.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="CBRNsuit gray Right Lower Arm" texture="%ModDir%/Jobgear/CBRN_Suits/cbrn_gray.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="CBRNsuit gray Left Upper Arm" texture="%ModDir%/Jobgear/CBRN_Suits/cbrn_gray.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="CBRNsuit gray Right Upper Arm" texture="%ModDir%/Jobgear/CBRN_Suits/cbrn_gray.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="CBRNsuit gray Waist" texture="%ModDir%/Jobgear/CBRN_Suits/cbrn_gray.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="CBRNsuit gray Right Thigh" texture="%ModDir%/Jobgear/CBRN_Suits/cbrn_gray.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="CBRNsuit gray Left Thigh" texture="%ModDir%/Jobgear/CBRN_Suits/cbrn_gray.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="CBRNsuit gray Right Leg" texture="%ModDir%/Jobgear/CBRN_Suits/cbrn_gray.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="CBRNsuit gray Left Leg" texture="%ModDir%/Jobgear/CBRN_Suits/cbrn_gray.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="CBRNsuit gray Right Shoe" texture="%ModDir%/Jobgear/CBRN_Suits/cbrn_gray.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <sprite name="CBRNsuit gray Left Shoe" texture="%ModDir%/Jobgear/CBRN_Suits/cbrn_gray.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+    <sprite name="CBRNsuit orange Head" texture="%ModDir:3278494407%/Jobgear/CBRN_Suits/headgears.png" limb="Head" depthlimb="RightArm" inheritlimbdepth="true" inheritscale="false" hidelimb="false" hideotherwearables="true" sourcerect="915,229,105,110" scale="0.3" origin="0.55,0.55" />
+      <sprite name="CBRNsuit gray Torso" texture="%ModDir:3278494407%/Jobgear/CBRN_Suits/cbrn_gray.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="CBRNsuit gray Right Hand" texture="%ModDir:3278494407%/Jobgear/CBRN_Suits/cbrn_gray.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="CBRNsuit gray Left Hand" texture="%ModDir:3278494407%/Jobgear/CBRN_Suits/cbrn_gray.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="CBRNsuit gray Left Lower Arm" texture="%ModDir:3278494407%/Jobgear/CBRN_Suits/cbrn_gray.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="CBRNsuit gray Right Lower Arm" texture="%ModDir:3278494407%/Jobgear/CBRN_Suits/cbrn_gray.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="CBRNsuit gray Left Upper Arm" texture="%ModDir:3278494407%/Jobgear/CBRN_Suits/cbrn_gray.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="CBRNsuit gray Right Upper Arm" texture="%ModDir:3278494407%/Jobgear/CBRN_Suits/cbrn_gray.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="CBRNsuit gray Waist" texture="%ModDir:3278494407%/Jobgear/CBRN_Suits/cbrn_gray.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="CBRNsuit gray Right Thigh" texture="%ModDir:3278494407%/Jobgear/CBRN_Suits/cbrn_gray.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="CBRNsuit gray Left Thigh" texture="%ModDir:3278494407%/Jobgear/CBRN_Suits/cbrn_gray.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="CBRNsuit gray Right Leg" texture="%ModDir:3278494407%/Jobgear/CBRN_Suits/cbrn_gray.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="CBRNsuit gray Left Leg" texture="%ModDir:3278494407%/Jobgear/CBRN_Suits/cbrn_gray.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="CBRNsuit gray Right Shoe" texture="%ModDir:3278494407%/Jobgear/CBRN_Suits/cbrn_gray.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="CBRNsuit gray Left Shoe" texture="%ModDir:3278494407%/Jobgear/CBRN_Suits/cbrn_gray.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Captain's Uniform 2 Right Hand" texture="Content/Items/Jobgear/Captain/captain_2.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Captain's Uniform 2 Left Hand" texture="Content/Items/Jobgear/Captain/captain_2.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.8" />
@@ -353,8 +353,8 @@
 
   <!--APRs-->
   <Item identifier="berra_cbrn3a" subcategory="Berra Group" category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem" scale="0.5" fireproof="true" waterproof="true" impactsoundtag="impact_metal_light" hideinmenus="false">
-    <InventoryIcon name="CBRN3A inv" texture="%ModDir%/Jobgear/Under_Masks/CBRN-3A.png" sourcerect="155,121,131,175" origin="0.5,0.5" />
-    <Sprite name="CBRN3A Item" texture="%ModDir%/Jobgear/Under_Masks/CBRN-3A.png" sourcerect="155,121,131,175" depth="0.55" origin="0.5,0.4" />
+    <InventoryIcon name="CBRN3A inv" texture="%ModDir:3278494407%/Jobgear/Under_Masks/CBRN-3A.png" sourcerect="155,121,131,175" origin="0.5,0.5" />
+    <Sprite name="CBRN3A Item" texture="%ModDir:3278494407%/Jobgear/Under_Masks/CBRN-3A.png" sourcerect="155,121,131,175" depth="0.55" origin="0.5,0.4" />
     <Body width="150" height="210" density="52" />
     <Deconstruct time="16">
       <Item identifier="rubber" amount="2" />
@@ -371,12 +371,12 @@
     </Fabricate>
     <Wearable slots="Bag+Head" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
       <StatusEffect type="OnWearing" target="Character" HideFace="true" setvalue="true" disabledeltatime="true" />
-      <sprite name="CBRN3A Mask" texture="%ModDir%/Jobgear/Under_Masks/APR-2.png" canbehiddenbyotherwearables="false" alphaclipotherwearables="false" sourcerect="304,212,128,153" depth="0.55" limb="Head" depthlimb="Head" rotation="0" scale="0.15" origin="0.15,0.3" />
-      <sprite name="CBRN3A Backpack" texture="%ModDir%/Jobgear/Under_Masks/CBRN-3A.png" canbehiddenbyotherwearables="false" sourcerect="6,3,108,297" depth="0.55" limb="Torso" depthlimb="Torso" scale="0.3" origin="1.3,0.5" />
+      <sprite name="CBRN3A Mask" texture="%ModDir:3278494407%/Jobgear/Under_Masks/APR-2.png" canbehiddenbyotherwearables="false" alphaclipotherwearables="false" sourcerect="304,212,128,153" depth="0.55" limb="Head" depthlimb="Head" rotation="0" scale="0.15" origin="0.15,0.3" />
+      <sprite name="CBRN3A Backpack" texture="%ModDir:3278494407%/Jobgear/Under_Masks/CBRN-3A.png" canbehiddenbyotherwearables="false" sourcerect="6,3,108,297" depth="0.55" limb="Torso" depthlimb="Torso" scale="0.3" origin="1.3,0.5" />
       <damagemodifier armorsector="0,360" afflictionidentifiers="gunshotwound" damagemultiplier="0.8" deflectprojectiles="true" />
       <StatusEffect type="OnWearing" target="Character" disabledeltatime="true" SpeedMultiplier="0.9" setvalue="true">
         <Conditional IsLocalPlayer="True"/>
-        <Sound file="%ModDir%/Jobgear/Under_Masks/maskedbreath.ogg" volume="0.5" loop="true" />
+        <Sound file="%ModDir:3278494407%/Jobgear/Under_Masks/maskedbreath.ogg" volume="0.5" loop="true" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="Character" disabledeltatime="true" setvalue="true">
         <Affliction identifier="APR" amount="10" />
@@ -413,8 +413,8 @@
     <aitarget sightrange="2500" soundrange="3000" fadeouttime="6" />
   </Item>
   <Item identifier="berra_cbrn3" subcategory="Berra Group" category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem" scale="0.15" fireproof="true" impactsoundtag="impact_metal_light" hideinmenus="false">
-    <InventoryIcon name="CBRN3A inv" texture="%ModDir%/Jobgear/Under_Masks/APR-2.png" sourcerect="304,212,128,153" origin="0.5,0.5" />
-    <Sprite name="CBRN3A Item" texture="%ModDir%/Jobgear/Under_Masks/APR-2.png" sourcerect="304,212,128,153" depth="0.55" origin="0.5,0.4" />
+    <InventoryIcon name="CBRN3A inv" texture="%ModDir:3278494407%/Jobgear/Under_Masks/APR-2.png" sourcerect="304,212,128,153" origin="0.5,0.5" />
+    <Sprite name="CBRN3A Item" texture="%ModDir:3278494407%/Jobgear/Under_Masks/APR-2.png" sourcerect="304,212,128,153" depth="0.55" origin="0.5,0.4" />
     <Body width="150" height="210" density="52" />
     <Deconstruct time="16">
       <Item identifier="rubber" amount="2" />
@@ -429,7 +429,7 @@
     </Fabricate>
     <Wearable slots="Any,Head" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
       <StatusEffect type="OnWearing" target="Character" HideFace="true" setvalue="true" disabledeltatime="true" />
-      <sprite name="CBRN3A Mask" texture="%ModDir%/Jobgear/Under_Masks/APR-2.png" canbehiddenbyotherwearables="false" alphaclipotherwearables="false" sourcerect="304,212,128,153" depth="0.55" limb="Head" depthlimb="Head" rotation="0" scale="0.15" origin="0.15,0.3" />
+      <sprite name="CBRN3A Mask" texture="%ModDir:3278494407%/Jobgear/Under_Masks/APR-2.png" canbehiddenbyotherwearables="false" alphaclipotherwearables="false" sourcerect="304,212,128,153" depth="0.55" limb="Head" depthlimb="Head" rotation="0" scale="0.15" origin="0.15,0.3" />
       <damagemodifier armorsector="0,360" afflictionidentifiers="gunshotwound" damagemultiplier="0.8" deflectprojectiles="true" />
       <StatusEffect type="OnWearing" targettype="Contained" targets="berra_filiter" Condition="-0.2" />
       <StatusEffect type="OnWearing" targettype="Contained" targets="tsm_filiter" Condition="-0.5" />
@@ -439,7 +439,7 @@
       <StatusEffect type="OnWearing" target="Character" disabledeltatime="true" ObstructVisionAmount="0.3" setvalue="true" comparison="And">
         <Conditional IsLocalPlayer="True"/>
         <RequiredItems items="maskfilter" type="Contained" />
-        <Sound file="%ModDir%/Jobgear/Under_Masks/maskedbreath.ogg" volume="0.3" loop="true" />
+        <Sound file="%ModDir:3278494407%/Jobgear/Under_Masks/maskedbreath.ogg" volume="0.3" loop="true" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="Character" disabledeltatime="true" setvalue="true">
         <Affliction identifier="APR" amount="10" />
@@ -459,8 +459,8 @@
 
   <!--Weapons-->
   <Item identifier="berra_TES20" subcategory="Berra Group" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" scale="0.23" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/weapons/BerraArm/TES20/TES20.png" sourcerect="0,0,400,185" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/weapons/BerraArm/TES20/TES20.png" sourcerect="0,0,400,185" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/weapons/BerraArm/TES20/TES20.png" sourcerect="0,0,400,185" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/weapons/BerraArm/TES20/TES20.png" sourcerect="0,0,400,185" depth="0.55" origin="0.5,0.5" />
     <Body width="400" height="70" density="52" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="45,0" aimpos="52,5" handle1="-20,-60" handle2="80,10" holdangle="-50" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.9" setvalue="true" />
@@ -471,7 +471,7 @@
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
-      <Sound file="%ModDir%/weapons/BerraArm/TES20/TES20_Fire.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:3278494407%/weapons/BerraArm/TES20/TES20_Fire.ogg" type="OnUse" range="3000" />
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>
@@ -492,8 +492,8 @@
     <aitarget sightrange="2500" soundrange="3000" fadeouttime="6" />
   </Item>
   <Item identifier="berra_obj227flamethrower" subcategory="Berra Group" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" scale="0.23" impactsoundtag="impact_metal_light" hideinmenus="false">
-    <InventoryIcon name="obj227 flamethrower inv" texture="%ModDir%/weapons/BerraArm/Obj227/obj227.png" sourcerect="0,0,203,292" origin="0.5,0.5" />
-    <Sprite name="obj227 flamethrower main" texture="%ModDir%/weapons/BerraArm/Obj227/obj227.png" sourcerect="41,358,415,123" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon name="obj227 flamethrower inv" texture="%ModDir:3278494407%/weapons/BerraArm/Obj227/obj227.png" sourcerect="0,0,203,292" origin="0.5,0.5" />
+    <Sprite name="obj227 flamethrower main" texture="%ModDir:3278494407%/weapons/BerraArm/Obj227/obj227.png" sourcerect="41,358,415,123" depth="0.55" origin="0.5,0.5" />
     <Body width="210" height="70" density="52" />
     <Deconstruct time="16">
       <Item identifier="rubber" amount="2" />
@@ -509,8 +509,8 @@
       <RequiredItem identifier="physicorium" amount="3" />
     </Fabricate>
     <Wearable slots="Bag+RightHand+LeftHand" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select" AllowUseWhenWorn="true">
-      <sprite name="obj227 flamethrower Worn" texture="%ModDir%/Weapons/BerraArm/Obj227/obj227.png" canbehiddenbyotherwearables="false" sourcerect="0,0,202,291" depth="0.55" limb="Torso" depthlimb="LeftArm" scale="0.25" origin="0.9,0.5" />
-      <sprite name="obj227 flamethrower handhold" texture="%ModDir%/weapons/BerraArm/Obj227/obj227.png" canbehiddenbyotherwearables="false" sourcerect="41,358,415,123" depth="0.55" limb="RightHand" depthlimb="LeftArm" Rotation="-60" scale="0.25" origin="0.5658045,0.6688641" />
+      <sprite name="obj227 flamethrower Worn" texture="%ModDir:3278494407%/Weapons/BerraArm/Obj227/obj227.png" canbehiddenbyotherwearables="false" sourcerect="0,0,202,291" depth="0.55" limb="Torso" depthlimb="LeftArm" scale="0.25" origin="0.9,0.5" />
+      <sprite name="obj227 flamethrower handhold" texture="%ModDir:3278494407%/weapons/BerraArm/Obj227/obj227.png" canbehiddenbyotherwearables="false" sourcerect="41,358,415,123" depth="0.55" limb="RightHand" depthlimb="LeftArm" Rotation="-60" scale="0.25" origin="0.5658045,0.6688641" />
     </Wearable>
     <Holdable slots="Bag+RightHand+LeftHand" controlpose="true" holdpos="55,-50" aimpos="55,-50" handle1="0,0" handle2="15,0" holdangle="0" aimangle="0" msg="ItemMsgPickUpSelect">
       <RepairTool firedamage="60.0" strurequirecturefixamount="-0.2" WaterAmount="-10" RepairMultiple="true" usablein="Air" range="1200" barrelpos="50,10" fireprobability="0.1" repairmultiple="true" RepairMultipleWalls="false" repairthroughwalls="false" repairthroughholes="true" combatPriority="100" spread="1" unskilledspread="1">
@@ -553,8 +553,8 @@
     <aitarget sightrange="2500" soundrange="3000" fadeouttime="6" />
   </Item>
   <Item identifier="berra_obj227aflamethrower" subcategory="Berra Group" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" scale="0.23" impactsoundtag="impact_metal_light" hideinmenus="false">
-    <Sprite name="obj227 flamethrower main" texture="%ModDir%/weapons/BerraArm/Obj227/obj227.png" sourcerect="41,358,415,123" depth="0.55" origin="0.5,0.5" />
-    <Sprite name="obj227 flamethrower main" texture="%ModDir%/weapons/BerraArm/Obj227/obj227.png" sourcerect="41,358,415,123" depth="0.55" origin="0.5,0.5" />
+    <Sprite name="obj227 flamethrower main" texture="%ModDir:3278494407%/weapons/BerraArm/Obj227/obj227.png" sourcerect="41,358,415,123" depth="0.55" origin="0.5,0.5" />
+    <Sprite name="obj227 flamethrower main" texture="%ModDir:3278494407%/weapons/BerraArm/Obj227/obj227.png" sourcerect="41,358,415,123" depth="0.55" origin="0.5,0.5" />
     <Body width="210" height="70" density="52" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="100,-50" aimpos="100,-50" handle1="50,0" handle2="-180,-10" holdangle="0" aimangle="0" msg="ItemMsgPickUpSelect">
       <RepairTool firedamage="60.0" strurequirecturefixamount="-0.2" WaterAmount="-10" RepairMultiple="true" usablein="Air" range="600" barrelpos="50,10" fireprobability="0.6" repairmultiple="true" RepairMultipleWalls="false" repairthroughwalls="false" repairthroughholes="true" combatPriority="100" spread="20" unskilledspread="20">
@@ -593,8 +593,8 @@
     <aitarget sightrange="2500" soundrange="3000" fadeouttime="6" />
   </Item>
   <Item identifier="berra_drl3_inc" subcategory="Berra Group" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tubeitem" scale="0.23" impactsoundtag="impact_metal_light" hideinmenus="false">
-    <InventoryIcon texture="%ModDir%/weapons/BerraArm/DRL3/DRL3INC.png" sourcerect="0,0,500,95" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/weapons/BerraArm/DRL3/DRL3INC.png" sourcerect="0,0,500,95" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/weapons/BerraArm/DRL3/DRL3INC.png" sourcerect="0,0,500,95" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/weapons/BerraArm/DRL3/DRL3INC.png" sourcerect="0,0,500,95" depth="0.55" origin="0.5,0.5" />
     <Body width="500" height="95" density="60" />
     <Deconstruct time="16">
       <Item identifier="plastic" amount="2" />
@@ -606,7 +606,7 @@
       <RequiredItem identifier="incendium" amount="1" />
     </Fabricate>
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="DRL3 Incendiary Worn" texture="%ModDir%/Weapons/BerraArm/DRL3/DRL3INC.png" canbehiddenbyotherwearables="false" sourcerect="0,0,500,95" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.35" />
+      <sprite name="DRL3 Incendiary Worn" texture="%ModDir:3278494407%/Weapons/BerraArm/DRL3/DRL3INC.png" canbehiddenbyotherwearables="false" sourcerect="0,0,500,95" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.35" />
     </Wearable>
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="40,18" aimpos="35,18" handle1="15,-22" handle2="150,-20" holdangle="-50" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.8" setvalue="true" />
@@ -621,7 +621,7 @@
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="flamethrower" particleamount="1" velocitymin="1000" velocitymax="1000" highqualitycollisiondetection="true" />
-      <Sound file="%ModDir%/weapons/BerraArm/DRL3/DRL3.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:3278494407%/weapons/BerraArm/DRL3/DRL3.ogg" type="OnUse" range="3000" />
       <Propulsion force="-30" usablein="both" ApplyToHands="true">
         <RequiredItems items="drl3_inc_warhead" type="Contained" target="This" msg="ItemMsgAmmoRequired" />
       </Propulsion>
@@ -649,8 +649,8 @@
     <SkillRequirementHint identifier="weapons" level="30" />
   </Item>
   <Item identifier="berra_drl3_fab" subcategory="Berra Group" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tubeitem" scale="0.23" impactsoundtag="impact_metal_light" hideinmenus="false">
-    <InventoryIcon texture="%ModDir%/weapons/BerraArm/DRL3/DRL3FAB.png" sourcerect="0,0,500,95" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/weapons/BerraArm/DRL3/DRL3FAB.png" sourcerect="0,0,500,95" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/weapons/BerraArm/DRL3/DRL3FAB.png" sourcerect="0,0,500,95" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/weapons/BerraArm/DRL3/DRL3FAB.png" sourcerect="0,0,500,95" depth="0.55" origin="0.5,0.5" />
     <Body width="500" height="95" density="60" />
     <Deconstruct time="16">
       <Item identifier="plastic" amount="2" />
@@ -662,7 +662,7 @@
       <RequiredItem identifier="weldingfueltank" amount="2" />
     </Fabricate>
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="DRL3 Incendiary Worn" texture="%ModDir%/Weapons/BerraArm/DRL3/DRL3FAB.png" canbehiddenbyotherwearables="false" sourcerect="0,0,500,95" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.35" />
+      <sprite name="DRL3 Incendiary Worn" texture="%ModDir:3278494407%/Weapons/BerraArm/DRL3/DRL3FAB.png" canbehiddenbyotherwearables="false" sourcerect="0,0,500,95" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.35" />
     </Wearable>
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="40,18" aimpos="35,18" handle1="15,-22" handle2="150,-20" holdangle="-50" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.8" setvalue="true" />
@@ -677,7 +677,7 @@
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="flamethrower" particleamount="1" velocitymin="1000" velocitymax="1000" colormultiplier="229,221,215,255" />
-      <Sound file="%ModDir%/weapons/BerraArm/DRL3/DRL3.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:3278494407%/weapons/BerraArm/DRL3/DRL3.ogg" type="OnUse" range="3000" />
       <Propulsion force="-30" usablein="both" ApplyToHands="true">
         <RequiredItems items="drl3_fab_warhead" type="Contained" target="This" msg="ItemMsgAmmoRequired" />
       </Propulsion>
@@ -705,8 +705,8 @@
     <aitarget sightrange="2500" soundrange="3000" fadeouttime="6" />
   </Item>
   <Item identifier="berra_drl3_heat" subcategory="Berra Group" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tubeitem" scale="0.23" impactsoundtag="impact_metal_light" hideinmenus="false">
-    <InventoryIcon texture="%ModDir%/weapons/BerraArm/DRL3/DRL3HEAT.png" sourcerect="0,0,500,95" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/weapons/BerraArm/DRL3/DRL3HEAT.png" sourcerect="0,0,500,95" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/weapons/BerraArm/DRL3/DRL3HEAT.png" sourcerect="0,0,500,95" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/weapons/BerraArm/DRL3/DRL3HEAT.png" sourcerect="0,0,500,95" depth="0.55" origin="0.5,0.5" />
     <Body width="500" height="95" density="60" />
     <Deconstruct time="16">
       <Item identifier="plastic" amount="2" />
@@ -718,7 +718,7 @@
       <RequiredItem identifier="steel" amount="2" />
     </Fabricate>
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="DRL3 HEAT Worn" texture="%ModDir%/Weapons/BerraArm/DRL3/DRL3HEAT.png" canbehiddenbyotherwearables="false" sourcerect="0,0,500,95" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.35" />
+      <sprite name="DRL3 HEAT Worn" texture="%ModDir:3278494407%/Weapons/BerraArm/DRL3/DRL3HEAT.png" canbehiddenbyotherwearables="false" sourcerect="0,0,500,95" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.35" />
     </Wearable>
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="40,18" aimpos="35,18" handle1="15,-22" handle2="150,-20" holdangle="-50" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.8" setvalue="true" />
@@ -733,7 +733,7 @@
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="flamethrower" particleamount="1" velocitymin="1000" velocitymax="1000" colormultiplier="229,221,215,255" />
-      <Sound file="%ModDir%/weapons/BerraArm/DRL3/DRL3.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:3278494407%/weapons/BerraArm/DRL3/DRL3.ogg" type="OnUse" range="3000" />
       <Propulsion force="-30" usablein="both" ApplyToHands="true">
         <RequiredItems items="drl3_heat_warhead" type="Contained" target="This" msg="ItemMsgAmmoRequired" />
       </Propulsion>
@@ -761,8 +761,8 @@
     <aitarget sightrange="2500" soundrange="3000" fadeouttime="6" />
   </Item>
   <Item identifier="berra_drl3_dumb" subcategory="Berra Group" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tubeitem" scale="0.23" impactsoundtag="impact_metal_light" hideinmenus="false">
-    <InventoryIcon texture="%ModDir%/weapons/BerraArm/DRL3/DRL3DUMB.png" sourcerect="0,0,500,95" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/weapons/BerraArm/DRL3/DRL3DUMB.png" sourcerect="0,0,500,95" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/weapons/BerraArm/DRL3/DRL3DUMB.png" sourcerect="0,0,500,95" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/weapons/BerraArm/DRL3/DRL3DUMB.png" sourcerect="0,0,500,95" depth="0.55" origin="0.5,0.5" />
     <Body width="500" height="95" density="60" />
     <Deconstruct time="16">
       <Item identifier="plastic" amount="2" />
@@ -773,7 +773,7 @@
       <RequiredItem identifier="steel" amount="1" />
     </Fabricate>
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="DRL3 DUMB Worn" texture="%ModDir%/Weapons/BerraArm/DRL3/DRL3DUMB.png" canbehiddenbyotherwearables="false" sourcerect="0,0,500,95" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.35" />
+      <sprite name="DRL3 DUMB Worn" texture="%ModDir:3278494407%/Weapons/BerraArm/DRL3/DRL3DUMB.png" canbehiddenbyotherwearables="false" sourcerect="0,0,500,95" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.35" />
     </Wearable>
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="40,18" aimpos="35,18" handle1="15,-22" handle2="150,-20" holdangle="-50" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.8" setvalue="true" />
@@ -788,7 +788,7 @@
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="flamethrower" particleamount="1" velocitymin="1000" velocitymax="1000" colormultiplier="229,221,215,255" />
-      <Sound file="%ModDir%/weapons/BerraArm/DRL3/DRL3.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir:3278494407%/weapons/BerraArm/DRL3/DRL3.ogg" type="OnUse" range="3000" />
       <Propulsion force="-30" usablein="both" ApplyToHands="true">
         <RequiredItems items="drl3_dumb_warhead" type="Contained" target="This" msg="ItemMsgAmmoRequired" />
       </Propulsion>
@@ -817,8 +817,8 @@
     <aitarget sightrange="2500" soundrange="3000" fadeouttime="6" />
   </Item>
   <Item identifier="berra_mk153" subcategory="Berra Group" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" scale="0.155" impactsoundtag="impact_metal_light" hideinmenus="false">
-    <InventoryIcon texture="%ModDir%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" sourcerect="360,0,635,315" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" sourcerect="360,0,635,315" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" sourcerect="360,0,635,315" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" sourcerect="360,0,635,315" depth="0.55" origin="0.5,0.5" />
     <Body width="550" height="140" density="60" />
     <Deconstruct time="16">
       <Item identifier="plastic" amount="2" />
@@ -834,7 +834,7 @@
     <RequiredItem identifier="titanium" amount="2" />
     </Fabricate>
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="Mk153 Worn" texture="%ModDir%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" canbehiddenbyotherwearables="false" sourcerect="360,0,635,315" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.155" origin="0.5,0.7" />
+      <sprite name="Mk153 Worn" texture="%ModDir:3278494407%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" canbehiddenbyotherwearables="false" sourcerect="360,0,635,315" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.155" origin="0.5,0.7" />
     </Wearable>
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="50,5" aimpos="48,5" handle1="-120,-110" handle2="120,-30" holdangle="-30" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.8" setvalue="true" />
@@ -842,7 +842,7 @@
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
       <StatusEffect type="OnUse" target="Contained" checkconditionalalways="true" Delay="1.2" >
         <Condition Condition="lte 10"/>
-        <Sound file="%ModDir%/Weapons/BerraArm/Mk153SMAW/mk153unload.ogg" range="300" />
+        <Sound file="%ModDir:3278494407%/Weapons/BerraArm/Mk153SMAW/mk153unload.ogg" range="300" />
         <Dropitem />
       </StatusEffect>
     </Holdable>
@@ -851,7 +851,7 @@
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="flamethrower" particleamount="2" velocitymin="1000" velocitymax="1000" colormultiplier="229,221,215,255" />
-      <Sound file="%ModDir%/Weapons/BerraArm/Mk153SMAW/mk153.ogg" type="OnUse" volume="2" range="3000" />
+      <Sound file="%ModDir:3278494407%/Weapons/BerraArm/Mk153SMAW/mk153.ogg" type="OnUse" volume="2" range="3000" />
       <Propulsion force="-20" usablein="both" ApplyToHands="true">
         <RequiredItems items="mk153_shell" type="Contained" target="This" msg="ItemMsgAmmoRequired" />
       </Propulsion>
@@ -877,8 +877,8 @@
     <aitarget sightrange="2500" soundrange="3000" fadeouttime="6" />
   </Item>
   <Item identifier="berra_m4_beowulf" subcategory="Berra Group" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,acceptSTANAG" scale="0.25" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/Weapons/BerraArm/M4Beowolf/beowolfmain.png" sourcerect="22,0,534,128" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/BerraArm/M4Beowolf/beowolfmain.png" sourcerect="22,0,534,128" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/BerraArm/M4Beowolf/beowolfmain.png" sourcerect="22,0,534,128" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/BerraArm/M4Beowolf/beowolfmain.png" sourcerect="22,0,534,128" depth="0.55" origin="0.5,0.5" />
     <Body width="500" height="80" density="52" />
     <Price baseprice="4800" displaynonempty="true" minleveldifficulty="40">
       <Price storeidentifier="merchantarmory" multiplier="1.1" minamount="0" maxamount="2" />
@@ -910,7 +910,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
     <ParticleEmitter particle="ventsmoke" distancemin="-5" distancemax="-20" AngleMin="2.5" AngleMax="-2.5" VelocityMin="-100" VelocityMax="-50" ScaleMultiplier="0.01,0.01" ParticleAmount="1" HighQualityCollisionDetection="True" ColorMultiplier="255,255,255,255"  />
-      <Sound file="%ModDir%/Weapons/BerraArm/M4Beowolf/M4.50beowolf.ogg" type="OnUse" volume="1.0" range="1500" />
+      <Sound file="%ModDir:3278494407%/Weapons/BerraArm/M4Beowolf/M4.50beowolf.ogg" type="OnUse" volume="1.0" range="1500" />
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>
@@ -939,8 +939,8 @@
     </Quality>
   </Item>
   <Item identifier="berra_m4_458socom" subcategory="Berra Group" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,acceptSTANAG" scale="0.25" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/Weapons/BerraArm/M4458SOCOM/458socomm4.png" sourcerect="22,0,422,129" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/BerraArm/M4458SOCOM/458socomm4.png" sourcerect="22,0,422,129" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/BerraArm/M4458SOCOM/458socomm4.png" sourcerect="22,0,422,129" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/BerraArm/M4458SOCOM/458socomm4.png" sourcerect="22,0,422,129" depth="0.55" origin="0.5,0.5" />
     <Body width="210" height="70" density="52" />
     <Price baseprice="4800" displaynonempty="true" minleveldifficulty="40">
       <Price storeidentifier="merchantarmory" multiplier="1.1" minamount="0" maxamount="2" />
@@ -971,7 +971,7 @@
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
-      <Sound file="%ModDir%/Weapons/BerraArm/M4458SOCOM/458socomsilenced.ogg" type="OnUse" range="800" />
+      <Sound file="%ModDir:3278494407%/Weapons/BerraArm/M4458SOCOM/458socomsilenced.ogg" type="OnUse" range="800" />
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>
@@ -1000,8 +1000,8 @@
     </Quality>
   </Item>
   <Item identifier="berra_m110" subcategory="Berra Group" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" scale="0.1" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/Weapons/BerraArm/M110SASS/M110SASS.png" sourcerect="89,79,1422,366" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/BerraArm/M110SASS/M110SASS.png" sourcerect="89,79,1422,366" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/BerraArm/M110SASS/M110SASS.png" sourcerect="89,79,1422,366" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/BerraArm/M110SASS/M110SASS.png" sourcerect="89,79,1422,366" depth="0.55" origin="0.5,0.5" />
     <Body width="1450" height="200" density="52" />
     <Deconstruct time="10">
       <Item identifier="physicorium" />
@@ -1024,7 +1024,7 @@
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
-      <Sound file="%ModDir%/Weapons/BerraArm/M110SASS/M110SASS.ogg" type="OnUse" range="800" forceplaysounds="True"/>
+      <Sound file="%ModDir:3278494407%/Weapons/BerraArm/M110SASS/M110SASS.ogg" type="OnUse" range="800" forceplaysounds="True"/>
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>
@@ -1046,25 +1046,25 @@
     </Quality>
   </Item>
   <Item identifier="berra_m2hb" subcategory="Berra Group" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" scale="0.18" impactsoundtag="impact_metal_light" hideinmenus="true">
-    <InventoryIcon texture="%ModDir%/Weapons/BerraArm/M2HB/M2HB.png" sourcerect="26,560,982,325" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/BerraArm/M2HB/M2HB.png" sourcerect="26,560,982,325" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/BerraArm/M2HB/M2HB.png" sourcerect="26,560,982,325" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/BerraArm/M2HB/M2HB.png" sourcerect="26,560,982,325" depth="0.55" origin="0.5,0.5" />
     <Body width="1000" height="280" density="52" />
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="400,100" aimpos="400,100" handle1="-380,80" handle2="-380,80" holdangle="-67" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.0" setvalue="true">
-        <TriggerAnimation Type="Walk" path="%ModDir%/Weapons/BerraArm/M2HB/m2stationary.xml" priority="15" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Walk" path="%ModDir:3278494407%/Weapons/BerraArm/M2HB/m2stationary.xml" priority="15" ExpectedSpecies="Human" />
         <AbilityFlag flagtype="MustWalk" />
         <Affliction identifier="mountedguns" amount="10" />
       </StatusEffect>
     </Holdable>
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite texture="%ModDir%/Weapons/BerraArm/M2HB/M2HB.png" canbehiddenbyotherwearables="false" sourcerect="26,560,982,325" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.18" origin="0.5,0.7" />
+      <sprite texture="%ModDir:3278494407%/Weapons/BerraArm/M2HB/M2HB.png" canbehiddenbyotherwearables="false" sourcerect="26,560,982,325" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.18" origin="0.5,0.7" />
       <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.7" setvalue="true" />
     </Wearable>
     <RangedWeapon reload="0.13" weapondamagemodifier="1.0" penetration="0.3" holdtrigger="true" barrelpos="450,100" spread="1" unskilledspread="13" combatPriority="200" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
-      <Sound file="%ModDir%/Weapons/BerraArm/M2HB/M2HB.ogg" type="OnUse" range="1500" loop="false" />
+      <Sound file="%ModDir:3278494407%/Weapons/BerraArm/M2HB/M2HB.ogg" type="OnUse" range="1500" loop="false" />
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>
@@ -1124,8 +1124,8 @@
     <SkillRequirementHint identifier="weapons" level="100" />
   </Item>
   <Item identifier="berra_m82a1" subcategory="Berra Group" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,accept50bmg" scale="0.09" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/Weapons/Other/M82A1_29.png" sourcerect="0,0,1920,476" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Other/M82A1_29.png" sourcerect="0,0,1920,476" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Other/M82A1_29.png" sourcerect="0,0,1920,476" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Other/M82A1_29.png" sourcerect="0,0,1920,476" depth="0.55" origin="0.5,0.5" />
     <Body width="1920" height="250" density="52" />
     <Deconstruct time="10">
       <Item identifier="physicorium" />
@@ -1143,7 +1143,7 @@
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.4" setvalue="true" />
     </Holdable>
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="M82 Worn" texture="%ModDir%/Weapons/Other/M82A1_29.png" canbehiddenbyotherwearables="false" sourcerect="0,0,1920,476" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.1" origin="0.5,0.7" />
+      <sprite name="M82 Worn" texture="%ModDir:3278494407%/Weapons/Other/M82A1_29.png" canbehiddenbyotherwearables="false" sourcerect="0,0,1920,476" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.1" origin="0.5,0.7" />
     </Wearable>
     <RangedWeapon reload="0.75" weapondamagemodifier="1.6" penetration="0.9" holdtrigger="false" barrelpos="900,95" spread="0" unskilledspread="40" combatPriority="100" drawhudwhenequipped="true" crosshairscale="0.2">
       <RequiredSkill identifier="weapons" level="80" />
@@ -1151,7 +1151,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <ParticleEmitter particle="ventsmoke" distancemin="-5" distancemax="-20" AngleMin="10" AngleMax="-20" VelocityMin="-400" VelocityMax="-300" ScaleMultiplier="0.1,0.1" ParticleAmount="4" HighQualityCollisionDetection="True" ColorMultiplier="255,255,255,255"  />
-      <Sound file="%ModDir%/Weapons/Other/50cal.ogg" type="OnUse" range="3000" volume="1"/>
+      <Sound file="%ModDir:3278494407%/Weapons/Other/50cal.ogg" type="OnUse" range="3000" volume="1"/>
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>
@@ -1179,8 +1179,8 @@
     </Quality>
   </Item>
   <Item identifier="berra_m107a1" subcategory="Berra Group" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,accept50bmg" scale="0.09" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/Weapons/Other/M107A1_20.png" sourcerect="0,0,1646,302" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Other/M107A1_20.png" sourcerect="0,0,1646,302" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Other/M107A1_20.png" sourcerect="0,0,1646,302" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Other/M107A1_20.png" sourcerect="0,0,1646,302" depth="0.55" origin="0.5,0.5" />
     <Body width="1450" height="200" density="52" />
     <Deconstruct time="10">
       <Item identifier="physicorium" />
@@ -1199,7 +1199,7 @@
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.4" setvalue="true" />
     </Holdable>
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="M107 Worn" texture="%ModDir%/Weapons/Other/M107A1_20.png" canbehiddenbyotherwearables="false" sourcerect="0,0,1646,302" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.1" origin="0.5,0.7" />
+      <sprite name="M107 Worn" texture="%ModDir:3278494407%/Weapons/Other/M107A1_20.png" canbehiddenbyotherwearables="false" sourcerect="0,0,1646,302" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.1" origin="0.5,0.7" />
     </Wearable>
     <RangedWeapon reload="0.75" weapondamagemodifier="1.4" penetration="0.75" holdtrigger="false" barrelpos="680,30" spread="0.01" unskilledspread="30" combatPriority="100" drawhudwhenequipped="true" crosshairscale="0.1">
       <RequiredSkill identifier="weapons" level="80" />
@@ -1207,7 +1207,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <ParticleEmitter particle="ventsmoke" distancemin="-5" distancemax="-20" AngleMin="10" AngleMax="-40" VelocityMin="-400" VelocityMax="-300" ScaleMultiplier="0.1,0.1" ParticleAmount="3" HighQualityCollisionDetection="True" ColorMultiplier="255,255,255,255"  />
-      <Sound file="%ModDir%/Weapons/Other/50cal.ogg" type="OnUse" range="3000" volume="1"/>
+      <Sound file="%ModDir:3278494407%/Weapons/Other/50cal.ogg" type="OnUse" range="3000" volume="1"/>
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>
@@ -1235,8 +1235,8 @@
     </Quality>
   </Item>
   <Item identifier="berra_m107a1_fa" subcategory="Berra Group" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,accept50bmg" scale="0.09" impactsoundtag="impact_metal_light" hideinmenus="true">
-    <InventoryIcon texture="%ModDir%/Weapons/Other/M107A1_20_FA.png" sourcerect="0,0,1646,302" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Other/M107A1_20_FA.png" sourcerect="0,0,1646,302" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Other/M107A1_20_FA.png" sourcerect="0,0,1646,302" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Other/M107A1_20_FA.png" sourcerect="0,0,1646,302" depth="0.55" origin="0.5,0.5" />
     <Body width="1450" height="200" density="52" />
     <Deconstruct time="10">
       <Item identifier="physicorium" />
@@ -1255,7 +1255,7 @@
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.4" setvalue="true" />
     </Holdable>
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="M107Auto Worn" texture="%ModDir%/Weapons/Other/M107A1_20_FA.png" canbehiddenbyotherwearables="false" sourcerect="0,0,1646,302" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.1" origin="0.5,0.7" />
+      <sprite name="M107Auto Worn" texture="%ModDir:3278494407%/Weapons/Other/M107A1_20_FA.png" canbehiddenbyotherwearables="false" sourcerect="0,0,1646,302" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.1" origin="0.5,0.7" />
     </Wearable>
     <RangedWeapon reload="0.2" weapondamagemodifier="1.0" penetration="0.5" holdtrigger="true" barrelpos="680,30" spread="1" unskilledspread="60" combatPriority="120" drawhudwhenequipped="true" crosshairscale="0.2">
       <RequiredSkill identifier="weapons" level="100" />
@@ -1263,7 +1263,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <ParticleEmitter particle="ventsmoke" distancemin="-5" distancemax="-20" AngleMin="10" AngleMax="-40" VelocityMin="-400" VelocityMax="-300" ScaleMultiplier="0.1,0.1" ParticleAmount="3" HighQualityCollisionDetection="True" ColorMultiplier="255,255,255,255"  />
-    <Sound file="%ModDir%/Weapons/Other/50cal.ogg" type="OnUse" range="3000" volume="1"/>
+    <Sound file="%ModDir:3278494407%/Weapons/Other/50cal.ogg" type="OnUse" range="3000" volume="1"/>
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>
@@ -1288,8 +1288,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="tsm_m61_vulcan" subcategory="TSM" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" scale="0.35" impactsoundtag="impact_metal_light" hideinmenus="false">
-    <InventoryIcon texture="%ModDir%/Weapons/Other/M61A1.png" sourcerect="0,0,580,136" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Other/M61A1.png" sourcerect="0,0,580,136" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Other/M61A1.png" sourcerect="0,0,580,136" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Other/M61A1.png" sourcerect="0,0,580,136" depth="0.55" origin="0.5,0.5" />
     <Body width="580" height="136" density="52" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="43" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="100" />
@@ -1301,14 +1301,14 @@
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="50,-60" aimpos="50,-60" handle1="-120,45" handle2="0,0" holdangle="0" msg="ItemMsgPickUpSelect">
     </Holdable>
     <Wearable slots="Bag" canbeselected="false" canbepicked="false">
-      <sprite texture="%ModDir%/Weapons/Other/M61A1.png" canbehiddenbyotherwearables="false" sourcerect="0,0,580,300" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.35" origin="0.5,0.7"/>
+      <sprite texture="%ModDir:3278494407%/Weapons/Other/M61A1.png" canbehiddenbyotherwearables="false" sourcerect="0,0,580,300" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.35" origin="0.5,0.7"/>
       <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.7" setvalue="true" />
     </Wearable>
     <RangedWeapon reload="0.01" weapondamagemodifier="1.0" penetration="0.3" holdtrigger="true" barrelpos="290,8" spread="1" combatPriority="200" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,1,1" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,1,1" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
-      <Sound file="%ModDir%/Weapons/Other/m61.ogg" type="OnUse" range="2500" loop="true" />
+      <Sound file="%ModDir:3278494407%/Weapons/Other/m61.ogg" type="OnUse" range="2500" loop="true" />
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>
@@ -1401,8 +1401,8 @@
     <aitarget sightrange="2500" soundrange="3000" fadeouttime="6" />
   </Item>
   <Item identifier="tsm_filiter" subcategory="TSM" category="Equipment" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.11" cargocontaineridentifier="metalcrate" tags="smallitem,maskfilter" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/Jobgear/T.S.M/filter.png" sourcerect="0,0,117,109" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Jobgear/T.S.M/filter.png" depth="0.56" sourcerect="0,0,117,109" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Jobgear/T.S.M/filter.png" sourcerect="0,0,117,109" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Jobgear/T.S.M/filter.png" depth="0.56" sourcerect="0,0,117,109" origin="0.5,0.5" />
     <Body width="72" height="90" density="25" />
     <Deconstruct time="18">
       <Item identifier="aluminium" amount="1" />
@@ -1431,8 +1431,8 @@
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
   </Item>
   <Item identifier="berra_filiter" subcategory="Berra Group" category="Equipment" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.11" cargocontaineridentifier="metalcrate" tags="smallitem,maskfilter" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/Jobgear/T.S.M/filter.png" sourcerect="0,0,117,109" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Jobgear/T.S.M/filter.png" depth="0.56" sourcerect="0,0,117,109" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Jobgear/T.S.M/filter.png" sourcerect="0,0,117,109" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Jobgear/T.S.M/filter.png" depth="0.56" sourcerect="0,0,117,109" origin="0.5,0.5" />
     <Body width="72" height="90" density="25" />
     <Deconstruct time="18">
       <Item identifier="aluminium" amount="1" />
@@ -1461,8 +1461,8 @@
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
   </Item>
   <Item identifier="col_filiter" subcategory="Berra Group" category="Equipment" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.11" cargocontaineridentifier="metalcrate" tags="smallitem,maskfilter" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/Jobgear/T.S.M/filter.png" sourcerect="0,0,117,109" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Jobgear/T.S.M/filter.png" depth="0.56" sourcerect="0,0,117,109" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Jobgear/T.S.M/filter.png" sourcerect="0,0,117,109" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Jobgear/T.S.M/filter.png" depth="0.56" sourcerect="0,0,117,109" origin="0.5,0.5" />
     <Body width="72" height="90" density="25" />
     <Deconstruct time="18">
       <Item identifier="aluminium" amount="1" />
@@ -1491,8 +1491,8 @@
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
   </Item>
   <Item identifier="sep_filiter" subcategory="Berra Group" category="Equipment" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.11" cargocontaineridentifier="metalcrate" tags="smallitem,maskfilter" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/Jobgear/T.S.M/filter.png" sourcerect="0,0,117,109" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Jobgear/T.S.M/filter.png" depth="0.56" sourcerect="0,0,117,109" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Jobgear/T.S.M/filter.png" sourcerect="0,0,117,109" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Jobgear/T.S.M/filter.png" depth="0.56" sourcerect="0,0,117,109" origin="0.5,0.5" />
     <Body width="72" height="90" density="25" />
     <Deconstruct time="18">
       <Item identifier="aluminium" amount="1" />
@@ -1527,8 +1527,8 @@
     <Fabricate suitablefabricators="fabricator" requiredtime="10">
       <RequiredItem identifier="tsm_bag_small" amount="1" />
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/Jobgear/T.S.M/bags.png" sourcerect="325,742,183,208" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Jobgear/T.S.M/bags.png" depth="0.6" sourcerect="325,742,183,208" origin="0.5,0.6" />
+    <InventoryIcon texture="%ModDir:3278494407%/Jobgear/T.S.M/bags.png" sourcerect="325,742,183,208" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Jobgear/T.S.M/bags.png" depth="0.6" sourcerect="325,742,183,208" origin="0.5,0.6" />
     <Body width="150" height="150" density="15" />
     <ItemContainer slotsperrow="1" capacity="3" maxstacksize="1" keepopenwhenequipped="false" movableframe="true">
       <Containable items="tubeitem,hazardouscanister" />
@@ -1538,7 +1538,7 @@
     </ItemContainer>
     <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="-5,0" handle2="10,-20" holdangle="0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Select" allowswappingwhenpicked="false" />
     <Wearable limbtype="Torso" slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select" displaycontainedstatus="true">
-      <sprite name="Backpack Wearable" texture="%ModDir%/Jobgear/T.S.M/bags.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" inherittexturescale="false" canbehiddenbyotherwearables="false" hideotherwearables="false" sourcerect="325,742,183,208" origin="0.7,0.55" scale="0.35" />
+      <sprite name="Backpack Wearable" texture="%ModDir:3278494407%/Jobgear/T.S.M/bags.png" limb="Torso" hidelimb="false" inheritlimbdepth="true" inherittexturescale="false" canbehiddenbyotherwearables="false" hideotherwearables="false" sourcerect="325,742,183,208" origin="0.7,0.55" scale="0.35" />
       <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.7" setvalue="true" disabledeltatime="true" />
     </Wearable>
   </Item>
@@ -1564,8 +1564,8 @@
       <RequiredItem identifier="organicfiber" amount="2"/>
       <RequiredItem identifier="c4block" amount="1"/>
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/weapons/BRUH/fish.png" sourcerect="0,0,1047,414" />
-    <Sprite texture="%ModDir%/weapons/BRUH/fish.png" depth="0.55" sourcerect="0,0,1047,414" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/weapons/BRUH/fish.png" sourcerect="0,0,1047,414" />
+    <Sprite texture="%ModDir:3278494407%/weapons/BRUH/fish.png" depth="0.55" sourcerect="0,0,1047,414" origin="0.5,0.5" />
     <Body width="600" height="300" density="30" />
     <ItemComponent characterusable="false">
       <StatusEffect type="OnUse" target="This" condition="0" setvalue="true" />
@@ -1665,8 +1665,8 @@
       <RequiredItem identifier="chemdist_throwable" />
       <RequiredItem identifier="sodium" amount="3"/>
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/Weapons/Chemical/chemdistthrowable.png" sourcerect="938,0,160,356" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Chemical/chemdistthrowable.png" sourcerect="938,0,160,356" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Chemical/chemdistthrowable.png" sourcerect="938,0,160,356" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Chemical/chemdistthrowable.png" sourcerect="938,0,160,356" depth="0.55" origin="0.5,0.5" />
     <Body width="150" height="350" density="30" />
     <ItemComponent characterusable="false">
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
@@ -1690,7 +1690,7 @@
       <StatusEffect type="OnSecondaryUse" target="This" Condition="-100.0" delay="1.5" disabledeltatime="true" checkconditionalalways="true" />
       <StatusEffect type="OnBroken" target="Hull" Oxygen="0" duration="15" setvalue="true" OnlyInside="true" />
       <StatusEffect type="OnBroken" target="This" >
-        <Sound file="%ModDir%/Weapons/Chemical/fuse.ogg" range="500" volume="1" />
+        <Sound file="%ModDir:3278494407%/Weapons/Chemical/fuse.ogg" range="500" volume="1" />
         <ParticleEmitter particle="fixfoam" anglemax="360" velocitymin="4000" velocitymax="4000" particlespersecond="64" />
         <ParticleEmitter particle="fixfoamgoosplash" anglemax="360" distancemax="10" particlespersecond="60" />
         <ParticleEmitter particle="fixfoamgoosplash" anglemax="360" distancemax="10" scalemultiplier="2.0,2.0" particlespersecond="20" />
@@ -1698,8 +1698,8 @@
     </Throwable>
   </Item>
   <Item identifier="c4_stickcharge" category="Weapon" tags="smallitem,weapon,remotedetonatable,explosive" isdangerous="true" maxstacksize="8" maxstacksizecharacterinventory="4" scale="0.1" cargocontaineridentifier="explosivecrate">
-    <InventoryIcon texture="%ModDir%/Weapons/Explosives/C4.png" sourcerect="0,0,539,118" />
-    <Sprite texture="%ModDir%/Weapons/Explosives/C4.png" depth="0.55" sourcerect="0,0,539,118" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Explosives/C4.png" sourcerect="0,0,539,118" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Explosives/C4.png" depth="0.55" sourcerect="0,0,539,118" origin="0.5,0.5" />
     <Body width="100" height="90" density="30" />
     <Deconstruct time="15">
       <Item identifier="organicfiber" amount="1"/>
@@ -1755,8 +1755,8 @@
   </Item>
   <Item identifier="m57detonator" category="Weapon" maxstacksize="4" maxstacksizecharacterinventory="1" cargocontaineridentifier="explosivecrate" tags="smallitem,remotedetonator" Scale="0.25" impactsoundtag="impact_metal_light">
     <Upgrade gameversion="0.9.2.0" scale="0.5" />
-    <InventoryIcon texture="%ModDir%/Weapons/Explosives/M57_detonator.png" sourcerect="0,0,87,108" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Explosives/M57_detonator.png" sourcerect="0,0,87,108" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Explosives/M57_detonator.png" sourcerect="0,0,87,108" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Explosives/M57_detonator.png" sourcerect="0,0,87,108" depth="0.55" origin="0.5,0.5" />
     <Body width="87" height="108" density="30" />
     <Deconstruct time="15">
       <Item identifier="wificomponent"/>
@@ -1769,7 +1769,7 @@
     <RangedWeapon />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="false" holdpos="40,0" handle1="-13,0" handle2="-13,0" msg="ItemMsgPickUpSelect" >
       <StatusEffect type="OnUse" targettype="This" condition="-100" delay="0.01" disabledeltatime="true">
-          <sound file="%ModDir%/Misc/Oggs/minus.ogg" type="OnUse" range="250.0" />
+          <sound file="%ModDir:3278494407%/Misc/Oggs/minus.ogg" type="OnUse" range="250.0" />
         </StatusEffect>
       <StatusEffect type="OnUse" target="This,Character" disabledeltatime="true" OneShot="true" EventTargetTag="detonator" EventUserTag="demoexpert">
         <TriggerEvent identifier="detonation_2" />
@@ -1783,8 +1783,8 @@
   </Item>
   <Item identifier="m57detonator_single" category="Weapon" maxstacksize="4" maxstacksizecharacterinventory="1" cargocontaineridentifier="explosivecrate" tags="smallitem,remotedetonator" Scale="0.25" impactsoundtag="impact_metal_light">
     <Upgrade gameversion="0.9.2.0" scale="0.5" />
-    <InventoryIcon texture="%ModDir%/Weapons/Explosives/M57_detonator.png" sourcerect="0,0,87,108" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Explosives/M57_detonator.png" sourcerect="0,0,87,108" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Explosives/M57_detonator.png" sourcerect="0,0,87,108" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Explosives/M57_detonator.png" sourcerect="0,0,87,108" depth="0.55" origin="0.5,0.5" />
     <Body width="87" height="108" density="30" />
     <Deconstruct time="15">
       <Item identifier="wificomponent"/>
@@ -1797,7 +1797,7 @@
     <RangedWeapon />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="false" holdpos="40,0" handle1="-13,0" handle2="-13,0" msg="ItemMsgPickUpSelect" >
       <StatusEffect type="OnUse" targettype="This" condition="-100" delay="0.01" disabledeltatime="true">
-        <sound file="%ModDir%/Misc/Oggs/minus.ogg" type="OnUse" range="250.0" />
+        <sound file="%ModDir:3278494407%/Misc/Oggs/minus.ogg" type="OnUse" range="250.0" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="This,Character" disabledeltatime="true" OneShot="true" EventTargetTag="detonator" EventUserTag="demoexpert">
         <TriggerEvent identifier="detonation_1" />
@@ -1811,8 +1811,8 @@
   </Item>
   <Item identifier="m57detonator_triple" category="Weapon" maxstacksize="4" maxstacksizecharacterinventory="1" cargocontaineridentifier="explosivecrate" tags="smallitem,remotedetonator" Scale="0.25" impactsoundtag="impact_metal_light">
     <Upgrade gameversion="0.9.2.0" scale="0.5" />
-    <InventoryIcon texture="%ModDir%/Weapons/Explosives/M57_detonator.png" sourcerect="0,0,87,108" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Explosives/M57_detonator.png" sourcerect="0,0,87,108" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Explosives/M57_detonator.png" sourcerect="0,0,87,108" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Explosives/M57_detonator.png" sourcerect="0,0,87,108" depth="0.55" origin="0.5,0.5" />
     <Body width="87" height="108" density="30" />
     <Deconstruct time="15">
       <Item identifier="wificomponent"/>
@@ -1825,7 +1825,7 @@
     <RangedWeapon />
     <Holdable slots="Any,RightHand,LeftHand" controlpose="false" holdpos="40,0" handle1="-13,0" handle2="-13,0" msg="ItemMsgPickUpSelect" >
       <StatusEffect type="OnUse" targettype="This" condition="-100" delay="0.01" disabledeltatime="true">
-        <sound file="%ModDir%/Misc/Oggs/minus.ogg" type="OnUse" range="250.0" />
+        <sound file="%ModDir:3278494407%/Misc/Oggs/minus.ogg" type="OnUse" range="250.0" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="This,Character" disabledeltatime="true" OneShot="true" EventTargetTag="detonator" EventUserTag="demoexpert">
         <TriggerEvent identifier="detonation_3" />
@@ -1859,8 +1859,8 @@
       <RequiredItem identifier="organicfiber" amount="2"/>
       <RequiredItem identifier="c4block" amount="1"/>
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/weapons/BRUH/fish.png" sourcerect="0,0,1047,414" />
-    <Sprite texture="%ModDir%/weapons/BRUH/fish.png" depth="0.55" sourcerect="0,0,1047,414" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/weapons/BRUH/fish.png" sourcerect="0,0,1047,414" />
+    <Sprite texture="%ModDir:3278494407%/weapons/BRUH/fish.png" depth="0.55" sourcerect="0,0,1047,414" origin="0.5,0.5" />
     <Body width="600" height="300" density="30" />
     <ItemComponent characterusable="false">
       <StatusEffect type="OnUse" target="This" condition="0" setvalue="true" />
@@ -1965,7 +1965,7 @@
       <Item identifier="lead" amount="4"/>
       <Item identifier="plastic" amount="2"/>
     </Fabricate>
-    <Sprite texture="%ModDir%/Jobgear/T.S.M/bags.png" depth="0.54" sourcerect="1324,1486,276,105" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Jobgear/T.S.M/bags.png" depth="0.54" sourcerect="1324,1486,276,105" origin="0.5,0.5" />
     <Body width="250" height="100" density="50" />
     <Holdable slots="LeftHand" controlpose="true" holdpos="2,25" handle1="48,28" handle2="48,28" aimable="true" holdangle="-15" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.7" setvalue="true"/>
@@ -1980,8 +1980,8 @@
   <!--SURPRISE-->
   <Item identifier="powdercapsule_anthrax" category="Misc" cargocontaineridentifier="metalcrate" allowasextracargo="true" Tags="smallitem,chem,chemweapon" maxstacksize="8" maxstacksizecharacterinventory="1" scale="0.08" hideinmenus="true" impactsoundtag="impact_soft">
     <PreferredContainer secondary="outposttrashcan" amount="1" spawnprobability="0.01" />
-    <InventoryIcon texture="%ModDir%/Weapons/Chemical/capsule.png" sourcerect="0,0,69,221" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Chemical/capsule.png" sourcerect="0,0,69,221" depth="0.7" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Chemical/capsule.png" sourcerect="0,0,69,221" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Chemical/capsule.png" sourcerect="0,0,69,221" depth="0.7" origin="0.5,0.5" />
     <Body width="69" height="220" density="20" />
     <Deconstruct time="2"/>
     <Holdable slots="Any,RightHand,LeftHand" aimable="false" aimpos="25,25" handle1="5,0" aimangle="120" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
@@ -1997,8 +1997,8 @@
   </Item>
   <Item identifier="powdercapsule_vx" category="Misc" cargocontaineridentifier="metalcrate" allowasextracargo="true" Tags="smallitem,chem,chemweapon" maxstacksize="8" maxstacksizecharacterinventory="1" scale="0.08" hideinmenus="true" impactsoundtag="impact_soft">
     <PreferredContainer secondary="outposttrashcan" amount="1" spawnprobability="0.01" />
-    <InventoryIcon texture="%ModDir%/Weapons/Chemical/capsule.png" sourcerect="0,0,69,221" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Chemical/capsule.png" sourcerect="0,0,69,221" depth="0.7" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Chemical/capsule.png" sourcerect="0,0,69,221" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Chemical/capsule.png" sourcerect="0,0,69,221" depth="0.7" origin="0.5,0.5" />
     <Body width="69" height="220" density="20" />
     <Deconstruct time="2"/>
     <Holdable slots="Any,RightHand,LeftHand" aimable="false" aimpos="25,25" handle1="5,0" aimangle="120" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
@@ -2014,8 +2014,8 @@
   </Item>
   <Item identifier="powdercapsule_med" category="Misc" cargocontaineridentifier="metalcrate" allowasextracargo="true" Tags="smallitem,chem,chemweapon" maxstacksize="8" maxstacksizecharacterinventory="1" scale="0.08" hideinmenus="true" impactsoundtag="impact_soft">
     <PreferredContainer secondary="outposttrashcan" amount="1" spawnprobability="0.01" />
-    <InventoryIcon texture="%ModDir%/Weapons/Chemical/capsule.png" sourcerect="0,0,69,221" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Chemical/capsule.png" sourcerect="0,0,69,221" depth="0.7" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Chemical/capsule.png" sourcerect="0,0,69,221" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Chemical/capsule.png" sourcerect="0,0,69,221" depth="0.7" origin="0.5,0.5" />
     <Body width="69" height="220" density="20" />
     <Deconstruct time="2"/>
     <Holdable slots="Any,RightHand,LeftHand" aimable="false" aimpos="25,25" handle1="5,0" aimangle="120" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
@@ -2033,8 +2033,8 @@
 
   <!--Chemical Weapons-->
   <Item identifier="vx_chemdist_40" subcategory="CBRN_Ammunition" category="Weapon" maxstacksize="8" interactthroughwalls="false" cargocontaineridentifier="metalcrate" tags="explosive,smallitem,grenade,chemweapon" Scale="0.5" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/Weapons/Chemical/chem40.png" sourcerect="52,1,52,20" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Chemical/chem40.png" sourcerect="52,1,52,20" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Chemical/chem40.png" sourcerect="52,1,52,20" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Chemical/chem40.png" sourcerect="52,1,52,20" depth="0.55" origin="0.5,0.5" />
     <Body width="38" height="15" density="30" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Deconstruct time="18">
@@ -2079,8 +2079,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="mustard_chemdist_40" subcategory="CBRN_Ammunition" category="Weapon" maxstacksize="8" interactthroughwalls="false" cargocontaineridentifier="metalcrate" tags="explosive,smallitem,grenade,chemweapon" Scale="0.5" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/Weapons/Chemical/chem40.png" sourcerect="52,22,52,20" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Chemical/chem40.png" sourcerect="52,22,52,20" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Chemical/chem40.png" sourcerect="52,22,52,20" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Chemical/chem40.png" sourcerect="52,22,52,20" depth="0.55" origin="0.5,0.5" />
     <Body width="38" height="15" density="30" />
     <Deconstruct time="18">
       <Item identifier="iron" outcondition="0.6" />
@@ -2125,8 +2125,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="phosgene_chemdist_40" subcategory="CBRN_Ammunition" category="Weapon" maxstacksize="8" interactthroughwalls="false" cargocontaineridentifier="metalcrate" tags="explosive,smallitem,grenade,chemweapon" Scale="0.5" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/Weapons/Chemical/chem40.png" sourcerect="0,43,52,20" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Chemical/chem40.png" sourcerect="0,43,52,20" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Chemical/chem40.png" sourcerect="0,43,52,20" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Chemical/chem40.png" sourcerect="0,43,52,20" depth="0.55" origin="0.5,0.5" />
     <Body width="38" height="15" density="30" />
     <Deconstruct time="18">
       <Item identifier="iron" outcondition="0.6" />
@@ -2166,8 +2166,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="cs_chemdist_40" subcategory="CBRN_Ammunition" category="Weapon" maxstacksize="8" interactthroughwalls="false" cargocontaineridentifier="metalcrate" tags="explosive,smallitem,grenade,chemweapon" Scale="0.5" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/Weapons/Chemical/chem40.png" sourcerect="0,22,52,20" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Chemical/chem40.png" sourcerect="0,22,52,20" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Chemical/chem40.png" sourcerect="0,22,52,20" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Chemical/chem40.png" sourcerect="0,22,52,20" depth="0.55" origin="0.5,0.5" />
     <Body width="38" height="15" density="30" />
     <Deconstruct time="18">
       <Item identifier="iron" outcondition="0.6" />
@@ -2207,8 +2207,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="bz_chemdist_40" subcategory="CBRN_Ammunition" category="Weapon" maxstacksize="8" interactthroughwalls="false" cargocontaineridentifier="metalcrate" tags="explosive,smallitem,grenade,chemweapon" Scale="0.5" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/Weapons/Chemical/chem40.png" sourcerect="0,22,52,20" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Chemical/chem40.png" sourcerect="0,22,52,20" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Chemical/chem40.png" sourcerect="0,22,52,20" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Chemical/chem40.png" sourcerect="0,22,52,20" depth="0.55" origin="0.5,0.5" />
     <Body width="38" height="15" density="30" />
     <Deconstruct time="18">
       <Item identifier="iron" outcondition="0.6" />
@@ -2262,8 +2262,8 @@
       <RequiredItem identifier="chemdist_throwable" />
       <RequiredItem identifier="vxcanister" mincondition="0.5" usecondition="true" />
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/Weapons/Chemical/chemdistthrowable.png" sourcerect="477,0,160,356" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Chemical/chemdistthrowable.png" sourcerect="477,0,160,356" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Chemical/chemdistthrowable.png" sourcerect="477,0,160,356" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Chemical/chemdistthrowable.png" sourcerect="477,0,160,356" depth="0.55" origin="0.5,0.5" />
     <Body width="150" height="350" density="30" />
     <ItemComponent characterusable="false">
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
@@ -2288,7 +2288,7 @@
       <StatusEffect type="OnBroken" target="Hull" Oxygen="-20000" duration="20" OnlyInside="true" />
       <StatusEffect type="OnBroken" target="This" delay="0.0">
         <SpawnItem identifiers="vxemitter_weapon" spawnposition="This" />
-        <Sound file="%ModDir%/Weapons/Chemical/fuse.ogg" range="500" volume="1" />
+        <Sound file="%ModDir:3278494407%/Weapons/Chemical/fuse.ogg" range="500" volume="1" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This" delay="3.0">
         <SpawnItem identifiers="vxemitter_weapon" spawnposition="This" />
@@ -2324,8 +2324,8 @@
       <RequiredItem identifier="chemdist_throwable" />
       <RequiredItem identifier="mustardcanister" mincondition="0.5" usecondition="true" />
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/Weapons/Chemical/chemdistthrowable.png" sourcerect="788,0,155,356" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Chemical/chemdistthrowable.png" sourcerect="788,0,155,356" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Chemical/chemdistthrowable.png" sourcerect="788,0,155,356" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Chemical/chemdistthrowable.png" sourcerect="788,0,155,356" depth="0.55" origin="0.5,0.5" />
     <Body width="150" height="350" density="30" />
     <ItemComponent characterusable="false">
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
@@ -2348,7 +2348,7 @@
     <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="3.5" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnSecondaryUse" target="This" Condition="-100.0" delay="0.5" disabledeltatime="true" checkconditionalalways="true" />
       <StatusEffect type="OnBroken" target="This" delay="0.0">
-        <Sound file="%ModDir%/Weapons/Chemical/fuse.ogg" range="500" volume="1" />
+        <Sound file="%ModDir:3278494407%/Weapons/Chemical/fuse.ogg" range="500" volume="1" />
         <SpawnItem identifiers="mustardemitter_weapon" spawnposition="This" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This" delay="3.0">
@@ -2386,8 +2386,8 @@
       <RequiredItem identifier="chemdist_throwable" />
       <RequiredItem identifier="phosgenecanister" mincondition="0.5" usecondition="true" />
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/Weapons/Chemical/chemdistthrowable.png" sourcerect="629,0,160,356" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Chemical/chemdistthrowable.png" sourcerect="629,0,160,356" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Chemical/chemdistthrowable.png" sourcerect="629,0,160,356" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Chemical/chemdistthrowable.png" sourcerect="629,0,160,356" depth="0.55" origin="0.5,0.5" />
     <Body width="150" height="350" density="30" />
     <ItemComponent characterusable="false">
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
@@ -2410,7 +2410,7 @@
     <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="3.5" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnSecondaryUse" target="This" Condition="-100.0" delay="0.5" disabledeltatime="true" checkconditionalalways="true" />
       <StatusEffect type="OnBroken" target="This" delay="0.0">
-        <Sound file="%ModDir%/Weapons/Chemical/fuse.ogg" range="500" volume="1" />
+        <Sound file="%ModDir:3278494407%/Weapons/Chemical/fuse.ogg" range="500" volume="1" />
         <SpawnItem identifiers="phosgeneemitter_weapon" spawnposition="This" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This" delay="3.0">
@@ -2447,8 +2447,8 @@
       <RequiredItem identifier="chemdist_throwable" />
       <RequiredItem identifier="cscanister" mincondition="0.5" usecondition="true" />
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/Weapons/Chemical/chemdistthrowable.png" sourcerect="160,0,160,356" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Chemical/chemdistthrowable.png" sourcerect="160,0,160,356" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Chemical/chemdistthrowable.png" sourcerect="160,0,160,356" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Chemical/chemdistthrowable.png" sourcerect="160,0,160,356" depth="0.55" origin="0.5,0.5" />
     <Body width="150" height="350" density="30" />
     <ItemComponent characterusable="false">
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
@@ -2471,7 +2471,7 @@
     <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="3.5" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnSecondaryUse" target="This" Condition="-100.0" delay="0.3" disabledeltatime="true" checkconditionalalways="true" />
       <StatusEffect type="OnBroken" target="This" delay="0.0">
-        <Sound file="%ModDir%/Weapons/Chemical/fuse.ogg" range="500" volume="1" />
+        <Sound file="%ModDir:3278494407%/Weapons/Chemical/fuse.ogg" range="500" volume="1" />
         <SpawnItem identifiers="csemitter_weapon" spawnposition="This" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This" delay="3.0">
@@ -2508,8 +2508,8 @@
       <RequiredItem identifier="chemdist_throwable" />
       <RequiredItem identifier="bzcanister" mincondition="0.5" usecondition="true" />
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/Weapons/Chemical/chemdistthrowable.png" sourcerect="320,0,160,356" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Chemical/chemdistthrowable.png" sourcerect="320,0,160,356" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Chemical/chemdistthrowable.png" sourcerect="320,0,160,356" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Chemical/chemdistthrowable.png" sourcerect="320,0,160,356" depth="0.55" origin="0.5,0.5" />
     <Body width="150" height="350" density="30" />
     <ItemComponent characterusable="false">
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
@@ -2532,7 +2532,7 @@
     <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="3.5" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnSecondaryUse" target="This" Condition="-100.0" delay="0.3" disabledeltatime="true" checkconditionalalways="true" />
       <StatusEffect type="OnBroken" target="This" delay="0.0">
-        <Sound file="%ModDir%/Weapons/Chemical/fuse.ogg" range="500" volume="1" />
+        <Sound file="%ModDir:3278494407%/Weapons/Chemical/fuse.ogg" range="500" volume="1" />
         <SpawnItem identifiers="bzemitter_weapon" spawnposition="This" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This" delay="3.0">
@@ -2556,8 +2556,8 @@
     </Throwable>
   </Item>
   <Item identifier="anthrax_biodist_40" subcategory="CBRN_Ammunition" category="Weapon" maxstacksize="8" interactthroughwalls="false" cargocontaineridentifier="metalcrate" tags="explosive,smallitem,grenade,chemweapon" Scale="0.5" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/Weapons/Chemical/bio40.png" sourcerect="0,22,52,20" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Chemical/bio40.png" sourcerect="0,22,52,20" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Chemical/bio40.png" sourcerect="0,22,52,20" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Chemical/bio40.png" sourcerect="0,22,52,20" depth="0.55" origin="0.5,0.5" />
     <Body width="38" height="15" density="30" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Deconstruct time="18">
@@ -2594,8 +2594,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="mustard_biodist_40" subcategory="CBRN_Ammunition" category="Weapon" maxstacksize="8" interactthroughwalls="false" cargocontaineridentifier="metalcrate" tags="explosive,smallitem,grenade,chemweapon" Scale="0.5" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/Weapons/Chemical/chem40.png" sourcerect="52,22,52,20" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Chemical/chem40.png" sourcerect="52,22,52,20" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Chemical/chem40.png" sourcerect="52,22,52,20" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Chemical/chem40.png" sourcerect="52,22,52,20" depth="0.55" origin="0.5,0.5" />
     <Body width="38" height="15" density="30" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Deconstruct time="18">
@@ -2632,8 +2632,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="vx_biodist_40" subcategory="CBRN_Ammunition" category="Weapon" maxstacksize="8" interactthroughwalls="false" cargocontaineridentifier="metalcrate" tags="explosive,smallitem,grenade,chemweapon" Scale="0.5" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/Weapons/Chemical/chem40.png" sourcerect="52,1,52,20" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Chemical/chem40.png" sourcerect="52,1,52,20" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Chemical/chem40.png" sourcerect="52,1,52,20" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Chemical/chem40.png" sourcerect="52,1,52,20" depth="0.55" origin="0.5,0.5" />
     <Body width="38" height="15" density="30" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Deconstruct time="18">
@@ -2670,8 +2670,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="weyi_chemdist_40" subcategory="CBRN_Ammunition" category="Weapon" maxstacksize="8" interactthroughwalls="false" cargocontaineridentifier="metalcrate" tags="explosive,smallitem,grenade,chemweapon" Scale="0.5" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/Weapons/Chemical/bio40.png" sourcerect="0,22,52,20" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Chemical/bio40.png" sourcerect="0,22,52,20" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Chemical/bio40.png" sourcerect="0,22,52,20" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Chemical/bio40.png" sourcerect="0,22,52,20" depth="0.55" origin="0.5,0.5" />
     <Body width="38" height="15" density="30" />
     <Deconstruct time="18">
       <Item identifier="iron" outcondition="0.6" />
@@ -2725,8 +2725,8 @@
       <RequiredItem identifier="chemdist_throwable" />
       <RequiredItem identifier="weyicanister" mincondition="0.5" usecondition="true" />
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/Weapons/Chemical/chemdistthrowable.png" sourcerect="1090,0,160,356" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Chemical/chemdistthrowable.png" sourcerect="1090,0,160,356" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Chemical/chemdistthrowable.png" sourcerect="1090,0,160,356" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Chemical/chemdistthrowable.png" sourcerect="1090,0,160,356" depth="0.55" origin="0.5,0.5" />
     <Body width="150" height="350" density="30" />
     <ItemComponent characterusable="false">
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
@@ -2751,7 +2751,7 @@
       <StatusEffect type="OnBroken" target="Hull" Oxygen="-20000" duration="20" OnlyInside="true" />
       <StatusEffect type="OnBroken" target="This" delay="0.0">
         <SpawnItem identifiers="eyi_weapon" spawnposition="This" />
-        <Sound file="%ModDir%/Weapons/Chemical/fuse.ogg" range="500" volume="1" />
+        <Sound file="%ModDir:3278494407%/Weapons/Chemical/fuse.ogg" range="500" volume="1" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This" delay="3.0">
         <SpawnItem identifiers="eyi_weapon" spawnposition="This" />
@@ -2826,7 +2826,7 @@
       </StatusEffect>
       <StatusEffect type="Always" target="This" Condition="-1.0" blinkfrequency="1" LightColor="0,0,255,255" comparison="And">
         <Conditional condition="lte 10" />
-        <sound file="%ModDir%/Misc/brokenarrow/alert.ogg" range="1500" />
+        <sound file="%ModDir:3278494407%/Misc/brokenarrow/alert.ogg" range="1500" />
       </StatusEffect>
       <StatusEffect type="Always" target="This" blinkfrequency="2.5" setvalue="true" >
         <Conditional condition="lt 20" />
@@ -2847,14 +2847,14 @@
       </TickBox>
       <Button text="minus10seconds">
         <StatusEffect type="OnUse" targettype="This" Condition="10" disabledeltatime="true" checkconditionalalways="true" comparison="And">
-          <sound file="%ModDir%/Misc/Oggs/plus.ogg" type="OnActive" range="250.0" />
+          <sound file="%ModDir:3278494407%/Misc/Oggs/plus.ogg" type="OnActive" range="250.0" />
           <Conditional Condition="gt 20" />
           <Conditional CombatPriority="eq 0" />
         </StatusEffect>
       </Button>
       <Button text="plus10seconds">
         <StatusEffect type="OnUse" targettype="This" Condition="-10" disabledeltatime="true" checkconditionalalways="true" comparison="And">
-          <sound file="%ModDir%/Misc/Oggs/minus.ogg" type="OnActive" range="250.0" />
+          <sound file="%ModDir:3278494407%/Misc/Oggs/minus.ogg" type="OnActive" range="250.0" />
           <Conditional Condition="gt 20" />
           <Conditional CombatPriority="eq 0" />
         </StatusEffect>
@@ -2910,7 +2910,7 @@
       </StatusEffect>
       <StatusEffect type="Always" target="This" Condition="-1.0" blinkfrequency="1" LightColor="0,0,255,255" comparison="And">
         <Conditional condition="lte 10" />
-        <sound file="%ModDir%/Misc/brokenarrow/alert.ogg" range="4000" />
+        <sound file="%ModDir:3278494407%/Misc/brokenarrow/alert.ogg" range="4000" />
       </StatusEffect>
       <StatusEffect type="Always" target="This" blinkfrequency="2.5" setvalue="true" >
         <Conditional condition="lt 20" />
@@ -2931,14 +2931,14 @@
       </TickBox>
       <Button text="minus10seconds">
         <StatusEffect type="OnUse" targettype="This" Condition="10" disabledeltatime="true" checkconditionalalways="true" comparison="And">
-          <sound file="%ModDir%/Misc/Oggs/plus.ogg" type="OnActive" range="250.0" />
+          <sound file="%ModDir:3278494407%/Misc/Oggs/plus.ogg" type="OnActive" range="250.0" />
           <Conditional Condition="gt 20" />
           <Conditional CombatPriority="eq 0" />
         </StatusEffect>
       </Button>
       <Button text="plus10seconds">
         <StatusEffect type="OnUse" targettype="This" Condition="-10" disabledeltatime="true" checkconditionalalways="true" comparison="And">
-          <sound file="%ModDir%/Misc/Oggs/minus.ogg" type="OnActive" range="250.0" />
+          <sound file="%ModDir:3278494407%/Misc/Oggs/minus.ogg" type="OnActive" range="250.0" />
           <Conditional Condition="gt 20" />
           <Conditional CombatPriority="eq 0" />
         </StatusEffect>
@@ -2994,7 +2994,7 @@
       </StatusEffect>
       <StatusEffect type="Always" target="This" Condition="-1.0" blinkfrequency="1" LightColor="0,0,255,255" comparison="And" >
         <Conditional condition="lte 10" />
-        <sound file="%ModDir%/Misc/brokenarrow/alert.ogg" range="6000" />
+        <sound file="%ModDir:3278494407%/Misc/brokenarrow/alert.ogg" range="6000" />
       </StatusEffect>
       <StatusEffect type="Always" target="This" blinkfrequency="2.5" setvalue="true" >
         <Conditional condition="lt 20" />
@@ -3015,14 +3015,14 @@
       </TickBox>
       <Button text="minus10seconds">
         <StatusEffect type="OnUse" targettype="This" Condition="10" disabledeltatime="true" checkconditionalalways="true" comparison="And">
-          <sound file="%ModDir%/Misc/Oggs/plus.ogg" type="OnActive" range="250.0" />
+          <sound file="%ModDir:3278494407%/Misc/Oggs/plus.ogg" type="OnActive" range="250.0" />
           <Conditional Condition="gt 20" />
           <Conditional CombatPriority="eq 0" />
         </StatusEffect>
       </Button>
       <Button text="plus10seconds">
         <StatusEffect type="OnUse" targettype="This" Condition="-10" disabledeltatime="true" checkconditionalalways="true" comparison="And">
-          <sound file="%ModDir%/Misc/Oggs/minus.ogg" type="OnActive" range="250.0" />
+          <sound file="%ModDir:3278494407%/Misc/Oggs/minus.ogg" type="OnActive" range="250.0" />
           <Conditional Condition="gt 20" />
           <Conditional CombatPriority="eq 0" />
         </StatusEffect>
@@ -3077,7 +3077,7 @@
       </StatusEffect>
       <StatusEffect type="Always" target="This" Condition="-1.0" blinkfrequency="1" LightColor="0,0,255,255" comparison="And">
         <Conditional condition="lte 10" />
-        <sound file="%ModDir%/Misc/brokenarrow/alert.ogg" range="8000" />
+        <sound file="%ModDir:3278494407%/Misc/brokenarrow/alert.ogg" range="8000" />
       </StatusEffect>
       <StatusEffect type="Always" target="This" blinkfrequency="2.5" setvalue="true" >
         <Conditional condition="lt 20" />
@@ -3098,14 +3098,14 @@
       </TickBox>
       <Button text="minus10seconds">
         <StatusEffect type="OnUse" targettype="This" Condition="10" disabledeltatime="true" checkconditionalalways="true" comparison="And">
-          <sound file="%ModDir%/Misc/Oggs/plus.ogg" type="OnActive" range="250.0" />
+          <sound file="%ModDir:3278494407%/Misc/Oggs/plus.ogg" type="OnActive" range="250.0" />
           <Conditional Condition="gt 20" />
           <Conditional CombatPriority="eq 0" />
         </StatusEffect>
       </Button>
       <Button text="plus10seconds">
         <StatusEffect type="OnUse" targettype="This" Condition="-10" disabledeltatime="true" checkconditionalalways="true" comparison="And">
-          <sound file="%ModDir%/Misc/Oggs/minus.ogg" type="OnActive" range="250.0" />
+          <sound file="%ModDir:3278494407%/Misc/Oggs/minus.ogg" type="OnActive" range="250.0" />
           <Conditional Condition="gt 20" />
       <Conditional CombatPriority="eq 0" />
         </StatusEffect>
@@ -3140,7 +3140,7 @@
       </StatusEffect>
       <StatusEffect type="Always" target="This" Condition="-1.0" blinkfrequency="1" LightColor="0,0,255,255" comparison="And">
         <Conditional condition="lte 10" />
-        <sound file="%ModDir%/Weapons/Nuclear/WarheadCrank.ogg" range="8000" />
+        <sound file="%ModDir:3278494407%/Weapons/Nuclear/WarheadCrank.ogg" range="8000" />
       </StatusEffect>
       <StatusEffect type="Always" target="This" blinkfrequency="2.5" setvalue="true" >
         <Conditional condition="lt 20" />
@@ -3161,14 +3161,14 @@
       </TickBox>
       <Button text="minus10seconds">
         <StatusEffect type="OnUse" targettype="This" Condition="10" disabledeltatime="true" checkconditionalalways="true" comparison="And">
-          <sound file="%ModDir%/Misc/Oggs/plus.ogg" type="OnActive" range="250.0" />
+          <sound file="%ModDir:3278494407%/Misc/Oggs/plus.ogg" type="OnActive" range="250.0" />
           <Conditional Condition="gt 20" />
           <Conditional CombatPriority="eq 0" />
         </StatusEffect>
       </Button>
       <Button text="plus10seconds">
         <StatusEffect type="OnUse" targettype="This" Condition="-10" disabledeltatime="true" checkconditionalalways="true" comparison="And">
-          <sound file="%ModDir%/Misc/Oggs/minus.ogg" type="OnActive" range="250.0" />
+          <sound file="%ModDir:3278494407%/Misc/Oggs/minus.ogg" type="OnActive" range="250.0" />
           <Conditional Condition="gt 20" />
           <Conditional CombatPriority="eq 0" />
         </StatusEffect>
@@ -3221,7 +3221,7 @@
       </StatusEffect>
       <StatusEffect type="Always" target="This" Condition="-1.0" blinkfrequency="1" LightColor="0,0,255,255" comparison="And">
         <Conditional condition="lte 10" />
-        <sound file="%ModDir%/Misc/brokenarrow/alert.ogg" range="4000" />
+        <sound file="%ModDir:3278494407%/Misc/brokenarrow/alert.ogg" range="4000" />
       </StatusEffect>
       <StatusEffect type="Always" target="This" blinkfrequency="2.5" setvalue="true" >
         <Conditional condition="lt 20" />
@@ -3242,14 +3242,14 @@
       </TickBox>
       <Button text="minus10seconds">
         <StatusEffect type="OnUse" targettype="This" Condition="10" disabledeltatime="true" checkconditionalalways="true" comparison="And">
-          <sound file="%ModDir%/Misc/Oggs/plus.ogg" type="OnActive" range="250.0" />
+          <sound file="%ModDir:3278494407%/Misc/Oggs/plus.ogg" type="OnActive" range="250.0" />
           <Conditional Condition="gt 20" />
           <Conditional CombatPriority="eq 0" />
         </StatusEffect>
       </Button>
       <Button text="plus10seconds">
         <StatusEffect type="OnUse" targettype="This" Condition="-10" disabledeltatime="true" checkconditionalalways="true" comparison="And">
-          <sound file="%ModDir%/Misc/Oggs/minus.ogg" type="OnActive" range="250.0" />
+          <sound file="%ModDir:3278494407%/Misc/Oggs/minus.ogg" type="OnActive" range="250.0" />
           <Conditional Condition="gt 20" />
           <Conditional CombatPriority="eq 0" />
         </StatusEffect>
@@ -3299,7 +3299,7 @@
       </StatusEffect>
       <StatusEffect type="Always" target="This" Condition="-1.0" blinkfrequency="1" LightColor="0,0,255,255" comparison="And">
         <Conditional condition="lte 10" />
-        <sound file="%ModDir%/Misc/brokenarrow/alert.ogg" range="4000" />
+        <sound file="%ModDir:3278494407%/Misc/brokenarrow/alert.ogg" range="4000" />
       </StatusEffect>
       <StatusEffect type="Always" target="This" blinkfrequency="2.5" setvalue="true" >
         <Conditional condition="lt 20" />
@@ -3320,14 +3320,14 @@
       </TickBox>
       <Button text="minus10seconds">
         <StatusEffect type="OnUse" targettype="This" Condition="10" disabledeltatime="true" checkconditionalalways="true" comparison="And">
-          <sound file="%ModDir%/Misc/Oggs/plus.ogg" type="OnActive" range="250.0" />
+          <sound file="%ModDir:3278494407%/Misc/Oggs/plus.ogg" type="OnActive" range="250.0" />
           <Conditional Condition="gt 20" />
           <Conditional CombatPriority="eq 0" />
         </StatusEffect>
       </Button>
       <Button text="plus10seconds">
         <StatusEffect type="OnUse" targettype="This" Condition="-10" disabledeltatime="true" checkconditionalalways="true" comparison="And">
-          <sound file="%ModDir%/Misc/Oggs/minus.ogg" type="OnActive" range="250.0" />
+          <sound file="%ModDir:3278494407%/Misc/Oggs/minus.ogg" type="OnActive" range="250.0" />
           <Conditional Condition="gt 20" />
           <Conditional CombatPriority="eq 0" />
         </StatusEffect>
@@ -3335,13 +3335,13 @@
     </CustomInterface>
   </Item>
   <Item identifier="devilscore" subcategory="Nuclear" category="Weapon" Tags="smallitem,explosive,nuke,WMD,devilscore" health="50" maxstacksize="1" Scale="0.2" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_heavy" hideinmenus="true">
-    <InventoryIcon texture="%ModDir%/Weapons/Nuclear/devilscore.png" sourcerect="0,0,183,183" />
-    <Sprite texture="%ModDir%/Weapons/Nuclear/devilscore.png" depth="0.55" sourcerect="0,0,183,183" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Nuclear/devilscore.png" sourcerect="0,0,183,183" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Nuclear/devilscore.png" depth="0.55" sourcerect="0,0,183,183" origin="0.5,0.5" />
     <Body width="30" height="70" density="20" />
     <Throwable characterusable="false" slots="Any,LeftHand+RightHand" throwforce="3.5" holdpos="35,-10" aimpos="35,-10" msg="ItemMsgPickUpSelect">
     <StatusEffect type="Always" target="NearbyCharacters" range="300">
       <Affliction identifier="radiationsickness" strength="50" />
-      <sound file="%ModDir%/Weapons/Nuclear/gigercounter.ogg" range="300" loop="true"/>
+      <sound file="%ModDir:3278494407%/Weapons/Nuclear/gigercounter.ogg" range="300" loop="true"/>
       <RequiredItem identifier="neutron_reflector" type="contained"/>
     </StatusEffect>
     <StatusEffect type="Always" target="This" Condition="-20.0">
@@ -3387,8 +3387,8 @@
 
   <!--Meds-->
   <Item identifier="berra_xtg12" subcategory="CBRN Countermeasure" category="Medical" maxstacksize="32" maxstacksizecharacterinventory="8" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,chemweaponcount" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
-    <InventoryIcon texture="%ModDir%/Misc/Medical/stims.png" sourcerect="68,0,24,90" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Misc/Medical/stims.png" sourcerect="68,0,24,90" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Misc/Medical/stims.png" sourcerect="68,0,24,90" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Misc/Medical/stims.png" sourcerect="68,0,24,90" depth="0.6" origin="0.5,0.5" />
     <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
     <PreferredContainer primary="medcab" secondary="medcontainer" />
     <Price baseprice="800" maxavailable="1">
@@ -3420,11 +3420,11 @@
       </StatusEffect>
       <StatusEffect type="OnSuccess" target="UseTarget">
         <Conditional entitytype="eq Character" />
-        <Sound file="%ModDir%/Misc/Medical/injector.ogg" range="500" />
+        <Sound file="%ModDir:3278494407%/Misc/Medical/injector.ogg" range="500" />
       </StatusEffect>
       <StatusEffect type="OnFailure" target="UseTarget">
         <Conditional entitytype="eq Character" />
-        <Sound file="%ModDir%/Misc/Medical/injector.ogg" range="500" />
+        <Sound file="%ModDir:3278494407%/Misc/Medical/injector.ogg" range="500" />
       </StatusEffect>
       <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true" AllowWhenBroken="true">
         <Affliction identifier="stun" amount="0.1" />
@@ -3437,8 +3437,8 @@
     <SkillRequirementHint identifier="medical" level="45" />
   </Item>
   <Item identifier="berra_obj121" subcategory="CBRN Countermeasure" category="Medical" maxstacksize="32" maxstacksizecharacterinventory="8" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,chemweaponcount" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
-    <InventoryIcon texture="%ModDir%/Misc/Medical/stims.png" sourcerect="68,0,24,90" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Misc/Medical/stims.png" sourcerect="68,0,24,90" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Misc/Medical/stims.png" sourcerect="68,0,24,90" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Misc/Medical/stims.png" sourcerect="68,0,24,90" depth="0.6" origin="0.5,0.5" />
     <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
     <PreferredContainer primary="medcab" secondary="medcontainer" />
     <Price baseprice="800" maxavailable="1">
@@ -3466,11 +3466,11 @@
       </StatusEffect>
       <StatusEffect type="OnSuccess" target="UseTarget">
         <Conditional entitytype="eq Character" />
-        <Sound file="%ModDir%/Misc/Medical/injector.ogg" range="500" />
+        <Sound file="%ModDir:3278494407%/Misc/Medical/injector.ogg" range="500" />
       </StatusEffect>
       <StatusEffect type="OnFailure" target="UseTarget">
         <Conditional entitytype="eq Character" />
-        <Sound file="%ModDir%/Misc/Medical/injector.ogg" range="500" />
+        <Sound file="%ModDir:3278494407%/Misc/Medical/injector.ogg" range="500" />
       </StatusEffect>
       <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true" AllowWhenBroken="true">
         <Affliction identifier="stun" amount="0.1" />
@@ -3483,8 +3483,8 @@
     <SkillRequirementHint identifier="medical" level="45" />
   </Item>
   <Item identifier="tsm_d6" subcategory="CBRN Countermeasure" category="Medical" maxstacksize="32" maxstacksizecharacterinventory="8" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,chemweaponcount" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
-    <InventoryIcon texture="%ModDir%/Misc/Medical/stims.png" sourcerect="118,0,24,90" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Misc/Medical/stims.png" sourcerect="118,0,24,90" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Misc/Medical/stims.png" sourcerect="118,0,24,90" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Misc/Medical/stims.png" sourcerect="118,0,24,90" depth="0.6" origin="0.5,0.5" />
     <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
     <PreferredContainer primary="medcab" secondary="medcontainer" />
     <Price baseprice="1200" maxavailable="1">
@@ -3525,11 +3525,11 @@
       </StatusEffect>
       <StatusEffect type="OnSuccess" target="UseTarget">
         <Conditional entitytype="eq Character" />
-        <Sound file="%ModDir%/Misc/Medical/injector.ogg" range="500" />
+        <Sound file="%ModDir:3278494407%/Misc/Medical/injector.ogg" range="500" />
       </StatusEffect>
       <StatusEffect type="OnFailure" target="UseTarget">
         <Conditional entitytype="eq Character" />
-        <Sound file="%ModDir%/Misc/Medical/injector.ogg" range="500" />
+        <Sound file="%ModDir:3278494407%/Misc/Medical/injector.ogg" range="500" />
       </StatusEffect>
       <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true" AllowWhenBroken="true">
         <Affliction identifier="stun" amount="0.1" />
@@ -3542,8 +3542,8 @@
     <SkillRequirementHint identifier="medical" level="60" />
   </Item>
   <Item identifier="col_cac2" subcategory="CBRN Countermeasure" category="Medical" maxstacksize="32" maxstacksizecharacterinventory="8" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,chemweaponcount" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
-    <InventoryIcon texture="%ModDir%/Misc/Medical/stims.png" sourcerect="168,0,24,90" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Misc/Medical/stims.png" sourcerect="168,0,24,90" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Misc/Medical/stims.png" sourcerect="168,0,24,90" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Misc/Medical/stims.png" sourcerect="168,0,24,90" depth="0.6" origin="0.5,0.5" />
     <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
     <PreferredContainer primary="medcab" secondary="medcontainer" />
     <Price baseprice="1200" maxavailable="1">
@@ -3584,11 +3584,11 @@
       </StatusEffect>
       <StatusEffect type="OnSuccess" target="UseTarget">
         <Conditional entitytype="eq Character" />
-        <Sound file="%ModDir%/Misc/Medical/injector.ogg" range="500" />
+        <Sound file="%ModDir:3278494407%/Misc/Medical/injector.ogg" range="500" />
       </StatusEffect>
       <StatusEffect type="OnFailure" target="UseTarget">
         <Conditional entitytype="eq Character" />
-        <Sound file="%ModDir%/Misc/Medical/injector.ogg" range="500" />
+        <Sound file="%ModDir:3278494407%/Misc/Medical/injector.ogg" range="500" />
       </StatusEffect>
       <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true" AllowWhenBroken="true">
         <Affliction identifier="stun" amount="0.1" />
@@ -3601,8 +3601,8 @@
     <SkillRequirementHint identifier="medical" level="30" />
   </Item>
   <Item identifier="pe_cure" subcategory="CBRN Countermeasure" category="Medical" maxstacksize="32" maxstacksizecharacterinventory="8" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,chemweaponcount" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
-    <InventoryIcon texture="%ModDir%/Misc/Medical/stims.png" sourcerect="168,0,24,90" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Misc/Medical/stims.png" sourcerect="168,0,24,90" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Misc/Medical/stims.png" sourcerect="168,0,24,90" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Misc/Medical/stims.png" sourcerect="168,0,24,90" depth="0.6" origin="0.5,0.5" />
     <Body width="35" height="65" density="10.2" waterdragcoefficient="1" />
     <PreferredContainer primary="medcab" secondary="medcontainer" />
     <Price baseprice="1200" maxavailable="1">
@@ -3632,7 +3632,7 @@
       </StatusEffect>
       <StatusEffect type="OnUse" target="UseTarget">
         <Conditional entitytype="eq Character" />
-        <Sound file="%ModDir%/Misc/Medical/injector.ogg" range="500" />
+        <Sound file="%ModDir:3278494407%/Misc/Medical/injector.ogg" range="500" />
       </StatusEffect>
       <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true" AllowWhenBroken="true">
         <Affliction identifier="stun" amount="0.1" />
