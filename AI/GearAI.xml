@@ -237,17 +237,6 @@
 
   <!--AI Weapons-->
   <Item identifier="tsm_201_cbrnertai" subcategory="AI_weapons" category="Misc" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai" Scale="0.23" impactsoundtag="impact_metal_light" hideinmenus="true">
-    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="40" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="60" />
-      <RequiredItem tag="tsm_weaponbox" description="fabricationdescription.tsm_weaponbox" mincondition="2" />
-      <RequiredItem identifier="tsm_plastic" amount="2" />
-      <RequiredItem identifier="tsm_item_box" amount="1" />
-    </Fabricate>
-    <Deconstruct time="10">
-      <Item identifier="plastic" amount="1" />
-      <Item identifier="tsm_item_box" outcondition="0.75" />
-    </Deconstruct>
     <InventoryIcon texture="%ModDir:2953749635%/weapons/奇迹之海/tsm.png" sourcerect="1398,1841,176,188" origin="0.5,0.5" />
     <Sprite texture="%ModDir:2953749635%/weapons/奇迹之海/tsm.png" sourcerect="559,1310,590,147" depth="0.55" origin="0.5,0.5" />
     <Body width="590" height="147" density="52" />
