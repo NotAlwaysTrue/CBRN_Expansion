@@ -2,8 +2,8 @@
 <Items>
   <!--Resistance-->
   <Item identifier="fkj_545_mag_rev" subcategory="tsm_modifiedmagazines" scale="0.29" category="weapon" maxstacksize="6" cargocontaineridentifier="tsm_hazardous_container" linkable="true" tags="smallitem,fkj_cjzd,545mag,12mag,fkj_545cj_mag,fkj_mag,magazine,rpkmag,ak74ammo,rev_mag" impactsoundtag="impact_metal_light" health="33" description="">
-    <InventoryIcon texture="%ModDir%/Weapons/Magazine/separatists.png" sourcerect="2416,560,80,107" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Magazine/separatists.png" depth="0.56" sourcerect="2416,560,80,107" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Magazine/separatists.png" sourcerect="2416,560,80,107" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Magazine/separatists.png" depth="0.56" sourcerect="2416,560,80,107" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Body width="80" height="107" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="545_39_rev" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -35,8 +35,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="fkj_762_mag_rev" subcategory="tsm_modifiedmagazines" scale="0.26" category="weapon" maxstacksize="4" cargocontaineridentifier="tsm_hazardous_container" linkable="true" tags="smallitem,fkj_hzzd,762mag,12mag,fkj_762cj_mag,fkj_mag,magazine,akammo,rev_mag" impactsoundtag="impact_metal_light" health="30" description="">
-    <InventoryIcon texture="%ModDir%/Weapons/Magazine/separatists.png" sourcerect="2089,27,79,120" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Magazine/separatists.png" depth="0.56" sourcerect="2089,27,79,120" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Magazine/separatists.png" sourcerect="2089,27,79,120" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Magazine/separatists.png" depth="0.56" sourcerect="2089,27,79,120" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Body width="79" height="120" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="762_39_rev" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -68,8 +68,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="fkj_762_51_mag_rev" subcategory="tsm_modifiedmagazines" scale="0.23" category="weapon" maxstacksize="4" cargocontaineridentifier="tsm_hazardous_container" linkable="true" tags="smallitem,762_51mag,fkj_hzzd,lm_magazine,magazine,762ammo,rev_mag" impactsoundtag="impact_metal_light" health="20">
-    <InventoryIcon texture="%ModDir%/Weapons/Magazine/separatists.png" sourcerect="2054,620,53,81" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Magazine/separatists.png" depth="0.56" sourcerect="2054,620,53,81" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Magazine/separatists.png" sourcerect="2054,620,53,81" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Magazine/separatists.png" depth="0.56" sourcerect="2054,620,53,81" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Body width="52" height="92" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="762_51NATO_rev" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -100,8 +100,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="fkj_jts_mag_rev" subcategory="tsm_modifiedmagazines" scale="0.29" category="weapon" maxstacksize="3" cargocontaineridentifier="tsm_hazardous_container" linkable="true" tags="smallitem,fkj_jts_mag,fkj_mag,magazine,rev_mag" impactsoundtag="impact_metal_light" isdangerous="true" health="200" description="">
-    <InventoryIcon texture="%ModDir%/Weapons/Magazine/separatists.png" sourcerect="2111,221,57,118" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Magazine/separatists.png" depth="0.56" sourcerect="2111,221,57,118" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Magazine/separatists.png" sourcerect="2111,221,57,118" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Magazine/separatists.png" depth="0.56" sourcerect="2111,221,57,118" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Body width="57" height="118" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="545_39_rev" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -139,8 +139,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="fkj_pkp_mag_rev" subcategory="tsm_modifiedmagazines" scale="0.36" category="weapon" maxstacksize="3" cargocontaineridentifier="tsm_hazardous_container" linkable="true" tags="fkj_mag,smallitem,fkj_pkp_mag,magazine,gpmgammo,rev_mag" impactsoundtag="impact_metal_light" isdangerous="true" health="100" description="">
-    <InventoryIcon texture="%ModDir%/Weapons/Magazine/separatists.png" sourcerect="2003,69,51,109" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Magazine/separatists.png" depth="0.54" sourcerect="2003,69,51,109" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Magazine/separatists.png" sourcerect="2003,69,51,109" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Magazine/separatists.png" depth="0.54" sourcerect="2003,69,51,109" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Body width="51" height="109" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="762_51NATO_rev" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -178,8 +178,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="fkj_rpk_mag_rev" subcategory="tsm_modifiedmagazines" scale="0.29" category="weapon" maxstacksize="4" cargocontaineridentifier="tsm_hazardous_container" linkable="true" tags="smallitem,fkj_zd,rpkmag,magazine,rev_mag" impactsoundtag="impact_metal_light" isdangerous="true" health="95" description="">
-    <InventoryIcon texture="%ModDir%/Weapons/Magazine/separatists.png" sourcerect="2427,751,62,85" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Magazine/separatists.png" depth="0.56" sourcerect="2427,751,62,85" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Magazine/separatists.png" sourcerect="2427,751,62,85" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Magazine/separatists.png" depth="0.56" sourcerect="2427,751,62,85" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Body width="62" height="85" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="545_39_rev" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -217,8 +217,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="fkj_m2_mag_rev" subcategory="tsm_modifiedmagazines" scale="0.29" category="weapon" maxstacksize="1" cargocontaineridentifier="tsm_hazardous_container" linkable="true" tags="smallitem,fkj_cjzd,fkj_m2_mag,fkj_mag,magazine,rev_mag" impactsoundtag="impact_metal_light" isdangerous="true" health="150" description="">
-    <InventoryIcon texture="%ModDir%/Weapons/Magazine/separatists.png" sourcerect="2102,413,76,176" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Magazine/separatists.png" depth="0.56" sourcerect="2102,413,76,176" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Magazine/separatists.png" sourcerect="2102,413,76,176" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Magazine/separatists.png" depth="0.56" sourcerect="2102,413,76,176" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Body width="76" height="176" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="762_51NATO_rev" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -256,8 +256,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="fkj_svd_mag_rev" subcategory="tsm_modifiedmagazines" scale="0.29" category="weapon" maxstacksize="4" cargocontaineridentifier="tsm_hazardous_container" linkable="true" tags="fkj_svd_mag,smallitem,fkj_mag,magazine,rev_mag" impactsoundtag="impact_metal_light" health="20" description="">
-    <InventoryIcon texture="%ModDir%/Weapons/Magazine/separatists.png" sourcerect="2365,459,51,62" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Magazine/separatists.png" depth="0.56" sourcerect="2365,459,51,62" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Magazine/separatists.png" sourcerect="2365,459,51,62" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Magazine/separatists.png" depth="0.56" sourcerect="2365,459,51,62" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Body width="51" height="62" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="762_54r_rev" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -289,8 +289,8 @@
 
   <!--Coalition-->
   <Item identifier="tsm_556_45_mgmag_rev" subcategory="tsm_modifiedmagazines" scale="0.23" category="weapon" maxstacksize="3" cargocontaineridentifier="tsm_hazardous_container" linkable="true" tags="smallitem,lm_zd,tsm_556_45_mgmag,lm_magazine,magazine,m249ammo,rev_mag" isdangerous="true" impactsoundtag="impact_metal_light" health="200">
-    <InventoryIcon texture="%ModDir%/Weapons/Magazine/coalition.png" sourcerect="2158,175,54,135" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Magazine/coalition.png" depth="0.54" sourcerect="2158,175,54,135" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Magazine/coalition.png" sourcerect="2158,175,54,135" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Magazine/coalition.png" depth="0.54" sourcerect="2158,175,54,135" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Body width="54" height="135" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="556_45NATO_rev" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -328,8 +328,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="lm_762_51_mgmag_rev" subcategory="tsm_modifiedmagazines" scale="0.26" category="weapon" maxstacksize="3" cargocontaineridentifier="tsm_hazardous_container" linkable="true" tags="lm_magazine,smallitem,lm_762_51_mgmag,lm_cjzd,lm_mag,magazine,gpmgammo,rev_mag" isdangerous="true" impactsoundtag="impact_metal_light" health="200">
-    <InventoryIcon texture="%ModDir%/Weapons/Magazine/coalition.png" sourcerect="1998,13,53,134" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Magazine/coalition.png" depth="0.56" sourcerect="1998,13,53,134" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Magazine/coalition.png" sourcerect="1998,13,53,134" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Magazine/coalition.png" depth="0.56" sourcerect="1998,13,53,134" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Body width="53" height="134" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="762_51NATO_rev" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -367,8 +367,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="lm_556_mag_rev" subcategory="tsm_modifiedmagazines" scale="0.23" category="weapon" maxstacksize="6" cargocontaineridentifier="tsm_hazardous_container" linkable="true" tags="lm_magazine,smallitem,lm_cjzd,556mag,lm_556cj_mag,lm_mag,magazine,556ammo,rev_mag" impactsoundtag="impact_metal_light" health="31">
-    <InventoryIcon texture="%ModDir%/Weapons/Magazine/coalition.png" sourcerect="2446,0,49,93" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Magazine/coalition.png" depth="0.56" sourcerect="2446,0,49,93" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Magazine/coalition.png" sourcerect="2446,0,49,93" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Magazine/coalition.png" depth="0.56" sourcerect="2446,0,49,93" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Body width="49" height="93" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="556_45NATO_rev" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -400,8 +400,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="lm_65_mag_rev" subcategory="tsm_modifiedmagazines" scale="0.23" category="weapon" maxstacksize="6" cargocontaineridentifier="tsm_hazardous_container" linkable="true" tags="lm_magazine,smallitem,65mag,lm_gjzd,magazine,65ammo,rev_mag" impactsoundtag="impact_metal_light" health="30">
-    <InventoryIcon texture="%ModDir%/Weapons/Magazine/coalition.png" sourcerect="2444,228,49,72" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Magazine/coalition.png" depth="0.56" sourcerect="2444,228,49,72" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Magazine/coalition.png" sourcerect="2444,228,49,72" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Magazine/coalition.png" depth="0.56" sourcerect="2444,228,49,72" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Body width="49" height="72" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="65_spec_rev" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -433,8 +433,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="lm_68_51_mag_rev" subcategory="tsm_modifiedmagazines" scale="0.23" category="weapon" maxstacksize="6" cargocontaineridentifier="tsm_hazardous_container" linkable="true" tags="lm_magazine,smallitem,lm_gjzd,68_51mag,magazine,rev_mag" impactsoundtag="impact_metal_light" health="30">
-    <InventoryIcon texture="%ModDir%/Weapons/Magazine/coalition.png" sourcerect="1944,229,46,78" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Magazine/coalition.png" depth="0.56" sourcerect="1944,229,46,78" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Magazine/coalition.png" sourcerect="1944,229,46,78" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Magazine/coalition.png" depth="0.56" sourcerect="1944,229,46,78" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Body width="46" height="72" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="68_51_rev" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -466,8 +466,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="lm_762_51_mag_rev" subcategory="tsm_modifiedmagazines" scale="0.25" category="weapon" maxstacksize="4" cargocontaineridentifier="tsm_hazardous_container" linkable="true" tags="smallitem,762_51mag,lm_gjzd,lm_magazine,magazine,762ammo,rev_mag" impactsoundtag="impact_metal_light" health="20">
-    <InventoryIcon texture="%ModDir%/Weapons/Magazine/coalition.png" sourcerect="2226,323,52,92" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Magazine/coalition.png" depth="0.56" sourcerect="2226,323,52,92" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Magazine/coalition.png" sourcerect="2226,323,52,92" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Magazine/coalition.png" depth="0.56" sourcerect="2226,323,52,92" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Body width="52" height="92" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="762_51NATO_rev" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -499,8 +499,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="lm_m700_mag_rev" subcategory="tsm_modifiedmagazines" scale="0.23" category="weapon" maxstacksize="3" cargocontaineridentifier="tsm_hazardous_container" linkable="true" tags="lm_magazine,lm_m700_mag,smallitem,magazine,rev_mag" impactsoundtag="impact_metal_light" health="5">
-    <InventoryIcon texture="%ModDir%/Weapons/Magazine/coalition.png" sourcerect="2441,340,54,42" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Magazine/coalition.png" depth="0.56" sourcerect="2441,340,54,42" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Magazine/coalition.png" sourcerect="2441,340,54,42" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Magazine/coalition.png" depth="0.56" sourcerect="2441,340,54,42" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Body width="54" height="42" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="338magnum_rev" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -529,8 +529,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="tsm_miniammo_rev" subcategory="tsm_modifiedmagazines" scale="0.23" category="weapon" maxstacksize="1" cargocontaineridentifier="tsm_hazardous_container" linkable="true" tags="lm_magazine,smallitem,lm_cjzd,tsm_miniammo,magazine,rev_mag" isdangerous="true" impactsoundtag="impact_metal_light" health="200">
-    <InventoryIcon texture="%ModDir%/Weapons/Magazine/coalition.png" sourcerect="2365,431,125,193" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Magazine/coalition.png" depth="0.545" sourcerect="2365,431,125,193" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Magazine/coalition.png" sourcerect="2365,431,125,193" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Magazine/coalition.png" depth="0.545" sourcerect="2365,431,125,193" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Body width="125" height="193" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="65_rev" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -573,8 +573,8 @@
   <!--T.S.M-->
   <Item identifier="tsm_58_201mag_rev" subcategory="tsm_modifiedmagazines" scale="0.23" category="weapon" maxstacksize="4" cargocontaineridentifier="tsm_hazardous_container" linkable="true" tags="tsm_magazine,smallitem,tsm_cjzd,tsm_58_mgmag,magazine,rev_mag" isdangerous="true" impactsoundtag="impact_metal_light" description="">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <InventoryIcon texture="%ModDir%/Weapons/Magazine/tsm.png" sourcerect="2148,239,96,92" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Magazine/tsm.png" depth="0.56" sourcerect="2148,239,96,92" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Magazine/tsm.png" sourcerect="2148,239,96,92" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Magazine/tsm.png" depth="0.56" sourcerect="2148,239,96,92" origin="0.5,0.5" />
     <Body width="96" height="92" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_58_rev" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="tsm_58_rev" />
@@ -612,8 +612,8 @@
   </Item>
   <Item identifier="tsm_58_mag_rev" subcategory="tsm_modifiedmagazines" description="" scale="0.26" category="weapon" health="30" maxstacksize="4" cargocontaineridentifier="tsm_hazardous_container" tags="tsm_magazine,smallitem,tsm_cjzd,tsm_mag,tsm_58_mag,tsm_58_mgmag,magazine,rev_mag" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <InventoryIcon texture="%ModDir%/Weapons/Magazine/tsm.png" sourcerect="2062,243,66,95" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Magazine/tsm.png" depth="0.56" sourcerect="2062,243,66,95" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Magazine/tsm.png" sourcerect="2062,243,66,95" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Magazine/tsm.png" depth="0.56" sourcerect="2062,243,66,95" origin="0.5,0.5" />
     <Body width="66" height="95" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_58_rev" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="tsm_58_rev" />
@@ -644,7 +644,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="tsm_m61ammobox_rev" subcategory="tsm_modifiedmagazines" health="1200" category="weapon" tags="mediumitem,ammobox,tsm_ammobox,tsm_magbox,tsm_danger_item" isdangerous="true" scale="0.5" pickdistance="150" impactsoundtag="impact_metal_heavy" maxstacksize="1">
-    <Sprite texture="%ModDir%/Weapons/Magazine/tsm.png" depth="0.54" sourcerect="2260,2371,219,105" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Magazine/tsm.png" depth="0.54" sourcerect="2260,2371,219,105" origin="0.5,0.5" />
     <Body width="219" height="105" density="50" />
     <Holdable slots="RightHand+LeftHand" aimable="false" holdpos="50,-50" aimpos="50,-40" handle1="-0,16" handle2="0,0" swingamount="20,100" swingspeed="1" swingwhenusing="true" msg="ItemMsgPickUpSelect">
       <StatusEffect type="Always" target="This" interval="3">
@@ -683,7 +683,7 @@
 
   <!--Loader-->
   <Item identifier="tsm_ammobox_rev" subcategory="tsm_modifiedmagazines" health="600" category="weapon" tags="mediumitem,ammobox,tsm_ammobox,tsm_magbox,tsm_danger_item" isdangerous="true" scale="0.5" pickdistance="150" impactsoundtag="impact_metal_heavy" maxstacksize="1">
-    <Sprite texture="%ModDir%/Weapons/Magazine/tsm.png" depth="0.54" sourcerect="2260,2371,219,105" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Magazine/tsm.png" depth="0.54" sourcerect="2260,2371,219,105" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <PreferredContainer primary="wreckarmcab" minamount="0" maxamount="1" spawnprobability="0.01" />
     <PreferredContainer primary="wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.01" />
@@ -702,7 +702,7 @@
       <StatusEffect type="OnUse" target="This" Condition="-5" comparison="and">
         <RequiredItems items="rev_mag" type="Contained" />
         <Conditional IsFullCondition="false" targetcontaineditem="true" />
-        <sound file="%ModDir%/Weapons/Magazine/reload4.ogg" type="OnUse" range="300" loop="true" />
+        <sound file="%ModDir:3278494407%/Weapons/Magazine/reload4.ogg" type="OnUse" range="300" loop="true" />
       </StatusEffect>
       <StatusEffect type="Always" target="This" interval="3">
         <Conditional hastag="neq tsm_danger_box" targetcontainer="true" />
@@ -742,8 +742,8 @@
 
   <!--Berra Arm-->
   <Item identifier="tes20mag_ap" subcategory="Berra Group" category="Weapon" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.23" cargocontaineridentifier="metalcrate" tags="smallitem,tes20mag" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/weapons/BerraArm/TES20/TES20_AP.png" sourcerect="0,0,72,90" />
-    <Sprite texture="%ModDir%/weapons/BerraArm/TES20/TES20_AP.png" depth="0.56" sourcerect="0,0,72,90" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/weapons/BerraArm/TES20/TES20_AP.png" sourcerect="0,0,72,90" />
+    <Sprite texture="%ModDir:3278494407%/weapons/BerraArm/TES20/TES20_AP.png" depth="0.56" sourcerect="0,0,72,90" origin="0.5,0.5" />
     <Body width="72" height="90" density="25" />
     <PreferredContainer primary="acceptSTANAG" minamount="1" maxamount="1" spawnprobability="0.25" />
     <PreferredContainer primary="armcab" secondary="secarmcab" />
@@ -762,8 +762,8 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
   </Item>
   <Item identifier="tes20mag_arr" subcategory="Berra Group" category="Weapon" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.23" cargocontaineridentifier="metalcrate" tags="smallitem,tes20mag" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/weapons/BerraArm/TES20/TES20_ARROW.png" sourcerect="0,0,72,90" />
-    <Sprite texture="%ModDir%/weapons/BerraArm/TES20/TES20_ARROW.png" depth="0.56" sourcerect="0,0,72,90" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/weapons/BerraArm/TES20/TES20_ARROW.png" sourcerect="0,0,72,90" />
+    <Sprite texture="%ModDir:3278494407%/weapons/BerraArm/TES20/TES20_ARROW.png" depth="0.56" sourcerect="0,0,72,90" origin="0.5,0.5" />
     <Body width="72" height="90" density="25" />
     <Price baseprice="600" sold="false" minleveldifficulty="65" displaynonempty="true">
       <Price storeidentifier="merchantoutpost" multiplier="1.4" />
@@ -795,8 +795,8 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
   </Item>
   <Item identifier="tes20mag_he" subcategory="Berra Group" category="Weapon" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.23" cargocontaineridentifier="metalcrate" tags="smallitem,tes20mag" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/weapons/BerraArm/TES20/TES20_HE.png" sourcerect="0,0,72,90" />
-    <Sprite texture="%ModDir%/weapons/BerraArm/TES20/TES20_HE.png" depth="0.56" sourcerect="0,0,72,90" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/weapons/BerraArm/TES20/TES20_HE.png" sourcerect="0,0,72,90" />
+    <Sprite texture="%ModDir:3278494407%/weapons/BerraArm/TES20/TES20_HE.png" depth="0.56" sourcerect="0,0,72,90" origin="0.5,0.5" />
     <Body width="72" height="90" density="25" />
     <Deconstruct time="18">
       <Item identifier="c4block" mincondition="0.5" outcondition="0.2" />
@@ -812,8 +812,8 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
   </Item>
   <Item identifier="tes20mag_ll" subcategory="Berra Group" category="Weapon" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.23" cargocontaineridentifier="metalcrate" tags="smallitem,tes20mag" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/weapons/BerraArm/TES20/TES20_LL.png" sourcerect="0,0,72,90" />
-    <Sprite texture="%ModDir%/weapons/BerraArm/TES20/TES20_LL.png" depth="0.56" sourcerect="0,0,72,90" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/weapons/BerraArm/TES20/TES20_LL.png" sourcerect="0,0,72,90" />
+    <Sprite texture="%ModDir:3278494407%/weapons/BerraArm/TES20/TES20_LL.png" depth="0.56" sourcerect="0,0,72,90" origin="0.5,0.5" />
     <Body width="72" height="90" density="25" />
     <Price baseprice="400" sold="false" minleveldifficulty="65" displaynonempty="true">
       <Price storeidentifier="merchantoutpost" multiplier="1.4" />
@@ -844,8 +844,8 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
   </Item>
   <Item identifier="obj227_fueltanks" subcategory="Berra Group" category="Weapon" maxstacksize="8" maxstacksizecharacterinventory="1" scale="0.23" cargocontaineridentifier="metalcrate" tags="smallitem,obj227_fueltanks" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/weapons/BerraArm/Obj227/obj227.png" sourcerect="277,25,76,200" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/weapons/BerraArm/Obj227/obj227.png" depth="0.56" sourcerect="277,25,75,200" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/weapons/BerraArm/Obj227/obj227.png" sourcerect="277,25,76,200" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/weapons/BerraArm/Obj227/obj227.png" depth="0.56" sourcerect="277,25,75,200" origin="0.5,0.5" />
     <Body width="72" height="90" density="25" />
     <Deconstruct time="18">
       <Item identifier="oxygeniteshard" mincondition="0.8" outcondition="0.7" />
@@ -879,8 +879,8 @@
     </Holdable>
   </Item>
   <Item identifier="berra_STANAG_50beowulf_fr" subcategory="Berra Group" category="weapon" maxstacksize="8" maxstacksizecharacterinventory="3" cargocontaineridentifier="metalcrate" scale="0.23" tags="smallitem,berra_STANAG,STANAG_50beowulf" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/Weapons/BerraArm/M4Beowolf/beowolfmain.png" sourcerect="125,193,55,99" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/BerraArm/M4Beowolf/beowolfmain.png" depth="0.56" sourcerect="125,193,55,99" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/BerraArm/M4Beowolf/beowolfmain.png" sourcerect="125,193,55,99" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/BerraArm/M4Beowolf/beowolfmain.png" depth="0.56" sourcerect="125,193,55,99" origin="0.5,0.5" />
     <Body width="30" height="58" density="50" />
     <Price baseprice="550" sold="false" minleveldifficulty="65" displaynonempty="true">
       <Price storeidentifier="merchantoutpost" multiplier="1.4" />
@@ -921,8 +921,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="berra_STANAG_50beowulf_ap" subcategory="Berra Group" category="weapon" maxstacksize="8" maxstacksizecharacterinventory="3" cargocontaineridentifier="metalcrate" scale="0.23" tags="smallitem,berra_STANAG,STANAG_50beowulf" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/Weapons/BerraArm/M4Beowolf/beowolfmain.png" sourcerect="125,193,55,99" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/BerraArm/M4Beowolf/beowolfmain.png" depth="0.56" sourcerect="125,193,55,99" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/BerraArm/M4Beowolf/beowolfmain.png" sourcerect="125,193,55,99" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/BerraArm/M4Beowolf/beowolfmain.png" depth="0.56" sourcerect="125,193,55,99" origin="0.5,0.5" />
     <Body width="30" height="58" density="50" />
     <Price baseprice="600" sold="false" minleveldifficulty="65" displaynonempty="true">
       <Price storeidentifier="merchantoutpost" multiplier="1.4" />
@@ -961,8 +961,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="berra_STANAG_50beowulf_fr_ext" subcategory="Berra Group" category="weapon" maxstacksize="8" maxstacksizecharacterinventory="3" cargocontaineridentifier="metalcrate" scale="0.23" tags="smallitem,berra_STANAG_ext,STANAG_50beowulf" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/Weapons/BerraArm/M4Beowolf/beowolfmain.png" sourcerect="22,193,55,99" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/BerraArm/M4Beowolf/beowolfmain.png" depth="0.56" sourcerect="22,193,55,99" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/BerraArm/M4Beowolf/beowolfmain.png" sourcerect="22,193,55,99" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/BerraArm/M4Beowolf/beowolfmain.png" depth="0.56" sourcerect="22,193,55,99" origin="0.5,0.5" />
     <Body width="30" height="58" density="50" />
     <Price baseprice="550" sold="false" minleveldifficulty="65" displaynonempty="true">
       <Price storeidentifier="merchantoutpost" multiplier="1.4" />
@@ -1003,8 +1003,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="berra_STANAG_50beowulf_ap_ext" subcategory="Berra Group" category="weapon" maxstacksize="8" maxstacksizecharacterinventory="3" cargocontaineridentifier="metalcrate" scale="0.23" tags="smallitem,berra_STANAG_ext,STANAG_50beowulf" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/Weapons/BerraArm/M4Beowolf/beowolfmain.png" sourcerect="22,193,55,99" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/BerraArm/M4Beowolf/beowolfmain.png" depth="0.56" sourcerect="22,193,55,99" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/BerraArm/M4Beowolf/beowolfmain.png" sourcerect="22,193,55,99" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/BerraArm/M4Beowolf/beowolfmain.png" depth="0.56" sourcerect="22,193,55,99" origin="0.5,0.5" />
     <Body width="30" height="58" density="50" />
     <Price baseprice="600" sold="false" minleveldifficulty="65" displaynonempty="true">
       <Price storeidentifier="merchantoutpost" multiplier="1.4" />
@@ -1029,8 +1029,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="berra_STANAG_458socom" subcategory="Berra Group" category="weapon" maxstacksize="8" maxstacksizecharacterinventory="3" cargocontaineridentifier="metalcrate" scale="0.23" tags="smallitem,berra_STANAG,STANAG_458socom" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/Weapons/BerraArm/M4Beowolf/beowolfmain.png" sourcerect="125,193,55,99" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/BerraArm/M4Beowolf/beowolfmain.png" depth="0.56" sourcerect="125,193,55,99" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/BerraArm/M4Beowolf/beowolfmain.png" sourcerect="125,193,55,99" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/BerraArm/M4Beowolf/beowolfmain.png" depth="0.56" sourcerect="125,193,55,99" origin="0.5,0.5" />
     <Body width="30" height="58" density="50" />
     <Price baseprice="450" sold="false" minleveldifficulty="65" displaynonempty="true">
       <Price storeidentifier="merchantoutpost" multiplier="1.4" />
@@ -1071,8 +1071,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="berra_STANAG_458socom_ext" subcategory="Berra Group" category="weapon" maxstacksize="8" maxstacksizecharacterinventory="3" cargocontaineridentifier="metalcrate" scale="0.23" tags="smallitem,berra_STANAG_ext,STANAG_458socom" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/Weapons/BerraArm/M4Beowolf/beowolfmain.png" sourcerect="22,193,55,99" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/BerraArm/M4Beowolf/beowolfmain.png" depth="0.56" sourcerect="22,193,55,99" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/BerraArm/M4Beowolf/beowolfmain.png" sourcerect="22,193,55,99" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/BerraArm/M4Beowolf/beowolfmain.png" depth="0.56" sourcerect="22,193,55,99" origin="0.5,0.5" />
     <Body width="30" height="58" density="50" />
     <Price baseprice="450" sold="false" minleveldifficulty="65" displaynonempty="true">
       <Price storeidentifier="merchantoutpost" multiplier="1.4" />
@@ -1113,8 +1113,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="berra_300FAL_M118LR" subcategory="Berra Group" category="weapon" maxstacksize="8" maxstacksizecharacterinventory="4" cargocontaineridentifier="metalcrate" scale="0.1" tags="smallitem,berra_300FAL" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/Weapons/BerraArm/M110SASS/M110SASS.png" sourcerect="201,497,110,208" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/BerraArm/M110SASS/M110SASS.png" depth="0.56" sourcerect="201,497,110,208" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/BerraArm/M110SASS/M110SASS.png" sourcerect="201,497,110,208" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/BerraArm/M110SASS/M110SASS.png" depth="0.56" sourcerect="201,497,110,208" origin="0.5,0.5" />
     <Body width="100" height="200" density="50" />
     <Deconstruct time="18">
       <Item identifier="plastic" outcondition="0.7" />
@@ -1146,8 +1146,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="berra_50bmg_belt_fmjt" subcategory="Berra Group" category="weapon" maxstacksize="4" maxstacksizecharacterinventory="1" cargocontaineridentifier="metalcrate" scale="0.15" tags="smallitem,50bmg_belt" impactsoundtag="impact_metal_light" hideinmenus="true">
-    <InventoryIcon texture="%ModDir%/Weapons/BerraArm/M2HB/M2HB.png" sourcerect="1187,592,85,196" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/BerraArm/M2HB/M2HB.png" depth="0.56" sourcerect="1187,592,85,196" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/BerraArm/M2HB/M2HB.png" sourcerect="1187,592,85,196" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/BerraArm/M2HB/M2HB.png" depth="0.56" sourcerect="1187,592,85,196" origin="0.5,0.5" />
     <Body width="100" height="200" density="50" />
     <!--<Fabricate suitablefabricators="fabricator" requiredtime="5" requiresrecipe="false" outcondition="0.1">
       <RequiredSkill identifier="weapons" level="80" />
@@ -1166,8 +1166,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="berra_mk153_dumb" subcategory="Berra Group" category="weapon" maxstacksize="2" maxstacksizecharacterinventory="1"  cargocontaineridentifier="metalcrate" scale="0.155" tags="mediumitem,mk153_shell,tubeitem" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" sourcerect="475,325,460,100" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" depth="0.56" sourcerect="475,325,460,100" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" sourcerect="475,325,460,100" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" depth="0.56" sourcerect="475,325,460,100" origin="0.5,0.5" />
     <Body width="30" height="58" density="50" />
     <Price baseprice="550" sold="false" minleveldifficulty="65" displaynonempty="true">
       <Price storeidentifier="merchantoutpost" multiplier="1.4" />
@@ -1188,7 +1188,7 @@
       <RequiredItem identifier="plastic" />
     </Fabricate>
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="Mk153 dumb worn" texture="%ModDir%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" canbehiddenbyotherwearables="false" sourcerect="475,325,460,200" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.155" origin="0.5,0.7" />
+      <sprite name="Mk153 dumb worn" texture="%ModDir:3278494407%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" canbehiddenbyotherwearables="false" sourcerect="475,325,460,200" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.155" origin="0.5,0.7" />
     </Wearable>
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="drl3_dumb_warhead" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="drl3_dumb_warhead" />
@@ -1197,8 +1197,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="berra_mk153_inc" subcategory="Berra Group" category="weapon" maxstacksize="2" maxstacksizecharacterinventory="1" cargocontaineridentifier="metalcrate" scale="0.155" tags="mediumitem,mk153_shell,tubeitem" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" sourcerect="475,841,460,100" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" depth="0.56" sourcerect="475,841,460,100" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" sourcerect="475,841,460,100" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" depth="0.56" sourcerect="475,841,460,100" origin="0.5,0.5" />
     <Body width="30" height="58" density="50" />
     <Price baseprice="550" sold="false" minleveldifficulty="65" displaynonempty="true">
       <Price storeidentifier="merchantoutpost" multiplier="1.4" />
@@ -1222,7 +1222,7 @@
       <RequiredItem identifier="steel" amount="1" />
     </Fabricate>
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="Mk153 inc worn" texture="%ModDir%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" canbehiddenbyotherwearables="false" sourcerect="475,841,460,200" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.155" origin="0.5,0.7" />
+      <sprite name="Mk153 inc worn" texture="%ModDir:3278494407%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" canbehiddenbyotherwearables="false" sourcerect="475,841,460,200" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.155" origin="0.5,0.7" />
     </Wearable>
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="mk153_inc_warhead" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="mk153_inc_warhead" />
@@ -1231,8 +1231,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="berra_mk153_heat" subcategory="Berra Group" category="weapon" maxstacksize="2" maxstacksizecharacterinventory="1" cargocontaineridentifier="metalcrate" scale="0.155" tags="mediumitem,mk153_shell,tubeitem" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" sourcerect="13,583,460,100" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" depth="0.56" sourcerect="13,583,460,100" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" sourcerect="13,583,460,100" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" depth="0.56" sourcerect="13,583,460,100" origin="0.5,0.5" />
     <Body width="30" height="58" density="50" />
     <Deconstruct time="18">
       <Item identifier="c4block" mincondition="0.8" amount="1" />
@@ -1247,7 +1247,7 @@
       <RequiredItem identifier="steel" amount="2" />
     </Fabricate>
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="Mk153 heat worn" texture="%ModDir%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" canbehiddenbyotherwearables="false" sourcerect="13,583,460,100" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.155" origin="0.5,0.7" />
+      <sprite name="Mk153 heat worn" texture="%ModDir:3278494407%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" canbehiddenbyotherwearables="false" sourcerect="13,583,460,100" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.155" origin="0.5,0.7" />
     </Wearable>
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="mk153_heat_warhead" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="mk153_heat_warhead" />
@@ -1256,8 +1256,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="berra_mk153_theat" subcategory="Berra Group" category="weapon" maxstacksize="2" maxstacksizecharacterinventory="1" cargocontaineridentifier="metalcrate" scale="0.155" tags="mediumitem,mk153_shell,tubeitem" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" sourcerect="475,583,460,100" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" depth="0.56" sourcerect="475,583,460,100" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" sourcerect="475,583,460,100" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" depth="0.56" sourcerect="475,583,460,100" origin="0.5,0.5" />
     <Body width="30" height="58" density="50" />
     <Deconstruct time="18">
       <Item identifier="c4block" mincondition="0.8" amount="4" />
@@ -1272,7 +1272,7 @@
       <RequiredItem identifier="steel" amount="3" />
     </Fabricate>
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="Mk153 theat worn" texture="%ModDir%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" canbehiddenbyotherwearables="false" sourcerect="475,583,460,200" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.155" origin="0.5,0.7" />
+      <sprite name="Mk153 theat worn" texture="%ModDir:3278494407%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" canbehiddenbyotherwearables="false" sourcerect="475,583,460,200" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.155" origin="0.5,0.7" />
     </Wearable>
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="mk153_theat_warhead" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="mk153_theat_warhead" />
@@ -1281,8 +1281,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="berra_mk153_bdm" subcategory="Berra Group" category="weapon" maxstacksize="2" maxstacksizecharacterinventory="1" cargocontaineridentifier="metalcrate" scale="0.155" tags="mediumitem,mk153_shell,tubeitem" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" sourcerect="475,1357,460,100" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" depth="0.56" sourcerect="475,1357,460,100" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" sourcerect="475,1357,460,100" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" depth="0.56" sourcerect="475,1357,460,100" origin="0.5,0.5" />
     <Body width="30" height="58" density="50" />
     <Deconstruct time="18">
       <Item identifier="c4block" mincondition="0.8" amount="4" />
@@ -1297,7 +1297,7 @@
       <RequiredItem identifier="plastic" />
     </Fabricate>
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="Mk153 theat worn" texture="%ModDir%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" canbehiddenbyotherwearables="false" sourcerect="475,1357,460,100" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.155" origin="0.5,0.7" />
+      <sprite name="Mk153 theat worn" texture="%ModDir:3278494407%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" canbehiddenbyotherwearables="false" sourcerect="475,1357,460,100" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.155" origin="0.5,0.7" />
     </Wearable>
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="mk153_bdm_warhead" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="mk153_bdm_warhead" />
@@ -1306,8 +1306,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="berra_mk153_he" subcategory="Berra Group" category="weapon" maxstacksize="2" maxstacksizecharacterinventory="1" cargocontaineridentifier="metalcrate" scale="0.155" tags="mediumitem,mk153_shell,tubeitem" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" sourcerect="13,1357,460,100" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" depth="0.56" sourcerect="13,1357,460,100" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" sourcerect="13,1357,460,100" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" depth="0.56" sourcerect="13,1357,460,100" origin="0.5,0.5" />
     <Body width="30" height="58" density="50" />
     <Price baseprice="550" sold="false" minleveldifficulty="65" displaynonempty="true">
       <Price storeidentifier="merchantoutpost" multiplier="1.4" />
@@ -1330,7 +1330,7 @@
       <RequiredItem identifier="steel" amount="3" />
     </Fabricate>
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="Mk153 theat worn" texture="%ModDir%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" canbehiddenbyotherwearables="false" sourcerect="13,1357,460,100" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.155" origin="0.5,0.7" />
+      <sprite name="Mk153 theat worn" texture="%ModDir:3278494407%/Weapons/BerraArm/Mk153SMAW/mk153smaw.png" canbehiddenbyotherwearables="false" sourcerect="13,1357,460,100" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.155" origin="0.5,0.7" />
     </Wearable>
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="mk153_he_warhead" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="mk153_he_warhead" />
@@ -1341,8 +1341,8 @@
   <Item identifier="berra_M107Mag_mk211mod0" subcategory="Berra Group" category="weapon" maxstacksize="4" maxstacksizecharacterinventory="2" cargocontaineridentifier="metalcrate" scale="0.025" tags="smallitem,M107Mag" impactsoundtag="impact_metal_light" hideinmenus="true">
     <PreferredContainer primary="secarmcab" secondary="armcab" />
     <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" spawnprobability="0.1" />
-    <InventoryIcon texture="%ModDir%/Weapons/Other/M107Mag.png" sourcerect="0,0,810,851" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Other/M107Mag.png" depth="0.56" sourcerect="0,0,810,851" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Other/M107Mag.png" sourcerect="0,0,810,851" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Other/M107Mag.png" depth="0.56" sourcerect="0,0,810,851" origin="0.5,0.5" />
     <Body width="100" height="200" density="50" />
     <Deconstruct time="5">
     </Deconstruct>
@@ -1356,8 +1356,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="berra_M107Mag_m33" subcategory="Berra Group" category="weapon" maxstacksize="4" maxstacksizecharacterinventory="2" cargocontaineridentifier="metalcrate" scale="0.025" tags="smallitem,M107Mag" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/Weapons/Other/M107Mag.png" sourcerect="0,0,810,851" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Other/M107Mag.png" depth="0.56" sourcerect="0,0,810,851" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Other/M107Mag.png" sourcerect="0,0,810,851" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Other/M107Mag.png" depth="0.56" sourcerect="0,0,810,851" origin="0.5,0.5" />
     <Body width="100" height="200" density="50" />
     <Deconstruct time="18">
       <Item identifier="tsm_yx_crystallography" amount="2" />
@@ -1392,8 +1392,8 @@
   <Item identifier="berra_M107Mag_m903" subcategory="Berra Group" category="weapon" maxstacksize="4" maxstacksizecharacterinventory="2" cargocontaineridentifier="metalcrate" scale="0.025" tags="smallitem,M107Mag" impactsoundtag="impact_metal_light" hideinmenus="true">
     <PreferredContainer primary="secarmcab" secondary="armcab" />
     <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" spawnprobability="0.03" />
-    <InventoryIcon texture="%ModDir%/Weapons/Other/M107Mag.png" sourcerect="0,0,810,851" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Other/M107Mag.png" depth="0.56" sourcerect="0,0,810,851" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Other/M107Mag.png" sourcerect="0,0,810,851" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Other/M107Mag.png" depth="0.56" sourcerect="0,0,810,851" origin="0.5,0.5" />
     <Body width="100" height="200" density="50" />
     <Deconstruct time="5">
     </Deconstruct>
@@ -1407,8 +1407,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="berra_M107Mag_m1022" subcategory="Berra Group" category="weapon" maxstacksize="4" maxstacksizecharacterinventory="2" cargocontaineridentifier="metalcrate" scale="0.025" tags="smallitem,M107Mag" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/Weapons/Other/M107Mag.png" sourcerect="0,0,810,851" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Other/M107Mag.png" depth="0.56" sourcerect="0,0,810,851" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Other/M107Mag.png" sourcerect="0,0,810,851" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Other/M107Mag.png" depth="0.56" sourcerect="0,0,810,851" origin="0.5,0.5" />
     <Body width="100" height="200" density="50" />
     <Deconstruct time="18">
       <Item identifier="tsm_yx_crystallography" amount="3" />
@@ -1441,8 +1441,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="berra_mk153_illumination" subcategory="Berra Group" category="weapon" maxstacksize="2" maxstacksizecharacterinventory="1" cargocontaineridentifier="metalcrate" scale="0.155" tags="mediumitem,mk153_shell,tubeitem" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/Weapons/BerraArm/Mk153SMAW/mk153additional.png" sourcerect="0,0,451,100" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/BerraArm/Mk153SMAW/mk153additional.png" depth="0.56" sourcerect="0,0,451,100" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/BerraArm/Mk153SMAW/mk153additional.png" sourcerect="0,0,451,100" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/BerraArm/Mk153SMAW/mk153additional.png" depth="0.56" sourcerect="0,0,451,100" origin="0.5,0.5" />
     <Body width="30" height="58" density="50" />
     <Price baseprice="200" sold="false" minleveldifficulty="65" displaynonempty="true">
       <Price storeidentifier="merchantoutpost" multiplier="1.4" />
@@ -1463,7 +1463,7 @@
       <RequiredItem identifier="steel" amount="3" />
     </Fabricate>
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="Mk153 ill worn" texture="%ModDir%/Weapons/BerraArm/Mk153SMAW/mk153additional.png" canbehiddenbyotherwearables="false" sourcerect="0,0,451,100" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.155" origin="0.5,0.7" />
+      <sprite name="Mk153 ill worn" texture="%ModDir:3278494407%/Weapons/BerraArm/Mk153SMAW/mk153additional.png" canbehiddenbyotherwearables="false" sourcerect="0,0,451,100" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.155" origin="0.5,0.7" />
     </Wearable>
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="mk153_illumination_warhead" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="mk153_illumination_warhead" />
@@ -1472,8 +1472,8 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <Item identifier="berra_mk153_flechette" subcategory="Berra Group" category="weapon" maxstacksize="2" maxstacksizecharacterinventory="1" cargocontaineridentifier="metalcrate" scale="0.155" tags="mediumitem,mk153_shell,tubeitem" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="%ModDir%/Weapons/BerraArm/Mk153SMAW/mk153additional.png" sourcerect="0,257,451,100" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/BerraArm/Mk153SMAW/mk153additional.png" depth="0.56" sourcerect="0,257,451,100" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/BerraArm/Mk153SMAW/mk153additional.png" sourcerect="0,257,451,100" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/BerraArm/Mk153SMAW/mk153additional.png" depth="0.56" sourcerect="0,257,451,100" origin="0.5,0.5" />
     <Body width="30" height="58" density="50" />
     <Price baseprice="300" sold="false" minleveldifficulty="65" displaynonempty="true">
       <Price storeidentifier="merchantoutpost" multiplier="1.4" />
@@ -1494,7 +1494,7 @@
       <RequiredItem identifier="steel" amount="5" />
     </Fabricate>
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="Mk153 theat worn" texture="%ModDir%/Weapons/BerraArm/Mk153SMAW/mk153additional.png" canbehiddenbyotherwearables="false" sourcerect="0,256,451,100" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.155" origin="0.5,0.7" />
+      <sprite name="Mk153 theat worn" texture="%ModDir:3278494407%/Weapons/BerraArm/Mk153SMAW/mk153additional.png" canbehiddenbyotherwearables="false" sourcerect="0,256,451,100" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.155" origin="0.5,0.7" />
     </Wearable>
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="mk153_flechette_warhead" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="mk153_flechette_warhead" />

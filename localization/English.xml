@@ -425,14 +425,14 @@
   <lights>Light</lights>
 
   <afflictionname.chemicalliner_main>Self-sealing Chemical Liner</afflictionname.chemicalliner_main>
-  <afflictiondescription.chemicalliner_main>-85% Gunshotwound \n-99% Bleeding \n-85% Laceration \n-85% Blunttrauma \n-85% Internaldamage \n-85% Deep Tissue Injury \n-80% Burn\n-60% Special Damage \n-100% Armor Break \n1u/s Wounds Sealing \n10u/s Stop Bleeding</afflictiondescription.chemicalliner_main>
-  <afflictionname.chemicalliner_secondary>Self-sealing Chemical Liner</afflictionname.chemicalliner_secondary>
-  <afflictiondescription.chemicalliner_main>\n-99% Bleeding \n-100% Armor Break \n10u/s Stop Bleeding</afflictiondescription.chemicalliner_main>
+  <afflictiondescription.chemicalliner_main>-85% Gunshotwound \n-99% Bleeding \n-85% Laceration \n-85% Blunttrauma \n-85% Internaldamage \n-85% Bitewounds \n-85% Deep Tissue Injury \n-80% Burn\n-60% Special Damage \n-100% Armor Break \n1u/s Wounds Sealing \n10u/s Stop Bleeding</afflictiondescription.chemicalliner_main>
+  <afflictionname.chemicalliner_secondary>Hardened Chemical Liner</afflictionname.chemicalliner_secondary>
+  <afflictiondescription.chemicalliner_secondary>\n-99% Bleeding \n-100% Armor Break \n10u/s Stop Bleeding</afflictiondescription.chemicalliner_secondary>
 
   <entityname.fuelextractor>Nuclear Material Extractor</entityname.fuelextractor>
   <entityname.nuclearwaste>Nuclear Waste</entityname.nuclearwaste>
   <entityname.plutonium_core>Mixed Plutonium</entityname.plutonium_core>
-  <entityname.plutonium_weapon>Weapon Grade Plutonium</entityname.plutonium_weapon>
+  <entityname.plutonium_weapon>Weapon Grade Plu+tonium</entityname.plutonium_weapon>
   <entityname.plutoniumfuelrod>MOX Fuelrod</entityname.plutoniumfuelrod>
   <entityname.watercanister>Sealed Container</entityname.watercanister>
   <entityname.d2ocanister>Sealed Container</entityname.d2ocanister>
@@ -535,7 +535,8 @@
   <entitydescription.tsm_m61ammobox_rev>A heavy container containing 1200 20mm Revolution-AP-I rounds \nYou know the rules, don't you? \nRadioactive</entitydescription.tsm_m61ammobox_rev>
   <entitydescription.tsm_hazardous_container>A container for HAZMAT</entitydescription.tsm_hazardous_container>
 
-  <afflictiondescription.chemicalliner_mech>-95% Gunshotwound \n-100% Bleeding \n-95% Laceration \n-95% Blunttrauma \n-95% Internaldamage \n-95% Deep Tissue Injury \n-80% Burn\n-60% Special \n-100% Armor Break \n2u/s Wounds Sealing \n10u/s Stop Bleeding</afflictiondescription.chemicalliner_mech>
+  <afflictionname.chemicalliner_mech>NBCPv2 System Upgrade Kit</afflictionname.chemicalliner_mech>
+  <afflictiondescription.chemicalliner_mech>-95% Gunshotwound \n-100% Bleeding \n-95% Laceration \n-95% Blunttrauma \n-95% Bitewounds \n-95% Internaldamage \n-95% Deep Tissue Injury \n-80% Burn\n-90% Special \n-100% Armor Break \n2u/s Wounds Sealing \n10u/s Stop Bleeding</afflictiondescription.chemicalliner_mech>
 
   <missionname.tsm_cbrnert_assination>Eliminate T.S.M CBRN ERT</missionname.tsm_cbrnert_assination>
   <missiondescription.tsm_cbrnert_assination>Some of the T.S.M CBRN ERT were here, eliminate them for tactical advantages</missiondescription.tsm_cbrnert_assination>

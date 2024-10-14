@@ -26,7 +26,7 @@
         <StatusEffect type="OnWearing" target="Character" disabledeltatime="true" ObstructVisionAmount="0.3" setvalue="true" comparison="And">
           <Conditional IsLocalPlayer="True"/>
           <RequiredItems items="maskfilter" type="Contained" />
-          <Sound file="%ModDir%/Jobgear/Under_Masks/maskedbreath.ogg" volume="0.3" loop="true" />
+          <Sound file="%ModDir:3278494407%/Jobgear/Under_Masks/maskedbreath.ogg" volume="0.3" loop="true" />
         </StatusEffect>
         <StatusEffect type="OnWearing" target="Character" disabledeltatime="true" setvalue="true">
           <Affliction identifier="APR" amount="10" />
@@ -168,7 +168,7 @@
           <Explosion range="50.0" showeffects="false" structuredamage="10" decal="" />
         </StatusEffect>
       </ItemComponent>
-      <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="3.5" msg="ItemMsgPickUpSelect" CanBeCombined="true" RemoveOnCombined="trye">
+      <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="3.5" msg="ItemMsgPickUpSelect" CanBeCombined="true" RemoveOnCombined="true">
         <StatusEffect type="OnSecondaryUse" target="This" delay="0.1">
           <Use />
         </StatusEffect>

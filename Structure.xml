@@ -1,27 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <prefabs>
   <decal identifier="chemical_decal_standard" subcategory="CBRN">
-    <sprite texture="%ModDir%/Weapons/Chemical/standard.png" sourcerect="17,8,147,150" depth="0.98" origin="0.5,0.5" />
+    <sprite texture="%ModDir:3278494407%/Weapons/Chemical/standard.png" sourcerect="17,8,147,150" depth="0.98" origin="0.5,0.5" />
   </decal>
   <decal identifier="biological_decal_standard" subcategory="CBRN">
-    <sprite texture="%ModDir%/Weapons/Chemical/standard.png" sourcerect="190,7,147,150" depth="0.98" origin="0.5,0.5" />
+    <sprite texture="%ModDir:3278494407%/Weapons/Chemical/standard.png" sourcerect="190,7,147,150" depth="0.98" origin="0.5,0.5" />
   </decal>
   <decal identifier="radiological_decal_standard" subcategory="CBRN">
-    <sprite texture="%ModDir%/Weapons/Chemical/standard.png" sourcerect="367,7,147,150" depth="0.98" origin="0.5,0.5" />
+    <sprite texture="%ModDir:3278494407%/Weapons/Chemical/standard.png" sourcerect="367,7,147,150" depth="0.98" origin="0.5,0.5" />
   </decal>
   <decal identifier="nuclear_decal_standard" subcategory="CBRN">
-    <sprite texture="%ModDir%/Weapons/Chemical/standard.png" sourcerect="543,7,147,150" depth="0.98" origin="0.5,0.5" />
+    <sprite texture="%ModDir:3278494407%/Weapons/Chemical/standard.png" sourcerect="543,7,147,150" depth="0.98" origin="0.5,0.5" />
   </decal>
   <decal identifier="chemical_decal_plain" subcategory="CBRN">
-    <sprite texture="%ModDir%/Weapons/Chemical/normal.png" sourcerect="17,8,147,150" depth="0.98" origin="0.5,0.5" />
+    <sprite texture="%ModDir:3278494407%/Weapons/Chemical/normal.png" sourcerect="17,8,147,150" depth="0.98" origin="0.5,0.5" />
   </decal>
   <decal identifier="biological_decal_plain" subcategory="CBRN">
-    <sprite texture="%ModDir%/Weapons/Chemical/normal.png" sourcerect="190,7,147,150" depth="0.98" origin="0.5,0.5" />
+    <sprite texture="%ModDir:3278494407%/Weapons/Chemical/normal.png" sourcerect="190,7,147,150" depth="0.98" origin="0.5,0.5" />
   </decal>
   <decal identifier="radiological_decal_plain" subcategory="CBRN">
-    <sprite texture="%ModDir%/Weapons/Chemical/normal.png" sourcerect="367,7,147,150" depth="0.98" origin="0.5,0.5" />
+    <sprite texture="%ModDir:3278494407%/Weapons/Chemical/normal.png" sourcerect="367,7,147,150" depth="0.98" origin="0.5,0.5" />
   </decal>
   <decal identifier="nuclear_decal_plain" subcategory="CBRN">
-    <sprite texture="%ModDir%/Weapons/Chemical/normal.png" sourcerect="543,7,147,150" depth="0.98" origin="0.5,0.5" />
+    <sprite texture="%ModDir:3278494407%/Weapons/Chemical/normal.png" sourcerect="543,7,147,150" depth="0.98" origin="0.5,0.5" />
   </decal>
 </prefabs>
