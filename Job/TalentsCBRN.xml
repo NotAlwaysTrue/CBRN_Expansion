@@ -99,15 +99,15 @@
     </Description>
     <Description tag="talentdescription.maxtriggeruntildeath"/>
     <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="7,2" sheetelementsize="128,128"/>
-    <AbilityGroupInterval maxtriggercount="1">
+    <AbilityGroupInterval maxtriggercount="1" >
       <Conditions>
         <AbilityConditionAboveVitality invert="true" vitalitypercentage="0"/>
       </Conditions>
       <Abilities>
-        <CharacterAbilityApplyStatusEffects >
+        <CharacterAbilityApplyStatusEffects>
           <StatusEffects>
-            <StatusEffect type="OnAbility" target="Character" stackable="false" multiplyafflictionsbymaxvitality="true" disabledeltatime="true" >
-              <Affliction identifier="dutyofcbrn" amount="20.0"/>
+            <StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true" disabledeltatime="true" >
+              <Affliction identifier="dutyofcbrn" amount="15.0"/>
             </StatusEffect>
           </StatusEffects>
         </CharacterAbilityApplyStatusEffects>

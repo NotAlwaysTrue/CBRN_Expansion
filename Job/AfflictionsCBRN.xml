@@ -6,12 +6,11 @@
     isbuff="true"
     hideiconafterdelay="true"
     limbspecific="false"
-    maxstrength="10"
-    Duration="20"
+    maxstrength="20"
     stackable="false"
     treatmentthreshold="1000"
     iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
-    <Effect minstrength="0" maxstrength="20" >
+    <Effect minstrength="0" maxstrength="20" strengthchange="-1">
       <AbilityFlag flagtype="AlwaysStayConscious" />
     </Effect>
     <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="6,1" sheetelementsize="128,128" color="10,193,114,255" origin="0,0"/>
