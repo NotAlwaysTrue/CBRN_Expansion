@@ -191,30 +191,7 @@
   <Item identifier="railguncanister" tags="railgunequipment,railgunammo,containershell" category="Weapon" linkable="true" scale="0.5" impactsoundtag="impact_metal_heavy" cargocontaineridentifier="" hideinmenus="true">
     <PreferredContainer primary="railgunammoloader,railgunammocontainer" mincondition="1"/>
     <PreferredContainer secondary="wreckrailgunammocontainer" minamount="1" maxamount="2" spawnprobability="0.2"/>
-    <Price baseprice="95">
-      <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.2" />
-      <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" sold="false"/>
-      <Price storeidentifier="merchantresearch" sold="false" multiplier="1.2" />
-      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="5"/>
-      <Price storeidentifier="merchantmine" sold="false" multiplier="1.2" />
-      <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="5"/>
-    </Price>
-    <Deconstruct time="10">
-      <Item identifier="steel" />
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="20">
-      <RequiredSkill identifier="weapons" level="25" />
-      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
-      <RequiredItem identifier="steel" amount="2" />
-    </Fabricate>
-    <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="8">
-      <RequiredSkill identifier="weapons" level="20" />
-      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" />
-      <RequiredItem identifier="railguncanistershell" mincondition="0.0" maxcondition="1.0" usecondition="false" />
-    </Fabricate>
-    <!--<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="320,128,64,64" />-->
-    <Sprite texture="Content/Items/Containers/containers2.png" sourcerect="799,708,216,34" depth="0.55" origin="0.5,0.5" />
-    <BrokenSprite texture="Content/Items/Containers/containers2.png" sourcerect="799,744,216,34" depth="0.55" origin="0.5,0.5" maxcondition="0"/>
+    <Sprite texture="Content/Items/InventoryIconAtlas2.png" sourcerect="1,131,217,33" depth="0.55" origin="0.5,0.5" />
     <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="0,447,64,64" origin="0.5,0.5" />
     <Body width="215" height="30" density="35" />
     <Holdable canbecombined="false" slots="LeftHand,RightHand" holdpos="0,-15" handle1="-30,-5" holdangle="170" aimable="false" msg="ItemMsgPickUpSelect">

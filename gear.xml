@@ -275,9 +275,13 @@
         <Conditional jobidentifier="neq cbrn_guy"/>
         <Affliction identifier="oxygenlow" amount="10"/>
       </StatusEffect>
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,bitewounds,lacerations" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.3" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="burn" damagemultiplier="0"/>
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.2" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,bitewounds,internaldamage" damagemultiplier="0.4" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.2" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.2" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="triton_7L" damagemultiplier="0.3" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.3" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.0" probabilitymultiplier="0.0" deflectprojectiles="true" />
       <sound file="Content/Items/Weapons/WEAPONS_chargeUp.ogg" type="OnWearing" range="500.0" volumeproperty="Speed" volume="0.2" loop="true" frequencymultiplier="0.5" />
       <StatValue stattype="FlowResistance" value="1.0" />
       <StatusHUD range="3000" ThermalGoggles="true" ShowTexts="false" OverlayColor="0,0,0,0" drawhudwhenequipped="true" />
@@ -1903,10 +1907,10 @@
     <Sprite texture="%ModDir:2953749635%/weapons/其他/近战.png" sourcerect="0,262,722,178" depth="0.55" origin="0.5,0.5" />
     <Body width="700" height="150" density="45" />
     <MeleeWeapon slots="RightHand+LeftHand,Any" controlpose="true" holdpos="16,-50" aimpos="50,0" handle1="-20,-3" handle2="15,3" holdangle="35" reload="0.8" range="100" combatPriority="50" msg="ItemMsgPickUpSelect">
-      <Attack targetimpulse="4" severlimbsprobability="0.3" ballastfloradamage="80" structuredamage="0" itemdamage="80" penetration="0.1">
+      <Attack targetimpulse="4" severlimbsprobability="0.3" ballastfloradamage="80" structuredamage="0" itemdamage="80" penetration="0.8">
         <Affliction identifier="blunttrauma" strength="60" />
         <Affliction identifier="internaldamage" strength="40" />
-        <Affliction identifier="stun" strength="0.5" />
+        <Affliction identifier="stun" strength="1.5" />
         <StatusEffect type="OnUse" target="UseTarget">
           <Conditional entitytype="eq Character"/>
           <Sound file="Content/Items/Weapons/Smack1.ogg" selectionmode="random" range="500"/>
@@ -1975,7 +1979,6 @@
     </ItemContainer>
     <aitarget sightrange="1000" fadeouttime="6" />
   </Item>
-
 
   <!--SURPRISE-->
   <Item identifier="powdercapsule_anthrax" category="Misc" cargocontaineridentifier="metalcrate" allowasextracargo="true" Tags="smallitem,chem,chemweapon" maxstacksize="8" maxstacksizecharacterinventory="1" scale="0.08" hideinmenus="true" impactsoundtag="impact_soft">
