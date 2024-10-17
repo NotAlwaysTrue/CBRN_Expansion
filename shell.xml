@@ -191,7 +191,7 @@
   <Item identifier="railguncanister" tags="railgunequipment,railgunammo,containershell" category="Weapon" linkable="true" scale="0.5" impactsoundtag="impact_metal_heavy" cargocontaineridentifier="" hideinmenus="true">
     <PreferredContainer primary="railgunammoloader,railgunammocontainer" mincondition="1"/>
     <PreferredContainer secondary="wreckrailgunammocontainer" minamount="1" maxamount="2" spawnprobability="0.2"/>
-    <!--<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="320,128,64,64" />-->
+    <Sprite texture="Content/Items/InventoryIconAtlas2.png" sourcerect="1,131,217,33" depth="0.55" origin="0.5,0.5" />
     <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="0,447,64,64" origin="0.5,0.5" />
     <Body width="215" height="30" density="35" />
     <Holdable canbecombined="false" slots="LeftHand,RightHand" holdpos="0,-15" handle1="-30,-5" holdangle="170" aimable="false" msg="ItemMsgPickUpSelect">

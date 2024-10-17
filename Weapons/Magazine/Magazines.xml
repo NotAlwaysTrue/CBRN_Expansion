@@ -657,6 +657,10 @@
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="true" amount="1">
       <RequiredItem identifier="tsm_ammobox_rev" amount="2" />
     </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="true" amount="1">
+      <RequiredItem identifier="tsm_ammotsm_hazardous_containerbox_rev" amount="1" />
+      <RequiredItem identifier="tsm_triton_bag" amount="6" />
+    </Fabricate>
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="m61_20_rev" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="m61_20_rev" />
       <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
