@@ -127,11 +127,14 @@
       <Item identifier="rubber" amount="1"/>
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="45" requiresrecipe="true">
+      <RequiredSkill identifier="mechanical" level="80" />
+      <RequiredSkill identifier="medical" level="80" />
+      <RequiredSkill identifier="weapons" level="80" />
       <RequiredItem identifier="titaniumaluminiumalloy" amount="4"/>
-      <RequiredItem identifier="ballisticfiber" amount="5"/>
-      <RequiredItem identifier="fpgacircuit" amount="4"/>
-      <RequiredItem identifier="steel" amount="2" />
-      <RequiredItem identifier="rubber" amount="2" />
+      <RequiredItem identifier="rubber" amount="5"/>
+      <RequiredItem identifier="fpgacircuit" amount="3"/>
+      <RequiredItem identifier="tsm_tungsten" amount="8" />
+      <RequiredItem identifier="tsm_yx_crystallography" amount="4" />
     </Fabricate>
     <Wearable slots="Head+OuterClothes+InnerClothes" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
       <sprite name="ERT Torso" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="Torso" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" inheritsourcerect="false" sourcerect="138,0,126,191" origin="0.61,0.51" />
@@ -208,13 +211,14 @@
       <Item identifier="exosuit" />
     </Deconstruct>
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="60" requiresrecipe="true">
-      <RequiredSkill identifier="mechanical" level="70" />
-      <RequiredSkill identifier="medical" level="70" />
-      <RequiredSkill identifier="weapons" level="70" />
-      <RequiredItem identifier="titaniumaluminiumalloy" amount="5" />
+      <RequiredSkill identifier="mechanical" level="90" />
+      <RequiredSkill identifier="medical" level="90" />
+      <RequiredSkill identifier="weapons" level="90" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="8" />
       <RequiredItem identifier="exosuit" amount="1" />
-      <RequiredItem identifier="tsm_yx_crystallography" amount="1" />
-      <RequiredItem identifier="tsm_ic" amount="2" />
+      <RequiredItem identifier="tsm_ic" amount="4" />
+      <RequiredItem identifier="tsm_hengberley_star" amount="2" />
+      <RequiredItem identifier="tsm_yx_crystallography" amount="3" />
     </Fabricate>
     <InventoryIcon texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/rz_mk1_cbrn.png" sourcerect="357,384,147,128" origin="0.5,0.5" />
     <Sprite name="rz_prototypesuit Item" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/mk1.png" sourcerect="108,65,194,369" depth="0.55" origin="0.5,0.72" />
@@ -262,6 +266,7 @@
         <Affliction identifier="chemicalliner_mechspec" amount="10" />
         <Affliction identifier="chemicalliner_majordamage" amount="10" />
         <Affliction identifier="chemicalliner_armorbreak" amount="10" />
+        <StatValue stattype="FlowResistance" value="1.0" />
         <Conditional jobidentifier="eq cbrn_guy"/>
       </StatusEffect>
       <StatusEffect Type="OnWearing" Target="This,Character">
@@ -275,17 +280,16 @@
         <Conditional jobidentifier="neq cbrn_guy"/>
         <Affliction identifier="oxygenlow" amount="10"/>
       </StatusEffect>
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.2" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,bitewounds,internaldamage" damagemultiplier="0.4" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.2" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.2" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.4" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,bitewounds,internaldamage" damagemultiplier="0.6" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.4" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.4" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="triton_7L" damagemultiplier="0.3" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.3" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.2" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.0" probabilitymultiplier="0.0" deflectprojectiles="true" />
       <sound file="Content/Items/Weapons/WEAPONS_chargeUp.ogg" type="OnWearing" range="500.0" volumeproperty="Speed" volume="0.2" loop="true" frequencymultiplier="0.5" />
-      <StatValue stattype="FlowResistance" value="1.0" />
-      <StatusHUD range="3000" ThermalGoggles="true" ShowTexts="false" OverlayColor="0,0,0,0" drawhudwhenequipped="true" />
-      <StatusHUD range="200" ThermalGoggles="false" ShowTexts="true" OverlayColor="0,0,0,0" drawhudwhenequipped="true" />
+      <StatusHUD range="3000" ThermalGoggles="true" OverlayColor="0,0,0,0" drawhudwhenequipped="true" />
+      <StatusHUD range="200" ShowTexts="true" OverlayColor="0,0,0,0" drawhudwhenequipped="true" />
     </Wearable>
     <CustomInterface canbeselected="true" drawhudwhenequipped="true">
       <GuiFrame relativesize="0.1,0.1" anchor="BottomLeft" absoluteoffset="20,20" style="ItemUI" />
@@ -1297,10 +1301,10 @@
     <Body width="580" height="136" density="52" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="43" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="100" />
-      <RequiredItem identifier="tsm_lm_weaponbox" amount="8" />
-      <RequiredItem identifier="titaniumaluminiumalloy" amount="4" />
-      <RequiredItem identifier="tsm_plastic" amount="2" />
-      <RequiredItem identifier="tsm_advanced_grip" amount="1" />
+      <RequiredItem identifier="tsm_tungsten" amount="12" />
+      <RequiredItem identifier="titaniumaluminiumalloy" amount="8" />
+      <RequiredItem identifier="tsm_plastic" amount="8" />
+      <RequiredItem identifier="tsm_hengberley_star" amount="4" />
     </Fabricate>
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="50,-60" aimpos="50,-60" handle1="-120,45" handle2="0,0" holdangle="0" msg="ItemMsgPickUpSelect">
     </Holdable>
