@@ -117,38 +117,32 @@
         <StatusEffect tags="medical" type="OnFailure" target="UseTarget,This">
           <Affliction identifier="tsm_aftermath_failure" strength="40" />
         </StatusEffect>
-        <StatusEffect tags="medical" type="OnSuccess" target="UseTarget,This" duration="10" delay="1">
-          <ReduceAffliction type="damage" amount="4" />
-          <ReduceAffliction type="burn" amount="4" />
-          <ReduceAffliction type="bleeding" amount="4" />
-          <SuitableTreatment type="bloodloss" amount="4" />
+        <StatusEffect tags="medical" type="OnSuccess" target="UseTarget,This" duration="20" delay="1">
+          <ReduceAffliction type="damage" amount="5" />
+          <ReduceAffliction type="burn" amount="5" />
+          <ReduceAffliction type="bleeding" amount="5" />
+          <SuitableTreatment type="bloodloss" amount="5" />
           <ReduceAffliction identifier="triton_9C" amount="8" />
           <ReduceAffliction identifier="triton_burn" amount="8" />
           <ReduceAffliction identifier="tsm_bl" amount="8" />
           <ReduceAffliction identifier="triton_7L" amount="8" />
           <ReduceAffliction identifier="zlqy" amount="8" />
           <ReduceAffliction identifier="zlyz" amount="8" />
-          <ReduceAffliction identifier="skinburn_biosource" amount="4" />
-          <ReduceAffliction identifier="organdamage_poisonsource" amount="3" />
-          <ReduceAffliction identifier="organdamage_biosource" amount="3" />
-          <ReduceAffliction identifier="neurologicaldisorder_poisonsource" amount="2" />
-          <ReduceAffliction identifier="skinburn_poisonsource" amount="3" />
+          <ReduceAffliction identifier="poison" amount="10" />
+          <ReduceAffliction identifier="bioinfection" amount="10" />
         </StatusEffect>
-        <StatusEffect tags="medical" type="OnFailure" target="UseTarget,This" duration="10" delay="1">
+        <StatusEffect tags="medical" type="OnFailure" target="UseTarget,This" duration="20" delay="1">
           <ReduceAffliction type="damage" amount="3" />
           <ReduceAffliction type="burn" amount="3" />
           <ReduceAffliction type="bleeding" amount="3" />
-          <ReduceAffliction identifier="skinburn_biosource" amount="3" />
-          <ReduceAffliction identifier="organdamage_poisonsource" amount="2" />
-          <ReduceAffliction identifier="organdamage_biosource" amount="2" />
           <ReduceAffliction identifier="triton_9C" amount="4" />
           <ReduceAffliction identifier="triton_burn" amount="4" />
           <ReduceAffliction identifier="tsm_bl" amount="4" />
           <ReduceAffliction identifier="triton_7L" amount="4" />
           <ReduceAffliction identifier="zlqy" amount="4" />
           <ReduceAffliction identifier="zlyz" amount="4" />
-          <ReduceAffliction identifier="neurologicaldisorder_poisonsource" amount="1" />
-          <ReduceAffliction identifier="skinburn_poisonsource" amount="2" />
+          <ReduceAffliction identifier="poison" amount="4" />
+          <ReduceAffliction identifier="bioinfection" amount="4" />
           <SuitableTreatment type="bloodloss" amount="3" />
         </StatusEffect>
         <StatusEffect type="OnBroken" target="This">
@@ -157,7 +151,7 @@
       </Holdable>
       <SkillRequirementHint identifier="medical" level="70" />
     </MedicalKits>
-    <Item name="奇迹之海氚核心包" identifier="tsm_triton_bag" category="Misc" Tags="smallitem,traitormissionitem,tsm_danger_item" cargocontaineridentifier="tsm_hazardous_container" isdangerous="true" maxstacksize="3" scale="0.6" impacttolerance="4" impactsoundtag="impact_metal_heavy">
+    <Item name="奇迹之海氚核心包" identifier="tsm_triton_bag" category="Misc" Tags="smallitem,traitormissionitem,tsm_danger_item" cargocontaineridentifier="tsm_hazardous_container" isdangerous="true" maxstacksize="4" scale="0.6" impacttolerance="4" impactsoundtag="impact_metal_heavy">
       <PreferredContainer secondary="wreckmedcab,wrecksecarmcab" minamount="1" maxamount="1" spawnprobability="0.01" />
       <InventoryIcon texture="%ModDir:2953749635%/minerals+items+tools/items.png" sourcerect="52,1257,42,40" />
       <Sprite texture="%ModDir:2953749635%/minerals+items+tools/items.png" sourcerect="52,1257,42,40" depth="0.55" origin="0.5,0.5" />

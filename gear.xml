@@ -1979,7 +1979,7 @@
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.7" setvalue="true"/>
     </Holdable>
     <ItemContainer capacity="8" maxstacksize="4" slotsperrow="4" canbeselected="true" hideitems="true" >
-      <Containable items="smallitem,mediumitem,tsm_danger_item" />
+      <Containable items="smallitem,mediumitem,tsm_danger_item" excludeditems="mobilecontainer,weapon" />
     </ItemContainer>
     <aitarget sightrange="1000" fadeouttime="6" />
   </Item>
