@@ -50,6 +50,7 @@
       <StatusEffect type="OnWearing" target="Character" tag="cbrnsuit" SpeedMultiplier="0.7" PressureProtection="125000.0" OxygenAvailable="2000" disabledeltatime="true" LowPassMultiplier="0.3" setvalue="true">
         <Affliction identifier="CBRNsuit" amount="10" />
         <Affliction identifier="CCR" amount="10" />
+        <Conditional condition="gt 0.0" />
         <Affliction identifier="eyidefense" amount="10" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="This,Character" Condition="-0.5" comparison="And">
@@ -101,6 +102,7 @@
         <Affliction identifier="CBRNsuit" amount="10" />
         <Affliction identifier="exosuited" amount="10" />
         <Affliction identifier="eyidefense" amount="10" />
+        <Conditional condition="gt 0.0" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="This,Character" Condition="-0.5" comparison="And">
         <Conditional IsDead="false" />
@@ -156,6 +158,7 @@
         <Affliction identifier="CBRNsuit" amount="10" />
         <Affliction identifier="exosuited" amount="10" />
         <Affliction identifier="eyidefense" amount="10" />
+        <Conditional condition="gt 0.0" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="This,Character" Condition="-0.5" comparison="And">
         <Conditional IsDead="false" />
