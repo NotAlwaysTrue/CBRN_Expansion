@@ -1271,7 +1271,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <ParticleEmitter particle="ventsmoke" distancemin="-5" distancemax="-20" AngleMin="10" AngleMax="-40" VelocityMin="-400" VelocityMax="-300" ScaleMultiplier="0.1,0.1" ParticleAmount="3" HighQualityCollisionDetection="True" ColorMultiplier="255,255,255,255"  />
-    <Sound file="%ModDir:3278494407%/Weapons/Other/50cal.ogg" type="OnUse" range="3000" volume="1"/>
+      <Sound file="%ModDir:3278494407%/Weapons/Other/50cal.ogg" type="OnUse" range="3000" volume="1"/>
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>
@@ -1681,7 +1681,7 @@
     </ItemComponent>
     <ItemComponent IsActive="false" CharacterUsable="true">
       <!--reduce condition by 1 to mark the user as the one responsible for the item breaking and exploding -->
-      <StatusEffect type="OnUse" targettype="This" IsActive="true" comparison="AND" condition="-1">
+      <StatusEffect type="OnUse" targettype="This" IsActive="true" comparison="AND" condition="-33.34">
         <Conditional HasTag="neq detonator" targetcontainer="true" />
         <Conditional HasTag="neq railgunammo" targetcontainer="true" />
         <Conditional HasTag="neq depthchargeammo" targetcontainer="true" />
@@ -1690,20 +1690,28 @@
         <ParticleEmitter particle="grenadelever" emitinterval="10" particleamount="1" anglemin="120" anglemax="210" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
         <Sound file="Content/Items/Weapons/pinpull.ogg" type="OnUse" range="720" />
       </StatusEffect>
-      <StatusEffect type="OnActive" targettype="This" Condition="-24">
+      <StatusEffect type="OnActive" targettype="This" Condition="-33.34">
         <ParticleEmitter particle="flamethrowersmoke" particlespersecond="25" anglemin="0" anglemax="0" velocitymin="75" velocitymax="125" copyentityangle="true" scalemin="0.1" scalemax="0.15" colormultiplier="255,255,255,150" />
       </StatusEffect>
     </ItemComponent>
     <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="3.5" msg="ItemMsgPickUpSelect">
-      <StatusEffect type="OnSecondaryUse" target="This" Condition="-100.0" delay="1.5" disabledeltatime="true" checkconditionalalways="true" />
-      <StatusEffect type="OnBroken" target="Hull" Oxygen="0" duration="15" setvalue="true" OnlyInside="true" />
-      <StatusEffect type="OnBroken" target="This" >
+      <StatusEffect type="OnSecondaryUse" target="This" Condition="-100.0" delay="3" disabledeltatime="true" checkconditionalalways="true" />
+      <StatusEffect type="OnBroken" target="Contained" duration="3">
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" duration="3">
         <Sound file="%ModDir:3278494407%/Weapons/Chemical/fuse.ogg" range="500" volume="1" />
         <ParticleEmitter particle="fixfoam" anglemax="360" velocitymin="4000" velocitymax="4000" particlespersecond="64" />
         <ParticleEmitter particle="fixfoamgoosplash" anglemax="360" distancemax="10" particlespersecond="60" />
         <ParticleEmitter particle="fixfoamgoosplash" anglemax="360" distancemax="10" scalemultiplier="2.0,2.0" particlespersecond="20" />
+        <Explosion range="400.0" force="5.0" camerashake="20" showEffects="false" >
+          <Affliction identifier="firefoamcovered" amount="30" />
+        </Explosion>
       </StatusEffect>
     </Throwable>
+    <ItemContainer capacity="1" keepopenwhenequipped="false" SpawnWithId="extinguishgrenade_exec" removecontaineditemsondeconstruct="true" drawinventory="false" canbeselected="false" showcontainedstateindicator="false">
+      <Containable items="extinguishgrenade_exec" />
+    </ItemContainer>
   </Item>
   <Item identifier="c4_stickcharge" category="Weapon" tags="smallitem,weapon,remotedetonatable,explosive" isdangerous="true" maxstacksize="8" maxstacksizecharacterinventory="4" scale="0.1" cargocontaineridentifier="explosivecrate">
     <InventoryIcon texture="%ModDir:3278494407%/Weapons/Explosives/C4.png" sourcerect="0,0,539,118" />
@@ -1984,6 +1992,19 @@
     <aitarget sightrange="1000" fadeouttime="6" />
   </Item>
 
+  <Item identifier="extinguishgrenade_exec" scale="1.0" tags="fireextinguisher" requireaimtouse="false" noninteractable="true" hideinmenus="true">
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,1,1" depth="0.55" origin="0.5,0.5" />
+    <Body radius="5" density="10.5" />
+    <ItemComponent>
+      <StatusEffect type="OnUse" target="This" delay="3">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+    <RepairTool characterusable="false" usablein="Both" barrelpos="0,0" barrelrotation="0.000" range="600" extinguishamount="800" spread="360" ignorecharacters="true" repairmultiple="true" repairthroughholes="true" />
+  </Item>
   <!--SURPRISE-->
   <Item identifier="powdercapsule_anthrax" category="Misc" cargocontaineridentifier="metalcrate" allowasextracargo="true" Tags="smallitem,chem,chemweapon" maxstacksize="8" maxstacksizecharacterinventory="1" scale="0.08" hideinmenus="true" impactsoundtag="impact_soft">
     <PreferredContainer secondary="outposttrashcan" amount="1" spawnprobability="0.01" />

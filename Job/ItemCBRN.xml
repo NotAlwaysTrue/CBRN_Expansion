@@ -122,7 +122,7 @@
       <Item identifier="steel" />
       <Item identifier="lead" />
       <Item identifier="plutonium_core" mincondition="0.95"/>
-      <Item identifier="dirtybombafteremitter" amount="1" outcondition="0.01"/>
+      <Item identifier="deconstructnuclearspread" amount="1" outcondition="0.01"/>
     </Deconstruct>
     <Deconstruct time="30" requireddeconstructor="fuelextractor">
       <Item identifier="plutonium_weapon" mincondition="0.0" maxcondition="0.01" amount="1"/>
