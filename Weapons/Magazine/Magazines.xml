@@ -643,7 +643,7 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item identifier="tsm_m61ammobox_rev" subcategory="tsm_modifiedmagazines" health="1200" category="weapon" tags="mediumitem,ammobox,tsm_ammobox,tsm_magbox,tsm_danger_item" isdangerous="true" scale="0.5" pickdistance="150" impactsoundtag="impact_metal_heavy" maxstacksize="1">
+  <Item identifier="tsm_m61ammobox_rev" subcategory="tsm_modifiedmagazines" health="1200" category="weapon" tags="mediumitem,ammobox,tsm_ammobox,tsm_magbox,tsm_danger_item" cargocontaineridentifier="tsm_hazardous_container" isdangerous="true" scale="0.5" pickdistance="150" impactsoundtag="impact_metal_heavy" maxstacksize="1">
     <Sprite texture="%ModDir:3278494407%/Weapons/Magazine/tsm.png" depth="0.54" sourcerect="2260,2371,219,105" origin="0.5,0.5" />
     <Body width="219" height="105" density="50" />
     <Holdable slots="RightHand+LeftHand" aimable="false" holdpos="50,-50" aimpos="50,-40" handle1="-0,16" handle2="0,0" swingamount="20,100" swingspeed="1" swingwhenusing="true" msg="ItemMsgPickUpSelect">
@@ -655,11 +655,12 @@
       </StatusEffect>
     </Holdable>
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="true" amount="1">
-      <RequiredItem identifier="tsm_ammobox_rev" amount="2" />
+      <RequiredItem identifier="tsm_ammobox_rev" amount="4" />
     </Fabricate>
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="true" amount="1">
       <RequiredItem identifier="tsm_hazardous_container" amount="1" />
-      <RequiredItem identifier="tsm_triton_bag" amount="6" />
+      <RequiredItem identifier="tsm_yx_crystallography" amount="2" />
+      <RequiredItem identifier="tsm_triton_bag" amount="12" />
     </Fabricate>
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="m61_20_rev" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="m61_20_rev" />
@@ -667,7 +668,7 @@
         <SpawnItem identifiers="m61_20_rev" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
-    <Price baseprice="4000" buyingpricemultiplier="1" minleveldifficulty="30">
+    <Price baseprice="48000" buyingpricemultiplier="1" minleveldifficulty="80">
       <Price locationtype="outpost" multiplier="1.5" minavailable="0" maxavailable="3" />
       <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="4" />
       <Price locationtype="research" multiplier="1.25" minavailable="0" maxavailable="4" />
@@ -675,18 +676,13 @@
       <Price locationtype="mine" multiplier="1.25" minavailable="0" maxavailable="3" />
     </Price>
     <Deconstruct time="10">
-      <Item identifier="magnesium" mincondition="0.3" />
-      <Item identifier="flashpowder" mincondition="0.3" />
-      <Item identifier="sodium" mincondition="0.3" />
-      <Item identifier="tsm_triton_bag" mincondition="0.7" amount="8"/>
-      <Item identifier="tsm_oilshale" mincondition="0.7" />
-      <Item identifier="tsm_sulphur" mincondition="0.7" />
+      <Item identifier="tsm_triton_bag" mincondition="0.7" amount="5"/>
     </Deconstruct>
     <aitarget sightrange="1000" fadeouttime="6" />
   </Item>
 
   <!--Loader-->
-  <Item identifier="tsm_ammobox_rev" subcategory="tsm_modifiedmagazines" health="600" category="weapon" tags="mediumitem,ammobox,tsm_ammobox,tsm_magbox,tsm_danger_item" isdangerous="true" scale="0.5" pickdistance="150" impactsoundtag="impact_metal_heavy" maxstacksize="1">
+  <Item identifier="tsm_ammobox_rev" subcategory="tsm_modifiedmagazines" health="600" category="weapon" tags="mediumitem,ammobox,tsm_ammobox,tsm_magbox,tsm_danger_item" cargocontaineridentifier="tsm_hazardous_container" isdangerous="true" scale="0.5" pickdistance="150" impactsoundtag="impact_metal_heavy" maxstacksize="1">
     <Sprite texture="%ModDir:3278494407%/Weapons/Magazine/tsm.png" depth="0.54" sourcerect="2260,2371,219,105" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <PreferredContainer primary="wreckarmcab" minamount="0" maxamount="1" spawnprobability="0.01" />
@@ -726,7 +722,7 @@
         <SpawnItem identifiers="m61_20_rev" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
-    <Price baseprice="2000" buyingpricemultiplier="1" minleveldifficulty="60">
+    <Price baseprice="8000" buyingpricemultiplier="1" minleveldifficulty="60">
       <Price locationtype="outpost" multiplier="1.5" minavailable="0" maxavailable="3" />
       <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="4" />
       <Price locationtype="research" multiplier="1.25" minavailable="0" maxavailable="4" />
@@ -1516,13 +1512,13 @@
     <Projectile characterusable="false" hitscan="true" maxtargetstohit="2">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="140,85,200,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="1" targetforce="1" itemdamage="9" penetration="0.27" severlimbsprobability="0.3">
-        <Affliction identifier="gunshotwound" strength="9" />
-        <Affliction identifier="gunshotwound" strength="5" probability="0.25" />
-        <Affliction identifier="triton_7L" strength="6" />
-        <Affliction identifier="bleeding" strength="8" />
-        <Affliction identifier="bleedingnonstop" strength="3" probability="0.5" />
-        <Affliction identifier="bleedingnonstop" strength="1" probability="0.3" />
-        <Affliction identifier="stun" strength="0.25" probability="0.1" />
+        <Affliction identifier="gunshotwound" strength="10" />
+        <Affliction identifier="gunshotwound" strength="6" probability="0.25" />
+        <Affliction identifier="triton_7L" strength="7" />
+        <Affliction identifier="bleeding" strength="9" />
+        <Affliction identifier="bleedingnonstop" strength="4" probability="0.5" />
+        <Affliction identifier="bleedingnonstop" strength="2" probability="0.3" />
+        <Affliction identifier="stun" strength="0.3" probability="0.1" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
         <Explosion range="30.0" showEffects="false" penetration="1">
@@ -1550,12 +1546,12 @@
     <Projectile characterusable="false" hitscan="true" maxtargetstohit="2">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="140,85,200,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="2" targetforce="2" itemdamage="10" penetration="0.32" severlimbsprobability="0.8">
-        <Affliction identifier="gunshotwound" strength="10" />
-        <Affliction identifier="gunshotwound" strength="5" probability="0.1" />
-        <Affliction identifier="bleeding" strength="7" />
-        <Affliction identifier="bleedingnonstop" strength="5" probability="0.5" />
-        <Affliction identifier="triton_7L" strength="8" />
-        <Affliction identifier="stun" strength="0.25" probability="0.25" />
+        <Affliction identifier="gunshotwound" strength="11" />
+        <Affliction identifier="gunshotwound" strength="6" probability="0.1" />
+        <Affliction identifier="bleeding" strength="8" />
+        <Affliction identifier="bleedingnonstop" strength="6" probability="0.5" />
+        <Affliction identifier="triton_7L" strength="9" />
+        <Affliction identifier="stun" strength="0.3" probability="0.25" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
         <Explosion range="30.0" showEffects="false" penetration="1">
@@ -1583,13 +1579,13 @@
     <Projectile characterusable="false" hitscan="true" maxtargetstohit="3">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="140,85,200,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="2.5" targetforce="8" itemdamage="15" penetration="0.32" severlimbsprobability="0.8">
-        <Affliction identifier="gunshotwound" strength="25" />
-        <Affliction identifier="gunshotwound" strength="12" probability="0.4" />
-        <Affliction identifier="triton_7L" strength="15" />
-        <Affliction identifier="bleeding" strength="13" />
-        <Affliction identifier="bleedingnonstop" strength="8" probability="0.15" />
-        <Affliction identifier="stun" strength="0.1" />
-        <Affliction identifier="stun" strength="0.25" probability="0.15" />
+        <Affliction identifier="gunshotwound" strength="26" />
+        <Affliction identifier="gunshotwound" strength="13" probability="0.4" />
+        <Affliction identifier="triton_7L" strength="16" />
+        <Affliction identifier="bleeding" strength="14" />
+        <Affliction identifier="bleedingnonstop" strength="9" probability="0.15" />
+        <Affliction identifier="stun" strength="0.2" />
+        <Affliction identifier="stun" strength="0.3" probability="0.15" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
         <Explosion range="30.0" showEffects="false" penetration="1">
@@ -1617,11 +1613,11 @@
     <Projectile characterusable="false" hitscan="true" maxtargetstohit="2">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="140,85,200,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="1" targetforce="1" itemdamage="10" penetration="0.3" severlimbsprobability="0.3">
-        <Affliction identifier="gunshotwound" strength="9" />
-        <Affliction identifier="gunshotwound" strength="3" probability="0.5" />
-        <Affliction identifier="triton_7L" strength="6" />
-        <Affliction identifier="bleeding" strength="3" probability="0.5" />
-        <Affliction identifier="bleedingnonstop" strength="3" probability="0.3" />
+        <Affliction identifier="gunshotwound" strength="10" />
+        <Affliction identifier="gunshotwound" strength="4" probability="0.5" />
+        <Affliction identifier="triton_7L" strength="7" />
+        <Affliction identifier="bleeding" strength="4" probability="0.5" />
+        <Affliction identifier="bleedingnonstop" strength="4" probability="0.3" />
         <Affliction identifier="stun" strength="0.1" probability="0.1" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
@@ -1650,11 +1646,11 @@
     <Projectile characterusable="false" hitscan="true" maxtargetstohit="2">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="140,85,200,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="0" targetforce="2" itemdamage="12" penetration="0.37" severlimbsprobability="1">
-        <Affliction identifier="gunshotwound" strength="10" />
-        <Affliction identifier="gunshotwound" strength="3" probability="0.3" />
-        <Affliction identifier="bleedingnonstop" strength="4" />
-        <Affliction identifier="bleedingnonstop" strength="2" probability="0.3" />
-        <Affliction identifier="triton_7L" strength="6" />
+        <Affliction identifier="gunshotwound" strength="11" />
+        <Affliction identifier="gunshotwound" strength="4" probability="0.3" />
+        <Affliction identifier="bleedingnonstop" strength="5" />
+        <Affliction identifier="bleedingnonstop" strength="3" probability="0.3" />
+        <Affliction identifier="triton_7L" strength="7" />
         <Affliction identifier="stun" strength="0.1" probability="0.1" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
@@ -1683,11 +1679,11 @@
     <Projectile characterusable="false" hitscan="true" maxtargetstohit="2">
     <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="140,85,200,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="1" targetforce="2" itemdamage="9" penetration="0.42" severlimbsprobability="0.5">
-        <Affliction identifier="gunshotwound" strength="10" />
-        <Affliction identifier="gunshotwound" strength="5" probability="0.3" />
-        <Affliction identifier="triton_7L" strength="8" />
-        <Affliction identifier="bleeding" strength="9" />
-        <Affliction identifier="bleedingnonstop" strength="7" probability="0.3" />
+        <Affliction identifier="gunshotwound" strength="11" />
+        <Affliction identifier="gunshotwound" strength="6" probability="0.3" />
+        <Affliction identifier="triton_7L" strength="9" />
+        <Affliction identifier="bleeding" strength="10" />
+        <Affliction identifier="bleedingnonstop" strength="8" probability="0.3" />
         <Affliction identifier="stun" strength="0.1" probability="0.1" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
@@ -1716,12 +1712,12 @@
     <Projectile characterusable="false" hitscan="true" maxtargetstohit="2">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="140,85,200,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="2" targetforce="5" itemdamage="16" penetration="0.35" severlimbsprobability="0.3">
-        <Affliction identifier="gunshotwound" strength="11" />
-        <Affliction identifier="gunshotwound" strength="7" probability="0.32" />
-        <Affliction identifier="triton_7L" strength="12" />
-        <Affliction identifier="bleeding" strength="13" />
-        <Affliction identifier="bleedingnonstop" strength="7" probability="0.15" />
-        <Affliction identifier="stun" strength="0.2" probability="0.15" />
+        <Affliction identifier="gunshotwound" strength="12" />
+        <Affliction identifier="gunshotwound" strength="8" probability="0.32" />
+        <Affliction identifier="triton_7L" strength="13" />
+        <Affliction identifier="bleeding" strength="14" />
+        <Affliction identifier="bleedingnonstop" strength="8" probability="0.15" />
+        <Affliction identifier="stun" strength="0.3" probability="0.15" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
         <Explosion range="35.0" showEffects="false" penetration="1">
@@ -1782,11 +1778,11 @@
     <Projectile characterusable="false" hitscan="true" maxtargetstohit="2">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="140,85,200,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="1" targetforce="2" itemdamage="9" penetration="0.33" severlimbsprobability="0.265">
-        <Affliction identifier="gunshotwound" strength="10" />
-        <Affliction identifier="gunshotwound" strength="5" probability="0.5" />
-        <Affliction identifier="bleeding" strength="8" />
-        <Affliction identifier="bleeding" strength="4" probability="0.5" />
-        <Affliction identifier="triton_7L" strength="5" />
+        <Affliction identifier="gunshotwound" strength="11" />
+        <Affliction identifier="gunshotwound" strength="6" probability="0.5" />
+        <Affliction identifier="bleeding" strength="9" />
+        <Affliction identifier="bleeding" strength="5" probability="0.5" />
+        <Affliction identifier="triton_7L" strength="6" />
         <Affliction identifier="stun" strength="0.1" probability="0.1" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
@@ -1814,16 +1810,16 @@
     <Projectile characterusable="false" Hitscan="true" MaxTargetsToHit="3" spread="0.1" DamageDoors="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="140,85,200,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="15" targetforce="10" itemdamage="40" penetration="0.5" severlimbsprobability="0.4">
-        <Affliction identifier="gunshotwound" strength="20" />
-        <Affliction identifier="lacerations" strength="20" />
-        <Affliction identifier="burn" strength="20" />
-        <Affliction identifier="triton_7L" strength="20" />
-        <Affliction identifier="bleedingnonstop" strength="25" />
-        <Affliction identifier="stun" strength="3" probability="0.5" />
+        <Affliction identifier="gunshotwound" strength="9" />
+        <Affliction identifier="lacerations" strength="9" />
+        <Affliction identifier="burn" strength="9" />
+        <Affliction identifier="triton_7L" strength="8" />
+        <Affliction identifier="bleedingnonstop" strength="10" />
+        <Affliction identifier="stun" strength="1" probability="0.5" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
         <Explosion range="50.0" showEffects="false" penetration="1">
-          <Affliction identifier="triton_7L" strength="20" dividebylimbcount="true"/>
+          <Affliction identifier="triton_7L" strength="9" dividebylimbcount="true"/>
         </Explosion>
         <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
         <ParticleEmitter particle="tsm_bg_explosion" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="5" velocitymin="-10" velocitymax="-100" scalemin="0.1" scalemax="0.2" />
