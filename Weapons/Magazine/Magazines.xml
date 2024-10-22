@@ -655,7 +655,7 @@
       </StatusEffect>
     </Holdable>
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="true" amount="1">
-      <RequiredItem identifier="tsm_ammobox_rev" amount="2" />
+      <RequiredItem identifier="tsm_ammobox_rev" amount="4" />
     </Fabricate>
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="true" amount="1">
       <RequiredItem identifier="tsm_hazardous_container" amount="1" />
@@ -676,7 +676,7 @@
       <Price locationtype="mine" multiplier="1.25" minavailable="0" maxavailable="3" />
     </Price>
     <Deconstruct time="10">
-      <Item identifier="tsm_triton_bag" mincondition="0.7" amount="10"/>
+      <Item identifier="tsm_triton_bag" mincondition="0.7" amount="5"/>
     </Deconstruct>
     <aitarget sightrange="1000" fadeouttime="6" />
   </Item>
@@ -722,7 +722,7 @@
         <SpawnItem identifiers="m61_20_rev" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
-    <Price baseprice="24000" buyingpricemultiplier="1" minleveldifficulty="60">
+    <Price baseprice="8000" buyingpricemultiplier="1" minleveldifficulty="60">
       <Price locationtype="outpost" multiplier="1.5" minavailable="0" maxavailable="3" />
       <Price locationtype="city" multiplier="1.35" minavailable="1" maxavailable="4" />
       <Price locationtype="research" multiplier="1.25" minavailable="0" maxavailable="4" />
