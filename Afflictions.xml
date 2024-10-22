@@ -583,11 +583,13 @@
       </StatusEffect>
       <StatusEffect target="Character" disabledeltatime="true" interval="1">
         <Conditional InWater="eq True" />
-        <ReduceAffliction identifier="firefoamcovered" amount="30"/>
+        <ReduceAffliction identifier="firefoamcovered" amount="10"/>
       </StatusEffect>
     </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,0,1,1" color="0,0,0,255" origin="0,0" />
   </Affliction>
+
+
   <!--Symptoms.these will not be cured using stab directly, but can be supressed. It should be supressed as soon as possible-->
   <Affliction identifier="respiratoryarrest_poisonsource" type="poison" IsBuff="false" showiconthreshold="999" showinhealthscannerthreshold="0" maxstrength="50" limbspecific="false" indicatorlimb="Torso">
     <Effect minstrength="0" maxstrength="50" maxvitalitydecrease="0" strengthchange="1">

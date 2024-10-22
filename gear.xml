@@ -1661,7 +1661,7 @@
       <QualityStat stattype="ExplosionDamage" value="0.1" />
     </Quality>
   </Item>
-  <Item identifier="fsm_throwable" category="Weapon" maxstacksize="12" maxstacksizecharacterinventory="8" cargocontaineridentifier="explosivecrate" tags="smallitem,weapon,explosive,demolitionsexpert,chemweapon,chemweapon_throwable" Scale="0.07" impactsoundtag="impact_metal_light">
+  <Item identifier="fsm_throwable" category="Equipment" maxstacksize="12" maxstacksizecharacterinventory="8" cargocontaineridentifier="explosivecrate" tags="smallitem,weapon,explosive,demolitionsexpert,chemweapon,chemweapon_throwable" Scale="0.07" impactsoundtag="impact_metal_light">
     <Upgrade gameversion="0.9.2.0" scale="0.5" />
     <Deconstruct time="10">
       <Item identifier="iron" />
@@ -1675,7 +1675,7 @@
     </Fabricate>
     <InventoryIcon texture="%ModDir:3278494407%/Weapons/Chemical/chemdistthrowable.png" sourcerect="938,0,160,356" origin="0.5,0.5" />
     <Sprite texture="%ModDir:3278494407%/Weapons/Chemical/chemdistthrowable.png" sourcerect="938,0,160,356" depth="0.55" origin="0.5,0.5" />
-    <Body width="150" height="350" density="30" />
+    <Body width="200" height="400" density="30" />
     <ItemComponent characterusable="false">
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
     </ItemComponent>
@@ -1694,17 +1694,17 @@
         <ParticleEmitter particle="flamethrowersmoke" particlespersecond="25" anglemin="0" anglemax="0" velocitymin="75" velocitymax="125" copyentityangle="true" scalemin="0.1" scalemax="0.15" colormultiplier="255,255,255,150" />
       </StatusEffect>
     </ItemComponent>
-    <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="3.5" msg="ItemMsgPickUpSelect">
+    <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="3.0" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnSecondaryUse" target="This" Condition="-100.0" delay="3" disabledeltatime="true" checkconditionalalways="true" />
-      <StatusEffect type="OnBroken" target="Contained" duration="3">
+      <StatusEffect type="OnBroken" target="Contained" duration="5">
         <Use />
       </StatusEffect>
-      <StatusEffect type="OnBroken" target="This" duration="3">
-        <Sound file="%ModDir:3278494407%/Weapons/Chemical/fuse.ogg" range="500" volume="1" />
-        <ParticleEmitter particle="fixfoam" anglemax="360" velocitymin="4000" velocitymax="4000" particlespersecond="64" />
+      <StatusEffect type="OnBroken" target="This" duration="5">
+        <Sound file="%ModDir:3278494407%/Weapons/Chemical/fuse.ogg" range="600" volume="1" />
+        <ParticleEmitter range="500" particle="fixfoam" anglemax="360" velocitymin="4000" velocitymax="4000" particlespersecond="64" />
         <ParticleEmitter particle="fixfoamgoosplash" anglemax="360" distancemax="10" particlespersecond="60" />
         <ParticleEmitter particle="fixfoamgoosplash" anglemax="360" distancemax="10" scalemultiplier="2.0,2.0" particlespersecond="20" />
-        <Explosion range="400.0" force="5.0" camerashake="20" showEffects="false" >
+        <Explosion range="500.0" force="5.0" camerashake="20" showEffects="false" >
           <Affliction identifier="firefoamcovered" amount="30" />
         </Explosion>
       </StatusEffect>
@@ -1905,7 +1905,7 @@
       <QualityStat stattype="ExplosionDamage" value="0.1" />
     </Quality>
   </Item>
-  <Item identifier="breachhammer" category="Weapon" tags="mediumitem,tool,simpletool,dooropeningtool,crowbaritem,mountableweapon" scale="0.15" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_heavy" hideinmenus="false">
+  <Item identifier="breachhammer" category="Equipment" tags="mediumitem,tool,simpletool,dooropeningtool,crowbaritem,mountableweapon" scale="0.15" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_heavy" hideinmenus="false">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Deconstruct time="7">
       <Item identifier="titaniumaluminiumalloy" amount="1" />
@@ -1996,14 +1996,17 @@
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,1,1" depth="0.55" origin="0.5,0.5" />
     <Body radius="5" density="10.5" />
     <ItemComponent>
-      <StatusEffect type="OnUse" target="This" delay="3">
+      <StatusEffect type="OnUse" target="This" delay="5">
         <Remove />
       </StatusEffect>
       <StatusEffect type="OnNotContained" target="This">
         <Remove />
       </StatusEffect>
     </ItemComponent>
-    <RepairTool characterusable="false" usablein="Both" barrelpos="0,0" barrelrotation="0.000" range="600" extinguishamount="800" spread="360" ignorecharacters="true" repairmultiple="true" repairthroughholes="true" />
+    <RepairTool characterusable="false" usablein="Both" barrelpos="0,0" barrelrotation="0" range="500" extinguishamount="800" spread="90" ignorecharacters="true" repairmultiple="true" repairthroughholes="true" />
+    <RepairTool characterusable="false" usablein="Both" barrelpos="0,0" barrelrotation="90" range="500" extinguishamount="800" spread="90" ignorecharacters="true" repairmultiple="true" repairthroughholes="true" />
+    <RepairTool characterusable="false" usablein="Both" barrelpos="0,0" barrelrotation="180" range="500" extinguishamount="800" spread="90" ignorecharacters="true" repairmultiple="true" repairthroughholes="true" />
+    <RepairTool characterusable="false" usablein="Both" barrelpos="0,0" barrelrotation="360" range="500" extinguishamount="800" spread="90" ignorecharacters="true" repairmultiple="true" repairthroughholes="true" />
   </Item>
   <!--SURPRISE-->
   <Item identifier="powdercapsule_anthrax" category="Misc" cargocontaineridentifier="metalcrate" allowasextracargo="true" Tags="smallitem,chem,chemweapon" maxstacksize="8" maxstacksizecharacterinventory="1" scale="0.08" hideinmenus="true" impactsoundtag="impact_soft">
