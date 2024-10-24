@@ -33,7 +33,7 @@
     <!--status displayer, dont do anything-->
   </Affliction>
   <Affliction identifier="omegathedeath" type="None" IsBuff="true" damageoverlayalpha="0.0" showiconthreshold="0" showinhealthscannerthreshold="0" maxstrength="1" limbspecific="false" indicatorlimb="Torso" iconcolors="255,162,0,255">
-    <Effect minstrength="0" maxstrength="1" MultiplyByMaxVitality="true" strengthchange="0" minvitalitydecrease="100" maxvitalitydecrease="100" resistancefor="miracleworker" minresistance="1" maxresistance="1" >
+    <Effect minstrength="0" maxstrength="1" MultiplyByMaxVitality="true" strengthchange="100" minvitalitydecrease="100" maxvitalitydecrease="100" resistancefor="miracleworker" minresistance="1" maxresistance="1" >
 	    <StatusEffect target="Character" disabledeltatime="true" Vitality="-100" setvalue="true">
         <ReduceAffliction type="miracleworker" amount="99999" />
       </StatusEffect>

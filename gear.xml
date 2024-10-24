@@ -1919,27 +1919,16 @@
     <Sprite texture="%ModDir:2953749635%/weapons/其他/近战.png" sourcerect="0,262,722,178" depth="0.55" origin="0.5,0.5" />
     <Body width="700" height="150" density="45" />
     <MeleeWeapon slots="RightHand+LeftHand,Any" controlpose="true" holdpos="16,-50" aimpos="50,0" handle1="-20,-3" handle2="15,3" holdangle="35" reload="0.8" range="100" combatPriority="50" msg="ItemMsgPickUpSelect">
-      <Attack targetimpulse="4" severlimbsprobability="0.3" ballastfloradamage="80" structuredamage="0" itemdamage="80" penetration="0.8">
+      <Attack targetimpulse="4" severlimbsprobability="0.3" ballastfloradamage="80" structuredamage="0" itemdamage="3000" penetration="0.8">
         <Affliction identifier="blunttrauma" strength="60" />
         <Affliction identifier="internaldamage" strength="40" />
         <Affliction identifier="stun" strength="1.5" />
-        <StatusEffect type="OnUse" target="UseTarget">
-          <Conditional entitytype="eq Character"/>
-          <Sound file="Content/Items/Weapons/Smack1.ogg" selectionmode="random" range="500"/>
-          <Sound file="Content/Items/Weapons/Smack2.ogg" range="500" />
-        </StatusEffect>
-        <StatusEffect type="OnUse" target="UseTarget">
-          <Conditional entitytype="neq Character"/>
-          <Sound file="Content/Items/Weapons/Smack1.ogg" selectionmode="random" range="500"/>
-          <Sound file="Content/Items/Weapons/Smack2.ogg" range="500" />
-        </StatusEffect>
-        <StatusEffect type="OnUse" target="UseTarget" Condition="0" Setvalue="true">
-          <Conditional hastag="eq door" />
-        </StatusEffect>
+        <Sound file="Content/Items/Weapons/Smack1.ogg" selectionmode="random" range="500"/>
+        <Sound file="Content/Items/Weapons/Smack2.ogg" range="500" />
       </Attack>
       <StatusEffect type="OnUse" target="This">
         <Conditional holdangle="eq 50" />
-        <Explosion range="180.0" structuredamage="1000" penetration="1" showEffects="false"/>
+        <Explosion range="180.0" structuredamage="2000" penetration="1" showEffects="false"/>
       </StatusEffect>
       <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
         <Conditional skillrequirement="true" weapons="lt 60" />
