@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Jobs>
-  <Job identifier="cbrn_guy" onlyjobspecificdialog="false" idlebehavior="Active" initialcount="1" uicolor="255,178,0">
+  <Job identifier="cbrn_guy" uicolor="255,178,0" idlebehavior="Active" initialcount="1">
     <Jobicon>
       <sprite texture="%ModDir:3278494407%/Job/cbrnguy.png" sourcerect="0,0,122,128" origin="0.5,0.5" />
     </Jobicon>
@@ -15,8 +15,8 @@
       <Item identifier="idcard" equip="true" showpreview="false"/>
       <Item identifier="headset" equip="true" showpreview="false"/>
       <Item identifier="standard_cbrnsuit_gray" equip="true" outfit="true"/>
-      <Item identifier="berra_cbrn3" equip="true" outfit="true">
-        <Item identifier="col_filiter" showpreview="false"/>
+      <Item identifier="berra_cbrn3" >
+        <Item identifier="col_filiter" />
       </Item>
       <Item identifier="tsm_lm_m16">
         <Item identifier="lm_556_mag" showpreview="false"/>
@@ -26,17 +26,13 @@
       <Item identifier="lm_556_mag" showpreview="false"/>
       <Item identifier="lm_556_mag" showpreview="false"/>
       <Item identifier="col_cac2" />
-      <PreviewSprites dims="120,109">
-        <sprite texture="Content/Items/Jobgear/Captain/captain_torso_[GENDER]_1.png" sourcerect="2,38,120,109" offset="0,0" />
-        <sprite texture="Content/Items/Jobgear/Captain/captain_torso_[GENDER]_1.png" sourcerect="121,0,76,80" offset="-20,15" />
-      </PreviewSprites>
     </ItemSet>
     <ItemSet>
       <Item identifier="idcard" equip="true" showpreview="false"/>
       <Item identifier="headset" equip="true" showpreview="false"/>
       <Item identifier="standard_cbrnsuit_gray" equip="true" outfit="true"/>
-      <Item identifier="berra_cbrn3" equip="true" outfit="true">
-        <Item identifier="sep_filiter" showpreview="false"/>
+      <Item identifier="berra_cbrn3" >
+        <Item identifier="sep_filiter" />
       </Item>
       <Item identifier="tsm_fkj_ak74">
         <Item identifier="fkj_545_mag" showpreview="false"/>
@@ -46,10 +42,6 @@
       <Item identifier="fkj_545_mag" showpreview="false"/>
       <Item identifier="fkj_545_mag" showpreview="false"/>
       <Item identifier="col_cac2" />
-      <PreviewSprites dims="120,109">
-        <sprite texture="Content/Items/Jobgear/Captain/captain_torso_[GENDER]_2.png" sourcerect="2,38,120,109" offset="0,0" />
-        <sprite texture="Content/Items/Jobgear/Captain/captain_torso_[GENDER]_2.png" sourcerect="121,0,76,80" offset="-20,15" />
-      </PreviewSprites>
     </ItemSet>
     <AutonomousObjectives>
       <Order identifier="fightintruders" prioritymodifier="1" />
@@ -66,6 +58,7 @@
       <Order identifier="rescue"/>
     </AppropriateOrders>
   </Job>
+
 
   <!--AI Jobs-->
   <Job identifier="cbrn_guy_ai" onlyjobspecificdialog="false" idlebehavior="Active" minnumber="0" maxnumber="0" initialcount="0" hiddenjob="true" uicolor="255,178,0">
