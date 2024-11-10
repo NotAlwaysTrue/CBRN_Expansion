@@ -147,7 +147,7 @@
     minleveldifficulty="60"
     achievementidentifier="cargomission">
     <Items>
-      <Item identifier="hazardousitemcontainer" reward="1500" maxcount="8">
+      <Item identifier="tsm_hazardous_container" reward="1500" maxcount="8">
         <Item identifier="vxcanister"/>
         <Item identifier="vxcanister"/>
         <Item identifier="vxcanister"/>
@@ -174,7 +174,7 @@
     minleveldifficulty="60"
     achievementidentifier="cargomission">
     <Items>
-      <Item identifier="hazardousitemcontainer" reward="1500" maxcount="4">
+      <Item identifier="tsm_hazardous_container" reward="1500" maxcount="4">
         <Item identifier="tsm_triton_bag"/>
         <Item identifier="tsm_triton_bag"/>
         <Item identifier="tsm_triton_bag"/>
@@ -197,7 +197,7 @@
     minleveldifficulty="60"
     achievementidentifier="cargomission">
     <Items>
-      <Item identifier="hazardousitemcontainer" reward="1500" maxcount="2">
+      <Item identifier="tsm_hazardous_container" reward="1500" maxcount="2">
         <Item identifier="nuke_100k"/>
         <Item identifier="nuke_100k"/>
         <Item identifier="nuke_100k"/>
