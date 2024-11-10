@@ -18,14 +18,25 @@
         <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
         <damagemodifier afflictionidentifiers="radiationsickness" armorsector="0.0,360.0" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
         <sprite name="respirator Helmet" texture="%ModDir:2953749635%/Jobgear/helmet.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.27" hidelimb="true" alphaclipotherwearables="false" hideotherwearables="true" hidewearablesoftype="Hair" sourcerect="871,1138,235,246" origin="0.5,0.53"/>
-        <StatusEffect type="OnWearing" targettype="Contained" targets="berra_filiter" Condition="-0.2" />
-        <StatusEffect type="OnWearing" targettype="Contained" targets="tsm_filiter" Condition="-0.5" />
-        <StatusEffect type="OnWearing" targettype="Contained" targets="col_filiter" Condition="-0.8" />
-        <StatusEffect type="OnWearing" targettype="Contained" targets="sep_filiter" Condition="-0.8" />
-        <StatusEffect type="OnWearing" targettype="Contained" targets="oxygensource" Condition="-1.0" />
+        <StatusEffect type="OnWearing" targettype="Contained" targets="berra_filiter" Condition="-0.2" >
+          <Conditional IsDead="False"/>
+        </StatusEffect>
+        <StatusEffect type="OnWearing" targettype="Contained" targets="tsm_filiter" Condition="-0.5" >
+          <Conditional IsDead="False"/>
+        </StatusEffect>
+        <StatusEffect type="OnWearing" targettype="Contained" targets="col_filiter" Condition="-0.8" >
+          <Conditional IsDead="False"/>
+        </StatusEffect>
+        <StatusEffect type="OnWearing" targettype="Contained" targets="sep_filiter" Condition="-0.8" >
+          <Conditional IsDead="False"/>
+        </StatusEffect>
+        <StatusEffect type="OnWearing" targettype="Contained" targets="oxygensource" Condition="-1.0" >
+          <Conditional IsDead="False"/>
+        </StatusEffect>
         <StatusEffect type="OnWearing" target="Character" disabledeltatime="true" ObstructVisionAmount="0.3" setvalue="true" comparison="And">
           <Conditional IsLocalPlayer="True"/>
           <RequiredItems items="maskfilter" type="Contained" />
+          <Conditional IsDead="False"/>
           <Sound file="%ModDir:3278494407%/Jobgear/Under_Masks/maskedbreath.ogg" volume="0.3" loop="true" />
         </StatusEffect>
         <StatusEffect type="OnWearing" target="Character" disabledeltatime="true" setvalue="true">

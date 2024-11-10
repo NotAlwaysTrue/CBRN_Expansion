@@ -439,11 +439,21 @@
       <StatusEffect type="OnWearing" target="Character" HideFace="true" setvalue="true" disabledeltatime="true" />
       <sprite name="CBRN3A Mask" texture="%ModDir:3278494407%/Jobgear/Under_Masks/APR-2.png" canbehiddenbyotherwearables="false" alphaclipotherwearables="false" sourcerect="304,212,128,153" depth="0.55" limb="Head" depthlimb="Head" rotation="0" scale="0.15" origin="0.15,0.3" />
       <damagemodifier armorsector="0,360" afflictionidentifiers="gunshotwound" damagemultiplier="0.8" deflectprojectiles="true" />
-      <StatusEffect type="OnWearing" targettype="Contained" targets="berra_filiter" Condition="-0.2" />
-      <StatusEffect type="OnWearing" targettype="Contained" targets="tsm_filiter" Condition="-0.5" />
-      <StatusEffect type="OnWearing" targettype="Contained" targets="col_filiter" Condition="-0.8" />
-      <StatusEffect type="OnWearing" targettype="Contained" targets="sep_filiter" Condition="-0.8" />
-      <StatusEffect type="OnWearing" targettype="Contained" targets="oxygensource" Condition="-1.0" />
+      <StatusEffect type="OnWearing" targettype="Contained" targets="berra_filiter" Condition="-0.2" >
+        <Conditional IsDead="False"/>
+      </StatusEffect>
+      <StatusEffect type="OnWearing" targettype="Contained" targets="tsm_filiter" Condition="-0.5" >
+        <Conditional IsDead="False"/>
+      </StatusEffect>
+      <StatusEffect type="OnWearing" targettype="Contained" targets="col_filiter" Condition="-0.8" >
+        <Conditional IsDead="False"/>
+      </StatusEffect>
+      <StatusEffect type="OnWearing" targettype="Contained" targets="sep_filiter" Condition="-0.8" >
+        <Conditional IsDead="False"/>
+      </StatusEffect>
+      <StatusEffect type="OnWearing" targettype="Contained" targets="oxygensource" Condition="-1.0" >
+        <Conditional IsDead="False"/>
+      </StatusEffect>
       <StatusEffect type="OnWearing" target="Character" disabledeltatime="true" ObstructVisionAmount="0.3" setvalue="true" comparison="And">
         <Conditional IsLocalPlayer="True"/>
         <RequiredItems items="maskfilter" type="Contained" />
