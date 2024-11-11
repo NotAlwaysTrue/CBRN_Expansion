@@ -497,7 +497,7 @@
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,0,1,1" color="0,0,0,255" origin="0,0" />
   </Affliction>
   <Affliction identifier="vx_contamination" type="contamination" IsBuff="true" showiconthreshold="999" showinhealthscannerthreshold="0" maxstrength="10" limbspecific="false" indicatorlimb="Head">
-    <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="0">
+    <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="-0.02">
       <StatusEffect target="NearbyCharacters,Character" range="80" disabledeltatime="true" Interval="1.0" multiplyAfflictionsByMaxVitality="true">
         <Affliction identifier="vx_contact_agent" amount="2" />
       </StatusEffect>
@@ -509,7 +509,7 @@
     <!--Chemical left on body when going through contaminated area-->
   </Affliction>
   <Affliction identifier="mustard_contamination" type="contamination" IsBuff="true" showiconthreshold="999" showinhealthscannerthreshold="0" maxstrength="10" limbspecific="false" indicatorlimb="Head">
-    <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="0">
+    <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="-0.02">
       <StatusEffect target="NearbyCharacters,Character" range="80" disabledeltatime="false" Interval="1.5" multiplyAfflictionsByMaxVitality="true">
         <Affliction identifier="mustard_contact_agent" amount="2" />
       </StatusEffect>
@@ -521,7 +521,7 @@
     <!--Chemical left on body when going through contaminated area-->
   </Affliction>
   <Affliction identifier="anthrax_contamination" type="contamination" IsBuff="true" showiconthreshold="999" showinhealthscannerthreshold="0" maxstrength="10" limbspecific="false" indicatorlimb="Head">
-    <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="0">
+    <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="-0.02">
       <StatusEffect target="NearbyCharacters,Character" range="80" disabledeltatime="false" Interval="1.5" multiplyAfflictionsByMaxVitality="true">
         <Affliction identifier="anthrax_contact_agent" amount="0.5" />
 		    <Affliction identifier="anthrax_air_agent" amount="0.5" />
@@ -534,9 +534,10 @@
     <!--bioagent left on body when going through contaminated area-->
   </Affliction>
   <Affliction identifier="radiological_contamination" type="contamination" IsBuff="true" showiconthreshold="999" showinhealthscannerthreshold="0" maxstrength="10" limbspecific="false" indicatorlimb="Head">
-    <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="0">
+    <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="-0.3">
       <StatusEffect target="NearbyCharacters,Character" range="80" disabledeltatime="false" Interval="5" multiplyAfflictionsByMaxVitality="true">
         <Affliction identifier="radiationsickness" amount="8" />
+        <Affliction identifier="burn" amount="5" />
       </StatusEffect>
       <StatusEffect type="InWater" target="Character" disabledeltatime="false" Interval="1.0">
         <ReduceAfflictionAffliction identifier="radiological_contamination" amount="2" />

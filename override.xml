@@ -256,15 +256,15 @@
         <StatusEffect type="Always" target="This" condition="-25" />
         <StatusEffect type="Always" target="NearbyCharacters" range="1600" interval="2" disabledeltatime="true">
           <Affliction identifier="radiationsickness" strength="20" />
-      <!--<Affliction identifier="radiological_contamination" strength="20" />-->
+      <Affliction identifier="radiological_contamination" strength="20" />
         </StatusEffect>
         <StatusEffect type="Always" target="NearbyCharacters" range="1200" interval="2" disabledeltatime="true">
           <Affliction identifier="radiationsickness" strength="40" />
-      <!--<Affliction identifier="radiological_contamination" strength="40" />-->
+      <Affliction identifier="radiological_contamination" strength="40" />
         </StatusEffect>
         <StatusEffect type="Always" target="NearbyCharacters" range="800" interval="2" disabledeltatime="true">
           <Affliction identifier="radiationsickness" strength="100" />
-      <!--<Affliction identifier="radiological_contamination" strength="100" />-->
+      <Affliction identifier="radiological_contamination" strength="100" />
         </StatusEffect>
         <StatusEffect type="OnBroken" target="This">
           <Remove />
