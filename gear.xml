@@ -439,11 +439,21 @@
       <StatusEffect type="OnWearing" target="Character" HideFace="true" setvalue="true" disabledeltatime="true" />
       <sprite name="CBRN3A Mask" texture="%ModDir:3278494407%/Jobgear/Under_Masks/APR-2.png" canbehiddenbyotherwearables="false" alphaclipotherwearables="false" sourcerect="304,212,128,153" depth="0.55" limb="Head" depthlimb="Head" rotation="0" scale="0.15" origin="0.15,0.3" />
       <damagemodifier armorsector="0,360" afflictionidentifiers="gunshotwound" damagemultiplier="0.8" deflectprojectiles="true" />
-      <StatusEffect type="OnWearing" targettype="Contained" targets="berra_filiter" Condition="-0.2" />
-      <StatusEffect type="OnWearing" targettype="Contained" targets="tsm_filiter" Condition="-0.5" />
-      <StatusEffect type="OnWearing" targettype="Contained" targets="col_filiter" Condition="-0.8" />
-      <StatusEffect type="OnWearing" targettype="Contained" targets="sep_filiter" Condition="-0.8" />
-      <StatusEffect type="OnWearing" targettype="Contained" targets="oxygensource" Condition="-1.0" />
+      <StatusEffect type="OnWearing" targettype="Contained" targets="berra_filiter" Condition="-0.2" >
+        <Conditional IsDead="False"/>
+      </StatusEffect>
+      <StatusEffect type="OnWearing" targettype="Contained" targets="tsm_filiter" Condition="-0.5" >
+        <Conditional IsDead="False"/>
+      </StatusEffect>
+      <StatusEffect type="OnWearing" targettype="Contained" targets="col_filiter" Condition="-0.8" >
+        <Conditional IsDead="False"/>
+      </StatusEffect>
+      <StatusEffect type="OnWearing" targettype="Contained" targets="sep_filiter" Condition="-0.8" >
+        <Conditional IsDead="False"/>
+      </StatusEffect>
+      <StatusEffect type="OnWearing" targettype="Contained" targets="oxygensource" Condition="-1.0" >
+        <Conditional IsDead="False"/>
+      </StatusEffect>
       <StatusEffect type="OnWearing" target="Character" disabledeltatime="true" ObstructVisionAmount="0.3" setvalue="true" comparison="And">
         <Conditional IsLocalPlayer="True"/>
         <RequiredItems items="maskfilter" type="Contained" />
@@ -1271,7 +1281,7 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
       <ParticleEmitter particle="ventsmoke" distancemin="-5" distancemax="-20" AngleMin="10" AngleMax="-40" VelocityMin="-400" VelocityMax="-300" ScaleMultiplier="0.1,0.1" ParticleAmount="3" HighQualityCollisionDetection="True" ColorMultiplier="255,255,255,255"  />
-    <Sound file="%ModDir:3278494407%/Weapons/Other/50cal.ogg" type="OnUse" range="3000" volume="1"/>
+      <Sound file="%ModDir:3278494407%/Weapons/Other/50cal.ogg" type="OnUse" range="3000" volume="1"/>
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>
@@ -1661,7 +1671,7 @@
       <QualityStat stattype="ExplosionDamage" value="0.1" />
     </Quality>
   </Item>
-  <Item identifier="fsm_throwable" category="Weapon" maxstacksize="12" maxstacksizecharacterinventory="8" cargocontaineridentifier="explosivecrate" tags="smallitem,weapon,explosive,demolitionsexpert,chemweapon,chemweapon_throwable" Scale="0.07" impactsoundtag="impact_metal_light">
+  <Item identifier="fsm_throwable" category="Equipment" maxstacksize="12" maxstacksizecharacterinventory="8" cargocontaineridentifier="explosivecrate" tags="smallitem,weapon,explosive,demolitionsexpert,chemweapon,chemweapon_throwable" Scale="0.07" impactsoundtag="impact_metal_light">
     <Upgrade gameversion="0.9.2.0" scale="0.5" />
     <Deconstruct time="10">
       <Item identifier="iron" />
@@ -1675,13 +1685,13 @@
     </Fabricate>
     <InventoryIcon texture="%ModDir:3278494407%/Weapons/Chemical/chemdistthrowable.png" sourcerect="938,0,160,356" origin="0.5,0.5" />
     <Sprite texture="%ModDir:3278494407%/Weapons/Chemical/chemdistthrowable.png" sourcerect="938,0,160,356" depth="0.55" origin="0.5,0.5" />
-    <Body width="150" height="350" density="30" />
+    <Body width="200" height="400" density="30" />
     <ItemComponent characterusable="false">
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
     </ItemComponent>
     <ItemComponent IsActive="false" CharacterUsable="true">
       <!--reduce condition by 1 to mark the user as the one responsible for the item breaking and exploding -->
-      <StatusEffect type="OnUse" targettype="This" IsActive="true" comparison="AND" condition="-1">
+      <StatusEffect type="OnUse" targettype="This" IsActive="true" comparison="AND" condition="-33.34">
         <Conditional HasTag="neq detonator" targetcontainer="true" />
         <Conditional HasTag="neq railgunammo" targetcontainer="true" />
         <Conditional HasTag="neq depthchargeammo" targetcontainer="true" />
@@ -1690,20 +1700,28 @@
         <ParticleEmitter particle="grenadelever" emitinterval="10" particleamount="1" anglemin="120" anglemax="210" velocitymin="100" velocitymax="200" copyentityangle="true" scalemin="0.5" scalemax="0.5" />
         <Sound file="Content/Items/Weapons/pinpull.ogg" type="OnUse" range="720" />
       </StatusEffect>
-      <StatusEffect type="OnActive" targettype="This" Condition="-24">
+      <StatusEffect type="OnActive" targettype="This" Condition="-33.34">
         <ParticleEmitter particle="flamethrowersmoke" particlespersecond="25" anglemin="0" anglemax="0" velocitymin="75" velocitymax="125" copyentityangle="true" scalemin="0.1" scalemax="0.15" colormultiplier="255,255,255,150" />
       </StatusEffect>
     </ItemComponent>
-    <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="3.5" msg="ItemMsgPickUpSelect">
-      <StatusEffect type="OnSecondaryUse" target="This" Condition="-100.0" delay="1.5" disabledeltatime="true" checkconditionalalways="true" />
-      <StatusEffect type="OnBroken" target="Hull" Oxygen="0" duration="15" setvalue="true" OnlyInside="true" />
-      <StatusEffect type="OnBroken" target="This" >
-        <Sound file="%ModDir:3278494407%/Weapons/Chemical/fuse.ogg" range="500" volume="1" />
-        <ParticleEmitter particle="fixfoam" anglemax="360" velocitymin="4000" velocitymax="4000" particlespersecond="64" />
+    <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="3.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnSecondaryUse" target="This" Condition="-100.0" delay="3" disabledeltatime="true" checkconditionalalways="true" />
+      <StatusEffect type="OnBroken" target="Contained" duration="5">
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" duration="5">
+        <Sound file="%ModDir:3278494407%/Weapons/Chemical/fuse.ogg" range="600" volume="1" />
+        <ParticleEmitter range="500" particle="fixfoam" anglemax="360" velocitymin="4000" velocitymax="4000" particlespersecond="64" />
         <ParticleEmitter particle="fixfoamgoosplash" anglemax="360" distancemax="10" particlespersecond="60" />
         <ParticleEmitter particle="fixfoamgoosplash" anglemax="360" distancemax="10" scalemultiplier="2.0,2.0" particlespersecond="20" />
+        <Explosion range="500.0" force="5.0" camerashake="20" showEffects="false" >
+          <Affliction identifier="firefoamcovered" amount="30" />
+        </Explosion>
       </StatusEffect>
     </Throwable>
+    <ItemContainer capacity="1" keepopenwhenequipped="false" SpawnWithId="extinguishgrenade_exec" removecontaineditemsondeconstruct="true" drawinventory="false" canbeselected="false" showcontainedstateindicator="false">
+      <Containable items="extinguishgrenade_exec" />
+    </ItemContainer>
   </Item>
   <Item identifier="c4_stickcharge" category="Weapon" tags="smallitem,weapon,remotedetonatable,explosive" isdangerous="true" maxstacksize="8" maxstacksizecharacterinventory="4" scale="0.1" cargocontaineridentifier="explosivecrate">
     <InventoryIcon texture="%ModDir:3278494407%/Weapons/Explosives/C4.png" sourcerect="0,0,539,118" />
@@ -1897,7 +1915,7 @@
       <QualityStat stattype="ExplosionDamage" value="0.1" />
     </Quality>
   </Item>
-  <Item identifier="breachhammer" category="Weapon" tags="mediumitem,tool,simpletool,dooropeningtool,crowbaritem,mountableweapon" scale="0.15" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_heavy" hideinmenus="false">
+  <Item identifier="breachhammer" category="Equipment" tags="mediumitem,tool,simpletool,dooropeningtool,crowbaritem,mountableweapon" scale="0.15" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_heavy" hideinmenus="false">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Deconstruct time="7">
       <Item identifier="titaniumaluminiumalloy" amount="1" />
@@ -1911,27 +1929,16 @@
     <Sprite texture="%ModDir:2953749635%/weapons/其他/近战.png" sourcerect="0,262,722,178" depth="0.55" origin="0.5,0.5" />
     <Body width="700" height="150" density="45" />
     <MeleeWeapon slots="RightHand+LeftHand,Any" controlpose="true" holdpos="16,-50" aimpos="50,0" handle1="-20,-3" handle2="15,3" holdangle="35" reload="0.8" range="100" combatPriority="50" msg="ItemMsgPickUpSelect">
-      <Attack targetimpulse="4" severlimbsprobability="0.3" ballastfloradamage="80" structuredamage="0" itemdamage="80" penetration="0.8">
+      <Attack targetimpulse="4" severlimbsprobability="0.3" ballastfloradamage="80" structuredamage="0" itemdamage="3000" penetration="0.8">
         <Affliction identifier="blunttrauma" strength="60" />
         <Affliction identifier="internaldamage" strength="40" />
         <Affliction identifier="stun" strength="1.5" />
-        <StatusEffect type="OnUse" target="UseTarget">
-          <Conditional entitytype="eq Character"/>
-          <Sound file="Content/Items/Weapons/Smack1.ogg" selectionmode="random" range="500"/>
-          <Sound file="Content/Items/Weapons/Smack2.ogg" range="500" />
-        </StatusEffect>
-        <StatusEffect type="OnUse" target="UseTarget">
-          <Conditional entitytype="neq Character"/>
-          <Sound file="Content/Items/Weapons/Smack1.ogg" selectionmode="random" range="500"/>
-          <Sound file="Content/Items/Weapons/Smack2.ogg" range="500" />
-        </StatusEffect>
-        <StatusEffect type="OnUse" target="UseTarget" Condition="0" Setvalue="true">
-          <Conditional hastag="eq door" />
-        </StatusEffect>
+        <Sound file="Content/Items/Weapons/Smack1.ogg" selectionmode="random" range="500"/>
+        <Sound file="Content/Items/Weapons/Smack2.ogg" range="500" />
       </Attack>
       <StatusEffect type="OnUse" target="This">
         <Conditional holdangle="eq 50" />
-        <Explosion range="180.0" structuredamage="1000" penetration="1" showEffects="false"/>
+        <Explosion range="180.0" structuredamage="2000" penetration="1" showEffects="false"/>
       </StatusEffect>
       <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
         <Conditional skillrequirement="true" weapons="lt 60" />
@@ -1984,6 +1991,22 @@
     <aitarget sightrange="1000" fadeouttime="6" />
   </Item>
 
+  <Item identifier="extinguishgrenade_exec" scale="1.0" tags="fireextinguisher" requireaimtouse="false" noninteractable="true" hideinmenus="true">
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,1,1" depth="0.55" origin="0.5,0.5" />
+    <Body radius="5" density="10.5" />
+    <ItemComponent>
+      <StatusEffect type="OnUse" target="This" delay="5">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+    <RepairTool characterusable="false" usablein="Both" barrelpos="0,0" barrelrotation="0" range="500" extinguishamount="800" spread="90" ignorecharacters="true" repairmultiple="true" repairthroughholes="true" />
+    <RepairTool characterusable="false" usablein="Both" barrelpos="0,0" barrelrotation="90" range="500" extinguishamount="800" spread="90" ignorecharacters="true" repairmultiple="true" repairthroughholes="true" />
+    <RepairTool characterusable="false" usablein="Both" barrelpos="0,0" barrelrotation="180" range="500" extinguishamount="800" spread="90" ignorecharacters="true" repairmultiple="true" repairthroughholes="true" />
+    <RepairTool characterusable="false" usablein="Both" barrelpos="0,0" barrelrotation="360" range="500" extinguishamount="800" spread="90" ignorecharacters="true" repairmultiple="true" repairthroughholes="true" />
+  </Item>
   <!--SURPRISE-->
   <Item identifier="powdercapsule_anthrax" category="Misc" cargocontaineridentifier="metalcrate" allowasextracargo="true" Tags="smallitem,chem,chemweapon" maxstacksize="8" maxstacksizecharacterinventory="1" scale="0.08" hideinmenus="true" impactsoundtag="impact_soft">
     <PreferredContainer secondary="outposttrashcan" amount="1" spawnprobability="0.01" />
@@ -2805,17 +2828,17 @@
       <StatusEffect type="OnBroken" target="This">
         <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" range="50000" />
         <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" range="50000" />
-        <Explosion range="200.0" ballastfloradamage="15000" structuredamage="15000" itemdamage="15000" force="80" severlimbsprobability="5" penetration="1" showEffects="false" ignoreCover="true">
+        <Explosion range="800.0" ballastfloradamage="15000" structuredamage="15000" itemdamage="15000" force="80" severlimbsprobability="5" penetration="1" showEffects="false" ignoreCover="true">
           <Affliction identifier="radiationsickness" strength="60" />
-          <Affliction identifier="explosiondamage" strength="1000" />
-          <Affliction identifier="burn" strength="1000" />
+          <Affliction identifier="explosiondamage" strength="3000" />
+          <Affliction identifier="burn" strength="3000" />
         </Explosion>
-        <Explosion range="1500.0" ballastfloradamage="15000" structuredamage="15000" itemdamage="15000" force="80" severlimbsprobability="0.75" debris="false" decal="explosion" decalsize="0.75" penetration="1" camerashake="200" camerashakerange="10000" flashrange="2000" flashduration="3" screencolor="255,255,255,255" screencolorrange="5000" screencolorduration="6.0" >
+        <Explosion range="2000.0" ballastfloradamage="15000" structuredamage="15000" itemdamage="15000" force="80" severlimbsprobability="0.75" debris="false" decal="explosion" decalsize="0.75" penetration="1" camerashake="200" camerashakerange="10000" flashrange="2000" flashduration="3" screencolor="255,255,255,255" screencolorrange="5000" screencolorduration="6.0" >
           <Affliction identifier="bleedingnonstop" strength="80" />
           <Affliction identifier="blunttrauma" strength="120" />
           <Affliction identifier="radiationsickness" strength="60" />
-          <Affliction identifier="explosiondamage" strength="800" />
-          <Affliction identifier="burn" strength="800" />
+          <Affliction identifier="explosiondamage" strength="1200" />
+          <Affliction identifier="burn" strength="1200" />
           <Affliction identifier="stun" strength="35" />
           <Affliction identifier="radiationsickness" strength="120" />
         </Explosion>
@@ -2862,7 +2885,7 @@
       <Button text="plus10seconds">
         <StatusEffect type="OnUse" targettype="This" Condition="-10" disabledeltatime="true" checkconditionalalways="true" comparison="And">
           <sound file="%ModDir:3278494407%/Misc/Oggs/minus.ogg" type="OnActive" range="250.0" />
-          <Conditional Condition="gt 20" />
+          <Conditional Condition="gte 20" />
           <Conditional CombatPriority="eq 0" />
         </StatusEffect>
       </Button>
@@ -2890,16 +2913,16 @@
       <StatusEffect type="OnBroken" target="This">
         <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" range="50000" />
         <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" range="50000" />
-        <Explosion range="1200.0" ballastfloradamage="1200" structuredamage="1500" itemdamage="1500" force="30" ignoreCover="true" severlimbsprobability="5" showEffects="false" penetration="1">
-          <Affliction identifier="explosiondamage" strength="1200" />
-          <Affliction identifier="burn" strength="1200" />
+        <Explosion range="1800.0" ballastfloradamage="1200" structuredamage="1500" itemdamage="1500" force="30" ignoreCover="true" severlimbsprobability="5" showEffects="false" penetration="1">
+          <Affliction identifier="explosiondamage" strength="5000" />
+          <Affliction identifier="burn" strength="5000" />
         </Explosion>
-        <Explosion range="4000.0" ballastfloradamage="200" structuredamage="200" itemdamage="200" EmpStrength="200" force="2" severlimbsprobability="0.75" debris="false" decal="explosion" decalsize="0.75" penetration="1" camerashake="200" camerashakerange="10000" flashrange="2000" flashduration="3" screencolor="255,255,255,255" screencolorrange="5000" screencolorduration="10.0" >
+        <Explosion range="6500.0" ballastfloradamage="200" structuredamage="200" itemdamage="200" EmpStrength="200" force="2" severlimbsprobability="0.75" debris="false" decal="explosion" decalsize="0.75" penetration="1" camerashake="200" camerashakerange="10000" flashrange="2000" flashduration="3" screencolor="255,255,255,255" screencolorrange="5000" screencolorduration="10.0" >
           <Affliction identifier="blunttrauma" strength="50" />
           <Affliction identifier="stun" strength="2" />
-          <Affliction identifier="emp" strength="800" />
-          <Affliction identifier="explosiondamage" strength="800" />
-          <Affliction identifier="burn" strength="800" />
+          <Affliction identifier="emp" strength="1000" />
+          <Affliction identifier="explosiondamage" strength="1000" />
+          <Affliction identifier="burn" strength="1000" />
           <Affliction identifier="stun" strength="35" />
           <Affliction identifier="radiationsickness" strength="800" />
         </Explosion>
@@ -2946,7 +2969,7 @@
       <Button text="plus10seconds">
         <StatusEffect type="OnUse" targettype="This" Condition="-10" disabledeltatime="true" checkconditionalalways="true" comparison="And">
           <sound file="%ModDir:3278494407%/Misc/Oggs/minus.ogg" type="OnActive" range="250.0" />
-          <Conditional Condition="gt 20" />
+          <Conditional Condition="gte 20" />
           <Conditional CombatPriority="eq 0" />
         </StatusEffect>
       </Button>
@@ -2974,18 +2997,18 @@
       <StatusEffect type="OnBroken" target="This">
         <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" range="50000" />
         <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" range="50000" />
-        <Explosion range="2000.0" ballastfloradamage="15000" structuredamage="15000" itemdamage="15000" severlimbsprobability="5" showEffects="false" decalsize="0.75" penetration="1" screencolorduration="3.0">
-          <Affliction identifier="explosiondamage" strength="1500" />
-          <Affliction identifier="burn" strength="1500" />
+        <Explosion range="3000.0" ballastfloradamage="15000" structuredamage="15000" itemdamage="15000" severlimbsprobability="5" showEffects="false" decalsize="0.75" penetration="1" screencolorduration="3.0">
+          <Affliction identifier="explosiondamage" strength="5000" />
+          <Affliction identifier="burn" strength="5000" />
         </Explosion>
-        <Explosion range="5200.0" ballastfloradamage="15000" structuredamage="15000" itemdamage="15000" EmpStrength="800"  force="30" severlimbsprobability="0.75" debris="false" decal="explosion" decalsize="0.75" penetration="1" flashrange="2000" flashduration="3" screencolor="255,255,255,255" screencolorrange="5000" screencolorduration="12.0" camerashake="200" camerashakerange="10000">
-          <Affliction identifier="blunttrauma" strength="1500" />
+        <Explosion range="8000.0" ballastfloradamage="15000" structuredamage="15000" itemdamage="15000" EmpStrength="800"  force="30" severlimbsprobability="0.75" debris="false" decal="explosion" decalsize="0.75" penetration="1" flashrange="2000" flashduration="3" screencolor="255,255,255,255" screencolorrange="5000" screencolorduration="12.0" camerashake="200" camerashakerange="10000">
+          <Affliction identifier="blunttrauma" strength="1800" />
           <Affliction identifier="stun" strength="60" />
           <Affliction identifier="emp" strength="400" />
-          <Affliction identifier="bleeding" strength="1500" />
-          <Affliction identifier="blunttrauma" strength="1500" />
-          <Affliction identifier="radiationsickness" strength="1500" />
-          <Affliction identifier="lacerations" strength="1500" />
+          <Affliction identifier="bleeding" strength="1800" />
+          <Affliction identifier="blunttrauma" strength="1800" />
+          <Affliction identifier="radiationsickness" strength="1800" />
+          <Affliction identifier="lacerations" strength="1800" />
         </Explosion>
         <Remove />
       </StatusEffect>
@@ -3030,7 +3053,7 @@
       <Button text="plus10seconds">
         <StatusEffect type="OnUse" targettype="This" Condition="-10" disabledeltatime="true" checkconditionalalways="true" comparison="And">
           <sound file="%ModDir:3278494407%/Misc/Oggs/minus.ogg" type="OnActive" range="250.0" />
-          <Conditional Condition="gt 20" />
+          <Conditional Condition="gte 20" />
           <Conditional CombatPriority="eq 0" />
         </StatusEffect>
       </Button>
@@ -3058,17 +3081,17 @@
       <StatusEffect type="OnBroken" target="This">
         <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" range="50000" />
         <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" range="50000" />
-        <Explosion range="2000.0" ballastfloradamage="1200" structuredamage="1500" itemdamage="1500" force="30" ignoreCover="true" severlimbsprobability="8" debris="false" decal="explosion" decalsize="0.75" penetration="1">
-          <Affliction identifier="explosiondamage" strength="1800" />
-          <Affliction identifier="burn" strength="1800" />
+        <Explosion range="4000.0" ballastfloradamage="1200" structuredamage="1500" itemdamage="1500" force="30" ignoreCover="true" severlimbsprobability="8" debris="false" decal="explosion" decalsize="0.75" penetration="1">
+          <Affliction identifier="explosiondamage" strength="5000" />
+          <Affliction identifier="burn" strength="5000" />
         </Explosion>
-        <Explosion range="6500.0" ballastfloradamage="200" structuredamage="200" itemdamage="200" EmpStrength="400"  force="2" severlimbsprobability="0.75" debris="false" decal="explosion" decalsize="0.75" penetration="1" camerashake="200" camerashakerange="10000"  flashrange="2000" flashduration="3" screencolor="255,255,255,255" screencolorrange="5000" screencolorduration="18.0">
-          <Affliction identifier="lacerations" strength="1800" />
-          <Affliction identifier="blunttrauma" strength="1800" />
+        <Explosion range="15000.0" ballastfloradamage="200" structuredamage="200" itemdamage="200" EmpStrength="400"  force="2" severlimbsprobability="0.75" debris="false" decal="explosion" decalsize="0.75" penetration="1" camerashake="200" camerashakerange="10000"  flashrange="2000" flashduration="3" screencolor="255,255,255,255" screencolorrange="5000" screencolorduration="18.0">
+          <Affliction identifier="lacerations" strength="2500" />
+          <Affliction identifier="blunttrauma" strength="2500" />
           <Affliction identifier="stun" strength="40" />
           <Affliction identifier="emp" strength="400" />
-          <Affliction identifier="explosiondamage" strength="1800" />
-          <Affliction identifier="burn" strength="1800" />
+          <Affliction identifier="explosiondamage" strength="2500" />
+          <Affliction identifier="burn" strength="2500" />
         </Explosion>
         <Remove />
       </StatusEffect>
@@ -3113,8 +3136,8 @@
       <Button text="plus10seconds">
         <StatusEffect type="OnUse" targettype="This" Condition="-10" disabledeltatime="true" checkconditionalalways="true" comparison="And">
           <sound file="%ModDir:3278494407%/Misc/Oggs/minus.ogg" type="OnActive" range="250.0" />
-          <Conditional Condition="gt 20" />
-      <Conditional CombatPriority="eq 0" />
+          <Conditional Condition="gte 20" />
+        <Conditional CombatPriority="eq 0" />
         </StatusEffect>
       </Button>
     </CustomInterface>
@@ -3176,7 +3199,7 @@
       <Button text="plus10seconds">
         <StatusEffect type="OnUse" targettype="This" Condition="-10" disabledeltatime="true" checkconditionalalways="true" comparison="And">
           <sound file="%ModDir:3278494407%/Misc/Oggs/minus.ogg" type="OnActive" range="250.0" />
-          <Conditional Condition="gt 20" />
+          <Conditional Condition="gte 20" />
           <Conditional CombatPriority="eq 0" />
         </StatusEffect>
       </Button>
@@ -3257,7 +3280,7 @@
       <Button text="plus10seconds">
         <StatusEffect type="OnUse" targettype="This" Condition="-10" disabledeltatime="true" checkconditionalalways="true" comparison="And">
           <sound file="%ModDir:3278494407%/Misc/Oggs/minus.ogg" type="OnActive" range="250.0" />
-          <Conditional Condition="gt 20" />
+          <Conditional Condition="gte 20" />
           <Conditional CombatPriority="eq 0" />
         </StatusEffect>
       </Button>
@@ -3335,7 +3358,7 @@
       <Button text="plus10seconds">
         <StatusEffect type="OnUse" targettype="This" Condition="-10" disabledeltatime="true" checkconditionalalways="true" comparison="And">
           <sound file="%ModDir:3278494407%/Misc/Oggs/minus.ogg" type="OnActive" range="250.0" />
-          <Conditional Condition="gt 20" />
+          <Conditional Condition="gte 20" />
           <Conditional CombatPriority="eq 0" />
         </StatusEffect>
       </Button>

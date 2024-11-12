@@ -362,8 +362,8 @@
     <Fabricate suitablefabricators="fabricator" requiredtime="80" requiresrecipe="true">
       <RequiredSkill identifier="mechanical" level="60" />
       <RequiredSkill identifier="weapons" level="60" />
-      <RequiredItem identifier="plutonium_weapon" amount="1" />
-      <RequiredItem identifier="fuelrod" amount="2" />
+      <RequiredItem identifier="plutonium_weapon" amount="2" />
+      <RequiredItem identifier="fuelrod" amount="1" />
     </Fabricate>
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
       <sprite texture="%ModDir:3278494407%/Misc/Material/ball.png" canbehiddenbyotherwearables="false" sourcerect="0,0,0,0" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.0" />
@@ -406,8 +406,8 @@
     <Fabricate suitablefabricators="fabricator" requiredtime="240" requiresrecipe="true">
       <RequiredSkill identifier="mechanical" level="60" />
       <RequiredSkill identifier="weapons" level="60" />
-      <RequiredItem identifier="plutonium_weapon" amount="3" />
-      <RequiredItem identifier="fuelrod" amount="4" />
+      <RequiredItem identifier="plutonium_weapon" amount="4" />
+      <RequiredItem identifier="fuelrod" amount="3" />
     </Fabricate>
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
       <sprite texture="%ModDir:3278494407%/Misc/Material/ball.png" canbehiddenbyotherwearables="false" sourcerect="0,0,0,0" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.0" />
@@ -427,8 +427,8 @@
     <Fabricate suitablefabricators="fabricator" requiredtime="240" requiresrecipe="true">
       <RequiredSkill identifier="mechanical" level="60" />
       <RequiredSkill identifier="weapons" level="60" />
-      <RequiredItem identifier="u235core_medium" amount="1" />
-      <RequiredItem identifier="tsm_triton_bag" amount="3" />
+      <RequiredItem identifier="u235core_low" amount="1" />
+      <RequiredItem identifier="tsm_triton_bag" amount="4" />
     </Fabricate>
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
       <sprite texture="%ModDir:3278494407%/Misc/Material/ball.png" canbehiddenbyotherwearables="false" sourcerect="0,0,0,0" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.0" />
@@ -609,8 +609,7 @@
       <StatusEffect type="Always" target="NearbyCharacters" range="450" Interval="0.5" stackable="false" disabledeltatime="true" OnlyInside="true">
         <Affliction identifier="vx_air_agent" amount="6" />
         <Affliction identifier="vx_contact_agent" amount="6" />
-        <!--<Affliction identifier="vx_contamination" amount="2" />-->
-        <!--Currently disabled, bcuz those are not done yet-->
+        <Affliction identifier="vx_contamination" amount="2" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This">
         <Remove />
@@ -633,8 +632,7 @@
       <StatusEffect type="Always" target="NearbyCharacters" range="600" Interval="0.5" stackable="false" disabledeltatime="true" OnlyInside="true">
         <Affliction identifier="vx_air_agent" amount="6" />
         <Affliction identifier="vx_contact_agent" amount="6" />
-        <!--<Affliction identifier="vx_contamination" amount="2" />-->
-        <!--Currently disabled, bcuz those are not done yet-->
+        <Affliction identifier="vx_contamination" amount="2" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This">
         <Remove />
@@ -657,8 +655,7 @@
       <StatusEffect type="Always" target="NearbyCharacters" range="450" Interval="0.5" stackable="false" disabledeltatime="true" OnlyInside="true">
         <Affliction identifier="mustard_air_agent" amount="10" />
         <Affliction identifier="mustard_contact_agent" amount="10" />
-        <!--<Affliction identifier="mustard_contamination" amount="2" />-->
-        <!--Currently disabled, bcuz those are not done yet-->
+        <Affliction identifier="mustard_contamination" amount="2" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This">
         <Remove />
@@ -681,8 +678,7 @@
       <StatusEffect type="Always" target="NearbyCharacters" range="550" Interval="0.5" stackable="false" disabledeltatime="true" OnlyInside="true">
         <Affliction identifier="mustard_air_agent" amount="10" />
         <Affliction identifier="mustard_contact_agent" amount="10" />
-        <!--<Affliction identifier="mustard_contamination" amount="2" />-->
-        <!--Currently disabled, bcuz those are not done yet-->
+        <Affliction identifier="mustard_contamination" amount="2" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This">
         <Remove />
@@ -825,8 +821,7 @@
       <StatusEffect type="Always" target="This" disabledeltatime="false" condition="-1"/>
       <StatusEffect type="Always" target="NearbyCharacters" range="450" Interval="0.5" stackable="false" disabledeltatime="true" OnlyInside="true">
         <Affliction identifier="anthrax_air_agent" amount="6" />
-        <!--<Affliction identifier="anthrax_contamination" amount="2" />-->
-        <!--Currently disabled, bcuz those are not done yet-->
+        <Affliction identifier="anthrax_contamination" amount="2" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This">
         <Remove />
@@ -843,8 +838,7 @@
       <StatusEffect type="Always" target="This" disabledeltatime="false" condition="-1"/>
       <StatusEffect type="Always" target="NearbyCharacters" range="20" Interval="0.5" stackable="false" disabledeltatime="true" OnlyInside="true">
         <Affliction identifier="anthrax_contact_agent" amount="6" />
-        <!--<Affliction identifier="anthrax_contamination" amount="2" />-->
-        <!--Currently disabled, bcuz those are not done yet-->
+        <Affliction identifier="anthrax_contamination" amount="2" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This">
         <Remove />
@@ -861,8 +855,7 @@
       <StatusEffect type="Always" target="This" disabledeltatime="false" condition="-1"/>
       <StatusEffect type="Always" target="NearbyCharacters" range="400" Interval="0.5" stackable="false" disabledeltatime="true" OnlyInside="true">
         <Affliction identifier="anthrax_contact_agent" amount="20" />
-        <!--<Affliction identifier="anthrax_contamination" amount="2" />-->
-        <!--Currently disabled, bcuz those are not done yet-->
+        <Affliction identifier="anthrax_contamination" amount="2" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This">
         <Remove />

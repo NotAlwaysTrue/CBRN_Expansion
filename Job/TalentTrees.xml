@@ -38,7 +38,7 @@
       </TalentOptions>
     </SubTree>
     <SubTree identifier="cbrn_tsm" type="specialization" requires="cbrn_final,cbrn_berragroup" >
-      <TalentOptions>
+      <TalentOptions requiredtalents="2" maxchosentalents="2">
         <TalentOption identifier="specops"/>
         <TalentOption identifier="nanomachine"/>
       </TalentOptions>

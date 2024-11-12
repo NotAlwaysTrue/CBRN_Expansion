@@ -33,7 +33,7 @@
     <!--status displayer, dont do anything-->
   </Affliction>
   <Affliction identifier="omegathedeath" type="None" IsBuff="true" damageoverlayalpha="0.0" showiconthreshold="0" showinhealthscannerthreshold="0" maxstrength="1" limbspecific="false" indicatorlimb="Torso" iconcolors="255,162,0,255">
-    <Effect minstrength="0" maxstrength="1" MultiplyByMaxVitality="true" strengthchange="0" minvitalitydecrease="100" maxvitalitydecrease="100" resistancefor="miracleworker" minresistance="1" maxresistance="1" >
+    <Effect minstrength="0" maxstrength="1" MultiplyByMaxVitality="true" strengthchange="100" minvitalitydecrease="100" maxvitalitydecrease="100" resistancefor="miracleworker" minresistance="1" maxresistance="1" >
 	    <StatusEffect target="Character" disabledeltatime="true" Vitality="-100" setvalue="true">
         <ReduceAffliction type="miracleworker" amount="99999" />
       </StatusEffect>
@@ -483,12 +483,12 @@
       </StatusEffect>
     </Effect>
 	  <PeriodicEffect mininterval="1" maxinterval="1">
-	  <StatusEffect target="limb" disabledeltatime="true" stackable="true" duration="1" checkconditionalalways="false">
+	    <StatusEffect target="limb" disabledeltatime="true" stackable="true" duration="1" checkconditionalalways="false">
         <Conditional hotfuel="gt 1" />
-        <ParticleEmitter particle="flamethrower" particlespersecond="20" anglemin="60" anglemax="120" velocitymin="10" velocitymax="100" scalemin="0.1" scalemax="0.3" highqualitycollisiondetection="true" />
-        <ParticleEmitter particle="flamethrowersmoke" particlespersecond="10" anglemin="60" anglemax="120" velocitymin="500" velocitymax="1000" />
+        <ParticleEmitter particle="flameburningcharacter" DistanceMin="0" DistanceMax="30" ParticlesPerSecond="200" AngleMin="60" AngleMax="120" VelocityMax="20"/>
+        <ParticleEmitter particle="smoke" particlespersecond="6" scalemin="4" scalemax="3" distancemin="10" distancemax="50" />
       </StatusEffect>
-	  <StatusEffect target="limb" disabledeltatime="true" stackable="false" delay="0.1" checkconditionalalways="false" comparison="and">
+	    <StatusEffect target="limb" disabledeltatime="true" stackable="false" delay="0.1" checkconditionalalways="false" comparison="and">
         <Conditional IsRagdolled="true" />
         <Conditional ishuman="true" />
         <ReduceAffliction identifier="hotfuel" amount="0.1" />
@@ -497,42 +497,99 @@
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,0,1,1" color="0,0,0,255" origin="0,0" />
   </Affliction>
   <Affliction identifier="vx_contamination" type="contamination" IsBuff="true" showiconthreshold="999" showinhealthscannerthreshold="0" maxstrength="10" limbspecific="false" indicatorlimb="Head">
-    <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="0">
-      <StatusEffect target="NearbyCharacters,Character" range="80" disabledeltatime="false" Interval="1.5" multiplyAfflictionsByMaxVitality="true">
+    <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="-0.02">
+      <StatusEffect target="NearbyCharacters,Character" range="80" disabledeltatime="true" Interval="1.0" multiplyAfflictionsByMaxVitality="true">
         <Affliction identifier="vx_contact_agent" amount="2" />
+      </StatusEffect>
+      <StatusEffect type="InWater" target="Character" disabledeltatime="false" Interval="1.0">
+        <ReduceAfflictionAffliction identifier="vx_contamination" amount="2" />
       </StatusEffect>
     </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,0,1,1" color="0,0,0,255" origin="0,0" />
     <!--Chemical left on body when going through contaminated area-->
   </Affliction>
   <Affliction identifier="mustard_contamination" type="contamination" IsBuff="true" showiconthreshold="999" showinhealthscannerthreshold="0" maxstrength="10" limbspecific="false" indicatorlimb="Head">
-    <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="0">
+    <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="-0.02">
       <StatusEffect target="NearbyCharacters,Character" range="80" disabledeltatime="false" Interval="1.5" multiplyAfflictionsByMaxVitality="true">
         <Affliction identifier="mustard_contact_agent" amount="2" />
+      </StatusEffect>
+      <StatusEffect type="InWater" target="Character" disabledeltatime="false" Interval="1.0">
+        <ReduceAfflictionAffliction identifier="mustard_contamination" amount="2" />
       </StatusEffect>
     </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,0,1,1" color="0,0,0,255" origin="0,0" />
     <!--Chemical left on body when going through contaminated area-->
   </Affliction>
   <Affliction identifier="anthrax_contamination" type="contamination" IsBuff="true" showiconthreshold="999" showinhealthscannerthreshold="0" maxstrength="10" limbspecific="false" indicatorlimb="Head">
-    <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="0">
+    <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="-0.02">
       <StatusEffect target="NearbyCharacters,Character" range="80" disabledeltatime="false" Interval="1.5" multiplyAfflictionsByMaxVitality="true">
         <Affliction identifier="anthrax_contact_agent" amount="0.5" />
 		    <Affliction identifier="anthrax_air_agent" amount="0.5" />
+      </StatusEffect>
+      <StatusEffect type="InWater" target="Character" disabledeltatime="false" Interval="1.0">
+        <ReduceAfflictionAffliction identifier="anthrax_contamination" amount="2" />
       </StatusEffect>
     </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,0,1,1" color="0,0,0,255" origin="0,0" />
     <!--bioagent left on body when going through contaminated area-->
   </Affliction>
   <Affliction identifier="radiological_contamination" type="contamination" IsBuff="true" showiconthreshold="999" showinhealthscannerthreshold="0" maxstrength="10" limbspecific="false" indicatorlimb="Head">
-    <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="0">
+    <Effect minstrength="0" maxstrength="10" maxvitalitydecrease="0" strengthchange="-0.3">
       <StatusEffect target="NearbyCharacters,Character" range="80" disabledeltatime="false" Interval="5" multiplyAfflictionsByMaxVitality="true">
-        <!--<Affliction identifier="radiation_contact_agent" amount="30" />-->
+        <Affliction identifier="radiationsickness" amount="8" />
+        <Affliction identifier="burn" amount="5" />
+      </StatusEffect>
+      <StatusEffect type="InWater" target="Character" disabledeltatime="false" Interval="1.0">
+        <ReduceAfflictionAffliction identifier="radiological_contamination" amount="2" />
       </StatusEffect>
     </Effect>
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,0,1,1" color="0,0,0,255" origin="0,0" />
     <!--radiological material left on body when going through contaminated area-->
   </Affliction>
+  <Affliction identifier="fixfoamcovered" type="contamination" showiconthreshold="0" showinhealthscannerthreshold="0" maxstrength="45" limbspecific="false" indicatorlimb="Torso">
+    <Effect minstrength="0" maxstrength="5" maxvitalitydecrease="0" strengthchange="0" resistancefor="damage" minresistance="0.4" maxresistance="0.4">
+      <StatusEffect target="Character" SpeedMultiplier="0.9" setvalue="true"/>
+      <StatusEffect target="Character" disabledeltatime="true" interval="1">
+        <Conditional InWater="eq True" />
+        <ReduceAffliction identifier="fixfoamcovered" amount="1" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="5" maxstrength="15" maxvitalitydecrease="0" strengthchange="0" resistancefor="damage" minresistance="0.4" maxresistance="0.4">
+      <StatusEffect target="Character" SpeedMultiplier="0.7" PressureProtection="3000" setvalue="true"/>
+      <StatusEffect target="Character" disabledeltatime="true" interval="1">
+        <Conditional InWater="eq True" />
+        <ReduceAffliction identifier="fixfoamcovered" amount="1" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="15" maxstrength="30" maxvitalitydecrease="0" strengthchange="0" resistancefor="damage" minresistance="0.4" maxresistance="0.4">
+      <StatusEffect target="Character" SpeedMultiplier="0.5" PressureProtection="4000" setvalue="true"/>
+      <StatusEffect target="Character" disabledeltatime="true" interval="1">
+        <Conditional InWater="eq True" />
+        <ReduceAffliction identifier="fixfoamcovered" amount="1" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="30" maxstrength="45" maxvitalitydecrease="0" strengthchange="0" resistancefor="damage" minresistance="0.8" maxresistance="0.8">
+      <StatusEffect target="Character" SpeedMultiplier="0.0" PressureProtection="8000" setvalue="true"/>
+      <StatusEffect target="Character" disabledeltatime="true" interval="1">
+        <Conditional InWater="eq True" />
+        <ReduceAffliction identifier="fixfoamcovered" amount="1" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,0,1,1" color="0,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction identifier="firefoamcovered" type="contamination" showiconthreshold="0" showinhealthscannerthreshold="0" maxstrength="60" limbspecific="false" indicatorlimb="Torso">
+    <Effect minstrength="0" maxstrength="60" maxvitalitydecrease="0" strengthchange="-1" resistancefor="Burning" minresistance="99999.0" maxresistance="99999.0">
+      <StatusEffect target="Character" disabledeltatime="true" interval="1">
+        <Affliction identifier="acidburn" amount="0.1"/>
+      </StatusEffect>
+      <StatusEffect target="Character" disabledeltatime="true" interval="1">
+        <Conditional InWater="eq True" />
+        <ReduceAffliction identifier="firefoamcovered" amount="10"/>
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,0,1,1" color="0,0,0,255" origin="0,0" />
+  </Affliction>
+
 
   <!--Symptoms.these will not be cured using stab directly, but can be supressed. It should be supressed as soon as possible-->
   <Affliction identifier="respiratoryarrest_poisonsource" type="poison" IsBuff="false" showiconthreshold="999" showinhealthscannerthreshold="0" maxstrength="50" limbspecific="false" indicatorlimb="Torso">

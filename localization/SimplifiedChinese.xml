@@ -210,8 +210,6 @@
   <afflictionname.skinburn_biosource>感染性皮肤水肿</afflictionname.skinburn_biosource>
   <afflictionname.neurologicaldisorder_poisonsource>中毒性神经紊乱</afflictionname.neurologicaldisorder_poisonsource>
   <afflictionname.unconscious_poisonsource>中毒性失能</afflictionname.unconscious_poisonsource>
-  <afflictionname.vx_contamination>VX神经毒剂沾染</afflictionname.vx_contamination>
-  <afflictionname.mustard_contamination>芥子糜烂毒剂沾染</afflictionname.mustard_contamination>
   <afflictionname.mountedguns>架设式武器</afflictionname.mountedguns>
   <afflictionname.brokenarrow_alert_agent>不祥之兆</afflictionname.brokenarrow_alert_agent>
   <afflictionname.anthrax_displayer>炭疽杆菌感染</afflictionname.anthrax_displayer>
@@ -582,4 +580,18 @@
   <missionname.cargoSapphire_3>武器原料运输</missionname.cargoSapphire_3>
   <missiondescription.cargoSapphire_3>[location2]的工作人员找到你，希望你能将一些危险武器原料从[location1]偷偷运送到[location2]。\n \n \n什么时候钛也成违禁品了？</missiondescription.cargoSapphire_3>
 
+
+  <afflictionname.vx_contamination>VX神经毒剂沾染</afflictionname.vx_contamination>
+  <afflictionname.mustard_contamination>芥子糜烂毒剂沾染</afflictionname.mustard_contamination>
+  <afflictionname.anthrax_contamination>炭疽杆菌残留</afflictionname.anthrax_contamination>
+  <afflictionname.radiological_contamination>放射性残留</afflictionname.radiological_contamination>
+  <afflictionname.fixfoamcovered>固化泡沫附着</afflictionname.fixfoamcovered>
+  <afflictionname.firefoamcovered>腐蚀性灭火剂附着</afflictionname.firefoamcovered>
+
+  <afflictiondescription.vx_contamination>你身上附着了一些VX神经毒剂，快去水里洗掉</afflictiondescription.vx_contamination>
+  <afflictiondescription.mustard_contamination>你身上附着了一些芥子糜烂毒剂，快去水里洗掉</afflictiondescription.mustard_contamination>
+  <afflictiondescription.anthrax_contamination>你身上附着了一些炭疽杆菌，快去水里洗掉</afflictiondescription.anthrax_contamination>
+  <afflictiondescription.radiological_contamination>你身上有一些放射性物质，快去水里洗掉</afflictiondescription.radiological_contamination>
+  <afflictiondescription.fixfoamcovered>你身上附着了一些固化泡沫 \n超过5可以抵抗3000m水压 \n超过15可以抵抗4000m水压 \n超过30可以抵抗8000m水压 \n可以在水里洗掉</afflictiondescription.fixfoamcovered>
+  <afflictiondescription.firefoamcovered>你身上附着了一些酸性灭火剂，你不再会被点燃，可以在水里洗掉或等他自行消失</afflictiondescription.firefoamcovered>
 </infotexts>

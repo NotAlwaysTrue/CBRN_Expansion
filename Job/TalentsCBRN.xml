@@ -340,6 +340,7 @@
     <AddedRecipe itemidentifier="tsm_miniammo_rev"/>
     <AddedRecipe itemidentifier="tsm_m61ammobox_rev"/>
     <AddedRecipe itemidentifier="tsm_58_201mag_rev"/>
+    <AddedRecipe itemidentifier="tsm_58_mag_rev"/>
     <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="6,3" sheetelementsize="128,128"/>
   </Talent>
   <Talent identifier="nanomachine">
