@@ -485,8 +485,8 @@
 	  <PeriodicEffect mininterval="1" maxinterval="1">
 	    <StatusEffect target="limb" disabledeltatime="true" stackable="true" duration="1" checkconditionalalways="false">
         <Conditional hotfuel="gt 1" />
-        <ParticleEmitter particle="flamethrower" particlespersecond="20" anglemin="60" anglemax="120" velocitymin="10" velocitymax="100" scalemin="0.1" scalemax="0.3" highqualitycollisiondetection="true" />
-        <ParticleEmitter particle="flamethrowersmoke" particlespersecond="10" anglemin="60" anglemax="120" velocitymin="500" velocitymax="1000" />
+        <ParticleEmitter particle="flameburningcharacter" DistanceMin="0" DistanceMax="30" ParticlesPerSecond="200" AngleMin="60" AngleMax="120" VelocityMax="20"/>
+        <ParticleEmitter particle="smoke" particlespersecond="6" scalemin="4" scalemax="3" distancemin="10" distancemax="50" />
       </StatusEffect>
 	    <StatusEffect target="limb" disabledeltatime="true" stackable="false" delay="0.1" checkconditionalalways="false" comparison="and">
         <Conditional IsRagdolled="true" />
@@ -578,7 +578,7 @@
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,0,1,1" color="0,0,0,255" origin="0,0" />
   </Affliction>
   <Affliction identifier="firefoamcovered" type="contamination" showiconthreshold="0" showinhealthscannerthreshold="0" maxstrength="60" limbspecific="false" indicatorlimb="Torso">
-    <Effect minstrength="0" maxstrength="60" maxvitalitydecrease="0" strengthchange="-1">
+    <Effect minstrength="0" maxstrength="60" maxvitalitydecrease="0" strengthchange="-1" resistancefor="Burning" minresistance="99999.0" maxresistance="99999.0">
       <StatusEffect target="Character" disabledeltatime="true" interval="1">
         <Affliction identifier="acidburn" amount="0.1"/>
       </StatusEffect>

@@ -188,8 +188,6 @@
   <afflictionname.skinburn_biosource>Skin Edema(Bio Source)</afflictionname.skinburn_biosource>
   <afflictionname.neurologicaldisorder_poisonsource>Neurological Disorder(Chemical Source)</afflictionname.neurologicaldisorder_poisonsource>
   <afflictionname.unconscious_poisonsource>Unconscious(Chemical Source)</afflictionname.unconscious_poisonsource>
-  <afflictionname.vx_contamination>VX Contamination</afflictionname.vx_contamination>
-  <afflictionname.mustard_contamination>Mustard Contamination</afflictionname.mustard_contamination>
   <afflictionname.mountedguns>Mounted</afflictionname.mountedguns>
   <afflictionname.brokenarrow_alert_agent>Bad Feeling</afflictionname.brokenarrow_alert_agent>
   <afflictionname.zombievirusinfection>Zombie Virus Infection</afflictionname.zombievirusinfection>
@@ -551,4 +549,18 @@
   <missiondescription.cargoSapphire_2>A officer from [location1], hope you can transport some mining explosives to[location2]\n \n \nWhen did mining explosives get banned?</missiondescription.cargoSapphire_2>
   <missionname.cargoSapphire_3>Weapon Material Transport</missionname.cargoSapphire_3>
   <missiondescription.cargoSapphire_3>Someone in [location2] hope you can smuggle some material from [location1] to [location2]</missiondescription.cargoSapphire_3>
+
+  <afflictionname.vx_contamination>VX Nerve agent Contamination</afflictionname.vx_contamination>
+  <afflictionname.mustard_contamination>Mustards Erosive agent Contamination</afflictionname.mustard_contamination>
+  <afflictionname.anthrax_contamination>Anthrax Contamination</afflictionname.anthrax_contamination>
+  <afflictionname.radiological_contamination>Radiological Contamination</afflictionname.radiological_contamination>
+  <afflictionname.fixfoamcovered>Fix Foam covered</afflictionname.fixfoamcovered>
+  <afflictionname.firefoamcovered>Acidic Fire Extinguishing agent Covered</afflictionname.firefoamcovered>
+
+  <afflictiondescription.vx_contamination>You have some nerve agent on your body, go wash it off!</afflictiondescription.vx_contamination>
+  <afflictiondescription.mustard_contamination>You have some erosive agent on your body, go wash it off!</afflictiondescription.mustard_contamination>
+  <afflictiondescription.anthrax_contamination>You have some anthrax on your body, go wash it off!</afflictiondescription.anthrax_contamination>
+  <afflictiondescription.radiological_contamination>You have some radiological material on your body, go wash it off!</afflictiondescription.radiological_contamination>
+  <afflictiondescription.fixfoamcovered>You have some Fix Foam on your body \nOver 5 will provide 3000m Pressure Protection \nOver 15 will provide 4000m Pressure Protection \nOver 30 will provide 8000m Pressure Protection \nCan be washed off in water</afflictiondescription.fixfoamcovered>
+  <afflictiondescription.firefoamcovered>You have Some fire extinguishing agent on your body. You will not burn. You may wash it or wait until it disappear itself.</afflictiondescription.firefoamcovered>
 </infotexts>
