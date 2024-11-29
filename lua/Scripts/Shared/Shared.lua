@@ -43,7 +43,6 @@ end
 
 KACBRN.ItemMethods.c4_stickcharge = function(item, usingCharacter)
     if usingCharacter == nil then return end
-    item.AddTag(usingCharacter)
     activeCharge[item] = usingCharacter
     local light = item.GetComponentString("LightComponent")
     light.isOn = true
