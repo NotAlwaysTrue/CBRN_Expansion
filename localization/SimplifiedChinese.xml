@@ -266,7 +266,7 @@
   <entityname.univ_heat_self>金属射流</entityname.univ_heat_self>
   <entityname.c4_stickcharge>C4塑胶炸药</entityname.c4_stickcharge>
   <entitydescription.c4_stickcharge>在工兵部队广泛配发的C4塑性炸药,出厂时带有特制胶水,可以轻而易举黏在它接触到的任何表面 \n每颗装C4 2千克,理论上可以轻而易举地炸开所有障碍 \n我已经安装好了西for</entitydescription.c4_stickcharge>
-  <entitydescription.m57detonator>工兵部队最常见的起爆器,能远程引爆2枚带有电子引信的爆炸物 \n使用说明:每巡回需要右键+左键启用一次,每次必须安装2枚C4,否则无法引爆.设置足量爆炸物后右键+左键即可起爆</entitydescription.m57detonator>
+  <entitydescription.m57detonator>工兵部队最常见的起爆器,能远程引爆带有电子引信的爆炸物 \n左键+右键以起爆所有已放置的炸药</entitydescription.m57detonator>
   <!--Missions-->
   <missionname.berra_fireeaters_outpostdestory>摧毁"噬火者"小队所在站点</missionname.berra_fireeaters_outpostdestory>
   <missiondescription.berra_fireeaters_outpostdestory>"噬火者"小队在此发现了一处生物泄露事件，销毁所有证据，摧毁整个站点</missiondescription.berra_fireeaters_outpostdestory>
@@ -360,10 +360,10 @@
   <entitydescription.berra_mk153_flechette>Mk153 SMAW所使用的箭霰弹 \n使用10枚长杆钨芯箭形弹替换了原本的爆炸弹头,使用动能而非化学能对抗你的敌人 \n无需担心会炸到你的队友 \n尾焰喷射距离:4.4m</entitydescription.berra_mk153_flechette>
   <entityname.weyi_chemdist_40>气溶胶榴弹</entityname.weyi_chemdist_40>
   <entitydescription.weyi_chemdist_40>通过制造气溶胶以散布生物武器的榴弹 \n内部填充了武器化恶疫病毒</entitydescription.weyi_chemdist_40>
-  <entityname.m57detonator_single>M57起爆器(单发)</entityname.m57detonator_single>
-  <entityname.m57detonator_triple>M57起爆器(三发)</entityname.m57detonator_triple>
-  <entitydescription.m57detonator_single>工兵部队最常见的起爆器,能远程引爆1枚带有电子引信的爆炸物 \n使用说明:每巡回需要右键+左键启用一次,每次必须安装1枚C4,否则无法引爆.设置足量爆炸物后右键+左键即可起爆</entitydescription.m57detonator_single>
-  <entitydescription.m57detonator_triple>工兵部队最常见的起爆器,能远程引爆3枚带有电子引信的爆炸物 \n使用说明:每巡回需要右键+左键启用一次,每次必须安装3枚C4,否则无法引爆.设置足量爆炸物后右键+左键即可起爆</entitydescription.m57detonator_triple> 
+  <entityname.m57detonator_single>M57起爆器(单发)</entityname.m57detonator_single><!--No longer used-->
+  <entityname.m57detonator_triple>M57起爆器(三发)</entityname.m57detonator_triple><!--No longer used-->
+  <entitydescription.m57detonator_single>工兵部队最常见的起爆器,能远程引爆1枚带有电子引信的爆炸物 \n使用说明:每巡回需要右键+左键启用一次,每次必须安装1枚C4,否则无法引爆.设置足量爆炸物后右键+左键即可起爆</entitydescription.m57detonator_single><!--No longer used-->
+  <entitydescription.m57detonator_triple>工兵部队最常见的起爆器,能远程引爆3枚带有电子引信的爆炸物 \n使用说明:每巡回需要右键+左键启用一次,每次必须安装3枚C4,否则无法引爆.设置足量爆炸物后右键+左键即可起爆</entitydescription.m57detonator_triple> <!--No longer used-->
   <entityname.weyicanister>密封容器</entityname.weyicanister>
   <entitydescription.weyicanister>使用高硬度玻璃和钢制造的密封容器 \n内部使用特殊药剂保存了武器化恶疫病毒 \n可以承受小强度撞击和子弹打击 \n此病毒可以将敌人转化为低攻击性人形怪物,具有范围传染能力</entitydescription.weyicanister>
   <entityname.weyi_chemdist_throwable>气溶胶手榴弹</entityname.weyi_chemdist_throwable>
@@ -448,7 +448,7 @@
   <talentvalue.berra_300FAL_M118LR>FAL弹匣 M118LR狙击弹</talentvalue.berra_300FAL_M118LR>
   <!--Changed in V3.5-->
   <entitydescription.berra_cbrn3>Berra Armory生产的耐打击防毒面具,可以与防毒面具过滤盒组合以过滤空气中的有毒有害物质,因其简单轻便易用而受到各势力的青睐 \n代价是一部分视野 \n是Berra TAC作战生化防御套装的一部分</entitydescription.berra_cbrn3>
-  <entityname.m57detonator>M57起爆器(双发)</entityname.m57detonator>
+  <entityname.m57detonator>M57起爆器</entityname.m57detonator>
   <damage>物理伤害</damage>
   <lights>照明</lights>
   
