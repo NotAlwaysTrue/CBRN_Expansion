@@ -1773,7 +1773,7 @@
         <sound file="Content/Items/Weapons/ExplosionDebris5.ogg" range="1000" />
       </StatusEffect>
     </Projectile>
-    <LightComponent range="50.0" lightcolor="255,0,0,255" powerconsumption="0" IsOn="false" characterusable="false">
+    <LightComponent range="50.0" lightcolor="0,255,0,255" powerconsumption="0" IsOn="false" characterusable="false">
       <sprite texture="Content/Items/Electricity/lightsprite.png" origin="0.5,0.5" />
       <StatusEffect type="Always" target="This" Voltage="1.0" Interval="1" setvalue="true"/>
     </LightComponent>
@@ -1790,34 +1790,6 @@
     <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="false">
       <RequiredSkill identifier="weapons" level="50" />
       <RequiredItem identifier="wificomponent" amount="1"/>
-    <RequiredItem tag="wire" amount="1"/>
-    </Fabricate>
-    <RangedWeapon />
-    <Holdable slots="Any,RightHand,LeftHand" controlpose="false" holdpos="40,0" handle1="-13,0" handle2="-13,0" msg="ItemMsgPickUpSelect" >
-      <StatusEffect type="OnUse" targettype="This" condition="-100" delay="0.01" disabledeltatime="true">
-          <sound file="%ModDir:3278494407%/Misc/Oggs/minus.ogg" type="OnUse" range="250.0" />
-        </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" disabledeltatime="true" OneShot="true" EventTargetTag="detonator" EventUserTag="demoexpert">
-        <TriggerEvent identifier="detonation_2" />
-      </StatusEffect>
-      <StatusEffect type="OnBroken" targettype="This" condition="100" delay="1" setvalue="true"/>
-    </Holdable>
-    <LightComponent range="20.0" lightcolor="255,0,0,255" powerconsumption="0" IsOn="false" characterusable="false">
-      <sprite texture="Content/Items/Electricity/lightsprite.png" origin="0.5,0.5" />
-      <StatusEffect type="Always" target="This" Voltage="1.0" Interval="1" setvalue="true"/>
-    </LightComponent>
-  </Item>
-  <Item identifier="m57detonator_single" category="Weapon" maxstacksize="4" maxstacksizecharacterinventory="1" cargocontaineridentifier="explosivecrate" tags="smallitem,remotedetonator" Scale="0.25" impactsoundtag="impact_metal_light">
-    <Upgrade gameversion="0.9.2.0" scale="0.5" />
-    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Explosives/M57_detonator.png" sourcerect="0,0,87,108" origin="0.5,0.5" />
-    <Sprite texture="%ModDir:3278494407%/Weapons/Explosives/M57_detonator.png" sourcerect="0,0,87,108" depth="0.55" origin="0.5,0.5" />
-    <Body width="87" height="108" density="30" />
-    <Deconstruct time="15">
-      <Item identifier="wificomponent"/>
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="50" />
-      <RequiredItem identifier="wificomponent" amount="1"/>
       <RequiredItem tag="wire" amount="1"/>
     </Fabricate>
     <RangedWeapon />
@@ -1825,43 +1797,8 @@
       <StatusEffect type="OnUse" targettype="This" condition="-100" delay="0.01" disabledeltatime="true">
         <sound file="%ModDir:3278494407%/Misc/Oggs/minus.ogg" type="OnUse" range="250.0" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" disabledeltatime="true" OneShot="true" EventTargetTag="detonator" EventUserTag="demoexpert">
-        <TriggerEvent identifier="detonation_1" />
-      </StatusEffect>
       <StatusEffect type="OnBroken" targettype="This" condition="100" delay="1" setvalue="true"/>
     </Holdable>
-    <LightComponent range="20.0" lightcolor="255,0,0,255" powerconsumption="0" IsOn="false" characterusable="false">
-      <sprite texture="Content/Items/Electricity/lightsprite.png" origin="0.5,0.5" />
-      <StatusEffect type="Always" target="This" Voltage="1.0" Interval="1" setvalue="true"/>
-    </LightComponent>
-  </Item>
-  <Item identifier="m57detonator_triple" category="Weapon" maxstacksize="4" maxstacksizecharacterinventory="1" cargocontaineridentifier="explosivecrate" tags="smallitem,remotedetonator" Scale="0.25" impactsoundtag="impact_metal_light">
-    <Upgrade gameversion="0.9.2.0" scale="0.5" />
-    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Explosives/M57_detonator.png" sourcerect="0,0,87,108" origin="0.5,0.5" />
-    <Sprite texture="%ModDir:3278494407%/Weapons/Explosives/M57_detonator.png" sourcerect="0,0,87,108" depth="0.55" origin="0.5,0.5" />
-    <Body width="87" height="108" density="30" />
-    <Deconstruct time="15">
-      <Item identifier="wificomponent"/>
-    </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="50" />
-      <RequiredItem identifier="wificomponent" amount="1"/>
-      <RequiredItem tag="wire" amount="1"/>
-    </Fabricate>
-    <RangedWeapon />
-    <Holdable slots="Any,RightHand,LeftHand" controlpose="false" holdpos="40,0" handle1="-13,0" handle2="-13,0" msg="ItemMsgPickUpSelect" >
-      <StatusEffect type="OnUse" targettype="This" condition="-100" delay="0.01" disabledeltatime="true">
-        <sound file="%ModDir:3278494407%/Misc/Oggs/minus.ogg" type="OnUse" range="250.0" />
-      </StatusEffect>
-      <StatusEffect type="OnUse" target="This,Character" disabledeltatime="true" OneShot="true" EventTargetTag="detonator" EventUserTag="demoexpert">
-        <TriggerEvent identifier="detonation_3" />
-      </StatusEffect>
-      <StatusEffect type="OnBroken" targettype="This" condition="100" delay="1" setvalue="true"/>
-    </Holdable>
-    <LightComponent range="20.0" lightcolor="255,0,0,255" powerconsumption="0" IsOn="false" characterusable="false">
-      <sprite texture="Content/Items/Electricity/lightsprite.png" origin="0.5,0.5" />
-      <StatusEffect type="Always" target="This" Voltage="1.0" Interval="1" setvalue="true"/>
-    </LightComponent>
   </Item>
   <Item identifier="sacabambaspis_he_impact" category="Weapon" tags="smallitem,weapon,throwknife,explosive" maxstacksize="6" maxstacksizecharacterinventory="2" scale="0.04" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_heavy" impacttolerance="7">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -3727,5 +3664,53 @@
         <Remove />
       </StatusEffect>
     </Holdable>
+  </Item>
+
+  <!--Abandoned-->
+  <Item identifier="m57detonator_single" category="Weapon" maxstacksize="4" maxstacksizecharacterinventory="1" cargocontaineridentifier="explosivecrate" tags="smallitem,remotedetonator" Scale="0.25" impactsoundtag="impact_metal_light" hideinmenus="true">
+    <Upgrade gameversion="0.9.2.0" scale="0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Explosives/M57_detonator.png" sourcerect="0,0,87,108" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Explosives/M57_detonator.png" sourcerect="0,0,87,108" depth="0.55" origin="0.5,0.5" />
+    <Body width="87" height="108" density="30" />
+    <Deconstruct time="15">
+      <Item identifier="wificomponent"/>
+    </Deconstruct>
+    <RangedWeapon />
+    <Holdable slots="Any,RightHand,LeftHand" controlpose="false" holdpos="40,0" handle1="-13,0" handle2="-13,0" msg="ItemMsgPickUpSelect" >
+      <StatusEffect type="OnUse" targettype="This" condition="-100" delay="0.01" disabledeltatime="true">
+        <sound file="%ModDir:3278494407%/Misc/Oggs/minus.ogg" type="OnUse" range="250.0" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This,Character" disabledeltatime="true" OneShot="true" EventTargetTag="detonator" EventUserTag="demoexpert">
+        <TriggerEvent identifier="detonation_1" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" targettype="This" condition="100" delay="1" setvalue="true"/>
+    </Holdable>
+    <LightComponent range="20.0" lightcolor="255,0,0,255" powerconsumption="0" IsOn="false" characterusable="false">
+      <sprite texture="Content/Items/Electricity/lightsprite.png" origin="0.5,0.5" />
+      <StatusEffect type="Always" target="This" Voltage="1.0" Interval="1" setvalue="true"/>
+    </LightComponent>
+  </Item>
+  <Item identifier="m57detonator_triple" category="Weapon" maxstacksize="4" maxstacksizecharacterinventory="1" cargocontaineridentifier="explosivecrate" tags="smallitem,remotedetonator" Scale="0.25" impactsoundtag="impact_metal_light" hideinmenus="true">
+    <Upgrade gameversion="0.9.2.0" scale="0.5" />
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Explosives/M57_detonator.png" sourcerect="0,0,87,108" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Explosives/M57_detonator.png" sourcerect="0,0,87,108" depth="0.55" origin="0.5,0.5" />
+    <Body width="87" height="108" density="30" />
+    <Deconstruct time="15">
+      <Item identifier="wificomponent"/>
+    </Deconstruct>
+    <RangedWeapon />
+    <Holdable slots="Any,RightHand,LeftHand" controlpose="false" holdpos="40,0" handle1="-13,0" handle2="-13,0" msg="ItemMsgPickUpSelect" >
+      <StatusEffect type="OnUse" targettype="This" condition="-100" delay="0.01" disabledeltatime="true">
+        <sound file="%ModDir:3278494407%/Misc/Oggs/minus.ogg" type="OnUse" range="250.0" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This,Character" disabledeltatime="true" OneShot="true" EventTargetTag="detonator" EventUserTag="demoexpert">
+        <TriggerEvent identifier="detonation_3" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" targettype="This" condition="100" delay="1" setvalue="true"/>
+    </Holdable>
+    <LightComponent range="20.0" lightcolor="255,0,0,255" powerconsumption="0" IsOn="false" characterusable="false">
+      <sprite texture="Content/Items/Electricity/lightsprite.png" origin="0.5,0.5" />
+      <StatusEffect type="Always" target="This" Voltage="1.0" Interval="1" setvalue="true"/>
+    </LightComponent>
   </Item>
 </Items>
