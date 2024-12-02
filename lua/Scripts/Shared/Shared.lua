@@ -36,7 +36,7 @@ JZ_CBRN.ItemMethods.m57detonator = function(item, usingCharacter)
     for i,v in pairs(activeCharge) do
         if v == usingCharacter then
             i.Condition = 0
-            table.remove(activeCharge, i)
+            activeCharge[i] = nil
         end
     end
 end
