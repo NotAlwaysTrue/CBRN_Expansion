@@ -1742,20 +1742,20 @@
     <RangedWeapon reload="1" weapondamagemodifier="1.0" holdtrigger="false" barrelpos="50,0"/>
     <Projectile characterusable="true" DoesStick="true" LaunchImpulse="4.5">
       <StatusEffect type="OnBroken" target="This">
-        <Explosion range="300.0" ballastfloradamage="400" structuredamage="800" itemdamage="5000" force="20" severlimbsprobability="2" debris="true" decal="explosion" decalsize="0.75" penetration="1">
+        <Explosion range="300.0" ballastfloradamage="400" structuredamage="800" itemdamage="5000" force="20" severlimbsprobability="2" penetration="1">
           <Affliction identifier="explosiondamage" strength="250" />
           <Affliction identifier="lacerations" strength="60" dividebylimbcount="false"/>
           <Affliction identifier="bleeding" strength="40" />
           <Affliction identifier="burn" strength="20" dividebylimbcount="false"/>
           <Affliction identifier="stun" strength="10" />
         </Explosion>
-        <Explosion range="400.0" ballastfloradamage="300" structuredamage="400" itemdamage="2500" force="10" debris="true" penetration="1">
+        <Explosion range="400.0" ballastfloradamage="300" structuredamage="400" itemdamage="2500" force="10" penetration="1">
           <Affliction identifier="lacerations" strength="60" dividebylimbcount="false"/>
           <Affliction identifier="bleeding" strength="20" />
           <Affliction identifier="burn" strength="10" probability="0.8" dividebylimbcount="false"/>
           <Affliction identifier="stun" strength="3" />
         </Explosion>
-        <Explosion range="650.0" force="5" debris="true" penetration="0.8">
+        <Explosion range="650.0" force="5" debris="true" debris="true" decal="explosion" decalsize="0.75"  penetration="0.8">
           <Affliction identifier="lacerations" strength="40" />
           <Affliction identifier="bleeding" strength="15" />
           <Affliction identifier="burn" strength="5" probability="0.3" />
