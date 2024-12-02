@@ -22,16 +22,16 @@ end)
 Hook.Add("item.use", "Charge.itemused", function(item, usingCharacter)
     if item == nil or  usingCharacter == nil then return end
     local identifier = item.Prefab.Identifier.Value
-    local methodtorun = KACBRN.ItemMethods[identifier]
+    local methodtorun = JZ_CBRN.ItemMethods[identifier]
     if(methodtorun~=nil) then 
         methodtorun(item, usingCharacter)
         return
     end
 end)
 
-KACBRN.ItemMethods = {}
+JZ_CBRN.ItemMethods = {}
 
-KACBRN.ItemMethods.m57detonator = function(item, usingCharacter)
+JZ_CBRN.ItemMethods.m57detonator = function(item, usingCharacter)
     if usingCharacter == nil or activeCharge == nil then return end
     for i,v in pairs(activeCharge) do
         if v == usingCharacter then
@@ -41,7 +41,7 @@ KACBRN.ItemMethods.m57detonator = function(item, usingCharacter)
     end
 end
 
-KACBRN.ItemMethods.c4_stickcharge = function(item, usingCharacter)
+JZ_CBRN.ItemMethods.c4_stickcharge = function(item, usingCharacter)
     if usingCharacter == nil then return end
     activeCharge[item] = usingCharacter
     local light = item.GetComponentString("LightComponent")

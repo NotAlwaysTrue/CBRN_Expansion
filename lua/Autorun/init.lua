@@ -1,4 +1,4 @@
-KACBRN = {}
-KACBRN.Path = table.pack(...)[1]
+JZ_CBRN = {}
+JZ_CBRN.Path = table.pack(...)[1]
 
-dofile(KACBRN.Path.."/lua/Scripts/Shared/Shared.lua")
+dofile(JZ_CBRN.Path.."/lua/Scripts/Shared/Shared.lua")
