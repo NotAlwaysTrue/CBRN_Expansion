@@ -1360,13 +1360,13 @@
     <Sprite texture="%ModDir:3278494407%/Weapons/Other/M107Mag.png" depth="0.56" sourcerect="0,0,810,851" origin="0.5,0.5" />
     <Body width="100" height="200" density="50" />
     <Deconstruct time="18">
-      <Item identifier="tsm_yx_crystallography" amount="1" />
+      <Item identifier="tsm_triton_bag" amount="1" />
       <Item identifier="titanium" amount="3" />
       <Item identifier="steel" amount="1" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="35" displayname="m33" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="tsm_yx_crystallography" amount="1" />
+      <RequiredItem identifier="tsm_triton_bags" amount="1" />
       <RequiredItem identifier="titanium" amount="6" />
       <RequiredItem identifier="magnesium" amount="6" />
       <RequiredItem identifier="flashpowder" amount="3"/>
@@ -1411,13 +1411,13 @@
     <Sprite texture="%ModDir:3278494407%/Weapons/Other/M107Mag.png" depth="0.56" sourcerect="0,0,810,851" origin="0.5,0.5" />
     <Body width="100" height="200" density="50" />
     <Deconstruct time="18">
-      <Item identifier="tsm_yx_crystallography" amount="2" />
+      <Item identifier="tsm_tr" amount="2" />
       <Item identifier="titanium" amount="3" />
       <Item identifier="steel" amount="1" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="35" displayname="m1022" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="tsm_yx_crystallography" amount="2" />
+      <RequiredItem identifier="tsm_triton_bag" amount="2" />
       <RequiredItem identifier="titanium" amount="6" />
       <RequiredItem identifier="magnesium" amount="6" />
       <RequiredItem identifier="flashpowder" amount="3"/>
@@ -1428,7 +1428,7 @@
       <RequiredItem identifier="magnesium" amount="6" />
       <RequiredItem identifier="flashpowder" amount="3" />
       <RequiredItem identifier="titanium" amount="6" />
-      <RequiredItem identifier="tsm_yx_crystallography" amount="2" />
+      <RequiredItem identifier="tsm_triton_bag" amount="2" />
       <RequiredItem tag="M107Mag" mincondition="0.0" maxcondition="0.0" usecondition="false" />
     </Fabricate>
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="berra_50bmg_m1022" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
