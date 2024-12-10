@@ -1360,13 +1360,13 @@
     <Sprite texture="%ModDir:3278494407%/Weapons/Other/M107Mag.png" depth="0.56" sourcerect="0,0,810,851" origin="0.5,0.5" />
     <Body width="100" height="200" density="50" />
     <Deconstruct time="18">
-      <Item identifier="tsm_triton_bag" amount="1" />
+      <Item identifier="tsm_triton_bag" outcondition="0.5" />
       <Item identifier="titanium" amount="3" />
       <Item identifier="steel" amount="1" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="35" displayname="m33" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="tsm_triton_bags" amount="1" />
+      <RequiredItem identifier="tsm_triton_bags" mincondition="0.5" />
       <RequiredItem identifier="titanium" amount="6" />
       <RequiredItem identifier="magnesium" amount="6" />
       <RequiredItem identifier="flashpowder" amount="3"/>
@@ -1411,13 +1411,13 @@
     <Sprite texture="%ModDir:3278494407%/Weapons/Other/M107Mag.png" depth="0.56" sourcerect="0,0,810,851" origin="0.5,0.5" />
     <Body width="100" height="200" density="50" />
     <Deconstruct time="18">
-      <Item identifier="tsm_tr" amount="2" />
+      <Item identifier="tsm_triton_bag" amount="1" />
       <Item identifier="titanium" amount="3" />
       <Item identifier="steel" amount="1" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="35" displayname="m1022" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="tsm_triton_bag" amount="2" />
+      <RequiredItem identifier="tsm_triton_bag" amount="1" />
       <RequiredItem identifier="titanium" amount="6" />
       <RequiredItem identifier="magnesium" amount="6" />
       <RequiredItem identifier="flashpowder" amount="3"/>
@@ -1813,7 +1813,7 @@
         <Affliction identifier="gunshotwound" strength="9" />
         <Affliction identifier="lacerations" strength="9" />
         <Affliction identifier="burn" strength="9" />
-        <Affliction identifier="triton_7L" strength="8" />
+        <Affliction identifier="triton_7L" strength="12" />
         <Affliction identifier="bleedingnonstop" strength="10" />
         <Affliction identifier="stun" strength="1" probability="0.5" />
       </Attack>
@@ -2426,6 +2426,7 @@
         <Affliction identifier="lacerations" strength="80" />
         <Affliction identifier="bleeding" strength="60" />
         <Affliction identifier="stun" strength="0.8" />
+        <Affliction identifier="triton_7L" strength="8" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
         <Conditional entitytype="eq Structure" />
@@ -2449,6 +2450,7 @@
         <Affliction identifier="gunshotwound" strength="70" />
         <Affliction identifier="lacerations" strength="70" />
         <Affliction identifier="bleeding" strength="50" />
+        <Affliction identifier="triton_7L" strength="10" />
       <Affliction identifier="stun" strength="0.8" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">

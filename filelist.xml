@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="九州武库·CBRN拓展" modversion="4.2.0" corepackage="False" steamworkshopid="3278494407" gameversion="1.6.17.0">
+<contentpackage name="九州武库·CBRN拓展" modversion="4.2.1" corepackage="False" steamworkshopid="3278494407" gameversion="1.6.19.1">
   <Item file="%ModDir%/gear.xml" />
   <Item file="%ModDir%/material.xml" />
   <Item file="%ModDir%/shell.xml" />
@@ -24,4 +24,5 @@
   <Afflictions file="%ModDir%/Job/AfflictionsCBRN.xml" />
   <Talents file="%ModDir%/Job/TalentsCBRN.xml" />
   <TalentTrees file="%ModDir%/Job/TalentTrees.xml" />
+  <Character file="%ModDir%/Characters/Cbrn_mech/Cbrn_mech.xml" />
 </contentpackage>

@@ -1755,7 +1755,7 @@
           <Affliction identifier="burn" strength="10" probability="0.8" dividebylimbcount="false"/>
           <Affliction identifier="stun" strength="3" />
         </Explosion>
-        <Explosion range="650.0" force="5" debris="true" debris="true" decal="explosion" decalsize="0.75"  penetration="0.8">
+        <Explosion range="650.0" force="5" debris="true" decal="explosion" decalsize="0.75"  penetration="0.8">
           <Affliction identifier="lacerations" strength="40" />
           <Affliction identifier="bleeding" strength="15" />
           <Affliction identifier="burn" strength="5" probability="0.3" />
@@ -1926,6 +1926,23 @@
       <Containable items="smallitem,mediumitem,tsm_danger_item" excludeditems="mobilecontainer,weapon" />
     </ItemContainer>
     <aitarget sightrange="1000" fadeouttime="6" />
+  </Item>
+  <Item identifier="UAV_Controller" category="Equipment" maxstacksize="5" maxstacksizecharacterinventory="1" Tags="smallitem" scale="0.01" impactsoundtag="impact_soft">
+    <InventoryIcon texture="%ModDir:3278494407%/weapons/BRUH/controller.png" sourcerect="0,0,2000,2000" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/weapons/BRUH/controller.png" sourcerect="0,0,2000,2000" depth="0.6" origin="0.5,0.5" />
+    <Body width="45" height="45" density="11" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="10" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
+      <StatusEffect type="OnUse" target="This">
+        <Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
+        <Sound file="Content/Items/Medical/Bandage2.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="UseTarget">
+        <LuaHook name="Drone.control" />
+      </StatusEffect>
+    </MeleeWeapon>
+    <!--<CustomInterface canbeselected="true" drawhudwhenequipped="true">
+      <GuiFrame relativesize="0.5,0.5" anchor="CenterLeft" pivot="CenterLeft" style="ItemUI" />
+    </CustomInterface>-->
   </Item>
 
   <Item identifier="extinguishgrenade_exec" scale="1.0" tags="fireextinguisher" requireaimtouse="false" noninteractable="true" hideinmenus="true">
