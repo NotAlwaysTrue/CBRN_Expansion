@@ -1366,7 +1366,7 @@
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="35" displayname="m33" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="tsm_triton_bags" mincondition="0.5" />
+      <RequiredItem identifier="tsm_triton_bag" mincondition="0.5" />
       <RequiredItem identifier="titanium" amount="6" />
       <RequiredItem identifier="magnesium" amount="6" />
       <RequiredItem identifier="flashpowder" amount="3"/>
