@@ -2406,17 +2406,12 @@
     <Sprite texture="%ModDir:3278494407%/Weapons/Magazine/coalition.png" depth="0.56" sourcerect="2444,228,49,72" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Body width="49" height="72" density="50" />
-    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="65_spec_rev" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-      <Containable items="65_spec_rev" />
-      <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-        <SpawnItem identifiers="65_spec_rev" spawnposition="ThisInventory" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <StatusEffect type="Always" target="This" OneSHot="true">
+        <SpawnItem identifiers="lm_68_51_mag_rev" spawnposition="This" />
+        <Remove />
       </StatusEffect>
     </ItemContainer>
-    <Deconstruct time="5">
-      <Item identifier="plastic" outcondition="1" />
-      <Item identifier="tsm_triton_bag" mincondition="0.9" />
-      <Item identifier="flashpowder" mincondition="0.9" />
-    </Deconstruct>
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
