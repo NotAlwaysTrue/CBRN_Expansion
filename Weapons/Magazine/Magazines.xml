@@ -399,39 +399,6 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item identifier="lm_65_mag_rev" subcategory="tsm_modifiedmagazines" scale="0.23" category="weapon" maxstacksize="6" cargocontaineridentifier="tsm_hazardous_container" linkable="true" tags="lm_magazine,smallitem,65mag,lm_gjzd,magazine,65ammo,rev_mag" impactsoundtag="impact_metal_light" health="30">
-    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Magazine/coalition.png" sourcerect="2444,228,49,72" origin="0.5,0.5" />
-    <Sprite texture="%ModDir:3278494407%/Weapons/Magazine/coalition.png" depth="0.56" sourcerect="2444,228,49,72" origin="0.5,0.5" />
-    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <Body width="49" height="72" density="50" />
-    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="65_spec_rev" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-      <Containable items="65_spec_rev" />
-      <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-        <SpawnItem identifiers="65_spec_rev" spawnposition="ThisInventory" />
-      </StatusEffect>
-    </ItemContainer>
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="5" requiresrecipe="true" amount="2">
-      <RequiredItem identifier="plastic" amount="2" />
-      <RequiredItem identifier="flashpowder" amount="4" />
-      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="3" />
-      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="3" />
-      <RequiredItem identifier="tsm_triton_bag" amount="1" />
-    </Fabricate>
-    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="6">
-      <RequiredItem tag="65mag" mincondition="0.0" maxcondition="0.0" />
-      <RequiredItem identifier="flashpowder" amount="2" />
-      <RequiredItem tag="munition_core" description="fabricationdescription.munition_core" amount="1" />
-      <RequiredItem tag="advmunition_jacket" description="fabricationdescription.advmunition_jacket" amount="1" />
-      <RequiredItem identifier="tsm_triton_bag" amount="1" />
-    </Fabricate>
-    <Deconstruct time="5">
-      <Item identifier="plastic" outcondition="1" />
-      <Item identifier="tsm_triton_bag" mincondition="0.9" />
-      <Item identifier="flashpowder" mincondition="0.9" />
-    </Deconstruct>
-    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
-    <Upgrade gameversion="0.10.0.0" scale="0.5" />
-  </Item>
   <Item identifier="lm_68_51_mag_rev" subcategory="tsm_modifiedmagazines" scale="0.23" category="weapon" maxstacksize="6" cargocontaineridentifier="tsm_hazardous_container" linkable="true" tags="lm_magazine,smallitem,lm_gjzd,68_51mag,magazine,rev_mag" impactsoundtag="impact_metal_light" health="30">
     <InventoryIcon texture="%ModDir:3278494407%/Weapons/Magazine/coalition.png" sourcerect="1944,229,46,78" origin="0.5,0.5" />
     <Sprite texture="%ModDir:3278494407%/Weapons/Magazine/coalition.png" depth="0.56" sourcerect="1944,229,46,78" origin="0.5,0.5" />
@@ -533,10 +500,10 @@
     <Sprite texture="%ModDir:3278494407%/Weapons/Magazine/coalition.png" depth="0.545" sourcerect="2365,431,125,193" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <Body width="125" height="193" density="50" />
-    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="65_spec_rev" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-      <Containable items="65_spec_rev" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="lm_68_51_mag_rev" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="lm_68_51_mag_rev" />
       <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
-        <SpawnItem identifiers="65_spec_rev" spawnposition="ThisInventory" />
+        <SpawnItem identifiers="lm_68_51_mag_rev" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="6" requiresrecipe="true" amount="1">
@@ -1338,7 +1305,7 @@
     <Holdable canBeCombined="true" slots="RightHand+LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item identifier="berra_M107Mag_mk211mod0" subcategory="Berra Group" category="weapon" maxstacksize="4" maxstacksizecharacterinventory="2" cargocontaineridentifier="metalcrate" scale="0.025" tags="smallitem,M107Mag" impactsoundtag="impact_metal_light" hideinmenus="true">
+  <Item identifier="berra_M107Mag_mk211mod0" subcategory="Berra Group" category="weapon" maxstacksize="4" maxstacksizecharacterinventory="2" cargocontaineridentifier="metalcrate" scale="0.025" tags="smallitem,M107Mag,tsm_127ammo_mag" impactsoundtag="impact_metal_light" hideinmenus="true">
     <PreferredContainer primary="secarmcab" secondary="armcab" />
     <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" spawnprobability="0.1" />
     <InventoryIcon texture="%ModDir:3278494407%/Weapons/Other/M107Mag.png" sourcerect="0,0,810,851" origin="0.5,0.5" />
@@ -1355,7 +1322,7 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item identifier="berra_M107Mag_m33" subcategory="Berra Group" category="weapon" maxstacksize="4" maxstacksizecharacterinventory="2" cargocontaineridentifier="metalcrate" scale="0.025" tags="smallitem,M107Mag" impactsoundtag="impact_metal_light">
+  <Item identifier="berra_M107Mag_m33" subcategory="Berra Group" category="weapon" maxstacksize="4" maxstacksizecharacterinventory="2" cargocontaineridentifier="metalcrate" scale="0.025" tags="smallitem,M107Mag,tsm_127ammo_mag" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir:3278494407%/Weapons/Other/M107Mag.png" sourcerect="0,0,810,851" origin="0.5,0.5" />
     <Sprite texture="%ModDir:3278494407%/Weapons/Other/M107Mag.png" depth="0.56" sourcerect="0,0,810,851" origin="0.5,0.5" />
     <Body width="100" height="200" density="50" />
@@ -1389,7 +1356,7 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item identifier="berra_M107Mag_m903" subcategory="Berra Group" category="weapon" maxstacksize="4" maxstacksizecharacterinventory="2" cargocontaineridentifier="metalcrate" scale="0.025" tags="smallitem,M107Mag" impactsoundtag="impact_metal_light" hideinmenus="true">
+  <Item identifier="berra_M107Mag_m903" subcategory="Berra Group" category="weapon" maxstacksize="4" maxstacksizecharacterinventory="2" cargocontaineridentifier="metalcrate" scale="0.025" tags="smallitem,M107Mag,tsm_127ammo_mag" impactsoundtag="impact_metal_light" hideinmenus="true">
     <PreferredContainer primary="secarmcab" secondary="armcab" />
     <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" spawnprobability="0.03" />
     <InventoryIcon texture="%ModDir:3278494407%/Weapons/Other/M107Mag.png" sourcerect="0,0,810,851" origin="0.5,0.5" />
@@ -1406,7 +1373,7 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item identifier="berra_M107Mag_m1022" subcategory="Berra Group" category="weapon" maxstacksize="4" maxstacksizecharacterinventory="2" cargocontaineridentifier="metalcrate" scale="0.025" tags="smallitem,M107Mag" impactsoundtag="impact_metal_light">
+  <Item identifier="berra_M107Mag_m1022" subcategory="Berra Group" category="weapon" maxstacksize="4" maxstacksizecharacterinventory="2" cargocontaineridentifier="metalcrate" scale="0.025" tags="smallitem,M107Mag,tsm_127ammo_mag" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir:3278494407%/Weapons/Other/M107Mag.png" sourcerect="0,0,810,851" origin="0.5,0.5" />
     <Sprite texture="%ModDir:3278494407%/Weapons/Other/M107Mag.png" depth="0.56" sourcerect="0,0,810,851" origin="0.5,0.5" />
     <Body width="100" height="200" density="50" />
@@ -1618,39 +1585,6 @@
         <Affliction identifier="triton_7L" strength="7" />
         <Affliction identifier="bleeding" strength="4" probability="0.5" />
         <Affliction identifier="bleedingnonstop" strength="4" probability="0.3" />
-        <Affliction identifier="stun" strength="0.1" probability="0.1" />
-      </Attack>
-      <StatusEffect type="OnImpact" target="UseTarget">
-        <Explosion range="30.0" showEffects="false" penetration="1">
-          <Affliction identifier="triton_7L" strength="6" dividebylimbcount="true"/>
-        </Explosion>
-        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
-        <ParticleEmitter particle="tsm_bg_explosion" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="5" velocitymin="-10" velocitymax="-100" scalemin="0.1" scalemax="0.2" />
-      </StatusEffect>
-      <StatusEffect type="OnImpact" target="UseTarget">
-        <Conditional entitytype="eq Structure" />
-        <Conditional hastag="eq door" />
-        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-      </StatusEffect>
-      <StatusEffect type="OnNotContained" target="This" stackable="false">
-        <Remove />
-      </StatusEffect>
-    </Projectile>
-    <Upgrade gameversion="0.10.0.0" scale="0.5" />
-  </Item>
-  <Item identifier="65_spec_rev" category="Misc" interactthroughwalls="true" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
-    <InventoryIcon texture="%ModDir:2953749635%/weapons/bullet.png" sourcerect="33,127,54,10" origin="0.5,0.5" />
-    <Sprite texture="%ModDir:2953749635%/weapons/bullet.png" sourcerect="33,127,54,10" depth="0.55" origin="0.5,0.5" />
-    <Body width="40" height="14" density="40" />
-    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-    <Projectile characterusable="false" hitscan="true" maxtargetstohit="2">
-      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="140,85,200,175" scalemultiplier="1,0.6" />
-      <Attack structuredamage="0" targetforce="2" itemdamage="12" penetration="0.37" severlimbsprobability="1">
-        <Affliction identifier="gunshotwound" strength="11" />
-        <Affliction identifier="gunshotwound" strength="4" probability="0.3" />
-        <Affliction identifier="bleedingnonstop" strength="5" />
-        <Affliction identifier="bleedingnonstop" strength="3" probability="0.3" />
-        <Affliction identifier="triton_7L" strength="7" />
         <Affliction identifier="stun" strength="0.1" probability="0.1" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
@@ -2465,4 +2399,58 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
 
+
+<!--Removed-->
+  <Item identifier="lm_65_mag_rev" subcategory="tsm_modifiedmagazines" scale="0.23" category="weapon" maxstacksize="6" cargocontaineridentifier="tsm_hazardous_container" linkable="true" tags="lm_magazine,smallitem,65mag,lm_gjzd,magazine,65ammo,rev_mag" impactsoundtag="impact_metal_light" health="30">
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Magazine/coalition.png" sourcerect="2444,228,49,72" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Magazine/coalition.png" depth="0.56" sourcerect="2444,228,49,72" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="49" height="72" density="50" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="65_spec_rev" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="65_spec_rev" />
+      <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+        <SpawnItem identifiers="65_spec_rev" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <Deconstruct time="5">
+      <Item identifier="plastic" outcondition="1" />
+      <Item identifier="tsm_triton_bag" mincondition="0.9" />
+      <Item identifier="flashpowder" mincondition="0.9" />
+    </Deconstruct>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item identifier="65_spec_rev" category="Misc" interactthroughwalls="true" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+    <InventoryIcon texture="%ModDir:2953749635%/weapons/bullet.png" sourcerect="33,127,54,10" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:2953749635%/weapons/bullet.png" sourcerect="33,127,54,10" depth="0.55" origin="0.5,0.5" />
+    <Body width="40" height="14" density="40" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" hitscan="true" maxtargetstohit="2">
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="140,85,200,175" scalemultiplier="1,0.6" />
+      <Attack structuredamage="0" targetforce="2" itemdamage="12" penetration="0.37" severlimbsprobability="1">
+        <Affliction identifier="gunshotwound" strength="11" />
+        <Affliction identifier="gunshotwound" strength="4" probability="0.3" />
+        <Affliction identifier="bleedingnonstop" strength="5" />
+        <Affliction identifier="bleedingnonstop" strength="3" probability="0.3" />
+        <Affliction identifier="triton_7L" strength="7" />
+        <Affliction identifier="stun" strength="0.1" probability="0.1" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Explosion range="30.0" showEffects="false" penetration="1">
+          <Affliction identifier="triton_7L" strength="6" dividebylimbcount="true"/>
+        </Explosion>
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+        <ParticleEmitter particle="tsm_bg_explosion" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="5" velocitymin="-10" velocitymax="-100" scalemin="0.1" scalemax="0.2" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false">
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
 </Items>
