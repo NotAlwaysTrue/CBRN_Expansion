@@ -280,6 +280,8 @@
     <AddedRecipe itemidentifier="berra_m107a1_fa"/>
     <AddedRecipe itemidentifier="berra_M107Mag_m33"/>
     <AddedRecipe itemidentifier="berra_M107Mag_m1022"/>
+    <AddedRecipe itemidentifier="berra_M107Mag_m903"/>
+    <AddedRecipe itemidentifier="berra_M107Mag_mk211mod0"/>
     <AddedRecipe itemidentifier="berra_STANAG_50beowulf_ap"/>
     <AddedRecipe itemidentifier="berra_STANAG_50beowulf_fr_ext"/>
   </Talent>
