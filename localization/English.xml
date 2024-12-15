@@ -245,7 +245,7 @@
   
   <entityname.c4_stickcharge>C4 Plastic Charge</entityname.c4_stickcharge>
   <entitydescription.c4_stickcharge>The most common C4 plastic charge in sapper units,come with special glue,can easily stick to anything it touchs \nEach cell contains 2KG explosive.Theoretically it can blow up even the thickest barrier.</entitydescription.c4_stickcharge>
-  <entitydescription.m57detonator>The most common detonator in sapper units, can detonate 2 explosives with electronic fuse. \nField tutorial:RMB+LMB at the start of each round,no less or more than 2 explosives at a time or malfunction. After setting enough charges,RMB+LMB to detonate</entitydescription.m57detonator>
+  <entitydescription.m57detonator>The most common detonator in sapper units, can detonate explosives with electronic fuse. \nTutorial: Throw as many C4 as you want, then hold this and RMB+LMB to detonate.</entitydescription.m57detonator>
   <!--Missions-->
   <missionname.berra_fireeaters_outpostdestory>Destory "Fire Eater" Stations</missionname.berra_fireeaters_outpostdestory>
   <missiondescription.berra_fireeaters_outpostdestory>"Fire Eater" found a bio leak in this outpost.Destory everything here</missiondescription.berra_fireeaters_outpostdestory>
@@ -318,7 +318,7 @@
   <entityname.berra_m107a1_fa>BerraARM M107A1 Mod1 Anti-Materila Rifle "Blender"</entityname.berra_m107a1_fa>
   <entitydescription.berra_m107a1_fa>A .50BMG auto Anti-Material Rifle. High Power, Full AUTO \nBlend your enemies</entitydescription.berra_m107a1_fa>
   <entityname.berra_M107Mag_mk211mod0>M82/M107 Magazine</entityname.berra_M107Mag_mk211mod0>
-  <entitydescription.berra_M107Mag_mk211mod0>M107 Standard 10 round magazine, can adapt to M82A1 AMR \nMk211 Mod0 HEIAP \nPossible llegal issue when using against human, if you really care</entitydescription.berra_M107Mag_mk211mod0>
+  <entitydescription.berra_M107Mag_mk211mod0>M107 Standard 10 round magazine, can adapt to M82A1 AMR \nMk211 Mod0 APHEI \nPossible llegal issue when using against human, if you really care</entitydescription.berra_M107Mag_mk211mod0>
   <entityname.berra_M107Mag_m33>M82/M107 Magazine</entityname.berra_M107Mag_m33>
   <entitydescription.berra_M107Mag_m33>M107 Standard 10 round magazine, can adapt to M82A1 AMR \nM33 FMJ \nThe cheapest and most common .50BMG ammo</entitydescription.berra_M107Mag_m33>
   <entityname.berra_M107Mag_m903>M82/M107 Magazine</entityname.berra_M107Mag_m903>
@@ -418,7 +418,7 @@
   <talentvalue.berra_300FAL_M118LR>FAL Magazine M118LR</talentvalue.berra_300FAL_M118LR>
   
   <!--Changed in V3.5-->
-  <entityname.m57detonator>M57 Detonator(Double)</entityname.m57detonator>
+  <entityname.m57detonator>M57 Detonator</entityname.m57detonator>
   
   <lights>Light</lights>
 
@@ -563,4 +563,11 @@
   <afflictiondescription.radiological_contamination>You have some radiological material on your body, go wash it off!</afflictiondescription.radiological_contamination>
   <afflictiondescription.fixfoamcovered>You have some Fix Foam on your body \nOver 5 will provide 3000m Pressure Protection \nOver 15 will provide 4000m Pressure Protection \nOver 30 will provide 8000m Pressure Protection \nCan be washed off in water</afflictiondescription.fixfoamcovered>
   <afflictiondescription.firefoamcovered>You have Some fire extinguishing agent on your body. You will not burn. You may wash it or wait until it disappear itself.</afflictiondescription.firefoamcovered>
+
+  <entityname.craftable_cbrn_main>CBRN Crew Spawnner</entityname.craftable_cbrn_main>
+  <entitydescription.craftable_cbrn_main>My CBRN Force is endless! And your troops are suffering casualties every moment! \nEvil NotAlwaysTrue's bioprinting technology!</entitydescription.craftable_cbrn_main>
+  <displayname.m903>[itemname] M903 SLAP</displayname.m903>
+  <displayname.m903_recycle>[itemname] M903 SLAP Reload</displayname.m903_recycle>
+  <displayname.mk211>[itemname] Mk211 Mod.0 APHEI</displayname.mk211>
+  <displayname.mk211_recycle>[itemname] Mk211 Mod.0 APHEI Reload</displayname.mk211_recycle>
 </infotexts>
