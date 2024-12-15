@@ -266,7 +266,7 @@
   <entityname.univ_heat_self>金属射流</entityname.univ_heat_self>
   <entityname.c4_stickcharge>C4塑胶炸药</entityname.c4_stickcharge>
   <entitydescription.c4_stickcharge>在工兵部队广泛配发的C4塑性炸药,出厂时带有特制胶水,可以轻而易举黏在它接触到的任何表面 \n每颗装C4 2千克,理论上可以轻而易举地炸开所有障碍 \n我已经安装好了西for</entitydescription.c4_stickcharge>
-  <entitydescription.m57detonator>工兵部队最常见的起爆器,能远程引爆带有电子引信的爆炸物 \n左键+右键以起爆所有已放置的炸药</entitydescription.m57detonator>
+  <entitydescription.m57detonator>工兵部队最常见的起爆器,能远程引爆带有电子引信的爆炸物 \n使用教程: 丢出任意数量的炸药, 手持起爆器, 右键+左键起爆炸药</entitydescription.m57detonator>
   <!--Missions-->
   <missionname.berra_fireeaters_outpostdestory>摧毁"噬火者"小队所在站点</missionname.berra_fireeaters_outpostdestory>
   <missiondescription.berra_fireeaters_outpostdestory>"噬火者"小队在此发现了一处生物泄露事件，销毁所有证据，摧毁整个站点</missiondescription.berra_fireeaters_outpostdestory>
@@ -594,4 +594,13 @@
   <afflictiondescription.radiological_contamination>你身上有一些放射性物质，快去水里洗掉</afflictiondescription.radiological_contamination>
   <afflictiondescription.fixfoamcovered>你身上附着了一些固化泡沫 \n超过5可以抵抗3000m水压 \n超过15可以抵抗4000m水压 \n超过30可以抵抗8000m水压 \n可以在水里洗掉</afflictiondescription.fixfoamcovered>
   <afflictiondescription.firefoamcovered>你身上附着了一些酸性灭火剂，你不再会被点燃，可以在水里洗掉或等他自行消失</afflictiondescription.firefoamcovered>
+
+
+
+  <entityname.craftable_cbrn_main>CBRN职业船员生成器</entityname.craftable_cbrn_main>
+  <entitydescription.craftable_cbrn_main>我的CBRN技术员无穷无尽! 而你的部队每时每刻都在伤亡! 这还有什么悬念? \n鞋饿NotAlwaysTrue的生物打印技术!</entitydescription.craftable_cbrn_main>
+  <displayname.m903>[itemname] M903 SLAP</displayname.m903>
+  <displayname.m903_recycle>[itemname] M903 SLAP 装填</displayname.m903_recycle>
+  <displayname.mk211>[itemname] Mk211 Mod.0 高爆穿甲燃烧弹</displayname.mk211>
+  <displayname.mk211_recycle>[itemname] Mk211 Mod.0 高爆穿甲燃烧弹 装填</displayname.mk211_recycle>
 </infotexts>

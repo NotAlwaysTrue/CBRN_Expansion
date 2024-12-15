@@ -43,7 +43,7 @@
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.2" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.95" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.0" probabilitymultiplier="0.0" damagesound="" deflectprojectiles="true" />
-      <StatusEffect type="OnWearing" target="Character" tag="cbrnsuit" SpeedMultiplier="0.8" LowPassMultiplier="0.2" OxygenAvailable="1500.0" ObstructVisionAmount="0.45" setvalue="true">
+      <StatusEffect type="OnWearing" target="Character" tag="cbrnsuit" SpeedMultiplier="0.8" LowPassMultiplier="0.3" OxygenAvailable="1500.0" ObstructVisionAmount="0.45" setvalue="true">
         <Conditional IsLocalPlayer="True"/>
         <Sound file="%ModDir:3278494407%/Jobgear/Under_Masks/maskedbreath.ogg" volume="0.5" loop="true" />
       </StatusEffect>
@@ -101,7 +101,7 @@
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.3" probabilitymultiplier="0.2" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="acidburn" damagemultiplier="0.0" probabilitymultiplier="0.0" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.25" probabilitymultiplier="0.3" deflectprojectiles="true" />
-      <StatusEffect type="OnWearing" target="Character" tag="cbrnsuit" disabledeltatime="true" LowPassMultiplier="0.05" SpeedMultiplier="1.1" setvalue="true">
+      <StatusEffect type="OnWearing" target="Character" tag="cbrnsuit" disabledeltatime="true" LowPassMultiplier="0.1" SpeedMultiplier="1.1" setvalue="true">
         <Affliction identifier="CBRNsuit" amount="10" />
         <Affliction identifier="exosuited" amount="10" />
         <Affliction identifier="eyidefense" amount="10" />
@@ -167,7 +167,7 @@
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="triton_7L" damagemultiplier="0.5" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.6" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.0" probabilitymultiplier="0.0" deflectprojectiles="true" />
-      <StatusEffect type="OnWearing" target="Character" tag="cbrnsuit" SpeedMultiplier="0.7" PressureProtection="125000.0" OxygenAvailable="2000" disabledeltatime="true" LowPassMultiplier="0.3" setvalue="true">
+      <StatusEffect type="OnWearing" target="Character" tag="cbrnsuit" SpeedMultiplier="0.7" PressureProtection="125000.0" OxygenAvailable="2000" disabledeltatime="true" LowPassMultiplier="0.5" setvalue="true">
         <Affliction identifier="CBRNsuit" amount="10" />
         <Affliction identifier="CCR" amount="10" />
         <Affliction identifier="eyidefense" amount="10" />
@@ -649,10 +649,10 @@
       <RequiredItems items="univ_backblast_exc" type="Contained" />
       <ParticleEmitter particle="flamethrower" particleamount="1" velocitymin="1800" velocitymax="1800" highqualitycollisiondetection="true" />
       <StatusEffect type="OnUse" target="UseTarget" disabledeltatime="true">
-        <Affliction identifier="burn" amount="2" dividebylimbcount="true" />
-        <Affliction identifier="lacerations" amount="1" dividebylimbcount="true" />
-        <Affliction identifier="bleeding" amount="0.2" dividebylimbcount="true" />
-        <Affliction identifier="stun" amount="5" />
+        <Affliction identifier="burn" amount="5" />
+        <Affliction identifier="lacerations" amount="6" />
+        <Affliction identifier="bleeding" amount="3" />
+        <Affliction identifier="stun" amount="6" />
       </StatusEffect>
       <StatusEffect type="OnUse" targettype="Contained" targets="univ_backblast_exc" condition="-100" disabledeltatime="true" />
     </RepairTool>
@@ -705,10 +705,10 @@
       <RequiredItems items="univ_backblast_exc" type="Contained" />
       <ParticleEmitter particle="flamethrower" particleamount="1" velocitymin="1800" velocitymax="1800" highqualitycollisiondetection="true" />
       <StatusEffect type="OnUse" target="UseTarget" disabledeltatime="true">
-        <Affliction identifier="burn" amount="2" dividebylimbcount="true" />
-        <Affliction identifier="lacerations" amount="1" dividebylimbcount="true" />
-        <Affliction identifier="bleeding" amount="0.2" dividebylimbcount="true" />
-        <Affliction identifier="stun" amount="5" />
+        <Affliction identifier="burn" amount="5" />
+        <Affliction identifier="lacerations" amount="6" />
+        <Affliction identifier="bleeding" amount="3" />
+        <Affliction identifier="stun" amount="6" />
       </StatusEffect>
       <StatusEffect type="OnUse" targettype="Contained" targets="univ_backblast_exc" condition="-100" disabledeltatime="true" />
     </RepairTool>
@@ -761,10 +761,10 @@
       <RequiredItems items="univ_backblast_exc" type="Contained" />
       <ParticleEmitter particle="flamethrower" particleamount="1" velocitymin="1800" velocitymax="1800" highqualitycollisiondetection="true" />
       <StatusEffect type="OnUse" target="UseTarget" disabledeltatime="true">
-        <Affliction identifier="burn" amount="2" dividebylimbcount="true" />
-        <Affliction identifier="lacerations" amount="1" dividebylimbcount="true" />
-        <Affliction identifier="bleeding" amount="0.2" dividebylimbcount="true" />
-        <Affliction identifier="stun" amount="5" />
+        <Affliction identifier="burn" amount="5" />
+        <Affliction identifier="lacerations" amount="6" />
+        <Affliction identifier="bleeding" amount="3" />
+        <Affliction identifier="stun" amount="6" />
       </StatusEffect>
       <StatusEffect type="OnUse" targettype="Contained" targets="univ_backblast_exc" condition="-100" disabledeltatime="true" />
     </RepairTool>
@@ -816,11 +816,10 @@
       <RequiredItems items="univ_backblast_exc" type="Contained" />
       <ParticleEmitter particle="flamethrower" particleamount="1" velocitymin="1800" velocitymax="1800" highqualitycollisiondetection="true" />
       <StatusEffect type="OnUse" target="UseTarget" disabledeltatime="true">
-        <!--an alternative is to use "limb" as target, which will lead to less damage-->
-        <Affliction identifier="burn" amount="2" dividebylimbcount="true" />
-        <Affliction identifier="lacerations" amount="1" dividebylimbcount="true" />
-        <Affliction identifier="bleeding" amount="1" dividebylimbcount="true" />
-        <Affliction identifier="stun" amount="5" />
+        <Affliction identifier="burn" amount="5" />
+        <Affliction identifier="lacerations" amount="6" />
+        <Affliction identifier="bleeding" amount="3" />
+        <Affliction identifier="stun" amount="6" />
       </StatusEffect>
       <StatusEffect type="OnUse" targettype="Contained" targets="univ_backblast_exc" condition="-100" disabledeltatime="true" />
     </RepairTool>
@@ -875,15 +874,15 @@
       </Propulsion>
       <RequiredItems items="mk153_shell" type="Contained" target="This" msg="ItemMsgAmmoRequired" />
     </RangedWeapon>
-    <RepairTool RepairMultiple="true" usablein="Both" range="480" barrelpos="100,-10" repairmultiple="true" RepairMultipleWalls="false" repairthroughwalls="false" repairthroughholes="true" combatpriority="0" spread="30" BarrelRotation="180" TargetForce="25">
+    <RepairTool RepairMultiple="true" usablein="Both" range="500" barrelpos="100,-10" repairmultiple="true" RepairMultipleWalls="false" repairthroughwalls="false" repairthroughholes="true" combatpriority="0" spread="30" BarrelRotation="180" TargetForce="25">
       <RequiredItems items="mk153_shell" type="Contained" />
       <ParticleEmitter particle="flamethrower" particleamount="1" velocitymin="1800" velocitymax="1800" highqualitycollisiondetection="true" />
       <StatusEffect type="OnUse" target="UseTarget" disabledeltatime="true">
         <!--an alternative is to use "limb" as target, which will lead to less damage-->
-        <Affliction identifier="burn" amount="4" dividebylimbcount="true" />
-        <Affliction identifier="lacerations" amount="3" dividebylimbcount="true" />
-        <Affliction identifier="bleeding" amount="2" dividebylimbcount="true" />
-        <Affliction identifier="stun" amount="5" />
+        <Affliction identifier="burn" amount="8"/>
+        <Affliction identifier="lacerations" amount="4"/>
+        <Affliction identifier="bleeding" amount="4" />
+        <Affliction identifier="stun" amount="8" />
       </StatusEffect>
       <StatusEffect type="OnUse" targettype="Contained" targets="mk153_shell" condition="-100" disabledeltatime="true" />
     </RepairTool>
@@ -1141,7 +1140,7 @@
     </Quality>
     <SkillRequirementHint identifier="weapons" level="100" />
   </Item>
-  <Item identifier="berra_m82a1" subcategory="Berra Group" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,accept50bmg" scale="0.09" impactsoundtag="impact_metal_light">
+  <Item identifier="berra_m82a1" subcategory="Berra Group" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,accept50bmg" scale="0.1" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir:3278494407%/Weapons/Other/M82A1_29.png" sourcerect="0,0,1920,476" origin="0.5,0.5" />
     <Sprite texture="%ModDir:3278494407%/Weapons/Other/M82A1_29.png" sourcerect="0,0,1920,476" depth="0.55" origin="0.5,0.5" />
     <Body width="1920" height="250" density="52" />
@@ -1187,7 +1186,7 @@
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
       <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
-      <Containable items="M107Mag" hide="false" itempos="-25,-1" depth="0.55" />
+      <Containable items="M107Mag" hide="false" itempos="-28,-1" depth="0.55" />
     </ItemContainer>
     <SkillRequirementHint identifier="weapons" level="95" />
     <aitarget sightrange="2500" soundrange="4500" fadeouttime="6" />
@@ -1196,7 +1195,7 @@
       <QualityStat stattype="FirepowerMultiplier" value="0.2" />
     </Quality>
   </Item>
-  <Item identifier="berra_m107a1" subcategory="Berra Group" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,accept50bmg" scale="0.09" impactsoundtag="impact_metal_light">
+  <Item identifier="berra_m107a1" subcategory="Berra Group" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,accept50bmg" scale="0.1" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir:3278494407%/Weapons/Other/M107A1_20.png" sourcerect="0,0,1646,302" origin="0.5,0.5" />
     <Sprite texture="%ModDir:3278494407%/Weapons/Other/M107A1_20.png" sourcerect="0,0,1646,302" depth="0.55" origin="0.5,0.5" />
     <Body width="1450" height="200" density="52" />
@@ -1243,7 +1242,7 @@
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
       <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
-      <Containable items="M107Mag" hide="false" itempos="-13,-4" depth="0.55" />
+      <Containable items="M107Mag" hide="false" itempos="-14,-4" depth="0.55" />
     </ItemContainer>
     <SkillRequirementHint identifier="weapons" level="90" />
     <aitarget sightrange="2500" soundrange="4500" fadeouttime="6" />
@@ -1252,7 +1251,7 @@
       <QualityStat stattype="FirepowerMultiplier" value="0.2" />
     </Quality>
   </Item>
-  <Item identifier="berra_m107a1_fa" subcategory="Berra Group" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,accept50bmg" scale="0.09" impactsoundtag="impact_metal_light" hideinmenus="true">
+  <Item identifier="berra_m107a1_fa" subcategory="Berra Group" category="Weapon" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,accept50bmg" scale="0.1" impactsoundtag="impact_metal_light" hideinmenus="true">
     <InventoryIcon texture="%ModDir:3278494407%/Weapons/Other/M107A1_20_FA.png" sourcerect="0,0,1646,302" origin="0.5,0.5" />
     <Sprite texture="%ModDir:3278494407%/Weapons/Other/M107A1_20_FA.png" sourcerect="0,0,1646,302" depth="0.55" origin="0.5,0.5" />
     <Body width="1450" height="200" density="52" />
@@ -1299,7 +1298,7 @@
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
       <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
-      <Containable items="M107Mag" hide="false" itempos="-13,-4" depth="0.55" />
+      <Containable items="M107Mag" hide="false" itempos="-14,-4" depth="0.55" />
     </ItemContainer>
     <SkillRequirementHint identifier="weapons" level="100" />
     <aitarget sightrange="2500" soundrange="4500" fadeouttime="6" />
@@ -1763,9 +1762,9 @@
         </Explosion>
         <Explosion range="800.0" force="3" debris="true" penetration="0.5">
           <Affliction identifier="lacerations" strength="15"/>
-            <Affliction identifier="bleeding" strength="10" />
-            <Affliction identifier="burn" strength="2" probability="0.1"/>
-            <Affliction identifier="stun" strength="0.2" />
+          <Affliction identifier="bleeding" strength="10" />
+          <Affliction identifier="burn" strength="2" probability="0.1"/>
+          <Affliction identifier="stun" strength="0.2" />
         </Explosion>
         <Remove />
       </StatusEffect>
@@ -1927,7 +1926,7 @@
     </ItemContainer>
     <aitarget sightrange="1000" fadeouttime="6" />
   </Item>
-  <Item identifier="UAV_Controller" category="Equipment" maxstacksize="5" maxstacksizecharacterinventory="1" Tags="smallitem" scale="0.01" impactsoundtag="impact_soft">
+  <Item identifier="UAV_Controller" category="Equipment" maxstacksize="5" maxstacksizecharacterinventory="1" Tags="smallitem" scale="0.01" impactsoundtag="impact_soft" hideinmenus="true">
     <InventoryIcon texture="%ModDir:3278494407%/weapons/BRUH/controller.png" sourcerect="0,0,2000,2000" origin="0.5,0.5" />
     <Sprite texture="%ModDir:3278494407%/weapons/BRUH/controller.png" sourcerect="0,0,2000,2000" depth="0.6" origin="0.5,0.5" />
     <Body width="45" height="45" density="11" />
@@ -3630,7 +3629,7 @@
   </Item>
 
   <!--Craftable CBRN-->
-  <Item identifier="craftable_cbrn_col" category="Misc" cargocontaineridentifier="metalcrate" allowasextracargo="true" Tags="smallitem,spawner" maxstacksize="8" maxstacksizecharacterinventory="1" scale="0.5" hideinmenus="false" impactsoundtag="impact_soft">
+  <Item identifier="craftable_cbrn_main" category="Misc" cargocontaineridentifier="metalcrate" allowasextracargo="true" Tags="smallitem,spawner" maxstacksize="8" maxstacksizecharacterinventory="1" scale="0.5" hideinmenus="false" impactsoundtag="impact_soft">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="448,132,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="6,363,124,67" depth="0.6" origin="0.5,0.5" />
     <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
@@ -3640,42 +3639,13 @@
       <RequiredSkill identifier="weapons" level="35"/>
       <RequiredSkill identifier="medical" level="35"/>
       <RequiredSkill identifier="helm" level="5"/>
-      <RequiredItem identifier="standard_cbrnsuit_gray" />
-      <RequiredItem identifier="berra_cbrn3"/>
-      <RequiredItem identifier="tsm_lm_m16"/>
-      <RequiredItem identifier="lm_556_mag" amount="5"/>
-      <RequiredItem identifier="carbon" amount="12" />
+      <RequiredItem identifier="carbon" amount="18" />
+      <RequiredItem identifier="calcium" amount="5" />
     </Fabricate>
     <Holdable slots="Any,RightHand,LeftHand" aimable="false" aimpos="25,25" handle1="5,0" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnSecondaryUse" target="This" Condition="-100.0" disabledeltatime="true"/>
       <StatusEffect type="OnSecondaryUse" target="This" disabledeltatime="true">
-        <TriggerEvent identifier="craftablecbrn_col" />
-      </StatusEffect>
-      <StatusEffect type="OnBroken" target="This" disabledeltatime="true">
-        <Remove />
-      </StatusEffect>
-    </Holdable>
-  </Item>
-  <Item identifier="craftable_cbrn_sep" category="Misc" cargocontaineridentifier="metalcrate" allowasextracargo="true" Tags="smallitem,spawner" maxstacksize="8" maxstacksizecharacterinventory="1" scale="0.5" hideinmenus="false" impactsoundtag="impact_soft">
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="448,132,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="6,363,124,67" depth="0.6" origin="0.5,0.5" />
-    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
-    <Fabricate suitablefabricators="fabricator" requiredtime="20">
-      <RequiredSkill identifier="mechanical" level="15"/>
-      <RequiredSkill identifier="electrical" level="15"/>
-      <RequiredSkill identifier="weapons" level="35"/>
-      <RequiredSkill identifier="medical" level="35"/>
-      <RequiredSkill identifier="helm" level="5"/>
-      <RequiredItem identifier="standard_cbrnsuit_gray" />
-      <RequiredItem identifier="berra_cbrn3"/>
-      <RequiredItem identifier="tsm_fkj_ak74"/>
-      <RequiredItem identifier="fkj_545_mag" amount="5"/>
-      <RequiredItem identifier="carbon" amount="12" />
-    </Fabricate>
-    <Holdable slots="Any,RightHand,LeftHand" aimable="false" aimpos="25,25" handle1="5,0" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
-      <StatusEffect type="OnSecondaryUse" target="This" Condition="-100.0" disabledeltatime="true"/>
-      <StatusEffect type="OnSecondaryUse" target="This" disabledeltatime="true">
-        <TriggerEvent identifier="craftablecbrn_sep" />
+        <TriggerEvent identifier="craftablecbrn_main" />
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This" disabledeltatime="true">
         <Remove />
@@ -3700,6 +3670,10 @@
       <StatusEffect type="OnUse" target="This,Character" disabledeltatime="true" OneShot="true" EventTargetTag="detonator" EventUserTag="demoexpert">
         <TriggerEvent identifier="detonation_1" />
       </StatusEffect>
+      <StatusEffect type="Always" target="This" OneSHot="true">
+        <SpawnItem identifiers="m57detonator" spawnposition="This" />
+        <Remove />
+      </StatusEffect>
       <StatusEffect type="OnBroken" targettype="This" condition="100" delay="1" setvalue="true"/>
     </Holdable>
     <LightComponent range="20.0" lightcolor="255,0,0,255" powerconsumption="0" IsOn="false" characterusable="false">
@@ -3723,11 +3697,43 @@
       <StatusEffect type="OnUse" target="This,Character" disabledeltatime="true" OneShot="true" EventTargetTag="detonator" EventUserTag="demoexpert">
         <TriggerEvent identifier="detonation_3" />
       </StatusEffect>
+      <StatusEffect type="Always" target="This" OneSHot="true">
+        <SpawnItem identifiers="m57detonator" spawnposition="This" />
+        <Remove />
+      </StatusEffect>
       <StatusEffect type="OnBroken" targettype="This" condition="100" delay="1" setvalue="true"/>
     </Holdable>
     <LightComponent range="20.0" lightcolor="255,0,0,255" powerconsumption="0" IsOn="false" characterusable="false">
       <sprite texture="Content/Items/Electricity/lightsprite.png" origin="0.5,0.5" />
       <StatusEffect type="Always" target="This" Voltage="1.0" Interval="1" setvalue="true"/>
     </LightComponent>
+  </Item>
+  <Item identifier="craftable_cbrn_sep" category="Misc" cargocontaineridentifier="metalcrate" allowasextracargo="true" Tags="smallitem,spawner" maxstacksize="8" maxstacksizecharacterinventory="1" scale="0.5" impactsoundtag="impact_soft" hideinmenus="true">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="448,132,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="6,363,124,67" depth="0.6" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Holdable slots="Any,RightHand,LeftHand" aimable="false" aimpos="25,25" handle1="5,0" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnSecondaryUse" target="This" Condition="-100.0" disabledeltatime="true"/>
+      <StatusEffect type="OnSecondaryUse" target="This" disabledeltatime="true">
+        <TriggerEvent identifier="craftablecbrn_sep" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" disabledeltatime="true">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item identifier="craftable_cbrn_col" category="Misc" cargocontaineridentifier="metalcrate" allowasextracargo="true" Tags="smallitem,spawner" maxstacksize="8" maxstacksizecharacterinventory="1" scale="0.5" impactsoundtag="impact_soft" hideinmenus="true">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="448,132,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="6,363,124,67" depth="0.6" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Holdable slots="Any,RightHand,LeftHand" aimable="false" aimpos="25,25" handle1="5,0" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnSecondaryUse" target="This" Condition="-100.0" disabledeltatime="true"/>
+      <StatusEffect type="OnSecondaryUse" target="This" disabledeltatime="true">
+        <TriggerEvent identifier="craftablecbrn_col" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" disabledeltatime="true">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
   </Item>
 </Items>

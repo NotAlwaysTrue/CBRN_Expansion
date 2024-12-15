@@ -23,7 +23,7 @@ Hook.Add("character.death", "Charge.resetOndead", function(character)  --Reset o
     end
 end)
 
-Hook.Add("item.use", "Charge.itemused", function(item, usingCharacter)
+Hook.Add("item.use", "CBRN_Charge.itemused", function(item, usingCharacter)
     if item == nil or  usingCharacter == nil then return end
     local identifier = item.Prefab.Identifier.Value
     local methodtorun = JZ_CBRN.ItemMethods[identifier]

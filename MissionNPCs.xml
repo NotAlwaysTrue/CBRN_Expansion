@@ -280,5 +280,9 @@
         <Item identifier="fkj_545_mag" />
       </ItemSet>
     </npc>
+    <npc identifier="cbrnguy_main" job="cbrn_guy" behavior="Patrol" >
+      <ItemSet commonness="1">
+      </ItemSet>
+    </npc>
   </npcset>
 </npcsets>

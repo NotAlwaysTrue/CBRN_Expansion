@@ -66,8 +66,8 @@
       </Price>
       <Fabricate suitablefabricators="medicalfabricator" requiredtime="120">
         <RequiredSkill identifier="medical" level="85" />
-        <RequiredItem identifier="tsm_sulphur" amount="4"/>
-      <RequiredItem identifier="oxygentank" amount="2" usecondition="true" />
+        <RequiredItem identifier="tsm_sulphur" amount="2"/>
+        <RequiredItem identifier="oxygentank" mincondition="1" usecondition="true" />
       </Fabricate>
       <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="320,768,64,64" origin="0.5,0.5" />
       <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="346,452,33,60" depth="0.6" origin="0.5,0.5" />
@@ -162,15 +162,14 @@
       </Holdable>
       <SkillRequirementHint identifier="medical" level="70" />
     </MedicalKits>
-    <Item name="奇迹之海氚核心罐" identifier="tsm_triton_bag" category="Misc" Tags="smallitem,traitormissionitem,tsm_danger_item" maxstacksize="3" scale="0.15" impacttolerance="4" impactsoundtag="impact_metal_heavy">
+    <Item name="奇迹之海氚核心罐" identifier="tsm_triton_bag" category="Misc" Tags="smallitem,traitormissionitem,tsm_danger_item" maxstacksize="2" scale="0.25" isdangerous="true" impacttolerance="4" impactsoundtag="impact_metal_heavy">
       <PreferredContainer secondary="wreckmedcab,wrecksecarmcab" minamount="1" maxamount="1" spawnprobability="0.01" />
-      <InventoryIcon texture="%ModDir%/minerals+items+tools/items.png" sourcerect="1181,356,181,195" />
-      <Sprite texture="%ModDir%/minerals+items+tools/items.png" sourcerect="1181,356,181,195" depth="0.55" origin="0.5,0.5" />
+      <InventoryIcon texture="%ModDir:2953749635%/minerals+items+tools/items.png" sourcerect="1181,356,181,195" />
+      <Sprite texture="%ModDir:2953749635%/minerals+items+tools/items.png" sourcerect="1181,356,181,195" depth="0.55" origin="0.5,0.5" />
       <Body width="150" height="160" density="5" />
       <ItemComponent>
-        <StatusEffect target="This" type="OnImpact">
+        <StatusEffect target="This" type="OnImpact" condition="-50">
           <sound file="Content/Sounds/Damage/StructureBlunt1.ogg" range="500" frequencymultiplier="1.2" />
-          <Explosion range="50.0" showeffects="false" structuredamage="10" decal="" />
         </StatusEffect>
       </ItemComponent>
       <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="3.5" msg="ItemMsgPickUpSelect">
@@ -178,12 +177,15 @@
           <Use />
         </StatusEffect>
         <StatusEffect type="Always" target="This" interval="3">
-            <Conditional hastag="neq tsm_danger_box" targetcontainer="true" />
-            <Explosion range="200.0" showEffects="false" penetration="0">
-              <Affliction identifier="triton_burn" amount="20" />
-            </Explosion>
-          </StatusEffect>
+          <Conditional hastag="neq tsm_danger_box" targetcontainer="true" />
+          <Explosion range="200.0" showEffects="false" penetration="0">
+            <Affliction identifier="triton_burn" amount="20" />
+          </Explosion>
+        </StatusEffect>
         <StatusEffect type="OnBroken" target="This">
+          <Explosion range="500.0" showEffects="false" penetration="0">
+            <Affliction identifier="triton_burn" amount="30" />
+          </Explosion>
           <Remove />
         </StatusEffect>
       </Throwable>
