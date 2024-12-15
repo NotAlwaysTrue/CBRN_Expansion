@@ -4,7 +4,7 @@ Controllers = { }
 
 --Hook Part
 
-Hook.Add("roundEnd", "Charge.resetonend", function() --Endround reset
+Hook.Add("roundEnd", "CBRN_Charge.resetonend", function() --Endround reset
     for i,v in pairs(activeCharge) do
         local light = i.GetComponentString("LightComponent")
         light.isOn = false
@@ -12,7 +12,7 @@ Hook.Add("roundEnd", "Charge.resetonend", function() --Endround reset
     activeCharge = { }
 end)
 
-Hook.Add("character.death", "Charge.resetOndead", function(character)  --Reset on death
+Hook.Add("character.death", "CBRN_Charge.resetOndead", function(character)  --Reset on death
     if activeCharge == nil or character == nil then return end
     for i,v in pairs(activeCharge) do
         if v == character then
