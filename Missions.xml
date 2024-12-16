@@ -141,10 +141,10 @@
     tags="cargodifficult"
     type="Cargo"
     difficulty="5"
-    commonness="20"
+    commonness="50"
     reward="12000"
     requireddeliveryamount="0.8"
-    minleveldifficulty="60"
+    minleveldifficulty="50"
     achievementidentifier="cargomission">
     <Items>
       <Item identifier="tsm_hazardous_container" reward="1500" maxcount="8">
@@ -169,9 +169,9 @@
     tags="cargodifficult"
     type="Cargo"
     difficulty="5"
-    commonness="20"
+    commonness="50"
     reward="6000"
-    minleveldifficulty="60"
+    minleveldifficulty="50"
     achievementidentifier="cargomission">
     <Items>
       <Item identifier="tsm_hazardous_container" reward="1500" maxcount="4">
@@ -192,9 +192,9 @@
     tags="cargodifficult"
     type="Cargo"
     difficulty="5"
-    commonness="20"
+    commonness="50"
     reward="8000"
-    minleveldifficulty="60"
+    minleveldifficulty="50"
     achievementidentifier="cargomission">
     <Items>
       <Item identifier="tsm_hazardous_container" reward="1500" maxcount="2">
