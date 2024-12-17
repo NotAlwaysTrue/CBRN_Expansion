@@ -606,5 +606,6 @@
 
   <entityname.fkj_aa12_mag_he>AA-12 FRAG-12高爆弹弹鼓</entityname.fkj_aa12_mag_he>
   <entitydescription.fkj_aa12_mag_he>AA-12自动霰弹枪的专用FRAG-12高爆弹弹鼓, 能轻易撕碎扎堆在一起的目标</entitydescription.fkj_aa12_mag_he>
+  <causeofdeathdescription.omegathedeath>在Omega弹头造成的湮灭中消失了</causeofdeathdescription.omegathedeath>
   
 </infotexts>
