@@ -169,6 +169,9 @@
       <Body width="150" height="160" density="5" />
       <ItemComponent>
         <StatusEffect target="This" type="OnImpact" condition="-50">
+          <Explosion range="500.0" showEffects="false" penetration="0">
+            <Affliction identifier="triton_burn" amount="30" />
+          </Explosion>
           <sound file="Content/Sounds/Damage/StructureBlunt1.ogg" range="500" frequencymultiplier="1.2" />
         </StatusEffect>
       </ItemComponent>
@@ -183,9 +186,6 @@
           </Explosion>
         </StatusEffect>
         <StatusEffect type="OnBroken" target="This">
-          <Explosion range="500.0" showEffects="false" penetration="0">
-            <Affliction identifier="triton_burn" amount="30" />
-          </Explosion>
           <Remove />
         </StatusEffect>
       </Throwable>
