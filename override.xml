@@ -169,10 +169,13 @@
       <Body width="150" height="160" density="5" />
       <ItemComponent>
         <StatusEffect target="This" type="OnImpact" condition="-50">
+          <Explosion range="500.0" showEffects="false" penetration="0">
+            <Affliction identifier="triton_burn" amount="30" />
+          </Explosion>
           <sound file="Content/Sounds/Damage/StructureBlunt1.ogg" range="500" frequencymultiplier="1.2" />
         </StatusEffect>
       </ItemComponent>
-      <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="3.5" msg="ItemMsgPickUpSelect">
+      <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" canbecombined="true" removeoncombined="true" throwforce="3.5" msg="ItemMsgPickUpSelect">
         <StatusEffect type="OnSecondaryUse" target="This" delay="0.1">
           <Use />
         </StatusEffect>
@@ -183,9 +186,6 @@
           </Explosion>
         </StatusEffect>
         <StatusEffect type="OnBroken" target="This">
-          <Explosion range="500.0" showEffects="false" penetration="0">
-            <Affliction identifier="triton_burn" amount="30" />
-          </Explosion>
           <Remove />
         </StatusEffect>
       </Throwable>
