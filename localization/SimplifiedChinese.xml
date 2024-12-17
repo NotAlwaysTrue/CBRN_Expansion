@@ -603,4 +603,8 @@
   <displayname.m903_recycle>[itemname] M903 SLAP 装填</displayname.m903_recycle>
   <displayname.mk211>[itemname] Mk211 Mod.0 高爆穿甲燃烧弹</displayname.mk211>
   <displayname.mk211_recycle>[itemname] Mk211 Mod.0 高爆穿甲燃烧弹 装填</displayname.mk211_recycle>
+
+  <entityname.fkj_aa12_mag_he>AA-12 FRAG-12高爆弹弹鼓</entityname.fkj_aa12_mag_he>
+  <entitydescription.fkj_aa12_mag_he>AA-12自动霰弹枪的专用FRAG-12高爆弹弹鼓, 能轻易撕碎扎堆在一起的目标</entitydescription.fkj_aa12_mag_he>
+  
 </infotexts>
