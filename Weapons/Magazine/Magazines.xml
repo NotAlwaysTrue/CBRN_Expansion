@@ -1909,18 +1909,18 @@
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" density="30" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-    <Projectile characterusable="false" Hitscan="true" spread="0.3" DamageDoors="true" >
+    <Projectile characterusable="false" Hitscan="true" spread="0.2" DamageDoors="true" >
       <Attack structuredamage="15" targetforce="12" itemdamage="20" penetration="0.3" severlimbsprobability="0.4">
-        <Affliction identifier="lacerations" strength="8" />
-        <Affliction identifier="explosiondamage" strength="6" />
-        <Affliction identifier="burn" strength="4" />
+        <Affliction identifier="lacerations" strength="5" />
+        <Affliction identifier="explosiondamage" strength="8" />
+        <Affliction identifier="burn" strength="2" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget" OneShot="true">
-        <Explosion range="65.0" structuredamage="40" itemdamage="60" force="4" severlimbsprobability="0.7" debris="false" decal="explosion" decalsize="0.75" penetration="0.6" >
-          <Affliction identifier="explosiondamage" strength="25" />
+        <Explosion range="60.0" structuredamage="40" itemdamage="60" force="4" severlimbsprobability="0.7" debris="false" decal="explosion" decalsize="0.75" penetration="0.6" >
+          <Affliction identifier="explosiondamage" strength="28" />
           <Affliction identifier="lacerations" strength="16" />
           <Affliction identifier="burn" strength="12" />
-          <Affliction identifier="bleeding" strength="9" />
+          <Affliction identifier="bleeding" strength="4" />
           <Affliction identifier="stun" strength="1" />
         </Explosion>
       </StatusEffect>
