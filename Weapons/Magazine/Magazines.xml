@@ -287,6 +287,40 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
 
+  <Item identifier="fkj_aa12_mag_he" subcategory="tsm_separatists" scale="0.33" category="weapon" health="15" maxstacksize="1" cargocontaineridentifier="tsm_metalcrate" tags="fkj_aa12_mag,fkj_hzzd,smallitem,fkj_mag,magazine,handheldammo" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="%ModDir:2953749635%/weapons/反抗军/separatists.png" sourcerect="2453,231,36,99" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:2953749635%/weapons/反抗军/separatists.png" depth="0.56" sourcerect="2453,231,36,99" origin="0.5,0.5" />
+    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
+    <Body width="36" height="99" density="50" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="tsm_12_he" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="tsm_12_he" />
+      <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+        <SpawnItem identifiers="tsm_12_he" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="12" requiresrecipe="false" amount="1">
+      <RequiredItem identifier="plastic" amount="2" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="3" />
+      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="3" />
+      <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="2" />
+      <RequiredItem identifier="uex" amount="3" />
+    </Fabricate>
+    <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="10">
+      <RequiredItem tag="fkj_aa12_mag" mincondition="0.0" maxcondition="0.0" />
+      <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
+      <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="2" />
+      <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="2" />
+      <RequiredItem identifier="uex" amount="3" />
+    </Fabricate>
+    <Deconstruct time="5">
+      <Item identifier="plastic" amount="1" />
+      <Item identifier="uex" amount="1" mincondition="0.9" />
+      <Item identifier="phosphorus" mincondition="0.9" />
+    </Deconstruct>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+
   <!--Coalition-->
   <Item identifier="tsm_556_45_mgmag_rev" subcategory="tsm_modifiedmagazines" scale="0.23" category="weapon" maxstacksize="3" cargocontaineridentifier="tsm_hazardous_container" linkable="true" tags="smallitem,lm_zd,tsm_556_45_mgmag,lm_magazine,magazine,m249ammo,rev_mag" isdangerous="true" impactsoundtag="impact_metal_light" health="200">
     <InventoryIcon texture="%ModDir:3278494407%/Weapons/Magazine/coalition.png" sourcerect="2158,175,54,135" origin="0.5,0.5" />
@@ -1502,6 +1536,75 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
 
+  <Item identifier="berra_STANAG_50beowulf_fr_drum" subcategory="Berra Group" category="weapon" maxstacksize="1" Health="40" maxstacksizecharacterinventory="3" cargocontaineridentifier="metalcrate" scale="0.23" tags="smallitem,berra_STANAG_ext,STANAG_50beowulf" impactsoundtag="impact_metal_light" hideinmenus="true">
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/BerraArm/M4Beowolf/beowolfmain.png" sourcerect="22,193,55,99" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/BerraArm/M4Beowolf/beowolfmain.png" depth="0.56" sourcerect="22,193,55,99" origin="0.5,0.5" />
+    <Body width="30" height="58" density="50" />
+    <!--<Price baseprice="550" sold="false" minleveldifficulty="65" displaynonempty="true">
+      <Price storeidentifier="merchantoutpost" multiplier="1.4" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="0" maxavailable="4" />
+      <Price storeidentifier="merchantarmory" sold="true" multiplier="0.9" minavailable="0" maxavailable="4" />
+      <Price storeidentifier="merchantmine" multiplier="1.25" />
+    </Price>
+    <Deconstruct time="18">
+      <Item identifier="plastic" outcondition="0.7" />
+      <Item identifier="flashpowder" mincondition="0.8" outcondition="0.6" />
+      <Item identifier="copper" mincondition="0.8" amount="1" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="35" displayname="50beowulf_fr" requiresrecipe="true">
+      <RequiredSkill identifier="weapons" level="40" />
+      <RequiredItem identifier="magnesium" amount="4" />
+      <RequiredItem identifier="flashpowder" amount="2" />
+      <RequiredItem identifier="plastic" />
+      <RequiredItem identifier="copper" amount="6" />
+      <RequiredItem identifier="steel" amount="4" />
+    </Fabricate>
+    <Fabricate suitablefabricators="fabricator" requiredtime="35" displayname="50beowulf_fr_recycle" requiresrecipe="true">
+      <RequiredSkill identifier="weapons" level="40" />
+      <RequiredItem identifier="magnesium" amount="4" />
+      <RequiredItem identifier="flashpowder" amount="2" />
+      <RequiredItem identifier="copper" amount="6" />
+      <RequiredItem identifier="steel" amount="4" />
+      <RequiredItem tag="berra_STANAG_ext" mincondition="0.0" maxcondition="0.0" usecondition="false" />
+    </Fabricate>-->
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="berra_50beowulf_fr" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="berra_50beowulf_fr" />
+      <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+        <SpawnItem identifiers="berra_50beowulf_fr" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item identifier="berra_STANAG_50beowulf_ap_drum" subcategory="Berra Group" category="weapon" maxstacksize="1" Health="40" maxstacksizecharacterinventory="3" cargocontaineridentifier="metalcrate" scale="0.23" tags="smallitem,berra_STANAG_ext,STANAG_50beowulf" impactsoundtag="impact_metal_light" hideinmenus="true">
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/BerraArm/M4Beowolf/beowolfmain.png" sourcerect="22,193,55,99" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/BerraArm/M4Beowolf/beowolfmain.png" depth="0.56" sourcerect="22,193,55,99" origin="0.5,0.5" />
+    <Body width="30" height="58" density="50" />
+    <!--<Price baseprice="600" sold="false" minleveldifficulty="65" displaynonempty="true">
+      <Price storeidentifier="merchantoutpost" multiplier="1.4" />
+      <Price storeidentifier="merchantcity" multiplier="1.25" />
+      <Price storeidentifier="merchantresearch" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="0" maxavailable="4" />
+      <Price storeidentifier="merchantarmory" sold="true" multiplier="0.9" minavailable="0" maxavailable="4" />
+      <Price storeidentifier="merchantmine" multiplier="1.25" />
+    </Price>-->
+    <Deconstruct time="18">
+      <Item identifier="plastic" outcondition="0.7" />
+      <Item identifier="flashpowder" mincondition="0.8" outcondition="0.6" />
+      <Item identifier="titanium" mincondition="0.8" amount="1" />
+    </Deconstruct>
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="berra_50beowulf_ap" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="berra_50beowulf_ap" />
+      <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+        <SpawnItem identifiers="berra_50beowulf_ap" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+
   <!--bullets-->
   <Item identifier="545_39_rev" category="Misc" interactthroughwalls="true" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
     <InventoryIcon texture="%ModDir:2953749635%/weapons/bullet.png" sourcerect="33,100,57,15" origin="0.5,0.5" />
@@ -1796,6 +1899,37 @@
         <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
       </StatusEffect>
       <StatusEffect type="OnNotContained" target="This" stackable="false" >
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item identifier="tsm_12_he" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="None" hideinmenus="true" scale="0.5">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+    <Body width="40" height="14" density="30" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" Hitscan="true" spread="0.2" DamageDoors="true" >
+      <Attack structuredamage="15" targetforce="12" itemdamage="20" penetration="0.3" severlimbsprobability="0.4">
+        <Affliction identifier="lacerations" strength="5" />
+        <Affliction identifier="explosiondamage" strength="8" />
+        <Affliction identifier="burn" strength="2" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget" OneShot="true">
+        <Explosion range="60.0" structuredamage="40" itemdamage="60" force="4" severlimbsprobability="0.7" debris="false" decal="explosion" decalsize="0.75" penetration="0.6" >
+          <Affliction identifier="explosiondamage" strength="28" />
+          <Affliction identifier="lacerations" strength="16" />
+          <Affliction identifier="burn" strength="12" />
+          <Affliction identifier="bleeding" strength="4" />
+          <Affliction identifier="stun" strength="1" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" stackable="false">
         <Remove />
       </StatusEffect>
     </Projectile>
@@ -2160,7 +2294,7 @@
     <Body width="40" height="14" density="30" />
     <Projectile characterusable="false" Hitscan="true" spread="0.5" DamageDoors="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="80" velocitymax="100" colormultiplier="255,0,0,175" scalemultiplier="1,0.6" />
-      <Attack structuredamage="15" targetforce="12" itemdamage="20" penetration="0.6" severlimbsprobability="0.4">
+      <Attack structuredamage="40" targetforce="12" itemdamage="20" penetration="0.6" severlimbsprobability="0.4">
         <Affliction identifier="gunshotwound" strength="60" />
         <Affliction identifier="lacerations" strength="60" />
         <Affliction identifier="bleeding" strength="40" />
@@ -2354,7 +2488,7 @@
     <Body width="40" height="14" density="30" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" Hitscan="true" spread="0.02" DamageDoors="true" >
-      <Attack structuredamage="15" targetforce="12" itemdamage="20" penetration="0.7" severlimbsprobability="0.4">
+      <Attack structuredamage="80" targetforce="12" itemdamage="80" penetration="0.8" severlimbsprobability="0.8">
         <Affliction identifier="gunshotwound" strength="50" />
         <Affliction identifier="lacerations" strength="50" />
         <Affliction identifier="bleeding" strength="20" />
@@ -2362,7 +2496,7 @@
         <Affliction identifier="burn" strength="20" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget" OneShot="true">
-        <Explosion range="80.0" structuredamage="30" itemdamage="60" force="5" severlimbsprobability="0.7" debris="false" decal="explosion" decalsize="0.75" penetration="0.8" >
+        <Explosion range="80.0" structuredamage="120" itemdamage="120" force="5" severlimbsprobability="1" debris="false" decal="explosion" decalsize="0.75" penetration="0.8" >
           <Affliction identifier="explosiondamage" strength="80" />
           <Affliction identifier="lacerations" strength="60" />
           <Affliction identifier="burn" strength="50" />
@@ -2387,7 +2521,7 @@
     <Body width="40" height="14" density="30" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" Hitscan="true" MaxTargetsToHit="3" spread="0.01" DamageDoors="true" >
-      <Attack structuredamage="10" targetforce="15" itemdamage="20" penetration="1" severlimbsprobability="0.2">
+      <Attack structuredamage="10" targetforce="15" itemdamage="10" penetration="1" severlimbsprobability="0.2">
         <Affliction identifier="gunshotwound" strength="80" />
         <Affliction identifier="lacerations" strength="80" />
         <Affliction identifier="bleeding" strength="60" />
@@ -2412,7 +2546,7 @@
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" Hitscan="true" spread="0" DamageDoors="true" >
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="80" velocitymax="100" colormultiplier="255,0,0,175" scalemultiplier="1,0.6" />
-      <Attack structuredamage="10" targetforce="12" itemdamage="20" penetration="0.5" severlimbsprobability="0.5">
+      <Attack structuredamage="40" targetforce="12" itemdamage="20" penetration="0.7" severlimbsprobability="0.7">
         <Affliction identifier="gunshotwound" strength="70" />
         <Affliction identifier="lacerations" strength="70" />
         <Affliction identifier="bleeding" strength="50" />

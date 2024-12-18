@@ -570,4 +570,8 @@
   <displayname.m903_recycle>[itemname] M903 SLAP Reload</displayname.m903_recycle>
   <displayname.mk211>[itemname] Mk211 Mod.0 APHEI</displayname.mk211>
   <displayname.mk211_recycle>[itemname] Mk211 Mod.0 APHEI Reload</displayname.mk211_recycle>
+
+  <entityname.fkj_aa12_mag_he>AA-12 FRAG-12 HE Drum</entityname.fkj_aa12_mag_he>
+  <entitydescription.fkj_aa12_mag_he>Dedicated AA-12 FRAG-12 HE Drum, very good at tear down stacked targets</entitydescription.fkj_aa12_mag_he>、
+  <causeofdeathdescription.omegathedeath>Vanished in the annihilation caused by Omega warhead</causeofdeathdescription.omegathedeath>
 </infotexts>
