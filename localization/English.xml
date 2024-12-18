@@ -55,7 +55,7 @@
   <entityname.berra_STANAG_458socom_ext>STANAG Magazine(Extened)</entityname.berra_STANAG_458socom_ext>
   <entityname.berra_STANAG_50beowulf_fr_ext>STANAG Magazine(Extened)</entityname.berra_STANAG_50beowulf_fr_ext>
   <entityname.berra_STANAG_50beowulf_ap_ext>STANAG Magazine(Extened)</entityname.berra_STANAG_50beowulf_ap_ext>
-  <entityname.berra_300FAL_M118LR>FAL Magazine</entityname.berra_300FAL_M118LR>
+
   <entityname.berra_50bmg_belt_fmjt>M9 .50BMG Belt</entityname.berra_50bmg_belt_fmjt>
   <entityname.berra_mk153_dumb>Mk153 SMAW Training</entityname.berra_mk153_dumb>
   <entityname.berra_mk153_inc>Mk153 SMAW Incendiary</entityname.berra_mk153_inc>
@@ -74,7 +74,6 @@
   <entitydescription.berra_STANAG_458socom_ext>STANAG Magazine \nContaining 20 .458 SOCOM rounds \nGood stopping power and penetration,less expensive than 12.7×45</entitydescription.berra_STANAG_458socom_ext>
   <entitydescription.berra_STANAG_50beowulf_fr_ext>STANAG Magazine \nContaining 15 12.7×45 Fragile rounds \nPoor penetration but extreme stopping power</entitydescription.berra_STANAG_50beowulf_fr_ext>
   <entitydescription.berra_STANAG_50beowulf_ap_ext>STANAG Magazine \nContaining 15 12.7×45 AP rounds \nPerfect penetration and (relatively)high stopping power! \nLet's kick some ass</entitydescription.berra_STANAG_50beowulf_ap_ext>
-  <entitydescription.berra_300FAL_M118LR>FAL Magazine \nContaining 25 7.62×51NATO M118LR rounds \nHigh-accuracy ammunition,designed for DMRs</entitydescription.berra_300FAL_M118LR>
   <entitydescription.berra_50bmg_belt_fmjt>.50BMG belt \nM33 FMJ \n500 rounds MAX \nSTOP WORRING ABOUT AMMUNITION,JUST SHOOT!!!!</entitydescription.berra_50bmg_belt_fmjt>
   <entitydescription.berra_mk153_dumb>Mk153 SMAW Training rounds,the same trajectory with standard MK153 rounds \nSERIOUSLY,DO NOT FIGHT YOUR ENEMY WITH THIS \nBackblast range:4.4m</entitydescription.berra_mk153_dumb>
   <entitydescription.berra_mk153_inc>Mk153 SMAW Incendiary rounds,much more heavier=much more fuel \nBARBECUE TIME \nBackblast range:4.4m</entitydescription.berra_mk153_inc>
@@ -415,7 +414,6 @@
   <talentvalue.weyicanister>Sealed Container Weaponized Evil Virus</talentvalue.weyicanister>
   <talentvalue.anthraxcanister>Sealed Container Anthrax</talentvalue.anthraxcanister>
   <reset>Reset</reset>
-  <talentvalue.berra_300FAL_M118LR>FAL Magazine M118LR</talentvalue.berra_300FAL_M118LR>
   
   <!--Changed in V3.5-->
   <entityname.m57detonator>M57 Detonator</entityname.m57detonator>
@@ -574,4 +572,12 @@
   <entityname.fkj_aa12_mag_he>AA-12 FRAG-12 HE Drum</entityname.fkj_aa12_mag_he>
   <entitydescription.fkj_aa12_mag_he>Dedicated AA-12 FRAG-12 HE Drum, very good at tear down stacked targets</entitydescription.fkj_aa12_mag_he>、
   <causeofdeathdescription.omegathedeath>Vanished in the annihilation caused by Omega warhead</causeofdeathdescription.omegathedeath>
+
+  <entityname.berra_300FAL_M118LR>M110/SR-25 Magazine</entityname.berra_300FAL_M118LR>
+  <entitydescription.berra_300FAL_M118LR>M110/SR-25 universal Magazine \nContaining 25 7.62×51NATO M118LR rounds \nHigh-accuracy ammunition,designed for DMRs</entitydescription.berra_300FAL_M118LR>
+  <talentvalue.berra_300FAL_M118LR>M110/SR-25 Magazine M118LR</talentvalue.berra_300FAL_M118LR>
+  <entityname.berra_STANAG_50beowulf_fr_drum>PMAG-D60 Drum</entityname.berra_STANAG_50beowulf_fr_drum>
+  <entitydescription.berra_STANAG_50beowulf_fr_drum>A PMAG D-60 contains 35 .50Beowulf Fragile \nHappy Hunting</entitydescription.berra_STANAG_50beowulf_fr_drum>
+  <entityname.berra_STANAG_50beowulf_ap_drum>PMAG-D60 Drum</entityname.berra_STANAG_50beowulf_ap_drum>
+  <entitydescription.berra_STANAG_50beowulf_ap_drum>A PMAG D-60 contains 35 .50Beowulf AP \nHappy Hunting</entitydescription.berra_STANAG_50beowulf_ap_drum>
 </infotexts>

@@ -505,7 +505,16 @@
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
       <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
-      <Containable items="tes20mag" hide="false" itempos="-23,-10" rotation="-5" depth="0.56" />
+      <Containable items="tes20mag" hide="false" itempos="-23,-10" rotation="-5" depth="0.56" >
+        <StatusEffect type="OnInserted" target="This" holdpos="10,-25" holdangle="70" maxchargetime="999" setvalue="true" />
+        <StatusEffect type="OnInserted" target="This" setvalue="true">
+          <Conditional isActive="eq true" />
+          <sound file="%ModDir:2953749635%/weapons/reload_ogg/reload_2_7.ogg" type="OnInserted" range="200.0" loop="false" volume="1" />
+        </StatusEffect>
+        <StatusEffect target="This" holdpos="45,0" aimpos="52,5" handle1="-20,-60" handle2="80,10" holdangle="-50" disabledeltatime="true" checkconditionalalways="true" delay="2.8" maxchargetime="0" setvalue="true">
+          <conditional maxchargetime="eq 999" />
+        </StatusEffect>
+      </Containable>
     </ItemContainer>
     <aitarget sightrange="2500" soundrange="3000" fadeouttime="6" />
   </Item>
@@ -943,8 +952,17 @@
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
       <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
     <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
-      <Containable items="berra_STANAG,berra_STANAG_ext" hide="false" itempos="-12,-8" depth="0.56" />
-    <SubContainer capacity="1" maxstacksize="1">
+      <Containable items="berra_STANAG,berra_STANAG_ext" hide="false" itempos="-12,-8" depth="0.56" >
+        <StatusEffect type="OnInserted" target="This" holdpos="10,-30" holdangle="80" maxchargetime="999" setvalue="true" />
+        <StatusEffect type="OnInserted" target="This" setvalue="true">
+          <Conditional isActive="eq true" />
+          <sound file="%ModDir:2953749635%/weapons/reload_ogg/reload_2_5.ogg" type="OnInserted" range="200.0" loop="false" volume="1" />
+        </StatusEffect>
+        <StatusEffect target="This" holdpos="65,-8" aimpos="73,5" handle1="-120,-35" handle2="30,0" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.6" maxchargetime="0" setvalue="true">
+          <conditional maxchargetime="eq 999" />
+        </StatusEffect>
+      </Containable>
+      <SubContainer capacity="1" maxstacksize="1">
         <Containable items="flashlight" excludeditems="tsm_jgzsq" hide="false" itempos="20,5" setactive="true"/>
       </SubContainer>
     </ItemContainer>
@@ -1003,9 +1021,18 @@
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
       <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
-    <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
-      <Containable items="berra_STANAG,berra_STANAG_ext" hide="false" itempos="2,-8" depth="0.56" />
-    <SubContainer capacity="1" maxstacksize="1">
+      <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
+      <Containable items="berra_STANAG,berra_STANAG_ext" hide="false" itempos="2,-8" depth="0.56" >
+        <StatusEffect type="OnInserted" target="This" holdpos="10,-30" holdangle="80" maxchargetime="999" setvalue="true" />
+        <StatusEffect type="OnInserted" target="This" setvalue="true">
+          <Conditional isActive="eq true" />
+          <sound file="%ModDir:2953749635%/weapons/reload_ogg/reload_2_5.ogg" type="OnInserted" range="200.0" loop="false" volume="1" />
+        </StatusEffect>
+        <StatusEffect target="This" holdpos="55,-8" aimpos="60,3" handle1="-75,-35" handle2="30,5" holdangle="-35" disabledeltatime="true" checkconditionalalways="true" delay="2.6" maxchargetime="0" setvalue="true">
+          <conditional maxchargetime="eq 999" />
+        </StatusEffect>
+      </Containable>
+      <SubContainer capacity="1" maxstacksize="1">
         <Containable items="flashlight" excludeditems="tsm_jgzsq" hide="false" itempos="25,5" setactive="true"/>
       </SubContainer>
     </ItemContainer>
@@ -1053,7 +1080,16 @@
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
       <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
-      <Containable items="berra_300FAL_M118LR" hide="false" itempos="-13,-9" depth="0.55" />
+      <Containable items="berra_300FAL_M118LR" hide="false" itempos="-13,-9" depth="0.55" >
+        <StatusEffect type="OnInserted" target="This" holdpos="15,-20" holdangle="70" maxchargetime="999" setvalue="true" />
+        <StatusEffect type="OnInserted" target="This" setvalue="true">
+          <Conditional isActive="eq true" />
+          <sound file="%ModDir:2953749635%/weapons/reload_ogg/reload_2_7.ogg" type="OnInserted" range="200.0" loop="false" volume="1" />
+        </StatusEffect>
+        <StatusEffect target="This" holdpos="75,-8" aimpos="78,10" handle1="-288,-90" handle2="-80,5" holdangle="-50" disabledeltatime="true" checkconditionalalways="true" delay="2.75" maxchargetime="0" setvalue="true">
+          <conditional maxchargetime="eq 999" />
+        </StatusEffect>
+      </Containable>
     </ItemContainer>
     <SkillRequirementHint identifier="weapons" level="65" />
     <aitarget sightrange="2500" soundrange="4500" fadeouttime="6" />
@@ -1132,7 +1168,16 @@
       <RequiredSkill identifier="weapons" level="100" />
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" containedstateindicatorstyle="bullet">
-      <Containable items="tsm_127_mag" />
+      <Containable items="tsm_127_mag" >
+        <StatusEffect type="OnInserted" target="This" maxchargetime="999" setvalue="true" />
+        <StatusEffect type="OnInserted" target="This" setvalue="true">
+          <Conditional isActive="eq true" />
+          <sound file="%ModDir:2953749635%/weapons/reload_ogg/pistols_reload.ogg" type="OnInserted" range="200.0" loop="false" volume="1" />
+        </StatusEffect>
+        <StatusEffect target="This" disabledeltatime="true" checkconditionalalways="true" delay="0.85" maxchargetime="0" setvalue="true">
+          <conditional maxchargetime="eq 999" />
+        </StatusEffect>
+      </Containable>
     </ItemContainer>
     <aitarget sightrange="4500" soundrange="6000" fadeouttime="10" />
     <Quality>
@@ -1186,7 +1231,16 @@
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
       <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
-      <Containable items="M107Mag" hide="false" itempos="-28,-1" depth="0.55" />
+      <Containable items="M107Mag" hide="false" itempos="-28,-1" depth="0.55" >
+        <StatusEffect type="OnInserted" target="This" maxchargetime="999" holdpos="30,-30" holdangle="70" setvalue="true" />
+        <StatusEffect type="OnInserted" target="This" setvalue="true">
+          <Conditional isActive="eq true" />
+          <sound file="%ModDir:2953749635%/weapons/reload_ogg/reload_4_7.ogg" type="OnInserted" range="200.0" loop="false" volume="1" />
+        </StatusEffect>
+        <StatusEffect target="This" disabledeltatime="true" holdpos="90,-8" aimpos="90,2" handle1="-530,-80" handle2="-300,0" holdangle="-50" checkconditionalalways="true" delay="4.7" maxchargetime="0" setvalue="true">
+          <conditional maxchargetime="eq 999" />
+        </StatusEffect>
+      </Containable>
     </ItemContainer>
     <SkillRequirementHint identifier="weapons" level="95" />
     <aitarget sightrange="2500" soundrange="4500" fadeouttime="6" />
@@ -1242,7 +1296,16 @@
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
       <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
-      <Containable items="M107Mag" hide="false" itempos="-14,-4" depth="0.55" />
+      <Containable items="M107Mag" hide="false" itempos="-14,-4" depth="0.55" >
+        <StatusEffect type="OnInserted" target="This" maxchargetime="999" holdpos="30,-30" holdangle="70" setvalue="true" />
+        <StatusEffect type="OnInserted" target="This" setvalue="true">
+          <Conditional isActive="eq true" />
+          <sound file="%ModDir:2953749635%/weapons/reload_ogg/reload_4_7.ogg" type="OnInserted" range="200.0" loop="false" volume="1" />
+        </StatusEffect>
+        <StatusEffect target="This" disabledeltatime="true" holdpos="75,-8" aimpos="78,3" handle1="-390,-90" handle2="-200,5" holdangle="-50" checkconditionalalways="true" delay="4.7" maxchargetime="0" setvalue="true">
+          <conditional maxchargetime="eq 999" />
+        </StatusEffect>
+      </Containable>
     </ItemContainer>
     <SkillRequirementHint identifier="weapons" level="90" />
     <aitarget sightrange="2500" soundrange="4500" fadeouttime="6" />
@@ -1298,7 +1361,16 @@
     </RangedWeapon>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
       <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
-      <Containable items="M107Mag" hide="false" itempos="-14,-4" depth="0.55" />
+      <Containable items="M107Mag" hide="false" itempos="-14,-4" depth="0.55" >
+        <StatusEffect type="OnInserted" target="This" maxchargetime="999" holdpos="30,-30" holdangle="70" setvalue="true" />
+        <StatusEffect type="OnInserted" target="This" setvalue="true">
+          <Conditional isActive="eq true" />
+          <sound file="%ModDir:2953749635%/weapons/reload_ogg/reload_4_7.ogg" type="OnInserted" range="200.0" loop="false" volume="1" />
+        </StatusEffect>
+        <StatusEffect target="This" disabledeltatime="true" holdpos="75,-8" aimpos="78,3" handle1="-390,-90" handle2="-200,5" holdangle="-50" checkconditionalalways="true" delay="4.7" maxchargetime="0" setvalue="true">
+          <conditional maxchargetime="eq 999" />
+        </StatusEffect>
+      </Containable>
     </ItemContainer>
     <SkillRequirementHint identifier="weapons" level="100" />
     <aitarget sightrange="2500" soundrange="4500" fadeouttime="6" />
