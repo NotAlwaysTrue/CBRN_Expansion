@@ -60,8 +60,6 @@
   <!--.50贝奥武夫易碎弹 拓展弹匣-->
   <entityname.berra_STANAG_50beowulf_ap_ext>STANAG弹匣(拓展)</entityname.berra_STANAG_50beowulf_ap_ext>
   <!--.50贝奥武夫穿甲弹 拓展弹匣-->
-  <entityname.berra_300FAL_M118LR>FAL标准弹匣</entityname.berra_300FAL_M118LR>
-  <!--FAL 25发M118狙击弹-->
   <entityname.berra_50bmg_belt_fmjt>M9 .50BMG全可散弹链</entityname.berra_50bmg_belt_fmjt>
   <!--.50BMG 可散式弹链(10000发max)-->
   <entityname.berra_mk153_dumb>Mk153 SMAW 训练弹</entityname.berra_mk153_dumb>
@@ -81,7 +79,6 @@
   <entitydescription.berra_STANAG_458socom_ext>STANAG弹匣 \n内装20发.458 SOCOM弹 \n穿甲性能和停止力都不错,造价也没有.50那么极端</entitydescription.berra_STANAG_458socom_ext>
   <entitydescription.berra_STANAG_50beowulf_fr_ext>STANAG弹匣 \n内装15发.50贝奥武夫易碎弹 \n穿甲性能不佳,然而强大的停止力弥补了这一点</entitydescription.berra_STANAG_50beowulf_fr_ext>
   <entitydescription.berra_STANAG_50beowulf_ap_ext>STANAG弹匣 \n内装15发.50贝奥武夫穿甲弹 \n高穿透力,高停止力,开创!</entitydescription.berra_STANAG_50beowulf_ap_ext>
-  <entitydescription.berra_300FAL_M118LR>FAL标准弹匣 \n内装25发7.62×51NATO M118LR狙击弹 \n高精度弹药,为M110 SASS等一众精确射手步枪使用</entitydescription.berra_300FAL_M118LR>
   <entitydescription.berra_50bmg_belt_fmjt>M2HB重机枪使用的全可散式弹链 \nM33 FMJ \n每1%有5发子弹,最大500发 \n当你不再为子弹发愁,还有什么是解决不了的呢</entitydescription.berra_50bmg_belt_fmjt>
   <entitydescription.berra_mk153_dumb>Mk153 SMAW所使用的训练弹,与常规弹药有着完全一致的弹道 \n不过说真的,里面就是枚惰性弹头,你还指望它能干什么呢? \n尾焰喷射距离:4.4m</entitydescription.berra_mk153_dumb>
   <entitydescription.berra_mk153_inc>Mk153 SMAW所使用的燃烧弹,更重的弹体意味着能携带更多的燃料 \n现在是烧烤时间! \n尾焰喷射距离:4.4m</entitydescription.berra_mk153_inc>
@@ -445,7 +442,6 @@
   <talentvalue.weyicanister>密封容器 武器化恶疫病毒</talentvalue.weyicanister>
   <talentvalue.anthraxcanister>密封容器 炭疽杆菌</talentvalue.anthraxcanister>
   <reset>重置</reset>
-  <talentvalue.berra_300FAL_M118LR>FAL弹匣 M118LR狙击弹</talentvalue.berra_300FAL_M118LR>
   <!--Changed in V3.5-->
   <entitydescription.berra_cbrn3>Berra Armory生产的耐打击防毒面具,可以与防毒面具过滤盒组合以过滤空气中的有毒有害物质,因其简单轻便易用而受到各势力的青睐 \n代价是一部分视野 \n是Berra TAC作战生化防御套装的一部分</entitydescription.berra_cbrn3>
   <entityname.m57detonator>M57起爆器</entityname.m57detonator>
@@ -607,5 +603,16 @@
   <entityname.fkj_aa12_mag_he>AA-12 FRAG-12高爆弹弹鼓</entityname.fkj_aa12_mag_he>
   <entitydescription.fkj_aa12_mag_he>AA-12自动霰弹枪的专用FRAG-12高爆弹弹鼓, 能轻易撕碎扎堆在一起的目标</entitydescription.fkj_aa12_mag_he>
   <causeofdeathdescription.omegathedeath>在Omega弹头造成的湮灭中消失了</causeofdeathdescription.omegathedeath>
-  
+
+  <talentvalue.berra_300FAL_M118LR>M110/SR-25弹匣 M118LR狙击弹</talentvalue.berra_300FAL_M118LR>
+  <entityname.berra_300FAL_M118LR>M110/SR-25通用弹匣</entityname.berra_300FAL_M118LR>
+  <entitydescription.berra_300FAL_M118LR>M110/SR-25通用弹匣 \n内装25发7.62×51NATO M118LR狙击弹 \n高精度弹药,为M110 SASS等一众精确射手步枪使用</entitydescription.berra_300FAL_M118LR>
+  <entityname.berra_STANAG_50beowulf_fr_drum>PMAG-D60弹鼓</entityname.berra_STANAG_50beowulf_fr_drum>
+  <entitydescription.berra_STANAG_50beowulf_fr_drum>装有35发.50贝奥武夫易碎弹的PMAG-D60弹鼓 \n狩猎愉快</entitydescription.berra_STANAG_50beowulf_fr_drum>
+  <entityname.berra_STANAG_50beowulf_ap_drum>PMAG-D60弹鼓</entityname.berra_STANAG_50beowulf_ap_drum>
+  <entitydescription.berra_STANAG_50beowulf_ap_drum>装有35发.50贝奥武夫穿甲弹的PMAG-D60弹鼓 \n狩猎愉快</entitydescription.berra_STANAG_50beowulf_ap_drum>
+
+  <entityname.uhm_headset>用户健康监控耳机</entityname.uhm_headset>
+  <entitydescription.uhm_headset>内建有用户状态监控系统的耳机, 能在佩戴者昏迷时发送求救信号 \n需要电池</entitydescription.uhm_headset>
+  <sig.sos>使用者状态危急 \n需要援助</sig.sos>
 </infotexts>

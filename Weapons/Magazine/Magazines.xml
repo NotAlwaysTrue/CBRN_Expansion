@@ -705,7 +705,7 @@
         <Conditional IsFullCondition="false" targetcontaineditem="true" />
         <sound file="%ModDir:3278494407%/Weapons/Magazine/reload4.ogg" type="OnUse" range="300" loop="true" />
       </StatusEffect>
-      <StatusEffect type="Always" target="This" interval="3">
+      <StatusEffect type="Always" target="This" interval="3" checkconditionalalways="true" disabledeltatime="true">
         <Conditional hastag="neq tsm_danger_box" targetcontainer="true" />
         <Explosion range="300.0" showEffects="false" penetration="0">
           <Affliction identifier="triton_burn" amount="50" />
@@ -1536,9 +1536,9 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
 
-  <Item identifier="berra_STANAG_50beowulf_fr_drum" subcategory="Berra Group" category="weapon" maxstacksize="1" Health="40" maxstacksizecharacterinventory="3" cargocontaineridentifier="metalcrate" scale="0.23" tags="smallitem,berra_STANAG_ext,STANAG_50beowulf" impactsoundtag="impact_metal_light" hideinmenus="true">
-    <InventoryIcon texture="%ModDir:3278494407%/Weapons/BerraArm/M4Beowolf/beowolfmain.png" sourcerect="22,193,55,99" origin="0.5,0.5" />
-    <Sprite texture="%ModDir:3278494407%/Weapons/BerraArm/M4Beowolf/beowolfmain.png" depth="0.56" sourcerect="22,193,55,99" origin="0.5,0.5" />
+  <Item identifier="berra_STANAG_50beowulf_fr_drum" subcategory="Berra Group" category="weapon" maxstacksize="1" Health="35" maxstacksizecharacterinventory="3" cargocontaineridentifier="metalcrate" scale="0.255" tags="smallitem,berra_STANAG_ext,STANAG_50beowulf" impactsoundtag="impact_metal_light" hideinmenus="false">
+    <InventoryIcon texture="%ModDir:2953749635%/weapons/木卫二联盟/coalition.png" sourcerect="2150,670,73,102" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:2953749635%/weapons/木卫二联盟/coalition.png" depth="0.56" sourcerect="2150,642,73,133" origin="0.5,0.5" />
     <Body width="30" height="58" density="50" />
     <!--<Price baseprice="550" sold="false" minleveldifficulty="65" displaynonempty="true">
       <Price storeidentifier="merchantoutpost" multiplier="1.4" />
@@ -1578,9 +1578,9 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item identifier="berra_STANAG_50beowulf_ap_drum" subcategory="Berra Group" category="weapon" maxstacksize="1" Health="40" maxstacksizecharacterinventory="3" cargocontaineridentifier="metalcrate" scale="0.23" tags="smallitem,berra_STANAG_ext,STANAG_50beowulf" impactsoundtag="impact_metal_light" hideinmenus="true">
-    <InventoryIcon texture="%ModDir:3278494407%/Weapons/BerraArm/M4Beowolf/beowolfmain.png" sourcerect="22,193,55,99" origin="0.5,0.5" />
-    <Sprite texture="%ModDir:3278494407%/Weapons/BerraArm/M4Beowolf/beowolfmain.png" depth="0.56" sourcerect="22,193,55,99" origin="0.5,0.5" />
+  <Item identifier="berra_STANAG_50beowulf_ap_drum" subcategory="Berra Group" category="weapon" maxstacksize="1" Health="35" maxstacksizecharacterinventory="3" cargocontaineridentifier="metalcrate" scale="0.255" tags="smallitem,berra_STANAG_ext,STANAG_50beowulf" impactsoundtag="impact_metal_light" hideinmenus="false">
+    <InventoryIcon texture="%ModDir:2953749635%/weapons/木卫二联盟/coalition.png" sourcerect="2150,670,73,102" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:2953749635%/weapons/木卫二联盟/coalition.png" depth="0.56" sourcerect="2150,642,73,133" origin="0.5,0.5" />
     <Body width="30" height="58" density="50" />
     <!--<Price baseprice="600" sold="false" minleveldifficulty="65" displaynonempty="true">
       <Price storeidentifier="merchantoutpost" multiplier="1.4" />

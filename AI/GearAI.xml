@@ -239,7 +239,7 @@
 
 
   <!--AI Weapons-->
-  <Item identifier="tsm_201_cbrnertai" subcategory="AI_weapons" category="Misc" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai" Scale="0.23" impactsoundtag="impact_metal_light" hideinmenus="true">
+  <Item identifier="tsm_201_cbrnertai" subcategory="AI_weapons" category="Misc" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,provocativetohumanai" Scale="0.23" impactsoundtag="impact_metal_light" hideinmenus="true">
     <InventoryIcon texture="%ModDir:2953749635%/weapons/奇迹之海/tsm.png" sourcerect="1398,1841,176,188" origin="0.5,0.5" />
     <Sprite texture="%ModDir:2953749635%/weapons/奇迹之海/tsm.png" sourcerect="559,1310,590,147" depth="0.55" origin="0.5,0.5" />
     <Body width="590" height="147" density="52" />
@@ -283,7 +283,7 @@
     </ItemContainer>
     <aitarget sightrange="2300" soundrange="4000" fadeouttime="5" />
   </Item>
-  <Item identifier="tsm_qbz_191_cbrnertai" subcategory="TSM" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,tsm_gun,provocativetohumanai" scale="0.25" impactsoundtag="impact_metal_light" hideinmenus="true">
+  <Item identifier="tsm_qbz_191_cbrnertai" subcategory="TSM" category="weapon" cargocontaineridentifier="tsm_metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,provocativetohumanai" scale="0.25" impactsoundtag="impact_metal_light" hideinmenus="true">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
     <InventoryIcon texture="%ModDir:2953749635%/weapons/奇迹之海/tsm.png" sourcerect="2371,1638,126,134" origin="0.5,0.5" />
     <Sprite texture="%ModDir:2953749635%/weapons/奇迹之海/tsm.png" sourcerect="592,1661,432,111" depth="0.55" origin="0.5,0.5" />
