@@ -580,4 +580,8 @@
   <entitydescription.berra_STANAG_50beowulf_fr_drum>A PMAG D-60 contains 35 .50Beowulf Fragile \nHappy Hunting</entitydescription.berra_STANAG_50beowulf_fr_drum>
   <entityname.berra_STANAG_50beowulf_ap_drum>PMAG-D60 Drum</entityname.berra_STANAG_50beowulf_ap_drum>
   <entitydescription.berra_STANAG_50beowulf_ap_drum>A PMAG D-60 contains 35 .50Beowulf AP \nHappy Hunting</entitydescription.berra_STANAG_50beowulf_ap_drum>
+
+  <entityname.uhm_headset>User Health Monitoring Headset</entityname.uhm_headset>
+  <entitydescription.uhm_headset>A headset with built-in User Health Monitor, can transmit SOS signal when user is unconscious \nRequires Mobilebattery to work</entitydescription.uhm_headset>
+  <sig.sos>User Status Critical \nS.O.S</sig.sos>
 </infotexts>

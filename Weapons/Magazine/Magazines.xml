@@ -705,7 +705,7 @@
         <Conditional IsFullCondition="false" targetcontaineditem="true" />
         <sound file="%ModDir:3278494407%/Weapons/Magazine/reload4.ogg" type="OnUse" range="300" loop="true" />
       </StatusEffect>
-      <StatusEffect type="Always" target="This" interval="3">
+      <StatusEffect type="Always" target="This" interval="3" checkconditionalalways="true" disabledeltatime="true">
         <Conditional hastag="neq tsm_danger_box" targetcontainer="true" />
         <Explosion range="300.0" showEffects="false" penetration="0">
           <Affliction identifier="triton_burn" amount="50" />

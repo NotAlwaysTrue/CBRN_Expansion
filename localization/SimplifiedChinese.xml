@@ -611,4 +611,8 @@
   <entitydescription.berra_STANAG_50beowulf_fr_drum>装有35发.50贝奥武夫易碎弹的PMAG-D60弹鼓 \n狩猎愉快</entitydescription.berra_STANAG_50beowulf_fr_drum>
   <entityname.berra_STANAG_50beowulf_ap_drum>PMAG-D60弹鼓</entityname.berra_STANAG_50beowulf_ap_drum>
   <entitydescription.berra_STANAG_50beowulf_ap_drum>装有35发.50贝奥武夫穿甲弹的PMAG-D60弹鼓 \n狩猎愉快</entitydescription.berra_STANAG_50beowulf_ap_drum>
+
+  <entityname.uhm_headset>用户健康监控耳机</entityname.uhm_headset>
+  <entitydescription.uhm_headset>内建有用户状态监控系统的耳机, 能在佩戴者昏迷时发送求救信号 \n需要电池</entitydescription.uhm_headset>
+  <sig.sos>使用者状态危急 \n需要援助</sig.sos>
 </infotexts>

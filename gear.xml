@@ -2015,6 +2015,62 @@
       <GuiFrame relativesize="0.5,0.5" anchor="CenterLeft" pivot="CenterLeft" style="ItemUI" />
     </CustomInterface>-->
   </Item>
+  <Item identifier="uhm_headset" scale="0.5" category="Equipment" tags="smallitem,mobileradio" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="crewcab" secondary="divingcab"/>
+    <Price baseprice="80">
+      <Price storeidentifier="merchantoutpost" minavailable="3" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="10" />
+      <Price storeidentifier="merchantresearch" minavailable="4" />
+      <Price storeidentifier="merchantmilitary" minavailable="6" />
+      <Price storeidentifier="merchantmine" minavailable="6" />
+    </Price>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="256,0,64,64" origin="0.5,0.5" />
+    <Sprite name="Headset" texture="Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="28,321,49,62" origin="0.5,0.5" />
+    <Body radius="20" height="20" density="15" />
+    <Deconstruct time="5">
+      <Item identifier="sonarbeacon" />
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="silicon" />
+      <RequiredItem identifier="copper" />
+      <RequiredItem identifier="sonarbeacon" />
+      <RequiredItem identifier="fpgacircuit" />
+    </Fabricate>
+    <WifiComponent range="40000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+      <StatusEffect type="OnActive" targettype="This">
+        <Conditional JamTimer="gt 0" targetitemcomponent="WifiComponent" />
+        <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
+      </StatusEffect>
+    </WifiComponent>
+    <LightComponent LightColor="0,0,0,0" range="0" powerconsumption="0" blinkfrequency="2" IsOn="false" canbeselected="false">
+      <StatusEffect type="OnActive" targettype="Contained" Condition="-0.05">
+        <RequiredItem items="mobilebattery" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" targettype="This" SoundRange="50000" setvalue="true">
+        <Conditional Voltage="gt 0.5" targetitemcomponent="LightComponent" />
+        <sound file="Content/Items/WarningBeepSlow.ogg" range="1000.0" loop="true" volume="1.0" />
+      </StatusEffect>
+    </LightComponent>
+    <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
+      <sprite name="Headset Wearable" texture="Content/Items/Jobgear/headgears.png" limb="Head" depth="0.1" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hideotherwearables="false" sourcerect="26,317,51,64" origin="0.5,0.6" >
+        <LightComponent LightColor="255,0,0,130" range="59" powerconsumption="10" blinkfrequency="2" IsOn="false" canbeselected="false" AllowInGameEditing="false"/>
+      </sprite>
+      <StatusEffect type="OnWearing" target="This" disabledeltatime="true" checkconditionalalways="true" IsOn="true" setvalue="true">
+        <Conditional IsUnconscious="eq true" TargetContainer="true" TargetGrandParent="true" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="This" disabledeltatime="true" checkconditionalalways="true" IsOn="false" setvalue="true">
+        <Conditional IsUnconscious="eq false" TargetContainer="true" TargetGrandParent="true" />
+      </StatusEffect>
+    </Wearable>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+      <Containable items="mobilebattery">
+        <StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true" />
+      </Containable>
+    </ItemContainer>
+    <AiTarget soundrange="1200" sonarlabel="sig.sos" sight="1200" staticsight="true"/>
+  </Item>
 
   <Item identifier="extinguishgrenade_exec" scale="1.0" tags="fireextinguisher" requireaimtouse="false" noninteractable="true" hideinmenus="true">
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,1,1" depth="0.55" origin="0.5,0.5" />

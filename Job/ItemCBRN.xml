@@ -189,7 +189,7 @@
     <Sprite texture="%ModDir:3278494407%/Misc/Material/containerplain.png" depth="0.56" sourcerect="0,0,316,73" origin="0.5,0.5" />
     <Body width="320" height="78" density="20" />
     <Deconstruct time="120" requireddeconstructor="fuelextractor">
-      <Item identifier="tsm_triton_bag" mincondition="0.0" maxcondition="0.01" Outcondition="0.125" />
+      <Item identifier="tsm_triton_bag" mincondition="0.0" maxcondition="0.01" Outcondition="0.25" />
       <Item identifier="canister" amount="1" />
     </Deconstruct>
     <Deconstruct time="10" requireddeconstructor="deconstructor">
