@@ -1416,8 +1416,8 @@
     </Deconstruct>
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="35" displayname="m903" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="tsm_triton_bag" amount="4" />
-      <RequiredItem identifier="tsm_hengberley_star" amount="2" />
+      <RequiredItem identifier="tsm_triton_bag" amount="3" />
+      <RequiredItem identifier="tsm_hengberley_star" amount="1" />
       <RequiredItem identifier="magnesium" amount="6" />
       <RequiredItem identifier="flashpowder" amount="4"/>
     <RequiredItem identifier="steel" amount="2"/>
@@ -1426,8 +1426,8 @@
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="magnesium" amount="6" />
       <RequiredItem identifier="flashpowder" amount="4" />
-      <RequiredItem identifier="tsm_hengberley_star" amount="2" />
-      <RequiredItem identifier="tsm_triton_bag" amount="4" />
+      <RequiredItem identifier="tsm_hengberley_star" amount="1" />
+      <RequiredItem identifier="tsm_triton_bag" amount="3" />
       <RequiredItem tag="M107Mag" mincondition="0.0" maxcondition="0.0" usecondition="false" />
     </Fabricate>
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="berra_50bmg_m903" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -1461,7 +1461,7 @@
       <RequiredItem identifier="magnesium" amount="6" />
       <RequiredItem identifier="flashpowder" amount="3" />
       <RequiredItem identifier="titanium" amount="6" />
-      <RequiredItem identifier="tsm_triton_bag" amount="2" />
+      <RequiredItem identifier="tsm_triton_bag" amount="1" />
       <RequiredItem tag="M107Mag" mincondition="0.0" maxcondition="0.0" usecondition="false" />
     </Fabricate>
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="berra_50bmg_m1022" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -2488,26 +2488,21 @@
     <Body width="40" height="14" density="30" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" Hitscan="true" spread="0.02" DamageDoors="true" >
-      <Attack structuredamage="80" targetforce="12" itemdamage="80" penetration="0.8" severlimbsprobability="0.8">
-        <Affliction identifier="gunshotwound" strength="50" />
-        <Affliction identifier="lacerations" strength="50" />
-        <Affliction identifier="bleeding" strength="20" />
-        <Affliction identifier="stun" strength="0.8" />
-        <Affliction identifier="burn" strength="20" />
+      <Attack structuredamage="80" targetforce="12" itemdamage="80" penetration="0.9" severlimbsprobability="0.8">
+        <Affliction identifier="gunshotwound" strength="60" />
+        <Affliction identifier="lacerations" strength="60" />
+        <Affliction identifier="bleeding" strength="30" />
+        <Affliction identifier="stun" strength="1" />
+        <Affliction identifier="burn" strength="30" />
       </Attack>
-      <StatusEffect type="OnImpact" target="UseTarget" OneShot="true">
-        <Explosion range="80.0" structuredamage="120" itemdamage="120" force="5" severlimbsprobability="1" debris="false" decal="explosion" decalsize="0.75" penetration="0.8" >
-          <Affliction identifier="explosiondamage" strength="80" />
-          <Affliction identifier="lacerations" strength="60" />
+      <StatusEffect type="OnImpact" target="UseTarget" OneShot="true" multiplyAfflictionsByMaxVitality="true">
+        <Explosion range="80.0" structuredamage="120" itemdamage="120" force="5" severlimbsprobability="5" debris="false" decal="explosion" decalsize="0.75" penetration="0.9" >
+          <Affliction identifier="explosiondamage" strength="90" />
+          <Affliction identifier="lacerations" strength="70" />
           <Affliction identifier="burn" strength="50" />
           <Affliction identifier="bleeding" strength="40" />
           <Affliction identifier="stun" strength="3" />
         </Explosion>
-      </StatusEffect>
-      <StatusEffect type="OnImpact" target="UseTarget">
-        <Conditional entitytype="eq Structure" />
-        <Conditional hastag="eq door" />
-        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
       </StatusEffect>
       <StatusEffect type="OnNotContained" target="This" stackable="false">
         <Remove />
@@ -2522,11 +2517,11 @@
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" Hitscan="true" MaxTargetsToHit="3" spread="0.01" DamageDoors="true" >
       <Attack structuredamage="10" targetforce="15" itemdamage="10" penetration="1" severlimbsprobability="0.2">
-        <Affliction identifier="gunshotwound" strength="80" />
-        <Affliction identifier="lacerations" strength="80" />
-        <Affliction identifier="bleeding" strength="60" />
-        <Affliction identifier="stun" strength="0.8" />
-        <Affliction identifier="triton_7L" strength="25" />
+        <Affliction identifier="gunshotwound" strength="90" />
+        <Affliction identifier="lacerations" strength="90" />
+        <Affliction identifier="bleeding" strength="70" />
+        <Affliction identifier="stun" strength="1" />
+        <Affliction identifier="triton_7L" strength="40" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
         <Conditional entitytype="eq Structure" />
