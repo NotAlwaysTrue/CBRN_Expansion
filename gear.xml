@@ -439,19 +439,10 @@
       <StatusEffect type="OnWearing" target="Character" HideFace="true" setvalue="true" disabledeltatime="true" />
       <sprite name="CBRN3A Mask" texture="%ModDir:3278494407%/Jobgear/Under_Masks/APR-2.png" canbehiddenbyotherwearables="false" alphaclipotherwearables="false" sourcerect="304,212,128,153" depth="0.55" limb="Head" depthlimb="Head" rotation="0" scale="0.15" origin="0.15,0.3" />
       <damagemodifier armorsector="0,360" afflictionidentifiers="gunshotwound" damagemultiplier="0.8" deflectprojectiles="true" />
-      <StatusEffect type="OnWearing" targettype="Contained" targets="berra_filiter" Condition="-0.2" >
+      <StatusEffect type="OnWearing" target="Contained" targets="maskfilter" Condition="-0.5" >
         <Conditional IsDead="False"/>
       </StatusEffect>
-      <StatusEffect type="OnWearing" targettype="Contained" targets="tsm_filiter" Condition="-0.5" >
-        <Conditional IsDead="False"/>
-      </StatusEffect>
-      <StatusEffect type="OnWearing" targettype="Contained" targets="col_filiter" Condition="-0.8" >
-        <Conditional IsDead="False"/>
-      </StatusEffect>
-      <StatusEffect type="OnWearing" targettype="Contained" targets="sep_filiter" Condition="-0.8" >
-        <Conditional IsDead="False"/>
-      </StatusEffect>
-      <StatusEffect type="OnWearing" targettype="Contained" targets="oxygensource" Condition="-1.0" >
+      <StatusEffect type="OnWearing" target="Contained" targets="oxygensource" Condition="-1.0" >
         <Conditional IsDead="False"/>
       </StatusEffect>
       <StatusEffect type="OnWearing" target="Character" disabledeltatime="true" ObstructVisionAmount="0.3" setvalue="true" comparison="And">
@@ -460,11 +451,11 @@
         <Sound file="%ModDir:3278494407%/Jobgear/Under_Masks/maskedbreath.ogg" volume="0.3" loop="true" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="Character" disabledeltatime="true" setvalue="true">
-        <Affliction identifier="APR" amount="10" />
+        <Affliction identifier="APR_M" amount="10" />
         <RequiredItems items="maskfilter" type="Contained" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="Character" OxygenAvailable="1000" disabledeltatime="true" setvalue="true">
-        <Affliction identifier="APR" amount="10" />
+        <Affliction identifier="APR_M" amount="10" />
         <RequiredItems items="oxygensource" type="Contained" />
       </StatusEffect>
       <ItemContainer capacity="1" maxstacksize="1" containedstateindicatorslot="0" containedstateindicatorstyle="tank">
@@ -1207,7 +1198,7 @@
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
       <sprite name="M82 Worn" texture="%ModDir:3278494407%/Weapons/Other/M82A1_29.png" canbehiddenbyotherwearables="false" sourcerect="0,0,1920,476" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.1" origin="0.5,0.7" />
     </Wearable>
-    <RangedWeapon reload="0.75" weapondamagemodifier="1.6" penetration="0.9" holdtrigger="false" barrelpos="900,95" spread="0" unskilledspread="40" combatPriority="100" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.75" weapondamagemodifier="1.8" penetration="0.9" holdtrigger="false" barrelpos="900,95" spread="0" unskilledspread="40" combatPriority="100" drawhudwhenequipped="true" crosshairscale="0.2">
       <RequiredSkill identifier="weapons" level="80" />
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
@@ -1272,7 +1263,7 @@
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
       <sprite name="M107 Worn" texture="%ModDir:3278494407%/Weapons/Other/M107A1_20.png" canbehiddenbyotherwearables="false" sourcerect="0,0,1646,302" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.1" origin="0.5,0.7" />
     </Wearable>
-    <RangedWeapon reload="0.75" weapondamagemodifier="1.4" penetration="0.75" holdtrigger="false" barrelpos="680,30" spread="0.01" unskilledspread="30" combatPriority="100" drawhudwhenequipped="true" crosshairscale="0.1">
+    <RangedWeapon reload="0.75" weapondamagemodifier="1.6" penetration="0.75" holdtrigger="false" barrelpos="680,30" spread="0.01" unskilledspread="30" combatPriority="100" drawhudwhenequipped="true" crosshairscale="0.1">
       <RequiredSkill identifier="weapons" level="80" />
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
@@ -1337,7 +1328,7 @@
     <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
       <sprite name="M107Auto Worn" texture="%ModDir:3278494407%/Weapons/Other/M107A1_20_FA.png" canbehiddenbyotherwearables="false" sourcerect="0,0,1646,302" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.1" origin="0.5,0.7" />
     </Wearable>
-    <RangedWeapon reload="0.2" weapondamagemodifier="1.0" penetration="0.5" holdtrigger="true" barrelpos="680,30" spread="1" unskilledspread="60" combatPriority="120" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.2" weapondamagemodifier="1.5" penetration="0.5" holdtrigger="true" barrelpos="680,30" spread="1" unskilledspread="60" combatPriority="120" drawhudwhenequipped="true" crosshairscale="0.2">
       <RequiredSkill identifier="weapons" level="100" />
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
@@ -1489,7 +1480,7 @@
     </Holdable>
     <aitarget sightrange="2500" soundrange="3000" fadeouttime="6" />
   </Item>
-  <Item identifier="tsm_filiter" subcategory="TSM" category="Equipment" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.11" cargocontaineridentifier="metalcrate" tags="smallitem,maskfilter" impactsoundtag="impact_metal_light">
+  <Item identifier="tsm_filiter" Health="100" subcategory="TSM" category="Equipment" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.11" cargocontaineridentifier="metalcrate" tags="smallitem,maskfilter" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir:3278494407%/Jobgear/T.S.M/filter.png" sourcerect="0,0,117,109" origin="0.5,0.5" />
     <Sprite texture="%ModDir:3278494407%/Jobgear/T.S.M/filter.png" depth="0.56" sourcerect="0,0,117,109" origin="0.5,0.5" />
     <Body width="72" height="90" density="25" />
@@ -1519,7 +1510,7 @@
     </Fabricate>
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
   </Item>
-  <Item identifier="berra_filiter" subcategory="Berra Group" category="Equipment" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.11" cargocontaineridentifier="metalcrate" tags="smallitem,maskfilter" impactsoundtag="impact_metal_light">
+  <Item identifier="berra_filiter" Health="150" subcategory="Berra Group" category="Equipment" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.11" cargocontaineridentifier="metalcrate" tags="smallitem,maskfilter" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir:3278494407%/Jobgear/T.S.M/filter.png" sourcerect="0,0,117,109" origin="0.5,0.5" />
     <Sprite texture="%ModDir:3278494407%/Jobgear/T.S.M/filter.png" depth="0.56" sourcerect="0,0,117,109" origin="0.5,0.5" />
     <Body width="72" height="90" density="25" />
@@ -1549,7 +1540,7 @@
     </Fabricate>
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
   </Item>
-  <Item identifier="col_filiter" subcategory="Berra Group" category="Equipment" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.11" cargocontaineridentifier="metalcrate" tags="smallitem,maskfilter" impactsoundtag="impact_metal_light">
+  <Item identifier="col_filiter" Health="80" subcategory="Berra Group" category="Equipment" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.11" cargocontaineridentifier="metalcrate" tags="smallitem,maskfilter" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir:3278494407%/Jobgear/T.S.M/filter.png" sourcerect="0,0,117,109" origin="0.5,0.5" />
     <Sprite texture="%ModDir:3278494407%/Jobgear/T.S.M/filter.png" depth="0.56" sourcerect="0,0,117,109" origin="0.5,0.5" />
     <Body width="72" height="90" density="25" />
@@ -1579,7 +1570,7 @@
     </Fabricate>
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
   </Item>
-  <Item identifier="sep_filiter" subcategory="Berra Group" category="Equipment" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.11" cargocontaineridentifier="metalcrate" tags="smallitem,maskfilter" impactsoundtag="impact_metal_light">
+  <Item identifier="sep_filiter" Health="80" subcategory="Berra Group" category="Equipment" maxstacksize="8" maxstacksizecharacterinventory="2" scale="0.11" cargocontaineridentifier="metalcrate" tags="smallitem,maskfilter" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir:3278494407%/Jobgear/T.S.M/filter.png" sourcerect="0,0,117,109" origin="0.5,0.5" />
     <Sprite texture="%ModDir:3278494407%/Jobgear/T.S.M/filter.png" depth="0.56" sourcerect="0,0,117,109" origin="0.5,0.5" />
     <Body width="72" height="90" density="25" />
@@ -1936,9 +1927,9 @@
     <InventoryIcon texture="%ModDir:2953749635%/weapons/其他/近战.png" sourcerect="779,896,93,93" origin="0.5,0.5" /><!--TODO: New Spirites-->
     <Sprite texture="%ModDir:2953749635%/weapons/其他/近战.png" sourcerect="0,262,722,178" depth="0.55" origin="0.5,0.5" />
     <Body width="700" height="150" density="45" />
-    <MeleeWeapon slots="RightHand+LeftHand,Any" controlpose="true" holdpos="16,-50" aimpos="50,0" handle1="-20,-3" handle2="15,3" holdangle="35" reload="0.8" range="100" combatPriority="50" msg="ItemMsgPickUpSelect">
+    <MeleeWeapon slots="RightHand+LeftHand,Any" controlpose="true" holdpos="16,-50" aimpos="50,0" handle1="-20,-3" handle2="15,3" holdangle="35" reload="1" range="100" combatPriority="50" msg="ItemMsgPickUpSelect">
       <Attack targetimpulse="4" severlimbsprobability="0.3" ballastfloradamage="80" structuredamage="0" itemdamage="3000" penetration="0.8">
-        <Affliction identifier="blunttrauma" strength="60" />
+        <Affliction identifier="blunttrauma" strength="40" />
         <Affliction identifier="internaldamage" strength="40" />
         <Affliction identifier="stun" strength="1.5" />
         <Sound file="Content/Items/Weapons/Smack1.ogg" selectionmode="random" range="500"/>
@@ -2011,6 +2002,14 @@
         <LuaHook name="Drone.control" />
       </StatusEffect>
     </MeleeWeapon>
+    <Deconstruct time="15">
+      <Item identifier="wificomponent"/>
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="false">
+      <RequiredSkill identifier="weapons" level="50" />
+      <RequiredItem identifier="wificomponent" amount="1"/>
+      <RequiredItem tag="wire" amount="1"/>
+    </Fabricate>
     <!--<CustomInterface canbeselected="true" drawhudwhenequipped="true">
       <GuiFrame relativesize="0.5,0.5" anchor="CenterLeft" pivot="CenterLeft" style="ItemUI" />
     </CustomInterface>-->
@@ -2069,6 +2068,63 @@
         <StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true" />
       </Containable>
     </ItemContainer>
+    <AiTarget soundrange="1200" sonarlabel="sig.sos" sight="1200" staticsight="true"/>
+  </Item>
+  <Item identifier="uhm_headset_autoinjector" scale="0.5" category="Equipment,Medical" tags="smallitem,mobileradio" allowasextracargo="true" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="medcab"/>
+    <Price baseprice="200" sold="false">
+      <Price storeidentifier="merchantoutpost" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" />
+      <Price storeidentifier="merchantresearch" />
+      <Price storeidentifier="merchantmilitary" />
+      <Price storeidentifier="merchantmine" />
+    </Price>
+    <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="113,264,58,45" origin="0.5,0.5" />
+    <Sprite name="Headset" texture="Content/Items/JobGear/TalentGear.png" depth="0.6" sourcerect="255,305,72,60" origin="0.35,0.5" />
+    <Body radius="20" height="20" density="15" />
+    <Deconstruct time="10">
+      <Item identifier="plastic" amount="2" />
+      <Item identifier="copper" />
+      <Item identifier="sonarbeacon" />
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10" requiresrecipe="true">
+      <RequiredSkill identifier="mechanical" level="30" />
+      <RequiredItem identifier="autoinjectorheadset" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="sonarbeacon" />
+    </Fabricate>
+    <LightComponent LightColor="0,0,0,0" range="0" powerconsumption="0" blinkfrequency="2" IsOn="false" canbeselected="false">
+      <StatusEffect type="OnActive" targettype="Contained" Condition="-0.05">
+        <RequiredItem items="mobilebattery" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" targettype="This" SoundRange="50000" setvalue="true">
+        <Conditional Voltage="gt 0.5" targetitemcomponent="LightComponent" />
+        <sound file="Content/Items/WarningBeepSlow.ogg" range="1000.0" loop="true" volume="1.0" />
+      </StatusEffect>
+    </LightComponent>
+    <WifiComponent range="35000.0" LinkToChat="true" MinChatMessageInterval="0.0" />
+    <ItemContainer capacity="1" maxstacksize="1" autoinject="true">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="384,448,64,64" origin="0.5,0.5" />
+      <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+      <Containable items="chem,syringe" />
+      <SubContainer capacity="1" maxstacksize="1">
+        <Containable items="mobilebattery">
+          <StatusEffect type="OnContaining" targettype="This" targetslot="1" Voltage="1.0" setvalue="true" />
+        </Containable>
+      </SubContainer>
+    </ItemContainer>
+    <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
+      <sprite name="Headset Wearable" texture="Content/Items/JobGear/TalentGear.png" sourcerect="255,305,72,58" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hideotherwearables="false" origin="0.5,0.5" >
+        <LightComponent LightColor="255,0,0,130" range="59" powerconsumption="10" blinkfrequency="2" IsOn="false" canbeselected="false" AllowInGameEditing="false"/>
+      </sprite>
+      <StatusEffect type="OnWearing" target="This" disabledeltatime="true" checkconditionalalways="true" IsOn="true" setvalue="true">
+        <Conditional IsUnconscious="eq true" TargetContainer="true" TargetGrandParent="true" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="This" disabledeltatime="true" checkconditionalalways="true" IsOn="false" setvalue="true">
+        <Conditional IsUnconscious="eq false" TargetContainer="true" TargetGrandParent="true" />
+      </StatusEffect>
+    </Wearable>
     <AiTarget soundrange="1200" sonarlabel="sig.sos" sight="1200" staticsight="true"/>
   </Item>
 

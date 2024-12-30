@@ -892,8 +892,8 @@
       <Price storeidentifier="merchantmine" multiplier="1.25" />
     </Price>
     <Deconstruct time="18">
-      <Item identifier="plastic" outcondition="0.7" />
-      <Item identifier="flashpowder" mincondition="0.6" outcondition="0.6" />
+      <Item identifier="plastic" outcondition="0.5" />
+      <Item identifier="flashpowder" mincondition="0.6" outcondition="0.5" />
       <Item identifier="copper" mincondition="0.8" amount="1" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="35" displayname="50beowulf_fr" requiresrecipe="true">
@@ -934,7 +934,7 @@
       <Price storeidentifier="merchantmine" multiplier="1.25" />
     </Price>
     <Deconstruct time="18">
-      <Item identifier="plastic" outcondition="0.7" />
+      <Item identifier="plastic" outcondition="0.5" />
       <Item identifier="flashpowder" mincondition="0.8" amount="1" />
       <Item identifier="titanium" mincondition="0.8" amount="1" />
     </Deconstruct>
@@ -943,7 +943,7 @@
       <RequiredItem identifier="magnesium" amount="2" />
       <RequiredItem identifier="flashpowder" amount="1" />
       <RequiredItem identifier="titanium" amount="5" />
-    <RequiredItem identifier="plastic" />
+      <RequiredItem identifier="plastic" />
     </Fabricate>
     <Fabricate suitablefabricators="fabricator" requiredtime="35" displayname="50beowulf_ap_recycle" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="40" />
@@ -974,9 +974,9 @@
       <Price storeidentifier="merchantmine" multiplier="1.25" />
     </Price>
     <Deconstruct time="18">
-      <Item identifier="plastic" outcondition="0.7" />
-      <Item identifier="flashpowder" mincondition="0.8" outcondition="0.6" />
-      <Item identifier="copper" mincondition="0.8" amount="1" />
+      <Item identifier="plastic" outcondition="0.5" />
+      <Item identifier="flashpowder" mincondition="0.8" amount="2" />
+      <Item identifier="copper" mincondition="0.8" amount="2" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="35" displayname="50beowulf_fr" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="40" />
@@ -1016,10 +1016,24 @@
       <Price storeidentifier="merchantmine" multiplier="1.25" />
     </Price>
     <Deconstruct time="18">
-      <Item identifier="plastic" outcondition="0.7" />
-      <Item identifier="flashpowder" mincondition="0.8" outcondition="0.6" />
-      <Item identifier="titanium" mincondition="0.8" amount="1" />
+      <Item identifier="plastic" outcondition="0.5" />
+      <Item identifier="flashpowder" mincondition="0.8" amount="2" />
+      <Item identifier="titanium" mincondition="0.8" amount="2" />
     </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="35" displayname="50beowulf_ap" requiresrecipe="true">
+      <RequiredSkill identifier="weapons" level="60" />
+      <RequiredItem identifier="magnesium" amount="4" />
+      <RequiredItem identifier="flashpowder" amount="2" />
+      <RequiredItem identifier="titanium" amount="8" />
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <Fabricate suitablefabricators="fabricator" requiredtime="35" displayname="50beowulf_ap_recycle" requiresrecipe="true">
+      <RequiredSkill identifier="weapons" level="60" />
+      <RequiredItem identifier="magnesium" amount="4" />
+      <RequiredItem identifier="flashpowder" amount="2" />
+      <RequiredItem identifier="titanium" amount="8" />
+      <RequiredItem tag="berra_STANAG_ext" mincondition="0.0" maxcondition="0.0" usecondition="false" />
+    </Fabricate>
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="berra_50beowulf_ap" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="berra_50beowulf_ap" />
       <StatusEffect type="OnUse" target="This" condition="-5" disabledeltatime="true">
@@ -1383,7 +1397,6 @@
     </Deconstruct>
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="35" displayname="m33" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="tsm_triton_bag" amount="1" />
       <RequiredItem identifier="titanium" amount="6" />
       <RequiredItem identifier="magnesium" amount="6" />
       <RequiredItem identifier="flashpowder" amount="3"/>
@@ -1394,7 +1407,6 @@
       <RequiredItem identifier="magnesium" amount="6" />
       <RequiredItem identifier="flashpowder" amount="3" />
       <RequiredItem identifier="titanium" amount="6" />
-      <RequiredItem identifier="tsm_triton_bag" amount="1" />
       <RequiredItem tag="M107Mag" mincondition="0.0" maxcondition="0.0" usecondition="false" />
     </Fabricate>
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="berra_50bmg_m33" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -1444,13 +1456,13 @@
     <Sprite texture="%ModDir:3278494407%/Weapons/Other/M107Mag.png" depth="0.56" sourcerect="0,0,810,851" origin="0.5,0.5" />
     <Body width="100" height="200" density="50" />
     <Deconstruct time="18">
-      <Item identifier="tsm_triton_bag" amount="1" />
+      <Item identifier="tsm_triton_bag" outcondition="0.5" />
       <Item identifier="titanium" amount="3" />
       <Item identifier="steel" amount="1" />
     </Deconstruct>
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="35" displayname="m1022" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="tsm_triton_bag" amount="1" />
+      <RequiredItem identifier="tsm_triton_bag" mincondition="0.5" usecondition="true"/>
       <RequiredItem identifier="titanium" amount="6" />
       <RequiredItem identifier="magnesium" amount="6" />
       <RequiredItem identifier="flashpowder" amount="3"/>
@@ -1461,7 +1473,7 @@
       <RequiredItem identifier="magnesium" amount="6" />
       <RequiredItem identifier="flashpowder" amount="3" />
       <RequiredItem identifier="titanium" amount="6" />
-      <RequiredItem identifier="tsm_triton_bag" amount="1" />
+      <RequiredItem identifier="tsm_triton_bag" mincondition="0.5" usecondition="true"/>
       <RequiredItem tag="M107Mag" mincondition="0.0" maxcondition="0.0" usecondition="false" />
     </Fabricate>
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="berra_50bmg_m1022" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
@@ -1536,39 +1548,31 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
 
-  <Item identifier="berra_STANAG_50beowulf_fr_drum" subcategory="Berra Group" category="weapon" maxstacksize="1" Health="35" maxstacksizecharacterinventory="3" cargocontaineridentifier="metalcrate" scale="0.255" tags="smallitem,berra_STANAG_ext,STANAG_50beowulf" impactsoundtag="impact_metal_light" hideinmenus="false">
+  <Item identifier="berra_STANAG_50beowulf_fr_drum" subcategory="Berra Group" category="weapon" maxstacksize="1" Health="35" maxstacksizecharacterinventory="3" cargocontaineridentifier="metalcrate" scale="0.255" tags="smallitem,berra_STANAG_drum,STANAG_50beowulf" impactsoundtag="impact_metal_light" hideinmenus="false">
     <InventoryIcon texture="%ModDir:2953749635%/weapons/木卫二联盟/coalition.png" sourcerect="2150,670,73,102" origin="0.5,0.5" />
     <Sprite texture="%ModDir:2953749635%/weapons/木卫二联盟/coalition.png" depth="0.56" sourcerect="2150,642,73,133" origin="0.5,0.5" />
     <Body width="30" height="58" density="50" />
-    <!--<Price baseprice="550" sold="false" minleveldifficulty="65" displaynonempty="true">
-      <Price storeidentifier="merchantoutpost" multiplier="1.4" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" />
-      <Price storeidentifier="merchantresearch" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="0" maxavailable="4" />
-      <Price storeidentifier="merchantarmory" sold="true" multiplier="0.9" minavailable="0" maxavailable="4" />
-      <Price storeidentifier="merchantmine" multiplier="1.25" />
-    </Price>
     <Deconstruct time="18">
-      <Item identifier="plastic" outcondition="0.7" />
-      <Item identifier="flashpowder" mincondition="0.8" outcondition="0.6" />
-      <Item identifier="copper" mincondition="0.8" amount="1" />
+      <Item identifier="plastic" outcondition="1" />
+      <Item identifier="flashpowder" mincondition="0.8" amount="3" />
+      <Item identifier="copper" mincondition="0.8" amount="3" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="35" displayname="50beowulf_fr" requiresrecipe="true">
-      <RequiredSkill identifier="weapons" level="40" />
+      <RequiredSkill identifier="weapons" level="80" />
       <RequiredItem identifier="magnesium" amount="4" />
-      <RequiredItem identifier="flashpowder" amount="2" />
+      <RequiredItem identifier="flashpowder" amount="6" />
       <RequiredItem identifier="plastic" />
-      <RequiredItem identifier="copper" amount="6" />
-      <RequiredItem identifier="steel" amount="4" />
+      <RequiredItem identifier="copper" amount="8" />
+      <RequiredItem identifier="steel" amount="6" />
     </Fabricate>
     <Fabricate suitablefabricators="fabricator" requiredtime="35" displayname="50beowulf_fr_recycle" requiresrecipe="true">
-      <RequiredSkill identifier="weapons" level="40" />
+      <RequiredSkill identifier="weapons" level="80" />
       <RequiredItem identifier="magnesium" amount="4" />
-      <RequiredItem identifier="flashpowder" amount="2" />
-      <RequiredItem identifier="copper" amount="6" />
-      <RequiredItem identifier="steel" amount="4" />
-      <RequiredItem tag="berra_STANAG_ext" mincondition="0.0" maxcondition="0.0" usecondition="false" />
-    </Fabricate>-->
+      <RequiredItem identifier="flashpowder" amount="6" />
+      <RequiredItem identifier="copper" amount="8" />
+      <RequiredItem identifier="steel" amount="6" />
+      <RequiredItem tag="berra_STANAG_drum" mincondition="0.0" maxcondition="0.0" usecondition="false" />
+    </Fabricate>
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="berra_50beowulf_fr" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="berra_50beowulf_fr" />
       <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
@@ -1578,22 +1582,14 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item identifier="berra_STANAG_50beowulf_ap_drum" subcategory="Berra Group" category="weapon" maxstacksize="1" Health="35" maxstacksizecharacterinventory="3" cargocontaineridentifier="metalcrate" scale="0.255" tags="smallitem,berra_STANAG_ext,STANAG_50beowulf" impactsoundtag="impact_metal_light" hideinmenus="false">
+  <Item identifier="berra_STANAG_50beowulf_ap_drum" subcategory="Berra Group" category="weapon" maxstacksize="1" Health="35" maxstacksizecharacterinventory="3" cargocontaineridentifier="metalcrate" scale="0.255" tags="smallitem,berra_STANAG_drum,STANAG_50beowulf" impactsoundtag="impact_metal_light" hideinmenus="false">
     <InventoryIcon texture="%ModDir:2953749635%/weapons/木卫二联盟/coalition.png" sourcerect="2150,670,73,102" origin="0.5,0.5" />
     <Sprite texture="%ModDir:2953749635%/weapons/木卫二联盟/coalition.png" depth="0.56" sourcerect="2150,642,73,133" origin="0.5,0.5" />
     <Body width="30" height="58" density="50" />
-    <!--<Price baseprice="600" sold="false" minleveldifficulty="65" displaynonempty="true">
-      <Price storeidentifier="merchantoutpost" multiplier="1.4" />
-      <Price storeidentifier="merchantcity" multiplier="1.25" />
-      <Price storeidentifier="merchantresearch" multiplier="1.25" />
-      <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="0" maxavailable="4" />
-      <Price storeidentifier="merchantarmory" sold="true" multiplier="0.9" minavailable="0" maxavailable="4" />
-      <Price storeidentifier="merchantmine" multiplier="1.25" />
-    </Price>-->
     <Deconstruct time="18">
-      <Item identifier="plastic" outcondition="0.7" />
-      <Item identifier="flashpowder" mincondition="0.8" outcondition="0.6" />
-      <Item identifier="titanium" mincondition="0.8" amount="1" />
+      <Item identifier="plastic" outcondition="1" />
+      <Item identifier="flashpowder" mincondition="0.8" amount="3" />
+      <Item identifier="titanium" mincondition="0.8" amount="6" />
     </Deconstruct>
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="berra_50beowulf_ap" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="berra_50beowulf_ap" />
