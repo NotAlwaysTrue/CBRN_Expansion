@@ -1361,16 +1361,18 @@
     <Body width="100" height="200" density="50" />
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="35" displayname="mk211" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="40" />
+      <RequiredItem identifier="tsm_triton_bag" amount="1" />
       <RequiredItem identifier="tsm_yx_crystallography" amount="1" />
       <RequiredItem identifier="titanium" amount="4" />
-      <RequiredItem identifier="uex" amount="1" />
+      <RequiredItem identifier="c4block" amount="2" />
       <RequiredItem identifier="flashpowder" amount="8"/>
       <RequiredItem identifier="steel" amount="2"/>
     </Fabricate>
     <Fabricate suitablefabricators="tsm_fabricator" requiredtime="35" displayname="mk211_recycle" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="40" />
+      <RequiredItem identifier="tsm_triton_bag" amount="1" />
       <RequiredItem identifier="flashpowder" amount="8" />
-      <RequiredItem identifier="uex" amount="1" />
+      <RequiredItem identifier="c4block" amount="2" />
       <RequiredItem identifier="titanium" amount="4" />
       <RequiredItem identifier="tsm_yx_crystallography" amount="1" />
       <RequiredItem tag="M107Mag" mincondition="0.0" maxcondition="0.0" usecondition="false" />
@@ -1548,7 +1550,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
 
-  <Item identifier="berra_STANAG_50beowulf_fr_drum" subcategory="Berra Group" category="weapon" maxstacksize="1" Health="35" maxstacksizecharacterinventory="3" cargocontaineridentifier="metalcrate" scale="0.255" tags="smallitem,berra_STANAG_drum,STANAG_50beowulf" impactsoundtag="impact_metal_light" hideinmenus="false">
+  <Item identifier="berra_STANAG_50beowulf_fr_drum" subcategory="Berra Group" category="weapon" maxstacksize="1" Health="35" maxstacksizecharacterinventory="3" cargocontaineridentifier="metalcrate" scale="0.255" tags="smallitem,berra_STANAG_drum,STANAG_50beowulf,berra_STANAG" impactsoundtag="impact_metal_light" hideinmenus="false">
     <InventoryIcon texture="%ModDir:2953749635%/weapons/木卫二联盟/coalition.png" sourcerect="2150,670,73,102" origin="0.5,0.5" />
     <Sprite texture="%ModDir:2953749635%/weapons/木卫二联盟/coalition.png" depth="0.56" sourcerect="2150,642,73,133" origin="0.5,0.5" />
     <Body width="30" height="58" density="50" />
@@ -1582,7 +1584,7 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item identifier="berra_STANAG_50beowulf_ap_drum" subcategory="Berra Group" category="weapon" maxstacksize="1" Health="35" maxstacksizecharacterinventory="3" cargocontaineridentifier="metalcrate" scale="0.255" tags="smallitem,berra_STANAG_drum,STANAG_50beowulf" impactsoundtag="impact_metal_light" hideinmenus="false">
+  <Item identifier="berra_STANAG_50beowulf_ap_drum" subcategory="Berra Group" category="weapon" maxstacksize="1" Health="35" maxstacksizecharacterinventory="3" cargocontaineridentifier="metalcrate" scale="0.255" tags="smallitem,berra_STANAG_drum,STANAG_50beowulf,berra_STANAG" impactsoundtag="impact_metal_light" hideinmenus="false">
     <InventoryIcon texture="%ModDir:2953749635%/weapons/木卫二联盟/coalition.png" sourcerect="2150,670,73,102" origin="0.5,0.5" />
     <Sprite texture="%ModDir:2953749635%/weapons/木卫二联盟/coalition.png" depth="0.56" sourcerect="2150,642,73,133" origin="0.5,0.5" />
     <Body width="30" height="58" density="50" />
@@ -2494,6 +2496,7 @@
       <StatusEffect type="OnImpact" target="UseTarget" OneShot="true" multiplyAfflictionsByMaxVitality="true">
         <Explosion range="80.0" structuredamage="120" itemdamage="120" force="5" severlimbsprobability="5" debris="false" decal="explosion" decalsize="0.75" penetration="0.9" >
           <Affliction identifier="explosiondamage" strength="90" />
+          <Affliction identifier="triton_7L" strength="50" />
           <Affliction identifier="lacerations" strength="70" />
           <Affliction identifier="burn" strength="50" />
           <Affliction identifier="bleeding" strength="40" />
