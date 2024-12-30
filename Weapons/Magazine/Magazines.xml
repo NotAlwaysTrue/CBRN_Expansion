@@ -2491,12 +2491,13 @@
         <Affliction identifier="lacerations" strength="60" />
         <Affliction identifier="bleeding" strength="30" />
         <Affliction identifier="stun" strength="1" />
+        <Affliction identifier="triton_7L" strength="90" />
         <Affliction identifier="burn" strength="30" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget" OneShot="true" multiplyAfflictionsByMaxVitality="true">
         <Explosion range="80.0" structuredamage="120" itemdamage="120" force="5" severlimbsprobability="5" debris="false" decal="explosion" decalsize="0.75" penetration="0.9" >
-          <Affliction identifier="explosiondamage" strength="90" />
-          <Affliction identifier="triton_7L" strength="50" />
+          <Affliction identifier="explosiondamage" strength="70" />
+          <Affliction identifier="triton_7L" strength="80"/>
           <Affliction identifier="lacerations" strength="70" />
           <Affliction identifier="burn" strength="50" />
           <Affliction identifier="bleeding" strength="40" />
@@ -2520,7 +2521,7 @@
         <Affliction identifier="lacerations" strength="90" />
         <Affliction identifier="bleeding" strength="70" />
         <Affliction identifier="stun" strength="1" />
-        <Affliction identifier="triton_7L" strength="40" />
+        <Affliction identifier="triton_7L" strength="80" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
         <Conditional entitytype="eq Structure" />
