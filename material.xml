@@ -22,14 +22,8 @@
       <sprite texture="%ModDir:3278494407%/Misc/Material/containerplain.png" canbehiddenbyotherwearables="false" sourcerect="0,0,316,100" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.0" />
     </Wearable>
     <Throwable characterusable="false" canBeCombined="true" slots="RightHand+LeftHand" aimable="false" throwforce="2.0" aimpos="-10,-40" holdpos="-10,-40" holdangle="90" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect">
-      <StatusEffect type="OnImpact" target="This" condition="-10" disabledeltatime="true" />
-      <!--<StatusEffect type="OnBroken" target="This" duration="40">
-      <sound file="Content/Items/Tools/Sprayer.ogg" range="500.0" loop="true"/>
-    </StatusEffect>-->
-      <!--No. This is a empty one-->
       <StatusEffect type="OnBroken" target="This">
         <Remove />
-        <!--GOD, this is only a empty canister! WTF else do you want?A explosion?-->
       </StatusEffect>
     </Throwable>
   </Item>

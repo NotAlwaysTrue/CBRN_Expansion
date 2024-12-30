@@ -73,12 +73,8 @@
   <entitydescription.tes20mag_arr>惩罚者使用的20mm箭霰弹,高穿,多弹头,是CQB的最佳选择</entitydescription.tes20mag_arr>
   <entitydescription.tes20mag_he>惩罚者使用的20mm可编程榴弹(当然,编程还没搞出来) \n该开炸了,先生们</entitydescription.tes20mag_he>
   <entitydescription.tes20mag_ll>惩罚者使用的20mm硬质橡胶低致命弹药,当然,还是挺疼的...</entitydescription.tes20mag_ll>
-  <entitydescription.berra_STANAG_50beowulf_fr>STANAG弹匣 \n内装7发.50贝奥武夫易碎弹 \n穿甲性能不佳,然而强大的停止力弥补了这一点</entitydescription.berra_STANAG_50beowulf_fr>
-  <entitydescription.berra_STANAG_50beowulf_ap>STANAG弹匣 \n内装7发.50贝奥武夫穿甲弹 \n高穿透力,高停止力 </entitydescription.berra_STANAG_50beowulf_ap>
   <entitydescription.berra_STANAG_458socom>STANAG弹匣 \n内装10发.458 SOCOM弹 \n穿甲性能和停止力都不错,造价也没有.50那么极端</entitydescription.berra_STANAG_458socom>
   <entitydescription.berra_STANAG_458socom_ext>STANAG弹匣 \n内装20发.458 SOCOM弹 \n穿甲性能和停止力都不错,造价也没有.50那么极端</entitydescription.berra_STANAG_458socom_ext>
-  <entitydescription.berra_STANAG_50beowulf_fr_ext>STANAG弹匣 \n内装15发.50贝奥武夫易碎弹 \n穿甲性能不佳,然而强大的停止力弥补了这一点</entitydescription.berra_STANAG_50beowulf_fr_ext>
-  <entitydescription.berra_STANAG_50beowulf_ap_ext>STANAG弹匣 \n内装15发.50贝奥武夫穿甲弹 \n高穿透力,高停止力,开创!</entitydescription.berra_STANAG_50beowulf_ap_ext>
   <entitydescription.berra_50bmg_belt_fmjt>M2HB重机枪使用的全可散式弹链 \nM33 FMJ \n每1%有5发子弹,最大500发 \n当你不再为子弹发愁,还有什么是解决不了的呢</entitydescription.berra_50bmg_belt_fmjt>
   <entitydescription.berra_mk153_dumb>Mk153 SMAW所使用的训练弹,与常规弹药有着完全一致的弹道 \n不过说真的,里面就是枚惰性弹头,你还指望它能干什么呢? \n尾焰喷射距离:4.4m</entitydescription.berra_mk153_dumb>
   <entitydescription.berra_mk153_inc>Mk153 SMAW所使用的燃烧弹,更重的弹体意味着能携带更多的燃料 \n现在是烧烤时间! \n尾焰喷射距离:4.4m</entitydescription.berra_mk153_inc>
@@ -407,7 +403,6 @@
   
   <talentdescription.rangedspreadreduction>你的远程武器散布降低[amount]%</talentdescription.rangedspreadreduction>
   <talentdescription.aimbetter>在瞄准时,你的远程武器散布降低[amount]%</talentdescription.aimbetter>
-  <talentdescription.dutyofcbrn>当你受到攻击,得到[affliction2] \n你在血量低于0时[time]秒内不会失去意识</talentdescription.dutyofcbrn>
   <talentdescription.nanomachine>在你的体内植入纳米机器人,提供[amount]%的毒药抗性</talentdescription.nanomachine>
   <talentdescription.nanomachineondamaged>当你的生命值低于[amount]%时,启用体内植入的纳米机器人进行修复  \n此效果将持续[time]秒</talentdescription.nanomachineondamaged>
   <talentdescription.maxtriggerinseconds>此效果在[seconds]秒内只能触发1次</talentdescription.maxtriggerinseconds>
@@ -615,4 +610,17 @@
   <entityname.uhm_headset>用户健康监控耳机</entityname.uhm_headset>
   <entitydescription.uhm_headset>内建有用户状态监控系统的耳机, 能在佩戴者昏迷时发送求救信号 \n需要电池</entitydescription.uhm_headset>
   <sig.sos>使用者状态危急 \n需要援助</sig.sos>
+
+  <entityname.uhm_headset_autoinjector>用户健康监控自注射耳机</entityname.uhm_headset_autoinjector>
+  <entitydescription.uhm_headset_autoinjector>内建有用户状态监控系统的自注射耳机, 能在佩戴者昏迷时发送求救信号 \n需要电池</entitydescription.uhm_headset_autoinjector>
+
+  <talentdescription.dutyofcbrn>当你受到攻击,得到[affliction1], 冷却时间为[cd1]和[affliction2], 冷却时间为[cd2] \n你在血量低于0时[time]秒内不会失去意识 \n在清醒期间不会死于收到的伤害</talentdescription.dutyofcbrn>
+  <talentvalue.berra_STANAG_50beowulf_fr_drum>PMAG-D60弹鼓 .50贝奥武夫易碎弹</talentvalue.berra_STANAG_50beowulf_fr_drum>
+  <talentvalue.berra_STANAG_50beowulf_ap_ext>STANAG弹匣(拓展) .50贝奥武夫穿甲弹</talentvalue.berra_STANAG_50beowulf_ap_ext>
+  <talentvalue.berra_M107Mag_m903>M82/M107通用弹匣 M903 SLAP</talentvalue.berra_M107Mag_m903>
+  <talentvalue.berra_M107Mag_mk211mod0>M82/M107通用弹匣 Mk211 Mod.0 APHEI</talentvalue.berra_M107Mag_mk211mod0>
+  <entitydescription.berra_STANAG_50beowulf_fr_ext>STANAG弹匣 \n内装20发.50贝奥武夫易碎弹 \n穿甲性能不佳,然而强大的停止力弥补了这一点</entitydescription.berra_STANAG_50beowulf_fr_ext>
+  <entitydescription.berra_STANAG_50beowulf_ap_ext>STANAG弹匣 \n内装20发.50贝奥武夫穿甲弹 \n高穿透力,高停止力,开创!</entitydescription.berra_STANAG_50beowulf_ap_ext>
+  <entitydescription.berra_STANAG_50beowulf_fr>STANAG弹匣 \n内装10发.50贝奥武夫易碎弹 \n穿甲性能不佳,然而强大的停止力弥补了这一点</entitydescription.berra_STANAG_50beowulf_fr>
+  <entitydescription.berra_STANAG_50beowulf_ap>STANAG弹匣 \n内装10发.50贝奥武夫穿甲弹 \n高穿透力,高停止力 </entitydescription.berra_STANAG_50beowulf_ap>
 </infotexts>

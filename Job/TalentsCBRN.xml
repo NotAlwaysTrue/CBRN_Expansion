@@ -65,7 +65,7 @@
       <Replace tag="[rangeamount]" value="10" color="gui.green"/>
       <Replace tag="[damageamount]" value="10" color="gui.green"/>
     </Description>
-    <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="4,4" sheetelementsize="128,128"/>
+    <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="3,3" sheetelementsize="128,128"/>
     <AbilityGroupEffect abilityeffecttype="None">
       <Abilities>
         <CharacterAbilityGiveStat stattype="ExplosionRadiusMultiplier" value="0.1"/>
@@ -93,9 +93,12 @@
     </AbilityGroupInterval>
   </Talent>
   <Talent identifier="dutyofcbrn">
-    <Description tag="talentdescription.dutyofcbrn">
-    <Replace tag="[affliction2]" value="afflictionname.adrenalinerush" color="gui.blue"/>
-    <Replace tag="[time]" value="20" color="gui.green"/>
+    <Description tag="talentdescription.dutyofcbrn"><!--Change needed-->
+      <Replace tag="[affliction1]" value="afflictionname.adrenalinerush" color="gui.blue"/>
+      <Replace tag="[cd1]" value="60s" color="gui.green"/>
+      <Replace tag="[affliction2]" value="afflictionname.combatstimulant" color="gui.blue"/>
+      <Replace tag="[cd2]" value="5s" color="gui.green"/>
+      <Replace tag="[time]" value="10" color="gui.green"/>
     </Description>
     <Description tag="talentdescription.maxtriggeruntildeath"/>
     <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="7,2" sheetelementsize="128,128"/>
@@ -107,7 +110,7 @@
         <CharacterAbilityApplyStatusEffects>
           <StatusEffects>
             <StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true" disabledeltatime="true" >
-              <Affliction identifier="dutyofcbrn" amount="15.0"/>
+              <Affliction identifier="dutyofcbrn" amount="10.0"/>
             </StatusEffect>
           </StatusEffects>
         </CharacterAbilityApplyStatusEffects>
@@ -117,8 +120,11 @@
       <Abilities>
         <CharacterAbilityApplyStatusEffects>
           <StatusEffects>
-            <StatusEffect type="OnAbility" target="This" multiplyafflictionsbymaxvitality="true">
-              <Affliction identifier="adrenalinerush" amount="20.0"/>
+            <StatusEffect type="OnAbility" target="This" multiplyafflictionsbymaxvitality="false" Interval="30">
+              <Affliction identifier="adrenalinerush" amount="10.0"/>
+            </StatusEffect>
+            <StatusEffect type="OnAbility" target="This" multiplyafflictionsbymaxvitality="false" Interval="5">
+              <Affliction identifier="combatstimulant" amount="5.0"/>
             </StatusEffect>
           </StatusEffects>
         </CharacterAbilityApplyStatusEffects>
@@ -198,7 +204,7 @@
       <Replace tag="[itemname]" value="entityname.berra_m4_beowulf,entityname.berra_m110" color="gui.orange"/>
     </Description>
     <Description tag="talentdescription.unlockrecipe">
-      <Replace tag="[itemname]" value="talentvalue.berra_STANAG_50beowulf_fr,talentvalue.berra_STANAG_458socom_ext,talentvalue.berra_300FAL_M118LR" color="gui.orange"/>
+      <Replace tag="[itemname]" value="talentvalue.berra_STANAG_50beowulf_fr,talentvalue.berra_STANAG_50beowulf_ap,talentvalue.berra_STANAG_458socom_ext,talentvalue.berra_300FAL_M118LR" color="gui.orange"/>
     </Description>
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.berra_bio2,entityname.berra_cbrn3a" color="gui.orange"/>
@@ -211,6 +217,7 @@
     <AddedRecipe itemidentifier="berra_m4_beowulf"/>
     <AddedRecipe itemidentifier="berra_m110"/>
     <AddedRecipe itemidentifier="berra_STANAG_50beowulf_fr"/>
+    <AddedRecipe itemidentifier="berra_STANAG_50beowulf_ap"/>
     <AddedRecipe itemidentifier="berra_STANAG_458socom_ext"/>
     <AddedRecipe itemidentifier="berra_300FAL_M118LR"/>
     <AddedRecipe itemidentifier="berra_bio2"/>
@@ -270,10 +277,10 @@
       <Replace tag="[itemname]" value="entityname.berra_m82a1,entityname.berra_m107a1,entityname.berra_m107a1_fa" color="gui.orange"/>
     </Description>
     <Description tag="talentdescription.unlockrecipe">
-      <Replace tag="[itemname]" value="talentvalue.berra_M107Mag_m33,talentvalue.berra_M107Mag_m1022" color="gui.orange"/>
+      <Replace tag="[itemname]" value="talentvalue.berra_M107Mag_m33,talentvalue.berra_M107Mag_m1022,talentvalue.berra_M107Mag_m903,talentvalue.berra_M107Mag_mk211mod0" color="gui.orange"/>
     </Description>
     <Description tag="talentdescription.unlockrecipe">
-      <Replace tag="[itemname]" value="talentvalue.berra_STANAG_50beowulf_ap,talentvalue.berra_STANAG_50beowulf_fr_ext" color="gui.orange"/>
+      <Replace tag="[itemname]" value="talentvalue.berra_STANAG_50beowulf_ap_ext,talentvalue.berra_STANAG_50beowulf_fr_ext,talentvalue.berra_STANAG_50beowulf_fr_drum" color="gui.orange"/>
     </Description>
     <AddedRecipe itemidentifier="berra_m82a1"/>
     <AddedRecipe itemidentifier="berra_m107a1"/>
@@ -282,8 +289,9 @@
     <AddedRecipe itemidentifier="berra_M107Mag_m1022"/>
     <AddedRecipe itemidentifier="berra_M107Mag_m903"/>
     <AddedRecipe itemidentifier="berra_M107Mag_mk211mod0"/>
-    <AddedRecipe itemidentifier="berra_STANAG_50beowulf_ap"/>
+    <AddedRecipe itemidentifier="berra_STANAG_50beowulf_ap_ext"/>
     <AddedRecipe itemidentifier="berra_STANAG_50beowulf_fr_ext"/>
+    <AddedRecipe itemidentifier="berra_STANAG_50beowulf_fr_drum"/>
   </Talent>
 
   <Talent identifier="biodev">
@@ -312,16 +320,15 @@
     </AbilityGroupEffect>
   </Talent>
   <Talent identifier="reviscomming">
-    <Description tag="talentdescription.skillbonus">
-      <Replace tag="[amount]" value="30" color="gui.green"/>
-      <Replace tag="[skillname]" value="skillname.weapons" color="gui.orange"/>
+    <Description tag="talentdescription.crafthighqualityweapons">
+      <Replace tag="[qualitybonus]" value="1" color="gui.green"/>
     </Description>
     <Description tag="talentdescription.reviscomming_main">
       <Replace tag="[revammo]" value="talentvalue.reviscomming_item" color="255,0,0,255"/>
     </Description>
     <AbilityGroupEffect abilityeffecttype="None">
       <Abilities>
-        <CharacterAbilityGiveStat stattype="WeaponsSkillBonus" value="30"/>
+        <CharacterAbilityGivePermanentStat statidentifier="weapon" stattype="IncreaseFabricationQuality" value="1" />
       </Abilities>
     </AbilityGroupEffect>
     <AddedRecipe itemidentifier="fkj_545_mag_rev"/>

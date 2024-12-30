@@ -68,12 +68,8 @@
   <entitydescription.tes20mag_arr>20mm Flechette used by "Punisher", EXTREMELY effective in close range</entitydescription.tes20mag_arr>
   <entitydescription.tes20mag_he>20mm programable high-explosive used by "Punisher" \nLet's blow something up \nWARNING:CURRENTLY NOT PROGRAMABLE</entitydescription.tes20mag_he>
   <entitydescription.tes20mag_ll>20mm Rubber Less Lethal shot used by "Punisher",IT HURTS...</entitydescription.tes20mag_ll>
-  <entitydescription.berra_STANAG_50beowulf_fr>STANAG Magazine \nContaining 7 12.7×45 Fragile rounds \nPoor penetration but extreme stopping power</entitydescription.berra_STANAG_50beowulf_fr>
-  <entitydescription.berra_STANAG_50beowulf_ap>STANAG Magazine \nContaining 7 12.7×45 AP rounds \nPerfect penetration and (relatively)high stopping power </entitydescription.berra_STANAG_50beowulf_ap>
   <entitydescription.berra_STANAG_458socom>STANAG Magazine \nContaining 10 .458 SOCOM rounds \nGood stopping power and penetration,less expensive than 12.7×45</entitydescription.berra_STANAG_458socom>
   <entitydescription.berra_STANAG_458socom_ext>STANAG Magazine \nContaining 20 .458 SOCOM rounds \nGood stopping power and penetration,less expensive than 12.7×45</entitydescription.berra_STANAG_458socom_ext>
-  <entitydescription.berra_STANAG_50beowulf_fr_ext>STANAG Magazine \nContaining 15 12.7×45 Fragile rounds \nPoor penetration but extreme stopping power</entitydescription.berra_STANAG_50beowulf_fr_ext>
-  <entitydescription.berra_STANAG_50beowulf_ap_ext>STANAG Magazine \nContaining 15 12.7×45 AP rounds \nPerfect penetration and (relatively)high stopping power! \nLet's kick some ass</entitydescription.berra_STANAG_50beowulf_ap_ext>
   <entitydescription.berra_50bmg_belt_fmjt>.50BMG belt \nM33 FMJ \n500 rounds MAX \nSTOP WORRING ABOUT AMMUNITION,JUST SHOOT!!!!</entitydescription.berra_50bmg_belt_fmjt>
   <entitydescription.berra_mk153_dumb>Mk153 SMAW Training rounds,the same trajectory with standard MK153 rounds \nSERIOUSLY,DO NOT FIGHT YOUR ENEMY WITH THIS \nBackblast range:4.4m</entitydescription.berra_mk153_dumb>
   <entitydescription.berra_mk153_inc>Mk153 SMAW Incendiary rounds,much more heavier=much more fuel \nBARBECUE TIME \nBackblast range:4.4m</entitydescription.berra_mk153_inc>
@@ -380,7 +376,6 @@
   
   <talentdescription.rangedspreadreduction>Your spread of Rangedweapons will reduce[amount]%</talentdescription.rangedspreadreduction>
   <talentdescription.aimbetter>Your spread of Rangedweapons will reduce [amount]% when aiming</talentdescription.aimbetter>
-  <talentdescription.dutyofcbrn>When you are attacked, acquire [affliction2] \nYou will not fall unconscious for [time] seconds when health below 0</talentdescription.dutyofcbrn>
   <talentdescription.nanomachine>Plant nanomachine in your body,providing [amount]% resist fro poison</talentdescription.nanomachine>
   <talentdescription.nanomachineondamaged>When your health below [amount]%, heal yourself using nanomachine  \nNanomachine will last [time] seconds after reaching [amount]% health</talentdescription.nanomachineondamaged>
   
@@ -584,4 +579,16 @@
   <entityname.uhm_headset>User Health Monitoring Headset</entityname.uhm_headset>
   <entitydescription.uhm_headset>A headset with built-in User Health Monitor, can transmit SOS signal when user is unconscious \nRequires Mobilebattery to work</entitydescription.uhm_headset>
   <sig.sos>User Status Critical \nS.O.S</sig.sos>
+
+  <entityname.uhm_headset_autoinjector>User Health Monitoring Auto-Injector Headset</entityname.uhm_headset_autoinjector>
+  <entitydescription.uhm_headset_autoinjector>A headset with built-in User Health Monitoring Auto-Injector Headset, can send SOS signal when user is critical \nRequires battery</entitydescription.uhm_headset_autoinjector>
+  <talentdescription.dutyofcbrn>When you were attacked, acquire [affliction1], cooldown for [cd1] and [affliction2], cooldown for [cd2] \nYou will not fall unconscious for [time] seconds when health below 0 \n You will not die to afflictions when you are conscious</talentdescription.dutyofcbrn>
+  <talentvalue.berra_STANAG_50beowulf_fr_drum>PMAG-D60 Drum .50Beowulf Fragile</talentvalue.berra_STANAG_50beowulf_fr_drum>
+  <talentvalue.berra_STANAG_50beowulf_ap_ext>STANAG Magazine(Extened) .50Beowulf AP</talentvalue.berra_STANAG_50beowulf_ap_ext>
+  <talentvalue.berra_M107Mag_m903>M82/M107 Magazine M903 SLAP</talentvalue.berra_M107Mag_m903>
+  <talentvalue.berra_M107Mag_mk211mod0>M82/M107 Magazine Mk211 Mod.0 APHEI</talentvalue.berra_M107Mag_mk211mod0>
+  <entitydescription.berra_STANAG_50beowulf_fr_ext>STANAG Magazine \nContaining 20 12.7×45 Fragile rounds \nPoor penetration but extreme stopping power</entitydescription.berra_STANAG_50beowulf_fr_ext>
+  <entitydescription.berra_STANAG_50beowulf_ap_ext>STANAG Magazine \nContaining 20 12.7×45 AP rounds \nPerfect penetration and (relatively)high stopping power! \nLet's kick some ass</entitydescription.berra_STANAG_50beowulf_ap_ext>
+  <entitydescription.berra_STANAG_50beowulf_fr>STANAG Magazine \nContaining 10 12.7×45 Fragile rounds \nPoor penetration but extreme stopping power</entitydescription.berra_STANAG_50beowulf_fr>
+  <entitydescription.berra_STANAG_50beowulf_ap>STANAG Magazine \nContaining 10 12.7×45 AP rounds \nPerfect penetration and (relatively)high stopping power </entitydescription.berra_STANAG_50beowulf_ap>
 </infotexts>
