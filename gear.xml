@@ -2088,7 +2088,7 @@
       <Item identifier="sonarbeacon" />
       <Item identifier="fpgacircuit" />
     </Deconstruct>
-    <Fabricate suitablefabricators="fabricator" requiredtime="10" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="10" requiresrecipe="false">
       <RequiredSkill identifier="mechanical" level="30" />
       <RequiredItem identifier="autoinjectorheadset" />
       <RequiredItem identifier="fpgacircuit" />
