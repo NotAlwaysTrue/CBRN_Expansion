@@ -275,6 +275,16 @@
     <Sprite texture="%ModDir:3278494407%/Weapons/Explosives/shell.png" sourcerect="5,131,215,30" depth="0.55" origin="0.5,0.5" />
     <Body width="215" height="30" mass="100" bodytype="Dynamic" gravityscale="1" friction="0" waterdragcoefficient="0" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" msg="ItemMsgPickUpSelect" />
+    <Deconstruct time="10">
+      <Item identifier="railgunshell" />
+      <Item identifier="wificomponent" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="40" />
+      <RequiredSkill identifier="electrical" level="40" />
+      <RequiredItem identifier="railgunshell" />
+      <RequiredItem identifier="wificomponent" />
+    </Fabricate>
     <Projectile characterusable="false" launchimpulse="25" maxtargetstohit="1" damagedoors="true">
       <Attack structuredamage="100" itemdamage="100" severlimbsprobability="5" penetration="0.6" targetforce="1000">
         <Affliction identifier="explosiondamage" strength="250" />
