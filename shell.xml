@@ -270,7 +270,7 @@
     </Controller>
   </Item>
 
-  <Item identifier="cbrn_SACLOS_msl" tags="railgunequipment,railgunammo,saclosmsl" category="Weapon" scale="0.5" sonarsize="8">
+  <Item identifier="cbrn_SACLOS_msl" tags="railgunequipment,railgunammo,saclosmsl" showcontentsintooltip="true" category="Weapon" scale="0.5" sonarsize="8">
     <InventoryIcon texture="%ModDir:3278494407%/Weapons/Explosives/shell.png" sourcerect="5,131,215,30" origin="0.5,0.5" />
     <Sprite texture="%ModDir:3278494407%/Weapons/Explosives/shell.png" sourcerect="5,131,215,30" depth="0.55" origin="0.5,0.5" />
     <Body width="215" height="30" mass="100" bodytype="Dynamic" gravityscale="1" friction="0" waterdragcoefficient="0" />
@@ -319,8 +319,11 @@
           <Conditional targetitemcomponent="MotionSensor" MotionDetected="eq true" />
         </StatusEffect>
       </MotionSensor>
-      <StatusEffect type="OnBroken" target="Contained" Condition="-100">
+      <StatusEffect type="OnBroken" target="Contained" >
         <Use />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="Contained" Condition="-100" delay="0.01">
+        <Drop />
       </StatusEffect>
     </Projectile>
     <ItemContainer hideitems="true" capacity="1" maxstacksize="1" canbeselected="false" containedstateindicatorstyle="explosive" containedspritedepth="0.81">
