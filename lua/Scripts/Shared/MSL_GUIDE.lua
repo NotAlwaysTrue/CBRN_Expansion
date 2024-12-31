@@ -7,7 +7,7 @@ local MAX_STEERING_FORCE = 0.02
 -- Correct the missile flying path towards the LOS , smaller num means the msl how hard the msl will try to go to LOS
 local MAX_CORRECTION_FORCE = 0.7
 -- Accelerate the missile in its current direction
-local MAX_PROPULSION_FORCE = 0.1
+local MAX_PROPULSION_FORCE = 0.13
 
 local Missile = {}
 Missile.__index = Missile

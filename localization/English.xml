@@ -591,4 +591,7 @@
   <entitydescription.berra_STANAG_50beowulf_ap_ext>STANAG Magazine \nContaining 20 12.7×45 AP rounds \nPerfect penetration and (relatively)high stopping power! \nLet's kick some ass</entitydescription.berra_STANAG_50beowulf_ap_ext>
   <entitydescription.berra_STANAG_50beowulf_fr>STANAG Magazine \nContaining 10 12.7×45 Fragile rounds \nPoor penetration but extreme stopping power</entitydescription.berra_STANAG_50beowulf_fr>
   <entitydescription.berra_STANAG_50beowulf_ap>STANAG Magazine \nContaining 10 12.7×45 AP rounds \nPerfect penetration and (relatively)high stopping power </entitydescription.berra_STANAG_50beowulf_ap>
+
+  <entityname.cbrn_SACLOS_msl>LD-AGW SACLOS Missile</entityname.cbrn_SACLOS_msl>
+  <entitydescription.cbrn_SACLOS_msl>Low Drag Advanced Guided Weapon, or LD-AGW is one of the final product of Next-Generation Attack Munition(NGAM). \nFetures a SACLOS guidance system, means it can follow the central axis of the turret to fly to target. \nInstalled an standard Proximity HE-F Warhead. Can insert other warheads \nThe only vehicle of Omega Warhead</entitydescription.cbrn_SACLOS_msl>
 </infotexts>
