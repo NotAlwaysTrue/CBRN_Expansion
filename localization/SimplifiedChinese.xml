@@ -623,4 +623,7 @@
   <entitydescription.berra_STANAG_50beowulf_ap_ext>STANAG弹匣 \n内装20发.50贝奥武夫穿甲弹 \n高穿透力,高停止力,开创!</entitydescription.berra_STANAG_50beowulf_ap_ext>
   <entitydescription.berra_STANAG_50beowulf_fr>STANAG弹匣 \n内装10发.50贝奥武夫易碎弹 \n穿甲性能不佳,然而强大的停止力弥补了这一点</entitydescription.berra_STANAG_50beowulf_fr>
   <entitydescription.berra_STANAG_50beowulf_ap>STANAG弹匣 \n内装10发.50贝奥武夫穿甲弹 \n高穿透力,高停止力 </entitydescription.berra_STANAG_50beowulf_ap>
+
+  <entityname.cbrn_SACLOS_msl>LD-AGW 半自动指令瞄准线制导导弹</entityname.cbrn_SACLOS_msl>
+  <entitydescription.cbrn_SACLOS_msl>低阻力-先进制导武器, 或称LD-AGW, 是下一代攻击弹药(NGAM)计划的产物之一 \n携带了半自动指令瞄准线导引系统, 意味着它能跟随火炮轴线飞向目标 \n装有近炸高爆破片弹头, 可以插入其他弹药以增强攻击力 \nOmega弹头的唯一发射载具</entitydescription.cbrn_SACLOS_msl>
 </infotexts>

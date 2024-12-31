@@ -270,6 +270,76 @@
     </Controller>
   </Item>
 
+  <Item identifier="cbrn_SACLOS_msl" tags="railgunequipment,railgunammo,saclosmsl" category="Weapon" scale="0.5" sonarsize="8">
+    <InventoryIcon texture="%ModDir:3278494407%/Weapons/Explosives/shell.png" sourcerect="5,131,215,30" origin="0.5,0.5" />
+    <Sprite texture="%ModDir:3278494407%/Weapons/Explosives/shell.png" sourcerect="5,131,215,30" depth="0.55" origin="0.5,0.5" />
+    <Body width="215" height="30" mass="100" bodytype="Dynamic" gravityscale="1" friction="0" waterdragcoefficient="0" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" msg="ItemMsgPickUpSelect" />
+    <Deconstruct time="10">
+      <Item identifier="railgunshell" />
+      <Item identifier="wificomponent" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="40" />
+      <RequiredSkill identifier="electrical" level="40" />
+      <RequiredItem identifier="railgunshell" />
+      <RequiredItem identifier="wificomponent" />
+    </Fabricate>
+    <Projectile characterusable="false" launchimpulse="25" maxtargetstohit="1" damagedoors="true">
+      <Attack structuredamage="100" itemdamage="100" severlimbsprobability="5" penetration="0.6" targetforce="1000">
+        <Affliction identifier="explosiondamage" strength="250" />
+        <Affliction identifier="bleeding" strength="50" />
+        <Affliction identifier="stun" strength="15" />
+      </Attack>
+      <StatusEffect type="OnActive" targettype="This" SoundRange="50000" IsOn="true" gravityscale="0" setvalue="true">
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This">
+        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="1" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" lifetimemultiplier="2"/>
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" condition="-100.0" setvalue="true" />
+      <StatusEffect type="OnUse" target="This" delay="15" condition="-100.0" setvalue="true" />
+      <StatusEffect type="OnUse" target="This" targetcomponent="ItemComponent" ison="true" setvalue="true" />
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="Random" range="50000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="Random" range="50000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" selectionmode="Random" range="50000" />
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="1.0" />
+        <Explosion range="800.0" ballastfloradamage="100" structuredamage="50" itemdamage="200" force="10.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.3" penetration="0.5">
+          <Affliction identifier="lacerations" strength="800" />
+          <Affliction identifier="explosiondamage" strength="250" />
+          <Affliction identifier="bleeding" strength="800" />
+          <Affliction identifier="stun" strength="7" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.01" stackable="false">
+        <Remove />
+      </StatusEffect>
+      <MotionSensor range="400" canbeselected="false" IgnoreDead="false" minimumvelocity="0" updateinterval="0.05" target="Monster,Wall" DetectOwnMotion="false">
+        <StatusEffect type="OnNotContained" target="This" condition="-100" disabledeltatime="true" stackable="false" checkconditionalalways="true">
+          <Conditional targetitemcomponent="MotionSensor" MotionDetected="eq true" />
+        </StatusEffect>
+      </MotionSensor>
+      <StatusEffect type="OnBroken" target="Contained" Condition="-100">
+        <Use />
+      </StatusEffect>
+    </Projectile>
+    <ItemContainer hideitems="true" capacity="1" maxstacksize="1" canbeselected="false" containedstateindicatorstyle="explosive" containedspritedepth="0.81">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="64,384,64,64" origin="0.5,0.5" />
+      <GuiFrame relativesize="0.2,0.25" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
+      <Containable items="smallitem,explosive,OmegaWarhead" />
+    </ItemContainer>
+	  <LightComponent lightcolor="255,0,0,255" castshadows="false" range="200.0" ison="false" allowingameediting="false">
+      <LightTexture texture="Content/Lights/pointlight_bounce.png" origin="1.0,0.5" />
+      <sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="228,3,23,24" origin="0.5,0.5" />
+    </LightComponent>
+	  <LightComponent lightcolor="255,200,200,127" range="4096" directional="true" ison="false" drawbehindsubs="true" allowingameediting="false">
+      <LightTexture texture="Content/Lights/lightcone.png" origin="0.0,0.5" size="15.0,1.0" />
+    </LightComponent>
+    <AiTarget soundrange="50000" sonarlabel="sig.saclos" sight="500" staticsight="true"/>
+    <LightComponent LightColor="0.0,0.0,0.0,0.0" range="0" powerconsumption="0" blinkfrequency="0" IsOn="false" canbeselected="false">
+    </LightComponent>
+  </Item>
+
   <!--Submunitions-->
   <Item identifier="nukemirv_s" category="Weapon" scale="0.3" sonarsize="1" hideinmenus="true">
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="143,414,113,9" depth="0.55" />
