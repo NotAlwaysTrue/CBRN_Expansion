@@ -18,7 +18,7 @@ end
 
 if CLIENT then
 	--dofile(JZ_CBRN.Path.."/lua/Scripts/Client/HUD.lua")  --Unfinished GUI works
-	dofile(JZ_CBRN.Path .. '/lua/Scripts/Client/TurretZoom.lua')
+	dofile(JZ_CBRN.Path..'/lua/Scripts/Client/TurretZoom.lua')
 end
 
 if Game.IsSingleplayer then
