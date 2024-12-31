@@ -1989,7 +1989,7 @@
     </ItemContainer>
     <aitarget sightrange="1000" fadeouttime="6" />
   </Item>
-  <Item identifier="UAV_Controller" category="Equipment" maxstacksize="5" maxstacksizecharacterinventory="1" Tags="smallitem" scale="0.01" impactsoundtag="impact_soft" hideinmenus="true">
+  <Item name="UAV Controller" identifier="UAV_Controller" category="Equipment" maxstacksize="5" maxstacksizecharacterinventory="1" Tags="smallitem" scale="0.01" impactsoundtag="impact_soft" hideinmenus="true">
     <InventoryIcon texture="%ModDir:3278494407%/weapons/BRUH/controller.png" sourcerect="0,0,2000,2000" origin="0.5,0.5" />
     <Sprite texture="%ModDir:3278494407%/weapons/BRUH/controller.png" sourcerect="0,0,2000,2000" depth="0.6" origin="0.5,0.5" />
     <Body width="45" height="45" density="11" />
