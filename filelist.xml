@@ -25,7 +25,6 @@
   <Talents file="%ModDir%/Job/TalentsCBRN.xml" />
   <TalentTrees file="%ModDir%/Job/TalentTrees.xml" />
   <Character file="%ModDir%/Characters/Cbrn_mech/Cbrn_mech.xml" />
-  <Submarine file="%ModDir%/Kastrull-K先进火控系统试验舰.sub" />
   <Other file="%ModDir%/Lua/Autorun/init.lua" />
   <Other file="%ModDir%/Lua/Autorun/assistfunctions.lua" />
   <Other file="%ModDir%/Lua/Autorun/config.lua" />

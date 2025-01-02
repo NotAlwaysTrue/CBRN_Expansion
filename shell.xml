@@ -284,6 +284,7 @@
       <RequiredSkill identifier="electrical" level="40" />
       <RequiredItem identifier="railgunshell" />
       <RequiredItem identifier="wificomponent" />
+      <Item identifier="c4block" amount="1"/>
     </Fabricate>
     <Projectile characterusable="false" launchimpulse="25" maxtargetstohit="1" damagedoors="true">
       <Attack structuredamage="100" itemdamage="100" severlimbsprobability="5" penetration="0.6" targetforce="1000">
@@ -304,11 +305,12 @@
         <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="Random" range="50000" />
         <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" selectionmode="Random" range="50000" />
         <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="1.0" />
-        <Explosion range="800.0" ballastfloradamage="100" structuredamage="50" itemdamage="200" force="10.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.3" penetration="0.5">
-          <Affliction identifier="lacerations" strength="800" />
+        <Explosion range="750.0" ballastfloradamage="150" structuredamage="300" itemdamage="1000" force="20" severlimbsprobability="2" debris="true" decal="explosion" decalsize="0.75" penetration="0.5">
           <Affliction identifier="explosiondamage" strength="250" />
-          <Affliction identifier="bleeding" strength="800" />
-          <Affliction identifier="stun" strength="7" />
+          <Affliction identifier="burn" strength="15" probability="0.2" dividebylimbcount="false"/>
+          <Affliction identifier="lacerations" strength="50" dividebylimbcount="false"/>
+          <Affliction identifier="bleeding" strength="50" dividebylimbcount="false"/>
+          <Affliction identifier="stun" strength="10" />
         </Explosion>
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This" delay="0.01" stackable="false">
