@@ -342,7 +342,7 @@
     </LightComponent>
     <AiTarget soundrange="50000" sonarlabel="sig.ldagw" sight="500" staticsight="true"/>
   </Item>
-  <Item identifier="std_8_utam" tags="saclosmsl,vls_ammo" Health="100" showcontentsintooltip="true" category="Weapon" scale="0.55" sonarsize="8">
+  <Item identifier="std_8_utam" tags="railgunammo,saclosmsl,vls_ammo" Health="100" showcontentsintooltip="true" category="Weapon" scale="0.55" sonarsize="8">
     <InventoryIcon texture="%ModDir:3278494407%/Weapons/Explosives/shell.png" sourcerect="5,131,215,30" origin="0.5,0.5" />
     <Sprite texture="%ModDir:3278494407%/Weapons/Explosives/shell.png" sourcerect="5,131,215,30" depth="0.55" origin="0.5,0.5" />
     <Body width="215" height="30" mass="100" bodytype="Dynamic" gravityscale="1" friction="0" waterdragcoefficient="0" />
