@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="九州武库·CBRN拓展" modversion="4.4.2" corepackage="False" steamworkshopid="3278494407" gameversion="1.7.7.0">
+<contentpackage name="九州武库·CBRN拓展" modversion="4.4.3" corepackage="False" steamworkshopid="3278494407" gameversion="1.7.7.0">
   <Item file="%ModDir%/gear.xml" />
   <Item file="%ModDir%/material.xml" />
   <Item file="%ModDir%/shell.xml" />
+  <Item file="%ModDir%/VLS.xml" />
   <Item file="%ModDir%/override.xml" />
   <Item file="%ModDir%/Job/ItemCBRN.xml" />
   <Item file="%ModDir%/Weapons/Magazine/Magazines.xml" />

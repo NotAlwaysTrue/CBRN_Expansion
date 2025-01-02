@@ -593,5 +593,19 @@
   <entitydescription.berra_STANAG_50beowulf_ap>STANAG Magazine \nContaining 10 12.7×45 AP rounds \nPerfect penetration and (relatively)high stopping power </entitydescription.berra_STANAG_50beowulf_ap>
 
   <entityname.cbrn_SACLOS_msl>LD-AGW SACLOS Missile</entityname.cbrn_SACLOS_msl>
-  <entitydescription.cbrn_SACLOS_msl>Low Drag Advanced Guided Weapon, or LD-AGW is one of the final product of Next-Generation Attack Munition(NGAM). \nFetures a SACLOS guidance system, means it can follow the central axis of the turret to fly to target. \nInstalled an standard Proximity HE-F Warhead. Can insert other warheads \nThe only vehicle of Omega Warhead</entitydescription.cbrn_SACLOS_msl>
+  <entitydescription.cbrn_SACLOS_msl>Low Drag Advanced Guided Weapon, or LD-AGW is one of the final product of Next-Generation Attack Munition(NGAM). \nFetures a SACLOS guidance system, means it can follow the central axis of the turret to fly to target. \nInstalled a standard Proximity HE-F Warhead. Can insert other warheads \nCan be used as a vehicle for Omega Warhead \nMax Guidance Duration 15s</entitydescription.cbrn_SACLOS_msl>
+
+  <entityname.vls_small>Mk.49 Micro VLS(4 unit)</entityname.vls_small>
+  <entitydescription.vls_small>An engineering masterpiece after captains report their gun-lunched missile is not enough against multiple targets \nMaximum guide missile amount: 4 \nPre-Heat time: 0.8s \nLaunch interval: 0.5s</entitydescription.vls_small>
+  <entityname.vlsloader>Micro VLS Loader</entityname.vlsloader>
+  <entitydescription.vlsloader>A loader for micro VLS, a huge engineering advance despite only 4 missiles...\nI think you don't want to get out to reload, right?</entitydescription.vlsloader>
+  <entityname.AFCS_scope>Advanced Fire Control System Scope</entityname.AFCS_scope>
+  <entitydescription.AFCS_scope>A periscope with 2nd gen, has a thermal TIS for 150m</entitydescription.AFCS_scope>
+  <entityname.headset_sonar>Sonar Headset</entityname.headset_sonar>
+  <entitydescription.headset_sonar>A headset installed with 6th gen hull sonar, Effective range 200m</entitydescription.headset_sonar>
+  <entityname.std_8_utam>SM-8 Universal Tactical Attack Munition</entityname.std_8_utam>
+  <entitydescription.std_8_utam>SM-8 is one of the final product of Next-Generation Attack Munition(NGAM), significantly increased the quantity of propellant and explosive amount while using the SACLOS system \nInstalled a impact fuse HE Demolition Warhead, can also be used as vehicle for other munitions \nCan be used as a vehicle for Omega Warhead \nMax Guidance Duration 20s</entitydescription.std_8_utam>
+
+  <sig.ldagw>LD-AGW Missile</sig.ldagw>
+  <sig.std8>SM-8 Missile</sig.std8>
 </infotexts>
