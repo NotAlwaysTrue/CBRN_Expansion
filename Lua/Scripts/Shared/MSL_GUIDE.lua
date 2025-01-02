@@ -1,13 +1,14 @@
 LuaUserData.MakeFieldAccessible(Descriptors["Barotrauma.Items.Components.Turret"], "targetRotation")
+LuaUserData.MakeFieldAccessible(Descriptors["Barotrauma.Items.Components.Turret"], "loadedRotationLimits")
+LuaUserData.MakeMethodAccessible(Descriptors["Barotrauma.Items.Components.Turret"], "set_Rotation")
 --init
 
 -- Steer the missile towards the direction the cursor is pointing at, smaller num means the msl will try harder to follow cursor
--- In this way the cursor works as a rangefinder
-local MAX_STEERING_FORCE = 0.02
+--local MAX_STEERING_FORCE = 0.02
 -- Correct the missile flying path towards the LOS , smaller num means the msl how hard the msl will try to go to LOS
-local MAX_CORRECTION_FORCE = 0.7
+--local MAX_CORRECTION_FORCE = 0.7
 -- Accelerate the missile in its current direction
-local MAX_PROPULSION_FORCE = 0.13
+--local MAX_PROPULSION_FORCE = 0.13
 
 local Missile = {}
 Missile.__index = Missile
@@ -19,6 +20,7 @@ function Missile:getMissile(item, user, Launcher, isTurretLaunched)
     setmetatable(data, Missile)
 	data.item = item
 	data.launcher = Launcher
+	data.msldata = mslsettings[item.Prefab.Identifier.Value]
 	data.user = user
 	data.launchItem = user.SelectedItem
 	data.isTurretLaunched = isTurretLaunched
@@ -63,6 +65,14 @@ end,Hook.HookMethodType.After)--Add projectile to upd table when launched, for h
 -- Very fair, turret launch doesn't counts for projectile launch :)
 
 Hook.Patch("Barotrauma.Items.Components.Turret", "Launch", function(instance,ptable)
+	if instance.item.HasTag("vls") then
+		instance.RotationLimits = Vector2(0,360)
+		instance.loadedRotationLimits = Vector2(0,360)
+		instance.set_Rotation(instance.item.Rotation - math.pi * 0.5)
+	end
+end,Hook.HookMethodType.Before)
+
+Hook.Patch("Barotrauma.Items.Components.Turret", "Launch", function(instance,ptable)
 	local projectile = ptable["projectile"]
 	if projectile == nil or not projectile.HasTag("saclosmsl") then return end
 	local user = ptable["user"]
@@ -82,15 +92,15 @@ Hook.Add("item.removed", "CBRN_SACLOS_RemoveMissile", function(item)
 end)--Remove projectile from upd table when it is removed
 
 Hook.Patch("Barotrauma.Item", "ApplyWaterForces", function(instance,ptable)
-	if instance.HasTag("saclosmsl") then
-		ptable.PreventExecution = false --Should water resistance work or not, recommended to set to false to enable resistance, so that the missle looks really flying in water
-		return
+	if mslsettings[instance.Prefab.Identifier.Value] ~= nil then
+		ptable.PreventExecution = mslsettings[instance.Prefab.Identifier.Value].DISABLE_RESISTANCE
 	end
-end)--Water Drag, will follow missile config
+end)
 
 Hook.Patch("Barotrauma.Items.Components.Projectile", "Use", {"Barotrauma.Character", "System.Single"}, function(instance,ptable)
-	if instance.item.HasTag("saclosmsl") then
-		ptable["launchImpulseModifier"] = Single(10)--Launch velocity of missle
+	if mslsettings[instance.item.Prefab.Identifier.Value] ~= nil then
+		local launchimpulse = mslsettings[instance.item.Prefab.Identifier.Value].INIT_LAUNCH_SPEED
+		ptable["launchImpulseModifier"] = Single(launchimpulse)
 		return
 	end
 end)
@@ -111,28 +121,33 @@ Hook.Add("think", "CBRN_SACLOS_Guide", function ()
 			if missile.isTurretLaunched then
 				WeaponDirection = missile.launcher.targetRotation
 			else
-				WeaponDirection = missile.launcher.Rotation
+				WeaponDirection = 0 - missile.launcher.body.Rotation
 			end
 			--math works related to weapon directions
 			WeaponDirection = sign(WeaponDirection) * ( math.pi - math.abs(WeaponDirection))
 			WeaponDirection = WeaponDirection - math.floor(WeaponDirection / 2.0 / math.pi) * 2.0 * math.pi - math.pi
 
-			steeringForce = (radToVec(WeaponDirection) - radToVec(missileDirection)) / 0.05 * MAX_STEERING_FORCE
+			steeringForce = (radToVec(WeaponDirection) - radToVec(missileDirection)) / missile.msldata.TOLERANCE * missile.msldata.MAX_STEERING_FORCE
 			--smaller num means less maneuver closer to LOS center
 
+			if missile.isTurretLaunched then
+				WeaponPosition = missile.launcher.item.WorldPosition
+			else
+				WeaponPosition = missile.launcher.WorldPosition
+			end
+
 			missilePosition = missile.item.WorldPosition
-			WeaponPosition = missile.launcher.item.WorldPosition
 			WeaponDirectionVector = radToVec(WeaponDirection)
 			closestPointOnLOS = WeaponPosition + Vector2.dot(missilePosition - WeaponPosition, WeaponDirectionVector) * WeaponDirectionVector
 			correctionDirection = Vector2.Normalize(closestPointOnLOS - missilePosition)
 
-			correctionMagnitude = lerp(0, MAX_CORRECTION_FORCE, clamp((closestPointOnLOS - missilePosition).Length() / (1000 * 3.5), 0, 0.8))
+			correctionMagnitude = lerp(0, missile.msldata.MAX_CORRECTION_FORCE, clamp((closestPointOnLOS - missilePosition).Length() / (1000 * missile.msldata.AVR_G_FORCE_MULTIPLIER), 0, missile.msldata.STEERAGE_MULTIPLIER))
 			--Larger multiplier means less force, means a softer curve
 
 			correctionForce = correctionDirection * correctionMagnitude
 
 			--propulsion force
-			propulsionForce = radToVec(missileDirection) * MAX_PROPULSION_FORCE
+			propulsionForce = radToVec(missileDirection) * missile.msldata.MAX_PROPULSION_FORCE
 
 			missile.item.body.ApplyLinearImpulse(steeringForce + correctionForce + propulsionForce)
 				

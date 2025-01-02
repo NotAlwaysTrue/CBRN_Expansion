@@ -1989,7 +1989,7 @@
     </ItemContainer>
     <aitarget sightrange="1000" fadeouttime="6" />
   </Item>
-  <Item identifier="UAV_Controller" category="Equipment" maxstacksize="5" maxstacksizecharacterinventory="1" Tags="smallitem" scale="0.01" impactsoundtag="impact_soft" hideinmenus="true">
+  <Item name="UAV Controller" identifier="UAV_Controller" category="Equipment" maxstacksize="5" maxstacksizecharacterinventory="1" Tags="smallitem" scale="0.01" impactsoundtag="impact_soft" hideinmenus="true">
     <InventoryIcon texture="%ModDir:3278494407%/weapons/BRUH/controller.png" sourcerect="0,0,2000,2000" origin="0.5,0.5" />
     <Sprite texture="%ModDir:3278494407%/weapons/BRUH/controller.png" sourcerect="0,0,2000,2000" depth="0.6" origin="0.5,0.5" />
     <Body width="45" height="45" density="11" />
@@ -2127,7 +2127,77 @@
     </Wearable>
     <AiTarget soundrange="1200" sonarlabel="sig.sos" sight="1200" staticsight="true"/>
   </Item>
-
+  <Item identifier="headset_sonar" scale="0.5" category="Equipment" tags="smallitem,mobileradio" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="crewcab" secondary="divingcab"/>
+    <Price baseprice="80">
+      <Price storeidentifier="merchantoutpost" minavailable="3" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="10" />
+      <Price storeidentifier="merchantresearch" minavailable="4" />
+      <Price storeidentifier="merchantmilitary" minavailable="6" />
+      <Price storeidentifier="merchantmine" minavailable="6" />
+    </Price>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="256,0,64,64" origin="0.5,0.5" />
+    <Sprite name="Headset" texture="Content/Items/Jobgear/headgears.png" depth="0.6" sourcerect="28,321,49,62" origin="0.5,0.5" />
+    <Body radius="20" height="20" density="15" />
+    <Deconstruct time="5">
+      <Item identifier="sonarbeacon" />
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredItem identifier="silicon" />
+      <RequiredItem identifier="copper" />
+      <RequiredItem identifier="handheldsonar" />
+      <RequiredItem identifier="fpgacircuit" />
+    </Fabricate>
+    <Sonar range="20000.0" powerconsumption="10" drawhudwhenequipped="true" detectsubmarinewalls="false" displaybordersize="-1" characterusable="false" hasmineralscanner="true" allowuioverlap="true">
+      <StatusEffect type="OnUse" targettype="Contained" Condition="-0.05" disabledeltatime="true">
+        <RequiredItem items="mobilebattery" type="Contained" />
+      </StatusEffect>
+      <sound file="Content/Items/Command/SonarPing.ogg" type="OnUse" range="1000.0" frequencymultiplier="1.5" />
+      <GuiFrame relativesize="0.5,0.5" anchor="CenterLeft" relativeoffset="0.006,-0.01"/>
+      <PingCircle texture="Content/Items/Command/pingCircle.png" origin="0.5,0.5" />
+      <DirectionalPingCircle texture="Content/Items/Command/directionalPingCircle.png" origin="0.0,0.5" />
+      <ScreenOverlay texture="Content/Items/Command/sonarOverlay.png" origin="0.5,0.5" />
+      <ScreenBackground texture="Content/Items/Command/sonarBackground.png" origin="0.5,0.5" />
+      <DirectionalPingBackground texture="Content/Items/Command/directionalPingBackground.png" origin="0.5,0.5" />
+      <DirectionalPingButton index="0" texture="Content/Items/Command/directionalPingButton.png" sourcerect="0,0,91,266" origin="-4.5275,0.5" />
+      <DirectionalPingButton index="1" texture="Content/Items/Command/directionalPingButton.png" sourcerect="133,0,91,266" origin="-4.5275,0.5" />
+      <DirectionalPingButton index="2" texture="Content/Items/Command/directionalPingButton.png" sourcerect="266,0,91,266" origin="-4.5275,0.5" />
+      <Blip texture="Content/Items/Command/sonarBlip.png" origin="0.5,0.5" />
+      <LineSprite texture="Content/Items/Command/NavUI.png" sourcerect="181,141,109,4" origin="0,0.5"/>
+      <icon identifier="outpost" texture="Content/UI/MainIconsAtlas.png" sourcerect="352,398,16,8" origin="0.5,0.5"/>
+      <icon identifier="submarine" texture="Content/UI/MainIconsAtlas.png" sourcerect="353,407,14,6" origin="0.5,0.5"/>
+      <icon identifier="shuttle" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,407,8,6" origin="0.5,0.5"/>
+      <icon identifier="artifact" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,414,8,8" origin="0.5,0.5"/>
+      <icon identifier="location" texture="Content/UI/MainIconsAtlas.png" sourcerect="349,435,11,11" origin="0.5,0.5"/>
+      <icon identifier="mineral" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,434,7,12" origin="0.5,0.5"/>
+      <icon identifier="" texture="Content/UI/MainIconsAtlas.png" sourcerect="346,416,4,4" origin="0.5,0.5"/>
+    </Sonar>
+    <WifiComponent range="40000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+      <StatusEffect type="OnActive" targettype="This">
+        <Conditional JamTimer="gt 0" targetitemcomponent="WifiComponent" />
+        <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
+      </StatusEffect>
+    </WifiComponent>
+    <LightComponent LightColor="0,0,0,0" range="0" powerconsumption="0" blinkfrequency="2" IsOn="false" canbeselected="false">
+      <StatusEffect type="OnActive" targettype="Contained" Condition="-0.05">
+        <RequiredItem items="mobilebattery" type="Contained" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" targettype="This" SoundRange="50000" setvalue="true">
+        <Conditional Voltage="gt 0.5" targetitemcomponent="LightComponent" />
+        <sound file="Content/Items/WarningBeepSlow.ogg" range="1000.0" loop="true" volume="1.0" />
+      </StatusEffect>
+    </LightComponent>
+    <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
+      <sprite name="Headset Wearable" texture="Content/Items/Jobgear/headgears.png" limb="Head" depth="0.1" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hideotherwearables="false" sourcerect="26,317,51,64" origin="0.5,0.6" />
+    </Wearable>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+      <Containable items="mobilebattery">
+        <StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true" />
+      </Containable>
+    </ItemContainer>
+  </Item>
   <Item identifier="extinguishgrenade_exec" scale="1.0" tags="fireextinguisher" requireaimtouse="false" noninteractable="true" hideinmenus="true">
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,1,1" depth="0.55" origin="0.5,0.5" />
     <Body radius="5" density="10.5" />
@@ -3204,12 +3274,14 @@
       <RequiredSkill identifier="weapons" level="100" />
       <Item identifier="fusioncore"/>
       <Item identifier="fpgacircuit" amount="4"/>
+      <Item identifier="depletedfuel" amount="3"/>
       <Item identifier="c4block" amount="6"/>
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
       <RequiredSkill identifier="mechanical" level="100" />
       <RequiredSkill identifier="weapons" level="100" />
       <RequiredItem identifier="fusioncore" />
+      <RequiredItem identifier="depletedfuel" amount="3"/>
       <RequiredItem identifier="fpgacircuit" amount="8"/>
       <RequiredItem identifier="c4block" amount="12" />
     </Fabricate>
@@ -3356,7 +3428,7 @@
       <RequiredSkill identifier="mechanical" level="90" />
       <RequiredSkill identifier="weapons" level="100" />
       <Item identifier="u235core_low"/>
-      <Item identifier="depletedfuel"/>
+      <Item identifier="tsm_triton_bag" outcondition="0.5"/>
       <Item identifier="fpgacircuit" amount="2"/>
       <Item identifier="c4block" amount="3"/>
     </Deconstruct>
@@ -3364,9 +3436,9 @@
       <RequiredSkill identifier="mechanical" level="80" />
       <RequiredSkill identifier="weapons" level="95" />
       <RequiredItem identifier="u235core_low" />
-      <RequiredItem identifier="depletedfuel" amount="3"/>
+      <RequiredItem identifier="tsm_triton_bag" mincondition="0.5" usecondition="true"/>
       <RequiredItem identifier="fpgacircuit" amount="4"/>
-    <RequiredItem identifier="c4block" amount="6" />
+      <RequiredItem identifier="c4block" amount="4" />
     </Fabricate>
     <Throwable characterusable="false" slots="Any,RightHand,LeftHand" canbecombined="true" removeoncombined="true" throwforce="3.5" aimpos="35,-10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true"/>
@@ -3927,4 +3999,5 @@
       </StatusEffect>
     </Holdable>
   </Item>
+
 </Items>
