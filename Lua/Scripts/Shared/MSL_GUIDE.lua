@@ -1,6 +1,10 @@
-if mslsettings == nil then 
-	print("///ERROR LOADING MISSILE CONFIG! PLEASE REPORT THIS TO DEV!///")
-	return
+if mslsettings == nil then
+	Timer.Wait(function()
+		print("\n")
+		print("///ERROR LOADING MISSILE CONFIG! PLEASE REPORT THIS TO DEV!///")
+		print("\n")
+		return
+	end,1)
 end
 
 LuaUserData.MakeFieldAccessible(Descriptors["Barotrauma.Items.Components.Turret"], "targetRotation")
