@@ -1,14 +1,10 @@
-LuaUserData.MakeFieldAccessible(Descriptors["Barotrauma.Items.Components.Turret"], "targetRotation")
-LuaUserData.MakeFieldAccessible(Descriptors["Barotrauma.Items.Components.Turret"], "loadedRotationLimits")
-LuaUserData.MakeMethodAccessible(Descriptors["Barotrauma.Items.Components.Turret"], "set_Rotation")
---init
+if mslsettings == nil then 
+	print("///ERROR LOADING MISSILE CONFIG! PLEASE REPORT THIS TO DEV!///")
+	return
+end
 
--- Steer the missile towards the direction the cursor is pointing at, smaller num means the msl will try harder to follow cursor
---local MAX_STEERING_FORCE = 0.02
--- Correct the missile flying path towards the LOS , smaller num means the msl how hard the msl will try to go to LOS
---local MAX_CORRECTION_FORCE = 0.7
--- Accelerate the missile in its current direction
---local MAX_PROPULSION_FORCE = 0.13
+LuaUserData.MakeFieldAccessible(Descriptors["Barotrauma.Items.Components.Turret"], "targetRotation")
+LuaUserData.MakeMethodAccessible(Descriptors["Barotrauma.Items.Components.Turret"], "set_Rotation")
 
 local Missile = {}
 Missile.__index = Missile
@@ -66,8 +62,6 @@ end,Hook.HookMethodType.After)--Add projectile to upd table when launched, for h
 
 Hook.Patch("Barotrauma.Items.Components.Turret", "Launch", function(instance,ptable)
 	if instance.item.HasTag("vls") then
-		instance.RotationLimits = Vector2(0,360)
-		instance.loadedRotationLimits = Vector2(0,360)
 		instance.set_Rotation(instance.item.Rotation - math.pi * 0.5)
 	end
 end,Hook.HookMethodType.Before)
