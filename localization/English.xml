@@ -601,8 +601,8 @@
   <entitydescription.vlsloader>A loader for micro VLS, a huge engineering advance despite only 4 missiles...\nI think you don't want to get out to reload, right?</entitydescription.vlsloader>
   <entityname.AFCS_scope>Advanced Fire Control System Scope</entityname.AFCS_scope>
   <entitydescription.AFCS_scope>A periscope with 2nd gen, has a thermal TIS for 150m</entitydescription.AFCS_scope>
-  <entityname.headset_sonar>Sonar Headset</entityname.headset_sonar>
-  <entitydescription.headset_sonar>A headset installed with 6th gen hull sonar, Effective range 200m</entitydescription.headset_sonar>
+  <entityname.cbrn_headset_sonar>Sonar Headset</entityname.cbrn_headset_sonar>
+  <entitydescription.cbrn_headset_sonar>A headset installed with 6th gen hull sonar, Effective range 200m</entitydescription.cbrn_headset_sonar>
   <entityname.std_8_utam>SM-8 Universal Tactical Attack Munition</entityname.std_8_utam>
   <entitydescription.std_8_utam>SM-8 is one of the final product of Next-Generation Attack Munition(NGAM), significantly increased the quantity of propellant and explosive amount while using the SACLOS system \nInstalled a impact fuse HE Demolition Warhead, can also be used as vehicle for other munitions \nCan be used as a vehicle for Omega Warhead \nMax Guidance Duration 20s</entitydescription.std_8_utam>
 

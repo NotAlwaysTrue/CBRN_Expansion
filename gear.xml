@@ -2127,7 +2127,7 @@
     </Wearable>
     <AiTarget soundrange="1200" sonarlabel="sig.sos" sight="1200" staticsight="true"/>
   </Item>
-  <Item identifier="headset_sonar" scale="0.5" category="Equipment" tags="smallitem,mobileradio" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
+  <Item identifier="cbrn_headset_sonar" scale="0.5" category="Equipment" tags="smallitem,mobileradio" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="crewcab" secondary="divingcab"/>
     <Price baseprice="80">
       <Price storeidentifier="merchantoutpost" minavailable="3" />

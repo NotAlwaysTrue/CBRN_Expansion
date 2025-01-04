@@ -1,22 +1,27 @@
 LuaUserData.MakeFieldAccessible(Descriptors["Barotrauma.Items.Components.Turret"], "targetRotation")
 LuaUserData.MakeMethodAccessible(Descriptors["Barotrauma.Items.Components.Turret"], "set_Rotation")
+LuaUserData.MakeMethodAccessible(Descriptors["Barotrauma.Items.Components.Turret"], "CheckLineOfSight")
 
 local Missile = {}
 Missile.__index = Missile
 
 -- helpfunc
 
-function Missile:getMissile(item, user, Launcher, isTurretLaunched)
+function Missile:getMissile(item, Launcher, Target, isTurretLaunched)
     local data = {}
     setmetatable(data, Missile)
 	data.item = item
 	data.launcher = Launcher
+	data.destarget = Target
 	data.msldata = mslsettings[item.Prefab.Identifier.Value]
-	data.user = user
-	data.launchItem = user.SelectedItem
 	data.isTurretLaunched = isTurretLaunched
+	data.isAuto = mslsettings[item.Prefab.Identifier.Value].IS_AUTO_GUIDED
 	data.isDead = false
     return data
+end
+
+local function getEndPoint(Vect, distance, rad)
+    return Vector2(Vect.X + distance * math.cos(rad),Vect.Y + distance * math.sin(rad))
 end
 
 local function sign(value)
@@ -48,27 +53,40 @@ local ActiveMissiles = {}
 Hook.Patch("Barotrauma.Items.Components.Projectile", "Launch",function(instance,ptable)
 	local projectile = instance.item
 	if projectile == nil or not projectile.HasTag("saclosmsl") then return end
-	local user = ptable["user"]
-	if user == nil then return end
-	local newMissile = Missile:getMissile(projectile, user, instance.Launcher, false)
+	local aimarget = nil
+	local newMissile = Missile:getMissile(projectile, instance.Launcher, aimarget, false)
 	table.insert(ActiveMissiles, newMissile)
 end,Hook.HookMethodType.After)--Add projectile to upd table when launched, for handholds
 -- Very fair, turret launch doesn't counts for projectile launch :)
 
 Hook.Patch("Barotrauma.Items.Components.Turret", "Launch", function(instance,ptable)
-	if instance.item.HasTag("vls") then
-		instance.set_Rotation(instance.item.Rotation - math.pi * 0.5)
-	end
-end,Hook.HookMethodType.Before)
-
-Hook.Patch("Barotrauma.Items.Components.Turret", "Launch", function(instance,ptable)
 	local projectile = ptable["projectile"]
+	local aimarget = nil
+	local gunrotation = instance.Rotation
 	if projectile == nil or not projectile.HasTag("saclosmsl") then return end
-	local user = ptable["user"]
-	if user == nil then return end
-	local newMissile = Missile:getMissile(projectile, user, instance, true)
+	if mslsettings[projectile.Prefab.Identifier.Value].IS_AUTO_GUIDED then
+		local endpoint = getEndPoint(instance.item.WorldPosition, mslsettings[projectile.Prefab.Identifier.Value].LOCK_RANGE, gunrotation)
+		print(instance.item.WorldPosition)
+		print(endpoint)
+		aimarget = Game.World.RayCast(instance.item.WorldPosition, endpoint)
+		if aimarget ~= nil then
+			for i,v in pairs(aimarget) do
+				print(v)
+			end
+		else
+			Timer.wait(function()
+				projectile.Condition = 0
+			end,2000)
+		end
+	end
+	if instance.item.HasTag("vls") then
+		instance.RotationLimits = Vector2(0,360)                             --Remove rotationlimit to allow guidence
+		instance.set_Rotation(instance.item.RotationRad - math.pi * 0.5)     --Launch Vertically
+	end
+	local newMissile = Missile:getMissile(projectile, instance, aimarget, true)
 	table.insert(ActiveMissiles, newMissile)
-end,Hook.HookMethodType.After)--Add projectile to upd table when launched, for turrets
+	
+end,Hook.HookMethodType.Before)-- Use before instad of after to get locked on target
 
 Hook.Add("item.removed", "CBRN_SACLOS_RemoveMissile", function(item)
 	if not item.HasTag("saclosmsl") then return end
@@ -102,8 +120,6 @@ Hook.Add("think", "CBRN_SACLOS_Guide", function ()
 	
     for missile in ActiveMissiles do
 		if not missile.item.removed and not missile.isDead then
-			--Turrets will not lost LOS since it is stationary
-			--Handholds may lost LOS due to weapon dir change
 			missileVelocity = missile.item.body.LinearVelocity
 			missileDirection = getDirection(missileVelocity)
 
@@ -112,12 +128,16 @@ Hook.Add("think", "CBRN_SACLOS_Guide", function ()
 			else
 				WeaponDirection = 0 - missile.launcher.body.Rotation
 			end
+			if missile.isAuto then
+				if missile.destarget == nil then return end
+				WeaponDirection = getDirection(missile.item.WorldPosition - missile.destarget.Position)
+			end
 			--math works related to weapon directions
 			WeaponDirection = sign(WeaponDirection) * ( math.pi - math.abs(WeaponDirection))
 			WeaponDirection = WeaponDirection - math.floor(WeaponDirection / 2.0 / math.pi) * 2.0 * math.pi - math.pi
 
 			steeringForce = (radToVec(WeaponDirection) - radToVec(missileDirection)) / missile.msldata.TOLERANCE * missile.msldata.MAX_STEERING_FORCE
-			--smaller num means less maneuver closer to LOS center
+
 
 			if missile.isTurretLaunched then
 				WeaponPosition = missile.launcher.item.WorldPosition
@@ -128,6 +148,12 @@ Hook.Add("think", "CBRN_SACLOS_Guide", function ()
 			missilePosition = missile.item.WorldPosition
 			WeaponDirectionVector = radToVec(WeaponDirection)
 			closestPointOnLOS = WeaponPosition + Vector2.dot(missilePosition - WeaponPosition, WeaponDirectionVector) * WeaponDirectionVector
+			
+			if missile.isAuto then
+				if missile.destarget == nil then return end
+				closestPointOnLOS = missile.destarget.Position
+			end
+
 			correctionDirection = Vector2.Normalize(closestPointOnLOS - missilePosition)
 
 			correctionMagnitude = lerp(0, missile.msldata.MAX_CORRECTION_FORCE, clamp((closestPointOnLOS - missilePosition).Length() / (1000 * missile.msldata.AVR_G_FORCE_MULTIPLIER), 0, missile.msldata.STEERAGE_MULTIPLIER))
