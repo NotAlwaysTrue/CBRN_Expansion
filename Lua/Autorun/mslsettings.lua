@@ -27,12 +27,12 @@ mslsettings = {
     },
 
     std_8_mrd_utam = {
-        MAX_STEERING_FORCE = 0.013,
-        MAX_CORRECTION_FORCE = 0.88,
-        MAX_PROPULSION_FORCE = 0.29,
-        AVR_G_FORCE_MULTIPLIER = 1.8,
-        TOLERANCE = 0.03,
-        STEERAGE_MULTIPLIER = 0.95,
+        MAX_STEERING_FORCE = 0.016,
+        MAX_CORRECTION_FORCE = 0.85,
+        MAX_PROPULSION_FORCE = 0.25,
+        AVR_G_FORCE_MULTIPLIER = 2.0,
+        TOLERANCE = 0.02,
+        STEERAGE_MULTIPLIER = 0.90,
         INIT_LAUNCH_SPEED = 15,
         DISABLE_RESISTANCE = false,
         IS_AUTO_GUIDED = false,
