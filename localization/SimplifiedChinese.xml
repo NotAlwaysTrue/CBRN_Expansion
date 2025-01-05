@@ -639,9 +639,35 @@
   <entitydescription.std_8_utam>标准-8是下一代攻击弹药(NGAM)计划的产物之一, 在使用SACLOS系统的同时大幅增强了推进剂数量和装药量 \n装有撞击高爆爆破弹头, 也可以作为其他弹药的运输载具 \n可作为Omega弹头的发射载具 \n制导时长20s</entitydescription.std_8_utam>
 
   <entityname.std_8_mrd_utam>标准-8/中程防御 通用战术攻击弹药</entityname.std_8_mrd_utam>
-  <entitydescription.std_8_mrd_utam>标准-8是下一代攻击弹药(NGAM)计划的产物之一, 在使用SACLOS系统的同时大幅增强了推进剂数量和装药量 \n中程防御型拥有相对更好的机动性和加速能力 \n装有近炸高爆爆破弹头, 也可以作为其他弹药的运输载具 \n可作为Omega弹头的发射载具 \n制导时长20s</entitydescription.std_8_mrd_utam>
+  <entitydescription.std_8_mrd_utam>标准-8是下一代攻击弹药(NGAM)计划的产物之一, 在使用SACLOS系统的同时大幅增强了推进剂数量和装药量 \n中程防御型拥有近炸弹头以最大化杀伤效率 \n装有近炸高爆爆破弹头, 也可以作为其他弹药的运输载具 \n可作为Omega弹头的发射载具 \n制导时长20s</entitydescription.std_8_mrd_utam>
 
   <sig.ldagw>LD-AGW 导弹</sig.ldagw>
   <sig.std8>标准-8 导弹</sig.std8>
+  <sig.std8_mrd>标准-8/中程防御 导弹</sig.std8_mrd>
 
+  <t2mc.uppermain>主上总线</t2mc.uppermain>
+  <t2mc.lowermain>主下总线</t2mc.lowermain>
+  <t2mc.uppersec>辅助\n上总线</t2mc.uppersec>
+  <t2mc.lowersec>辅助\n下总线</t2mc.lowersec>
+  <t2mc.critical1>关键系统1</t2mc.critical1>
+  <t2mc.critical2>关键系统2</t2mc.critical2>
+  <t2mc.drainpump1>排水泵1</t2mc.drainpump1>
+  <t2mc.drainpump2>排水泵2</t2mc.drainpump2>
+  <t2mc.weapons1>火控系统</t2mc.weapons1>
+  <t2mc.medical>维生/医疗</t2mc.medical>
+  <t2mc.light1>照明1</t2mc.light1>
+  <t2mc.light2>照明2</t2mc.light2>
+  <t2mc.light3>照明3</t2mc.light3>
+  <t2mc.light4>照明4</t2mc.light4>
+  <t2mc.switchsec>切换辅助系统</t2mc.switchsec>
+  <t2mc.switchbat>切换电池</t2mc.switchbat>
+  <t2mc.cutstat>隔离</t2mc.cutstat>
+  <t2mc.constat>接通</t2mc.constat>
+  <t2mc.charge>充电</t2mc.charge>
+  <t2mc.activate>放电</t2mc.activate>
+  <t2mc.factory>制造站</t2mc.factory>
+  <t2mc.upperbat>主上总线\n电池</t2mc.upperbat>
+  <t2mc.lowerbat>主下总线\n电池</t2mc.lowerbat>
+  <t2mc.dock>对接舱</t2mc.dock>
+  <t2mc.seal>舱室封闭</t2mc.seal>
 </infotexts>

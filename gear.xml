@@ -2149,8 +2149,8 @@
       <RequiredItem identifier="handheldsonar" />
       <RequiredItem identifier="fpgacircuit" />
     </Fabricate>
-    <Sonar range="20000.0" powerconsumption="10" drawhudwhenequipped="true" detectsubmarinewalls="false" displaybordersize="-1" characterusable="false" hasmineralscanner="true" allowuioverlap="true">
-      <StatusEffect type="OnUse" targettype="Contained" Condition="-0.05" disabledeltatime="true">
+    <Sonar range="30000.0" powerconsumption="10" drawhudwhenequipped="true" detectsubmarinewalls="false" displaybordersize="0" characterusable="false" hasmineralscanner="true" allowuioverlap="true">
+      <StatusEffect type="OnUse" targettype="Contained" Condition="-0.1" disabledeltatime="true">
         <RequiredItem items="mobilebattery" type="Contained" />
       </StatusEffect>
       <sound file="Content/Items/Command/SonarPing.ogg" type="OnUse" range="1000.0" frequencymultiplier="1.5" />
@@ -2173,21 +2173,12 @@
       <icon identifier="mineral" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,434,7,12" origin="0.5,0.5"/>
       <icon identifier="" texture="Content/UI/MainIconsAtlas.png" sourcerect="346,416,4,4" origin="0.5,0.5"/>
     </Sonar>
-    <WifiComponent range="40000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+    <WifiComponent range="50000.0" LinkToChat="true" MinChatMessageInterval="0.0">
       <StatusEffect type="OnActive" targettype="This">
         <Conditional JamTimer="gt 0" targetitemcomponent="WifiComponent" />
         <sound file="Content/Sounds/RadioStatic.ogg" range="500.0" frequencymultiplier="0.7" loop="true" volume="0.5" />
       </StatusEffect>
     </WifiComponent>
-    <LightComponent LightColor="0,0,0,0" range="0" powerconsumption="0" blinkfrequency="2" IsOn="false" canbeselected="false">
-      <StatusEffect type="OnActive" targettype="Contained" Condition="-0.05">
-        <RequiredItem items="mobilebattery" type="Contained" />
-      </StatusEffect>
-      <StatusEffect type="OnActive" targettype="This" SoundRange="50000" setvalue="true">
-        <Conditional Voltage="gt 0.5" targetitemcomponent="LightComponent" />
-        <sound file="Content/Items/WarningBeepSlow.ogg" range="1000.0" loop="true" volume="1.0" />
-      </StatusEffect>
-    </LightComponent>
     <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
       <sprite name="Headset Wearable" texture="Content/Items/Jobgear/headgears.png" limb="Head" depth="0.1" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hideotherwearables="false" sourcerect="26,317,51,64" origin="0.5,0.6" />
     </Wearable>

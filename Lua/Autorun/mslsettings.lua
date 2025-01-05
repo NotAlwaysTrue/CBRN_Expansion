@@ -10,13 +10,13 @@ mslsettings = {
         INIT_LAUNCH_SPEED = 8,           -- Initial launch speed
         DISABLE_RESISTANCE = false,      -- Will the missile take water resistance, Change this may lead to significant differences
         IS_AUTO_GUIDED = false,          -- Is the missile auto guided
-        LOCK_RANGE = 0,                  --Only matters when missile is auto guided.
+        LOCK_RANGE = 0,                  -- Only matters when missile is auto guided.
     },
 
     std_8_utam = {
         MAX_STEERING_FORCE = 0.016,
         MAX_CORRECTION_FORCE = 0.85,
-        MAX_PROPULSION_FORCE = 0.25,
+        MAX_PROPULSION_FORCE = 0.28,
         AVR_G_FORCE_MULTIPLIER = 2.0,
         TOLERANCE = 0.02,
         STEERAGE_MULTIPLIER = 0.90,
@@ -29,7 +29,7 @@ mslsettings = {
     std_8_mrd_utam = {
         MAX_STEERING_FORCE = 0.016,
         MAX_CORRECTION_FORCE = 0.85,
-        MAX_PROPULSION_FORCE = 0.25,
+        MAX_PROPULSION_FORCE = 0.28,
         AVR_G_FORCE_MULTIPLIER = 2.0,
         TOLERANCE = 0.02,
         STEERAGE_MULTIPLIER = 0.90,

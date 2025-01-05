@@ -606,6 +606,36 @@
   <entityname.std_8_utam>SM-8 Universal Tactical Attack Munition</entityname.std_8_utam>
   <entitydescription.std_8_utam>SM-8 is one of the final product of Next-Generation Attack Munition(NGAM), significantly increased the quantity of propellant and explosive amount while using the SACLOS system \nInstalled a impact fuse HE Demolition Warhead, can also be used as vehicle for other munitions \nCan be used as a vehicle for Omega Warhead \nMax Guidance Duration 20s</entitydescription.std_8_utam>
 
+  <entityname.std_8_mrd_utam>SM-8/Medium Range Defence Universal Tactical Attack Munition</entityname.std_8_mrd_utam>
+  <entitydescription.std_8_mrd_utam>SM-8 is one of the final product of Next-Generation Attack Munition(NGAM), significantly increased the quantity of propellant and explosive amount while using the SACLOS system \nMDR Module has a proximity fuse to enhance kill efficiency \nInstalled a proximity HE-Demolition warhead, can also be used as vehicle for other munitions \nMax Guidance Duration 20s</entitydescription.std_8_mrd_utam>
+
   <sig.ldagw>LD-AGW Missile</sig.ldagw>
   <sig.std8>SM-8 Missile</sig.std8>
+  <sig.std8_mrd>SM-8/MRD Missile</sig.std8_mrd>
+
+  <t2mc.uppermain>Main Bus Upper</t2mc.uppermain>
+  <t2mc.lowermain>Main Bus Lower</t2mc.lowermain>
+  <t2mc.uppersec>Aux Bus Upper</t2mc.uppersec>
+  <t2mc.lowersec>Aux Bus Lower</t2mc.lowersec>
+  <t2mc.critical1>Critical 1</t2mc.critical1>
+  <t2mc.critical2>Critical 2</t2mc.critical2>
+  <t2mc.drainpump1>Aux Pump 1</t2mc.drainpump1>
+  <t2mc.drainpump2>Aux Pump 2</t2mc.drainpump2>
+  <t2mc.weapons1>Weapons</t2mc.weapons1>
+  <t2mc.medical>Medical</t2mc.medical>
+  <t2mc.light1>Light 1</t2mc.light1>
+  <t2mc.light2>Light 2</t2mc.light2>
+  <t2mc.light3>Light 3</t2mc.light3>
+  <t2mc.light4>Light 4</t2mc.light4>
+  <t2mc.switchsec>Switch AUX</t2mc.switchsec>
+  <t2mc.switchbat>Switch Battery</t2mc.switchbat>
+  <t2mc.cutstat>Off</t2mc.cutstat>
+  <t2mc.constat>On</t2mc.constat>
+  <t2mc.charge>Off</t2mc.charge>
+  <t2mc.activate>On</t2mc.activate>
+  <t2mc.factory>Fabricator</t2mc.factory>
+  <t2mc.upperbat>MBU\nBattery</t2mc.upperbat>
+  <t2mc.lowerbat>MBL\nBattery</t2mc.lowerbat>
+  <t2mc.dock>Docking</t2mc.dock>
+  <t2mc.seal>Seal</t2mc.seal>
 </infotexts>
