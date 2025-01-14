@@ -780,6 +780,35 @@
     <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,0,1,1" color="0,0,0,255" origin="0,0" />
   </Affliction>
 
+  <Affliction identifier="triton_7L_71" description="" type="triton_7L" causeofdeathdescription="严重的氚核破坏了你身体的组织" selfcauseofdeathdescription="氚核充满你的身体，你开始腐烂溃败。" limbspecific="true" maxstrength="100" karmachangeonapplied="-1" damageoverlayalpha="2" WeaponsSkillGain="1.0">
+    <Description textidentifier="afflictiondescription.triton_7L.low" minstrength="0" maxstrength="50" />
+    <Description textidentifier="afflictiondescription.triton_7L" minstrength="50" maxstrength="100" />
+    <Effect minstrength="0" maxstrength="7" multiplybymaxvitality="true" strengthchange="0.3" minvitalitydecrease="0" maxvitalitydecrease="0.5" />
+    <Effect minstrength="7" maxstrength="28" multiplybymaxvitality="true" strengthchange="0.6" minvitalitydecrease="0" maxvitalitydecrease="0.5" />
+    <Effect minstrength="28" maxstrength="50" strengthchange="0" multiplybymaxvitality="true" minvitalitydecrease="0.8" maxvitalitydecrease="0.8">
+      <StatusEffect target="Character">
+        <Affliction identifier="triton_9C" amount="2" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="50" maxstrength="70" strengthchange="0" multiplybymaxvitality="true" minvitalitydecrease="1" maxvitalitydecrease="1">
+      <StatusEffect target="Character">
+        <Affliction identifier="triton_9C" amount="3" />
+        <Affliction identifier="radiationsickness" amount="5" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="70" maxstrength="90" strengthchange="0" multiplybymaxvitality="true" minvitalitydecrease="1.5" maxvitalitydecrease="1.5">
+      <StatusEffect target="Character">
+        <Affliction identifier="triton_9C" amount="4" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="90" maxstrength="100" strengthchange="0" multiplybymaxvitality="true" minvitalitydecrease="2" maxvitalitydecrease="2">
+      <StatusEffect target="Character">
+        <Affliction identifier="triton_9C" amount="5" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/png/ui.png" sourcerect="1319,539,133,130" color="255,255,255,255" origin="0,0" />
+  </Affliction>
+
   <!--effect of unconcious will fade during time-->
   <Affliction identifier="tear_poisonsource" type="poison" IsBuff="false" showiconthreshold="999" showinhealthscannerthreshold="0" maxstrength="200" limbspecific="false" indicatorlimb="Head">
     <Effect minstrength="0" maxstrength="200" minscreenblur="0" maxscreenblur="200" strengthchange="-0.5">
