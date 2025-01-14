@@ -101,15 +101,18 @@
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.3" probabilitymultiplier="0.2" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="acidburn" damagemultiplier="0.0" probabilitymultiplier="0.0" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.25" probabilitymultiplier="0.3" deflectprojectiles="true" />
-      <StatusEffect type="OnWearing" target="Character" tag="cbrnsuit" disabledeltatime="true" LowPassMultiplier="0.1" SpeedMultiplier="1.1" setvalue="true">
+      <StatusEffect type="OnWearing" target="Character" tag="cbrnsuit" PressureProtection="4000.0" disabledeltatime="true" LowPassMultiplier="0.1" SpeedMultiplier="1.1" setvalue="true">
         <Affliction identifier="CBRNsuit" amount="10" />
         <Affliction identifier="exosuited" amount="10" />
         <Affliction identifier="eyidefense" amount="10" />
         <Affliction identifier="chemicalliner_armorbreak" amount="10" />
         <Affliction identifier="chemicalliner_secondary" amount="10" />
       </StatusEffect>
-      <ItemContainer capacity="2" maxstacksize="2">
-        <Containable items="smallitem" excludeditems="mobilecontainer" />
+      <ItemContainer capacity="1" maxstacksize="1" autoinject="true">
+        <Containable items="chem,syringe" />
+        <SubContainer capacity="2" maxstacksize="3" hide="true">
+          <Containable items="smallitem" excludeditems="mobilecontainer" />
+        </SubContainer>
       </ItemContainer>
     </Wearable>
   </Item>
@@ -159,7 +162,8 @@
           <LightTexture texture="Content/Lights/lightcone.png" origin="0.0, 0.5" size="1.0,2.0" />
         </LightComponent>
       </sprite>
-      <sprite name="Hide Boobs" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="Tail" hidelimb="true" hideotherwearables="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" />      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.9" deflectprojectiles="true" />
+      <sprite name="Hide Boobs" texture="%ModDir:3278494407%/Jobgear/TSM_CBRN_ERT/CBRN_ERT_suit.png" limb="Tail" hidelimb="true" hideotherwearables="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.9" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.6" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,bitewounds,internaldamage" damagemultiplier="0.7" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.8" deflectprojectiles="true" />
@@ -187,11 +191,9 @@
         <Conditional jobidentifier="neq cbrn_guy"/>
         <Affliction identifier="oxygenlow" amount="10"/>
       </StatusEffect>
-      <ItemContainer capacity="3" maxstacksize="3">
+      <ItemContainer capacity="3" maxstacksize="3" slotsperrow="1">
         <Containable items="smallitem" excludeditems="mobilecontainer" />
-        <SubContainer capacity="1" maxstacksize="1">
-          <Containable items="smallitem,mediumitem,weapon" />
-        </SubContainer>
+        <SubContainer capacity="1" maxstacksize="1" hide="true"/>
       </ItemContainer>
       <StatusHUD range="300" ShowTexts="true" OverlayColor="0,0,0,0" drawhudwhenequipped="true" />
     </Wearable>
@@ -396,7 +398,7 @@
         <RequiredItems items="oxygensource" type="Contained" MatchOnEmpty="true"/>
       </StatusEffect>
       <StatusEffect type="OnWearing" target="Character" OxygenAvailable="0.0" UseHullOxygen="true" />
-      <ItemContainer capacity="1" maxstacksize="1">
+      <ItemContainer capacity="1" maxstacksize="1" slotsperrow="1">
         <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="64,448,64,64" origin="0.5,0.5" />
         <Containable items="oxygensource">
           <StatusEffect type="OnWearing" target="Contained" Condition="-0.2" comparison="And">
@@ -412,9 +414,7 @@
         <SubContainer capacity="3" maxstacksize="2">
           <Containable items="smallitem,mediumitem" excludeditems="mobilecontainer,weapon" />
         </SubContainer>
-        <SubContainer capacity="1" maxstacksize="1">
-          <Containable items="smallitem,mediumitem,weapon" />
-        </SubContainer>
+        <SubContainer capacity="1" maxstacksize="1" hide="true"/>
       </ItemContainer>
     </Wearable>
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="55,-50" aimpos="55,-50" handle1="0,0" handle2="15,0" holdangle="0" aimangle="0" pickkey="Use" msg="ItemMsgPickUpUse" />
@@ -2204,6 +2204,42 @@
     <RepairTool characterusable="false" usablein="Both" barrelpos="0,0" barrelrotation="90" range="500" extinguishamount="800" spread="90" ignorecharacters="true" repairmultiple="true" repairthroughholes="true" />
     <RepairTool characterusable="false" usablein="Both" barrelpos="0,0" barrelrotation="180" range="500" extinguishamount="800" spread="90" ignorecharacters="true" repairmultiple="true" repairthroughholes="true" />
     <RepairTool characterusable="false" usablein="Both" barrelpos="0,0" barrelrotation="360" range="500" extinguishamount="800" spread="90" ignorecharacters="true" repairmultiple="true" repairthroughholes="true" />
+  </Item>
+
+  <Item identifier="cbrn_trashcan" tags="trashcan" texturescale="1.0,1.0" scale="0.5" category="Decorative" AllowStealingContainedItems="true">
+    <Price baseprice="80">
+      <Price storeidentifier="merchantoutpost" minavailable="2" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="2" />
+      <Price storeidentifier="merchantresearch" minavailable="2" />
+      <Price storeidentifier="merchantmilitary" minavailable="2" />
+      <Price storeidentifier="merchantmine" minavailable="2" />
+    </Price>
+    <Deconstruct time="5">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="5">
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <sprite texture="Content/Map/Outposts/Art/Storage.png" sourcerect="1662,914,125,205" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+    <Body height="122" width="201" density="30"/>
+    <Holdable selectkey="Select" pickkey="Use" slots="RightHand+LeftHand" msg="itemmsgforceopencrowbar" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem tag="crowbaritem" type="Equipped" />
+      <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.8" setvalue="true" />
+      <StatusEffect type="Always" target="This" disabledeltatime="true" stackable="false" setvalue="true" condition="100" allowwhenbroken="true">
+        <Conditional attached="false" />
+      </StatusEffect>
+    </Holdable>
+    <ItemContainer capacity="20" slotsperrow="5" canbeselected="true" hideitems="true" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.5,0.5" anchor="Center" style="ItemUI" />
+    </ItemContainer>
+    <CustomInterface canbeselected="true" drawhudwhenequipped="true">
+      <GuiFrame relativesize="0.15,0.1" anchor="CenterLeft" absoluteoffset="20,20" style="ItemUI" />
+      <Button text="cat.dump">
+        <StatusEffect type="OnUse" targettype="Contained" disabledeltatime="true">
+          <Remove />
+        </StatusEffect>
+      </Button>
+    </CustomInterface>
   </Item>
   <!--SURPRISE-->
   <Item identifier="powdercapsule_anthrax" category="Misc" cargocontaineridentifier="metalcrate" allowasextracargo="true" Tags="smallitem,chem,chemweapon" maxstacksize="8" maxstacksizecharacterinventory="1" scale="0.08" hideinmenus="true" impactsoundtag="impact_soft">

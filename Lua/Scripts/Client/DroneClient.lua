@@ -3,6 +3,12 @@ charLastControlled = nil
 charCurrentControlling = nil
 controlling = false
 
+Hook.Add("roundEnd", "Drones.resetonend", function() --reset every controller on round end
+    charCurrentControlling = nil
+    charLastControlled = nil
+    controlling = false
+end)
+
 Hook.Add("netMessageReceived", "Drones.receiveID", function()
     Networking.Receive("user", function(message)
         local id = message.ReadString()

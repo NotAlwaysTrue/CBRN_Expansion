@@ -655,7 +655,7 @@
   <t2mc.drainpump2>排水泵2</t2mc.drainpump2>
   <t2mc.weapons1>火控系统</t2mc.weapons1>
   <t2mc.medical>维生/医疗</t2mc.medical>
-  <t2mc.light1>照明1</t2mc.light1>
+  <t2mc.light1>照明</t2mc.light1>
   <t2mc.light2>照明2</t2mc.light2>
   <t2mc.light3>照明3</t2mc.light3>
   <t2mc.light4>照明4</t2mc.light4>
@@ -670,4 +670,9 @@
   <t2mc.lowerbat>主下总线\n电池</t2mc.lowerbat>
   <t2mc.dock>对接舱</t2mc.dock>
   <t2mc.seal>舱室封闭</t2mc.seal>
+  
+
+  <entityname.cbrn_trashcan>垃圾桶</entityname.cbrn_trashcan>
+  <entitydescription.cbrn_trashcan>一个用来装垃圾并且把他们倒掉的垃圾桶</entitydescription.cbrn_trashcan>
+  <cat.dump>倾倒</cat.dump>
 </infotexts>

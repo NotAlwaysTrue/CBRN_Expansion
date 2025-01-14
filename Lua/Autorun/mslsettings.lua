@@ -10,7 +10,9 @@ mslsettings = {
         INIT_LAUNCH_SPEED = 8,           -- Initial launch speed
         DISABLE_RESISTANCE = false,      -- Will the missile take water resistance, Change this may lead to significant differences
         IS_AUTO_GUIDED = false,          -- Is the missile auto guided
+        GUIDENCE_DELAY = 0.5,            -- Determine when will the missile start to guide to target
         LOCK_RANGE = 0,                  -- Only matters when missile is auto guided.
+        CAN_LOST_LOS = true,             -- Decide if the missile will lost LOS when doing large maneuver
     },
 
     std_8_utam = {
@@ -23,7 +25,9 @@ mslsettings = {
         INIT_LAUNCH_SPEED = 15,
         DISABLE_RESISTANCE = false,
         IS_AUTO_GUIDED = false,
+        GUIDENCE_DELAY = 0.1,
         LOCK_RANGE = 0,
+        CAN_LOST_LOS = false,
     },
 
     std_8_mrd_utam = {
@@ -36,20 +40,24 @@ mslsettings = {
         INIT_LAUNCH_SPEED = 15,
         DISABLE_RESISTANCE = false,
         IS_AUTO_GUIDED = false,
+        GUIDENCE_DELAY = 0.1,
         LOCK_RANGE = 0,
+        CAN_LOST_LOS = false,
     },
-
+--
     jump_pod_auto_ir = {
-        MAX_STEERING_FORCE = 0.016,
-        MAX_CORRECTION_FORCE = 0.85,
-        MAX_PROPULSION_FORCE = 0.25,
-        AVR_G_FORCE_MULTIPLIER = 2.0,
-        TOLERANCE = 0.02,
-        STEERAGE_MULTIPLIER = 0.90,
-        INIT_LAUNCH_SPEED = 15,
+        MAX_STEERING_FORCE = 0.05,
+        MAX_CORRECTION_FORCE = 0.8,
+        MAX_PROPULSION_FORCE = 0.6,
+        AVR_G_FORCE_MULTIPLIER = 0.9,
+        TOLERANCE = 0.01,
+        STEERAGE_MULTIPLIER = 0.70,
+        INIT_LAUNCH_SPEED = 20,
         DISABLE_RESISTANCE = false,
         IS_AUTO_GUIDED = true,
-        LOCK_RANGE = 500,
-    }
+        GUIDENCE_DELAY = 0.2,
+        LOCK_RANGE = 1000,
+        CAN_LOST_LOS = false,
+    },
 
 }

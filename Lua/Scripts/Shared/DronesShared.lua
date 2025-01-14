@@ -6,7 +6,7 @@ Controllers = { }
 Hook.Add("Drone.control", "Drone.control", function(effect, deltaTime, item, targets, worldPosition)
     if targets == nil then return end
     local targetCharacter = targets[1]
-    if targetCharacter == nil or targetCharacter.IsPlayer then return end
+    if targetCharacter == nil or targetCharacter.IsPlayer or targetCharacter.IsHuman then return end
     if effect.type == ActionType.OnUse then
         if SERVER then
             local usingCharacter = effect.user

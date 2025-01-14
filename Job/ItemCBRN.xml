@@ -189,7 +189,7 @@
     <Sprite texture="%ModDir:3278494407%/Misc/Material/containerplain.png" depth="0.56" sourcerect="0,0,316,73" origin="0.5,0.5" />
     <Body width="320" height="78" density="20" />
     <Deconstruct time="120" requireddeconstructor="fuelextractor">
-      <Item identifier="tsm_triton_bag" mincondition="0.0" maxcondition="0.01" Outcondition="0.25" />
+      <Item identifier="tsm_triton_bag" mincondition="0.0" maxcondition="0.01" Outcondition="0.5" />
       <Item identifier="canister" amount="1" />
     </Deconstruct>
     <Deconstruct time="10" requireddeconstructor="deconstructor">
@@ -202,7 +202,7 @@
       <sprite texture="%ModDir:3278494407%/Misc/Material/containerplain.png" canbehiddenbyotherwearables="false" sourcerect="0,0,316,100" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.25" origin="0.5,1.0" />
     </Wearable>
     <Throwable characterusable="false" slots="RightHand+LeftHand" aimable="false" throwforce="2.0" aimpos="-10,-40" holdpos="-10,-40" holdangle="90" handle1="0,0" handle2="0,0" msg="ItemMsgPickUpSelect">
-      <StatusEffect type="OnContained" target="This" Condition="-2.0" Interval="2.0" ConditionalComparison="And" >
+      <StatusEffect type="OnContained" target="This" Condition="-5.0" Interval="2.0" ConditionalComparison="And" >
         <Conditional targetcontainer="true" hastag="eq reactor" />
         <Conditional targetcontainer="true" targetitemcomponent="Reactor" temperature="gt 0" />
       </StatusEffect>

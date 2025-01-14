@@ -623,7 +623,7 @@
   <t2mc.drainpump2>Aux Pump 2</t2mc.drainpump2>
   <t2mc.weapons1>Weapons</t2mc.weapons1>
   <t2mc.medical>Medical</t2mc.medical>
-  <t2mc.light1>Light 1</t2mc.light1>
+  <t2mc.light1>Light</t2mc.light1>
   <t2mc.light2>Light 2</t2mc.light2>
   <t2mc.light3>Light 3</t2mc.light3>
   <t2mc.light4>Light 4</t2mc.light4>
@@ -638,4 +638,8 @@
   <t2mc.lowerbat>MBL\nBattery</t2mc.lowerbat>
   <t2mc.dock>Docking</t2mc.dock>
   <t2mc.seal>Seal</t2mc.seal>
+
+  <entityname.cbrn_trashcan>Trush can</entityname.cbrn_trashcan>
+  <entitydescription.cbrn_trashcan>Simply a trush can</entitydescription.cbrn_trashcan>
+  <cat.dump>DUMP</cat.dump>
 </infotexts>

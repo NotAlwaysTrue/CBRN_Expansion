@@ -17,11 +17,12 @@ function Missile:getMissile(item, Launcher, Target, isTurretLaunched)
 	data.isTurretLaunched = isTurretLaunched
 	data.isAuto = mslsettings[item.Prefab.Identifier.Value].IS_AUTO_GUIDED
 	data.isDead = false
+	data.tick = 0
     return data
 end
 
-local function getEndPoint(Vect, distance, rad)
-    return Vector2(Vect.X + distance * math.cos(rad),Vect.Y + distance * math.sin(rad))
+local function getEndPoint(Vect, distance, ang)
+    return Vector2(Vect.X + distance * math.cos(ang),Vect.Y + distance * math.sin(-ang))
 end
 
 local function sign(value)
@@ -61,29 +62,17 @@ end,Hook.HookMethodType.After)--Add projectile to upd table when launched, for h
 
 Hook.Patch("Barotrauma.Items.Components.Turret", "Launch", function(instance,ptable)
 	local projectile = ptable["projectile"]
-	local aimarget = nil
+	local aimtarget = nil
 	local gunrotation = instance.Rotation
+	local sub = instance.item.Submarine
 	if projectile == nil or not projectile.HasTag("saclosmsl") then return end
 	if mslsettings[projectile.Prefab.Identifier.Value].IS_AUTO_GUIDED then
-		local endpoint = getEndPoint(instance.item.WorldPosition, mslsettings[projectile.Prefab.Identifier.Value].LOCK_RANGE, gunrotation)
-		print(instance.item.WorldPosition)
-		print(endpoint)
-		aimarget = Game.World.RayCast(instance.item.WorldPosition, endpoint)
-		if aimarget ~= nil then
-			for i,v in pairs(aimarget) do
-				print(v)
-			end
-		else
-			Timer.wait(function()
-				projectile.Condition = 0
-			end,2000)
-		end
-	end
+	end 
 	if instance.item.HasTag("vls") then
 		instance.RotationLimits = Vector2(0,360)                             --Remove rotationlimit to allow guidence
 		instance.set_Rotation(instance.item.RotationRad - math.pi * 0.5)     --Launch Vertically
 	end
-	local newMissile = Missile:getMissile(projectile, instance, aimarget, true)
+	local newMissile = Missile:getMissile(projectile, instance, aimtarget, true)
 	table.insert(ActiveMissiles, newMissile)
 	
 end,Hook.HookMethodType.Before)-- Use before instad of after to get locked on target
@@ -120,6 +109,10 @@ Hook.Add("think", "CBRN_SACLOS_Guide", function ()
 	
     for missile in ActiveMissiles do
 		if not missile.item.removed and not missile.isDead then
+			if missile.tick < GameTickRate * missile.msldata.GUIDENCE_DELAY then
+				missile.tick = missile.tick + 1
+				return 
+			end
 			missileVelocity = missile.item.body.LinearVelocity
 			missileDirection = getDirection(missileVelocity)
 
@@ -130,7 +123,7 @@ Hook.Add("think", "CBRN_SACLOS_Guide", function ()
 			end
 			if missile.isAuto then
 				if missile.destarget == nil then return end
-				WeaponDirection = getDirection(missile.item.WorldPosition - missile.destarget.Position)
+				WeaponDirection = -1 * getDirection(missile.destarget.WorldPosition - missile.item.WorldPosition)
 			end
 			--math works related to weapon directions
 			WeaponDirection = sign(WeaponDirection) * ( math.pi - math.abs(WeaponDirection))
@@ -144,17 +137,22 @@ Hook.Add("think", "CBRN_SACLOS_Guide", function ()
 			else
 				WeaponPosition = missile.launcher.WorldPosition
 			end
+			if missile.isAuto then
+				if missile.destarget == nil then return end
+				WeaponPosition = missile.destarget.WorldPosition
+			end
 
 			missilePosition = missile.item.WorldPosition
 			WeaponDirectionVector = radToVec(WeaponDirection)
 			closestPointOnLOS = WeaponPosition + Vector2.dot(missilePosition - WeaponPosition, WeaponDirectionVector) * WeaponDirectionVector
 			
-			if missile.isAuto then
-				if missile.destarget == nil then return end
-				closestPointOnLOS = missile.destarget.Position
-			end
 
 			correctionDirection = Vector2.Normalize(closestPointOnLOS - missilePosition)
+
+			--if math.abs(correctionDirection) > 0.6 * math.pi then
+			--	missile.isDead = true
+			--	return
+			--end
 
 			correctionMagnitude = lerp(0, missile.msldata.MAX_CORRECTION_FORCE, clamp((closestPointOnLOS - missilePosition).Length() / (1000 * missile.msldata.AVR_G_FORCE_MULTIPLIER), 0, missile.msldata.STEERAGE_MULTIPLIER))
 			--Larger multiplier means less force, means a softer curve
