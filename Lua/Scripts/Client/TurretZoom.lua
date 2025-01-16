@@ -3,7 +3,7 @@ local globalzoom_inti = false
 
 local zoomSpeed=0.2
 local zoomMin=0.15 -- minimum zoom modifier
-local zoomMax=3 -- maximum zoom modifier
+local zoomMax=1.5 -- maximum zoom modifier
 local zoomStart=1.5 -- default zoom level
 
 
@@ -54,9 +54,9 @@ Hook.HookMethod("Barotrauma.Character","ControlLocalPlayer",function(instance,pt
             globalzoomNew=globalzoomDefault*zoomStart
         end
         ptable.cam.globalZoomScale = globalzoomNew or globalzoomDefault
-        print(ptable.cam.globalZoomScale)
+        Screen.Selected.Cam.OffsetAmount = math.max(1,(ptable.cam.globalZoomScale / zoomStart)) * 800
     else
-        ptable.cam.globalZoomScale = globalzoomDefault --reset to def
+        ptable.cam.globalZoomScale = globalzoomDefaultinit --reset to def
     end
 end,Hook.HookMethodType.After)
 
