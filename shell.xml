@@ -594,62 +594,6 @@
     </LightComponent>
     <AiTarget soundrange="50000" sonarlabel="sig.std8_mrd" sight="500" staticsight="true"/>
   </Item>
-  <Item identifier="railgunjumppod" category="Weapon" tags="railgunequipment,railgunammo,autointeractablerailgunammo" maxstacksize="1" maxstacksizecharacterinventory="1" scale="0.5" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_heavy" hideinmenus="true" AllowDeselectWhenIdling="false">
-    <Deconstruct time="15">
-    </Deconstruct>
-    <InventoryIcon texture="%ModDir%/Weapons/Other/shell.png" sourcerect="1,215,217,48" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/Weapons/Other/shell.png" sourcerect="1,215,217,48" depth="0.55" origin="0.5,0.5" />
-    <ContainedSprite allowedcontainertags="railgunammosource" texture="%ModDir%/Weapons/Other/shell.png" sourcerect="1,280,217,29" depth="0.55" origin="0.5,0.5" />
-    <Body width="215" height="30" density="35" />
-    <Holdable canbecombined="false" slots="LeftHand,RightHand" holdpos="0,-15" handle1="-30,-5" holdangle="170" aimable="false" msg="ItemMsgPickUpSelect">
-      <StatValue stattype="MovementSpeed" value="-0.2" />
-      <StatusEffect type="OnActive" target="This" holdpos="-10,-15" handle1="0,-5" holdangle="70" setvalue="true" interval="1.1">
-        <Conditional InWater="true" />
-      </StatusEffect>
-      <StatusEffect type="OnActive" target="This" holdpos="0,-15" handle1="-30,-5" holdangle="170" setvalue="true" interval="1.1">
-        <Conditional InWater="false" />
-      </StatusEffect>
-    </Holdable>
-    <Projectile characterusable="false" launchimpulse="60" maxtargetstohit="3" damagedoors="true">
-      <Attack structuredamage="300" itemdamage="100" severlimbsprobability="5" penetration="0.6" targetforce="1000">
-        <Affliction identifier="lacerations" strength="40" />
-        <Affliction identifier="stun" strength="1" />
-      </Attack>
-      <StatusEffect type="OnActive" target="This">
-        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
-      </StatusEffect>
-      <StatusEffect type="OnImpact" target="This" Condition="-34.0">
-        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="Random" range="50000" />
-        <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="Random" range="50000" />
-        <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" selectionmode="Random" range="50000" />
-        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="1.0" />
-      </StatusEffect>
-      <!-- break (and throw the character out) when inside a hull, with a very brief delay -->
-      <StatusEffect type="OnActive" target="This" OnlyInside="true" Condition="0" setvalue="true" delay="0.1"/>
-      <!-- Remove the item after exploding -->
-      <StatusEffect type="OnBroken" target="This">
-         <Explosion range="150.0" structuredamage="600" force="10.0" debris="true" decalsize="1.0" />
-        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" distancemin="0" distancemax="100" particleamount="100" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="1.5" />
-        <Remove />
-      </StatusEffect>
-    </Projectile>
-    <Controller forceSelectNextFrame="true" UserPos="0,-20" direction="left" canbeselected="true" AllowSelectingWhenSelectedByBot="true" AllowSelectingWhenSelectedByOther="true" selectkey="Use" drawuserbehind="true" forceusertostayattached="true" msg="itemmsggoinside">
-      <limbposition limb="Head" position="74,-40" />
-      <limbposition limb="Torso" position="74,-40" />
-      <limbposition limb="Waist" position="74,-40" />
-      <limbposition limb="LeftHand" position="74,-40" />
-      <limbposition limb="RightHand" position="74,-40" />
-      <limbposition limb="RightLeg" position="74,-40" />
-      <limbposition limb="LeftLeg" position="74,-40" />
-      <limbposition limb="RightFoot" position="74,-40" />
-      <limbposition limb="LeftFoot" position="74,-40" />
-      <StatusEffect type="OnActive" targettype="Character" delay="0.25" stackable="true" indetectable="true" DisableFocusingOnEntities="true" invisibletimer="0.1" IgnoreMeleeWeapons="true" PressureProtection="6500.0" setvalue="true" />
-      <!-- child of the Controller = active when someone's using it -->
-      <LightComponent range="100" PowerConsumption="0" lightcolor="150,255,150,60" blinkfrequency="1" AllowInGameEditing="false" IsOn="true">
-        <Sprite texture="%ModDir%/Weapons/Other/shell.png" sourcerect="1,322,217,48" depth="0.54" origin="0.5,0.5" alpha="1.0" />
-      </LightComponent>
-    </Controller>
-  </Item>
 
   <!--Submunitions-->
   <Item identifier="nukemirv_s" category="Weapon" scale="0.3" sonarsize="1" hideinmenus="true">

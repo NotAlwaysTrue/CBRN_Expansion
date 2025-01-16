@@ -806,7 +806,7 @@
         <Affliction identifier="triton_9C" amount="5" />
       </StatusEffect>
     </Effect>
-    <icon texture="%ModDir%/png/ui.png" sourcerect="1319,539,133,130" color="255,255,255,255" origin="0,0" />
+    <icon texture="%ModDir:2953749635%/png/ui.png" sourcerect="1319,539,133,130" color="255,255,255,255" origin="0,0" />
   </Affliction>
 
   <!--effect of unconcious will fade during time-->

@@ -287,7 +287,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
 
-  <Item identifier="fkj_aa12_mag_he" subcategory="tsm_separatists" scale="0.33" category="weapon" health="15" maxstacksize="1" cargocontaineridentifier="tsm_metalcrate" tags="fkj_aa12_mag,fkj_hzzd,smallitem,fkj_mag,magazine,handheldammo" impactsoundtag="impact_metal_light">
+  <Item identifier="fkj_aa12_mag_he" subcategory="tsm_separatists" scale="0.33" category="weapon" health="20" maxstacksize="1" cargocontaineridentifier="tsm_metalcrate" tags="fkj_aa12_mag,smallitem,magazine,handheldammo" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="%ModDir:2953749635%/weapons/反抗军/separatists.png" sourcerect="2453,231,36,99" origin="0.5,0.5" />
     <Sprite texture="%ModDir:2953749635%/weapons/反抗军/separatists.png" depth="0.56" sourcerect="2453,231,36,99" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -303,14 +303,14 @@
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="3" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="3" />
       <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="2" />
-      <RequiredItem identifier="uex" amount="3" />
+      <RequiredItem identifier="uex" amount="1" />
     </Fabricate>
     <Fabricate suitablefabricators="tsm_fabricator" displayname="recycleitem" requiredtime="10">
       <RequiredItem tag="fkj_aa12_mag" mincondition="0.0" maxcondition="0.0" />
       <RequiredItem tag="munition_propulsion" description="fabricationdescription.munition_propulsion" amount="2" />
       <RequiredItem tag="munition_jacket" description="fabricationdescription.munition_jacket" amount="2" />
       <RequiredItem tag="advmunition_tip" description="fabricationdescription.advmunition_tip" amount="2" />
-      <RequiredItem identifier="uex" amount="3" />
+      <RequiredItem identifier="uex" amount="1" />
     </Fabricate>
     <Deconstruct time="5">
       <Item identifier="plastic" amount="1" />
@@ -1908,14 +1908,14 @@
     <Body width="40" height="14" density="30" />
     <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
     <Projectile characterusable="false" Hitscan="true" spread="0.2" DamageDoors="true" >
-      <Attack structuredamage="15" targetforce="12" itemdamage="20" penetration="0.3" severlimbsprobability="0.4">
+      <Attack structuredamage="25" targetforce="12" itemdamage="80" penetration="0.3" severlimbsprobability="0.4">
         <Affliction identifier="lacerations" strength="5" />
-        <Affliction identifier="explosiondamage" strength="8" />
+        <Affliction identifier="explosiondamage" strength="20" />
         <Affliction identifier="burn" strength="2" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget" OneShot="true">
         <Explosion range="60.0" structuredamage="40" itemdamage="60" force="4" severlimbsprobability="0.7" debris="false" decal="explosion" decalsize="0.75" penetration="0.6" >
-          <Affliction identifier="explosiondamage" strength="28" />
+          <Affliction identifier="explosiondamage" strength="30" />
           <Affliction identifier="lacerations" strength="16" />
           <Affliction identifier="burn" strength="12" />
           <Affliction identifier="bleeding" strength="4" />
