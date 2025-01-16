@@ -1,8 +1,9 @@
 local zoom_init = false
+local globalzoom_inti = false
 
-local zoomSpeed=0.02
-local zoomMin=0.01 -- minimum zoom modifier
-local zoomMax=2.5 -- maximum zoom modifier
+local zoomSpeed=0.2
+local zoomMin=0.11 -- minimum zoom modifier
+local zoomMax=3 -- maximum zoom modifier
 local zoomStart=1.5 -- default zoom level
 
 
@@ -13,6 +14,7 @@ local globalzoomNew=zoomStart
 local globalzoomMin=zoomMin
 local globalzoomMax=zoomMax
 
+local globalzoomDefaultinit
 local globalzoomDefault
 local globalzoomDefaultMin
 local globalzoomDefaultMax
@@ -22,11 +24,15 @@ LuaUserData.MakeFieldAccessible(Descriptors["Barotrauma.Camera"],"globalZoomScal
 LuaUserData.MakeMethodAccessible(Descriptors["Barotrauma.Camera"],"CreateMatrices")
 
 Hook.HookMethod("Barotrauma.Camera","CreateMatrices",function(instance,ptable)
+    if not globalzoom_inti then
+        globalzoomDefaultinit = instance.globalZoomScale
+        globalzoom_inti = true
+    end
 	globalzoomDefault=instance.globalZoomScale
 	globalzoomDefaultMin=instance.MinZoom
 	globalzoomDefaultMax=instance.MaxZoom
-	globalzoomMin=math.max(zoomMin,globalzoomDefault*zoomMin)
-	globalzoomMax=math.min(zoomMax,globalzoomDefault*zoomMax)
+	globalzoomMin=math.min(zoomMin,globalzoomDefault)
+	globalzoomMax=math.max(zoomMax,globalzoomDefault)
 	globalzoomNew=math.max(math.min(globalzoomMax,globalzoomDefault*zoomStart),globalzoomMin)
 	instance.MinZoom=math.min(globalzoomMin/2,instance.MinZoom)
 	instance.MaxZoom=math.max(globalzoomMax*2,instance.MaxZoom)
@@ -56,4 +62,4 @@ end,Hook.HookMethodType.After)
 
 --Original code by zomgtehderpy
 --From communtiy mod https://steamcommunity.com/sharedfiles/filedetails/?id=2817020588
---May conflict with original mod
+--Will NOT conflict with original mod
