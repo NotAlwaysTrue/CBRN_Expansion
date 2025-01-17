@@ -55,7 +55,7 @@ Hook.HookMethod("Barotrauma.Character","ControlLocalPlayer",function(instance,pt
         Screen.Selected.Cam.OffsetAmount = math.max(1,(ptable.cam.globalZoomScale / zoomStart)) * 800
     else
         if gzsDefault then
-            ptable.cam.globalZoomScale = gzsDefault  --reset to def
+            --this IS INTENTIONAL to remain blank
         else
             ptable.cam.globalZoomScale = gzsDefaultinit
         end
