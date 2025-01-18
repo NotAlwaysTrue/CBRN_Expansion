@@ -1,39 +1,41 @@
 local zoom_init = false
-local gzs_inti = false
+local globalzoom_inti = false
 
 local zoomSpeed=0.2
 local zoomMin=0.15 -- minimum zoom modifier
 local zoomMax=1.5 -- maximum zoom modifier
 local zoomStart=1.5 -- default zoom level
-
+local isSetZoom = false --视野是否需要还原
 
 local resetKey=Keys.Back -- reset zoom key
 
 local zoomStart=math.max(math.min(zoomMax,zoomStart),zoomMin)
-local gzsNew=zoomStart
-local gzsMin=zoomMin
-local gzsMax=zoomMax
+local globalzoomNew=zoomStart
+local globalzoomMin=zoomMin
+local globalzoomMax=zoomMax
 
-local gzsDefaultinit
-local gzsDefaultMin
-local gzsDefaultMax
+local globalzoomDefaultinit
+local globalzoomDefault
+local globalzoomDefaultMin
+local globalzoomDefaultMax
 
 
 LuaUserData.MakeFieldAccessible(Descriptors["Barotrauma.Camera"],"globalZoomScale")
 LuaUserData.MakeMethodAccessible(Descriptors["Barotrauma.Camera"],"CreateMatrices")
 
 Hook.HookMethod("Barotrauma.Camera","CreateMatrices",function(instance,ptable)
-    if not gzs_inti then
-        gzsDefaultinit = instance.globalZoomScale
-        gzs_inti = true
+    if not globalzoom_inti then
+        globalzoomDefaultinit = instance.globalZoomScale
+        globalzoom_inti = true
     end
-	gzsDefaultMin=instance.MinZoom
-	gzsDefaultMax=instance.MaxZoom
-	gzsMin=math.min(zoomMin,gzsDefaultinit)
-	gzsMax=math.max(zoomMax,gzsDefaultinit)
-	gzsNew=math.max(math.min(gzsMax,gzsDefaultinit*zoomStart),gzsMin)
-	instance.MinZoom=math.min(gzsMin/2,instance.MinZoom)
-	instance.MaxZoom=math.max(gzsMax*2,instance.MaxZoom)
+	globalzoomDefault=instance.globalZoomScale
+	globalzoomDefaultMin=instance.MinZoom
+	globalzoomDefaultMax=instance.MaxZoom
+	globalzoomMin=math.min(zoomMin,globalzoomDefault)
+	globalzoomMax=math.max(zoomMax,globalzoomDefault)
+	globalzoomNew=math.max(math.min(globalzoomMax,globalzoomDefault*zoomStart),globalzoomMin)
+	instance.MinZoom=math.min(globalzoomMin/2,instance.MinZoom)
+	instance.MaxZoom=math.max(globalzoomMax*2,instance.MaxZoom)
 end,Hook.HookMethodType.After)
 
 Hook.HookMethod("Barotrauma.Character","ControlLocalPlayer",function(instance,ptable)
@@ -42,22 +44,22 @@ Hook.HookMethod("Barotrauma.Character","ControlLocalPlayer",function(instance,pt
         zoom_init = true
     end
     if instance.SelectedItem and instance.SelectedItem.HasTag("GUIDENCE_SYSTEM") then
+        isSetZoom = true
         if PlayerInput.ScrollWheelSpeed < 0 then
-            gzsNew=math.max(gzsMin,gzsNew*(1-zoomSpeed))
+            globalzoomNew=math.max(globalzoomMin,globalzoomNew*(1-zoomSpeed))
         end
         if PlayerInput.ScrollWheelSpeed > 0 then
-            gzsNew=math.min(gzsMax,gzsNew*(1+zoomSpeed))
+            globalzoomNew=math.min(globalzoomMax,globalzoomNew*(1+zoomSpeed))
         end
         if PlayerInput.KeyDown(resetKey) then
-            gzsNew=gzsDefaultinit*zoomStart
+            globalzoomNew=globalzoomDefault*zoomStart
         end
-        ptable.cam.globalZoomScale = gzsNew or gzsDefaultinit
+        ptable.cam.globalZoomScale = globalzoomNew or globalzoomDefault
         Screen.Selected.Cam.OffsetAmount = math.max(1,(ptable.cam.globalZoomScale / zoomStart)) * 800
     else
-        if gzsDefault then
-            --this IS INTENTIONAL to remain blank
-        else
-            ptable.cam.globalZoomScale = gzsDefaultinit
+        if (isSetZoom) then --判断是否已经还原过了
+        ptable.cam.globalZoomScale = globalzoomDefaultinit --reset to def
+        isSetZoom = false
         end
     end
 end,Hook.HookMethodType.After)
@@ -65,4 +67,4 @@ end,Hook.HookMethodType.After)
 
 --Original code by zomgtehderpy
 --From communtiy mod https://steamcommunity.com/sharedfiles/filedetails/?id=2817020588
---Potentially conflict with original mod
+--Will NOT conflict with original mod
