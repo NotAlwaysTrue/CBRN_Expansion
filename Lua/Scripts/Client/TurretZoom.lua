@@ -25,7 +25,7 @@ end,Hook.HookMethodType.After)
 Hook.HookMethod("Barotrauma.Character","ControlLocalPlayer",function(instance,ptable)
     if instance.SelectedItem and instance.SelectedItem.HasTag("GUIDENCE_SYSTEM") then
         if ptable.cam.globalZoomScale ~= ZoomNew then
-            print("\n WARNING: MOD CONFLICT DETECTED, MISSILE FIRE CONTROL SYSTEM MALFUNCTION!")
+            print("\n WARNING: MOD CONFLICT DETECTED, AFCS SCOPE MALFUNCTION!")
             print("PLEASE CHECK YOUR MODLIST! \n")
         end
     end
