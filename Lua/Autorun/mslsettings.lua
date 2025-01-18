@@ -10,7 +10,7 @@ mslsettings = {
         INIT_LAUNCH_SPEED = 8,           -- Initial launch speed
         DISABLE_RESISTANCE = false,      -- Will the missile take water resistance, Change this may lead to significant differences
         IS_AUTO_GUIDED = false,          -- Is the missile auto guided
-        GUIDENCE_DELAY = 0.5,            -- Determine when will the missile start to guide to target
+        GUIDENCE_DELAY = 0.0,            -- Determine when will the missile start to guide to target
         LOCK_RANGE = 0,                  -- Only matters when missile is auto guided.
         CAN_LOST_LOS = true,             -- Decide if the missile will lost LOS when doing large maneuver
     },
@@ -25,7 +25,7 @@ mslsettings = {
         INIT_LAUNCH_SPEED = 15,
         DISABLE_RESISTANCE = false,
         IS_AUTO_GUIDED = false,
-        GUIDENCE_DELAY = 0.1,
+        GUIDENCE_DELAY = 0.0,
         LOCK_RANGE = 0,
         CAN_LOST_LOS = false,
     },
@@ -40,7 +40,7 @@ mslsettings = {
         INIT_LAUNCH_SPEED = 15,
         DISABLE_RESISTANCE = false,
         IS_AUTO_GUIDED = false,
-        GUIDENCE_DELAY = 0.1,
+        GUIDENCE_DELAY = 0.0,
         LOCK_RANGE = 0,
         CAN_LOST_LOS = false,
     },
@@ -55,7 +55,7 @@ mslsettings = {
         INIT_LAUNCH_SPEED = 20,
         DISABLE_RESISTANCE = false,
         IS_AUTO_GUIDED = true,
-        GUIDENCE_DELAY = 0.2,
+        GUIDENCE_DELAY = 0.0,
         LOCK_RANGE = 1000,
         CAN_LOST_LOS = false,
     },
