@@ -593,7 +593,7 @@
   <entitydescription.berra_STANAG_50beowulf_ap>STANAG Magazine \nContaining 10 12.7×45 AP rounds \nPerfect penetration and (relatively)high stopping power </entitydescription.berra_STANAG_50beowulf_ap>
 
   <entityname.cbrn_SACLOS_msl>LD-AGW SACLOS Missile</entityname.cbrn_SACLOS_msl>
-  <entitydescription.cbrn_SACLOS_msl>Low Drag Advanced Guided Weapon, or LD-AGW is one of the final product of Next-Generation Attack Munition(NGAM). \nFetures a SACLOS guidance system, means it can follow the central axis of the turret to fly to target. \nInstalled a standard Proximity HE-F Warhead. Can insert other warheads \nCan be used as a vehicle for Omega Warhead \nMax Guidance Duration 15s</entitydescription.cbrn_SACLOS_msl>
+  <entitydescription.cbrn_SACLOS_msl>Low Drag Advanced Guided Weapon, or LD-AGW is one of the final product of Next-Generation Attack Munition(NGAM). \nFetures a SACLOS guidance system, means it can follow the central axis of the turret to fly to target. \nInstalled a standard Proximity HE-F Warhead. Can insert other warheads \nCan be used as a vehicle for Omega Warhead \nMax operation time 20s</entitydescription.cbrn_SACLOS_msl>
 
   <entityname.vls_small>Mk.49 Micro VLS(4 unit)</entityname.vls_small>
   <entitydescription.vls_small>An engineering masterpiece after captains report their gun-lunched missile is not enough against multiple targets \nMaximum guide missile amount: 4 \nPre-Heat time: 0.8s \nLaunch interval: 0.5s</entitydescription.vls_small>
@@ -604,10 +604,10 @@
   <entityname.cbrn_headset_sonar>Sonar Headset</entityname.cbrn_headset_sonar>
   <entitydescription.cbrn_headset_sonar>A headset installed with 6th gen hull sonar, Effective range 200m</entitydescription.cbrn_headset_sonar>
   <entityname.std_8_utam>SM-8 Universal Tactical Attack Munition</entityname.std_8_utam>
-  <entitydescription.std_8_utam>SM-8 is one of the final product of Next-Generation Attack Munition(NGAM), significantly increased the quantity of propellant and explosive amount while using the SACLOS system \nInstalled a impact fuse HE Demolition Warhead, can also be used as vehicle for other munitions \nCan be used as a vehicle for Omega Warhead \nMax Guidance Duration 20s</entitydescription.std_8_utam>
+  <entitydescription.std_8_utam>SM-8 is one of the final product of Next-Generation Attack Munition(NGAM), significantly increased the quantity of propellant and explosive amount while using the SACLOS system \nInstalled a impact fuse HE Demolition Warhead, can also be used as vehicle for other munitions \nCan be used as a vehicle for Omega Warhead \nMax operation time 20s</entitydescription.std_8_utam>
 
   <entityname.std_8_mrd_utam>SM-8/Medium Range Defence Universal Tactical Attack Munition</entityname.std_8_mrd_utam>
-  <entitydescription.std_8_mrd_utam>SM-8 is one of the final product of Next-Generation Attack Munition(NGAM), significantly increased the quantity of propellant and explosive amount while using the SACLOS system \nMDR Module has a proximity fuse to enhance kill efficiency \nInstalled a proximity HE-Demolition warhead, can also be used as vehicle for other munitions \nMax Guidance Duration 20s</entitydescription.std_8_mrd_utam>
+  <entitydescription.std_8_mrd_utam>SM-8 is one of the final product of Next-Generation Attack Munition(NGAM), significantly increased the quantity of propellant and explosive amount while using the SACLOS system \nMDR Module has a proximity fuse to enhance kill efficiency \nInstalled a proximity HE-Demolition warhead, can also be used as vehicle for other munitions \nMax operation time 20s</entitydescription.std_8_mrd_utam>
 
   <sig.ldagw>LD-AGW Missile</sig.ldagw>
   <sig.std8>SM-8 Missile</sig.std8>
@@ -642,4 +642,9 @@
   <entityname.cbrn_trashcan>Trush can</entityname.cbrn_trashcan>
   <entitydescription.cbrn_trashcan>Simply a trush can</entitydescription.cbrn_trashcan>
   <cat.dump>DUMP</cat.dump>
+
+  <entityname.railgunjumppod_msl>Boarding Missile</entityname.railgunjumppod_msl>
+  <entityname.ugm_114k_haven_water>UGM-114K HeavenWater Short-Range Missile</entityname.ugm_114k_haven_water>
+  <entitydescription.railgunjumppod_msl>A boarding pod launched by VLS \nFly like an arrow, Land like a Helldiver</entitydescription.railgunjumppod_msl>
+  <entitydescription.ugm_114k_haven_water>UGM-114K HeavenWater SRM is one of the final product of Next-Generation Attack Munition(NGAM), after the launch of the SM-8 series, captains began to complain about the threat of close range targets, UGM-114K HeavenWater was born. \nWith a flexible gudience system it can track and attack close targets easier.Use new APT-270 engine with greater thrust but shorter combustion time \nMax operation time 5s</entitydescription.ugm_114k_haven_water>
 </infotexts>

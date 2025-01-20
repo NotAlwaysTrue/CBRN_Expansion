@@ -675,4 +675,9 @@
   <entityname.cbrn_trashcan>垃圾桶</entityname.cbrn_trashcan>
   <entitydescription.cbrn_trashcan>一个用来装垃圾并且把他们倒掉的垃圾桶</entitydescription.cbrn_trashcan>
   <cat.dump>倾倒</cat.dump>
+
+  <entityname.railgunjumppod_msl>跳帮导弹</entityname.railgunjumppod_msl>
+  <entityname.ugm_114k_haven_water>UGM-114K 天堂水 近程导弹</entityname.ugm_114k_haven_water>
+  <entitydescription.railgunjumppod_msl>一枚可以通过垂直发射系统发射的用于登陆敌方舰船的导弹\n像箭矢一样飞行, 像地狱潜水员一样着陆</entitydescription.railgunjumppod_msl>
+  <entitydescription.ugm_114k_haven_water>天堂水是下一代攻击弹药(NGAM)计划的产物之一, 在标准-8系列推出后, 舰长们开始抱怨近程目标的威胁, UGM-114K 天堂水便应运而生 \n转向系统更加灵活, 使得打击近距离的目标更加得心应手, 使用了推力更大但燃烧时间短的APT-270发动机 \n制导时长5s</entitydescription.ugm_114k_haven_water>
 </infotexts>

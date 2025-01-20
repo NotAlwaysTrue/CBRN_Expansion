@@ -171,7 +171,7 @@ Hook.Add("think", "CBRN_SACLOS_Guide", function ()
 			bodyDirectionVector = radToVec(bodyDirection)
 			turnDirection = sign(bodyDirectionVector.X * missileVelocity.Y - bodyDirectionVector.Y * missileVelocity.X) -- cross product
 			missile.item.body.ApplyTorque(turnMagnitude * turnDirection)
-			missile.item.body.SmoothRotate(missileDirection, 100, true)
+			missile.item.body.SmoothRotate(missileDirection, 100, false)
 
 			end
 		end

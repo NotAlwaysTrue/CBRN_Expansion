@@ -1929,11 +1929,16 @@
     <Body width="700" height="150" density="45" />
     <MeleeWeapon slots="RightHand+LeftHand,Any" controlpose="true" holdpos="16,-50" aimpos="50,0" handle1="-20,-3" handle2="15,3" holdangle="35" reload="1" range="100" combatPriority="50" msg="ItemMsgPickUpSelect">
       <Attack targetimpulse="4" severlimbsprobability="0.3" ballastfloradamage="80" structuredamage="0" itemdamage="3000" penetration="0.8">
-        <Affliction identifier="blunttrauma" strength="40" />
-        <Affliction identifier="internaldamage" strength="40" />
-        <Affliction identifier="stun" strength="1.5" />
+        <Affliction identifier="blunttrauma" strength="70" />
+        <Affliction identifier="internaldamage" strength="30" />
+        <Affliction identifier="stun" strength="3" />
         <Sound file="Content/Items/Weapons/Smack1.ogg" selectionmode="random" range="500"/>
         <Sound file="Content/Items/Weapons/Smack2.ogg" range="500" />
+        <StatusEffect type="OnUse" target="UseTarget">
+          <Explosion range="30.0" penetration="1" showEffects="false">
+            <Affliction identifier="blunttrauma" strength="50" />
+          </Explosion>
+        </StatusEffect>
       </Attack>
       <StatusEffect type="OnUse" target="This">
         <Conditional holdangle="eq 50" />
@@ -3394,6 +3399,7 @@
         </Explosion>
         <Remove />
       </StatusEffect>
+      <StatusEffect type="OnUse" target="This" condition="-100"/>
       <StatusEffect type="OnBroken" target="NearbyCharacters" range="6000" OneShot="true">
         <DropContainedItems /><!--Drop character contained item to avoid lossing items-->
         <RemoveCharacter /><!--Remove all affacted characters to avoid issues-->
