@@ -1934,15 +1934,15 @@
         <Affliction identifier="stun" strength="3" />
         <Sound file="Content/Items/Weapons/Smack1.ogg" selectionmode="random" range="500"/>
         <Sound file="Content/Items/Weapons/Smack2.ogg" range="500" />
-        <StatusEffect type="OnUse" target="UseTarget">
-          <Explosion range="30.0" penetration="1" showEffects="false">
-            <Affliction identifier="blunttrauma" strength="50" />
-          </Explosion>
-        </StatusEffect>
-        <StatusEffect type="OnUse" target="Contained">
-          <Use />
-        </StatusEffect>
       </Attack>
+      <StatusEffect type="OnUse" target="Contained">
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="UseTarget">
+        <Explosion range="30.0" penetration="1" showEffects="false">
+          <Affliction identifier="blunttrauma" strength="50" />
+        </Explosion>
+      </StatusEffect>
       <StatusEffect type="OnUse" target="This">
         <Conditional holdangle="eq 50" />
         <Explosion range="180.0" structuredamage="2000" penetration="1" showEffects="false"/>
