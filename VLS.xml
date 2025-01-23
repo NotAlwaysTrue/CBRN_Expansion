@@ -106,7 +106,7 @@
       <output name="contained_conditions" displayname="connection.ammunitionout" />
     </ConnectionPanel>
   </Item>
-  <Item identifier="AFCS_scope" tags="GUIDENCE_SYSTEM,AFCS_scope" category="Machine,Weapon" type="Controller" disableitemusagewhenselected="true" scale="0.5" isshootable="true" requireaimtouse="false" requireaimtosecondaryuse="false">
+  <Item identifier="AFCS_scope" tags="periscope,GUIDENCE_SYSTEM,AFCS_scope" category="Machine,Weapon" type="Controller" disableitemusagewhenselected="true" scale="0.5" isshootable="true" requireaimtouse="false" requireaimtosecondaryuse="false">
     <SwappableItem canbebought="false" origin="67,0" />
     <Sprite texture="Content/Items/Weapons/TurretsAndDepthCharges.png" depth="0.1" sourcerect="2,210,134,203" origin="0.5,0.5" />
     <Controller allowingameediting="false" UserPos="-35.0, -50.0" direction="Right" canbeselected="true" AllowSelectingWhenSelectedByBot="true" AllowSelectingWhenSelectedByOther="false" msg="ItemMsgInteractSelect">

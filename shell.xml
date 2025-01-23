@@ -611,7 +611,7 @@
       <StatusEffect type="OnActive" targettype="Character" delay="0.25" stackable="true" indetectable="true" DisableFocusingOnEntities="true" invisibletimer="0.1" IgnoreMeleeWeapons="true" PressureProtection="6500.0" setvalue="true" />
       <!-- child of the Controller = active when someone's using it -->
       <LightComponent range="100" PowerConsumption="0" lightcolor="150,255,150,60" blinkfrequency="1" AllowInGameEditing="false" IsOn="true">
-        <Sprite texture="%ModDir%/Weapons/Other/shell.png" sourcerect="1,322,217,48" depth="0.54" origin="0.5,0.5" alpha="1.0" />
+        <Sprite texture="%ModDir%/Weapons/Other/shell.png" sourcerect="1,320,217,48" depth="0.54" origin="0.5,0.5" alpha="1.0" />
       </LightComponent>
     </Controller>
   </Item>
@@ -640,7 +640,7 @@
       <RequiredItem identifier="wificomponent" />
       <RequiredItem identifier="uex" />
     </Fabricate>
-    <Projectile characterusable="false" launchimpulse="0" maxtargetstohit="1" damagedoors="true">
+    <Projectile characterusable="false" launchimpulse="10" maxtargetstohit="1" damagedoors="true">
       <Attack structuredamage="100" itemdamage="100" severlimbsprobability="5" penetration="0.6" targetforce="1000">
         <Affliction identifier="explosiondamage" strength="250" />
         <Affliction identifier="bleeding" strength="50" />

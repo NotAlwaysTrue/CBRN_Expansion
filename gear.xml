@@ -1934,12 +1934,15 @@
         <Affliction identifier="stun" strength="3" />
         <Sound file="Content/Items/Weapons/Smack1.ogg" selectionmode="random" range="500"/>
         <Sound file="Content/Items/Weapons/Smack2.ogg" range="500" />
-        <StatusEffect type="OnUse" target="UseTarget">
-          <Explosion range="30.0" penetration="1" showEffects="false">
-            <Affliction identifier="blunttrauma" strength="50" />
-          </Explosion>
-        </StatusEffect>
       </Attack>
+      <StatusEffect type="OnUse" target="Contained">
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="UseTarget">
+        <Explosion range="30.0" penetration="1" showEffects="false">
+          <Affliction identifier="blunttrauma" strength="50" />
+        </Explosion>
+      </StatusEffect>
       <StatusEffect type="OnUse" target="This">
         <Conditional holdangle="eq 50" />
         <Explosion range="180.0" structuredamage="2000" penetration="1" showEffects="false"/>
@@ -1958,6 +1961,10 @@
         <StatusEffect type="OnSecondaryUse" target="This" targetitemcomponent="MeleeWeapon" holdangle="35" setvalue="true" />
       </TickBox>
     </CustomInterface>
+    <ItemContainer hideitems="true" capacity="1" maxstacksize="1" canbeselected="false" containedstateindicatorstyle="explosive" containedspritedepth="0.81">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="64,384,64,64" origin="0.5,0.5" />
+      <Containable items="smallitem,explosive,OmegaWarhead" />
+    </ItemContainer>
     <SkillRequirementHint identifier="weapons" level="60" />
     <aitarget sightrange="5000" soundrange="4500" fadeouttime="6" />
   </Item>
