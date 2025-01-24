@@ -52,6 +52,16 @@ end
 
 local ActiveMissiles = {}
 
+Hook.Add("roundStart", "msl.resetonstart", function() --reset
+    locktarget = {}
+	ActiveMissiles = {}
+end)
+
+Hook.Add("roundEnd", "msl.resetonend", function() --reset
+    locktarget = {}
+	ActiveMissiles = {}
+end)
+
 Hook.Patch("Barotrauma.Items.Components.Projectile", "Launch",function(instance,ptable)
 	local projectile = instance.item
 	if projectile == nil or not projectile.HasTag("saclosmsl") then return end
@@ -73,14 +83,15 @@ Hook.Patch("Barotrauma.Items.Components.Turret", "Launch", function(instance,pta
 		local mslmarker = instance.item.OwnInventory.FindItemByIdentifier("msl_targetmarker",false)
 		instance.Launch(mslmarker,ptable["user"], ptable["launchRotation"],  ptable["tinkeringStrength"] )
 		aimtarget = locktarget[instance.item]
-		if aimtarget == nil then
-			ptable.preventExecution = true
-		end
 		--[[ For future use for lock range limitation
 		if then
 			ptable.preventExecution = true
 		end
 		]]
+		if aimtarget == nil then
+			ptable.preventExecution = true
+			return
+		end
 	end 
 	if instance.item.HasTag("vls") then
 		instance.RotationLimits = Vector2(0,360)                             --Remove rotationlimit to allow guidence
@@ -122,10 +133,12 @@ Hook.Add("think", "CBRN_SACLOS_Guide", function ()
 	
     for missile in ActiveMissiles do
 		if not missile.item.removed and not missile.isDead then
+			--[[
 			if missile.tick < GameTickRate * missile.msldata.GUIDENCE_DELAY then
 				missile.tick = missile.tick + 1
 				return 
 			end
+			]]
 			missileVelocity = missile.item.body.LinearVelocity
 			missileDirection = getDirection(missileVelocity)
 
@@ -193,8 +206,8 @@ end)
 Hook.Add("msl.marktarget", "msl.marktarget", function(effect, deltaTime, item, targets, worldPosition)
     if targets == nil then return end
 	local launcher = item.GetComponentString("Projectile").Launcher
-    local targetCharacter = targets[1]
-	locktarget[launcher] = targetCharacter
+    local target = targets[1]
+	locktarget[launcher] = target
 end)
 
 -- Original Code created by 4SunnyH

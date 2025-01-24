@@ -830,7 +830,7 @@
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="832,960,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="189,299,23,11" depth="0.55" origin="0.5,0.5" />
     <Body width="23" height="10" density="15" />
-    <Projectile characterusable="false" hitscan="true" StaticSpread="true" hitscancount="1" removeonhit="true" spread="0.5">
+    <Projectile characterusable="false" hitscan="true" hitscancount="1" removeonhit="true" spread="0">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="150,150,200,200" scalemultiplier="1,0.5" />
       <StatusEffect type="OnImpact" target="UseTarget">
         <LuaHook name="msl.marktarget" />
