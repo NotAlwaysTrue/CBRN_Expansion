@@ -1785,7 +1785,7 @@
       <Containable items="extinguishgrenade_exec" />
     </ItemContainer>
   </Item>
-  <Item identifier="c4_stickcharge" category="Weapon" tags="smallitem,weapon,remotedetonatable,explosive" isdangerous="true" maxstacksize="8" maxstacksizecharacterinventory="4" scale="0.1" cargocontaineridentifier="explosivecrate">
+  <Item identifier="c4_stickcharge" category="Weapon" tags="smallitem,weapon,remotedetonatable,explosive,highpriority" isdangerous="true" maxstacksize="8" maxstacksizecharacterinventory="4" scale="0.1" cargocontaineridentifier="explosivecrate">
     <InventoryIcon texture="%ModDir:3278494407%/Weapons/Explosives/C4.png" sourcerect="0,0,539,118" />
     <Sprite texture="%ModDir:3278494407%/Weapons/Explosives/C4.png" depth="0.55" sourcerect="0,0,539,118" origin="0.5,0.5" />
     <Body width="100" height="90" density="30" />
@@ -3052,7 +3052,7 @@
 
 
   <!--Now we're talkin-->
-  <Item identifier="nuke_10k" subcategory="Nuclear" category="Weapon" Tags="smallitem,explosive,nuke,WMD" maxstacksize="1" Scale="0.5" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_heavy">
+  <Item identifier="nuke_10k" subcategory="Nuclear" category="Weapon" Tags="smallitem,explosive,nuke,WMD,highpriority" maxstacksize="1" Scale="0.5" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_heavy">
     <Sprite texture="Content/Map/Outposts/Art/FactionItems.png" depth="0.55" sourcerect="448,198,38,76" origin="0.5,0.5" />
     <Body width="30" height="70" density="20" />
     <Deconstruct time="120">
@@ -3137,7 +3137,7 @@
       </Button>
     </CustomInterface>
   </Item>
-  <Item identifier="nuke_100k" subcategory="Nuclear" category="Weapon" Tags="smallitem,explosive,nuke,WMD" maxstacksize="1" Scale="0.5" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_heavy">
+  <Item identifier="nuke_100k" subcategory="Nuclear" category="Weapon" Tags="smallitem,explosive,nuke,WMD,highpriority" maxstacksize="1" Scale="0.5" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_heavy">
     <Sprite texture="Content/Map/Outposts/Art/FactionItems.png" depth="0.55" sourcerect="448,198,38,76" origin="0.5,0.5" />
     <Body width="30" height="70" density="20" />
     <Deconstruct time="120">
@@ -3221,7 +3221,7 @@
       </Button>
     </CustomInterface>
   </Item>
-  <Item identifier="nuke_1000k" subcategory="Nuclear" category="Weapon" Tags="smallitem,explosive,nuke,WMD" maxstacksize="1" Scale="0.5" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_heavy">
+  <Item identifier="nuke_1000k" subcategory="Nuclear" category="Weapon" Tags="smallitem,explosive,nuke,WMD,highpriority" maxstacksize="1" Scale="0.5" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_heavy">
     <Sprite texture="Content/Map/Outposts/Art/FactionItems.png" depth="0.55" sourcerect="448,198,38,76" origin="0.5,0.5" />
     <Body width="30" height="70" density="20" />
     <Deconstruct time="120">
@@ -3305,7 +3305,7 @@
       </Button>
     </CustomInterface>
   </Item>
-  <Item identifier="nuke_5000k" subcategory="Nuclear" category="Weapon" Tags="smallitem,explosive,nuke,WMD" maxstacksize="1" Scale="0.5" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_heavy">
+  <Item identifier="nuke_5000k" subcategory="Nuclear" category="Weapon" Tags="smallitem,explosive,nuke,WMD,highpriority" maxstacksize="1" Scale="0.5" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_heavy">
     <Sprite texture="Content/Map/Outposts/Art/FactionItems.png" depth="0.55" sourcerect="448,198,38,76" origin="0.5,0.5" />
     <Body width="30" height="70" density="20" />
     <Deconstruct time="120">
@@ -3390,7 +3390,7 @@
       </Button>
     </CustomInterface>
   </Item>
-  <Item identifier="omega_warhead" subcategory="WMD" category="Weapon" Tags="mediumitem,HEAVYWMD,OmegaWarhead" health="100" maxstacksize="1" Scale="0.5" cargocontaineridentifier="explosivecrate" hideinmenus="true" impactsoundtag="impact_metal_heavy">
+  <Item identifier="omega_warhead" subcategory="WMD" category="Weapon" Tags="mediumitem,HEAVYWMD,OmegaWarhead,highpriority" health="100" maxstacksize="1" Scale="0.5" cargocontaineridentifier="explosivecrate" hideinmenus="true" impactsoundtag="impact_metal_heavy">
     <Sprite texture="Content/Map/Outposts/Art/FactionItems.png" depth="0.55" sourcerect="448,198,38,76" origin="0.5,0.5" />
     <Body width="30" height="70" density="20" />
     <Fabricate suitablefabricators="fabricator" requiredtime="60" requiresrecipe="true">
@@ -3461,7 +3461,7 @@
       </Button>
     </CustomInterface>
   </Item>
-  <Item identifier="neutron_warhead" subcategory="Nuclear" category="Weapon" Tags="smallitem,explosive,WMD" maxstacksize="1" Scale="0.5" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_heavy">
+  <Item identifier="neutron_warhead" subcategory="Nuclear" category="Weapon" Tags="smallitem,explosive,WMD,highpriority" maxstacksize="1" Scale="0.5" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_heavy">
     <Sprite texture="Content/Map/Outposts/Art/FactionItems.png" depth="0.55" sourcerect="448,198,38,76" origin="0.5,0.5" />
     <Body width="30" height="70" density="20" />
     <Deconstruct time="120">
@@ -3542,7 +3542,7 @@
       </Button>
     </CustomInterface>
   </Item>
-  <Item identifier="emp_warhead" subcategory="WMD" category="Weapon" Tags="smallitem,explosive,WMD" maxstacksize="1" Scale="0.5" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_heavy">
+  <Item identifier="emp_warhead" subcategory="WMD" category="Weapon" Tags="smallitem,explosive,WMD,highpriority" maxstacksize="1" Scale="0.5" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_heavy">
     <Sprite texture="Content/Map/Outposts/Art/FactionItems.png" depth="0.55" sourcerect="448,198,38,76" origin="0.5,0.5" />
     <Body width="30" height="70" density="20" />
     <Deconstruct time="120">
@@ -3620,7 +3620,7 @@
       </Button>
     </CustomInterface>
   </Item>
-  <Item identifier="devilscore" subcategory="Nuclear" category="Weapon" Tags="smallitem,explosive,nuke,WMD,devilscore" health="50" maxstacksize="1" Scale="0.2" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_heavy" hideinmenus="true">
+  <Item identifier="devilscore" subcategory="Nuclear" category="Weapon" Tags="smallitem,explosive,nuke,WMD,devilscore,highpriority" health="50" maxstacksize="1" Scale="0.2" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_heavy" hideinmenus="true">
     <InventoryIcon texture="%ModDir:3278494407%/Weapons/Nuclear/devilscore.png" sourcerect="0,0,183,183" />
     <Sprite texture="%ModDir:3278494407%/Weapons/Nuclear/devilscore.png" depth="0.55" sourcerect="0,0,183,183" origin="0.5,0.5" />
     <Body width="30" height="70" density="20" />

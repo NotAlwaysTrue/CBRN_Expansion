@@ -30,6 +30,21 @@ mslsettings = {
         CAN_LOST_LOS = false,
     },
 
+    std_8_c_utam = {
+        MAX_STEERING_FORCE = 0.016,
+        MAX_CORRECTION_FORCE = 0.85,
+        MAX_PROPULSION_FORCE = 0.28,
+        AVR_G_FORCE_MULTIPLIER = 2.0,
+        TOLERANCE = 0.02,
+        STEERAGE_MULTIPLIER = 0.90,
+        INIT_LAUNCH_SPEED = 15,
+        DISABLE_RESISTANCE = false,
+        IS_AUTO_GUIDED = true,
+        GUIDENCE_DELAY = 0.2,
+        LOCK_RANGE = 0,
+        CAN_LOST_LOS = false,
+    },
+
     std_8_mrd_utam = {
         MAX_STEERING_FORCE = 0.016,
         MAX_CORRECTION_FORCE = 0.85,
@@ -60,6 +75,21 @@ mslsettings = {
         CAN_LOST_LOS = false,
     },
 
+    railgunjumppod_msl_auto = {
+        MAX_STEERING_FORCE = 0.016,
+        MAX_CORRECTION_FORCE = 0.85,
+        MAX_PROPULSION_FORCE = 0.28,
+        AVR_G_FORCE_MULTIPLIER = 2.0,
+        TOLERANCE = 0.02,
+        STEERAGE_MULTIPLIER = 0.90,
+        INIT_LAUNCH_SPEED = 15,
+        DISABLE_RESISTANCE = false,
+        IS_AUTO_GUIDED = true,
+        GUIDENCE_DELAY = 0.0,
+        LOCK_RANGE = 0,
+        CAN_LOST_LOS = false,
+    },
+
     ugm_114k_haven_water = {
         MAX_STEERING_FORCE = 0.015,
         MAX_CORRECTION_FORCE = 0.8,
@@ -70,6 +100,21 @@ mslsettings = {
         INIT_LAUNCH_SPEED = 10,
         DISABLE_RESISTANCE = false,
         IS_AUTO_GUIDED = false,
+        GUIDENCE_DELAY = 0.2,
+        LOCK_RANGE = 0,
+        CAN_LOST_LOS = false,
+    },
+
+    ugm_114l_haven_water = {
+        MAX_STEERING_FORCE = 0.015,
+        MAX_CORRECTION_FORCE = 0.8,
+        MAX_PROPULSION_FORCE = 0.5,
+        AVR_G_FORCE_MULTIPLIER = 3.0,
+        TOLERANCE = 0.01,
+        STEERAGE_MULTIPLIER = 0.80,
+        INIT_LAUNCH_SPEED = 10,
+        DISABLE_RESISTANCE = false,
+        IS_AUTO_GUIDED = true,
         GUIDENCE_DELAY = 0.2,
         LOCK_RANGE = 0,
         CAN_LOST_LOS = false,

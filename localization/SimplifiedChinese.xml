@@ -680,4 +680,17 @@
   <entityname.ugm_114k_haven_water>UGM-114K 天堂水 近程导弹</entityname.ugm_114k_haven_water>
   <entitydescription.railgunjumppod_msl>一枚可以通过垂直发射系统发射的用于登陆敌方舰船的导弹\n像箭矢一样飞行, 像地狱潜水员一样着陆</entitydescription.railgunjumppod_msl>
   <entitydescription.ugm_114k_haven_water>天堂水是下一代攻击弹药(NGAM)计划的产物之一, 在标准-8系列推出后, 舰长们开始抱怨近程目标的威胁, UGM-114K 天堂水便应运而生 \n转向系统更加灵活, 使得打击近距离的目标更加得心应手, 使用了推力更大但燃烧时间短的APT-270发动机 \n制导时长5s</entitydescription.ugm_114k_haven_water>
+
+  <entityname.ugm_114l_haven_water>UGM-114L 天堂水 近程导弹</entityname.ugm_114l_haven_water>
+  <entityname.railgunjumppod_msl_auto>跳帮导弹(射后不理)</entityname.railgunjumppod_msl_auto>
+  <entityname.std_8_c_utam>标准-8C/中程防御 通用战术攻击弹药</entityname.std_8_c_utam>
+  <entityname.msl_targetmarker>目标指示器</entityname.msl_targetmarker>
+  <entitydescription.ugm_114l_haven_water>使用声纳导引头的天堂水导弹 \n有射后不理能力 \n制导时长5s</entitydescription.ugm_114l_haven_water>
+  <entitydescription.railgunjumppod_msl_auto>一枚可以通过垂直发射系统发射的用于登陆敌方舰船的导弹\n像箭矢一样飞行, 像地狱潜水员一样着陆\n不嘻嘻</entitydescription.railgunjumppod_msl_auto>
+  <entitydescription.std_8_c_utam>标准-8C是下一代攻击弹药(NGAM)计划的产物之一, 使用了新一代声纳(魔法)导引头, 有射后不理能力 \n装有近炸高爆爆破弹头, 也可以作为其他弹药的运输载具 \n可作为Omega弹头的发射载具 \n制导时长20s</entitydescription.std_8_c_utam>
+  <entitydescription.msl_targetmarker>布什鸽门, 你从哪来的</entitydescription.msl_targetmarker>
+
+  <sig.hwk>UGM-114K</sig.hwk>
+  <sig.hwl>UGM-114L</sig.hwl>
+  <sig.std8c>标准-8C 导弹</sig.std8c>
 </infotexts>

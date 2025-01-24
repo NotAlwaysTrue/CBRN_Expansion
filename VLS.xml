@@ -29,6 +29,9 @@
       <input name="set_auto_operate" displayname="connection.setautooperate" />
       <input name="toggle_auto_operate" displayname="connection.toggleautooperate" />
     </ConnectionPanel>
+    <ItemContainer hideitems="true" drawinventory="false" capacity="1" slotsperrow="1" canbeselected="false">
+      <Containable items="msl_targetmarker" />
+    </ItemContainer>
     <SkillRequirementHint identifier="weapons" level="50" />
   </Item>
   <Item identifier="vlsloader" tags="vlsloader,turretammosource" category="Machine,Weapon" linkable="true" allowedlinks="vls" scale="0.5" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
