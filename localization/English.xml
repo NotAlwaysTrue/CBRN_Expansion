@@ -606,7 +606,7 @@
   <entityname.std_8_utam>SM-8 Universal Tactical Attack Munition</entityname.std_8_utam>
   <entitydescription.std_8_utam>SM-8 is one of the final product of Next-Generation Attack Munition(NGAM), significantly increased the quantity of propellant and explosive amount while using the SACLOS system \nInstalled a impact fuse HE Demolition Warhead, can also be used as vehicle for other munitions \nCan be used as a vehicle for Omega Warhead \nMax operation time 20s</entitydescription.std_8_utam>
 
-  <entityname.std_8_mrd_utam>SM-8/Medium Range Defence Universal Tactical Attack Munition</entityname.std_8_mrd_utam>
+  <entityname.std_8_mrd_utam>SM-8/MRD Universal Tactical Attack Munition</entityname.std_8_mrd_utam>
   <entitydescription.std_8_mrd_utam>SM-8 is one of the final product of Next-Generation Attack Munition(NGAM), significantly increased the quantity of propellant and explosive amount while using the SACLOS system \nMDR Module has a proximity fuse to enhance kill efficiency \nInstalled a proximity HE-Demolition warhead, can also be used as vehicle for other munitions \nMax operation time 20s</entitydescription.std_8_mrd_utam>
 
   <sig.ldagw>LD-AGW Missile</sig.ldagw>
@@ -647,4 +647,17 @@
   <entityname.ugm_114k_haven_water>UGM-114K HeavenWater Short-Range Missile</entityname.ugm_114k_haven_water>
   <entitydescription.railgunjumppod_msl>A boarding pod launched by VLS \nFly like an arrow, Land like a Helldiver</entitydescription.railgunjumppod_msl>
   <entitydescription.ugm_114k_haven_water>UGM-114K HeavenWater SRM is one of the final product of Next-Generation Attack Munition(NGAM), after the launch of the SM-8 series, captains began to complain about the threat of close range targets, UGM-114K HeavenWater was born. \nWith a flexible gudience system it can track and attack close targets easier.Use new APT-270 engine with greater thrust but shorter combustion time \nMax operation time 5s</entitydescription.ugm_114k_haven_water>
+
+  <entityname.ugm_114l_haven_water>UGM-114L HeavenWater Short-Range Missile</entityname.ugm_114l_haven_water>
+  <entityname.railgunjumppod_msl_auto>Boarding Missile(Fire and Forget)</entityname.railgunjumppod_msl_auto>
+  <entityname.std_8_c_utam>SM-8C/MRD UTAM</entityname.std_8_c_utam>
+  <entityname.msl_targetmarker>Target Marker</entityname.msl_targetmarker>
+  <entitydescription.ugm_114l_haven_water>HeavenWater with sonar Seeker \nFire and Forget \nMax operation time 5s</entitydescription.ugm_114l_haven_water>
+  <entitydescription.railgunjumppod_msl_auto>A boarding pod launched by VLS \nFire and Forget\nFly like an arrow, Land like a Helldiver</entitydescription.railgunjumppod_msl_auto>
+  <entitydescription.std_8_c_utam>SM-8 is one of the final product of Next-Generation Attack Munition(NGAM) \nMDR Module has a proximity fuse to enhance kill efficiency \nFire and Forget \nInstalled a proximity HE-Demolition warhead, can also be used as vehicle for other munitions \nMax operation time 20s</entitydescription.std_8_c_utam>
+  <entitydescription.msl_targetmarker>Dude? Serious?</entitydescription.msl_targetmarker>
+
+  <sig.hwk>UGM-114K</sig.hwk>
+  <sig.hwl>UGM-114L</sig.hwl>
+  <sig.std8c>SM-8C</sig.std8c>
 </infotexts>

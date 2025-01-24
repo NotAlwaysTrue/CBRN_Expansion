@@ -1,7 +1,8 @@
 LuaUserData.MakeFieldAccessible(Descriptors["Barotrauma.Items.Components.Turret"], "targetRotation")
 LuaUserData.MakeMethodAccessible(Descriptors["Barotrauma.Items.Components.Turret"], "set_Rotation")
-LuaUserData.MakeMethodAccessible(Descriptors["Barotrauma.Items.Components.Turret"], "CheckLineOfSight")
+LuaUserData.MakeMethodAccessible(Descriptors["Barotrauma.Items.Components.Turret"], "Launch")
 
+local locktarget = {}
 local Missile = {}
 Missile.__index = Missile
 
@@ -67,6 +68,19 @@ Hook.Patch("Barotrauma.Items.Components.Turret", "Launch", function(instance,pta
 	local sub = instance.item.Submarine
 	if projectile == nil or not projectile.HasTag("saclosmsl") then return end
 	if mslsettings[projectile.Prefab.Identifier.Value].IS_AUTO_GUIDED then
+		local prefab = ItemPrefab.GetItemPrefab("msl_targetmarker")
+		Entity.Spawner.AddItemToSpawnQueue(prefab, instance.item.OwnInventory , nil, nil, nil)
+		local mslmarker = instance.item.OwnInventory.FindItemByIdentifier("msl_targetmarker",false)
+		instance.Launch(mslmarker,ptable["user"], ptable["launchRotation"],  ptable["tinkeringStrength"] )
+		aimtarget = locktarget[instance.item]
+		if aimtarget == nil then
+			ptable.preventExecution = true
+		end
+		--[[ For future use for lock range limitation
+		if then
+			ptable.preventExecution = true
+		end
+		]]
 	end 
 	if instance.item.HasTag("vls") then
 		instance.RotationLimits = Vector2(0,360)                             --Remove rotationlimit to allow guidence
@@ -74,7 +88,6 @@ Hook.Patch("Barotrauma.Items.Components.Turret", "Launch", function(instance,pta
 	end
 	local newMissile = Missile:getMissile(projectile, instance, aimtarget, true)
 	table.insert(ActiveMissiles, newMissile)
-	
 end,Hook.HookMethodType.Before)-- Use before instad of after to get locked on target
 
 Hook.Add("item.removed", "CBRN_SACLOS_RemoveMissile", function(item)
@@ -177,5 +190,11 @@ Hook.Add("think", "CBRN_SACLOS_Guide", function ()
 		end
 end)
 
+Hook.Add("msl.marktarget", "msl.marktarget", function(effect, deltaTime, item, targets, worldPosition)
+    if targets == nil then return end
+	local launcher = item.GetComponentString("Projectile").Launcher
+    local targetCharacter = targets[1]
+	locktarget[launcher] = targetCharacter
+end)
 
 -- Original Code created by 4SunnyH

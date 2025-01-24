@@ -587,7 +587,7 @@
   </Item>
 
 
-  <Item identifier="vxemitter_leak" Scale="1" tags="gas" sonarsize="0" hideinmenus="true" health="3" depth="0.1" isdangerous="true" noninteractable="true">
+  <Item identifier="vxemitter_leak" Scale="1" tags="gas,highpriority" sonarsize="0" hideinmenus="true" health="3" depth="0.1" isdangerous="true" noninteractable="true">
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
     <Body radius="50" bodytype="kinematic" />
     <ItemComponent>
@@ -610,7 +610,7 @@
       </StatusEffect>
     </ItemComponent>
   </Item>
-  <Item identifier="vxemitter_weapon" Scale="1" tags="gas" sonarsize="0" hideinmenus="true" health="3" depth="0.1" isdangerous="true" noninteractable="true">
+  <Item identifier="vxemitter_weapon" Scale="1" tags="gas,highpriority" sonarsize="0" hideinmenus="true" health="3" depth="0.1" isdangerous="true" noninteractable="true">
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
     <Body radius="50" bodytype="kinematic" />
     <ItemComponent>
@@ -633,7 +633,7 @@
       </StatusEffect>
     </ItemComponent>
   </Item>
-  <Item identifier="mustardemitter_leak" Scale="1" tags="gas" sonarsize="0" hideinmenus="true" health="3" depth="0.1" isdangerous="true" noninteractable="true">
+  <Item identifier="mustardemitter_leak" Scale="1" tags="gas,highpriority" sonarsize="0" hideinmenus="true" health="3" depth="0.1" isdangerous="true" noninteractable="true">
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
     <Body radius="50" bodytype="kinematic" />
     <ItemComponent>
@@ -656,7 +656,7 @@
       </StatusEffect>
     </ItemComponent>
   </Item>
-  <Item identifier="mustardemitter_weapon" Scale="1" tags="gas" sonarsize="0" hideinmenus="true" health="3" depth="0.1" isdangerous="true" noninteractable="true">
+  <Item identifier="mustardemitter_weapon" Scale="1" tags="gas,highpriority" sonarsize="0" hideinmenus="true" health="3" depth="0.1" isdangerous="true" noninteractable="true">
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
     <Body radius="50" bodytype="kinematic" />
     <ItemComponent>
@@ -679,7 +679,7 @@
       </StatusEffect>
     </ItemComponent>
   </Item>
-  <Item identifier="bzemitter_leak" Scale="1" tags="gas" sonarsize="0" hideinmenus="true" health="3" depth="0.1" isdangerous="true" noninteractable="true">
+  <Item identifier="bzemitter_leak" Scale="1" tags="gas,highpriority" sonarsize="0" hideinmenus="true" health="3" depth="0.1" isdangerous="true" noninteractable="true">
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
     <Body radius="50" bodytype="kinematic" />
     <ItemComponent>
@@ -700,7 +700,7 @@
       </StatusEffect>
     </ItemComponent>
   </Item>
-  <Item identifier="bzemitter_weapon" Scale="1" tags="gas" sonarsize="0" hideinmenus="true" health="3" depth="0.1" isdangerous="true" noninteractable="true">
+  <Item identifier="bzemitter_weapon" Scale="1" tags="gas,highpriority" sonarsize="0" hideinmenus="true" health="3" depth="0.1" isdangerous="true" noninteractable="true">
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
     <Body radius="50" bodytype="kinematic" />
     <ItemComponent>
@@ -721,7 +721,7 @@
       </StatusEffect>
     </ItemComponent>
   </Item>
-  <Item identifier="csemitter_leak" Scale="1" tags="gas" sonarsize="0" hideinmenus="true" health="3" depth="0.1" isdangerous="true" noninteractable="true">
+  <Item identifier="csemitter_leak" Scale="1" tags="gas,highpriority" sonarsize="0" hideinmenus="true" health="3" depth="0.1" isdangerous="true" noninteractable="true">
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
     <Body radius="50" bodytype="kinematic" />
     <ItemComponent>
@@ -742,7 +742,7 @@
       </StatusEffect>
     </ItemComponent>
   </Item>
-  <Item identifier="csemitter_weapon" Scale="1" tags="gas" sonarsize="0" hideinmenus="true" health="3" depth="0.1" isdangerous="true" noninteractable="true">
+  <Item identifier="csemitter_weapon" Scale="1" tags="gas,highpriority" sonarsize="0" hideinmenus="true" health="3" depth="0.1" isdangerous="true" noninteractable="true">
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
     <Body radius="50" bodytype="kinematic" />
     <ItemComponent>
@@ -763,7 +763,7 @@
       </StatusEffect>
     </ItemComponent>
   </Item>
-  <Item identifier="phosgeneemitter_leak" Scale="1" tags="gas" sonarsize="0" hideinmenus="true" health="3" depth="0.1" isdangerous="true" noninteractable="true">
+  <Item identifier="phosgeneemitter_leak" Scale="1" tags="gas,highpriority" sonarsize="0" hideinmenus="true" health="3" depth="0.1" isdangerous="true" noninteractable="true">
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
     <Body radius="50" bodytype="kinematic" />
     <ItemComponent>
@@ -784,7 +784,7 @@
       </StatusEffect>
     </ItemComponent>
   </Item>
-  <Item identifier="phosgeneemitter_weapon" Scale="1" tags="gas" sonarsize="0" hideinmenus="true" health="3" depth="0.1" isdangerous="true" noninteractable="true">
+  <Item identifier="phosgeneemitter_weapon" Scale="1" tags="gas,highpriority" sonarsize="0" hideinmenus="true" health="3" depth="0.1" isdangerous="true" noninteractable="true">
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
     <Body radius="50" bodytype="kinematic" />
     <ItemComponent>
@@ -805,7 +805,7 @@
       </StatusEffect>
     </ItemComponent>
   </Item>
-  <Item identifier="anthraxemitter_leak" Scale="1" tags="gas" sonarsize="0" hideinmenus="true" health="3" depth="0.1" isdangerous="true" noninteractable="true">
+  <Item identifier="anthraxemitter_leak" Scale="1" tags="gas,highpriority" sonarsize="0" hideinmenus="true" health="3" depth="0.1" isdangerous="true" noninteractable="true">
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
     <Body radius="50" bodytype="kinematic" />
     <ItemComponent>
@@ -822,7 +822,7 @@
       </StatusEffect>
     </ItemComponent>
   </Item>
-  <Item identifier="anthrax_leak" Scale="1" tags="gas" sonarsize="0" hideinmenus="true" health="3" depth="0.1" isdangerous="true" noninteractable="true">
+  <Item identifier="anthrax_leak" Scale="1" tags="gas,highpriority" sonarsize="0" hideinmenus="true" health="3" depth="0.1" isdangerous="true" noninteractable="true">
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
     <Body radius="50" bodytype="kinematic" />
     <ItemComponent>
@@ -839,7 +839,7 @@
       </StatusEffect>
     </ItemComponent>
   </Item>
-  <Item identifier="anthrax_weapon" Scale="1" tags="gas" sonarsize="0" hideinmenus="true" health="3" depth="0.1" isdangerous="true" noninteractable="true">
+  <Item identifier="anthrax_weapon" Scale="1" tags="gas,highpriority" sonarsize="0" hideinmenus="true" health="3" depth="0.1" isdangerous="true" noninteractable="true">
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
     <Body radius="50" bodytype="kinematic" />
     <ItemComponent>
@@ -856,7 +856,7 @@
       </StatusEffect>
     </ItemComponent>
   </Item>
-  <Item identifier="eyi_weapon" Scale="1" tags="gas" sonarsize="0" hideinmenus="true" health="3" depth="0.1" isdangerous="true" noninteractable="true">
+  <Item identifier="eyi_weapon" Scale="1" tags="gas,highpriority" sonarsize="0" hideinmenus="true" health="3" depth="0.1" isdangerous="true" noninteractable="true">
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
     <Body radius="50" bodytype="kinematic" />
     <ItemComponent>
