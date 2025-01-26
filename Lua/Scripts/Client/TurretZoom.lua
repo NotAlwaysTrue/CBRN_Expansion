@@ -5,6 +5,8 @@ local zoomMax=1.5 -- maximum zoom modifier
 local zoomStart=1.5 -- default zoom level
 local modconflict=false
 
+local isChange = false
+
 local gzs_inti = false
 local gzsDefaultinit = 1.5
 
@@ -31,9 +33,13 @@ Hook.HookMethod("Barotrauma.Character","ControlLocalPlayer",function(instance,pt
             ZoomNew=math.min(zoomMax,ZoomNew*(1+zoomSpeed))
         end
         ptable.cam.globalZoomScale = ZoomNew
+        isChange = true
         Screen.Selected.Cam.OffsetAmount = math.max(1,(ptable.cam.globalZoomScale / zoomStart)) * 800
     else if not instance.SelectedItem and gzsDefault and not modconflict then
-            ptable.cam.globalZoomScale = gzsDefaultinit
+            if(isChange) then
+           ptable.cam.globalZoomScale = gzsDefaultinit
+           isChange = false
+           end
         end
     end
     if instance.SelectedItem and instance.SelectedItem.HasTag("GUIDENCE_SYSTEM") and modconflict then
@@ -46,7 +52,10 @@ Hook.HookMethod("Barotrauma.Character","ControlLocalPlayer",function(instance,pt
         Screen.Selected.Cam.MinZoom = ZoomNew
         Screen.Selected.Cam.OffsetAmount = math.max(1,(ptable.cam.globalZoomScale / zoomStart)) * 3000
     else if not instance.SelectedItem and gzsDefault and modconflict then
-        ptable.cam.globalZoomScale = gzsDefaultinit
+           if(isChange) then
+           ptable.cam.globalZoomScale = gzsDefaultinit
+           isChange = false
+           end
         end
     end
 end,Hook.HookMethodType.After)
