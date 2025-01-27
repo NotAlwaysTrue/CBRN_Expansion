@@ -322,7 +322,7 @@
   </Item>
 
   <!--Coalition-->
-  <Item identifier="tsm_556_45_mgmag_rev" subcategory="tsm_modifiedmagazines" scale="0.23" category="weapon" maxstacksize="3" cargocontaineridentifier="tsm_hazardous_container" linkable="true" tags="smallitem,lm_zd,tsm_556_45_mgmag,lm_magazine,magazine,m249ammo,rev_mag" isdangerous="true" impactsoundtag="impact_metal_light" health="200">
+  <Item identifier="tsm_556_45_mgmag_rev" subcategory="tsm_modifiedmagazines" scale="0.23" category="weapon" maxstacksize="3" cargocontaineridentifier="tsm_hazardous_container" linkable="true" tags="smallitem,lm_zd,tsm_556_45_mgmag,lm_magazine,magazine,m249ammo,rev_mag,556_300mag" isdangerous="true" impactsoundtag="impact_metal_light" health="200">
     <InventoryIcon texture="%ModDir:3278494407%/Weapons/Magazine/coalition.png" sourcerect="2158,175,54,135" origin="0.5,0.5" />
     <Sprite texture="%ModDir:3278494407%/Weapons/Magazine/coalition.png" depth="0.54" sourcerect="2158,175,54,135" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -1614,7 +1614,7 @@
       <Attack structuredamage="1" targetforce="1" itemdamage="9" penetration="0.27" severlimbsprobability="0.3">
         <Affliction identifier="gunshotwound" strength="10" />
         <Affliction identifier="gunshotwound" strength="6" probability="0.25" />
-        <Affliction identifier="triton_7L" strength="7" />
+        <Affliction identifier="triton_7L" strength="7" MultiplyByMaxVitality="true"/>
         <Affliction identifier="bleeding" strength="9" />
         <Affliction identifier="bleedingnonstop" strength="4" probability="0.5" />
         <Affliction identifier="bleedingnonstop" strength="2" probability="0.3" />
@@ -1650,7 +1650,7 @@
         <Affliction identifier="gunshotwound" strength="6" probability="0.1" />
         <Affliction identifier="bleeding" strength="8" />
         <Affliction identifier="bleedingnonstop" strength="6" probability="0.5" />
-        <Affliction identifier="triton_7L" strength="9" />
+        <Affliction identifier="triton_7L" strength="9" MultiplyByMaxVitality="true"/>
         <Affliction identifier="stun" strength="0.3" probability="0.25" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
@@ -1681,7 +1681,7 @@
       <Attack structuredamage="2.5" targetforce="8" itemdamage="15" penetration="0.32" severlimbsprobability="0.8">
         <Affliction identifier="gunshotwound" strength="26" />
         <Affliction identifier="gunshotwound" strength="13" probability="0.4" />
-        <Affliction identifier="triton_7L" strength="16" />
+        <Affliction identifier="triton_7L" strength="16" MultiplyByMaxVitality="true"/>
         <Affliction identifier="bleeding" strength="14" />
         <Affliction identifier="bleedingnonstop" strength="9" probability="0.15" />
         <Affliction identifier="stun" strength="0.2" />
@@ -1715,7 +1715,7 @@
       <Attack structuredamage="1" targetforce="1" itemdamage="10" penetration="0.3" severlimbsprobability="0.3">
         <Affliction identifier="gunshotwound" strength="10" />
         <Affliction identifier="gunshotwound" strength="4" probability="0.5" />
-        <Affliction identifier="triton_7L" strength="7" />
+        <Affliction identifier="triton_7L" strength="7" MultiplyByMaxVitality="true"/>
         <Affliction identifier="bleeding" strength="4" probability="0.5" />
         <Affliction identifier="bleedingnonstop" strength="4" probability="0.3" />
         <Affliction identifier="stun" strength="0.1" probability="0.1" />
@@ -1748,7 +1748,7 @@
       <Attack structuredamage="1" targetforce="2" itemdamage="9" penetration="0.42" severlimbsprobability="0.5">
         <Affliction identifier="gunshotwound" strength="11" />
         <Affliction identifier="gunshotwound" strength="6" probability="0.3" />
-        <Affliction identifier="triton_7L" strength="9" />
+        <Affliction identifier="triton_7L" strength="9" MultiplyByMaxVitality="true"/>
         <Affliction identifier="bleeding" strength="10" />
         <Affliction identifier="bleedingnonstop" strength="8" probability="0.3" />
         <Affliction identifier="stun" strength="0.1" probability="0.1" />
@@ -1781,7 +1781,7 @@
       <Attack structuredamage="2" targetforce="5" itemdamage="16" penetration="0.35" severlimbsprobability="0.3">
         <Affliction identifier="gunshotwound" strength="12" />
         <Affliction identifier="gunshotwound" strength="8" probability="0.32" />
-        <Affliction identifier="triton_7L" strength="13" />
+        <Affliction identifier="triton_7L" strength="13" MultiplyByMaxVitality="true"/>
         <Affliction identifier="bleeding" strength="14" />
         <Affliction identifier="bleedingnonstop" strength="8" probability="0.15" />
         <Affliction identifier="stun" strength="0.3" probability="0.15" />
@@ -1814,7 +1814,7 @@
       <Attack structuredamage="10" targetforce="23" itemdamage="50" penetration="0.32" severlimbsprobability="1">
         <Affliction identifier="gunshotwound" strength="50" />
         <Affliction identifier="gunshotwound" strength="15" probability="0.3" />
-        <Affliction identifier="triton_7L" strength="20" />
+        <Affliction identifier="triton_7L" strength="20" MultiplyByMaxVitality="true"/>
         <Affliction identifier="bleeding" strength="15" />
         <Affliction identifier="bleedingnonstop" strength="10" probability="0.5" />
         <Affliction identifier="stun" strength="1" />
@@ -1849,7 +1849,7 @@
         <Affliction identifier="gunshotwound" strength="6" probability="0.5" />
         <Affliction identifier="bleeding" strength="9" />
         <Affliction identifier="bleeding" strength="5" probability="0.5" />
-        <Affliction identifier="triton_7L" strength="6" />
+        <Affliction identifier="triton_7L" strength="6" MultiplyByMaxVitality="true"/>
         <Affliction identifier="stun" strength="0.1" probability="0.1" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
@@ -1880,13 +1880,13 @@
         <Affliction identifier="gunshotwound" strength="9" />
         <Affliction identifier="lacerations" strength="9" />
         <Affliction identifier="burn" strength="9" />
-        <Affliction identifier="triton_7L" strength="12" />
+        <Affliction identifier="triton_7L" strength="12" MultiplyByMaxVitality="true"/>
         <Affliction identifier="bleedingnonstop" strength="10" />
         <Affliction identifier="stun" strength="1" probability="0.5" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
         <Explosion range="50.0" showEffects="false" penetration="1">
-          <Affliction identifier="triton_7L" strength="9" dividebylimbcount="true"/>
+          <Affliction identifier="triton_7L" strength="9" MultiplyByMaxVitality="true"/>
         </Explosion>
         <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
         <ParticleEmitter particle="tsm_bg_explosion" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="5" velocitymin="-10" velocitymax="-100" scalemin="0.1" scalemax="0.2" />
