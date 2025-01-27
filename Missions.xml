@@ -132,6 +132,7 @@
       <Character identifier="undermask_rifleman" from="HAZMAT_Unit_Undermasks" moduleflags="AirLock" multiplayeronly="true" />
       <Character identifier="undermask_rifleman" from="HAZMAT_Unit_Undermasks" moduleflags="AirLock" multiplayeronly="true" />
       <Character identifier="undermask_fireteamleader" from="HAZMAT_Unit_Undermasks" moduleflags="AirLock" />
+      <Character identifier="karlin" from="cbrn_costum_npc" moduleflags="AirLock" />
     </Characters>
     <TriggerEvent state="0" delay="5" eventidentifier="tsm_indestructible_wall" campaignonly="true" />
     <message header="" text="" />

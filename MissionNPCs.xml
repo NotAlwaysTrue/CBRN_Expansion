@@ -313,4 +313,27 @@
       </ItemSet>
     </npc>
   </npcset>
+
+  <npcset identifier="cbrn_costum_npc">
+    <npc identifier="karlin" job="cbrn_guy_ai" behavior="Patrol" healthmultiplier="2.0" aimspeed="2" aimaccuracy="2" reportrange="3000" skillmultiplier="5">
+      <ItemSet commonness="10">
+        <Item identifier="idcard" equip="true" showpreview="false" />
+        <Item identifier="berra_cbrn3" equip="true" />
+        <Item identifier="berra_bio2" equip="true" />
+        <Item identifier="aibuff_1_autorun" />
+        <Item identifier="tsm_m7">
+          <Item identifier="lm_68_51ap_magazine" />
+        </Item>
+        <Item identifier="lm_68_51ap_magazine" amount="4" />
+        <Item identifier="breachhammer" />
+        <Item identifier="vx_chemdist_40" amount="3" />
+        <Item identifier="mustard_chemdist_40" amount="3" />
+        <Item identifier="tsm_m32_launcher" equip="true">
+          <Item identifier="cs_chemdist_40" amount="2" />
+          <Item identifier="bz_chemdist_40" amount="2" />
+          <Item identifier="vx_chemdist_40" amount="2" />
+        </Item>
+      </ItemSet>
+    </npc>
+  </npcset>
 </npcsets>

@@ -83,6 +83,7 @@ Hook.Patch("Barotrauma.Items.Components.Turret", "Launch", function(instance,pta
 		local mslmarker = instance.item.OwnInventory.FindItemByIdentifier("msl_targetmarker",false)
 		instance.Launch(mslmarker,ptable["user"], ptable["launchRotation"],  ptable["tinkeringStrength"] )
 		aimtarget = locktarget[instance.item]
+		locktarget[instance.item] = nil -- immediately clear table value to avoid issue
 		--[[ For future use for lock range limitation
 		if then
 			ptable.preventExecution = true
@@ -98,6 +99,7 @@ Hook.Patch("Barotrauma.Items.Components.Turret", "Launch", function(instance,pta
 		instance.set_Rotation(instance.item.RotationRad - math.pi * 0.5)     --Launch Vertically
 	end
 	local newMissile = Missile:getMissile(projectile, instance, aimtarget, true)
+	aimtarget = nil
 	table.insert(ActiveMissiles, newMissile)
 end,Hook.HookMethodType.Before)-- Use before instad of after to get locked on target
 
