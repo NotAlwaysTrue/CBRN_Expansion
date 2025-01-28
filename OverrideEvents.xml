@@ -263,7 +263,7 @@
           </Option>
           <Option text="cbrn.gift_interact">
             <ConversationAction targettag="triggerer_player" text="cbrn.gift" />
-            <SpawnAction itemidentifier="tsm_jz_newyear" targetinventory="triggerer_player" />
+            <SpawnAction itemidentifier="cbrn_gift_crate" targetinventory="triggerer_player" />
             <ClearTagAction tag="triggerer_player" />
             <GoTo name="beginningofthejourney" />
           </Option>
