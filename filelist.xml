@@ -15,6 +15,7 @@
   <Structure file="%ModDir%/Structure.xml" />
   <Particles file="%ModDir%/Particles.xml" />
   <RandomEvents file="%ModDir%/Events.xml" />
+  <RandomEvents file="%ModDir%/OverrideEvents.xml" />
   <Character file="%ModDir%/Characters/humaneyi_weaponized/humaneyi_weaponized.xml" />
   <Character file="%ModDir%/Characters/sapphire/sapphire.xml" />
   <Character file="%ModDir%/Characters/sapphirepod/sapphirepod.xml" />

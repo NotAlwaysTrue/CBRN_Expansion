@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <npcsets>
   <npcset identifier="HAZMAT_Unit_Undermasks">
-    <npc identifier="undermask_rifleman" job="cbrn_guy_ai" behavior="Patrol" healthmultiplier="1.1" aimspeed="0.8" aimaccuracy="0.8" reportrange="3000" skillmultiplier="5">
+    <npc identifier="undermask_rifleman" job="cbrn_guy_ai" behavior="Patrol" healthmultiplier="1.2"  aimspeed="50" aimaccuracy="0.3" reportrange="1000" skillmultiplier="10">
       <ItemSet commonness="1">
         <Item identifier="idcard" equip="true" showpreview="false" />
         <Item identifier="berra_cbrn3" equip="true" />
@@ -14,7 +14,7 @@
         <Item identifier="breachhammer" />
       </ItemSet>
     </npc>
-    <npc identifier="undermask_fireteamleader" job="cbrn_guy_ai" behavior="Patrol" healthmultiplier="1.1" aimspeed="0.8" aimaccuracy="0.8" reportrange="3000" skillmultiplier="5">
+    <npc identifier="undermask_fireteamleader" job="cbrn_guy_ai" behavior="Patrol" healthmultiplier="1.2"  aimspeed="50" aimaccuracy="0.3" reportrange="1000" skillmultiplier="10">
       <ItemSet commonness="1">
         <Item identifier="idcard" equip="true" showpreview="false" />
         <Item identifier="berra_cbrn3" equip="true" />
@@ -27,7 +27,7 @@
         <Item identifier="breachhammer" />
       </ItemSet>
     </npc>
-    <npc identifier="undermask_sniper" job="cbrn_guy_ai" behavior="Patrol" healthmultiplier="1.1" aimspeed="0.8" aimaccuracy="0.8" reportrange="3000" skillmultiplier="5">
+    <npc identifier="undermask_sniper" job="cbrn_guy_ai" behavior="Patrol" healthmultiplier="1.2"  aimspeed="50" aimaccuracy="0.3" reportrange="1000" skillmultiplier="10">
       <ItemSet commonness="3">
         <Item identifier="idcard" equip="true" showpreview="false" />
         <Item identifier="berra_cbrn3a" equip="true" />
@@ -52,7 +52,7 @@
         <Item identifier="breachhammer" />
       </ItemSet>
     </npc>
-    <npc identifier="undermask_sl" job="cbrn_guy_ai" behavior="Patrol" healthmultiplier="1.1" aimspeed="0.8" aimaccuracy="0.8" reportrange="3000" skillmultiplier="5">
+    <npc identifier="undermask_sl" job="cbrn_guy_ai" behavior="Patrol" healthmultiplier="1.2"  aimspeed="50" aimaccuracy="0.3" reportrange="1000" skillmultiplier="10">
       <ItemSet commonness="1">
         <Item identifier="idcard" equip="true" showpreview="false" />
         <Item identifier="berra_cbrn3a" equip="true" />
@@ -61,12 +61,11 @@
         <Item identifier="berra_m4_beowulf">
           <Item identifier="berra_STANAG_50beowulf_ap_drum" />
         </Item>
-        <Item identifier="berra_STANAG_50beowulf_ap_drum" amount="2" />
-        <Item identifier="berra_STANAG_50beowulf_fr_drum" amount="3" />
+        <Item identifier="berra_STANAG_50beowulf_ap_drum" amount="4" />
         <Item identifier="breachhammer" />
       </ItemSet>
     </npc>
-    <npc identifier="undermask_sl_brokenarrow" job="cbrn_guy_ai" behavior="Patrol" healthmultiplier="1.5" aimspeed="0.8" aimaccuracy="0.8" reportrange="3000" skillmultiplier="5">
+    <npc identifier="undermask_sl_brokenarrow" job="cbrn_guy_ai" behavior="Patrol" healthmultiplier="1.5"  aimspeed="50" aimaccuracy="0.3" reportrange="1000" skillmultiplier="10">
       <ItemSet commonness="13">
         <Item identifier="idcard" equip="true" showpreview="false" />
         <Item identifier="berra_cbrn3a" equip="true" />
@@ -105,7 +104,7 @@
         <Item identifier="breachhammer" />
       </ItemSet>
     </npc>
-    <npc identifier="undermask_ce" job="cbrn_guy_ai" behavior="Patrol" healthmultiplier="1.1" aimspeed="0.8" aimaccuracy="0.8" reportrange="3000" skillmultiplier="5">
+    <npc identifier="undermask_ce" job="cbrn_guy_ai" behavior="Patrol" healthmultiplier="1.2" aimspeed="50" aimaccuracy="0.3" reportrange="1000" skillmultiplier="10">
       <ItemSet commonness="10">
         <Item identifier="idcard" equip="true" showpreview="false" />
         <Item identifier="berra_cbrn3" equip="true" />
@@ -151,7 +150,7 @@
     </npc>
   </npcset>
   <npcset identifier="HAZMAT_Unit_Fiereaters">
-    <npc identifier="fireeater_rifleman" job="cbrn_guy_ai_fireproof" behavior="Patrol" healthmultiplier="1.2" aimspeed="0.6" aimaccuracy="0.8" reportrange="6000" skillmultiplier="5">
+    <npc identifier="fireeater_rifleman" job="cbrn_guy_ai_fireproof" behavior="Patrol" healthmultiplier="1.2" aimspeed="20" aimaccuracy="0.6" reportrange="1000" skillmultiplier="10">
       <ItemSet commonness="1">
         <Item identifier="berra_etps7b" equip="true" />
         <Item identifier="idcard" equip="true" />
@@ -160,10 +159,10 @@
           <Item identifier="lm_68_51ap_magazine" />
         </Item>
         <Item identifier="lm_68_51ap_magazine" amount="4" />
-        <Item identifier="breachhammer" />
+        <Item identifier="divingknife" />
       </ItemSet>
     </npc>
-    <npc identifier="fireeater_fireteamleader" job="cbrn_guy_ai_fireproof" behavior="Patrol" healthmultiplier="1.2" aimspeed="0.6" aimaccuracy="0.8" reportrange="6000" skillmultiplier="5">
+    <npc identifier="fireeater_fireteamleader" job="cbrn_guy_ai_fireproof" behavior="Patrol" healthmultiplier="1.2" aimspeed="20" aimaccuracy="0.6" reportrange="1000" skillmultiplier="10">
       <ItemSet commonness="1">
         <Item identifier="berra_etps7b" equip="true" />
         <Item identifier="idcard" equip="true" />
@@ -172,14 +171,13 @@
           <Item identifier="berra_STANAG_458socom" />
         </Item>
         <Item identifier="berra_STANAG_458socom" amount="4" />
-        <Item identifier="breachhammer" />
+        <Item identifier="divingknife" />
       </ItemSet>
     </npc>
-    <npc identifier="fireeater_sniper" job="cbrn_guy_ai_fireproof" behavior="Patrol" healthmultiplier="1.2" aimspeed="0.6" aimaccuracy="0.8" reportrange="6000" skillmultiplier="5">
+    <npc identifier="fireeater_sniper" job="cbrn_guy_ai_fireproof" behavior="Patrol" healthmultiplier="1.2" aimspeed="20" aimaccuracy="0.6" reportrange="1000" skillmultiplier="10">
       <ItemSet commonness="3">
         <Item identifier="idcard" equip="true" showpreview="false" />
-        <Item identifier="berra_cbrn3a" equip="true" />
-        <Item identifier="berra_bio2_ai" equip="true" />
+        <Item identifier="berra_etps7b" equip="true" />
         <Item identifier="aibuff_1_autorun" />
         <Item identifier="berra_m110" >
           <Item identifier="berra_300FAL_M118LR" />
@@ -187,7 +185,7 @@
         <Item identifier="berra_300FAL_M118LR" amount="4"/>
       </ItemSet>
     </npc>
-    <npc identifier="fireeater_ce" job="cbrn_guy_ai_fireproof" behavior="Patrol" healthmultiplier="1.2" aimspeed="0.6" aimaccuracy="0.8" reportrange="6000" skillmultiplier="5">
+    <npc identifier="fireeater_ce" job="cbrn_guy_ai_fireproof" behavior="Patrol" healthmultiplier="1.2" aimspeed="20" aimaccuracy="0.6" reportrange="1000" skillmultiplier="10">
       <ItemSet commonness="1">
         <Item identifier="berra_etps7b" equip="true" />
         <Item identifier="idcard" equip="true" />
@@ -195,9 +193,9 @@
         <Item identifier="tsm_lm_mcx">
           <Item identifier="lm_68_51ap_magazine" />
         </Item>
-        <Item identifier="berra_mk153_inc" equip="true"/>
+        <Item identifier="berra_drl3_inc" equip="true"/>
         <Item identifier="lm_68_51ap_magazine" amount="4" />
-        <Item identifier="breachhammer" />
+        <Item identifier="divingknife" />
       </ItemSet>
       <ItemSet commonness="1">
         <Item identifier="berra_etps7b" equip="true" />
@@ -207,10 +205,10 @@
           <Item identifier="obj227_fueltanks" />
         </Item>
         <Item identifier="obj227_fueltanks" amount="2" />
-        <Item identifier="breachhammer" />
+        <Item identifier="divingknife" />
       </ItemSet>
     </npc>
-    <npc identifier="fireeater_sl" job="cbrn_guy_ai_fireproof" behavior="Patrol" healthmultiplier="1.2" aimspeed="0.6" aimaccuracy="0.8" reportrange="6000" skillmultiplier="5">
+    <npc identifier="fireeater_sl" job="cbrn_guy_ai_fireproof" behavior="Patrol" healthmultiplier="1.2" aimspeed="20" aimaccuracy="0.6" reportrange="1000" skillmultiplier="10">
       <ItemSet commonness="1">
         <Item identifier="berra_etps7b" equip="true" />
         <Item identifier="idcard" equip="true" />
@@ -218,14 +216,13 @@
         <Item identifier="berra_m4_beowulf">
           <Item identifier="berra_STANAG_50beowulf_ap_ext" />
         </Item>
-        <Item identifier="berra_STANAG_50beowulf_fr_drum" amount="3" />
-        <Item identifier="berra_STANAG_50beowulf_ap_drum" amount="1" />
-        <Item identifier="breachhammer" />
+        <Item identifier="berra_STANAG_50beowulf_ap_drum" amount="5" />
+        <Item identifier="divingknife" />
       </ItemSet>
     </npc>
   </npcset>
   <npcset identifier="HAZMAT_Unit_tsmnbcert">
-    <npc identifier="nbcert_rifleman" job="cbrn_guy_ai_fireproof" behavior="Patrol" healthmultiplier="1.4" aimspeed="15" aimaccuracy="13" reportrange="2000" skillmultiplier="5">
+    <npc identifier="nbcert_rifleman" job="cbrn_guy_ai_fireproof" behavior="Patrol" healthmultiplier="1.4" aimspeed="100" aimaccuracy="0" reportrange="0" skillmultiplier="100">
       <ItemSet commonness="1">
         <Item identifier="tsm_cbrnert_ai" equip="true" />
         <Item identifier="idcard" equip="true" />
@@ -237,7 +234,7 @@
         <Item identifier="tsm_58_mag_rev" amount="4" />
       </ItemSet>
     </npc>
-    <npc identifier="nbcert_mg" job="cbrn_guy_ai_fireproof" behavior="Patrol" healthmultiplier="1.4" aimspeed="15" aimaccuracy="13" reportrange="2000" skillmultiplier="5">
+    <npc identifier="nbcert_mg" job="cbrn_guy_ai_fireproof" behavior="Patrol" healthmultiplier="1.4" aimspeed="100" aimaccuracy="0" reportrange="0" skillmultiplier="100">
       <ItemSet commonness="1">
         <Item identifier="tsm_cbrnert_ai" equip="true" />
         <Item identifier="idcard" equip="true" />
@@ -249,7 +246,7 @@
         <Item identifier="tsm_58_201mag_rev" amount="2" />
       </ItemSet>
     </npc>
-    <npc identifier="nbcert_heavy" job="cbrn_guy_ai_fireproof" behavior="Patrol" healthmultiplier="1.4" aimspeed="15" aimaccuracy="13" reportrange="2000" skillmultiplier="5">
+    <npc identifier="nbcert_heavy" job="cbrn_guy_ai_fireproof" behavior="Patrol" healthmultiplier="1.4" aimspeed="100" aimaccuracy="0" reportrange="0" skillmultiplier="100">
       <ItemSet commonness="30">
         <Item identifier="tsm_cbrnert_ai" equip="true" />
         <Item identifier="idcard" equip="true" />

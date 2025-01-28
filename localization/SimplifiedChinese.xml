@@ -263,14 +263,14 @@
   <!--Missions-->
   <missionname.berra_fireeaters_outpostdestory>摧毁"噬火者"小队所在站点</missionname.berra_fireeaters_outpostdestory>
   <missiondescription.berra_fireeaters_outpostdestory>"噬火者"小队在此发现了一处生物泄露事件，销毁所有证据，摧毁整个站点</missiondescription.berra_fireeaters_outpostdestory>
-  <missionsuccess.berra_fireeaters_outpostdestory>任务完成</missionsuccess.berra_fireeaters_outpostdestory>
+  <missionsuccess.berra_fireeaters_outpostdestory>I Don'T Want To Set The World On Fire</missionsuccess.berra_fireeaters_outpostdestory>
   <missionfailure.berra_fireeaters_outpostdestory>所有的尸体都将被焚烧殆尽</missionfailure.berra_fireeaters_outpostdestory>
   <missionheader0.berra_fireeaters_outpostdestory>站点已摧毁</missionheader0.berra_fireeaters_outpostdestory>
   <missionmessage0.berra_fireeaters_outpostdestory>死亡是凉爽的夏夜，可供人无忧的安眠</missionmessage0.berra_fireeaters_outpostdestory>
 
   <missionname.berra_fireeaters_assination>歼灭"噬火者"小队</missionname.berra_fireeaters_assination>
   <missiondescription.berra_fireeaters_assination>"噬火者"小队在此处理了一处生物泄露事件，歼灭整支小队，不能让他们带着样本离开！</missiondescription.berra_fireeaters_assination>
-  <missionsuccess.berra_fireeaters_assination>任务完成</missionsuccess.berra_fireeaters_assination>
+  <missionsuccess.berra_fireeaters_assination>I Don'T Want To Set The World On Fire</missionsuccess.berra_fireeaters_assination>
   <missionfailure.berra_fireeaters_assination>化为尘埃</missionfailure.berra_fireeaters_assination>
   <missionheader0.berra_fireeaters_assination>已歼灭所有噬火者单位</missionheader0.berra_fireeaters_assination>
   <missionmessage0.berra_fireeaters_assination>直到尸体裹满了烈焰，他们停止了挣扎，不再动弹。灰尘顺着氧气口吹出的风爬上爬下，落在所有人的眼里</missionmessage0.berra_fireeaters_assination>
@@ -695,4 +695,11 @@
   <sig.std8c>标准-8C 导弹</sig.std8c>
 
   <charactername.karlin>卡林</charactername.karlin>
+
+  <cbrn.gift_interact>你好</cbrn.gift_interact>
+  <cbrn.gift>Site-71主管有一些礼物要送给你们</cbrn.gift>
+  <entityname.cbrn_gift_crate>来自Site-71的礼物盒</entityname.cbrn_gift_crate>
+  <entitydescription.cbrn_gift_crate>私自拆封此包装将导致即刻处决</entitydescription.cbrn_gift_crate>
+  <entityname.uhm_bruh_headset>嘻嘻耳机</entityname.uhm_bruh_headset>
+  <entitydescription.uhm_bruh_headset>不嘻嘻</entitydescription.uhm_bruh_headset>
 </infotexts>

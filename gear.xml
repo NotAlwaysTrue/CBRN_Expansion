@@ -92,9 +92,8 @@
       <sprite name="bio2 Right Shoe" texture="%ModDir:3278494407%/Jobgear/Under_Masks/Bio-2.png" limb="RightFoot" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="431,140,69,51" origin="0.5,0.45" scale="0.5" />
       <sprite name="bio2 Left Shoe" texture="%ModDir:3278494407%/Jobgear/Under_Masks/Bio-2.png" limb="LeftFoot" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="436,203,69,51" origin="0.5,0.5" scale="0.5" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.4" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.5" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.5" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.25" probabilitymultiplier="0.7"/>
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,bitewounds" damagemultiplier="0.5" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound,internaldamage" damagemultiplier="0.25" probabilitymultiplier="0.7"/>
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.15" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="triton_7L" damagemultiplier="0.8" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="triton_burn" damagemultiplier="0.2" />
@@ -109,12 +108,8 @@
         <Affliction identifier="chemicalliner_armorbreak" amount="10" />
         <Affliction identifier="chemicalliner_secondary" amount="10" />
       </StatusEffect>
-      <ItemContainer capacity="1" maxstacksize="1" autoinject="true">
-        <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="384,448,64,64" origin="0.5,0.5" />
-        <Containable items="chem,syringe" />
-        <SubContainer capacity="2" maxstacksize="3" hide="true">
-          <Containable items="smallitem" excludeditems="mobilecontainer" />
-        </SubContainer>
+      <ItemContainer capacity="2" maxstacksize="3" slotsperrow="1">
+        <Containable items="smallitem" excludeditems="mobilecontainer" />
         <SubContainer capacity="1" maxstacksize="1" hide="true"/>
       </ItemContainer>
     </Wearable>
@@ -2140,6 +2135,44 @@
     </Wearable>
     <AiTarget soundrange="1200" sonarlabel="sig.sos" sight="1200" staticsight="true"/>
   </Item>
+  <Item identifier="uhm_bruh_headset" scale="0.5" category="Equipment,Medical" tags="smallitem,mobileradio" allowasextracargo="true" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="medcab"/>
+    <Price baseprice="200" sold="false">
+      <Price storeidentifier="merchantoutpost" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" />
+      <Price storeidentifier="merchantresearch" />
+      <Price storeidentifier="merchantmilitary" />
+      <Price storeidentifier="merchantmine" />
+    </Price>
+    <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="113,264,58,45" origin="0.5,0.5" />
+    <Sprite name="Headset" texture="Content/Items/JobGear/TalentGear.png" depth="0.6" sourcerect="255,305,72,60" origin="0.35,0.5" />
+    <Body radius="20" height="20" density="15" />
+    <Deconstruct time="10">
+      <Item identifier="plastic" amount="2" />
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10" requiresrecipe="false">
+      <RequiredSkill identifier="mechanical" level="30" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="plastic" amount="2" />
+    </Fabricate>
+    <WifiComponent range="35000.0" LinkToChat="true" MinChatMessageInterval="0.0" />
+    <ItemContainer capacity="1" maxstacksize="1" autoinject="true">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="384,448,64,64" origin="0.5,0.5" />
+    </ItemContainer>
+    <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
+      <sprite name="Headset Wearable" texture="Content/Items/JobGear/TalentGear.png" sourcerect="255,305,72,58" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hideotherwearables="false" origin="0.5,0.5" >
+        <LightComponent LightColor="255,0,0,130" range="59" powerconsumption="10" blinkfrequency="2" IsOn="false" canbeselected="false" AllowInGameEditing="false"/>
+      </sprite>
+      <StatusEffect type="OnWearing" target="This" disabledeltatime="true" checkconditionalalways="true" IsOn="true" setvalue="true">
+        <Conditional IsUnconscious="eq true" TargetContainer="true" TargetGrandParent="true" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="This" disabledeltatime="true" checkconditionalalways="true" IsOn="false" setvalue="true">
+        <Conditional IsUnconscious="eq false" TargetContainer="true" TargetGrandParent="true" />
+      </StatusEffect>
+    </Wearable>
+    <AiTarget soundrange="1200" sonarlabel="sig.sos" sight="1200" staticsight="true"/>
+  </Item>
   <Item identifier="cbrn_headset_sonar" scale="0.5" category="Equipment" tags="smallitem,mobileradio" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="crewcab" secondary="divingcab"/>
     <Price baseprice="80">
@@ -2202,6 +2235,7 @@
       </Containable>
     </ItemContainer>
   </Item>
+
   <Item identifier="extinguishgrenade_exec" scale="1.0" tags="fireextinguisher" requireaimtouse="false" noninteractable="true" hideinmenus="true">
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,1,1" depth="0.55" origin="0.5,0.5" />
     <Body radius="5" density="10.5" />
@@ -3929,7 +3963,7 @@
   </Item>
 
   <!--Craftable CBRN-->
-  <Item identifier="craftable_cbrn_main" category="Misc" cargocontaineridentifier="metalcrate" allowasextracargo="true" Tags="smallitem,spawner" maxstacksize="8" maxstacksizecharacterinventory="1" scale="0.5" hideinmenus="false" impactsoundtag="impact_soft">
+  <Item identifier="craftable_cbrn_main" category="Misc" cargocontaineridentifier="metalcrate" allowasextracargo="true" Tags="smallitem,spawner" maxstacksize="8" maxstacksizecharacterinventory="4" scale="0.5" hideinmenus="false" impactsoundtag="impact_soft">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="448,132,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="6,363,124,67" depth="0.6" origin="0.5,0.5" />
     <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
@@ -3951,6 +3985,34 @@
         <Remove />
       </StatusEffect>
     </Holdable>
+  </Item>
+
+  <!--Temp Misc-->
+  <Item  identifier="cbrn_gift_crate" subcategory="tsm_bags" category="Equipment" tags="crate,allowcleanup,securecrate" scale="0.5" linkable="true" pickdistance="150" showcontentsintooltip="false" impactsoundtag="impact_metal_heavy" fireproof="true" waterproof="true" hideinmenus="true">
+    <Deconstruct time="10">
+      <Item identifier="tsm_triton_bag" />
+      <Item identifier="steel" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Sprite texture="%ModDir:2953749635%/bags/bags.png" depth="0.54" sourcerect="1324,1486,276,105" origin="0.5,0.5" />
+    <Body width="250" height="100" density="50" />
+    <Holdable slots="LeftHand" controlpose="true" holdpos="2,25" handle1="48,28" handle2="48,28" aimable="false" holdangle="-15" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.7" setvalue="true" />
+      <StatusEffect type="OnSpawn" target="This" scale="0.501" delay="0.03" setvalue="true" OneShot="true">
+        <Conditional scale="neq 0.501"/>
+        <SpawnItem identifiers="tsm_triton_bag" spawnposition="ThisInventory" Count="2"/>
+        <SpawnItem identifiers="tsm_hengberley_star" spawnposition="ThisInventory" Count="2"/>
+        <SpawnItem identifiers="tsm_yx_crystallography" spawnposition="ThisInventory" Count="2"/>
+        <SpawnItem identifiers="tsm_fragmentation_grenade" spawnposition="ThisInventory" Count="4"/>
+        <SpawnItem identifiers="nuke_1000k" spawnposition="ThisInventory" Count="2"/>
+        <SpawnItem identifiers="tsm_d6" spawnposition="ThisInventory" Count="2"/>
+        <SpawnItem identifiers="craftable_cbrn_main" spawnposition="ThisInventory" Count="3"/>
+        <SpawnItem identifiers="fsm_throwable" spawnposition="ThisInventory" Count="3"/>
+        <SpawnItem identifiers="breachhammer" spawnposition="ThisInventory" Count="1"/>
+        <!--<SpawnItem identifiers="uhm_bruh_headset" spawnposition="ThisInventory" Count="1"/>-->
+      </StatusEffect>
+    </Holdable>
+    <ItemContainer capacity="12" canbeselected="false" hideitems="true" keepopenwhenequipped="false" movableframe="false" showcontainedstateindicator="false"/>
   </Item>
 
   <!--Abandoned-->

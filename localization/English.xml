@@ -244,14 +244,14 @@
   <!--Missions-->
   <missionname.berra_fireeaters_outpostdestory>Destory "Fire Eater" Stations</missionname.berra_fireeaters_outpostdestory>
   <missiondescription.berra_fireeaters_outpostdestory>"Fire Eater" found a bio leak in this outpost.Destory everything here</missiondescription.berra_fireeaters_outpostdestory>
-  <missionsuccess.berra_fireeaters_outpostdestory>Target Destoryed</missionsuccess.berra_fireeaters_outpostdestory>
+  <missionsuccess.berra_fireeaters_outpostdestory>I Don'T Want To Set The World On Fire</missionsuccess.berra_fireeaters_outpostdestory>
   <missionfailure.berra_fireeaters_outpostdestory>Everything will burnt out</missionfailure.berra_fireeaters_outpostdestory>
   <missionheader0.berra_fireeaters_outpostdestory>Outpost has been wiped out</missionheader0.berra_fireeaters_outpostdestory>
   <missionmessage0.berra_fireeaters_outpostdestory>Death is a cool summer night, providing a good sleep</missionmessage0.berra_fireeaters_outpostdestory>
 
   <missionname.berra_fireeaters_assination>Eliminate "Fire Eaters"</missionname.berra_fireeaters_assination>
   <missiondescription.berra_fireeaters_assination>"Fire Eater" found a bio leak in this outpost.They won't leave with the samples</missiondescription.berra_fireeaters_assination>
-  <missionsuccess.berra_fireeaters_assination>Mission Accomplished</missionsuccess.berra_fireeaters_assination>
+  <missionsuccess.berra_fireeaters_assination>I Don'T Want To Set The World On Fire</missionsuccess.berra_fireeaters_assination>
   <missionfailure.berra_fireeaters_assination>Dust to dust</missionfailure.berra_fireeaters_assination>
   <missionheader0.berra_fireeaters_assination>All targets eliminated.</missionheader0.berra_fireeaters_assination>
   <missionmessage0.berra_fireeaters_assination>Until all bodies were burnt in flames, dust crawls up and down with the wind, landing in everyone's eyes</missionmessage0.berra_fireeaters_assination>
@@ -663,4 +663,11 @@
 
 
   <charactername.karlin>Karlin</charactername.karlin>
+
+  <cbrn.gift_interact>Hello</cbrn.gift_interact>
+  <cbrn.newyeargift>The Boss of Site-71 got something for you</cbrn.newyeargift>
+  <entityname.cbrn_gift_crate>Site-71 Gift Box</entityname.cbrn_gift_crate>
+  <entitydescription.cbrn_gift_crate>Unauthorized opening of this package will result in immediate execution</entitydescription.cbrn_gift_crate>
+  <entityname.uhm_bruh_headset>BRUH Headset</entityname.uhm_bruh_headset>
+  <entitydescription.uhm_bruh_headset>A plain headset...Maybe</entitydescription.uhm_bruh_headset>
 </infotexts>

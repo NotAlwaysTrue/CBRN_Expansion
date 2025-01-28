@@ -111,11 +111,5 @@
       <SpawnAction speciesname="Sapphire" spawnlocation="MainPath" teamid="None" allowinplayerview="false" />
     </ScriptedEvent>
 
-    <!--temp override event-->
-    <!--
-    <Override>
-
-    </Override>
-    -->
   </EventPrefabs>
 </RandomEvents>
