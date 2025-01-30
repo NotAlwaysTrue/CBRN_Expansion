@@ -2,6 +2,7 @@
 <Override>
   <RandomEvents>
     <EventPrefabs>
+    <!--
       <ScriptedEvent identifier="tsm_wz_ff_event" commonness="100">
         <TagAction criteria="player" tag="player" />
         <SpawnAction npcsetidentifier="tsm_city_npcs" npcidentifier="tsm_wz_ff" targettag="tsm_wz_ff" spawnlocation="Outpost" targetmoduletags="airlock" />
@@ -275,6 +276,7 @@
         </ConversationAction>
         <NPCWaitAction npctag="tsm_wz_ff" wait="false" />
       </ScriptedEvent>
+      -->
     </EventPrefabs>
   </RandomEvents>
 </Override>
