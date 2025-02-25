@@ -76,7 +76,7 @@
     </SwappableItem>    
     <UpgradePreviewSprite scale="2.5" texture="%Moddir%/VLSTurrets.png" sourcerect="0,0,285,48" origin="0.5,0.5"/>
     <StaticBody width="80" radius="80" />
-    <Turret MaxActiveProjectiles="12" firingoffset="0,0" launchimpulse="0.0" canbeselected="false" characterusable="false" linkable="true" ProjectileCount="1" ShotsPerBurst="1" barrelpos="143,0" rotationlimits="0,360" powerconsumption="1000.0" showchargeindicator="false" showprojectileindicator="true" reload="1.0" springstiffnesslowskill="100" springstiffnesshighskill="100" springdampinglowskill="15" springdampinghighskill="15" rotationspeedlowskill="80" rotationspeedhighskill="80" MaxAngleOffset="0" AICurrentTargetPriorityMultiplier="1.1">
+    <Turret MaxActiveProjectiles="12" firingoffset="0,0" launchimpulse="0.0" canbeselected="false" characterusable="false" linkable="true" ProjectileCount="1" ShotsPerBurst="1" barrelpos="143,0" rotationlimits="0,360" powerconsumption="1000.0" showchargeindicator="false" showprojectileindicator="true" reload="0.5" springstiffnesslowskill="100" springstiffnesshighskill="100" springdampinglowskill="15" springdampinghighskill="15" rotationspeedlowskill="80" rotationspeedhighskill="80" MaxAngleOffset="0" AICurrentTargetPriorityMultiplier="1.1">
       <WeaponIndicator texture="Content/UI/WeaponUI.png" sourcerect="744,910,66,38" origin="0.24, 0.472" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256" />
       <RequiredSkill identifier="weapons" level="50" />

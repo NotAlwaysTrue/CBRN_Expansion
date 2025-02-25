@@ -4,6 +4,7 @@ LuaUserData.MakeMethodAccessible(Descriptors["Barotrauma.Items.Components.Turret
 
 local locktarget = {}
 local Missile = {}
+local launchercd = {}
 Missile.__index = Missile
 
 -- helpfunc
@@ -73,6 +74,10 @@ Hook.Patch("Barotrauma.Items.Components.Turret", "Launch", function(instance,pta
 	local aimtarget = nil
 	local gunrotation = instance.Rotation
 	local sub = instance.item.Submarine
+	if launchercd[instance.item] == true then
+		ptable.preventExecution = true
+		return
+	end
 	if projectile == nil or not projectile.HasTag("saclosmsl") then return end
 	if mslsettings[projectile.Prefab.Identifier.Value].IS_AUTO_GUIDED then
 		local prefab = ItemPrefab.GetItemPrefab("msl_targetmarker")
@@ -98,6 +103,8 @@ Hook.Patch("Barotrauma.Items.Components.Turret", "Launch", function(instance,pta
 	local newMissile = Missile:getMissile(projectile, instance, aimtarget, true)
 	aimtarget = nil
 	table.insert(ActiveMissiles, newMissile)
+	launchercd[instance.item] = true
+	Timer.Wait(function() launchercd[instance.item] = nil end, 10)
 end,Hook.HookMethodType.Before)-- Use before instad of after to get locked on target
 
 Hook.Add("item.removed", "CBRN_SACLOS_RemoveMissile", function(item)

@@ -249,7 +249,7 @@
       <StatusEffect type="OnActive" target="This" disabledeltatime="true" condition="-1" delay="1" OneShot="true"/>
       <StatusEffect type="OnActive" target="This" condition="-100" delay="15"/>
       <StatusEffect type="OnActive" target="This">
-        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="1" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" lifetimemultiplier="2"/>
+        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="1" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" lifetimemultiplier="0.5"/>
       </StatusEffect>
       <StatusEffect type="OnImpact" target="This" condition="-100.0" >
         <Conditional Condition="lt 100" />
@@ -314,6 +314,10 @@
       <RequiredItem identifier="c4block" amount="2"/>
     </Fabricate>
     <Projectile characterusable="false" launchimpulse="25" maxtargetstohit="1" damagedoors="true">
+      <StatusEffect type="OnContained" target="This" comparison="and">
+        <Conditional targetcontainer="true" hastag="eq railgunammosource"/>
+        <Dropitem />
+      </StatusEffect>
       <Attack structuredamage="100" itemdamage="100" severlimbsprobability="5" penetration="0.6" targetforce="1000">
         <Affliction identifier="explosiondamage" strength="250" />
         <Affliction identifier="bleeding" strength="50" />
@@ -330,7 +334,7 @@
         <sound file="%ModDir:3278494407%/Misc/Oggs/msl_engine.ogg" range="2000.0" volume="2.0" loop="true"/>
       </StatusEffect>
       <StatusEffect type="OnActive" target="This">
-        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="1" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" lifetimemultiplier="2"/>
+        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="1" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" lifetimemultiplier="0.5"/>
       </StatusEffect>
       <StatusEffect type="OnImpact" target="This" condition="-100.0" >
         <Conditional Condition="lt 100" />
@@ -402,6 +406,10 @@
       <RequiredItem identifier="c4block" amount="2"/>
     </Fabricate>
     <Projectile characterusable="false" launchimpulse="25" maxtargetstohit="1" damagedoors="true">
+      <StatusEffect type="OnContained" target="This" comparison="and">
+        <Conditional targetcontainer="true" hastag="eq railgunammosource"/>
+        <Dropitem />
+      </StatusEffect>
       <Attack structuredamage="100" itemdamage="100" severlimbsprobability="5" penetration="0.6" targetforce="1000">
         <Affliction identifier="explosiondamage" strength="250" />
         <Affliction identifier="bleeding" strength="50" />
@@ -418,7 +426,7 @@
         <sound file="%ModDir:3278494407%/Misc/Oggs/msl_engine.ogg" range="2000.0" volume="2.0" loop="true"/>
       </StatusEffect>
       <StatusEffect type="OnActive" target="This">
-        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="1" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" lifetimemultiplier="2"/>
+        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="1" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" lifetimemultiplier="0.5"/>
       </StatusEffect>
       <StatusEffect type="OnImpact" target="This" condition="-100.0" >
         <Conditional Condition="lt 100" />
@@ -496,6 +504,10 @@
       <RequiredItem identifier="c4block" amount="2"/>
     </Fabricate>-
     <Projectile characterusable="false" launchimpulse="25" maxtargetstohit="1" damagedoors="true">
+      <StatusEffect type="OnContained" target="This" comparison="and">
+        <Conditional targetcontainer="true" hastag="eq railgunammosource"/>
+        <Dropitem />
+      </StatusEffect>
       <Attack structuredamage="100" itemdamage="100" severlimbsprobability="5" penetration="0.6" targetforce="1000">
         <Affliction identifier="explosiondamage" strength="250" />
         <Affliction identifier="bleeding" strength="50" />
@@ -512,7 +524,7 @@
         <sound file="%ModDir:3278494407%/Misc/Oggs/msl_engine.ogg" range="2000.0" volume="2.0" loop="true"/>
       </StatusEffect>
       <StatusEffect type="OnActive" target="This">
-        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="1" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" lifetimemultiplier="2"/>
+        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="1" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" lifetimemultiplier="0.5"/>
       </StatusEffect>
       <StatusEffect type="OnImpact" target="This" condition="-100.0" >
         <Conditional Condition="lt 100" />
@@ -610,7 +622,7 @@
         <sound file="%ModDir:3278494407%/Misc/Oggs/msl_engine.ogg" range="2000.0" volume="2.0" loop="true"/>
       </StatusEffect>
       <StatusEffect type="OnActive" target="This">
-        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="1" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" lifetimemultiplier="2"/>
+        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="1" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" lifetimemultiplier="0.5"/>
       </StatusEffect>
       <StatusEffect type="OnImpact" target="This" Condition="-34.0">
         <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="Random" range="50000" />
@@ -690,7 +702,7 @@
         <sound file="%ModDir:3278494407%/Misc/Oggs/msl_engine.ogg" range="2000.0" volume="2.0" loop="true"/>
       </StatusEffect>
       <StatusEffect type="OnActive" target="This">
-        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="1" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" lifetimemultiplier="2"/>
+        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="1" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" lifetimemultiplier="0.5"/>
       </StatusEffect>
       <StatusEffect type="OnImpact" target="This" Condition="-34.0">
         <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="Random" range="50000" />
@@ -750,6 +762,10 @@
       <RequiredItem identifier="uex" />
     </Fabricate>
     <Projectile characterusable="false" launchimpulse="10" maxtargetstohit="1" damagedoors="true">
+      <StatusEffect type="OnContained" target="This" comparison="and">
+        <Conditional targetcontainer="true" hastag="eq railgunammosource"/>
+        <Dropitem />
+      </StatusEffect>
       <Attack structuredamage="100" itemdamage="100" severlimbsprobability="5" penetration="0.6" targetforce="1000">
         <Affliction identifier="explosiondamage" strength="250" />
         <Affliction identifier="bleeding" strength="50" />
@@ -766,7 +782,7 @@
         <sound file="%ModDir:3278494407%/Misc/Oggs/msl_engine.ogg" range="2000.0" volume="2.0" loop="true"/>
       </StatusEffect>
       <StatusEffect type="OnActive" target="This">
-        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="1" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" lifetimemultiplier="2"/>
+        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="1" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" lifetimemultiplier="0.5"/>
       </StatusEffect>
       <StatusEffect type="OnImpact" target="This" condition="-100.0" >
         <Conditional Condition="lt 100" />
@@ -826,6 +842,10 @@
       <RequiredItem identifier="uex" />
     </Fabricate>
     <Projectile characterusable="false" launchimpulse="10" maxtargetstohit="1" damagedoors="true">
+      <StatusEffect type="OnContained" target="This" comparison="and">
+        <Conditional targetcontainer="true" hastag="eq railgunammosource"/>
+        <Dropitem />
+      </StatusEffect>
       <Attack structuredamage="100" itemdamage="100" severlimbsprobability="5" penetration="0.6" targetforce="1000">
         <Affliction identifier="explosiondamage" strength="250" />
         <Affliction identifier="bleeding" strength="50" />
@@ -842,7 +862,7 @@
         <sound file="%ModDir:3278494407%/Misc/Oggs/msl_engine.ogg" range="2000.0" volume="2.0" loop="true"/>
       </StatusEffect>
       <StatusEffect type="OnActive" target="This">
-        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="1" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" lifetimemultiplier="2"/>
+        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="1" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" lifetimemultiplier="0.5"/>
       </StatusEffect>
       <StatusEffect type="OnImpact" target="This" condition="-100.0" >
         <Conditional Condition="lt 100" />
@@ -876,7 +896,7 @@
     </LightComponent>
     <AiTarget soundrange="50000" sonarlabel="sig.hwl" sight="500" staticsight="true"/>
   </Item>
-  <Item identifier="sm_9_prsm" tags="saclosmsl,vls_ammo_heavy,highpriority" showcontentsintooltip="true" category="Weapon" scale="0.55" sonarsize="8" hideinmenus="false">
+  <Item identifier="sm_9_prsm" tags="railgunammo,saclosmsl,vls_ammo_heavy,highpriority" showcontentsintooltip="true" category="Weapon" scale="0.55" sonarsize="8" hideinmenus="false">
     <InventoryIcon texture="%ModDir:3278494407%/Weapons/Explosives/shell.png" sourcerect="5,250,332,42" origin="0.5,0.5" />
     <Sprite texture="%ModDir:3278494407%/Weapons/Explosives/shell.png" sourcerect="5,250,332,42" depth="0.55" origin="0.5,0.5" />
     <ContainedSprite allowedcontainertags="vlsloader_large" texture="%ModDir:3278494407%/Weapons/Explosives/shell.png" sourcerect="120,250,215,42" depth="0.55" origin="0.5,0.5" />
@@ -919,7 +939,7 @@
         <sound file="%ModDir:3278494407%/Misc/Oggs/msl_engine.ogg" range="2000.0" volume="2.0" loop="true"/>
       </StatusEffect>
       <StatusEffect type="OnActive" target="This">
-        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="1" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" lifetimemultiplier="2"/>
+        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="1" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" lifetimemultiplier="0.5"/>
       </StatusEffect>
       <StatusEffect type="OnImpact" target="This" condition="-100.0" >
         <Conditional Condition="lt 100" />
@@ -981,13 +1001,17 @@
     </Projectile>
   </Item>
 
-  <Item identifier="vls_msl_container" tags="vls_ammo_heavy" category="Weapon" scale="0.5" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy">
+  <Item identifier="vls_msl_container" tags="railgunammo,vls_ammo_heavy" category="Weapon" scale="0.5" pickdistance="150" showcontentsintooltip="true" impactsoundtag="impact_metal_heavy">
     <Deconstruct time="0.5"/>
-    <Sprite texture="%Moddir%/VLSContainer.png" depth="0.54" sourcerect="0,0,192,42" origin="0.5,0.5"/>
-    <Body width="192" height="42" density="25" />
+    <Sprite texture="%Moddir%/VLSContainer.png" depth="0.54" sourcerect="0,0,205,42" origin="0.5,0.5"/>
+    <Body width="205" height="42" density="25" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
     <ItemContainer capacity="4" maxstacksize="1" canbeselected="false" hideitems="true" keepopenwhenequipped="true" movableframe="true">
       <Containable items="vls_ammo"/>
+      <StatusEffect type="OnContained" target="This" comparison="and">
+        <Conditional targetcontainer="true" hastag="eq railgunammosource"/>
+        <Dropitem />
+      </StatusEffect>
       <StatusEffect type="OnContained" target="This" comparison="and">
         <Conditional targetcontainer="true" hastag="eq turretammosource"/>
         <RequiredItem Items="vls_ammo" type="Contained" RequireEmpty="true" MatchOnEmpty="true" />

@@ -71,7 +71,7 @@
   <entityname.tubeitem_carrier>密封容器背包</entityname.tubeitem_carrier>
   <entitydescription.tes20mag_ap>惩罚者使用的20mm高速钢针,能打穿能见到的所有玩意</entitydescription.tes20mag_ap>
   <entitydescription.tes20mag_arr>惩罚者使用的20mm箭霰弹,高穿,多弹头,是CQB的最佳选择</entitydescription.tes20mag_arr>
-  <entitydescription.tes20mag_he>惩罚者使用的20mm可编程榴弹(当然,编程还没搞出来) \n该开炸了,先生们</entitydescription.tes20mag_he>
+  <entitydescription.tes20mag_he>惩罚者使用的20mm可编程榴弹\n该开炸了,先生们</entitydescription.tes20mag_he>
   <entitydescription.tes20mag_ll>惩罚者使用的20mm硬质橡胶低致命弹药,当然,还是挺疼的...</entitydescription.tes20mag_ll>
   <entitydescription.berra_STANAG_458socom>STANAG弹匣 \n内装10发.458 SOCOM弹 \n穿甲性能和停止力都不错,造价也没有.50那么极端</entitydescription.berra_STANAG_458socom>
   <entitydescription.berra_STANAG_458socom_ext>STANAG弹匣 \n内装20发.458 SOCOM弹 \n穿甲性能和停止力都不错,造价也没有.50那么极端</entitydescription.berra_STANAG_458socom_ext>
@@ -710,5 +710,8 @@
 
   <entityname.sm_9_prsm>标准-9 精确打击导弹</entityname.sm_9_prsm>
   <entitydescription.sm_9_prsm>更大,更重,飞得更快,装的更多 \n基本上就是一枚高速冲锋的炸药桶 \n没有人会愿意被这玩意砸上一发的</entitydescription.sm_9_prsm>
-  
+  <entityname.vls_msl_container>重型垂直发射系统 储运一体发射箱</entityname.vls_msl_container>
+  <entitydescription.vls_msl_container>可用于将小型弹药装入重型垂直发射系统以从该系统发射</entitydescription.vls_msl_container>
+  <entityname.cbrn_m32a1_mgl>M32A1榴弹发射器</entityname.cbrn_m32a1_mgl>
+  <entitydescription.cbrn_m32a1_mgl>更好的M32, 在几乎任何方面</entitydescription.cbrn_m32a1_mgl>
 </infotexts>

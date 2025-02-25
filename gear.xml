@@ -474,7 +474,7 @@
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.8" setvalue="true" />
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
     </Holdable>
-    <RangedWeapon reload="0.2" weapondamagemodifier="1.0" holdtrigger="true" barrelpos="200,15" spread="5" unskilledspread="15" combatPriority="100" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.2" weapondamagemodifier="1.0" holdtrigger="true" barrelpos="200,15" spread="5" unskilledspread="15" combatPriority="200" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -1409,56 +1409,7 @@
     <aitarget sightrange="5000" soundrange="4500" fadeouttime="6" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item identifier="cbrn_m32a1_mgl" category="Weapon" subcategory="other" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,lm_gun,gunsmith,mountableweapon,provocativetohumanai,bulkyweapon" Scale="0.35" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
-    <InventoryIcon texture="%ModDir%/weapons/其他/重型武器.png" sourcerect="1348,1852,128,136" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/weapons/其他/重型武器.png" sourcerect="22,459,331,98" depth="0.55" origin="0.5,0.5" />
-    <Body width="331" height="98" density="25" />
-    <Fabricate suitablefabricators="tsm_fabricator" requiredtime="30" requiresrecipe="false">
-      <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="grenadelauncher" amount="1" />
-      <RequiredItem identifier="tsm_lm_weaponbox" amount="1" />
-      <RequiredItem identifier="tsm_item_box" amount="1" />
-    </Fabricate>
-    <Deconstruct time="10">
-      <Item identifier="tsm_item_box" />
-    </Deconstruct>
-    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="60,-20" aimpos="60,-10" handle1="-60,-15" handle2="30,10" holdangle="-25">
-      <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.7" setvalue="true" />
-      <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.8" setvalue="true" />
-    </Holdable>
-    <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
-      <sprite name="m32 bag" texture="%ModDir%/weapons/其他/重型武器.png" canbehiddenbyotherwearables="false" sourcerect="22,459,331,98" rotation="90" inheritlimbdepth="false" depth="0.6" limb="Torso" scale="0.35" origin="0.45,0.8" />
-    </Wearable>
-    <RangedWeapon barrelpos="160,17" spread="1.2" unskilledspread="10" combatPriority="86" drawhudwhenequipped="true" crosshairscale="0.2" reload="1.2">
-      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
-      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-      <ParticleEmitter particle="muzzleflashchaingun" particleamount="1" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="0.6" />
-      <ParticleEmitter particle="explosionsmoke" particleamount="1" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="0.6" />
-      <Sound file="%ModDir%/weapons/其他/m32.ogg" type="OnUse" range="1000" />
-      <StatusEffect type="OnUse" target="This">
-        <Explosion range="150.0" force="2" shockwave="false" smoke="false" flames="false" flash="true" sparks="false" underwaterbubble="false" applyfireeffects="false" camerashake="6.0" />
-      </StatusEffect>
-      <RequiredItems items="grenade" type="Contained" msg="ItemMsgAmmoRequired" />
-      <RequiredSkill identifier="weapons" level="60" />
-    </RangedWeapon>
-    <!--Holds one grenade at a time-->
-    <ItemContainer capacity="6" maxstacksize="1" hideitems="true" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
-      <Containable items="grenade" />
-      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="448,448,64,64" origin="0.5,0.5" />
-      <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="448,448,64,64" origin="0.5,0.5" />
-      <SlotIcon slotindex="2" texture="Content/UI/StatusMonitorUI.png" sourcerect="448,448,64,64" origin="0.5,0.5" />
-      <SlotIcon slotindex="3" texture="Content/UI/StatusMonitorUI.png" sourcerect="448,448,64,64" origin="0.5,0.5" />
-      <SlotIcon slotindex="4" texture="Content/UI/StatusMonitorUI.png" sourcerect="448,448,64,64" origin="0.5,0.5" />
-      <SlotIcon slotindex="5" texture="Content/UI/StatusMonitorUI.png" sourcerect="448,448,64,64" origin="0.5,0.5" />
-    </ItemContainer>
-    <aitarget sightrange="3000" soundrange="3000" fadeouttime="5" />
-    <Quality>
-      <QualityStat stattype="ExplosionRadius" value="0.1" />
-      <QualityStat stattype="ExplosionDamage" value="0.1" />
-    </Quality>
-    <SkillRequirementHint identifier="weapons" level="60" />
-  </Item>
+
 
   <!--Place Holder-->
   <Item identifier="univ_backblast_exc" category="Misc" interactthroughwalls="false" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="None" hideinmenus="true" scale="0.5">
@@ -3710,7 +3661,7 @@
       </Button>
     </CustomInterface>
   </Item>
-  <Item identifier="devilscore" subcategory="Nuclear" category="Weapon" Tags="smallitem,explosive,nuke,WMD,devilscore,highpriority" health="50" maxstacksize="1" Scale="0.2" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_heavy" hideinmenus="true">
+  <Item identifier="devilscore" subcategory="Nuclear" category="Weapon" Tags="smallitem,explosive,nuke,WMD,devilscore,highpriority" health="100" maxstacksize="1" Scale="0.2" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_heavy" hideinmenus="true">
     <InventoryIcon texture="%ModDir:3278494407%/Weapons/Nuclear/devilscore.png" sourcerect="0,0,183,183" />
     <Sprite texture="%ModDir:3278494407%/Weapons/Nuclear/devilscore.png" depth="0.55" sourcerect="0,0,183,183" origin="0.5,0.5" />
     <Body width="30" height="70" density="20" />
@@ -3759,6 +3710,52 @@
       <Containable items="neutron_reflector" />
     </ItemContainer>
   </Item><!--Considering to remove it-->
+  <Item identifier="v_nuke_100k" subcategory="Nuclear" category="Weapon" Tags="smallitem,explosive,nuke,WMD,highpriority" health="20" isdangerous="true" maxstacksize="1" Scale="0.5" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_heavy" hideinmenus="true">
+    <Sprite texture="Content/Map/Outposts/Art/FactionItems.png" depth="0.55" sourcerect="448,198,38,76" origin="0.5,0.5" />
+    <Body width="30" height="70" density="20" />
+    <Deconstruct time="240">
+      <RequiredSkill identifier="mechanical" level="80" />
+      <RequiredSkill identifier="weapons" level="95" />
+      <Item identifier="u235core_medium"/>
+      <Item identifier="fpgacircuit"/>
+      <Item identifier="c4block" amount="3"/>
+    </Deconstruct>
+    <Throwable characterusable="false" slots="Any,RightHand,LeftHand" canbecombined="true" removeoncombined="true" throwforce="3.5" aimpos="35,-10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true"/>
+      <StatusEffect type="OnBroken" target="NearbyCharacters" range="2000" OneShot="true">
+        <RemoveCharacter/>
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" range="50000" />
+        <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" range="50000" />
+        <Explosion range="3500.0" ballastfloradamage="1200" structuredamage="1500" itemdamage="1500" force="30" ignoreCover="true" severlimbsprobability="5" showEffects="false" penetration="1">
+          <Affliction identifier="explosiondamage" strength="5000" />
+          <Affliction identifier="burn" strength="5000" />
+        </Explosion>
+        <Explosion range="6500.0" ballastfloradamage="200" structuredamage="200" itemdamage="200" EmpStrength="200" force="2" severlimbsprobability="0.75" debris="false" decal="explosion" decalsize="0.75" penetration="1" camerashake="200" camerashakerange="10000" flashrange="2000" flashduration="3" screencolor="255,255,255,255" screencolorrange="5000" screencolorduration="10.0" >
+          <Affliction identifier="blunttrauma" strength="50" />
+          <Affliction identifier="stun" strength="2" />
+          <Affliction identifier="emp" strength="1000" />
+          <Affliction identifier="explosiondamage" strength="1000" />
+          <Affliction identifier="burn" strength="1000" />
+          <Affliction identifier="stun" strength="35" />
+          <Affliction identifier="radiationsickness" strength="800" />
+        </Explosion>
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" range="6000" />
+        <sound file="Content/Items/Weapons/ExplosionDebris2.ogg" range="6000" />
+      </StatusEffect>
+    </Throwable>
+    <ItemComponent>
+      <!-- new -->
+      <StatusEffect type="Always" target="This" Condition="-1.0" checkconditionalalways="true">
+        <Conditional hastag="neq magneticsuspensioncrate" targetcontainer="true" />
+        <Conditional voltage="lte 0" targetcontainer="true" />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
 
 
   <!--Meds-->
@@ -4158,8 +4155,5 @@
     </Holdable>
   </Item>
 
-<!--
-
--->
 
 </Items>
