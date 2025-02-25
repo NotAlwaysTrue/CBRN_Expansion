@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
-  <Item identifier="vls_small" Tags="turret,vls" category="Machine,Weapon" interactthroughwalls="true" Scale="0.5" interactdistance="10" spritecolor="1.0,1.0,1.0,1.0" focusonselected="true" offsetonselected="750" linkable="true" allowedlinks="coilgunequipment">
+  <Item identifier="vls_small" Tags="turret,vls" category="Machine,Weapon" interactthroughwalls="true" Scale="0.5" interactdistance="10" spritecolor="1.0,1.0,1.0,1.0" focusonselected="true" offsetonselected="750" linkable="true" allowedlinks="vlsloader">
     <Sprite texture="%Moddir%/VLSTurrets.png" depth="0.01" sourcerect="0,0,285,48" canflipy="false" />
     <MinimapIcon texture="%Moddir%/VLSTurrets.png" depth="0.01" sourcerect="0,0,285,48"/>
     <SwappableItem price="10000" replacementonuninstall="turrethardpoint" origin="128,215" swapidentifier="basicturret">
@@ -14,7 +14,9 @@
       <WeaponIndicator texture="Content/UI/WeaponUI.png" sourcerect="744,910,66,38" origin="0.24, 0.472" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256" />
       <RequiredSkill identifier="weapons" level="50" />
-      <Sound file="%ModDir%/Misc/Oggs/launch.ogg" type="OnUse" volume="4" range="1800"/>
+      <LightComponent LightColor="255,255,255,255" range="4096" directional="true" IsOn="true" drawbehindsubs="true" castshadows="false">
+        <LightTexture texture="%ModDir:2953749635%/png/laser.png" origin="0.0, 0.5" size="2.0,0.12" />
+      </LightComponent>
     </Turret>
     <aitarget maxsightrange="3000" maxsoundrange="8000" fadeouttime="5" />
     <LightComponent LightColor="255,255,255,120" range="400" powerconsumption="0.0" IsOn="true" canbeselected="false" AllowInGameEditing="false" drawbehindsubs="true" castshadows="false"/>
@@ -64,7 +66,43 @@
       <output name="contained_conditions" displayname="connection.ammunitionout" />
     </ConnectionPanel>
   </Item>
-  <Item identifier="vlsloader_large" tags="vlsloader,turretammosource" category="Machine,Weapon" linkable="true" allowedlinks="vls" scale="0.5" damagedbyexplosions="true" explosiondamagemultiplier="0.2" hideinmenus="true">
+  <Item identifier="vls_large" Tags="turret,vls" category="Machine,Weapon" interactthroughwalls="true" Scale="0.5" interactdistance="10" spritecolor="1.0,1.0,1.0,1.0" focusonselected="true" offsetonselected="750" linkable="true" allowedlinks="vlsloader">
+    <Sprite texture="%Moddir%/VLSTurrets.png" depth="0.01" sourcerect="0,0,285,48" canflipy="false" />
+    <MinimapIcon texture="%Moddir%/VLSTurrets.png" depth="0.01" sourcerect="0,0,285,48"/>
+    <SwappableItem price="30000" replacementonuninstall="largeturrethardpoint" origin="256,438" swapidentifier="largeturret">
+      <SchematicSprite texture="%Moddir%/VLSTurrets.png" sourcerect="0,0,285,48"/>
+      <SwapConnectedItem tag="periscope" swapto="AFCS_scope" />
+      <SwapConnectedItem tag="turretammosource" swapto="vlsloader_large" />
+    </SwappableItem>    
+    <UpgradePreviewSprite scale="2.5" texture="%Moddir%/VLSTurrets.png" sourcerect="0,0,285,48" origin="0.5,0.5"/>
+    <StaticBody width="80" radius="80" />
+    <Turret MaxActiveProjectiles="12" firingoffset="0,0" launchimpulse="0.0" canbeselected="false" characterusable="false" linkable="true" ProjectileCount="1" ShotsPerBurst="1" barrelpos="143,0" rotationlimits="0,360" powerconsumption="1000.0" showchargeindicator="false" showprojectileindicator="true" reload="1.0" springstiffnesslowskill="100" springstiffnesshighskill="100" springdampinglowskill="15" springdampinghighskill="15" rotationspeedlowskill="80" rotationspeedhighskill="80" MaxAngleOffset="0" AICurrentTargetPriorityMultiplier="1.1">
+      <WeaponIndicator texture="Content/UI/WeaponUI.png" sourcerect="744,910,66,38" origin="0.24, 0.472" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256" />
+      <RequiredSkill identifier="weapons" level="50" />
+      <LightComponent LightColor="255,255,255,255" range="4096" directional="true" IsOn="true" drawbehindsubs="true" castshadows="false">
+        <LightTexture texture="%ModDir:2953749635%/png/laser.png" origin="0.0, 0.5" size="2.0,0.12" />
+      </LightComponent>
+    </Turret>
+    <aitarget maxsightrange="3000" maxsoundrange="8000" fadeouttime="5" />
+    <LightComponent LightColor="255,255,255,120" range="400" powerconsumption="0.0" IsOn="true" canbeselected="false" AllowInGameEditing="false" drawbehindsubs="true" castshadows="false"/>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="power_in" displayname="connection.powerin" />
+      <input name="position_in" displayname="connection.turretaimingin" />
+      <input name="trigger_in" displayname="connection.turrettriggerin" />
+      <input name="toggle_light" displayname="connection.togglelight"/>
+      <input name="set_light" displayname="connection.setlight" />
+      <input name="set_auto_operate" displayname="connection.setautooperate" />
+      <input name="toggle_auto_operate" displayname="connection.toggleautooperate" />
+    </ConnectionPanel>
+    <ItemContainer hideitems="true" drawinventory="false" capacity="1" slotsperrow="1" canbeselected="false">
+      <Containable items="msl_targetmarker" />
+    </ItemContainer>
+    <SkillRequirementHint identifier="weapons" level="50" />
+  </Item>
+  <Item identifier="vlsloader_large" tags="vlsloader_large,turretammosource" category="Machine,Weapon" linkable="true" allowedlinks="vls" scale="0.5" damagedbyexplosions="true" explosiondamagemultiplier="0.2" hideinmenus="false">
     <Upgrade gameversion="0.14.7.0" rectwidth="82" rectheight="176" itempos="82,-270"/>
     <!--<SwappableItem canbebought="false" origin="82,352" spawnwithid=""/>-->
     <UpgradePreviewSprite texture="%Moddir%/VLSLoader.png" depth="0.8" sourcerect="0,0,248,275" origin="0.5,0.5" />
@@ -85,21 +123,21 @@
     </Repairable>
     <ItemContainer hideitems="false" drawinventory="true" capacity="4" slotsperrow="4" itempos="53,-150" iteminterval="47,0" itemrotation="90" canbeselected="true" msg="ItemMsgInteractSelect" containedspritedepths="0.79,0.791,0.792,0.793,0.794,0.795">
       <GuiFrame relativesize="0.4,0.5" anchor="Center" style="ItemUI" />
-      <Containable items="vls_ammo" />
+      <Containable items="vls_ammo_heavy" />
       <SubContainer capacity="4" maxstacksize="1" >
-        <Containable items="vls_ammo" hide="false" itempos="26,-75" iteminterval="47,0" containedspritedepths="0.79,0.791,0.792,0.793,0.794,0.795"/>
+        <Containable items="vls_ammo_heavy" hide="false" itempos="26,-75" iteminterval="47,0" containedspritedepths="0.79,0.791,0.792,0.793,0.794,0.795"/>
       </SubContainer>
       <SubContainer capacity="4" maxstacksize="1">
-        <Containable items="vls_ammo" hide="false" itempos="26,-75" iteminterval="47,0" containedspritedepths="0.79,0.791,0.792,0.793,0.794,0.795"/>
+        <Containable items="vls_ammo_heavy" hide="false" itempos="26,-75" iteminterval="47,0" containedspritedepths="0.79,0.791,0.792,0.793,0.794,0.795"/>
       </SubContainer>
       <SubContainer capacity="4" maxstacksize="1">
-        <Containable items="vls_ammo" hide="false" itempos="26,-75" iteminterval="47,0" containedspritedepths="0.79,0.791,0.792,0.793,0.794,0.795"/>
+        <Containable items="vls_ammo_heavy" hide="false" itempos="26,-75" iteminterval="47,0" containedspritedepths="0.79,0.791,0.792,0.793,0.794,0.795"/>
       </SubContainer>
       <SubContainer capacity="4" maxstacksize="1">
-        <Containable items="vls_ammo" hide="false" itempos="26,-75" iteminterval="47,0" containedspritedepths="0.79,0.791,0.792,0.793,0.794,0.795"/>
+        <Containable items="vls_ammo_heavy" hide="false" itempos="26,-75" iteminterval="47,0" containedspritedepths="0.79,0.791,0.792,0.793,0.794,0.795"/>
       </SubContainer>
       <SubContainer capacity="4" maxstacksize="1">
-        <Containable items="vls_ammo" hide="false" itempos="26,-75" iteminterval="47,0" containedspritedepths="0.79,0.791,0.792,0.793,0.794,0.795"/>
+        <Containable items="vls_ammo_heavy" hide="false" itempos="26,-75" iteminterval="47,0" containedspritedepths="0.79,0.791,0.792,0.793,0.794,0.795"/>
       </SubContainer>
     </ItemContainer>
     <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">

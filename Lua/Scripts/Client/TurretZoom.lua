@@ -23,7 +23,7 @@ Hook.HookMethod("Barotrauma.Camera","CreateMatrices",function(instance,ptable)
 end,Hook.HookMethodType.After)
 
 Hook.HookMethod("Barotrauma.Character","ControlLocalPlayer",function(instance,ptable)
-    if instance.SelectedItem and instance.SelectedItem.HasTag("GUIDENCE_SYSTEM") and not modconflict then
+    if false and instance.SelectedItem and instance.SelectedItem.HasTag("GUIDENCE_SYSTEM") then --disabled
         if PlayerInput.ScrollWheelSpeed < 0 then
             ZoomNew=math.max(zoomMin,ZoomNew*(1-zoomSpeed))
         end
@@ -32,11 +32,8 @@ Hook.HookMethod("Barotrauma.Character","ControlLocalPlayer",function(instance,pt
         end
         ptable.cam.globalZoomScale = ZoomNew
         Screen.Selected.Cam.OffsetAmount = math.max(1,(ptable.cam.globalZoomScale / zoomStart)) * 800
-    else if not instance.SelectedItem and gzsDefault and not modconflict then
-            ptable.cam.globalZoomScale = gzsDefaultinit
-        end
     end
-    if instance.SelectedItem and instance.SelectedItem.HasTag("GUIDENCE_SYSTEM") and modconflict then
+    if instance.SelectedItem and instance.SelectedItem.HasTag("GUIDENCE_SYSTEM") then
         if PlayerInput.ScrollWheelSpeed < 0 then
             ZoomNew=math.max(zoomMin_c,ZoomNew*(1-zoomSpeed))
         end
@@ -45,17 +42,6 @@ Hook.HookMethod("Barotrauma.Character","ControlLocalPlayer",function(instance,pt
         end
         Screen.Selected.Cam.MinZoom = ZoomNew
         Screen.Selected.Cam.OffsetAmount = math.max(1,(ptable.cam.globalZoomScale / zoomStart)) * 3000
-    else if not instance.SelectedItem and gzsDefault and modconflict then
-        ptable.cam.globalZoomScale = gzsDefaultinit
-        end
-    end
-end,Hook.HookMethodType.After)
-
-Hook.HookMethod("Barotrauma.Character","ControlLocalPlayer",function(instance,ptable)
-    if instance.SelectedItem and instance.SelectedItem.HasTag("GUIDENCE_SYSTEM") and not modconflict then
-        if ptable.cam.globalZoomScale ~= ZoomNew then
-            modconflict = true
-        end
     end
 end,Hook.HookMethodType.After)
 

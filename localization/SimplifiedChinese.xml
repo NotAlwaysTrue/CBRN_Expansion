@@ -301,11 +301,12 @@
   <!--loadingscreen-->
   <loadingscreentip>五年前，我的三万名士兵在眨眼间化为了尸骸，全世界只是冷眼旁观 \n——九州指挥官-莱伦汀</loadingscreentip>
   <loadingscreentip>燃烧吧,木卫二! \n——九州指挥官-莱伦汀</loadingscreentip>
-  <loadingscreentip>嗯，正常来说，你不能仅仅通过把碳，硫，磷塞进一个机器然后制造出这些化学毒剂 \n——NotAlwaysTrue，Berra Group首席执行官</loadingscreentip>
+  <loadingscreentip>嗯，正常来说，你不能仅仅通过把碳，硫，磷塞进一个机器然后制造出这些化学毒剂 \n——NotAlwaysTrue, Berra Group首席执行官</loadingscreentip>
   <loadingscreentip>尽管联盟和分裂主义分子都强烈反对生产储存和使用化学武器，仍有相当可观数量的化学武器被部署</loadingscreentip>
   <loadingscreentip>九州武库·CBNR拓展 \n——clabb,一名BiliBili视频作者,在发布关于此模组的视频中</loadingscreentip>
   <loadingscreentip>萨卡班甲鱼型手榴弹从未,包括曾经、现在和未来,在本模组的制作过程中被认作彩蛋</loadingscreentip>
   <loadingscreentip>请注意那些危险的核武器——它们的默认起爆时间是100秒!</loadingscreentip>
+  <loadingscreentip>奇迹之海趣事: \n海鸥叼走了莱伦汀的附魔金苹果并且当场吃掉 \n我们采访了当事海鸥, 海鸥表示这个好吃这个还想吃</loadingscreentip>
   <!--<loadingscreentip></loadingscreentip>-->
   <arm>解锁起爆序列</arm>
   <activate>启动起爆序列</activate>
@@ -688,7 +689,7 @@
   <entitydescription.ugm_114l_haven_water>使用声纳导引头的天堂水导弹 \n有射后不理能力 \n制导时长5s</entitydescription.ugm_114l_haven_water>
   <entitydescription.railgunjumppod_msl_auto>一枚可以通过垂直发射系统发射的用于登陆敌方舰船的导弹\n像箭矢一样飞行, 像地狱潜水员一样着陆\n不嘻嘻</entitydescription.railgunjumppod_msl_auto>
   <entitydescription.std_8_c_utam>标准-8C是下一代攻击弹药(NGAM)计划的产物之一, 使用了新一代声纳(魔法)导引头, 有射后不理能力 \n装有近炸高爆爆破弹头, 也可以作为其他弹药的运输载具 \n可作为Omega弹头的发射载具 \n制导时长20s</entitydescription.std_8_c_utam>
-  <entitydescription.msl_targetmarker>布什鸽门, 你从哪来的</entitydescription.msl_targetmarker>
+  <entitydescription.msl_targetmarker>布什鸽门, 这玩意你也拿啊?</entitydescription.msl_targetmarker>
 
   <sig.hwk>UGM-114K</sig.hwk>
   <sig.hwl>UGM-114L</sig.hwl>
@@ -702,4 +703,12 @@
   <entitydescription.cbrn_gift_crate>私自拆封此包装将导致即刻处决</entitydescription.cbrn_gift_crate>
   <entityname.uhm_bruh_headset>嘻嘻耳机</entityname.uhm_bruh_headset>
   <entitydescription.uhm_bruh_headset>不嘻嘻</entitydescription.uhm_bruh_headset>
+
+  <entityname.vls_large>Mk.53 重型通用垂直发射系统</entityname.vls_large>
+  <entitydescription.vls_large>技术上是一套更大更先进的垂直发射系统</entitydescription.vls_large>
+  <entityname.vlsloader_large>重型通用垂直发射系统 弹药存放仓</entityname.vlsloader_large>
+
+  <entityname.sm_9_prsm>标准-9 精确打击导弹</entityname.sm_9_prsm>
+  <entitydescription.sm_9_prsm>更大,更重,飞得更快,装的更多 \n基本上就是一枚高速冲锋的炸药桶 \n没有人会愿意被这玩意砸上一发的</entitydescription.sm_9_prsm>
+  
 </infotexts>
