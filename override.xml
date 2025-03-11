@@ -164,8 +164,8 @@
     </MedicalKits>
     <Item name="奇迹之海氚核心罐" identifier="tsm_triton_bag" category="Misc" Tags="smallitem,traitormissionitem,tsm_danger_item" maxstacksize="2" scale="0.25" isdangerous="true" impacttolerance="4" impactsoundtag="impact_metal_heavy">
       <PreferredContainer secondary="wreckmedcab,wrecksecarmcab" minamount="1" maxamount="1" spawnprobability="0.01" />
-      <InventoryIcon texture="%ModDir%/minerals+items+tools/items.png" sourcerect="1181,356,181,195" />
-      <Sprite texture="%ModDir%/minerals+items+tools/items.png" sourcerect="1181,356,181,195" depth="0.55" origin="0.5,0.5" />
+      <InventoryIcon texture="%ModDir:2953749635%/minerals+items+tools/items.png" sourcerect="1181,356,181,195" />
+      <Sprite texture="%ModDir:2953749635%/minerals+items+tools/items.png" sourcerect="1181,356,181,195" depth="0.55" origin="0.5,0.5" />
       <Body width="150" height="160" density="5" />
       <ItemComponent>
         <StatusEffect target="This" type="OnImpact" condition="-50">
