@@ -7,3 +7,10 @@ function findcharacterbyID(id)
     end
     return nil
 end
+
+function savetimeglobal(time, exec)
+    if exec == 1 then
+        mslinittime = time
+    end
+    return
+end

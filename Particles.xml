@@ -123,7 +123,7 @@
   MiddleColor="150,150,150,255"
   EndColor="50,50,50,0"
   UseMiddleColor="True"
-  DrawTarget="Air"
+  DrawTarget="Both"
   DrawOnTop="False"
   DrawAlways="False"
   BlendState="AlphaBlend"

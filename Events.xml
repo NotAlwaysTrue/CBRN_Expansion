@@ -33,7 +33,11 @@
       <!--mainly affects multiplayer, kills everybody in singleplayer is...uh,frustrating-->
       <AfflictionAction affliction="brokenarrow_alert_agent" strength="60" volume="0.2" targettag="targets" />
       <WaitAction time="60" />
-      <AfflictionAction affliction="omegathedeath" strength="500" targettag="targets" />
+      <StatusEffectAction targettag="targets">
+        <StatusEffect target="This" >
+          <RemoveCharacter />
+        </StatusEffect>
+      </StatusEffectAction>
     </ScriptedEvent>
     <ScriptedEvent identifier="detonation_2">
       <Label name="Start" />
@@ -111,11 +115,5 @@
       <SpawnAction speciesname="Sapphire" spawnlocation="MainPath" teamid="None" allowinplayerview="false" />
     </ScriptedEvent>
 
-    <!--temp override event-->
-    <!--
-    <Override>
-
-    </Override>
-    -->
   </EventPrefabs>
 </RandomEvents>

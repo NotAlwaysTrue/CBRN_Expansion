@@ -4,6 +4,7 @@ LuaUserData.MakeMethodAccessible(Descriptors["Barotrauma.Items.Components.Turret
 
 local locktarget = {}
 local Missile = {}
+local launchercd = {}
 Missile.__index = Missile
 
 -- helpfunc
@@ -21,11 +22,9 @@ function Missile:getMissile(item, Launcher, Target, isTurretLaunched)
 	data.tick = 0
     return data
 end
-
 local function getEndPoint(Vect, distance, ang)
     return Vector2(Vect.X + distance * math.cos(ang),Vect.Y + distance * math.sin(-ang))
 end
-
 local function sign(value)
 	if value > 0 then return 1 end
 	if value < 0 then return -1 end
@@ -42,12 +41,11 @@ end
 local function radToVec(rad)
 	return Vector2(math.cos(rad), math.sin(rad))
 end
+local function radToDeg(rad)
+	return rad * (180/math.pi)
+end
 local function getDirection(vector)
 	return math.atan2(vector.Y, vector.X)
-end
-local function checklenth(l, max)
-	if max > l then return 0 end
-	return l
 end
 
 local ActiveMissiles = {}
@@ -76,6 +74,10 @@ Hook.Patch("Barotrauma.Items.Components.Turret", "Launch", function(instance,pta
 	local aimtarget = nil
 	local gunrotation = instance.Rotation
 	local sub = instance.item.Submarine
+	if launchercd[instance.item] == true then
+		ptable.preventExecution = true
+		return
+	end
 	if projectile == nil or not projectile.HasTag("saclosmsl") then return end
 	if mslsettings[projectile.Prefab.Identifier.Value].IS_AUTO_GUIDED then
 		local prefab = ItemPrefab.GetItemPrefab("msl_targetmarker")
@@ -83,6 +85,7 @@ Hook.Patch("Barotrauma.Items.Components.Turret", "Launch", function(instance,pta
 		local mslmarker = instance.item.OwnInventory.FindItemByIdentifier("msl_targetmarker",false)
 		instance.Launch(mslmarker,ptable["user"], ptable["launchRotation"],  ptable["tinkeringStrength"] )
 		aimtarget = locktarget[instance.item]
+		locktarget[instance.item] = nil -- immediately clear table value to avoid issue
 		--[[ For future use for lock range limitation
 		if then
 			ptable.preventExecution = true
@@ -92,13 +95,16 @@ Hook.Patch("Barotrauma.Items.Components.Turret", "Launch", function(instance,pta
 			ptable.preventExecution = true
 			return
 		end
-	end 
+	end
 	if instance.item.HasTag("vls") then
 		instance.RotationLimits = Vector2(0,360)                             --Remove rotationlimit to allow guidence
 		instance.set_Rotation(instance.item.RotationRad - math.pi * 0.5)     --Launch Vertically
 	end
 	local newMissile = Missile:getMissile(projectile, instance, aimtarget, true)
+	aimtarget = nil
 	table.insert(ActiveMissiles, newMissile)
+	launchercd[instance.item] = true
+	Timer.Wait(function() launchercd[instance.item] = nil end, 10)
 end,Hook.HookMethodType.Before)-- Use before instad of after to get locked on target
 
 Hook.Add("item.removed", "CBRN_SACLOS_RemoveMissile", function(item)
@@ -133,27 +139,31 @@ Hook.Add("think", "CBRN_SACLOS_Guide", function ()
 	
     for missile in ActiveMissiles do
 		if not missile.item.removed and not missile.isDead then
-			--[[
-			if missile.tick < GameTickRate * missile.msldata.GUIDENCE_DELAY then
-				missile.tick = missile.tick + 1
-				return 
-			end
-			]]
+			
 			missileVelocity = missile.item.body.LinearVelocity
 			missileDirection = getDirection(missileVelocity)
+
+			if missile.tick < GameTickRate * missile.msldata.GUIDENCE_DELAY then --Prevent missiles from accept guidence while in safety
+				missile.tick = missile.tick + 1
+				return
+			end
+
+			propulsionForce = radToVec(missileDirection) * missile.msldata.MAX_ACCELERATION
+			missile.item.body.ApplyLinearImpulse(propulsionForce)
 
 			if missile.isTurretLaunched then
 				WeaponDirection = missile.launcher.targetRotation
 			else
-				WeaponDirection = 0 - missile.launcher.body.Rotation
+				WeaponDirection = -missile.launcher.body.Rotation
 			end
 			if missile.isAuto then
 				if missile.destarget == nil then return end
-				WeaponDirection = -1 * getDirection(missile.destarget.WorldPosition - missile.item.WorldPosition)
+				WeaponDirection = -1 * getDirection(missile.destarget.WorldPosition - missile.launcher.item.WorldPosition)
 			end
 			--math works related to weapon directions
 			WeaponDirection = sign(WeaponDirection) * ( math.pi - math.abs(WeaponDirection))
 			WeaponDirection = WeaponDirection - math.floor(WeaponDirection / 2.0 / math.pi) * 2.0 * math.pi - math.pi
+
 
 			steeringForce = (radToVec(WeaponDirection) - radToVec(missileDirection)) / missile.msldata.TOLERANCE * missile.msldata.MAX_STEERING_FORCE
 
@@ -163,32 +173,23 @@ Hook.Add("think", "CBRN_SACLOS_Guide", function ()
 			else
 				WeaponPosition = missile.launcher.WorldPosition
 			end
-			if missile.isAuto then
-				if missile.destarget == nil then return end
-				WeaponPosition = missile.destarget.WorldPosition
-			end
 
 			missilePosition = missile.item.WorldPosition
 			WeaponDirectionVector = radToVec(WeaponDirection)
 			closestPointOnLOS = WeaponPosition + Vector2.dot(missilePosition - WeaponPosition, WeaponDirectionVector) * WeaponDirectionVector
 			
-
 			correctionDirection = Vector2.Normalize(closestPointOnLOS - missilePosition)
 
-			--if math.abs(correctionDirection) > 0.6 * math.pi then
-			--	missile.isDead = true
-			--	return
-			--end
+			if missile.msldata.CAN_LOST_LOS and math.abs(getDirection(correctionDirection)) > missile.msldata.FOV * math.pi then
+				return
+			end
 
 			correctionMagnitude = lerp(0, missile.msldata.MAX_CORRECTION_FORCE, clamp((closestPointOnLOS - missilePosition).Length() / (1000 * missile.msldata.AVR_G_FORCE_MULTIPLIER), 0, missile.msldata.STEERAGE_MULTIPLIER))
 			--Larger multiplier means less force, means a softer curve
 
 			correctionForce = correctionDirection * correctionMagnitude
 
-			--propulsion force
-			propulsionForce = radToVec(missileDirection) * missile.msldata.MAX_PROPULSION_FORCE
-
-			missile.item.body.ApplyLinearImpulse(steeringForce + correctionForce + propulsionForce)
+			missile.item.body.ApplyLinearImpulse(steeringForce + correctionForce)
 				
 			-- missle visual turning
 			bodyDirection = missile.item.body.TransformedRotation
@@ -197,7 +198,7 @@ Hook.Add("think", "CBRN_SACLOS_Guide", function ()
 			bodyDirectionVector = radToVec(bodyDirection)
 			turnDirection = sign(bodyDirectionVector.X * missileVelocity.Y - bodyDirectionVector.Y * missileVelocity.X) -- cross product
 			missile.item.body.ApplyTorque(turnMagnitude * turnDirection)
-			missile.item.body.SmoothRotate(missileDirection, 100, false)
+			missile.item.body.SmoothRotate(missileDirection, 30, true)
 
 			end
 		end
@@ -209,5 +210,6 @@ Hook.Add("msl.marktarget", "msl.marktarget", function(effect, deltaTime, item, t
     local target = targets[1]
 	locktarget[launcher] = target
 end)
+
 
 -- Original Code created by 4SunnyH

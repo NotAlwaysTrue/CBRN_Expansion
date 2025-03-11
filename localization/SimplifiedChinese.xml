@@ -71,7 +71,7 @@
   <entityname.tubeitem_carrier>密封容器背包</entityname.tubeitem_carrier>
   <entitydescription.tes20mag_ap>惩罚者使用的20mm高速钢针,能打穿能见到的所有玩意</entitydescription.tes20mag_ap>
   <entitydescription.tes20mag_arr>惩罚者使用的20mm箭霰弹,高穿,多弹头,是CQB的最佳选择</entitydescription.tes20mag_arr>
-  <entitydescription.tes20mag_he>惩罚者使用的20mm可编程榴弹(当然,编程还没搞出来) \n该开炸了,先生们</entitydescription.tes20mag_he>
+  <entitydescription.tes20mag_he>惩罚者使用的20mm可编程榴弹\n该开炸了,先生们</entitydescription.tes20mag_he>
   <entitydescription.tes20mag_ll>惩罚者使用的20mm硬质橡胶低致命弹药,当然,还是挺疼的...</entitydescription.tes20mag_ll>
   <entitydescription.berra_STANAG_458socom>STANAG弹匣 \n内装10发.458 SOCOM弹 \n穿甲性能和停止力都不错,造价也没有.50那么极端</entitydescription.berra_STANAG_458socom>
   <entitydescription.berra_STANAG_458socom_ext>STANAG弹匣 \n内装20发.458 SOCOM弹 \n穿甲性能和停止力都不错,造价也没有.50那么极端</entitydescription.berra_STANAG_458socom_ext>
@@ -263,14 +263,14 @@
   <!--Missions-->
   <missionname.berra_fireeaters_outpostdestory>摧毁"噬火者"小队所在站点</missionname.berra_fireeaters_outpostdestory>
   <missiondescription.berra_fireeaters_outpostdestory>"噬火者"小队在此发现了一处生物泄露事件，销毁所有证据，摧毁整个站点</missiondescription.berra_fireeaters_outpostdestory>
-  <missionsuccess.berra_fireeaters_outpostdestory>任务完成</missionsuccess.berra_fireeaters_outpostdestory>
+  <missionsuccess.berra_fireeaters_outpostdestory>I Don'T Want To Set The World On Fire</missionsuccess.berra_fireeaters_outpostdestory>
   <missionfailure.berra_fireeaters_outpostdestory>所有的尸体都将被焚烧殆尽</missionfailure.berra_fireeaters_outpostdestory>
   <missionheader0.berra_fireeaters_outpostdestory>站点已摧毁</missionheader0.berra_fireeaters_outpostdestory>
   <missionmessage0.berra_fireeaters_outpostdestory>死亡是凉爽的夏夜，可供人无忧的安眠</missionmessage0.berra_fireeaters_outpostdestory>
 
   <missionname.berra_fireeaters_assination>歼灭"噬火者"小队</missionname.berra_fireeaters_assination>
   <missiondescription.berra_fireeaters_assination>"噬火者"小队在此处理了一处生物泄露事件，歼灭整支小队，不能让他们带着样本离开！</missiondescription.berra_fireeaters_assination>
-  <missionsuccess.berra_fireeaters_assination>任务完成</missionsuccess.berra_fireeaters_assination>
+  <missionsuccess.berra_fireeaters_assination>I Don'T Want To Set The World On Fire</missionsuccess.berra_fireeaters_assination>
   <missionfailure.berra_fireeaters_assination>化为尘埃</missionfailure.berra_fireeaters_assination>
   <missionheader0.berra_fireeaters_assination>已歼灭所有噬火者单位</missionheader0.berra_fireeaters_assination>
   <missionmessage0.berra_fireeaters_assination>直到尸体裹满了烈焰，他们停止了挣扎，不再动弹。灰尘顺着氧气口吹出的风爬上爬下，落在所有人的眼里</missionmessage0.berra_fireeaters_assination>
@@ -301,11 +301,12 @@
   <!--loadingscreen-->
   <loadingscreentip>五年前，我的三万名士兵在眨眼间化为了尸骸，全世界只是冷眼旁观 \n——九州指挥官-莱伦汀</loadingscreentip>
   <loadingscreentip>燃烧吧,木卫二! \n——九州指挥官-莱伦汀</loadingscreentip>
-  <loadingscreentip>嗯，正常来说，你不能仅仅通过把碳，硫，磷塞进一个机器然后制造出这些化学毒剂 \n——NotAlwaysTrue，Berra Group首席执行官</loadingscreentip>
+  <loadingscreentip>嗯，正常来说，你不能仅仅通过把碳，硫，磷塞进一个机器然后制造出这些化学毒剂 \n——NotAlwaysTrue, Berra Group首席执行官</loadingscreentip>
   <loadingscreentip>尽管联盟和分裂主义分子都强烈反对生产储存和使用化学武器，仍有相当可观数量的化学武器被部署</loadingscreentip>
   <loadingscreentip>九州武库·CBNR拓展 \n——clabb,一名BiliBili视频作者,在发布关于此模组的视频中</loadingscreentip>
   <loadingscreentip>萨卡班甲鱼型手榴弹从未,包括曾经、现在和未来,在本模组的制作过程中被认作彩蛋</loadingscreentip>
   <loadingscreentip>请注意那些危险的核武器——它们的默认起爆时间是100秒!</loadingscreentip>
+  <loadingscreentip>奇迹之海趣事: \n海鸥叼走了莱伦汀的附魔金苹果并且当场吃掉 \n我们采访了当事海鸥, 海鸥表示这个好吃这个还想吃</loadingscreentip>
   <!--<loadingscreentip></loadingscreentip>-->
   <arm>解锁起爆序列</arm>
   <activate>启动起爆序列</activate>
@@ -688,9 +689,29 @@
   <entitydescription.ugm_114l_haven_water>使用声纳导引头的天堂水导弹 \n有射后不理能力 \n制导时长5s</entitydescription.ugm_114l_haven_water>
   <entitydescription.railgunjumppod_msl_auto>一枚可以通过垂直发射系统发射的用于登陆敌方舰船的导弹\n像箭矢一样飞行, 像地狱潜水员一样着陆\n不嘻嘻</entitydescription.railgunjumppod_msl_auto>
   <entitydescription.std_8_c_utam>标准-8C是下一代攻击弹药(NGAM)计划的产物之一, 使用了新一代声纳(魔法)导引头, 有射后不理能力 \n装有近炸高爆爆破弹头, 也可以作为其他弹药的运输载具 \n可作为Omega弹头的发射载具 \n制导时长20s</entitydescription.std_8_c_utam>
-  <entitydescription.msl_targetmarker>布什鸽门, 你从哪来的</entitydescription.msl_targetmarker>
+  <entitydescription.msl_targetmarker>布什鸽门, 这玩意你也拿啊?</entitydescription.msl_targetmarker>
 
   <sig.hwk>UGM-114K</sig.hwk>
   <sig.hwl>UGM-114L</sig.hwl>
   <sig.std8c>标准-8C 导弹</sig.std8c>
+
+  <charactername.karlin>卡林</charactername.karlin>
+
+  <cbrn.gift_interact>你好</cbrn.gift_interact>
+  <cbrn.gift>Site-71主管有一些礼物要送给你们</cbrn.gift>
+  <entityname.cbrn_gift_crate>来自Site-71的礼物盒</entityname.cbrn_gift_crate>
+  <entitydescription.cbrn_gift_crate>私自拆封此包装将导致即刻处决</entitydescription.cbrn_gift_crate>
+  <entityname.uhm_bruh_headset>嘻嘻耳机</entityname.uhm_bruh_headset>
+  <entitydescription.uhm_bruh_headset>不嘻嘻</entitydescription.uhm_bruh_headset>
+
+  <entityname.vls_large>Mk.53 重型通用垂直发射系统</entityname.vls_large>
+  <entitydescription.vls_large>更大的垂直发射系统, </entitydescription.vls_large>
+  <entityname.vlsloader_large>重型通用垂直发射系统 弹药存放仓</entityname.vlsloader_large>
+
+  <entityname.sm_9_prsm>标准-9 精确打击导弹</entityname.sm_9_prsm>
+  <entitydescription.sm_9_prsm>更大,更重,飞得更快,装的更多 \n基本上就是一枚高速冲锋的炸药桶 \n没有人会愿意被这玩意砸上一发的</entitydescription.sm_9_prsm>
+  <entityname.vls_msl_container>重型垂直发射系统 储运一体发射箱</entityname.vls_msl_container>
+  <entitydescription.vls_msl_container>可以装入小型弹药以允许这些弹药从重型垂直发射系统中发射</entitydescription.vls_msl_container>
+  <entityname.cbrn_m32a1_mgl>M32A1榴弹发射器</entityname.cbrn_m32a1_mgl>
+  <entitydescription.cbrn_m32a1_mgl>更好的M32, 在几乎任何方面</entitydescription.cbrn_m32a1_mgl>
 </infotexts>

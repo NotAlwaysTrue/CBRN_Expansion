@@ -37,7 +37,7 @@
       <sprite name="ETPS Left Shoe" texture="%ModDir:3278494407%/Jobgear/Fire_Eaters/ETPS-7B.png" limb="LeftFoot" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="344,205,60,50" scale="0.6" origin="0.4,0.6" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.6" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.6" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.3" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.3" probabilitymultiplier="0.8"/>
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.3" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="triton_7L" damagemultiplier="0.7" />
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.2" />
@@ -92,8 +92,8 @@
       <sprite name="bio2 Right Shoe" texture="%ModDir:3278494407%/Jobgear/Under_Masks/Bio-2.png" limb="RightFoot" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="431,140,69,51" origin="0.5,0.45" scale="0.5" />
       <sprite name="bio2 Left Shoe" texture="%ModDir:3278494407%/Jobgear/Under_Masks/Bio-2.png" limb="LeftFoot" hideotherwearables="false" inheritscale="false" hidelimb="true" inheritorigin="false" inheritsourcerect="false" sourcerect="436,203,69,51" origin="0.5,0.5" scale="0.5" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.4" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations" damagemultiplier="0.5" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.25" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,bitewounds" damagemultiplier="0.5" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound,internaldamage" damagemultiplier="0.25" probabilitymultiplier="0.7"/>
       <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.15" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="triton_7L" damagemultiplier="0.8" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="triton_burn" damagemultiplier="0.2" />
@@ -108,11 +108,9 @@
         <Affliction identifier="chemicalliner_armorbreak" amount="10" />
         <Affliction identifier="chemicalliner_secondary" amount="10" />
       </StatusEffect>
-      <ItemContainer capacity="1" maxstacksize="1" autoinject="true">
-        <Containable items="chem,syringe" />
-        <SubContainer capacity="2" maxstacksize="3" hide="true">
-          <Containable items="smallitem" excludeditems="mobilecontainer" />
-        </SubContainer>
+      <ItemContainer capacity="2" maxstacksize="3" slotsperrow="1">
+        <Containable items="smallitem" excludeditems="mobilecontainer" />
+        <SubContainer capacity="1" maxstacksize="1" hide="true"/>
       </ItemContainer>
     </Wearable>
   </Item>
@@ -166,7 +164,7 @@
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.9" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.6" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,bitewounds,internaldamage" damagemultiplier="0.7" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.8" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.8" probabilitymultiplier="0.6" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.8" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="triton_7L" damagemultiplier="0.5" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.6" />
@@ -183,6 +181,7 @@
         <Affliction identifier="chemicalliner_majordamage" amount="10" />
         <Affliction identifier="chemicalliner_armorbreak" amount="10" />
         <Conditional jobidentifier="eq cbrn_guy"/>
+        <Conditional IsPlayer="eq false" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="0.1" PressureProtection="0.0" OxygenAvailable="-8000" disabledeltatime="true" LowPassMultiplier="1" ObstructVisionAmount="1" setvalue="true">
         <Conditional jobidentifier="neq cbrn_guy"/>
@@ -270,6 +269,7 @@
         <Affliction identifier="chemicalliner_armorbreak" amount="10" />
         <StatValue stattype="FlowResistance" value="1.0" />
         <Conditional jobidentifier="eq cbrn_guy"/>
+        <Conditional IsPlayer="eq false" />
       </StatusEffect>
       <StatusEffect Type="OnWearing" Target="This,Character">
         <TriggerAnimation Type="Walk" path="%ModDir:3278494407%/Characters/humanmech_anim/MechWalk.xml" priority="100" ExpectedSpecies="Human" />
@@ -284,7 +284,7 @@
       </StatusEffect>
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.4" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="lacerations,bitewounds,internaldamage" damagemultiplier="0.6" deflectprojectiles="true" />
-      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.4" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound" damagemultiplier="0.4" probabilitymultiplier="0.3" deflectprojectiles="true" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage" damagemultiplier="0.4" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="triton_7L" damagemultiplier="0.3" />
       <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.2" />
@@ -476,7 +476,7 @@
       <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.8" setvalue="true" />
       <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
     </Holdable>
-    <RangedWeapon reload="0.2" weapondamagemodifier="1.0" holdtrigger="true" barrelpos="200,15" spread="5" unskilledspread="15" combatPriority="100" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.2" weapondamagemodifier="1.0" holdtrigger="true" barrelpos="200,15" spread="5" unskilledspread="15" combatPriority="200" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="229,221,215,255" />
@@ -1379,6 +1379,9 @@
       <RequiredItem identifier="tsm_hengberley_star" amount="4" />
     </Fabricate>
     <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="50,-60" aimpos="50,-60" handle1="-120,45" handle2="0,0" holdangle="0" msg="ItemMsgPickUpSelect">
+      <LightComponent LightColor="255,0,0,255" range="1200" IsOn="true" >
+        <LightTexture texture="%ModDir:2953749635%/png/laser.png" origin="0.0,0.5" size="1.0,0.12" />
+      </LightComponent>
     </Holdable>
     <Wearable slots="Bag" canbeselected="false" canbepicked="false">
       <sprite texture="%ModDir:3278494407%/Weapons/Other/M61A1.png" canbehiddenbyotherwearables="false" sourcerect="0,0,580,300" depth="0.55" limb="Torso" depthlimb="LeftArm" rotation="90" scale="0.35" origin="0.5,0.7"/>
@@ -1411,6 +1414,7 @@
     <aitarget sightrange="5000" soundrange="4500" fadeouttime="6" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+
 
   <!--Place Holder-->
   <Item identifier="univ_backblast_exc" category="Misc" interactthroughwalls="false" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="None" hideinmenus="true" scale="0.5">
@@ -1927,7 +1931,7 @@
     <InventoryIcon texture="%ModDir:2953749635%/weapons/其他/近战.png" sourcerect="779,896,93,93" origin="0.5,0.5" /><!--TODO: New Spirites-->
     <Sprite texture="%ModDir:2953749635%/weapons/其他/近战.png" sourcerect="0,262,722,178" depth="0.55" origin="0.5,0.5" />
     <Body width="700" height="150" density="45" />
-    <MeleeWeapon slots="RightHand+LeftHand,Any" controlpose="true" holdpos="16,-50" aimpos="50,0" handle1="-20,-3" handle2="15,3" holdangle="35" reload="1" range="100" combatPriority="50" msg="ItemMsgPickUpSelect">
+    <MeleeWeapon slots="RightHand+LeftHand,Any" controlpose="true" holdpos="16,-50" aimpos="50,0" handle1="-20,-3" handle2="15,3" holdangle="35" reload="3" range="100" combatPriority="50" msg="ItemMsgPickUpSelect">
       <Attack targetimpulse="4" severlimbsprobability="0.3" CreateWallDamageProjectiles="true" ballastfloradamage="80" structuredamage="0" itemdamage="3000" penetration="0.8">
         <Affliction identifier="blunttrauma" strength="70" />
         <Affliction identifier="internaldamage" strength="30" />
@@ -1937,9 +1941,6 @@
       </Attack>
       <StatusEffect type="OnUse" target="Contained">
         <Use />
-      </StatusEffect>
-      <StatusEffect type="OnUse" target="UseTarget" multiplyAfflictionsByMaxVitality="true">
-        <Affliction identifier="blunttrauma" strength="50" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="This">
         <Conditional holdangle="eq 50" />
@@ -2137,6 +2138,44 @@
     </Wearable>
     <AiTarget soundrange="1200" sonarlabel="sig.sos" sight="1200" staticsight="true"/>
   </Item>
+  <Item identifier="uhm_bruh_headset" scale="0.5" category="Equipment,Medical" tags="smallitem,mobileradio" allowasextracargo="true" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="medcab"/>
+    <Price baseprice="200" sold="false">
+      <Price storeidentifier="merchantoutpost" />
+      <Price storeidentifier="merchantcity" multiplier="0.9" />
+      <Price storeidentifier="merchantresearch" />
+      <Price storeidentifier="merchantmilitary" />
+      <Price storeidentifier="merchantmine" />
+    </Price>
+    <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="113,264,58,45" origin="0.5,0.5" />
+    <Sprite name="Headset" texture="Content/Items/JobGear/TalentGear.png" depth="0.6" sourcerect="255,305,72,60" origin="0.35,0.5" />
+    <Body radius="20" height="20" density="15" />
+    <Deconstruct time="10">
+      <Item identifier="plastic" amount="2" />
+      <Item identifier="fpgacircuit" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10" requiresrecipe="false">
+      <RequiredSkill identifier="mechanical" level="30" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="plastic" amount="2" />
+    </Fabricate>
+    <WifiComponent range="35000.0" LinkToChat="true" MinChatMessageInterval="0.0" />
+    <ItemContainer capacity="1" maxstacksize="1" autoinject="true">
+      <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="384,448,64,64" origin="0.5,0.5" />
+    </ItemContainer>
+    <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
+      <sprite name="Headset Wearable" texture="Content/Items/JobGear/TalentGear.png" sourcerect="255,305,72,58" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hideotherwearables="false" origin="0.5,0.5" >
+        <LightComponent LightColor="255,0,0,130" range="59" powerconsumption="10" blinkfrequency="2" IsOn="false" canbeselected="false" AllowInGameEditing="false"/>
+      </sprite>
+      <StatusEffect type="OnWearing" target="This" disabledeltatime="true" checkconditionalalways="true" IsOn="true" setvalue="true">
+        <Conditional IsUnconscious="eq true" TargetContainer="true" TargetGrandParent="true" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="This" disabledeltatime="true" checkconditionalalways="true" IsOn="false" setvalue="true">
+        <Conditional IsUnconscious="eq false" TargetContainer="true" TargetGrandParent="true" />
+      </StatusEffect>
+    </Wearable>
+    <AiTarget soundrange="1200" sonarlabel="sig.sos" sight="1200" staticsight="true"/>
+  </Item>
   <Item identifier="cbrn_headset_sonar" scale="0.5" category="Equipment" tags="smallitem,mobileradio" description="" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="crewcab" secondary="divingcab"/>
     <Price baseprice="80">
@@ -2199,6 +2238,7 @@
       </Containable>
     </ItemContainer>
   </Item>
+
   <Item identifier="extinguishgrenade_exec" scale="1.0" tags="fireextinguisher" requireaimtouse="false" noninteractable="true" hideinmenus="true">
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,1,1" depth="0.55" origin="0.5,0.5" />
     <Body radius="5" density="10.5" />
@@ -3069,15 +3109,18 @@
     </Fabricate>
     <Throwable characterusable="false" slots="Any,RightHand,LeftHand" canbecombined="true" removeoncombined="true" throwforce="3.5" aimpos="35,-10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true"/>
+      <StatusEffect type="OnBroken" target="NearbyCharacters" range="800" OneShot="true">
+          <RemoveCharacter/>
+        </StatusEffect>
       <StatusEffect type="OnBroken" target="This">
         <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" range="50000" />
         <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" range="50000" />
-        <Explosion range="800.0" ballastfloradamage="15000" structuredamage="15000" itemdamage="15000" force="80" severlimbsprobability="5" penetration="1" showEffects="false" ignoreCover="true">
+        <Explosion range="1200.0" ballastfloradamage="15000" structuredamage="15000" itemdamage="15000" force="80" severlimbsprobability="5" penetration="1" showEffects="false" ignoreCover="true">
           <Affliction identifier="radiationsickness" strength="60" />
           <Affliction identifier="explosiondamage" strength="3000" />
           <Affliction identifier="burn" strength="3000" />
         </Explosion>
-        <Explosion range="2000.0" ballastfloradamage="15000" structuredamage="15000" itemdamage="15000" force="80" severlimbsprobability="0.75" debris="false" decal="explosion" decalsize="0.75" penetration="1" camerashake="200" camerashakerange="10000" flashrange="2000" flashduration="3" screencolor="255,255,255,255" screencolorrange="5000" screencolorduration="6.0" >
+        <Explosion range="2500.0" ballastfloradamage="15000" structuredamage="15000" itemdamage="15000" force="80" severlimbsprobability="0.75" debris="false" decal="explosion" decalsize="0.75" penetration="1" camerashake="200" camerashakerange="10000" flashrange="2000" flashduration="3" screencolor="255,255,255,255" screencolorrange="5000" screencolorduration="6.0" >
           <Affliction identifier="bleedingnonstop" strength="80" />
           <Affliction identifier="blunttrauma" strength="120" />
           <Affliction identifier="radiationsickness" strength="60" />
@@ -3154,10 +3197,13 @@
     </Fabricate>
     <Throwable characterusable="false" slots="Any,RightHand,LeftHand" canbecombined="true" removeoncombined="true" throwforce="3.5" aimpos="35,-10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true"/>
+      <StatusEffect type="OnBroken" target="NearbyCharacters" range="2000" OneShot="true">
+        <RemoveCharacter/>
+      </StatusEffect>
       <StatusEffect type="OnBroken" target="This">
         <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" range="50000" />
         <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" range="50000" />
-        <Explosion range="1800.0" ballastfloradamage="1200" structuredamage="1500" itemdamage="1500" force="30" ignoreCover="true" severlimbsprobability="5" showEffects="false" penetration="1">
+        <Explosion range="3500.0" ballastfloradamage="1200" structuredamage="1500" itemdamage="1500" force="30" ignoreCover="true" severlimbsprobability="5" showEffects="false" penetration="1">
           <Affliction identifier="explosiondamage" strength="5000" />
           <Affliction identifier="burn" strength="5000" />
         </Explosion>
@@ -3238,10 +3284,13 @@
     </Fabricate>
     <Throwable characterusable="false" slots="Any,RightHand,LeftHand" canbecombined="true" removeoncombined="true" throwforce="3.5" aimpos="35,-10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true"/>
+      <StatusEffect type="OnBroken" target="NearbyCharacters" range="3000" OneShot="true">
+        <RemoveCharacter/>
+      </StatusEffect>
       <StatusEffect type="OnBroken" target="This">
         <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" range="50000" />
         <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" range="50000" />
-        <Explosion range="3000.0" ballastfloradamage="15000" structuredamage="15000" itemdamage="15000" severlimbsprobability="5" showEffects="false" decalsize="0.75" penetration="1" screencolorduration="3.0">
+        <Explosion range="5000.0" ballastfloradamage="15000" structuredamage="15000" itemdamage="15000" severlimbsprobability="5" showEffects="false" decalsize="0.75" penetration="1" screencolorduration="3.0">
           <Affliction identifier="explosiondamage" strength="5000" />
           <Affliction identifier="burn" strength="5000" />
         </Explosion>
@@ -3324,10 +3373,13 @@
     </Fabricate>
     <Throwable characterusable="false" slots="Any,RightHand,LeftHand" canbecombined="true" removeoncombined="true" throwforce="3.5" aimpos="35,-10" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true"/>
+      <StatusEffect type="OnBroken" target="NearbyCharacters" range="7000" OneShot="true">
+        <RemoveCharacter/>
+      </StatusEffect>
       <StatusEffect type="OnBroken" target="This">
         <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" range="50000" />
         <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" range="50000" />
-        <Explosion range="4000.0" ballastfloradamage="1200" structuredamage="1500" itemdamage="1500" force="30" ignoreCover="true" severlimbsprobability="8" debris="false" decal="explosion" decalsize="0.75" penetration="1">
+        <Explosion range="9000.0" ballastfloradamage="1200" structuredamage="1500" itemdamage="1500" force="30" ignoreCover="true" severlimbsprobability="8" debris="false" decal="explosion" decalsize="0.75" penetration="1">
           <Affliction identifier="explosiondamage" strength="5000" />
           <Affliction identifier="burn" strength="5000" />
         </Explosion>
@@ -3614,7 +3666,7 @@
       </Button>
     </CustomInterface>
   </Item>
-  <Item identifier="devilscore" subcategory="Nuclear" category="Weapon" Tags="smallitem,explosive,nuke,WMD,devilscore,highpriority" health="50" maxstacksize="1" Scale="0.2" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_heavy" hideinmenus="true">
+  <Item identifier="devilscore" subcategory="Nuclear" category="Weapon" Tags="smallitem,explosive,nuke,WMD,devilscore,highpriority" health="100" maxstacksize="1" Scale="0.2" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_heavy" hideinmenus="true">
     <InventoryIcon texture="%ModDir:3278494407%/Weapons/Nuclear/devilscore.png" sourcerect="0,0,183,183" />
     <Sprite texture="%ModDir:3278494407%/Weapons/Nuclear/devilscore.png" depth="0.55" sourcerect="0,0,183,183" origin="0.5,0.5" />
     <Body width="30" height="70" density="20" />
@@ -3663,6 +3715,52 @@
       <Containable items="neutron_reflector" />
     </ItemContainer>
   </Item><!--Considering to remove it-->
+  <Item identifier="v_nuke_100k" subcategory="Nuclear" category="Weapon" Tags="smallitem,explosive,nuke,WMD,highpriority" health="20" isdangerous="true" maxstacksize="1" Scale="0.5" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_metal_heavy" hideinmenus="true">
+    <Sprite texture="Content/Map/Outposts/Art/FactionItems.png" depth="0.55" sourcerect="448,198,38,76" origin="0.5,0.5" />
+    <Body width="30" height="70" density="20" />
+    <Deconstruct time="240">
+      <RequiredSkill identifier="mechanical" level="80" />
+      <RequiredSkill identifier="weapons" level="95" />
+      <Item identifier="u235core_medium"/>
+      <Item identifier="fpgacircuit"/>
+      <Item identifier="c4block" amount="3"/>
+    </Deconstruct>
+    <Throwable characterusable="false" slots="Any,RightHand,LeftHand" canbecombined="true" removeoncombined="true" throwforce="3.5" aimpos="35,-10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true"/>
+      <StatusEffect type="OnBroken" target="NearbyCharacters" range="2000" OneShot="true">
+        <RemoveCharacter/>
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" range="50000" />
+        <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" range="50000" />
+        <Explosion range="3500.0" ballastfloradamage="1200" structuredamage="1500" itemdamage="1500" force="30" ignoreCover="true" severlimbsprobability="5" showEffects="false" penetration="1">
+          <Affliction identifier="explosiondamage" strength="5000" />
+          <Affliction identifier="burn" strength="5000" />
+        </Explosion>
+        <Explosion range="6500.0" ballastfloradamage="200" structuredamage="200" itemdamage="200" EmpStrength="200" force="2" severlimbsprobability="0.75" debris="false" decal="explosion" decalsize="0.75" penetration="1" camerashake="200" camerashakerange="10000" flashrange="2000" flashduration="3" screencolor="255,255,255,255" screencolorrange="5000" screencolorduration="10.0" >
+          <Affliction identifier="blunttrauma" strength="50" />
+          <Affliction identifier="stun" strength="2" />
+          <Affliction identifier="emp" strength="1000" />
+          <Affliction identifier="explosiondamage" strength="1000" />
+          <Affliction identifier="burn" strength="1000" />
+          <Affliction identifier="stun" strength="35" />
+          <Affliction identifier="radiationsickness" strength="800" />
+        </Explosion>
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" range="6000" />
+        <sound file="Content/Items/Weapons/ExplosionDebris2.ogg" range="6000" />
+      </StatusEffect>
+    </Throwable>
+    <ItemComponent>
+      <!-- new -->
+      <StatusEffect type="Always" target="This" Condition="-1.0" checkconditionalalways="true">
+        <Conditional hastag="neq magneticsuspensioncrate" targetcontainer="true" />
+        <Conditional voltage="lte 0" targetcontainer="true" />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
 
 
   <!--Meds-->
@@ -3926,7 +4024,7 @@
   </Item>
 
   <!--Craftable CBRN-->
-  <Item identifier="craftable_cbrn_main" category="Misc" cargocontaineridentifier="metalcrate" allowasextracargo="true" Tags="smallitem,spawner" maxstacksize="8" maxstacksizecharacterinventory="1" scale="0.5" hideinmenus="false" impactsoundtag="impact_soft">
+  <Item identifier="craftable_cbrn_main" category="Misc" cargocontaineridentifier="metalcrate" allowasextracargo="true" Tags="smallitem,spawner" maxstacksize="8" maxstacksizecharacterinventory="4" scale="0.5" hideinmenus="false" impactsoundtag="impact_soft">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="448,132,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="6,363,124,67" depth="0.6" origin="0.5,0.5" />
     <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
@@ -3948,6 +4046,34 @@
         <Remove />
       </StatusEffect>
     </Holdable>
+  </Item>
+
+  <!--Temp Misc-->
+  <Item  identifier="cbrn_gift_crate" subcategory="tsm_bags" category="Equipment" tags="crate,allowcleanup,securecrate" scale="0.5" linkable="true" pickdistance="150" showcontentsintooltip="false" impactsoundtag="impact_metal_heavy" fireproof="true" waterproof="true" hideinmenus="true">
+    <Deconstruct time="10">
+      <Item identifier="tsm_triton_bag" />
+      <Item identifier="steel" />
+      <Item identifier="plastic" />
+    </Deconstruct>
+    <Sprite texture="%ModDir:2953749635%/bags/bags.png" depth="0.54" sourcerect="1324,1486,276,105" origin="0.5,0.5" />
+    <Body width="250" height="100" density="50" />
+    <Holdable slots="LeftHand" controlpose="true" holdpos="2,25" handle1="48,28" handle2="48,28" aimable="false" holdangle="-15" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.7" setvalue="true" />
+      <StatusEffect type="OnSpawn" target="This" scale="0.501" delay="0.03" setvalue="true" OneShot="true">
+        <Conditional scale="neq 0.501"/>
+        <SpawnItem identifiers="tsm_triton_bag" spawnposition="ThisInventory" Count="2"/>
+        <SpawnItem identifiers="tsm_hengberley_star" spawnposition="ThisInventory" Count="2"/>
+        <SpawnItem identifiers="tsm_yx_crystallography" spawnposition="ThisInventory" Count="2"/>
+        <SpawnItem identifiers="tsm_fragmentation_grenade" spawnposition="ThisInventory" Count="4"/>
+        <SpawnItem identifiers="nuke_1000k" spawnposition="ThisInventory" Count="2"/>
+        <SpawnItem identifiers="tsm_d6" spawnposition="ThisInventory" Count="2"/>
+        <SpawnItem identifiers="craftable_cbrn_main" spawnposition="ThisInventory" Count="3"/>
+        <SpawnItem identifiers="fsm_throwable" spawnposition="ThisInventory" Count="3"/>
+        <SpawnItem identifiers="breachhammer" spawnposition="ThisInventory" Count="1"/>
+        <!--<SpawnItem identifiers="uhm_bruh_headset" spawnposition="ThisInventory" Count="1"/>-->
+      </StatusEffect>
+    </Holdable>
+    <ItemContainer capacity="12" canbeselected="false" hideitems="true" keepopenwhenequipped="false" movableframe="false" showcontainedstateindicator="false"/>
   </Item>
 
   <!--Abandoned-->
@@ -4033,5 +4159,6 @@
       </StatusEffect>
     </Holdable>
   </Item>
+
 
 </Items>

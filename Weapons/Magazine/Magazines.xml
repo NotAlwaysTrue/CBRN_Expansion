@@ -322,7 +322,7 @@
   </Item>
 
   <!--Coalition-->
-  <Item identifier="tsm_556_45_mgmag_rev" subcategory="tsm_modifiedmagazines" scale="0.23" category="weapon" maxstacksize="3" cargocontaineridentifier="tsm_hazardous_container" linkable="true" tags="smallitem,lm_zd,tsm_556_45_mgmag,lm_magazine,magazine,m249ammo,rev_mag,556_300mag" isdangerous="true" impactsoundtag="impact_metal_light" health="200">
+  <Item identifier="tsm_556_45_mgmag_rev" subcategory="tsm_modifiedmagazines" scale="0.23" category="weapon" maxstacksize="3" cargocontaineridentifier="tsm_hazardous_container" linkable="true" tags="smallitem,lm_zd,tsm_556_45_mgmag,lm_magazine,magazine,m249ammo,rev_mag" isdangerous="true" impactsoundtag="impact_metal_light" health="200">
     <InventoryIcon texture="%ModDir:3278494407%/Weapons/Magazine/coalition.png" sourcerect="2158,175,54,135" origin="0.5,0.5" />
     <Sprite texture="%ModDir:3278494407%/Weapons/Magazine/coalition.png" depth="0.54" sourcerect="2158,175,54,135" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -400,7 +400,7 @@
     </Holdable>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item identifier="lm_556_mag_rev" subcategory="tsm_modifiedmagazines" scale="0.23" category="weapon" maxstacksize="6" cargocontaineridentifier="tsm_hazardous_container" linkable="true" tags="lm_magazine,smallitem,lm_cjzd,556mag,lm_556cj_mag,lm_mag,magazine,556ammo,rev_mag" impactsoundtag="impact_metal_light" health="31">
+  <Item identifier="lm_556_mag_rev" subcategory="tsm_modifiedmagazines" scale="0.23" category="weapon" maxstacksize="6" cargocontaineridentifier="tsm_hazardous_container" linkable="true" tags="lm_magazine,smallitem,lm_cjzd,556mag,lm_556cj_mag,lm_mag,magazine,556ammo,rev_mag,556_300mag" impactsoundtag="impact_metal_light" health="31">
     <InventoryIcon texture="%ModDir:3278494407%/Weapons/Magazine/coalition.png" sourcerect="2446,0,49,93" origin="0.5,0.5" />
     <Sprite texture="%ModDir:3278494407%/Weapons/Magazine/coalition.png" depth="0.56" sourcerect="2446,0,49,93" origin="0.5,0.5" />
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder" />
@@ -1393,7 +1393,7 @@
     <Sprite texture="%ModDir:3278494407%/Weapons/Other/M107Mag.png" depth="0.56" sourcerect="0,0,810,851" origin="0.5,0.5" />
     <Body width="100" height="200" density="50" />
     <Deconstruct time="18">
-      <Item identifier="tsm_triton_bag" outcondition="0.5" />
+      <Item identifier="tsm_triton_bag" outcondition="0.5" mincondition="0.99"/>
       <Item identifier="titanium" amount="3" />
       <Item identifier="steel" amount="1" />
     </Deconstruct>
@@ -1620,7 +1620,7 @@
         <Affliction identifier="bleedingnonstop" strength="2" probability="0.3" />
         <Affliction identifier="stun" strength="0.3" probability="0.1" />
       </Attack>
-      <StatusEffect type="OnImpact" target="UseTarget">
+      <StatusEffect type="OnImpact" target="This">
         <Explosion range="30.0" showEffects="false" penetration="1">
           <Affliction identifier="triton_7L" strength="6" dividebylimbcount="true"/>
         </Explosion>
@@ -1653,7 +1653,7 @@
         <Affliction identifier="triton_7L" strength="9" MultiplyByMaxVitality="true"/>
         <Affliction identifier="stun" strength="0.3" probability="0.25" />
       </Attack>
-      <StatusEffect type="OnImpact" target="UseTarget">
+      <StatusEffect type="OnImpact" target="This">
         <Explosion range="30.0" showEffects="false" penetration="1">
           <Affliction identifier="triton_7L" strength="8" dividebylimbcount="true"/>
         </Explosion>
@@ -1687,7 +1687,7 @@
         <Affliction identifier="stun" strength="0.2" />
         <Affliction identifier="stun" strength="0.3" probability="0.15" />
       </Attack>
-      <StatusEffect type="OnImpact" target="UseTarget">
+      <StatusEffect type="OnImpact" target="This">
         <Explosion range="30.0" showEffects="false" penetration="1">
           <Affliction identifier="triton_7L" strength="8" dividebylimbcount="true"/>
         </Explosion>
@@ -1720,7 +1720,7 @@
         <Affliction identifier="bleedingnonstop" strength="4" probability="0.3" />
         <Affliction identifier="stun" strength="0.1" probability="0.1" />
       </Attack>
-      <StatusEffect type="OnImpact" target="UseTarget">
+      <StatusEffect type="OnImpact" target="This">
         <Explosion range="30.0" showEffects="false" penetration="1">
           <Affliction identifier="triton_7L" strength="6" dividebylimbcount="true"/>
         </Explosion>
@@ -1753,7 +1753,7 @@
         <Affliction identifier="bleedingnonstop" strength="8" probability="0.3" />
         <Affliction identifier="stun" strength="0.1" probability="0.1" />
       </Attack>
-      <StatusEffect type="OnImpact" target="UseTarget">
+      <StatusEffect type="OnImpact" target="This">
         <Explosion range="30.0" showEffects="false" penetration="1">
           <Affliction identifier="triton_7L" strength="6" dividebylimbcount="true"/>
         </Explosion>
@@ -1786,7 +1786,7 @@
         <Affliction identifier="bleedingnonstop" strength="8" probability="0.15" />
         <Affliction identifier="stun" strength="0.3" probability="0.15" />
       </Attack>
-      <StatusEffect type="OnImpact" target="UseTarget">
+      <StatusEffect type="OnImpact" target="This">
         <Explosion range="35.0" showEffects="false" penetration="1">
           <Affliction identifier="triton_7L" strength="6" dividebylimbcount="true"/>
         </Explosion>
@@ -1819,7 +1819,7 @@
         <Affliction identifier="bleedingnonstop" strength="10" probability="0.5" />
         <Affliction identifier="stun" strength="1" />
       </Attack>
-      <StatusEffect type="OnImpact" target="UseTarget">
+      <StatusEffect type="OnImpact" target="This">
         <Explosion range="40.0" showEffects="false" penetration="1">
           <Affliction identifier="triton_7L" strength="10" dividebylimbcount="true"/>
         </Explosion>
@@ -1852,7 +1852,7 @@
         <Affliction identifier="triton_7L" strength="6" MultiplyByMaxVitality="true"/>
         <Affliction identifier="stun" strength="0.1" probability="0.1" />
       </Attack>
-      <StatusEffect type="OnImpact" target="UseTarget">
+      <StatusEffect type="OnImpact" target="This">
         <Explosion range="30.0" showEffects="false" penetration="1">
           <Affliction identifier="triton_7L" strength="6" dividebylimbcount="true"/>
         </Explosion>
@@ -1884,7 +1884,7 @@
         <Affliction identifier="bleedingnonstop" strength="10" />
         <Affliction identifier="stun" strength="1" probability="0.5" />
       </Attack>
-      <StatusEffect type="OnImpact" target="UseTarget">
+      <StatusEffect type="OnImpact" target="This">
         <Explosion range="50.0" showEffects="false" penetration="1">
           <Affliction identifier="triton_7L" strength="9" MultiplyByMaxVitality="true"/>
         </Explosion>
@@ -1913,7 +1913,7 @@
         <Affliction identifier="explosiondamage" strength="20" />
         <Affliction identifier="burn" strength="2" />
       </Attack>
-      <StatusEffect type="OnImpact" target="UseTarget" OneShot="true">
+      <StatusEffect type="OnImpact" target="This" OneShot="true">
         <Explosion range="60.0" structuredamage="40" itemdamage="60" force="4" severlimbsprobability="0.7" debris="false" decal="explosion" decalsize="0.75" penetration="0.6" >
           <Affliction identifier="explosiondamage" strength="30" />
           <Affliction identifier="lacerations" strength="16" />
@@ -1990,27 +1990,22 @@
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" density="30" />
-    <Projectile characterusable="false" hitscan="false" launchImpulse="15" penetration="0.0" MaxTargetsToHit="1" spread="0.1" DamageDoors="true">
+    <Projectile characterusable="false" hitscan="false" launchImpulse="30" penetration="0.0" MaxTargetsToHit="1" spread="0.1" DamageDoors="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="80" velocitymax="100" colormultiplier="255,0,0,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="2" targetforce="3" itemdamage="18" severlimbsprobability="0.0" />
-      <StatusEffect type="OnImpact" target="This">
-        <Explosion range="80.0" ballastfloradamage="45" structuredamage="45" itemdamage="45" force="10" severlimbsprobability="0.3" debris="true" decal="explosion" interactthroughwalls="false" decalsize="0.5" penetration="0.4">
-          <Affliction identifier="explosiondamage" strength="60" dividebylimbcount="true" />
-          <Affliction identifier="burn" strength="10" probability="0.7" dividebylimbcount="false" />
-          <Affliction identifier="bleeding" strength="20" probability="0.3" dividebylimbcount="false" />
-          <Affliction identifier="stun" strength="0.03" />
-        </Explosion>
-      </StatusEffect>
-      <StatusEffect type="OnImpact" target="UseTarget">
-        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
-      </StatusEffect>
-      <StatusEffect type="OnImpact" target="UseTarget">
-        <Conditional entitytype="eq Structure" />
-        <Conditional hastag="eq door" />
-        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-      </StatusEffect>
       <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1.2">
         <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" stackable="false">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" delaytype="ReachCursor" condition="-100" OneShot="true">
+        <Explosion range="80.0" ballastfloradamage="45" structuredamage="45" itemdamage="45" force="10" severlimbsprobability="0.3" decal="explosion" interactthroughwalls="false" decalsize="0.5" penetration="0.4">
+          <Affliction identifier="explosiondamage" strength="60" dividebylimbcount="true" />
+          <Affliction identifier="burn" strength="10" probability="0.7" dividebylimbcount="false" />
+          <Affliction identifier="stun" strength="0.03" />
+        </Explosion>
+        <SpawnItem identifier="flakshrapnel" spawnposition="This" count="30" aimspread="360" rotationtype="Collider" rotation="0" />
       </StatusEffect>
     </Projectile>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -2036,8 +2031,8 @@
   <Item identifier="drl3_dumb_warhead" category="Weapon" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="None" hideinmenus="true" scale="0.5" impacttolerance="0">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
-    <Body width="40" height="30" Mass="1" />
-    <Projectile characterusable="false" hitscan="true" launchImpulse="25" penetration="1.0" spread="0.0" DamageDoors="true">
+    <Body width="40" height="30" Mass="1" gravityscale="0"/>
+    <Projectile characterusable="false" hitscan="false" launchImpulse="25" penetration="1.0" spread="0.0" DamageDoors="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="80" velocitymax="100" colormultiplier="255,0,0,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="2" targetforce="25" itemdamage="18" severlimbsprobability="1.0">
         <Affliction identifier="gunshotwound" amount="24" />
@@ -2065,8 +2060,8 @@
   <Item identifier="drl3_inc_warhead" category="Weapon" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="None" hideinmenus="true" scale="0.5" impacttolerance="0">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
-    <Body width="40" height="30" Mass="1" />
-    <Projectile characterusable="false" hitscan="true" launchImpulse="25" penetration="0.01" spread="0.0" DamageDoors="true">
+    <Body width="40" height="30" Mass="1" gravityscale="0"/>
+    <Projectile characterusable="false" hitscan="false" launchImpulse="25" penetration="0.01" spread="0.0" DamageDoors="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="80" velocitymax="100" colormultiplier="255,0,0,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="2" targetforce="3" itemdamage="18" severlimbsprobability="0.0" />
       <StatusEffect type="OnImpact" target="This" OnlyInside="true">
@@ -2104,8 +2099,8 @@
   <Item identifier="drl3_fab_warhead" category="Weapon" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="None" hideinmenus="true" scale="0.5" impacttolerance="0">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
-    <Body width="40" height="30" Mass="1" />
-    <Projectile characterusable="false" hitscan="true" launchImpulse="25" penetration="0.01" spread="0.0" DamageDoors="true">
+    <Body width="40" height="30" Mass="1" gravityscale="0"/>
+    <Projectile characterusable="false" hitscan="false" launchImpulse="25" penetration="0.01" spread="0.0" DamageDoors="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="80" velocitymax="100" colormultiplier="255,0,0,175" scalemultiplier="1,0.6" />
       <Attack structuredamage="2" targetforce="3" itemdamage="18" severlimbsprobability="0.0" />
       <StatusEffect type="OnImpact" target="This" OnlyInside="true">
@@ -2141,7 +2136,7 @@
   <Item identifier="drl3_heat_warhead" category="Weapon" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="None" hideinmenus="true" scale="0.5" impacttolerance="0">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
-    <Body width="40" height="20" Mass="1" />
+    <Body width="40" height="20" Mass="1" gravityscale="0"/>
     <Projectile characterusable="false" launchimpulse="25.0" damagedoors="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="80" velocitymax="100" colormultiplier="255,0,0,175" scalemultiplier="1,0.6" />
       <StatusEffect type="OnActive" target="This" lifetime="2">
@@ -2315,7 +2310,7 @@
   <Item identifier="mk153_heat_warhead" category="Weapon" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="None" hideinmenus="true" scale="0.5" impacttolerance="0">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
-    <Body width="40" height="20" Mass="1" />
+    <Body width="40" height="20" Mass="1" gravityscale="0"/>
     <Projectile characterusable="false" hitscan="false" launchimpulse="30.0" damagedoors="true">
       <StatusEffect type="OnActive" target="This" lifetime="2">
         <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="5" velocitymin="-10" velocitymax="-100" scalemin="0.9" scalemax="1.5" />
@@ -2341,7 +2336,7 @@
   <Item identifier="mk153_theat_warhead" category="Weapon" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="None" hideinmenus="true" scale="0.5" impacttolerance="0">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
-    <Body width="40" height="20" Mass="1" />
+    <Body width="40" height="20" Mass="1" gravityscale="0"/>
     <Projectile characterusable="false" hitscan="false" launchimpulse="25.0" damagedoors="true">
       <StatusEffect type="OnActive" target="This" lifetime="2">
         <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="5" velocitymin="-10" velocitymax="-100" scalemin="0.9" scalemax="1.5" />
@@ -2365,8 +2360,8 @@
   <Item identifier="mk153_inc_warhead" category="Weapon" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="None" hideinmenus="true" scale="0.5" impacttolerance="0">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
-    <Body width="40" height="30" Mass="1" />
-    <Projectile characterusable="false" hitscan="true" launchImpulse="30" penetration="0.01" spread="0.0" DamageDoors="true">
+    <Body width="40" height="30" Mass="1" gravityscale="0"/>
+    <Projectile characterusable="false" hitscan="false" launchImpulse="30" penetration="0.01" spread="0.0" DamageDoors="true">
       <Attack structuredamage="2" targetforce="3" itemdamage="18" severlimbsprobability="0.0" />
       <StatusEffect type="OnImpact" target="This" OnlyInside="true">
         <Explosion range="400.0" ballastfloradamage="50" structuredamage="15" itemdamage="35" force="20" flames="true" applyFireEffects="true" interactthroughwalls="false" decal="explosion" decalsize="0.5">
@@ -2395,8 +2390,8 @@
   <Item identifier="mk153_he_warhead" category="Weapon" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="None" hideinmenus="true" scale="0.5" impacttolerance="0">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
-    <Body width="40" height="20" Mass="1" />
-    <Projectile characterusable="false" Hitscan="true" launchimpulse="30.0" damagedoors="true">
+    <Body width="40" height="20" Mass="1" gravityscale="0"/>
+    <Projectile characterusable="false" hitscan="false" launchimpulse="30.0" damagedoors="true">
       <StatusEffect type="OnActive" target="This" lifetime="2">
         <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="5" velocitymin="-10" velocitymax="-100" scalemin="0.9" scalemax="1.5" />
       </StatusEffect>
@@ -2420,8 +2415,8 @@
   <Item identifier="mk153_bdm_warhead" category="Weapon" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="None" hideinmenus="true" scale="0.5" impacttolerance="0">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
-    <Body width="40" height="20" Mass="0" BodyType="Kinematic"/>
-    <Projectile characterusable="false" launchimpulse="25.0" maxtargetstohit="30" damagedoors="true">
+    <Body width="40" height="20" Mass="0" BodyType="Kinematic" gravityscale="0"/>
+    <Projectile characterusable="false" hitscan="false" launchimpulse="25.0" maxtargetstohit="30" damagedoors="true">
       <StatusEffect type="OnActive" target="This" lifetime="2">
         <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="5" velocitymin="-10" velocitymax="-100" scalemin="0.9" scalemax="1.5" />
       </StatusEffect>
