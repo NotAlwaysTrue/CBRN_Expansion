@@ -247,7 +247,7 @@
       </Attack>
       <StatusEffect type="OnActive" targettype="This" IsOn="true" voltage="1.00" SoundRange="50000" gravityscale="0" setvalue="true" OneShot="true"/>
       <StatusEffect type="OnActive" target="This" disabledeltatime="true" condition="-1" delay="1" OneShot="true"/>
-      <StatusEffect type="OnActive" target="This" condition="-100" delay="15"/>
+      <StatusEffect type="OnActive" target="This" condition="-100" duration="15"/>
       <StatusEffect type="OnActive" target="This">
         <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="1" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" lifetimemultiplier="0.5"/>
       </StatusEffect>
@@ -325,7 +325,7 @@
       </Attack>
       <StatusEffect type="OnActive" target="This" IsOn="true" voltage="1.00" SoundRange="500000" gravityscale="0" scale="0.551" setvalue="true"/>
       <StatusEffect type="OnActive" target="This" disabledeltatime="true" condition="-1" delay="0.7" OneShot="true"/>
-      <StatusEffect type="OnActive" target="This" condition="-100" delay="15"/>
+      <StatusEffect type="OnActive" target="This" condition="-100" duration="15"/>
       <StatusEffect type="OnActive" target="This" OneShot="true">
         <sound file="%ModDir:3278494407%/Misc/Oggs/launch.ogg" type="OnActive" range="1800.0"/>
       </StatusEffect>
@@ -417,7 +417,7 @@
       </Attack>
       <StatusEffect type="OnActive" target="This" IsOn="true" voltage="1.00" SoundRange="500000" gravityscale="0" scale="0.551" setvalue="true"/>
       <StatusEffect type="OnActive" target="This" disabledeltatime="true" condition="-1" delay="0.7" OneShot="true"/>
-      <StatusEffect type="OnActive" target="This" condition="-100" delay="15"/>
+      <StatusEffect type="OnActive" target="This" condition="-100" duration="15"/>
       <StatusEffect type="OnActive" target="This" OneShot="true">
         <sound file="%ModDir:3278494407%/Misc/Oggs/launch.ogg" type="OnActive" range="1800.0"/>
       </StatusEffect>
@@ -515,7 +515,7 @@
       </Attack>
       <StatusEffect type="OnActive" target="This" IsOn="true" voltage="1.00" SoundRange="500000" gravityscale="0" scale="0.551" setvalue="true"/>
       <StatusEffect type="OnActive" target="This" disabledeltatime="true" condition="-1" delay="0.7" OneShot="true"/>
-      <StatusEffect type="OnActive" target="This" condition="-100" delay="15"/>
+      <StatusEffect type="OnActive" target="This" condition="-100" duration="15"/>
       <StatusEffect type="OnActive" target="This" OneShot="true">
         <sound file="%ModDir:3278494407%/Misc/Oggs/launch.ogg" type="OnActive" range="1800.0"/>
       </StatusEffect>
@@ -773,7 +773,7 @@
       </Attack>
       <StatusEffect type="OnActive" target="This" IsOn="true" voltage="1.00" SoundRange="500000" gravityscale="0" scale="0.551" setvalue="true"/>
       <StatusEffect type="OnActive" target="This" disabledeltatime="true" condition="-1" delay="0.7" OneShot="true"/>
-      <StatusEffect type="OnActive" target="This" condition="-100" delay="15"/>
+      <StatusEffect type="OnActive" target="This" condition="-100" duration="10"/>
       <StatusEffect type="OnActive" target="This" OneShot="true">
         <sound file="%ModDir:3278494407%/Misc/Oggs/launch.ogg" type="OnActive" range="1800.0"/>
       </StatusEffect>
@@ -853,7 +853,7 @@
       </Attack>
       <StatusEffect type="OnActive" target="This" IsOn="true" voltage="1.00" SoundRange="500000" gravityscale="0" scale="0.551" setvalue="true"/>
       <StatusEffect type="OnActive" target="This" disabledeltatime="true" condition="-1" delay="0.7" OneShot="true"/>
-      <StatusEffect type="OnActive" target="This" condition="-100" delay="15"/>
+      <StatusEffect type="OnActive" target="This" condition="-100" duration="15"/>
       <StatusEffect type="OnActive" target="This" OneShot="true">
         <sound file="%ModDir:3278494407%/Misc/Oggs/launch.ogg" type="OnActive" range="1800.0"/>
       </StatusEffect>
@@ -930,7 +930,7 @@
       </Attack>
       <StatusEffect type="OnActive" target="This" IsOn="true" voltage="1.00" SoundRange="500000" gravityscale="0" scale="0.551" setvalue="true"/>
       <StatusEffect type="OnActive" target="This" disabledeltatime="true" condition="-1" delay="0.7" OneShot="true"/>
-      <StatusEffect type="OnActive" target="This" condition="-100" delay="15"/>
+      <StatusEffect type="OnActive" target="This" condition="-100" duration="15"/>
       <StatusEffect type="OnActive" target="This" OneShot="true">
         <sound file="%ModDir:3278494407%/Misc/Oggs/launch.ogg" type="OnActive" range="1800.0"/>
       </StatusEffect>

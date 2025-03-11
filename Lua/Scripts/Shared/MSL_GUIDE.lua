@@ -95,7 +95,7 @@ Hook.Patch("Barotrauma.Items.Components.Turret", "Launch", function(instance,pta
 			ptable.preventExecution = true
 			return
 		end
-	end 
+	end
 	if instance.item.HasTag("vls") then
 		instance.RotationLimits = Vector2(0,360)                             --Remove rotationlimit to allow guidence
 		instance.set_Rotation(instance.item.RotationRad - math.pi * 0.5)     --Launch Vertically
@@ -140,13 +140,13 @@ Hook.Add("think", "CBRN_SACLOS_Guide", function ()
     for missile in ActiveMissiles do
 		if not missile.item.removed and not missile.isDead then
 			
-			if missile.tick < GameTickRate * missile.msldata.GUIDENCE_DELAY then
+			missileVelocity = missile.item.body.LinearVelocity
+			missileDirection = getDirection(missileVelocity)
+
+			if missile.tick < GameTickRate * missile.msldata.GUIDENCE_DELAY then --Prevent missiles from accept guidence while in safety
 				missile.tick = missile.tick + 1
 				return
 			end
-
-			missileVelocity = missile.item.body.LinearVelocity
-			missileDirection = getDirection(missileVelocity)
 
 			propulsionForce = radToVec(missileDirection) * missile.msldata.MAX_ACCELERATION
 			missile.item.body.ApplyLinearImpulse(propulsionForce)
@@ -154,7 +154,7 @@ Hook.Add("think", "CBRN_SACLOS_Guide", function ()
 			if missile.isTurretLaunched then
 				WeaponDirection = missile.launcher.targetRotation
 			else
-				WeaponDirection = 0 - missile.launcher.body.Rotation
+				WeaponDirection = -missile.launcher.body.Rotation
 			end
 			if missile.isAuto then
 				if missile.destarget == nil then return end
@@ -210,5 +210,6 @@ Hook.Add("msl.marktarget", "msl.marktarget", function(effect, deltaTime, item, t
     local target = targets[1]
 	locktarget[launcher] = target
 end)
+
 
 -- Original Code created by 4SunnyH

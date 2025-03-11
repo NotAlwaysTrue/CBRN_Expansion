@@ -705,13 +705,13 @@
   <entitydescription.uhm_bruh_headset>不嘻嘻</entitydescription.uhm_bruh_headset>
 
   <entityname.vls_large>Mk.53 重型通用垂直发射系统</entityname.vls_large>
-  <entitydescription.vls_large>技术上是一套更大更先进的垂直发射系统</entitydescription.vls_large>
+  <entitydescription.vls_large>更大的垂直发射系统, </entitydescription.vls_large>
   <entityname.vlsloader_large>重型通用垂直发射系统 弹药存放仓</entityname.vlsloader_large>
 
   <entityname.sm_9_prsm>标准-9 精确打击导弹</entityname.sm_9_prsm>
   <entitydescription.sm_9_prsm>更大,更重,飞得更快,装的更多 \n基本上就是一枚高速冲锋的炸药桶 \n没有人会愿意被这玩意砸上一发的</entitydescription.sm_9_prsm>
   <entityname.vls_msl_container>重型垂直发射系统 储运一体发射箱</entityname.vls_msl_container>
-  <entitydescription.vls_msl_container>可用于将小型弹药装入重型垂直发射系统以从该系统发射</entitydescription.vls_msl_container>
+  <entitydescription.vls_msl_container>可以装入小型弹药以允许这些弹药从重型垂直发射系统中发射</entitydescription.vls_msl_container>
   <entityname.cbrn_m32a1_mgl>M32A1榴弹发射器</entityname.cbrn_m32a1_mgl>
   <entitydescription.cbrn_m32a1_mgl>更好的M32, 在几乎任何方面</entitydescription.cbrn_m32a1_mgl>
 </infotexts>

@@ -1620,7 +1620,7 @@
         <Affliction identifier="bleedingnonstop" strength="2" probability="0.3" />
         <Affliction identifier="stun" strength="0.3" probability="0.1" />
       </Attack>
-      <StatusEffect type="OnImpact" target="UseTarget">
+      <StatusEffect type="OnImpact" target="This">
         <Explosion range="30.0" showEffects="false" penetration="1">
           <Affliction identifier="triton_7L" strength="6" dividebylimbcount="true"/>
         </Explosion>
@@ -1653,7 +1653,7 @@
         <Affliction identifier="triton_7L" strength="9" MultiplyByMaxVitality="true"/>
         <Affliction identifier="stun" strength="0.3" probability="0.25" />
       </Attack>
-      <StatusEffect type="OnImpact" target="UseTarget">
+      <StatusEffect type="OnImpact" target="This">
         <Explosion range="30.0" showEffects="false" penetration="1">
           <Affliction identifier="triton_7L" strength="8" dividebylimbcount="true"/>
         </Explosion>
@@ -1687,7 +1687,7 @@
         <Affliction identifier="stun" strength="0.2" />
         <Affliction identifier="stun" strength="0.3" probability="0.15" />
       </Attack>
-      <StatusEffect type="OnImpact" target="UseTarget">
+      <StatusEffect type="OnImpact" target="This">
         <Explosion range="30.0" showEffects="false" penetration="1">
           <Affliction identifier="triton_7L" strength="8" dividebylimbcount="true"/>
         </Explosion>
@@ -1720,7 +1720,7 @@
         <Affliction identifier="bleedingnonstop" strength="4" probability="0.3" />
         <Affliction identifier="stun" strength="0.1" probability="0.1" />
       </Attack>
-      <StatusEffect type="OnImpact" target="UseTarget">
+      <StatusEffect type="OnImpact" target="This">
         <Explosion range="30.0" showEffects="false" penetration="1">
           <Affliction identifier="triton_7L" strength="6" dividebylimbcount="true"/>
         </Explosion>
@@ -1753,7 +1753,7 @@
         <Affliction identifier="bleedingnonstop" strength="8" probability="0.3" />
         <Affliction identifier="stun" strength="0.1" probability="0.1" />
       </Attack>
-      <StatusEffect type="OnImpact" target="UseTarget">
+      <StatusEffect type="OnImpact" target="This">
         <Explosion range="30.0" showEffects="false" penetration="1">
           <Affliction identifier="triton_7L" strength="6" dividebylimbcount="true"/>
         </Explosion>
@@ -1786,7 +1786,7 @@
         <Affliction identifier="bleedingnonstop" strength="8" probability="0.15" />
         <Affliction identifier="stun" strength="0.3" probability="0.15" />
       </Attack>
-      <StatusEffect type="OnImpact" target="UseTarget">
+      <StatusEffect type="OnImpact" target="This">
         <Explosion range="35.0" showEffects="false" penetration="1">
           <Affliction identifier="triton_7L" strength="6" dividebylimbcount="true"/>
         </Explosion>
@@ -1819,7 +1819,7 @@
         <Affliction identifier="bleedingnonstop" strength="10" probability="0.5" />
         <Affliction identifier="stun" strength="1" />
       </Attack>
-      <StatusEffect type="OnImpact" target="UseTarget">
+      <StatusEffect type="OnImpact" target="This">
         <Explosion range="40.0" showEffects="false" penetration="1">
           <Affliction identifier="triton_7L" strength="10" dividebylimbcount="true"/>
         </Explosion>
@@ -1852,7 +1852,7 @@
         <Affliction identifier="triton_7L" strength="6" MultiplyByMaxVitality="true"/>
         <Affliction identifier="stun" strength="0.1" probability="0.1" />
       </Attack>
-      <StatusEffect type="OnImpact" target="UseTarget">
+      <StatusEffect type="OnImpact" target="This">
         <Explosion range="30.0" showEffects="false" penetration="1">
           <Affliction identifier="triton_7L" strength="6" dividebylimbcount="true"/>
         </Explosion>
@@ -1884,7 +1884,7 @@
         <Affliction identifier="bleedingnonstop" strength="10" />
         <Affliction identifier="stun" strength="1" probability="0.5" />
       </Attack>
-      <StatusEffect type="OnImpact" target="UseTarget">
+      <StatusEffect type="OnImpact" target="This">
         <Explosion range="50.0" showEffects="false" penetration="1">
           <Affliction identifier="triton_7L" strength="9" MultiplyByMaxVitality="true"/>
         </Explosion>
@@ -1913,7 +1913,7 @@
         <Affliction identifier="explosiondamage" strength="20" />
         <Affliction identifier="burn" strength="2" />
       </Attack>
-      <StatusEffect type="OnImpact" target="UseTarget" OneShot="true">
+      <StatusEffect type="OnImpact" target="This" OneShot="true">
         <Explosion range="60.0" structuredamage="40" itemdamage="60" force="4" severlimbsprobability="0.7" debris="false" decal="explosion" decalsize="0.75" penetration="0.6" >
           <Affliction identifier="explosiondamage" strength="30" />
           <Affliction identifier="lacerations" strength="16" />
@@ -2005,10 +2005,7 @@
           <Affliction identifier="burn" strength="10" probability="0.7" dividebylimbcount="false" />
           <Affliction identifier="stun" strength="0.03" />
         </Explosion>
-        <Explosion range="200.0" force="20" DistanceFalloff="false" severlimbsprobability="0.3" debris="true" decalsize="0.5" showEffects="false" penetration="0.3">
-          <Affliction identifier="lacerations" strength="10" dividebylimbcount="false" />
-          <Affliction identifier="bleeding" strength="30" probability="0.7"/>
-        </Explosion>
+        <SpawnItem identifier="flakshrapnel" spawnposition="This" count="30" aimspread="360" rotationtype="Collider" rotation="0" />
       </StatusEffect>
     </Projectile>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
