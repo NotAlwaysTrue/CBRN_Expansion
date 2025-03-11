@@ -1,34 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="九州武库·CBRN拓展" modversion="4.5.13" corepackage="False" steamworkshopid="3278494407" gameversion="1.7.7.0">
-  <Item file="%ModDir%/gear.xml" />
-  <Item file="%ModDir%/material.xml" />
-  <Item file="%ModDir%/shell.xml" />
-  <Item file="%ModDir%/VLS.xml" />
-  <Item file="%ModDir%/override.xml" />
-  <Item file="%ModDir%/Job/ItemCBRN.xml" />
-  <Item file="%ModDir%/Weapons/Magazine/Magazines.xml" />
-  <Item file="%ModDir%/AI/GearAI.xml" />
-  <Text file="%ModDir%/localization/English.xml" />
-  <Text file="%ModDir%/localization/SimplifiedChinese.xml" />
-  <Afflictions file="%ModDir%/Afflictions.xml" />
-  <Afflictions file="%ModDir%/AI/AfflictionsAI.xml" />
-  <Structure file="%ModDir%/Structure.xml" />
-  <Particles file="%ModDir%/Particles.xml" />
-  <RandomEvents file="%ModDir%/Events.xml" />
-  <RandomEvents file="%ModDir%/OverrideEvents.xml" />
-  <Character file="%ModDir%/Characters/humaneyi_weaponized/humaneyi_weaponized.xml" />
-  <Character file="%ModDir%/Characters/sapphire/sapphire.xml" />
-  <Character file="%ModDir%/Characters/sapphirepod/sapphirepod.xml" />
-  <Character file="%ModDir%/Characters/tsm_cbrnert_sapphire/tsm_cbrnert_sapphire.xml" />
-  <Missions file="%Moddir%/Missions.xml" />
-  <NPCSets file="%Moddir%/MissionNpcs.xml" />
-  <Jobs file="%ModDir%/Job/Jobs.xml" />
-  <Afflictions file="%ModDir%/Job/AfflictionsCBRN.xml" />
-  <Talents file="%ModDir%/Job/TalentsCBRN.xml" />
-  <TalentTrees file="%ModDir%/Job/TalentTrees.xml" />
-  <Character file="%ModDir%/Characters/Cbrn_mech/Cbrn_mech.xml" />
-  <Other file="%ModDir%/Lua/Autorun/init.lua" />
-  <Other file="%ModDir%/Lua/Autorun/assistfunctions.lua" />
-  <Other file="%ModDir%/Lua/Autorun/config.lua" />
-  <Submarine file="%ModDir%/Typhon2-Missile Cruiser.sub" />
+<contentpackage name="九州武库·CBRN拓展" modversion="5.0.0" corepackage="False" steamworkshopid="3278494407" gameversion="1.7.7.0">
+
 </contentpackage>
