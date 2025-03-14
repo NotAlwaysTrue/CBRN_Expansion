@@ -247,7 +247,6 @@
       </Attack>
       <StatusEffect type="OnActive" targettype="This" IsOn="true" voltage="1.00" SoundRange="50000" gravityscale="0" setvalue="true" OneShot="true"/>
       <StatusEffect type="OnActive" target="This" disabledeltatime="true" condition="-1" delay="1" OneShot="true"/>
-      <StatusEffect type="OnActive" target="This" condition="-100" duration="15"/>
       <StatusEffect type="OnActive" target="This">
         <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="1" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" lifetimemultiplier="0.5"/>
       </StatusEffect>
@@ -288,7 +287,7 @@
     </LightComponent>
     <AiTarget soundrange="50000" sonarlabel="sig.ldagw" sight="500" staticsight="true"/>
   </Item>
-  <Item identifier="std_8_utam" tags="railgunammo,saclosmsl,vls_ammo,highpriority" showcontentsintooltip="true" category="Weapon" scale="0.55" sonarsize="8">
+  <Item identifier="std_8_utam" tags="railgunammo,saclosmsl,vls_ammo,highpriority" showcontentsintooltip="true" category="Weapon" scale="0.55" sonarsize="8">                      
     <InventoryIcon texture="%ModDir:3278494407%/Weapons/Explosives/shell.png" sourcerect="5,131,215,30" origin="0.5,0.5" />
     <Sprite texture="%ModDir:3278494407%/Weapons/Explosives/shell.png" sourcerect="5,131,215,30" depth="0.55" origin="0.5,0.5" />
     <Body width="215" height="30" mass="100" bodytype="Dynamic" gravityscale="1" friction="0" waterdragcoefficient="0" />
@@ -325,7 +324,7 @@
       </Attack>
       <StatusEffect type="OnActive" target="This" IsOn="true" voltage="1.00" SoundRange="500000" gravityscale="0" scale="0.551" setvalue="true"/>
       <StatusEffect type="OnActive" target="This" disabledeltatime="true" condition="-1" delay="0.7" OneShot="true"/>
-      <StatusEffect type="OnActive" target="This" condition="-100" duration="15"/>
+      <StatusEffect type="OnActive" target="This" condition="-100" delay="20" disabledeltatime="true" setvalue="true" oneshot="true"/>
       <StatusEffect type="OnActive" target="This" OneShot="true">
         <sound file="%ModDir:3278494407%/Misc/Oggs/launch.ogg" type="OnActive" range="1800.0"/>
       </StatusEffect>
@@ -339,7 +338,6 @@
       <StatusEffect type="OnImpact" target="This" condition="-100.0" >
         <Conditional Condition="lt 100" />
       </StatusEffect>
-      <StatusEffect type="OnActive" target="This" condition="-100" delay="20"/>
       <StatusEffect type="OnBroken" target="This">
         <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="Random" range="50000" />
         <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="Random" range="50000" />
@@ -417,7 +415,7 @@
       </Attack>
       <StatusEffect type="OnActive" target="This" IsOn="true" voltage="1.00" SoundRange="500000" gravityscale="0" scale="0.551" setvalue="true"/>
       <StatusEffect type="OnActive" target="This" disabledeltatime="true" condition="-1" delay="0.7" OneShot="true"/>
-      <StatusEffect type="OnActive" target="This" condition="-100" duration="15"/>
+      <StatusEffect type="OnActive" target="This" condition="-100" delay="20" disabledeltatime="true" setvalue="true" oneshot="true"/>
       <StatusEffect type="OnActive" target="This" OneShot="true">
         <sound file="%ModDir:3278494407%/Misc/Oggs/launch.ogg" type="OnActive" range="1800.0"/>
       </StatusEffect>
@@ -431,7 +429,6 @@
       <StatusEffect type="OnImpact" target="This" condition="-100.0" >
         <Conditional Condition="lt 100" />
       </StatusEffect>
-      <StatusEffect type="OnActive" target="This" condition="-100" delay="20"/>
       <StatusEffect type="OnBroken" target="This">
         <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="Random" range="50000" />
         <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="Random" range="50000" />
@@ -515,7 +512,7 @@
       </Attack>
       <StatusEffect type="OnActive" target="This" IsOn="true" voltage="1.00" SoundRange="500000" gravityscale="0" scale="0.551" setvalue="true"/>
       <StatusEffect type="OnActive" target="This" disabledeltatime="true" condition="-1" delay="0.7" OneShot="true"/>
-      <StatusEffect type="OnActive" target="This" condition="-100" duration="15"/>
+      <StatusEffect type="OnActive" target="This" condition="-100" delay="20" disabledeltatime="true" setvalue="true" oneshot="true"/>
       <StatusEffect type="OnActive" target="This" OneShot="true">
         <sound file="%ModDir:3278494407%/Misc/Oggs/launch.ogg" type="OnActive" range="1800.0"/>
       </StatusEffect>
@@ -529,7 +526,6 @@
       <StatusEffect type="OnImpact" target="This" condition="-100.0" >
         <Conditional Condition="lt 100" />
       </StatusEffect>
-      <StatusEffect type="OnActive" target="This" condition="-100" delay="20"/>
       <StatusEffect type="OnBroken" target="This">
         <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="Random" range="50000" />
         <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="Random" range="50000" />
@@ -773,7 +769,7 @@
       </Attack>
       <StatusEffect type="OnActive" target="This" IsOn="true" voltage="1.00" SoundRange="500000" gravityscale="0" scale="0.551" setvalue="true"/>
       <StatusEffect type="OnActive" target="This" disabledeltatime="true" condition="-1" delay="0.7" OneShot="true"/>
-      <StatusEffect type="OnActive" target="This" condition="-100" duration="10"/>
+      <StatusEffect type="OnActive" target="This" condition="-100" delay="5" disabledeltatime="true" setvalue="true" oneshot="true"/>
       <StatusEffect type="OnActive" target="This" OneShot="true">
         <sound file="%ModDir:3278494407%/Misc/Oggs/launch.ogg" type="OnActive" range="1800.0"/>
       </StatusEffect>
@@ -787,7 +783,6 @@
       <StatusEffect type="OnImpact" target="This" condition="-100.0" >
         <Conditional Condition="lt 100" />
       </StatusEffect>
-      <StatusEffect type="OnActive" target="This" condition="-100" delay="5"/>
       <StatusEffect type="OnBroken" target="This">
         <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="Random" range="50000" />
         <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="Random" range="50000" />
@@ -853,7 +848,7 @@
       </Attack>
       <StatusEffect type="OnActive" target="This" IsOn="true" voltage="1.00" SoundRange="500000" gravityscale="0" scale="0.551" setvalue="true"/>
       <StatusEffect type="OnActive" target="This" disabledeltatime="true" condition="-1" delay="0.7" OneShot="true"/>
-      <StatusEffect type="OnActive" target="This" condition="-100" duration="15"/>
+      <StatusEffect type="OnActive" target="This" condition="-100" delay="5" disabledeltatime="true" setvalue="true" oneshot="true"/>
       <StatusEffect type="OnActive" target="This" OneShot="true">
         <sound file="%ModDir:3278494407%/Misc/Oggs/launch.ogg" type="OnActive" range="1800.0"/>
       </StatusEffect>
@@ -867,7 +862,6 @@
       <StatusEffect type="OnImpact" target="This" condition="-100.0" >
         <Conditional Condition="lt 100" />
       </StatusEffect>
-      <StatusEffect type="OnActive" target="This" condition="-100" delay="5"/>
       <StatusEffect type="OnBroken" target="This">
         <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="Random" range="50000" />
         <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="Random" range="50000" />
@@ -923,6 +917,10 @@
       <RequiredItem identifier="c4block" amount="4"/>
     </Fabricate>
     <Projectile characterusable="false" launchimpulse="20" maxtargetstohit="1" damagedoors="true">
+      <StatusEffect type="OnContained" target="This" comparison="and">
+        <Conditional targetcontainer="true" hastag="eq railgunammosource"/>
+        <Dropitem />
+      </StatusEffect>
       <Attack structuredamage="100" itemdamage="100" severlimbsprobability="5" penetration="0.6" targetforce="1000">
         <Affliction identifier="explosiondamage" strength="250" />
         <Affliction identifier="bleeding" strength="50" />
@@ -930,7 +928,7 @@
       </Attack>
       <StatusEffect type="OnActive" target="This" IsOn="true" voltage="1.00" SoundRange="500000" gravityscale="0" scale="0.551" setvalue="true"/>
       <StatusEffect type="OnActive" target="This" disabledeltatime="true" condition="-1" delay="0.7" OneShot="true"/>
-      <StatusEffect type="OnActive" target="This" condition="-100" duration="15"/>
+      <StatusEffect type="OnActive" target="This" condition="-100" delay="20" disabledeltatime="true" setvalue="true" oneshot="true"/>
       <StatusEffect type="OnActive" target="This" OneShot="true">
         <sound file="%ModDir:3278494407%/Misc/Oggs/launch.ogg" type="OnActive" range="1800.0"/>
       </StatusEffect>
@@ -944,7 +942,6 @@
       <StatusEffect type="OnImpact" target="This" condition="-100.0" >
         <Conditional Condition="lt 100" />
       </StatusEffect>
-      <StatusEffect type="OnActive" target="This" condition="-100" delay="20"/>
       <StatusEffect type="OnBroken" target="This">
         <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="Random" range="50000" />
         <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="Random" range="50000" />

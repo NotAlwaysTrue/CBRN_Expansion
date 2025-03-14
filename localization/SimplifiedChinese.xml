@@ -714,4 +714,8 @@
   <entitydescription.vls_msl_container>可以装入小型弹药以允许这些弹药从重型垂直发射系统中发射</entitydescription.vls_msl_container>
   <entityname.cbrn_m32a1_mgl>M32A1榴弹发射器</entityname.cbrn_m32a1_mgl>
   <entitydescription.cbrn_m32a1_mgl>更好的M32, 在几乎任何方面</entitydescription.cbrn_m32a1_mgl>
+
+  <missionname.cargo_nuke_1>运输不稳定核弹头</missionname.cargo_nuke_1>
+  <missiondescription.cargo_nuke_1>你知道我要说什么的,小心行事</missiondescription.cargo_nuke_1>
+
 </infotexts>

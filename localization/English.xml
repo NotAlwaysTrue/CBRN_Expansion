@@ -670,4 +670,18 @@
   <entitydescription.cbrn_gift_crate>Unauthorized opening of this package will result in immediate execution</entitydescription.cbrn_gift_crate>
   <entityname.uhm_bruh_headset>BRUH Headset</entityname.uhm_bruh_headset>
   <entitydescription.uhm_bruh_headset>A plain headset...Maybe</entitydescription.uhm_bruh_headset>
+
+  <entityname.vls_large>Mk.53 Heavy Universal Vertical Launch System</entityname.vls_large>
+  <entitydescription.vls_large>Bigger and better.</entitydescription.vls_large>
+  <entityname.vlsloader_large>HUVLS Loader</entityname.vlsloader_large>
+
+  <entityname.sm_9_prsm>SM-9 PrSM</entityname.sm_9_prsm>
+  <entitydescription.sm_9_prsm>Larger,heavier,faster \nBasically a flying explosive barrel \nNobody want take one shot</entitydescription.sm_9_prsm>
+  <entityname.vls_msl_container>Heavy VLS Munition Conversion Box</entityname.vls_msl_container>
+  <entitydescription.vls_msl_container>Smaller size munition can be loaded in this box to launch in Heavy VLS</entitydescription.vls_msl_container>
+  <entityname.cbrn_m32a1_mgl>M32A1 MGL</entityname.cbrn_m32a1_mgl>
+  <entitydescription.cbrn_m32a1_mgl>Better M32</entitydescription.cbrn_m32a1_mgl>
+
+  <missionname.cargo_nuke_1>Transport Nuclear warhead</missionname.cargo_nuke_1>
+  <missiondescription.cargo_nuke_1>Exercise caution</missiondescription.cargo_nuke_1>
 </infotexts>
